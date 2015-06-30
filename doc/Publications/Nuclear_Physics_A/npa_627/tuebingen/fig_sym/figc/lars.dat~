@@ -1,0 +1,216 @@
+From lars.engvik@fys.uio.no Thu May  8 12:21 MET 1997
+Received: from pat.uio.no by pthp10.tphys.physik.uni-tuebingen.de with SMTP
+	(1.38.193.4/16.2) id AA08663; Thu, 8 May 1997 12:21:45 +0200
+Return-Path: <lars.engvik@fys.uio.no>
+Received: from ulrik.uio.no by pat.uio.no with local-SMTP (PP) 
+          id <11514-0@pat.uio.no>; Thu, 8 May 1997 12:13:52 +0200
+Received: from localhost (lengvik@localhost) by candela.uio.no ;
+          Thu, 8 May 1997 12:13:51 +0200 (MET DST)
+Date: Thu, 8 May 1997 12:13:49 +0200 (MET DST)
+From: Lars Engvik <lars.engvik@fys.uio.no>
+X-Sender: lengvik@candela
+Reply-To: Lars Engvik <lars.engvik@fys.uio.no>
+To: Herbert Muether <ptiri01@pthp10.tphys.physik.uni-tuebingen.de>
+Subject: Re: symmetri energi
+In-Reply-To: <"goggins.ui.764:07.04.97.12.30.53"@goggins.uio.no>
+Message-Id: <Pine.SUN.3.96.970508114410.9910B-100000@candela>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+
+To:
+ Morten Hjorth-Jensen
+
+Her er resultatene du bad om i gaar. 
+Beklager at det tok saa lang tid!
+Har du forresten filene fra kjoering med CD-Bonn.
+Send dem i saafall over ved anledning.
+Ved en feiltakelse kom jeg til aa slette disse to. 
+Jeg har imidlertid resultatene for noeytronmaterie og symmetrisk 
+slik at jeg er i stand til aa beregne symmetrienergi.
+
+Lars
+
+Her er resultatene:
+
+symmetry energy 
+1s0 +3s1 contribution
+
+CD-Bonn
+        .068      12.960
+        .090      14.910
+        .117      16.820
+        .148      19.240
+        .185      21.610
+        .228      24.270
+        .277      26.740
+        .332      29.480
+        .394      32.210
+        .463      35.300
+        .540      38.520
+        .626      41.420
+        .719      44.380
+        .822      47.440
+        .934      50.020
+       1.056      52.950
+       1.187      56.320
+       1.330      60.410
+       1.483      64.770
+
+nijm-I
+        .068      12.520
+        .090      14.290
+        .117      15.890
+        .148      18.040
+        .185      20.000
+        .228      22.120
+        .277      23.890
+        .332      25.720
+        .394      27.440
+        .463      29.510
+        .540      31.530
+        .626      32.940
+        .719      34.390
+        .822      35.760
+        .934      36.160
+       1.056      37.290
+       1.187      39.020
+       1.330      40.310
+       1.483      42.620
+
+Nijm-II
+        .068      11.980
+        .090      13.630
+        .117      15.140
+        .148      17.150
+        .185      18.940
+        .228      20.890
+        .277      22.360
+        .332      23.830
+        .394      25.570
+        .463      27.440
+        .540      29.240
+        .626      30.280
+        .719      31.440
+        .822      32.610
+        .934      33.100
+       1.056      34.030
+       1.187      35.950
+       1.330      39.050
+       1.483      42.190
+
+Reid93
+
+        .068      12.010
+        .090      13.700
+        .117      15.240
+        .148      17.300
+        .185      19.130
+        .228      21.130
+        .277      22.700
+        .332      24.270
+        .394      26.090
+        .463      28.090
+        .540      30.010
+        .626      31.170
+        .719      32.420
+        .822      33.650
+        .934      34.210
+       1.056      35.090
+       1.187      36.660
+       1.330      40.280
+       1.483      42.480
+
+
+
+
+1s0 +3s1 + p-waves
+
+
+cd-bonn
+        .068      11.200
+        .090      12.590
+        .117      13.880
+        .148      15.800
+        .185      17.730
+        .228      20.200
+        .277      22.590
+        .332      25.630
+        .394      28.830
+        .463      33.180
+        .540      37.980
+        .626      42.260
+        .719      47.450
+        .822      52.890
+        .934      57.240
+       1.056      63.460
+       1.187      71.240
+       1.330      82.430
+       1.483      94.990
+
+nijm-I
+        .068      10.770
+        .090      11.990
+        .117      12.990
+        .148      14.660
+        .185      16.200
+        .228      18.150
+        .277      19.830
+        .332      21.980
+        .394      24.180
+        .463      27.430
+        .540      30.880
+        .626      33.600
+        .719      37.260
+        .822      41.010
+        .934      43.160
+       1.056      47.400
+       1.187      53.360
+       1.330      59.060
+       1.483      67.450
+
+nijm-II
+        .068      10.200
+        .090      11.270
+        .117      12.200
+        .148      13.710
+        .185      15.070
+        .228      16.800
+        .277      18.140
+        .332      19.840
+        .394      22.020
+        .463      24.880
+        .540      27.890
+        .626      29.940
+        .719      32.920
+        .822      36.030
+        .934      38.030
+       1.056      41.350
+       1.187      46.600
+       1.330      53.590
+       1.483      61.050
+Reid93
+        .068      10.200
+        .090      11.320
+        .117      12.210
+        .148      13.750
+        .185      15.110
+        .228      16.910
+        .277      18.350
+        .332      20.210
+        .394      22.540
+        .463      25.780
+        .540      29.220
+        .626      31.770
+        .719      35.450
+        .822      39.300
+        .934      42.150
+       1.056      46.700
+       1.187      53.110
+       1.330      63.740
+       1.483      72.930
+
+
+
+
+

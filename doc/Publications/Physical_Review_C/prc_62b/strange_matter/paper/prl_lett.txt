@@ -1,0 +1,46 @@
+Dear Editors,
+please find enclosed a manuscript entitled 
+"Structure of beta-stable neutron star matter with hyperons"
+which we would like to be considered for publication 
+in Physical Review Letters.
+
+The manuscript has been co-authored with 
+I. Vidanya, A. Polls, A. Ramos and L. Engvik.
+
+Relevant pacs numbers are  
+13.75.Ev, 21.30.-x, 21.65.+f, 26.60.+c, 97.60.Gb, 97.60.Jd
+and the manuscript falls under the sections of Nuclear Physics
+and Astrophysics.
+
+The manuscript is set in the RevTex latex style and is included
+below as a uuencoded file with four figures as well.
+When unpacking, it will contain the following files
+paper.tex
+figone.eps
+figtwo.ps
+figthree.ps
+figfour.ps
+
+Please let us know in case of any problems when extracting the files.
+
+
+Yours sincerely,
+
+Morten Hjorth-Jensen
+
+________________________________________________________
+--------------------------------------------------------
+ From: Morten Hjorth-Jensen
+       e-mail: m.h.jensen@fys.uio.no
+       Department of Physics, University of Oslo
+       P.O.B. 1048 Blindern, N-0316 OSLO, Norway
+       phone: +47-22856432 or +47-22856428 (secretariat)
+       fax:   +47-22856422
+       Office: FV123
+       http://www.uio.no/~mhjensen
+________________________________________________________
+--------------------------------------------------------
+
+
+
+

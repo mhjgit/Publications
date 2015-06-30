@@ -1,0 +1,4 @@
+\documentstyle[psfig]{article}
+\begin{document}
+\input{fig8add}
+\end{document}

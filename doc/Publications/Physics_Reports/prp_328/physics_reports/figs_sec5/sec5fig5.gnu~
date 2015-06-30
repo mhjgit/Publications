@@ -1,0 +1,10 @@
+set terminal pslatex
+set output "sec5fig5.tex"
+set xrange [0.3:1.8]
+set yrange [0.5:3.]
+set xlabel "$n_c$ (fm$^{-3}$)"
+set ylabel "$M/M_{\odot}$"
+plot "mass_maxwell100.dat"  title "$B^{1/4}=100$ MeV " w p 1 , "mass_maxwell150.dat" title "$B^{1/4}=150$ MeV "  w p 2, "mass_maxwell200.dat" title "$B^{1/4}=200$ MeV "  w p 3, "mass02.dat" title "$\delta=0.2$"  w l 4
+
+
+

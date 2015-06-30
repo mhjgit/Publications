@@ -1,0 +1,10 @@
+set terminal pslatex
+set output "fig9.tex"
+set xrange [0.1:1.4]
+set yrange [0.:0.18]
+set xlabel "$n$ (fm$^{-3}$)"
+set ylabel "$\chi_p$"
+plot "bonn.dat" title "$\chi_p$ with CD-Bonn" w line 1, "nim1.dat" title "$\chi_p$ with Nijm I" w line 2, "nim2.dat"  title "$\chi_p$ with Nijm II" w line 3 ,"reid.dat" title "$\chi_p$ with Reid93" w line 4 ,"argonne_prot" title "$\chi_p$ with $V_{18}$" w line 5
+
+
+

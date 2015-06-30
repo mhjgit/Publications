@@ -1,0 +1,38 @@
+# Data to plot symmetry energy of nuclear matter
+#
+# Interaction: n3lo
+#
+# ene_ccd_pnm =  correlation energy only of pure neutron matter,
+#                calculated in pphhlad approximation
+#                with exact Pauli operators + charge
+#                symmetry/independence breaking and Jmax = 8.
+#                Numerical accuracy: 0.01 MeV for kF < 2.0 fm^-1,
+#                only 0.1 MeV for kF > 2.0 fm^-1
+#           Stored in gustav@gb-ThinkPad-T430:~/Dropbox/koder
+#	    /nuclearMatter/momentum_rcm/cc_exact_pauli_pp_prl4
+#	    /data/neutron_matter/pphhlad_ene_n3lo_jmax8_publ_220612
+#
+# ene_hf_pnm = Hartree-Fock (kin+pot) of pure neutron matter 
+#           with Jmax = 24 + charge symmetry/independence breaking
+#           Stored in gustav@gustav-laptop:~/Dropbox/koder/nuclearMatter
+#           /momentum_rcm/cc_exact_pauli_pp_prl4/data/neutron_matter
+#           /hf_ene_n3lo_jmax24_150612
+#
+# ene_ccd_snm =  correlation energy only of symmetric nuclear matter,
+#                calculated in pphhlad approximation
+#                with exact Pauli operators + charge
+#                symmetry/independence breaking and Jmax = 8.
+#                Numerical accuracy: 0.01 MeV 
+#
+# ene_hf_snm = Hartree-Fock (kin+pot) of symmetric nuclear matter 
+#           with Jmax = 24 + charge symmetry/independence breaking
+#	    
+# kF_snm (fm^-1) density (fm^-3) kF_pnm (fm^-1)	ene_ccd_pnm (MeV) ene_hf_pnm (MeV) ene_ccd_snm (MeV) ene_hf_snm (MeV)
+  1.2	     	 0.1167	 	 1.511905	-4.34273013335618 14.5818285486811 -13.7303393354120 -2.35319835011987
+  1.4	     	 0.1854		 1.763889	-6.24511172637360 20.1919414664856 -15.9981887016190 -4.14218863859790
+  1.6	     	 0.2767		 2.015874	-8.37563245436735 28.1637922640377 -17.7769184025952 -5.48399717605653
+  1.8		 0.3939		 2.267858	-10.4943106702535 39.4124743574626 -18.9395413647686 -5.56222641760627
+  2.0		 0.5404 	 2.519842	-12.1436451516231 54.3454722403204 -19.6446027411093 -3.32486657465318
+
+
+

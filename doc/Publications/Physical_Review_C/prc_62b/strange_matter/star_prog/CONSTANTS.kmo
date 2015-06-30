@@ -1,0 +1,14 @@
+      internalinterface
+      end interface
+      doubleprecision R0, XKG, HBARC, G, FOURPI, SM_SOLAR, C1, CONST_2, &
+     &  DIFF_EQ_STEP, FIRST_DENSITY, LAST_DENSITY
+      integer NUMBER_CENTRAL_DENSITIES, NUMBER_DIFFERENTIAL_EQS,        &
+     &  MAX_RK4_STEPS
+      parameter (R0 = 1.E+19, XKG = 1.E+30 / 1.78266270, HBARC = 197.327&
+     &  , G = 6.67259D-45 * 197.327, FOURPI = 12.56637061)
+      parameter (SM_SOLAR = 1.989E+30 * XKG, C1 = FOURPI * (R0 ** 3) /  &
+     &  SM_SOLAR, CONST_2 = SM_SOLAR * G / R0, NUMBER_CENTRAL_DENSITIES &
+     &   = 50, NUMBER_DIFFERENTIAL_EQS = 7)
+      parameter (MAX_RK4_STEPS = 100000, DIFF_EQ_STEP = 0.0001,         &
+     &  FIRST_DENSITY = 0.3, LAST_DENSITY = 1.8)
+      doubleprecision CONST_1

@@ -1,0 +1,10 @@
+set terminal pslatex
+set output "fig5.tex"
+set xrange [0.2:1.8]
+set yrange [0.5:3.]
+set xlabel "$n_c$ (fm$^{-3}$)"
+set ylabel "$M/M_{\odot}$"
+plot "mass02_nr"  title "pn-matter without rotational correction" w l 1 , "mass02_r" title "on-matter with rotational correction"  w l 2, "masshyp_nr" title "Hyperons without rotational correction"  w l 3, "masshyp_r" title "Hyperons with rotational correction"  w l 4
+
+
+

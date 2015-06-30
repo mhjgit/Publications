@@ -1,0 +1,177 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2003.8.1)  14 JAN 2005 13:06
+**paper
+(./paper.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(./svjour.cls
+Document Class: svjour 2003/04/15 
+LaTeX document class for Springer journals - version 1.11
+(./svepj.clo
+File: svepj.clo 2002/03/11 v1.2 style option for The European Physical Journal
+
+SVJour Class option: svepj.clo for The European Physical Journal
+)
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 106.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 108.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 109.
+\logodepth=\dimen102
+\headerboxheight=\dimen103
+\betweenumberspace=\dimen104
+\aftertext=\dimen105
+\headlineindent=\dimen106
+\c@inst=\count79
+\c@auth=\count80
+\instindent=\dimen107
+\authrun=\box26
+\authorrunning=\toks14
+\titrun=\box27
+\titlerunning=\toks15
+\combirun=\box28
+\c@lastpage=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\spthmsep=\dimen108
+\c@theorem=\count87
+\c@case=\count88
+\c@conjecture=\count89
+\c@corollary=\count90
+\c@definition=\count91
+\c@example=\count92
+\c@exercise=\count93
+\c@lemma=\count94
+\c@note=\count95
+\c@problem=\count96
+\c@property=\count97
+\c@proposition=\count98
+\c@question=\count99
+\c@solution=\count100
+\c@remark=\count101
+\c@figure=\count102
+\c@table=\count103
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\figcapgap=\dimen109
+\tabcapgap=\dimen110
+\figgap=\dimen111
+\bibindent=\dimen112
+\@tempcntc=\count104
+) (/local/TEX/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/local/TEX/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/local/TEX/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/local/TEX/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (./paper.aux)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 70.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[][]\OT1/cmr/m/it/9 Correspondence to\OT1/cmr/m/n/9 : Pi-otr Piecuch; e-mail ad
+-dress:
+ []
+
+
+Overfull \hbox (1.30212pt too wide) in paragraph at lines 124--144
+\OT1/cmr/m/n/10 ing mod-ern nucleon-nucleon in-ter-ac-tions and meth-ods sim-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+File: FIGURES/ccalg.eps Graphic file (type eps)
+
+<FIGURES/ccalg.eps>
+Overfull \hbox (13.42986pt too wide) in paragraph at lines 169--176
+[]|  []
+ []
+
+
+Overfull \hbox (8.21515pt too wide) in paragraph at lines 188--241
+\OT1/cmr/m/n/10 mass con-tam-i-na-tions us-ing the for-mula $\OML/cmm/m/it/10 H
+ \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 H[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^L[
+]H[]$\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (1.57988pt too wide) in paragraph at lines 347--369
+\OT1/cmr/m/n/10 the num-ber of oc-cu-pied (un-oc-cu-pied) single-particle state
+s,
+ []
+
+
+Overfull \hbox (4.01741pt too wide) in paragraph at lines 347--369
+\OT1/cmr/m/n/10 gies $\OML/cmm/m/it/10 E[]$\OT1/cmr/m/n/10 , defin-ing the CR-C
+CSD(T) and CR-EOMCCSD(T)
+ []
+
+
+Overfull \hbox (3.43993pt too wide) in paragraph at lines 393--404
+\OT1/cmr/m/n/10 cu-la-tions for $[]$O us-ing meth-ods de-scribed in Sect. 2[]. 
+Shown
+ []
+
+[3]
+Underfull \vbox (badness 4120) has occurred while \output is active []
+
+ [4]
+(./paper.aux) ) 
+Here is how much of TeX's memory you used:
+ 763 strings out of 95847
+ 8002 string characters out of 1195583
+ 65452 words of memory out of 1000001
+ 3745 multiletter control sequences out of 10000+50000
+ 11344 words of font info for 39 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 27i,10n,28p,300b,290s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on paper.dvi (4 pages, 34564 bytes).

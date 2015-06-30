@@ -1,0 +1,438 @@
+
+%% ReVTeX 3.0:  10 pages %%%%
+\documentstyle[prl,aps,preprint]{revtex}
+\begin{document}
+\draft
+\title{Universalities of Triplet Pairing in Neutron Matter}
+\author{V. A. Khodel, V. V. Khodel, and J. W. Clark}
+\address{McDonnell Center for the Space Sciences
+and Department of Physics,\\
+Washington University, St. Louis, MO 63130 USA}
+\date{\today , Submitted to Physical Review Letters}
+\maketitle
+\begin{abstract}
+
+The fundamental structure of the set of unitary solutions of
+the BCS $^3{\rm P}_2$ pairing problem in neutron matter is established.
+The relations between different spin-angle components in these 
+solutions are shown to be practically independent of density,
+temperature, and the specific form of the pairing interaction.
+The spectrum of pairing energies is found to be highly degenerate.
+\end{abstract}
+
+\vskip 1cm
+\pacs{67.20+k, 74.20.Fg, 97.60.Jd}
+
+Since the discovery of superfluidity in liquid $^3$He \cite{osh}, 
+great advances have been made in understanding the properties of 
+superfluid systems with triplet pairing.  In addition to the well-studied
+case of liquid $^3$He below 2.6 mK~[2-7], triplet pairing is 
+expected to occur in neutron matter in the quantum fluid interior of
+a neutron star~[8-13].  A number of common features of superfluid, 
+thermodynamic, and magnetic properties of different systems have been
+revealed by analyses based on symmetry principles \cite{wol,vol}. 
+However, as we shall see, dealing directly with the BCS gap equation 
+permits one to uncover new universalities in  triplet pairing. 
+
+The purpose of this letter is to identify fundamental solutions of the
+triplet pairing problem in neutron matter and elucidate their structure
+and their relationships.  If two identical spin-${1\over 2}$ fermions 
+are paired with a nonzero total momentum ${\bf J}={\bf L}+{\bf S}$, 
+the ordinary $S$-wave gap equation is converted into a system 
+of coupled integral equations.  In the standard notation \cite{tak,ost}, 
+we have the expansion
+$\Delta({\bf p}) =\sum\Delta_{LJ}^M(p)G_{LJ}^M({\bf n})$ 
+in the spin-angle matrices 
+$G_{LJ}^M({\bf n};s_1,s_2)=\sum C^{1M_S}_{{1\over 2}
+{1\over 2}s_1s_2}C^{JM}_{1LM_sM_L}Y_{LM_L}({\bf n})$, 
+with $(\Delta_{LJ}^M(p))^*=(-1)^{J-M}\Delta_{LJ}^{-M}(p)$ assuming
+time-reversal invariance.  In systems with  tensor forces, the
+$pp$ interaction has the corresponding expansion 
+$V({\bf p},{\bf p}')=\sum\langle p|V_{LJ}^{L'J}|p'
+\rangle G_{LJ}^M({\bf n})G_{L'J}^{M*}({\bf n}')$.
+The generalized BCS system then reads
+\begin{equation}
+ \Delta_{LJ}^M(p)
+= \sum_{L'L_1J_1M_1}(-1)^{\Lambda} \int 
+  \langle p|V_{LJ}^{L'J}|p'\rangle S^{MM_1}_{L'JL_1J_1}({\bf n}')
+  {\Delta_{L_1J_1}^{M_1}(p')\over 2E({\bf p}')}
+  \tanh {E({\bf p}') \over 2T}d\tau' \, ,
+\end{equation}
+where $\Lambda=L-L_1+1$, $d\tau= p^2dpd{\bf n} \equiv d\tau_0d{\bf n}$, 
+and $S^{MM_1}_{LJL_1J_1}({\bf n})={\rm Tr}
+\left[G_{LJ}^{M*}({\bf n})G_{L_1J_1}^{M_1}({\bf n})\right]$ 
+represents the summation over spin variables.  The energy denominator
+$E({\bf p})=[\xi^2(p)+D^2({\bf p})]^{1/2}$ involves
+the single-particle excitation energy $\xi(p)$ of the
+normal system measured from the Fermi surface and a gap quantity
+whose square is constructed as
+\begin{equation}
+ D^2({\bf p})={1\over 2}\sum_{LJML_1J_1M_1}\Delta_{LJ}^{M*}(p)
+ \Delta_{L_1J_1}^{M_1}(p) S^{MM_1}_{LJL_1J_1}({\bf n}) \, .
+\end{equation}
+
+For the present, we retain only diagonal terms with $L_1= L'=L,J_1=J$ 
+on the r.h.s. of (1), thus allowing for superposition of spin-angle
+components only in the magnetic quantum number $M$.  The contributions 
+from nondiagonal terms can be incorporated with the aid a standard 
+renormalization procedure that alters the interaction $V$ but does 
+not substantially affect the results we shall derive.  The analysis 
+is greatly facilitated by a generalization of the separation method 
+developed for $S$-wave pairing in \cite{kkc}.   Thus, defining 
+$\phi_{LJ}(p)=\langle p|V_{LJ}^{LJ}|p_F\rangle /v_F$ and 
+$v_F=\langle p_F|V_{LJ}^{LJ}|p_F\rangle $, we employ the decomposition
+\begin{equation}
+  4\pi\langle p| V_{LJ}^{LJ}| p'\rangle 
+= v_F\phi_{LJ}(p)\phi_{LJ}(p')+W_{LJ}(p,p') \, ,
+\end{equation}
+of the relevant pairing matrix into a separable portion and a
+remainder $W_{LJ}(p,p')$ that vanishes identically when either
+argument is on the Fermi surface.   Due to the latter property, 
+integrals containing $W_{LJ}$ are guaranteed to receive their overwhelming
+contributions some distance from the Fermi surface where the 
+replacements $E\rightarrow |\xi|$ and $\tanh (E/2T)\rightarrow 1$ 
+are justified to high accuracy.  Substituting (3) into (1), 
+the gap equations are recast as
+\begin{equation}
+  \Delta_{LJ}^M(p)+\int {W_{LJ}(p,p')\over 2|\xi(p')|}
+  \Delta_{LJ}^M(p')d\tau_0'=v_FB_{LJ}^M\phi_{LJ}(p) \, ,
+\end{equation}
+\begin{equation}
+  B^M_{LJ}
+= -\sum_{M_1} \int \phi_{LJ}(p)S^{MM_1}_{LJLJ}({\bf n})
+  {\Delta_{LJ}^{M_1}(p)\over 2E({\bf p})}
+  \tanh {E({\bf p})\over 2T}d\tau \, .
+\end{equation}
+The quantities $B^M_{LJ}$ are merely numerical factors.  Consequently,
+the $p$ dependence  of all gap components is seen to be identical.
+Specifically, we may write $\Delta_{LJ}^M(p)=D_{LJ}^M\chi_{LJ}(p)$, 
+where the shape factor $\chi_{LJ}(p)$ obeys an integral equation 
+\begin{equation}
+   \chi_{LJ}(p) + \int W_{LJ}(p,p')
+   {\chi_{LJ}(p') \over 2|\xi(p')|}d\tau_0'=\phi_{LJ}(p) 
+\end{equation}
+of the same form as in the singlet case \cite{kkc}.  To determine
+the amplitude $D_{LJ}^M$, we note that $\chi_{LJ}(p_F)=\phi_{LJ}(p_F)=1$  
+since $W_{LJ}(p_F,p')=0$.  Therefore $\Delta_{LJ}^M(p_F)=D_{LJ}^M$,
+and Eq.~(4) implies $D_{LJ}^M=v_FB^M_{LJ}$ while Eq.~(5) gives
+\begin{equation}
+   D^M_{LJ}
+= -v_F\sum_{M_1} \int \phi_{LJ}(p)S^{MM_1}_{LJLJ}({\bf n})
+  D^{M_1}_{LJ} {\chi_{LJ}(p)\over 2E({\bf p})} 
+  \tanh {E({\bf p})\over 2T}d\tau \ .
+\end{equation}
+The system (6)--(7) is more convenient for solution than the 
+original equations (1), since the problem has been decomposed into
+(i)~evaluation of the $M$-independent shape factor 
+$\chi_{LJ}(p)$ from the nonsingular linear integral Eq.~(6), and
+(ii)~determination of the structure coefficients $D^M_{LJ}$ from the
+nonlinear equation (7), where the log singularity has been isolated.
+
+Henceforth we specialize to the case $L=S=1$, $J=2$, this being 
+the most favored uncoupled channel for pairing in neutron matter 
+at densities prevailing in the quantum fluid interior of a neutron
+star ($k_F\sim 2$~fm$^{-1}$), where the $^1$S$_0$ gap has already 
+closed \cite{tak,kkc}.  The arguments are simplified if we adopt 
+$D^0_{12}\equiv\delta$ as a scale factor and introduce the 
+``structure function'' 
+\begin{eqnarray}
+    d^2({\bf n}) = 
+&& 16\pi D^2({\bf p})/\chi_{12}^2(p)
+   = \delta^2[(1+\lambda_2)^2+\kappa^2_1
+     +(\lambda_1^2-4\lambda_2-\kappa^2_1)x^2 \nonumber\\
+&-& 2(\lambda_1+ \lambda_1\lambda_2+\kappa_1\kappa_2) xz 
+    +(3+\lambda^2_1-\lambda^2_2-2\lambda_2)z^2\nonumber\\
+&+& 2(2\kappa_2-\kappa_1\lambda_1)xy
+    +2(\kappa_1+ \lambda_1\kappa_2-\lambda_2\kappa_1)yz] \, ,
+\end{eqnarray}
+where $x=\sin\theta\cos\varphi$, 
+$y=\sin\theta\sin\varphi$, and $z=\cos\theta$.  
+After the separation of the real and imaginary parts of 
+$D^{M\neq 0}_{12}\equiv (\lambda_M+i\kappa_M)\delta\sqrt{6}$ in (7), 
+we arrive at the set of equations
+\begin{eqnarray}
+    \lambda_2
+&=& -v_F[\lambda_2(J_0+J_5) -\lambda_1 J_1 -\kappa_1J_2-J_3]\, ,\nonumber \\
+    \kappa_2
+&=& -v_F[\kappa_2(J_0+J_5) -\kappa_1 J_1 +\lambda_1J_2+J_4] \, ,\nonumber\\
+    \lambda_1
+&=& -v_F[\lambda_1J_6-(\lambda_2+1)J_1+\kappa_2J_2-\kappa_1J_4/2]\, ,\nonumber\\
+     \kappa_1
+&=& -v_F[\kappa_1J_7-\kappa_2J_1-(\lambda_2-1)J_2-\lambda_1 J_4/2]\, ,\nonumber\\
+    1
+&=&-v_F[-(\lambda_1 J_1-\kappa_1 J_2+\lambda_2 J_3-\kappa_2 J_4)/3+J_5] \,,
+\end{eqnarray}
+which, in angular content, is consistent with the corresponding set 
+in \cite{ost}.  The integrals $J_k$ are given by $J_6=(J_0+4J_5+2J_3)/4$, 
+$J_7=(J_0+4J_5-2J_3)/4$, and, for $k=1,\cdots,5$, by
+\begin{equation}
+  J_k = \int f_k(\theta,\varphi){\phi_{12}(p)\chi_{12}(p)
+        \over 2E({\bf p})}\tanh{E({\bf p})\over 2T}d\tau \, ,
+\end{equation}
+with
+$f_0=1-3z^2$, $f_1=3xz/2$, $f_2=3yz/2$, $f_3=3(2x^2+z^2-1)/2$, $f_4=3xy$, 
+and $f_5=(1+3z^2)/2$.
+Substitution of $\partial d^2(\theta,\varphi)/\partial\varphi$ 
+for $f_k$ in (10) evidently yields zero upon integration over $\varphi$. 
+This identity implies a relation 
+\begin{equation}
+  \sum_{k=1}^4 c_kJ_k=0
+\end{equation}
+between the integrals $J_k$,
+with $c_1=\kappa_1+\lambda_1\kappa_2- \lambda_2\kappa_1$, 
+$c_2=\lambda_1+\lambda_1\lambda_2+\kappa_1\kappa_2$, 
+$c_3=2\kappa_2-\kappa_1\lambda_1$, and 
+$c_4=2\lambda_2-(\lambda_1^2-\kappa_1^2)/2$.
+But note that if we multiply the first equation of (9) 
+by $\kappa_2$, the second by $\lambda_2$, the third by $2\kappa_1$, 
+and the fourth by $-2\lambda_1$, and subtract the results of the last
+three operations from that of the first, relation (11) is reproduced.
+Thus only four of the five equations in (9) are truly independent and 
+hence any one of the parameters 
+$\lambda_1$, $\lambda_2$, $\kappa_1$, $\kappa_2$ 
+can be chosen arbitrarily.  We take $\kappa_1=0$.  
+With this choice, solutions of (9) are necessarily even functions of 
+$\lambda_1$, so attention may be focused on the sector $\lambda_1\geq 0$. 
+
+The set (9) has three one-component solutions \cite{tak,ost} with 
+$|M|=0,~1$, and 2.  We start the search for multicomponent solutions
+with the case $\kappa_2=0$, for which $d^2({\bf n})$ is independent 
+of $y$. In Eq.~(10), the integration of $f_k(\theta,\varphi)$ 
+over $y$ is then carried out using the formula 
+$\sin\theta d\theta d\varphi =2\delta(x^2+y^2+z^2-1)dx~dy~dz$.  
+For $k=1,3$, this yields $2f_k(x,z)(1-x^2-z^2)^{-1/2}$ 
+since $f_1$ and $f_3$ are independent of $y$, while for $k=2,4$ 
+one finds $J_2=J_4=0$ because $f_2$ and $f_4$ are odd in $y$ 
+and the $y$ integral has symmetric limits.  As a result, 
+there remain only three independent equations,
+\begin{eqnarray}
+\lambda_2 &=& -v_F[\lambda_2(J_0+J_5) -\lambda_1 J_1-J_3] \, ,\\
+\lambda_1 &=& -v_F[\lambda_1(J_0/4+J_5)-(\lambda_2+1)J_1
+              +\lambda_1 J_3/2] \, ,\\
+        1 &=& -v_F[-(\lambda_1 J_1+\lambda_2 J_3)/3+J_5] \, .
+\end{eqnarray}
+We first identify and verify particular solutions of this system,
+beginning with ($\lambda_2=-1,\lambda_1~{\rm arbitrary}$).
+The structure function (8) is seen to take the factorized form
+$d^2({\bf n};\lambda_1,\lambda_2=-1)=3\Delta^2(x^2+z^2)$, where 
+$\Delta^2=\delta^2(\lambda^2_1+4)/3$ is a pairing energy parameter. 
+Integration of the combination $3f_0+2f_3=6(x^2-z^2)$ over $x,z$ 
+then produces 0, hence $3J_0+2J_3=0$, since this quantity changes 
+sign on interchange of $x$ and $z$ while $d^2$ and other factors 
+within the integrand of (10) are left unchanged.  By the same reasoning, 
+integration of $f_1=xz$ over $x$ gives 0 and hence $J_1=0$.  
+It follows that Eqs.~(12)--(14) {\it coincide} and provide an 
+equation $1=-v_F[J_3/3+J_5]$ that determines $\Delta^2$ rather 
+than $\lambda_1$ and $\delta$ individually.  Here we have a striking 
+example of the universal structure of solutions of the $^3{\rm P}_2$ 
+pairing problem.  Two other particular solutions of Eqs.~(12)--(14) 
+are ($\lambda_1=0$, $\lambda_2=3$) and ($\lambda_1=0$, $\lambda_2=1$). 
+In both cases, Eq.~(13) vanishes identically.  The symmetry 
+of $d^2(x,z;\lambda_1=0,\lambda_2=3)=\Delta^2[4-3(x^2+z^2)]$
+with respect to $x$ and $z$ again implies the relation $3J_0+2J_3=0$.  
+Again Eqs.~(12) and (14) coincide and the resulting equation, 
+$1=-v_F(J_5-J_3)$, determines only $\Delta^2$.  On the other hand, 
+$d^2(x,z;\lambda_1=0,\lambda_2=1)=3\Delta^2(1-x^2)$ depends on $x$ 
+alone, allowing us to integrate (10) over $z$, for any form of
+$d^2\equiv d^2(x)$, to obtain the relation $3J_0-2J_3=0$.  Yet
+again Eqs.~(12) and (14) merge, in this case to $1=-v_F(J_5-J_3/3)$, 
+which again only determines $\Delta^2$.
+
+Other solutions of the system (12)--(14) are found by implementing 
+a rotation \\
+$R=\bigl( x=t\cos\alpha+u\sin\alpha,\, z=t\sin\alpha-u\cos\alpha\bigr)$ 
+with $\tau=\tan\alpha$.  Expressing $d^2$ 
+in terms of $t$ and $u$, one easily finds conditions
+\begin{equation}
+  (\lambda^2_1-4\lambda_2)\tau^2
++ 2\lambda_1(1+\lambda_2)\tau
++ \lambda^2_1-\lambda^2_2-2\lambda_2 +3=0 \, ,~~~
+  \lambda_1\tau^2-(\lambda_2-3)\tau -\lambda_1=0 \, ,
+\end{equation}
+under which  $d^2$ becomes a function of $t$ only.  The choice 
+$\tau(\lambda_1,\lambda_2)=\tau_0(\lambda_1,\lambda_2) =\\
+\lambda_1(1+\lambda_2)/(4\lambda_2-\lambda^2_1)$ 
+meets both conditions provided
+\begin{equation}
+(\lambda^2_1-2\lambda_2+2)(\lambda^2_1-2\lambda^2_2-6\lambda_2)=0 \, .
+\end{equation}
+Equation~(16) embodies three branches of $\lambda_2$ versus $\lambda_1$, 
+which start as parabolas from $\lambda_1=0$ and $\lambda_2=1$, 0, and $-3$.  
+The structure function factorizes as $d^2(t)\propto\Delta^2_1(1-t^2)$ 
+when the first factor of (16) vanishes and as 
+$d^2(t)\propto\Delta^2_2(1+3t^2)$ when the second is zero, with
+appropriate different values of the pairing parameter.
+Calculating the integrals $J_1$ and $J_3$ by rotation of the 
+$x,z$ plane under $R$, we are led to the relations
+\begin{eqnarray}
+    (\lambda^2_1-4\lambda_2)J_1+\lambda_1(\lambda_2+1)J_3
+&=& 0 \, ,\nonumber\\
+    3\lambda_1(1+\lambda_2)J_0-2(\lambda^2_1-2\lambda^2_2+6)J_1
+&=& 0 \, .
+\end{eqnarray}
+The first relation (for example) is verified as follows, noting
+that its l.h.s. is proportional to 
+$[(\lambda^2_1-4\lambda_2)f_1+\lambda_1(\lambda_2+1)f_3]/(1-t^2-u^2)^{1/2}$. 
+Substituting $f_1(t,u)$ and $f_3(t,u)$ and integrating over $u$, 
+which can be done freely for any shape of $d^2(t)$, 
+we obtain a result that is proportional to 
+$[(\lambda^2_1-4\lambda_2)\tau+\lambda_1(\lambda_2+1)]$ and therefore
+vanishes when $\tau_0(\lambda_1,\lambda_2)$ is substituted.  What is 
+remarkable is that Eqs.~(12)--(14) coincide when relations (17) 
+are inserted, and once again these equations determine only 
+$\Delta^2$. Thus the rotation $R$ permits us ``to kill two birds with 
+one stone,'' and the attendant condition (16) specifies another
+set of solutions of our system. 
+
+We now allow $\kappa_2$ to have a nonzero value, thus bringing in
+the second of Eqs.~(9).  At $\lambda_1=0$, this equation becomes identical
+with the first of the set, as is seen with the aid of Eq.~(11).  
+The particular solution $(\lambda_1=0,~\lambda_2=3)$ is then replaced 
+by one with $\lambda_1=0$ and $(\lambda_2^2+\kappa_2^2)^{1/2}=3$, but 
+the pairing energy remains unaltered, the relevant quantities being
+independent of the phase of the coefficient $D^2_{12}(\lambda_1=0)$. 
+To find the other multicomponent solutions in the general case with 
+$\kappa_2\neq 0$ and $\lambda_1\neq 0$, we may extend our previous 
+tactic and apply a rotation in {\it three}-dimensional
+space so as to eliminate four terms in expression (8) and cast
+$d^2$ into a one-dimensional form.  The three Euler angles are 
+thereby fixed, implying a relation between the parameters $\lambda_2$,
+$\kappa_2$, and $\lambda_1$, namely 
+\begin{equation}
+  \kappa^2_2=(1+\lambda_2)(\lambda^2_1/2-\lambda_2+1) \, ,
+\end{equation}
+which can be shown to satisfy all of Eqs.~(9).  This relation defines
+two branches of $\kappa_2(\lambda_1,\lambda_2)$.  Starting at the plane 
+$\kappa_2=0$, one branch grows out of the particular solution 
+$\lambda_2=-1$ while the other grows out of the quasiparabola 
+$\lambda^2_1/2=\lambda_2-1$ contained in Eq.~(16).  (Accordingly,
+$\lambda_2=-1$ and the latter quasiparabola cannot be counted
+as independent solutions.)  The branches (18) complete the set 
+of unitary states of the $^3{\rm P}_2$ problem.
+
+At $T=0$, the solutions we have identified divide into two groups, 
+the states within a group being essentially degenerate in energy.  
+This behavior is consistent with the numerical calculations reviewed 
+in \cite{tak}.  The group with lowest energy, having structure function 
+$d^2(t)=\Delta^2(1+3t^2)$, contains only nodeless states and consists 
+of (i)~the particular state ($\lambda_1=0$, $\lambda_2=3$) and 
+(ii)~the states (including the one-component state with $M=0$) 
+belonging to the branches of Eq.~(16) starting at the points 
+$\lambda_2=0$ and $\lambda_2=-3$.  The upper group contains the 
+remaining states, having $d^2(t)=3\Delta^2(1-t^2)$ and one node.
+The energy splitting between the groups is a universal function of 
+the ratio $T/T_c$, the critical temperature $T_c$ being determined
+by Eq.~(14) reduced to $1=-v_FJ_5(T_c)$.
+The splitting between the groups can be calculated (for example) 
+from the ratio 
+$\eta(T)=\Delta^2_1(T)/\Delta^2_0(T)=\delta^2_1(T)/3\delta^2_0(T)$ 
+for the particular states $\lambda_2=-1$ and ($\lambda_1=0$, 
+$\lambda_2=3$), denoted 1 and 0 respectively.
+The ratio $\delta_1^2(T)/\delta^2_0(T)$ of the scale factors is also 
+found from Eq.~(14). It can be shown that the dominant
+contributions to this ratio come from the integration region adjacent 
+to the Fermi surface where $\chi_{12}(p)=\phi_{12}(p)=1$. 
+In doing so at $T=0$ while neglecting unimportant strong-coupling
+corrections to the interaction $V$ involving the gap itself, one finds
+\begin{equation}
+ \ln\eta(T=0)={2\pi\over 9\sqrt{3}}+{2\over 3}-\ln 3\simeq -0.028 \, ,  
+\end{equation}
+in agreement with the calculations of Takasuka and Tamagaki \cite{tak}.
+Analytical results are also available in the vicinity of the critical 
+temperature $T_c$.  Straightforward evaluation of the integrals 
+$J_k$ in Eq.~(14) near $T_c$ yields
+$\Delta^2_k(T\rightarrow T_c)\sim {5\over 6}\Delta_S^2(T\rightarrow T_c)$,
+where $ \Delta_S^2$ is the corresponding BCS $S$-wave pairing value.  
+>From this formula, which applies to {\it all} solutions of 
+Eqs.~(12)--(14), we infer that the specific heat jumps at $T_c$ 
+are also universal, i.e., independent of the density $\rho$. 
+Thus, if mixing of the different $L,J$ channels is neglected, 
+the $^3{\rm P}_2$ gap spectrum turns out to be essentially degenerate 
+and independent of any input parameters including the density $\rho$ 
+and the temperature $T$.  The concrete form of the $pp$ interaction 
+was not used anywhere, so the structure and relations we have established 
+retain their validity even when fluctuation contributions to $V$ 
+(or other dressings of the pairing interaction) are taken into account.  
+Under heating or pressure only the scale of the pairing energy is 
+altered, and transitions between different states are first-order 
+phase transitions.
+
+Now let us consider the non-diagonal contributions to Eq.~(1), which 
+can be accommodated by a renormalization of the interaction $V$, 
+following a well-known procedure employed in Fermi-liquid 
+theory \cite{mig}.  Schematically, Eq.~(1) is rewritten in the 
+form $\Delta=V(A_d+A_n)\Delta$, where $A_d$ [respectively, $A_n$] 
+collects the diagonal [nondiagonal] contributions, 
+and the operator $(1-VA_n)^{-1}$ applied to both the 
+sides of this revised equation.  Equation~(1) is thereby replaced 
+by a new equation, $\Delta=V_{\rm eff}A_d\Delta$, 
+in which only diagonal terms appear but $V$ has been replaced 
+by an effective interaction $V_{\rm eff}=V+VA_nV_{\rm eff}$.  
+A complication is that the structure function $d^2$ of the 
+renormalized equation involves higher harmonics and is no longer 
+factorizable.  Therefore the connection (11) and Eqs.~(14)--(16) 
+are modified, with a consequent lifting of degeneracy that entails 
+full determination of the parameters $\lambda_i$, $\kappa_i$.  
+However, simple estimation and analysis of available numerical 
+results\cite{and} indicate that the resulting corrections 
+to the universal relations we have derived for triplet pairing 
+in neutron matter are small, of order one percent.
+
+The situation changes drastically in the case of superfluid $^3$He,
+where the states with $L=S=1$ and $J=0,1,2$ contribute on 
+equal footing and hence the number of equations to be solved rises 
+to nine.  Nevertheless, we expect the same methods of analysis 
+to prove illuminating for this system as well.
+
+We acknowledge helpful discussions with R.~Fisch, P.~Schuck, and 
+G.~E.~Volovik.  This research was supported in part by the Russian 
+Foundation for Basic Research under Grant No.~96-02-19292 and by 
+the U. S. National Science Foundation under Grant No.~PHY-9602127. 
+
+\begin{references}
+\bibitem{osh} 
+D.~D.~Osheroff, R.~C.~Richardson, and D.~M.~Lee, 
+Phys. Rev. Lett. {\bf 28}, 885 (1972). 
+\bibitem{and}
+P.~W.~Anderson and P.~Morel, Phys. Rev. {\bf 123}, 1911 (1961). 
+\bibitem{leg} 
+A.~J.~Leggett, Rev. Mod. Phys. {\bf 47}, 331 (1975).
+\bibitem{wheat} 
+J.~C.~Wheatley, Rev. Mod. Phys. {\bf 47}, 415 (1975). 
+\bibitem{has} 
+Y.~Hasegawa, T.~Usagawa, and F.~Iwamoto, 
+Prog. Theor. Phys. {\bf 63}, 1458  (1979).
+\bibitem{wol} 
+D.~Vollhardt and P.~W\"olfle, {\it The Superfluid Phases of Helium 3} 
+(Taylor \& Francis, London, 1990).
+\bibitem{vol} 
+G.~E.~Volovik, in {\it Helium Three}, ed. W.~P.~Halperin
+and L.~P.~Pitaevskii (North Holland, Amsterdam, 1990).
+\bibitem{pin} 
+D.~Pines and M.~A.~Alpar, Nature {\bf 316}, 27 (1985).
+\bibitem{hoff} 
+M. Hoffberg, A. E. Glassgold, R. W. Richardson, and
+M. Ruderman, Phys. Rev. Lett. {\bf 24}, 775 (1970).
+\bibitem{tak} 
+T.~Takatsuka and R.~Tamagaki, 
+Prog. Theor. Phys. Suppl. {\bf 112}, 27 (1993). 
+\bibitem{ost} 
+L.~Amundsen and E.~\O stgaard, Nucl. Phys. {\bf A442}, 163 (1985). 
+\bibitem{bal} 
+M.~Baldo, J.~Gugnon, A.~Lejeune, and U.~Lombardo, 
+Nucl. Phys. {\bf A515}, 409 (1990).
+\bibitem{oslo} 
+{\O}. Elgar{\o}y, L. Engvik, M. Hjorth-Jensen, and E. Osnes,
+Nucl. Phys. {\bf A607}, 425 (1996).
+\bibitem{kkc} 
+V.~A.~Khodel, V.~V.~Khodel, and J.~W.~Clark, 
+Nucl. Phys. {\bf A598}, 390 (1996).
+\bibitem{mig} 
+A. B.~Migdal, {\it Theory of Finite Fermi Systems and 
+the Properties of the Atomic Nucleus} (Interscience, New York, 1967).
+\end{references}
+
+\end{document}
+
+
+

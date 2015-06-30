@@ -1,0 +1,597 @@
+
+\documentclass{ws-procs9x6}
+
+\begin{document}
+
+\title{Coupled Cluster Approaches to Nuclei, Ground States and Excited States}
+
+\author{D.~J.~Dean$^{1,2}$, M.~Hjorth-Jensen$^{2,3,4,5}$,
+K.~Kowalski$^{6}$, T.~Papenbrock$^{1,7}$, M.~Wloch$^{6}$, and 
+P.~Piecuch$^{5,6}$}
+
+
+\address{$^1$Physics Division, Oak Ridge National Laboratory,
+P.O. Box 2008, Oak Ridge, TN 37831, USA\\
+$^2$Center of Mathematics for Applications, University of Oslo, N-0316 Oslo, Norway\\
+$^3$Department of Physics, University of Oslo, N-0316 Oslo, Norway\\
+$^4$PH Division, CERN, CH-1211 Geneve 23, Switzerland\\
+$^5$Department of Physics and Astronomy,
+Michigan State University, East Lansing, MI 48824, USA\\
+$^6$Department of Chemistry, Michigan State University,
+East Lansing, MI 48824, USA\\
+$^7$Department of Physics and Astronomy, University of Tennessee,
+Knoxville, TN 37996, USA}
+
+
+
+\maketitle
+
+\abstracts{We present recent coupled-cluster studies of nuclei, 
+with an emphasis on ground state and excited states of 
+closed shell nuclei. 
+Perspectives for future studies are delineated.}
+
+\section{Introduction}
+
+Physical properties, such as masses and life-times,
+of very short-lived, and hence very rare, nuclei are important
+ingredients that determine element production mechanisms in
+the universe. Given that present nuclear structure research facilities
+and the proposed Rare Isotope Accelerator will open significant
+territory into regions of medium-mass and heavier nuclei,
+it becomes important to investigate theoretical methods that will allow
+for a description of medium-mass systems that are involved in such
+element production. Such systems pose significant
+challenges to existing nuclear structure models, especially since many of
+these nuclei will be unstable and short-lived. How to deal with weakly
+bound systems and coupling to resonant states is an unsettled problem in
+nuclear spectroscopy.
+
+The {\it ab initio} coupled-cluster theory is a particularly promising
+candidate for such endeavors due to its enormous success in quantum
+chemistry. Here we  describe applications of 
+coupled cluster techniques to
+nuclear structure. The coupled-cluster methods are
+very promising, since they allow one to study ground- and 
+excited-state properties
+of nuclei
+with dimensionalities beyond the capability of present shell-model
+approaches, with a much smaller numerical effort when compared to
+the more traditional shell-model methods aimed at similar accuracies.
+Even though the shell-model combined with appropriate effective interactions
+offers in general a very good description of several stable and even weakly bound nuclei, the increasing single-particle level density of weakly bound systems
+makes it imperative to 
+identify and investigate methods that will extend to unstable systems,
+systems whose dimensionality is beyond reach for present shell-model studies, 
+typically limited today to  systems with at most $\sim 10^9$ basis states.
+
+The coupled-cluster approach offers several advantages. 
+It is fully microscopic and allows one to start with the free nucleon-nucleon interaction, or eventually three-body interaction models.
+It contains only linked diagrams, it is size extensive.
+and can be improved upon systematically, for example by the inclusion of 
+three-body interactions and more complicated correlations. 
+One can study both closed-shell systems 
+and valence systems and it is possible to derive effective two and three-body 
+interactions for open shell systems, with the inclusion of 
+complex interactions, 
+of great relevance for the study of weakly bound systems. Finally, 
+it is amenable to parallel computing.
+
+Here we present several coupled-cluster 
+results from recent calculations with singles,
+doubles, and noniterative triples and their generalizations to
+excited states applied to the $^4$He and $^{16}$O nuclei. A comparison
+of coupled cluster results with the results of the exact
+diagonalization of the Hamiltonian in the same model space shows that
+the quantum chemistry inspired coupled cluster approximations provide
+an excellent description of ground and excited states of nuclei.
+The results presented here are a summary of recent works 
+listed in Refs.~\cite{ref1,ref2}. 
+
+\section{Coupled Cluster approach to Nuclei }
+
+
+
+Nuclear many-body theory
+often begins with a $G$-matrix interaction which is derived from 
+an underlying bare nucleon-nucleon interaction.  
+This $G$-matrix can in turn be used in perturbative many-body approaches
+in order to derive effective interactions for the nuclear shell model, 
+see for example Refs.~\cite{mhj95,dehko04} for recent reviews.
+These approaches have shown be to rather successful in shell-model studies of 
+several nuclear systems. However, to derive effective interactions within 
+the framework of many-body perturbation theory 
+is hard to expand upon in a systematic manner by including for example 
+three-body diagrams.
+In addition, there are
+no clear signs of convergence, even  in terms of a weak interaction such as the $G$-matrix. Even in atomic and molecular physics, many-body perturbative
+methods are not much favoured any longer, see for example Ref.~\cite{helgaker} for a 
+critical discussion. 
+The lessons from atomic and molecular many-body systems clearly point to 
+the need of non-perturbative resummation techniques of large
+classes of diagrams.  
+
+An alternative to such resummation techniques is however offered by the 
+so-called no-core approach. There one typically defines a two-body or three-body effective interaction within a large, but limited model space. This is 
+parallel to our own approach below, where we limit
+the discussion to the no-core $G$-matrix so that all particles are active
+within our chosen model space.  Using a given basis expansion
+of the many-body wave function we could then solve the nuclear problem by
+diagonalization as has been pursued by the no-core shell model collaboration
+\cite{bruce1,bruce2,bruce3,petr_erich2002}. 
+In fact, the current and most advanced no-core
+techniques have approached $^{12}$C, with nearly
+converged solutions \cite{hayes03}.
+
+It should be evident, however, that diagonalization procedures scale 
+almost combinatorially with the number of particles in a given number of 
+single-particle orbitals. Because of this scaling, diagonalization simply
+becomes untenable at some point. The efforts to 
+expand diagonalization into $p$-shell nuclei with all 
+nucleons active, an effort that
+spans over ten years, illustrates the problem. The
+computational complexity of the nucleus grows dramatically as the size
+of the nucleus increases. As a simple example consider 
+oscillator single-particle states,
+and single-particle spaces consisting of 4 and 7 major
+oscillator shells, and compare the number of uncoupled many-body basis states
+there are for 4,8,12, and 16 particles. From table \ref{table_1}
+we see an enormous growth of the standard shell-model diagonalization
+problem within the space. We calculated the number of $M=0$ states for
+He and B
+within the model space consisting of 4 major shells
+and estimated the number of basis states for C and O. Also
+indicated are similar estimates for seven major oscillator
+shells. The important lesson to learn from these numbers is
+that the model-space expansion becomes astronomical quite quickly.
+\begin{table}[th]
+\tbl{Dimensions of the shell-model problem in four major oscillator
+shells  and 7 major oscillator
+shells with $M=0$.}
+{\footnotesize
+\begin{tabular}{@{}ccc@{}}
+\hline
+System &   4 shells & 7 shells \cr
+\hline
+$^{4}$He & 4E4  &  9E6 \cr
+$^{8}$B  & 4E8  &  5E13 \cr
+$^{12}$C & 6E11 &  4E19 \cr
+$^{16}$O & 3E14 &  9E24  \cr
+\hline
+\end{tabular}\label{table_1}}
+\vspace*{-13pt}
+\end{table}
+
+Yet, because of the advent of radioactive nuclear beam
+accelerators, such as the proposed Rare Isotope Accelerator (RIA) in the
+U.S., we face the daunting task of moving beyond
+$p$-shell nuclei in {\it ab initio} calculations. We should therefore
+investigate several ways of approaching the nuclear many-body 
+problem in order to successfully make the move into the RIA era.
+Here we will discuss the coupled-cluster 
+technique which can be used to pursue nuclear many-body calculations to 
+heavier systems beyond the $p$-shell. 
+
+Coupled cluster theory originated in nuclear physics
+\cite{coester58,coester60} around 1960.  Early studies in the
+seventies \cite{klz78} probed ground-state properties in limited
+spaces with free nucleon-nucleon interactions available at the
+time. The subject was revisited
+only recently by Bishop {\it et al.}
+\cite{ticcm}, for further theoretical development, and by Mihaila and
+Heisenberg \cite{hm99}, for coupled cluster calculations
+using realistic
+two- and three-nucleon
+bare interactions
+and expansions in the
+inverse particle-hole energy spacings.
+However, much of
+the impressive development in
+coupled cluster theory made in quantum chemistry in
+the last 20-30 years
+\cite{comp_chem_rev00,Bartlett95,Paldus99,Piecuch02a,Piecuch02b},
+after the introduction of coupled-cluster theory to quantum
+chemistry by \v{C}\'{\i}\v{z}ek in the 1960's \cite{cizek66,cizek69},
+still awaits applications to the nuclear many-body problem.
+
+Many solid theoretical reasons exist that motivate a pursuit of
+coupled-cluster methods. First of all, the method is fully
+microscopic and is capable of systematic and hierarchical improvements.
+Indeed, when one expands the cluster operator in coupled-cluster theory
+to all $A$ particles in the system, one exactly produces the fully-correlated
+many-body wave function of the system. The only input that the method
+requires is the nucleon-nucleon interaction. 
+The method may also be extended
+to higher-order interactions such as the three-nucleon interaction.
+Second, the method is size extensive which means that only linked
+diagrams appear in the computation of the  
+energy (the expectation value of the Hamiltonian) and amplitude equations.
+As discussed, for example, in Refs.~\cite{comp_chem_rev00,Paldus99} all shell model calculations
+that use particle-hole truncation schemes
+actually suffer from the inclusion of disconnected diagrams
+in computations of the energy.
+Third, coupled-cluster theory is also size
+consistent which means that the energy of two non-interacting fragments
+computed separately is the same as that computed for both fragments
+simultaneously. In chemistry, where the study of reactions
+is quite important, this is a crucial property not available
+in the interacting shell model (named configuration interaction in
+chemistry).
+Fourth, while the theory
+is not variational,
+the energy behaves as a variational quantity in most instances.
+Finally, from a
+computational point of view, the practical implementation of coupled
+cluster theory is amenable to parallel computing.
+
+We are in the process of applying quantum chemistry inspired coupled cluster
+methods
+\cite{comp_chem_rev00,Bartlett95,Paldus99,Piecuch02a,Piecuch02b,cizek66,cizek69,Stanton:1993,Piecuch99,Kowalski00,Kowalski03} to
+finite nuclei \cite{ref1,ref2}. We show one result
+from our current studies, namely the convergence of $^{16}$O
+as a function of the model space in which we perform the calculations.
+
+The basic idea of coupled-cluster theory is that the correlated many-body
+wave function $\mid \Psi\rangle$ 
+may be obtained by application of a cluster operator, 
+$T$, such that
+\begin{equation}
+\mid\Psi \rangle =\exp\left(T\right)\mid\Phi\rangle\;,
+\end{equation}
+where $\Phi$ is a reference Slater determinant chosen as a convenient starting
+point.  For example, we use the filled $0s$ state as the reference 
+determinant for $^4$He.
+
+The cluster operator $T$ is given by
+\begin{equation}
+T=T_1 + T_2 + \cdots T_A\;,
+\end{equation}
+and represent various
+$n$-particle-$n$-hole ($n$p-$n$h) excitation amplitudes such as
+\begin{eqnarray}
+T_1 &=& \sum_{a\langle\varepsilon_f, i\rangle\varepsilon_f}t^i_a a^\dagger_a a_i\;, \\
+T_2 &=& \frac{1}{4}\sum_{i,j\langle\varepsilon_f; ab \rangle \varepsilon_f}t^{ij}_{ab}
+a^\dagger_a a^\dagger_b a_j a_i\;,
+\end{eqnarray}
+and higher-order terms from $T_3$ to $T_A$.  
+The basic approximation is obtained by truncating the many-body
+expansion of $T$ at the $2p-2h$ cluster component $T_{2}$.
+This is 
+commonly referred to in the literature as the coupled-cluster singles and
+doubles approach (CCSD). 
+
+We compute the ground-state energy from
+\begin{equation}
+E_{\rm g.s.}=\langle\Phi\mid \exp\left(-T\right) H \exp\left(T\right)
+\mid\Phi\rangle\;. 
+\end{equation}
+The Campbell-Hausdorff-Baker relation may be used to rewrite the similarity
+transformation as an expansion in terms of nested commutators. 
+The expansion terminates exactly at four nested commutators  when
+the Hamiltonian contains, at most, two-body terms, and at six-nested 
+commutators when  three-body potentials are present. 
+This can also be seen diagrammatically, since $e^{-T} H e^{T}$ is
+equivalent to the connected product of the Hamiltonian and $e^T$, which
+has to terminate at the quartic terms in $T$ when interactions are
+pairwise (the Hamiltonian has at most four lines that can be connected
+with the $T$ vertices) and at the $T^{6}$ terms when interactions are
+three-body (the Hamiltonian has at most six lines that can be connected
+with the $T$ vertices) \cite{Paldus99,cizek66,cizek69}.
+The equations for amplitudes are found by left projection of
+excited Slater determinants
+so that
+\begin{eqnarray}
+0 &=& \langle\Phi_i^a\mid 
+\exp\left(-T\right) H \exp\left(T\right) \mid \Phi\rangle\;,  \nonumber \\ 
+0 &=& \langle\Phi_{ij}^{ab}\mid 
+\exp\left(-T\right) H \exp\left(T\right) \mid \Phi\rangle \;.
+\label{project_eqns}
+\end{eqnarray}
+The commutators also generate nonlinear terms within these expressions. 
+To derive these equations, we use the diagrammatic approach.
+In order to obtain the computationally efficient algorithms,
+which lead to the lowest operation count and memory requirements,
+we use the idea of recursively generated intermediates and
+diagram factorization \cite{Bartlett95}.
+The resulting equations can be cast into a computationally
+efficient form, where diagrams representing intermediates multiply
+diagrams representing cluster operators. The resulting equations
+can be solved using efficient iterative algorithms, see for example Refs.~\cite{ref1,Bartlett95}.
+
+
+In our coupled-cluster study of Ref.~\cite{ref1}, 
+we performed calculations of 
+the $^{16}$O ground state for up to seven major oscillator 
+shells as a function of $\hbar\omega$. 
+Fig.~\ref{fig_ox_hw} indicates the level of convergence
+of the energy per particle for $N=4,5,6,7$ shells. The experimental value
+resides at 7.98~MeV per particle.  This calculation is practically converged.
+By seven oscillator shells, the $\hbar\omega$ dependence becomes rather
+minimal and we find a ground-state binding energy of 7.52 MeV per particle in
+oxygen using the Idaho-A potential. Since the Coulomb interaction should give
+approximately 0.7 MeV/A of repulsion, and is not included in this
+calculation, we actually obtain approximately 6.90 MeV of nuclear binding
+in the 7 major shell calculation which is somewhat above the experimental
+value (most likely, due to the neglect of three-body interactions in the
+calculations). We note that the entire procedure ($G$-matrix plus CCSD) tends to
+approach from below converged solutions.
+\begin{figure}
+\begin{center}
+\includegraphics[angle=270, scale=0.35]{figure_ccsd_ox.eps}
+\caption{Dependence of the ground-state energy of $^{16}$O  on $\hbar\omega$
+as a function of increasing model space.}
+\label{fig_ox_hw}
+\end{center}
+\end{figure}
+We have recently performed calculations with eight major shells, and the 
+results are practically converged.
+ 
+We also considered chemistry inspired
+ noniterative corrections to the CCSD energy due to three-body clusters $T_{3}$
+(labelled triples in quantum chemistry).
+We performed this study in the model space consisting
+of four major oscillator shells, since we can perform exact shell-model
+calculations for nuclei such as $^{4}$He. 
+Table~\ref{table_ox16_gs} shows the total ground-state energy values
+obtained with the CCSD and one of the
+triples-correction approaches (labeled CR-CCSD(T) 
+\cite{Piecuch02a,Piecuch02b,Kowalski00,Kowalski03}
+in the table). Slightly
+differing triples-corrections yield similar corrections to the
+CCSD energy.
+The coupled cluster methods recover the bulk of the correlation
+effects, producing the results of the SM-SDTQ, or better, quality.
+SM-SDTQ stands for the expensive shell-model (SM) diagonalization in
+a huge space spanned by the reference and all
+singly (S), doubly (D), triply (T), and
+quadruply (Q) excited determinants.
+To understand this result, we note that
+the CCSD $T_1$ and $T_2$ amplitudes are similar in order of magnitude. (For
+an oscillator basis, both $T_1$ and $T_2$ contribute to the first-order
+MBPT wave function.)
+Thus, the $T_1 T_2$ {\it disconnected} triples are large, much larger than
+the $T_3$ {\it connected} triples, and the difference
+between the SM-SDT (SM singles, doubles, and triples)
+and SM-SD energies is mostly due to $T_1 T_2$.The small $T_3$
+effects, as estimated by CR-CCSD(T), are consistent
+with the SM diagonalization calculations. If the $T_3$ corrections
+were large, we would observe a significant lowering of the
+CCSD energy, far below the SM-SDTQ result.
+Moreover, the CCSD and CR-CCSD(T) methods
+bring the nonnegligible higher-than-quadruple excitations,
+such as $T_1^3 T_2$, $T_1 T_2^2$, and $T_{2}^{3}$, which are
+not present in SM-SDTQ. It is, therefore, quite likely that the
+CR-CCSD(T) results are very close to the results of the exact
+diagonalization, which cannot be performed.
+\begin{table}[ht]
+\tbl{The ground-state energy of $^{16}$O
+calculated using various coupled cluster methods
+and oscillator basis states.  }
+{\footnotesize
+\begin{tabular}{@{}cc@{}}
+\hline
+Method & Energy \cr
+\hline
+CCSD                       & -139.310 \cr
+CR-CCSD(T)                 & -139.467 \cr
+SM-SD                        & -131.887 \cr
+SM-SDT                       & -135.489 \cr
+SM-SDTQ                      & -138.387 \cr
+\hline
+\end{tabular}\label{table_ox16_gs}}
+\vspace*{-13pt}
+\end{table}
+
+These results indicate that the bulk of the correlation energy within
+a nucleus can be obtained by solving the CCSD equations. This gives us
+confidence that we should pursue this method in open shell systems
+and to excited states. We have recently 
+\cite{ref2} performed excited state calculations on $^{4}$He
+using the EOMCCSD (equation of motion CCSD) method.
+For the excited
+states $|\Psi_{K}\rangle$ and energies $E_{K}^{\rm (CCSD)}$ ($K > 0$),
+we apply the EOMCCSD (``equation of motion CCSD'') approximation
+\cite{Stanton:1993,Piecuch99} (equivalent to the 
+response CCSD method \cite{Monkhorst:1977}),
+in which
+\begin{equation}  
+|\Psi_{K}\rangle=R_{K}^{\rm (CCSD)} \exp(T^{\rm (CCSD)}) |\Phi\rangle .  
+\label{eomfun}  
+\end{equation}
+Here $R_{K}^{\rm (CCSD)} = R_{0}+ R_{1} + R_{2}$ is a sum of the
+reference ($R_{0}$), one-body ($R_{1}$), and two-body ($R_{2}$)
+components
+obtained by diagonalizing
+$\bar{H}^{{\rm (CCSD)}}$
+in the same space of singly and doubly excited determinants
+$|\Phi_{i}^{a}\rangle$ and $|\Phi_{ij}^{ab}\rangle$ as used in the
+ground-state CCSD calculations. These calculations may also be 
+corrected in a non-iterative fashion using the completely renormalized
+theory for excited states 
+\cite{Piecuch02a,Piecuch02b,Kowalski00,Kowalski03,Kowalski01}.  
+The low-lying
+$J=1$ state most likely results from the center-of-mass contamination
+which we have removed only from the ground state.  The $J=0$ and $J=2$
+states calculated using EOMCCSD and CR-CCSD(T) are in excellent
+agreement with the exact results. 
+\begin{table}[ht]
+\tbl{The excitation energies of $^4$He   
+calculated using the  
+oscillator basis states (in MeV).}  
+{\footnotesize
+\begin{tabular}{@{}ccccc@{}}  
+\hline
+State & EOMCCSD & CR-CCSD(T) & CISD & Exact \cr
+\hline
+J=1   &  11.791 & 12.044 & 17.515    & 11.465 \cr
+J=0   &  21.203 & 21.489 & 24.969    & 21.569 \cr
+J=2   &  22.435 & 22.650 & 24.966    & 22.697 \cr
+\hline
+\end{tabular}\label{table_2}}
+\vspace*{-13pt}
+\end{table}
+We have recently also computed excited states in $^{16}$O, with a particular 
+emphasis on the first $3_1^-$ state, which is known to be of a 1p-1h nature.
+Our results based on the EOMCCSD method yields 
+13.57 MeV for five shells and 12.98 MeV for six shells, to be compared 
+with the experimental value of 6.13 MeV. We expect that with seven shells
+and the  inclusion of triples to get closer to the experimental value.
+For states like this and for two-body interactions it is
+well known in quantum chemistry that EOMCCSD is a very accurate
+approach, producing excitation energies within 10 \% of the exact values.
+Thus, we will be able to predict the result corresponding to
+an Idaho-A potential that we used in these calculations once we complete
+our work for the seven shells and extrapolate the energies to the complete
+basis set limit. These results will be presented elsewhere, see 
+Ref.~\cite{marta2004}. 
+
+Our experience thus far with the 
+quantum chemistry inspired coupled cluster
+approximations to calculate the ground and excited states of the
+$^{4}$He and $^{16}$O nuclei indicates that this will be a promising
+method for nuclear physics.  By comparing coupled cluster results
+with the exact results obtained by diagonalizing the Hamiltonian in
+the same model space, we demonstrated that relatively inexpensive
+coupled cluster approximations recover the bulk of the nucleon
+correlation effects in ground- and excited-state nuclei. These results
+are a strong motivation to further develop coupled cluster methods for
+the nuclear many-body problem, so that accurate {\it ab initio}
+calculations for small- and medium-size nuclei become as routine as
+molecular electronic structure calculations.
+
+
+\section{Perspectives and Future Plans}
+The study of exotic nuclei opens new 
+challenges to nuclear physics. 
+The challenges and the excitement arise 
+because exotic nuclei will present new and 
+radically different manifestations of nucleonic matter 
+that occur near the bounds of nuclear existence, 
+where the special features of weakly bound, quantal systems 
+come into prominence. Furthermore, many of these
+nuclei are key to understanding matter production in the universe.
+Given that present and future nuclear structure research facilities
+will open significant
+territory into regions of medium-mass and heavier nuclei,
+it becomes important to investigate theoretical methods that will allow
+for a description of medium-mass nuclear systems. 
+Such systems pose significant
+challenges to existing nuclear structure models, especially since many of
+these nuclei will be unstable and short-lived. How to deal with weakly
+bound systems and coupling to resonant states is an unsettled problem in
+nuclear spectroscopy. 
+
+Many-body methods like the 
+coupled cluster theory offer possibilities for extending
+microscopic {\it ab initio} calculations to nuclei of the size of $^{40}$Ca.
+Especially the coupled-cluster methods are
+very promising, since they allow one to study 
+ground- and excited-state properties of nuclei
+with dimensionalities beyond the capability of present shell-model
+approaches. As demonstrated here and in Ref.~\cite{ref2} we 
+show for the first time how to calculate 
+excited states for a nucleus using coupled cluster 
+methods from quantum chemistry.
+For the weakly bound nuclei to be produced by future low-energy 
+nuclear structure facilities
+it is almost imperative to increase the
+degrees of freedom under study in order to reproduce
+basic properties of these systems. 
+We are presently working on deriving complex 
+effective interactions, see for example
+Ref.~\cite{hvh2004}, 
+for weakly bound systems to be used in coupled cluster 
+studies of these weakly bound nuclei. 
+
+We have based most of our analysis 
+using two-body nucleon-nucleon interactions only. 
+We feel this is important since
+techniques like the coupled cluster methods 
+allow one to include a much larger
+class of many-body terms than done earlier. Eventual discrepancies 
+with experiment 
+such as the missing reproduction of e.g., the first 
+excited $2^+$ state in a $1p0f$ calculation
+of $^{48}$Ca, can then be ascribed to eventual 
+missing three-body forces, as indicated by the studies
+in Refs.~\cite{petr_erich2002,bob1,bob2,bob3,apr98,petr_erich2003} 
+for light nuclei. 
+The inclusion of real three-body interactions belongs 
+to our future plans.
+
+ \section*{Acknowledgments}
+ Supported by the U.S. Department of Energy
+ under
+ Contract Nos. DE-FG02-96ER40963 (University of Tennessee),
+ DE-AC05-00OR22725 with UT-Battelle, LLC (Oak Ridge
+ National Laboratory), and DE-FG02-01ER15228 (Michigan State University),
+ the National Science Foundation (Grant No. CHE-0309517; Michigan State University),
+ the Research Council of Norway, and the Alfred P. Sloan Foundation.
+
+ \begin{thebibliography}{200}
+\bibitem{ref1} D.J.~Dean, and M.~Hjorth-Jensen, 
+Phys. Rev. {\bf C69} (2004) 054320.
+\bibitem{ref2} K.~Kowalski, D.J.~Dean, M.~Hjorth-Jensen, T.~Papenbrock, 
+and P.~Piecuch, Phys. Rev. Lett.~{\bf 92} (2004) 132501.
+\bibitem{mhj95} M.\ Hjorth-Jensen, T.T.S.\ Kuo and E.\ Osnes,
+Phys.\ Rep.\ {\bf 261} (1995) 125.
+\bibitem{dehko04} D.J.~Dean, T.~Engeland, M.\ Hjorth-Jensen, M.P.~Kartamyshev, 
+and E.\ Osnes, Prog.~Part.~Nucl.~Phys.~{\bf 53} (2004) 419.
+\bibitem{helgaker} T.~Helgaker, P.~J{\o}rgensen, and J.~Olsen, 
+ {\em Molecular Electronic Structure Theory. Energy and Wave Functions}, (Wiley, Chichester, 2000).
+\bibitem{bruce1} P.~Navr\'atil and B.R.~Barrett, Phys. Rev. {\bf C57} (1998) 562.
+\bibitem{bruce2} P.~Navr\'atil, J.P.~Vary, and B.R.~Barrett
+Phys.~Rev.~Lett.~{\bf 84} (2000) 5728.
+\bibitem{bruce3} P.~Navr\'atil, J.P.~Vary, and B.R.~Barrett, Phys. Rev. {\bf C62 }(2000) 054311.
+\bibitem{petr_erich2002} P.~Navr\'atil and W.E.~Ormand, Phys. Rev. Lett.~{\bf 88} (2002) 152502.
+\bibitem{hayes03} A.C.~Hayes, P.~Navr\'atil, and J.P.~Vary,  Phys. Rev. Lett.~{\bf 91}
+(2003)  012502.
+\bibitem{coester58} F.~Coester, Nucl. Phys. {\bf 7} (1958) 421.
+\bibitem{coester60} F.~Coester and H.~K\"ummel, Nucl. Phys.~{\bf 17} (1960) 477.\bibitem{klz78} H.\ K\"{u}mmel, K.H.\ L\"{u}hrmann and J.G.\ Zabolitzky, Phys.\ Rep.\
+{\bf 36} (1977) 1.
+\bibitem{ticcm} R.F.\ Bishop, E.\ Buendia, M.F.\ Flynn and R.\ Guardiola, J.\ Phys.\ G:
+Nucl.\ Part.\ Phys.\ {\bf 17} (1991) 857; 
+ibid.\ {\bf 18} (1992) 1157; 
+ibid.\ {\bf 19} (1993) 1663; 
+R.\ Guardiola, P.I.\ Moliner, J.\ Navarro, R.F.\ Bishop, A.\ Puente and
+N.R.\ Walet, Nucl.\ Phys.\ {\bf A609} (1996) 218; R.F.\ Bishop and
+R.\ Guardiola.
+\bibitem{hm99} J.H.~Heisenberg, and B.~Mihaila, Phys. Rev. {\bf C59} (1999) 1440\bibitem{comp_chem_rev00} T.D.~Crawford and H.F.~Schaefer III,  Rev.~Comp.~Chem.~{\bf 14} (2000) 33..
+\bibitem{Bartlett95} S.A.~Kucharski, R.J.~Bartlett, Theor.~Chim.~Acta {\bf 80} (1991) 387;
+P.~Piecuch, S.A.~Kucharski, K.~Kowalski, and M.~Musia{\l},
+Comp.~Phys.~Comm,~{\bf 149} (2002) 72, and references
+therein. 
+\bibitem{Paldus99} J. Paldus and X. Li, Adv.~Chem.~Phys.~{\bf 110} (1999) 1.
+\bibitem{Piecuch02a} P.~Piecuch and K.~Kowalski and I.S.O.~Pimienta and M.J.~McGuire,
+ Int. Rev. Phys. Chem. {\bf 21} (2002) 527.
+\bibitem{Piecuch02b} P. Piecuch and K. Kowalski and P.-D. Fan and I.S.O. Pimienta,
+eds.~J. Maruani, R. Lefebvre and E. Br{\"a}ndas,
+{\em Topics in Theoretical Chemical Physics} vol.~{\bf 12},
+     series     Progress in Theoretical Chemistry and Physics,
+ (Kluwer, Dordrecht, 2004) 119.
+\bibitem{cizek66} J. \v{C}\'{\i}\v{z}ek, J. Chem. Phys. {\bf 45} (1966) 4256.
+\bibitem{cizek69} J. {\v C}{\'\i}{\v z}ek, Adv. Chem. Phys. {\bf 14} (1969) 35. 
+\bibitem{Stanton:1993} J. F. Stanton and R. J. Bartlett, J. Chem. Phys.~{\bf 98} (1993) 7029.
+\bibitem{Piecuch99} P. Piecuch and R. J. Bartlett, Adv. Quantum Chem.~{\bf 34} (1999) 295. 
+\bibitem{Kowalski00} K. Kowalski and P. Piecuch, J. Chem. Phys.~{\bf 113} (2000) 18.
+\bibitem{Kowalski03} K. Kowalski and P. Piecuch, J. Chem. Phys.~{\bf 120} (2004) 1715.
+\bibitem{Monkhorst:1977} H.~Monkhorst, Int. J. Quantum Chem. Symp.~{\bf 11} (1977) 421.
+\bibitem{Kowalski01} K. Kowalski and P. Piecuch, J. Chem. Phys.~{\bf 115} (2001) 2966.
+\bibitem{marta2004} M.~Wloch, D.J.~Dean, J.R.~Gour, M.~Hjorth-Jensen, K.~Kowalski, T.~Papenbrock, and P.~Piecuch, in preparation for Phys.~Rev.~Lett.
+\bibitem{hvh2004} G.~Hagen, J.S.~Vaagen, and M.~Hjorth-Jensen, 
+J.~Phys.~A:Math.~Gen.~{\bf 37} (2004) 8991.
+\bibitem{bob1} S.C.~Pieper, V.R.~Pandharipande, R.B.~Wiringa, and J.~Carlson, Phys.~Rev.~{\bf C64}
+(2001) 014001
+\bibitem{bob2} S.C.~Pieper, K.~Varga, and R.B.~Wiringa, Phys.~Rev.~{\bf C66}
+(2002) 0044310
+\bibitem{bob3}  R.B.~Wiringa and S.C.~Pieper, Phys.~Rev.~Lett.~{\bf 89}
+(2002) 182501
+\bibitem{apr98} A.\ Akmal, V.R.\ Pandharipande and D.G.\
+                Ravenhall, Phys.\ Rev.\ {\bf C58}  (1998) 1804.
+\bibitem{petr_erich2003} P.~Navr\'atil and W.E.~Ormand, Phys. Rev.~{\bf C68} (2003) 034305.
+
+ \end{thebibliography}
+
+ \end{document}
+
+

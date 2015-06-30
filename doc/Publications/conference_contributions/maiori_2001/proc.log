@@ -1,0 +1,251 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 2001.3.27)  27 AUG 2001 15:26
+**proc
+(proc.tex
+LaTeX2e <1999/12/01> patch level 1
+Babel <v3.6Z> and hyphenation patterns for american, french, german, ngerman, i
+talian, portuges, russian, spanish, nohyphenation, loaded.
+(ws-p8-50x6-00.cls
+Document Class: ws-p8-50x6-00 1996/05/26 v1.3r Standard LaTeX document class
+\trimheight=\dimen102
+\trimwidth=\dimen103
+\typeheight=\dimen104
+\typewidth=\dimen105
+\tempdimen=\dimen106
+\normaltextheight=\dimen107
+\c@section=\count79
+\c@subsection=\count80
+\c@arabiclistc=\count81
+(/usr/share/texmf/tex/generic/misc/psfig.sty
+\@unused=\write3
+\ps@stream=\read1
+\p@intvaluex=\dimen108
+\p@intvaluey=\dimen109
+
+psfig/tex 1.10-dvips
+) (/usr/share/texmf/tex/plain/dvips/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+\epsffilein=\read2
+\epsfframemargin=\dimen110
+\epsfframethickness=\dimen111
+\epsfrsize=\dimen112
+\epsftmp=\dimen113
+\epsftsize=\dimen114
+\epsfxsize=\dimen115
+\epsfysize=\dimen116
+\pspoints=\dimen117
+\epsfnoopenhelp=\toks14
+) (/usr/share/texmf/tex/latex/graphics/epsfig.sty
+
+LaTeX Warning: You have requested document class `ws-p8-50x6-00',
+               but the document class provides `epsfig'.
+
+Document Class: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 1999/02/16 v1.0l Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+\epsfxsize=\dimen120
+\epsfysize=\dimen121
+)
+\c@figure=\count82
+\c@table=\count83
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+)
+(/usr/share/texmf/tex/generic/pstricks/pst-plot.sty
+Package: pst-plot 1997/03/25 package wrapper for PSTricks pst-plot.tex
+
+(/usr/share/texmf/tex/generic/pstricks/pst-plot.tex  v97 patch 1, 1997/04/28
+(/usr/share/texmf/tex/generic/pstricks/pstricks.tex
+`PSTricks' v97 patch 10  <1999/03/24> (tvz)
+\pst@dima=\dimen122
+\pst@dimb=\dimen123
+\pst@dimc=\dimen124
+\pst@dimd=\dimen125
+\pst@dimg=\dimen126
+\pst@dimh=\dimen127
+\pst@hbox=\box26
+\pst@boxg=\box27
+\pst@cnta=\count84
+\pst@cntb=\count85
+\pst@cntc=\count86
+\pst@cntd=\count87
+\pst@cntg=\count88
+\pst@cnth=\count89
+\pst@toks=\toks16
+(/usr/share/texmf/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen128
+\psxunit=\dimen129
+\psyunit=\dimen130
+\pslinewidth=\dimen131
+\pst@customdefs=\toks17
+\pslinearc=\dimen132
+\everypsbox=\toks18
+\psframesep=\dimen133
+\pslabelsep=\dimen134
+\theoverlaybox=\box28
+)
+(/usr/share/texmf/tex/generic/pstricks/multido.tex  v1.4, 93/01/14 <tvz>
+\multido@count=\count90
+\multidocount=\count91
+\multido@stuff=\toks19
+)))
+(/usr/share/texmf/tex/plain/dvips/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+\epsffilein=\read3
+\epsfframemargin=\dimen135
+\epsfframethickness=\dimen136
+\epsfrsize=\dimen137
+\epsftmp=\dimen138
+\epsftsize=\dimen139
+\epsfxsize=\dimen140
+\epsfysize=\dimen141
+\pspoints=\dimen142
+\epsfnoopenhelp=\toks20
+) (proc.aux)
+\openout1 = `proc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 33.
+
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[1
+
+]
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[2]
+Overfull \hbox (5.43292pt too wide) in paragraph at lines 232--233
+ [] 
+ []
+
+
+Overfull \hbox (5.43292pt too wide) in paragraph at lines 317--318
+ [] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 353.
+
+Overfull \hbox (5.43292pt too wide) in paragraph at lines 457--458
+ [] 
+ []
+
+
+Overfull \hbox (5.43292pt too wide) in paragraph at lines 539--540
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 33.32591pt on input line 544.
+
+
+Underfull \vbox (badness 5189) has occurred while \output is active []
+
+
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[4]
+Overfull \hbox (11.88196pt too wide) in paragraph at lines 583--591
+ [] 
+ []
+
+
+Underfull \vbox (badness 5189) has occurred while \output is active []
+
+
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[5]
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[6]
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[7]
+Underfull \vbox (badness 5954) has occurred while \output is active []
+
+
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[8]
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[9]
+Overfull \hbox (6.79999pt too wide) has occurred while \output is active
+[]
+ []
+
+[10] (proc.aux) ) 
+Here is how much of TeX's memory you used:
+ 1783 strings out of 20863
+ 19238 string characters out of 196073
+ 103592 words of memory out of 350001
+ 4753 multiletter control sequences out of 10000+15000
+ 7374 words of font info for 26 fonts, out of 400000 for 1000
+ 26 hyphenation exceptions out of 10000
+ 34i,11n,43p,865b,363s stack positions out of 3000i,100n,1500p,50000b,4000s
+
+Output written on proc.dvi (10 pages, 58616 bytes).

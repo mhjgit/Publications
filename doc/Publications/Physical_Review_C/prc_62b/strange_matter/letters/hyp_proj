@@ -1,0 +1,68 @@
+Hola companeros de lucha:
+I'm trying to give a kinda summary after Isaac's visit and
+what we have achieved and sketch some future plans:
+
+1) We have fixed were the Sigma^- appears in a BHF calc, 
+   0.37 fm^-3. It does not (in my opinion) make any sense
+   to fix the Lambda as well the way Baldo, Burgio and Schulze did,
+   since the Lambda self-energy will be influenced by the fact
+   that the Sigma^-1 now has a finite k_F. We may learn equally much
+   as from doing an ideal gas.
+
+2) We have run up to densities 1.0 fm^-3 for K-F =0 for all
+   hyperons and with different proton fractions. This was done
+   in order to fix beta-stable pn matter and have a point for the 
+   hyperon fractions as well. The pn energy of beta-stable matter
+   compares with what other interactions give. Angels trick with 
+   the convergence problem saved the day.
+
+3) We are running (actually the job is still in a queue) for denisties
+   0.4 to 0.8 with different proton, Sigma- and Lambda fractions
+   in order to do beta-stable matter up to these densities.
+   Most likely, since it is a time consuming job) we will have 
+   an answer at the end of next week. 
+
+4) Thereafter we will make similar runs for densities up to 1.0, or higher.
+
+With these results we will then have the real and first microscopic calc
+of beta-stable matter with hyperons. 
+
+I have the following proposal for what to do with these calcs:
+
+a) we make a letter (probably PRL) where we show the structure of 
+beta-stable matter, give pairing gaps and do calcs of neutron star
+properties. (i'll prepare this stuff as soon as we've done the 
+beta-stable matter analysis)
+   
+b) we write a longer paper which includes all the gory details
+of the beta-stable matter calc, hyperonic and nucleonic superfluidity
+and other neutron star properties and other things we'd like to show.
+
+c) we attempt another letter which just addresses the cooling rates
+due to hyperons, i.e. we calc the electroweak direct URCA processes.
+Input are obviously the effective masses for beta-stable matter.
+
+d) to the finite nuclei stuff: 
+We could now do a calc of the self-energy (and effective interactions as well)
+for nuclei with say two Lambdas.
+We could then do the following for the nuclear matter g-matrix
+because the problem witht he old recipe was that we used a
+g-matrix with a given k_f for nucleons. 
+Since we do not know what the k_f for the lambdas and sigmas shoudl be like,
+(we could obviously calc one and play around, however the number of variables
+are then too mnay)
+we could calc a starting g-mat for the self-energy programme 
+with no pauli operator, and then use the methods which i've been using
+in order to calc a g-mat for finite nuclei, or use this g-mat as
+a starting point in the same was as earlier.
+
+e) what about the delta self-energy? any feeling for that?
+valcarce and paco fernandez have after all an interaction for the 
+delta-N sector......
+
+Bueno, basta con l'entropia, el seminar del Isaac es a le 14.15.
+Despues, Isaac va en vacaciones.......
+
+Un abrazo i buen cap semana
+Martino
+

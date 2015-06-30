@@ -1,0 +1,104 @@
+     
+
+\* Shell model calculation of identical particle system -- title: Sn^118
+
+\* The particle number: 18
+
+\* Total angular momentum J is (even, odd): even
+\* Twice total projection of angular momentum: 0
+\* Total parity (+, -): +
+
+\* The number of particle j-orbits: 5
+
+	     <n  l  2*j   min_part  max_part energy:>
+\* Orbit:     0  5  11       0         12      3.55
+\* Orbit:     0  4   7       0          8      0.08 
+\* Orbit:     1  2   5       0          6      0.00
+\* Orbit:     1  2   3       0          4      1.65
+\* Orbit:     2  0   1       0          2      1.55
+
+
+<The data files>
+
+\* Input two-particle v_effective in J-scheme: v_nn.dat
+\* Input three-particle v_effective in J-scheme: 
+
+    < Calculation to find the shell model dimension    --> dimension	    >
+    < Lanczos iteration based on random initial vector --> random-start     >
+    < Continue a previous random-start process         --> random-continue  >
+    < Lanczos iteration with fixed-J start vector      --> fixed-J-start    >
+    < Continue a previous fixed-J start vector         --> fixed-J-continue >
+
+\* Type of calculation process: random-start
+
+< Temporary files for storage of nondiag matrix elements and Lanczos vector>
+< SMALL CALCULATIONS: appr dimension: |SD_basis_states>  < 500.000         >
+< LARGE CALCULATIONS: Specify max file dimension for nondiag <SD'|OP|SD>   >
+<                     and max file dimension for the Lanczos vector        >
+
+\* Max. file size for nondiag <SD|OP|SD> in Gb (small 0 - large > 0): 20
+\* Max. file size for lanczos vectors in Gb    (small 0 - large > 0): 1 
+
+<Energy eigenvalue parameters>
+
+\* Maximum Lanczos iterations (<1000): 50
+\* Wanted number of converged eigenstates: 2 
+
+ <In case of fixed-J the following data must be specified>
+
+\* Total 2J value: 
+\* Init vector file: 
+\* Number of start vectors:  
+\* List of vector no: 
+
+\* END_OF_INPUT_FILE:
+\* END_OF_INPUT_FILE:
+
+                            -----  Results  ----
+
+single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  5  -  11   11   3.55 *    8     1    0  4  +   7    3   0.08
+  1     0    0  5  -  11    9   3.55 *    9     2    1  2  +   5    3   0.00
+  2     0    0  5  -  11    7   3.55 *   10     3    1  2  +   3    3   1.65
+  3     1    0  4  +   7    7   0.08 *   11     0    0  5  -  11    1   3.55
+  4     0    0  5  -  11    5   3.55 *   12     1    0  4  +   7    1   0.08
+  5     1    0  4  +   7    5   0.08 *   13     2    1  2  +   5    1   0.00
+  6     2    1  2  +   5    5   0.00 *   14     3    1  2  +   3    1   1.65
+  7     0    0  5  -  11    3   3.55 *   15     4    2  0  +   1    1   1.55
+
+Number of asymmetric slater determinants = 6321920
+Number of symmetric slater determinants  =   11440
+Total number of slater determinants      =12655280
+
+Matrix elements stored in file : Sn^118-SD-veffJ
+Number of stored <SD'|OP|initSD>: 1661198740
+Up to and including |initSD_asym> = 5598849 - Last |initSD_asym> =  6321920
+Up to and including |initSD_sym>  = 0 - Last |initSD_sym>  =  11439
+Time used : 2 hour 4 min 10 sec
+
+
+Matrix elements stored in file : Sn^118-SD-J**2
+Number of stored <SD'|OP|initSD>: 0
+Up to and including |initSD_asym> = 1 - Last |initSD_asym> =  6321920
+Up to and including |initSD_sym>  = 0 - Last |initSD_sym>  =  11439
+Time used : 0 hour 0 min 18 sec
+
+
+The Lanczos iteration process has reached  maximum iterartions = 50 - specified in input data
+
+Final Eigenvalues
+The total parity is positive
+
+
+The ground state energy =   -8.8144
+
+E(0)=    0.0000  <J**2> =  0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          2.780  5.981  5.387  2.351  1.501
+
+E(1)=    1.0682  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          2.984  5.867  5.375  2.371  1.403
+
+Total shell model process time used 23 hour 20 min 27 sec

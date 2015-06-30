@@ -1,0 +1,155 @@
+From hh@nordita.dk Thu Sep 24 15:13:39 1998
+Return-Path: <hh@nordita.dk>
+Delivery-Date: Thu, 24 Sep 1998 15:13:38 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Thu, 24 Sep 1998 15:08:13 +0200
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Thu, 24 Sep 1998 15:08:09 +0200 (MET DST)
+Received: (from hh@localhost) by norserv.nordita.dk (8.8.5/8.8.5) id PAA02285 
+          for m.h.jensen@fys.uio.no; Thu, 24 Sep 1998 15:06:45 +0200 (MET DST)
+Date: Thu, 24 Sep 1998 15:06:45 +0200 (MET DST)
+From: Henning Heiselberg <hh@nordita.dk>
+Message-Id: <199809241306.PAA02285@norserv.nordita.dk>
+To: m.h.jensen@fys.uio.no
+Status: R
+Content-Length: 2300
+
+ 0.062     0.0    92.9
+ 0.188     0.2    81.6
+ 0.312     0.4    72.4
+ 0.437     0.7    64.6
+ 0.562     1.0    57.9
+ 0.687     1.4    52.1
+ 0.812     1.7    47.1
+ 0.937     2.3    42.9
+ 1.062     2.9    39.3
+ 1.187     3.7    36.3
+ 1.312     4.6    33.9
+ 1.437     5.6    32.0
+ 1.562     6.8    30.7
+ 1.687     8.2    29.7
+ 1.812     9.7    29.3
+ 1.937    11.5    29.2
+ 2.062    13.4    29.6
+ 2.188    15.5    30.4
+ 2.312    17.9    31.5
+ 2.438    20.4    33.0
+ 2.563    23.2    34.8
+ 2.688    26.2    37.0
+ 2.813    29.4    39.5
+ 2.938    32.9    42.3
+ 3.063    36.6    45.5
+ 3.188    40.6    48.9
+ 3.313    44.8    52.6
+ 3.438    49.3    56.6
+ 3.562    54.0    60.9
+ 3.688    59.0    65.5
+ 3.812    64.3    70.3
+ 3.937    69.9    75.4
+ 4.062    75.7    80.7
+ 4.187    81.8    86.3
+ 4.312    88.1    92.2
+ 4.437    94.8    98.2
+ 4.562   101.8   104.5
+ 4.687   109.0   111.1
+ 4.812   116.5   117.8
+ 4.937   124.3   124.8
+ 5.062   132.5   132.0
+ 5.187   140.8   139.4
+ 5.312   149.5   147.0
+ 5.437   158.5   154.9
+ 5.562   167.9   162.9
+ 5.687   177.4   171.2
+ 5.812   187.4   179.6
+ 5.937   197.5   188.2
+ 6.062   208.1   197.0
+ 6.187   218.9   206.1
+ 6.312   230.0   215.3
+ 6.437   241.4   224.7
+ 6.562   253.3   234.2
+ 6.687   265.3   244.0
+ 6.812   277.7   253.9
+ 6.937   290.3   264.0
+ 7.062   303.4   274.3
+ 7.187   316.7   284.7
+ 7.312   330.4   295.4
+ 7.437   344.3   306.2
+ 7.562   358.6   317.1
+ 7.687   373.2   328.2
+ 7.812   388.0   339.5
+ 7.937   403.4   351.0
+ 8.062   418.9   362.6
+ 8.187   434.8   374.3
+ 8.312   450.9   386.2
+ 8.437   467.5   398.3
+ 8.562   484.4   410.5
+ 8.687   501.4   422.9
+ 8.812   518.9   435.4
+ 8.937   536.8   448.1
+ 9.062   554.9   460.9
+ 9.187   573.4   473.9
+ 9.312   592.2   487.0
+ 9.437   611.3   500.2
+ 9.562   630.7   513.6
+ 9.687   650.6   527.2
+ 9.812   670.7   540.8
+ 9.937   691.0   554.6
+10.062   711.9   568.6
+10.187   732.9   582.7
+10.312   754.2   596.9
+10.437   776.1   611.2
+10.562   798.3   625.7
+10.687   820.5   640.3
+10.812   843.3   655.1
+10.937   866.5   670.0
+11.062   889.6   685.0
+11.187   913.4   700.1
+11.312   937.5   715.3
+11.437   962.0   730.7
+11.562   986.7   746.2
+11.687  1011.5   761.9
+11.812  1036.9   777.6
+11.937  1062.6   793.5
+12.062  1088.6   809.5
+12.187  1114.9   825.6
+12.312  1142.0   841.8
+12.437  1169.0   858.2
+
+From hh@nordita.dk Thu Sep 24 15:13:42 1998
+Return-Path: <hh@nordita.dk>
+Delivery-Date: Thu, 24 Sep 1998 15:13:42 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Thu, 24 Sep 1998 15:08:17 +0200
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Thu, 24 Sep 1998 15:08:14 +0200 (MET DST)
+Received: (from hh@localhost) by norserv.nordita.dk (8.8.5/8.8.5) id PAA02295 
+          for m.h.jensen@fys.uio.no; Thu, 24 Sep 1998 15:06:52 +0200 (MET DST)
+Date: Thu, 24 Sep 1998 15:06:52 +0200 (MET DST)
+From: Henning Heiselberg <hh@nordita.dk>
+Message-Id: <199809241306.PAA02295@norserv.nordita.dk>
+To: m.h.jensen@fys.uio.no
+Status: R
+Content-Length: 30
+
+ 4.812   116.5
+ 5.299   146.2
+
+From hh@nordita.dk Thu Sep 24 15:13:43 1998
+Return-Path: <hh@nordita.dk>
+Delivery-Date: Thu, 24 Sep 1998 15:13:43 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Thu, 24 Sep 1998 15:08:19 +0200
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Thu, 24 Sep 1998 15:08:16 +0200 (MET DST)
+Received: (from hh@localhost) by norserv.nordita.dk (8.8.5/8.8.5) id PAA02299 
+          for m.h.jensen@fys.uio.no; Thu, 24 Sep 1998 15:06:54 +0200 (MET DST)
+Date: Thu, 24 Sep 1998 15:06:54 +0200 (MET DST)
+From: Henning Heiselberg <hh@nordita.dk>
+Message-Id: <199809241306.PAA02299@norserv.nordita.dk>
+To: m.h.jensen@fys.uio.no
+Status: R
+Content-Length: 30
+
+ 1.437     5.6
+12.244   832.9
+

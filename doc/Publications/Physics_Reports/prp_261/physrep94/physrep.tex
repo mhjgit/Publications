@@ -1,0 +1,506 @@
+\documentstyle[a4,epsf]{espart}
+
+
+%               Preamble
+
+%               definition of various commands
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\qbox}{$\hat{Q}$-box }
+\newcommand{\nl}[1]{\line(1,0){10}\raisebox{-0.6ex}{ #1}}
+\newcommand{\ndot}{\line(1,0){2}\hspace{0.2cm}\line(1,0)
+{2}\hspace{0.2cm}\line(1,0){2}\raisebox{-0.6ex}}
+
+%               end of definitions and begin of document
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Realistic Effective Interactions for Nuclear Systems}
+
+\author{Morten Hjorth-Jensen}
+\address{Department of Physics, University of  Oslo, N-0316 Oslo, Norway\\
+         and\\ECT*, European Centre for Studies in Theoretical Nuclear Physics
+         and Related Areas, Trento, Italy}
+\author{Thomas T.S.\ Kuo}
+\address{Department of Physics, State University of New York at Stony Brook,
+NY 11794, USA}
+\author{Eivind Osnes}
+\address{Department of Physics, University of  Oslo, N-0316 Oslo, Norway}
+
+
+\maketitle
+
+\begin{abstract}
+
+A review of perturbative many-body descriptions of several nuclear
+systems is presented in this report. Examples of systems considered
+are symmetric and asymmetric nuclear matter and
+finite
+nuclei with few valence particles.
+
+Our many-body description starts with the most recent meson-exchange
+potential models for the nucleon-nucleon interaction, an interaction
+which in turn is used in our perturbative schemes to evaluate 
+the effective interaction for finite nuclei and infinite nuclear
+matter.
+A unified perturbative approach based on time-dependent perturbation
+theory is elaborated.
+
+For finite nuclei we present new results for the effective interaction 
+and the energy spectra in the mass
+areas of oxygen, calcium and tin.
+
+\end{abstract}
+
+\end{frontmatter}
+
+\clearpage
+
+\tableofcontents
+
+\clearpage
+
+\section{Introduction}
+\input{sec1}
+
+
+\input{sec2}
+
+\section{Modern nucleon-nucleon potentials}
+\input{sec3}
+
+\section{Folded diagrams and theories of effective interactions}
+\input{sec4}
+
+\section{$G$-matrix for nuclear matter and finite nuclei}
+\input{sec5}
+
+\section{Results for finite nuclei}
+\input{sec6}
+
+\section{Model-space approach for nuclear matter}
+\input{sec7}
+
+\section{The Dirac-Brueckner-Hartree-Fock approach}
+\input{sec8}
+
+\section{Overview and perspectives}
+\input{sec9}
+
+\clearpage
+
+\input{appendix}
+
+\clearpage
+
+%        references
+
+\begin{thebibliography}{200}
+
+
+% references to sec 1
+
+
+\bibitem{ko90} T.T.S.\ Kuo and E.\ Osnes, Folded-Diagram Theory
+of the Effective Interaction in Atomic Nuclei, Springer Lecture
+Notes in Physics, (Springer, Berlin, 1990) Vol.\ 364.
+\bibitem{eo77} P.J.\ Ellis and E.\ Osnes, Rev.\ Mod.\ Phys.\
+ 49 (1977) 777.
+\bibitem{kuo81} T.T.S.\ Kuo, Lecture Notes in
+Physics; Topics in Nuclear Physics, eds.\ T.T.S.\ Kuo and S.S.M.\
+Wong, (Springer, Berlin, 1981) Vol.\ 144, p.\ 248.
+\bibitem{hom92} M.\ Hjorth-Jensen, E.\ Osnes and H.\ M\"{u}ther,
+Ann.\ of Phys.\   213 (1992) 102.
+\bibitem{no88}  J.W.\ Negele and H.\ Orland, Quantum Many-Particle
+Systems (Addison-Wesley, Redwood City, 1988).
+\bibitem{br86}  J.P.\ Blaizot and G.\ Ripka, Quantum Theory of Finite
+Systems (MIT press, Cambridge, 1986).
+\bibitem{fw71}  A.L.\ Fetter and J.D.\ Walecka, Quantum Theory of
+Many-particle Systems (McGraw-Hill, New York, 1971).
+\bibitem{lm85}  I.\ Lindgren and J.\ Morrison, Atomic Many-Body Theory 
+(Springer, Berlin, 1985).
+\bibitem{kap88}  J.I.\ Kapusta, Finite Temperature Field Theory
+(Cambridge University Press, Cambridge, 1989).
+\bibitem{bran67} B.H.\ Brandow, Rev.\ Mod.\ Phys.\  39 (1967) 771.
+\bibitem{mhe87} R.\ Machleidt, K.\ Holinde and C.\ Elster, Phys.\ Repts
+ 149 (1987) 1.
+\bibitem{mac89} R.\ Machleidt, Adv.\ Nucl.\ Phys.\  19 (1989) 189.
+\bibitem{paris80} M. Lacombe {\em et al.} , Phys.\ Rev.\  C 21 (1980)
+861.
+\bibitem{reid68} R.V.\ Reid, Ann.\ of Phys.\  50 (1968) 411.
+\bibitem{bm90} R.\ Brockmann and R.\ Machleidt,
+Phys.\ Rev.\  C 42 (1990) 1965.
+\bibitem{brook} L.S.\ Celenza and C.\ Shakin, Relativistic Nuclear Physics
+(World Scientific, Singapore, 1986).
+\bibitem{kb66} T.T.S.\ Kuo and G.E.\ Brown, Nucl.\ Phys.\  A 85
+(1966) 40.
+\bibitem{acz91} A.\ Abzouzi, E.\ Caurier and A.P.\ Zuker, Phys.\ Rev.\
+Lett.\  66 (1991) 1134.
+\bibitem{dm92} W.H. Dickhoff and H. M\"{u}ther, Rep.\ Prog.\ Phys.\
+ 55 (1992) 1947.
+\bibitem{pand93} V.J.\ Pandharipande, Nucl.\ Phys.\  A 553 (1993) 191c.
+
+
+% references to section 2
+
+\bibitem{bruck57} K.A.\ Brueckner, Phys.\ Rev.\  97 (1955) 1353.
+\bibitem{gold58} J.\ Goldstone, Proc.\ Roy.\ Soc.\  A 293 (1957) 267.
+\bibitem{bbp63} H.A.\ Bethe, B.H.\ Brandow and A.G.\ Petschek,
+Phys.\ Rev.\  129 (1963) 225.
+
+
+
+
+%   references to sec 3
+
+
+\bibitem{br79} G.E.\ Brown and M.\ Rho, Phys.\ Lett.\  B 82 (1979) 177.
+\bibitem{mes79}  see e.g. Mesons in Nuclei, eds.\ M.\ Rho
+and D.H.\ Wilkinson
+(North-Holland, Amsterdam, 1979).
+\bibitem{erk74} K.\ Erkelenz, Phys.\ Repts,  13C (1974) 191.
+\bibitem{bj76}  G.E.\ Brown and A.D.\ Jackson,
+The Nucleon-Nucleon Interaction,
+(North-Holland, Amsterdam, 1976).
+\bibitem{iz80} C.\ Itzykson and J.-B.\ Zuber, Quantum Field Theory,
+(McGraw-Hill, New-York, 1980).
+\bibitem{bbs68} R.\ Blankenbecler and R.\ Sugar,
+Phys.\ Rev.\  142 (1966) 1051.
+\bibitem{thomp70} R.H.\ Thompson, Phys.\ Rev.\  D 1 (1970) 110.
+\bibitem{zt81} M.J.\ Zuilhof and J.A.\ Tjon,
+Phys.\ Rev.\  C 24 (1981) 736;
+J.\ Fleischer and J.A.\ Tjon, Phys.\ Rev.\  C 21 (1980) 87.
+\bibitem{lomon92} W.R.\ Greenberg and E.L.\ Lomon, to appear in
+Phys.\ Rev.\  D.
+\bibitem{br92} P.G.\ Blunden and D.O.\ Riska,
+Nucl.\ Phys.\  A 536 (1992) 697.
+\bibitem{mac93} R.\ Machleidt and G.Q.\ Li,
+Phys.\ Repts  242 (1994) 5.
+\bibitem{dur77} J.W.\ Durso, M.\ Saarela, G.E.\ Brown and A.D.\ Jackson,
+Nucl.\ Phys.\  A 278 (1977) 445.
+\bibitem{hen93} R.\ Henneck, Phys.\ Rev.\  C 47 (1993) 1859.
+\bibitem{bm94} G.E.\ Brown and R.\ Machleidt, Phys.\ Rev.\  C, in press.
+\bibitem{hp75} G.\ H\"{o}hler and Pietarinen, Nucl.\ Phys.\ B 95 (1975) 210.
+\bibitem{arndt} R.A.\ Arndt, NN phase shift analysis of spring 1993 (SP93),
+SAID.
+\bibitem{bugg92} D.V. Bugg and R.A.\ Bryan, Nucl.\ Phys.\ A 540 (1992) 449.
+\bibitem{nimjeg} V.\ Stoks, R.\ Timmermanns and J.J.\ de Swart,
+Phys.\ Rev.\ C 47 (1993) 512
+\bibitem{sm94} Y.\ Song and R.\ Machleidt,
+contributed paper submitted to the {\it 14th
+International Conference
+on Few Body Problems in Physics}, Williamsburg, Virginia,
+USA, May 26-31, 1994.
+\bibitem{sxm92} F.\ Sammarruca, D.P.\ Xu, and R.\ Machleidt, Phys.\ Rev.\
+ C 46 (1992) 1636.
+
+
+
+%  references to sec 4
+
+\bibitem{bloch59} C.\ Bloch, Nucl.\ Phys.\  6 (1958) 329;
+Nucl.\ Phys.\  7 (1958) 451.
+\bibitem{ls80} S.Y.\ Lee and K.\ Suzuki, Phys.\ Lett.\  B 91 (1980) 79;
+K.\ Suzuki and S.Y.\ Lee, Prog.\ Theor.\ Phys.\
+ 64 (1980) 2091.
+\bibitem{des} J.\ Des Cloizeaux, Nucl.\ Phys.\  20 (1960) 321.
+\bibitem{sw72} T.H.\ Schucan and H.A.\ Weidenm\"{u}ller, Ann.\ of Phys.\
+ 73 (1972) 108; ibid.\  76 (1973) 483.
+\bibitem{lk75} J.M.\ Leinaas and T.T.S.\ Kuo, Ann.\ of Phys.\
+ 98 (1975) 177.
+\bibitem{lk77} J.M.\ Leinaas and T.T.S.\ Kuo, Ann.\ of Phys.\
+ 111 (1977) 19.
+\bibitem{sm90} L.D.\ Skouras and H.\ M\"{u}ther, Nucl. Phys.  A 515
+(1990) 93.
+\bibitem{ee70} P.J.\ Ellis and T.\ Engeland, Nucl. Phys.  A 144 (1970) 161.
+\bibitem{eehho94} P.J.\ Ellis, T.\ Engeland,
+M.\ Hjorth-Jensen, A.\ Holt and E.\ Osnes,
+Nucl.\ Phys.\  A 573 (1994) 216.
+
+
+% references to section 5
+
+\bibitem{ms61} B.L.\ Scott and S.A.\ Moskowski, Ann.\ of Phys.\
+ 14 (1961) 107.
+\bibitem{ms62}B.L.\ Scott and S.A.\ Moskowski, Nucl.\ Phys.\
+ 29 (1962) 665.
+\bibitem{day67} B.D.\ Day, Rev.\ Mod.\ Phys.\  39 (1967) 719.
+\bibitem{ht70} M.I.\ Haftel and F.\ Tabakin, Nucl.\ Phys.\  A 158
+(1970) 1.
+\bibitem{mah85} C.\ Mahaux  and R.\ Sartor,
+Phys.\ Rev.\  C 40 (1989) 1833;
+C.\ Mahaux, P.F.\ Bortignon, R.A.\ Broglia and C.H.\ Dasso,
+Phys.\ Repts  120 (1985) 1.
+\bibitem{km83} T.T.S.\ Kuo  and Z.Y.\ Ma,
+Phys.\ Lett.\  B 127 (1983) 123;
+T.T.S.\ Kuo  and Z.Y.\ Ma,
+{\em Nucleon-Nucleon Interaction and Nuclear
+Many-body Problems}  (edited by S.S.\ Wu and T.T.S.\ Kuo)
+(World Scientific:
+Singapore) p. 178;
+T.T.S.\ Kuo, Z.Y.\ Ma and R. Vinh Mau,
+Phys.\ Rev.\  C 33 (1986) 717.
+\bibitem{heho94} M.\ Hjorth-Jensen, T.\ Engeland, A.\ Holt and
+E.\ Osnes,
+Phys.\ Repts  242 (1994) 37.
+\bibitem{town87} I.S.\ Towner, Phys.\ Repts  155 (1987) 263.
+\bibitem{town92} I.S.\ Towner, Nucl.\ Phys.\  A 542 (1992) 631.
+\bibitem{tk72} S.F.\ Tsai and T.T.S.\ Kuo, Phys.\ Lett.\  B 39 (1972) 427.
+\bibitem{kkko76} E.M.\ Krenciglowa, C.L.\ Kung, T.T.S.\ Kuo and
+E.\ Osnes, Ann.\ of Phys.\  101 (1976) 154.
+\bibitem{bon89} D.\ Bonatsos and H.\ M\"{u}ther,
+Nucl.\ Phys.\  A 496 (1989) 23;
+D.\ Bonatsos and H.\ M\"{u}ther, Nucl.\ Phys.\  A 510 (1990)  55
+\bibitem{law80} R.D.\ Lawson, Theory of the Nuclear Shell Model
+(Clarendon Press, Oxford, 1980).
+\bibitem{kkr79} C.L.\ Kung, T.T.S.\ Kuo and K.F.\ Ratcliff, Phys.\ Rev.\
+ C 19 (1979) 1063.
+\bibitem{wc72} C.W.\ Wong and D.M.\ Clement,
+Nucl.\ Phys.\  A 183 (1972) 210.
+
+
+% references to section 6
+
+
+\bibitem{skd83} J.\ Shurpin, T.T.S.\ Kuo and D.\ Strottman,
+Nucl.\ Phys.\  A 408 (1983) 310.
+\bibitem{prm90} A.\ Polls, A.\ Ramos and H.\ M\"{u}ther, Nucl.\ Phys.\ 
+A 518 (1990) 421.
+\bibitem{kuo68} T.T.S.\ Kuo, Nucl.\ Phys.\  A 90 (1967) 199.
+\bibitem{kb68} T.T.S.\ Kuo and G.E.\ Brown, Nucl.\ Phys.\  A 114 (1968)
+241.
+\bibitem{hk72} G.H.\ Herling and T.T.S.\ Kuo, US Naval Research Laboratory
+report No. 2258, 1971 (unpublished).
+\bibitem{brown88}B.A.\ Brown, W.A.\ Richter, R.E.\ Julies
+and B.H.\ Wildenthal, Ann.\ of Phys.\  182 (1988) 191.
+\bibitem{ryd90} L.\ Rydstr\"{o}m, J.\ Blomquist, R.J.\ Liotta and C.\ Pomar,
+Nucl.\ Phys.\  A 512 (1990) 217.
+\bibitem{wb91} E.K.\ Warburton and B.A.\ Brown,
+Phys.\ Rev.\  C 43 (1991) 602.
+\bibitem{bk70} B.R.\ Barrett and M.W.\ Kirson, Nucl.\ Phys.\
+ A 148 (1970) 145.
+\bibitem{homs90} M.\ Hjorth-Jensen, E.\ Osnes, H.\ M\"{u}ther
+and K.W.\ Schmid, Phys.\ Lett.\  B 248 (1990) 281.
+\bibitem{eko85} P.J.\ Ellis, T.T.S.\ Kuo and E.\ Osnes,
+Phys.\ Scripta  32 (1985) 491.
+\bibitem{ho90} M.\ Hjorth-Jensen and E.\ Osnes,
+Phys.\ Scripta  41 (1990) 207.
+\bibitem{gk75} P.R.\ Goode and D.S.\ Koltun, Nucl.\ Phys.\  A 243
+(1975) 44.
+\bibitem{sommer} H.M.\ Sommerman, H.\ M\"{u}ther, K.C.\ Tam, T.T.S.\ Kuo
+and A.\ Faessler, Phys.\ Rev.\  C 23 (1981) 1765.
+\bibitem{geg77} F.L.\ Goodin, P.J.\ Ellis and P.R.\ Goode,
+Phys.\ Rev.\  C 16 (1977) 784.
+\bibitem{pmfko82} A.\ Polls, H.\ M\"{u}ther, A.\ Faessler,
+T.T.S.\ Kuo and E.\ Osnes, Nucl.\ Phys.\
+ A 401  (1983) 124;
+H.\ M\"{u}ther, A.\ Polls and T.T.S.\ Kuo, ibid.\
+ A 435 (1985) 548.
+\bibitem{richt91} W.A.\ Richter, M.G.\ Van der Merwe, R.E.\ Julies
+and B.A.\ Brown, Nucl.\ Phys.\  A 523 (1991) 325.
+\bibitem{pz80} A.\ Poves and A.P.\ Zuker, Phys.\ Repts  70
+(1981) 235.
+\bibitem{czpm94} E.\ Caurier, A.P.\ Zuker, A.\ Poves
+and G.\ Martinez-Pinedo, Phys.\ Rev.\  C 50 (1994) 225
+\bibitem{heho92} M.\ Hjorth-Jensen, T.\ Engeland, A.\ Holt and
+E.\ Osnes,
+Nucl.\ Phys.\  A 541 (1992) 105.
+\bibitem{endt90} P.M.\ Endt, Nucl.\ Phys.\  A 521 (1990) 1
+\bibitem{three94}T.\ Engeland, M.\ Hjorth-Jensen, A.\ Holt and
+E.\ Osnes, in preparation.
+\bibitem{cole91} B.J.\ Cole, Phys.\ Rev.\ C 44 (1991) 190.
+\bibitem{schu92}  R.\ Schubart {\em et al.}, Z.\ Phys.\
+ A 343 (1992) 123.
+\bibitem{schu91}  R.\ Schubart {\em et al.}, Z.\ Phys.\
+ A 340 (1991) 109.
+\bibitem{grawe92}  H.\ Grawe {\em et al.},
+Prog.\ Part.\ Nucl.\ Phys.\  28 (1992) 281.
+\bibitem{ryk92}  A.\ Plochocki {\em et al.}, Z.\ Phys.\  A 342
+(1992) 43.
+\bibitem{joh93} A.\ Johnson {\em et al.}, Nucl.\ Phys.\
+ A 557 (1993) 401.
+\bibitem{sn100} R.\ Schneider {\em et al.}, Zeit.\ Phys.\ A 348 (1994) 241
+\bibitem{sw86} S.D.\ Serot and J.D.\ Walecka,
+Adv.\ Nucl.\ Phys.\  16 (1986) 1.
+\bibitem{hir91}  D.\ Hirata {\em et al.}, Phys.\ Rev.\  C 44
+(1991) 1467.
+\bibitem{hnm92} T.\ Nikolaus, T.\ Hoch and D.G.\ Madland, Phys.\ Rev.\
+ C 46 (1992) 1757.
+\bibitem{lean84}  G.A.\ Leander, J.\ Dudek, W.\ Nazarewicz, J.R.\ Nix
+and Ph.\
+Quentin, Phys.\ Rev.\  C 30 (1984) 416.
+\bibitem{ehho93}T.\ Engeland, M.\ Hjorth-Jensen, A.\ Holt and
+E.\ Osnes,
+Phys.\ Rev.\  C 48 (1993) 535.
+\bibitem{holt94}A.\ Holt, T.\ Engeland, M.\ Hjorth-Jensen and
+E.\ Osnes,
+Nucl.\ Phys.\   A 570 (1994) 137c.
+\bibitem{physcripta94} T.\ Engeland, M.\ Hjorth-Jensen, A.\ Holt and
+E.\ Osnes,
+Phys.\ Scripta in press.
+\bibitem{nicu93} A.\ Insolia, N.\ Sandulescu, J.\ Blomqvist and
+R.J.\ Liotta, Nucl.\ Phys.\  A 550 (1992) 34.
+\bibitem{nicu94} N.\ Sandulescu, J.\ Blomqvist and R.J.\ Liotta,
+Phys.\ Rev.\  C, in press.
+\bibitem{pomar92} C.\ Pomar, J.\ Blomqvist, R.J.\ Liotta and
+A.\ Insolia, Nucl.\ Phys.\  A 515 (1990) 381.
+\bibitem{nicuoslo94} N.\ Sandulescu, J.\ Blomqvist, R.J.\ Liotta,
+T.\ Engeland, M.\ Hjorth-Jensen, A.\ Holt and E.\ Osnes,
+in preparation
+\bibitem{bon84} G.~Bonsignori, M.~Savoia, K.~Allaart, A.~Van~Egmond
+and G.~Te.~Velde, Nucl.\ Phys.\  A 432 (1985) 389.
+\bibitem{janb93} J.\ Blomqvist, private communication, 1993.
+\bibitem{holtp94} A.\ Holt, private communication, 1994.
+\bibitem{fb84} B.\ Fogelberg and J.\ Blomqvist, Phys.\ Lett.\
+ B 137 (1984) 20.
+\bibitem{lindgren91} I.\ Lindgren, J.\ Phys.\ B: At.\ Mol.\ Opt.\ Phys.
+ 24 (1991) 1143.
+\bibitem{suzuki93} T.T.S.\ Kuo, P.J.\ Ellis, J.\ Hao, Z.\ Li,
+K.\ Suzuki, R.\ Okamoto and H.\ Kumagai,
+Nucl.\ Phys.\  A 560 (1993).
+\bibitem{kuo93} P.\ Navratil, H.B.\ Geyer and T.T.S.\ Kuo, Phys.\ Lett.\
+ B 315 (1993) 1.
+\bibitem{mhj94} M.\ Hjorth-Jensen, in preparation
+\bibitem{suz94} K.\ Suzuki, R.\ Okamoto, P.J.\ Ellis
+and T.T.S.\ Kuo,
+Nucl.\ Phys.\   A 567 (1994) 565.
+%  references to sec 7 and 8
+
+\bibitem{wff88} R.B.\ Wiringa, V.\ Fiks and A.\ Fabrocini, Phys.\ Rev.\
+ C 38 (1988) 1010.
+\bibitem{ray91} L.\ Ray, G.W.\ Hoffman and
+W.R.\ Cooker, Phys. Repts  212
+(1991) 223.
+\bibitem{br78} R.\ Brockmann, Phys.\ Rev.\  C 18 (1978) 1510.
+\bibitem{mmb90} H.\ M\"{u}ther, R.\ Machleidt and R.\ Brockmann, Phys.\ Rev.\
+ C 42 (1990) 1981.
+\bibitem{lmb92} G.Q.\ Li, R.\ Machleidt and R.\ Brockmann,
+Phys.\ Rev.\  C 46 (1992) 2782.
+\bibitem{shk87} H.Q.\ Song, S.D.\ Yang and T.T.S.\ Kuo,
+Nucl.\ Phys.\  A 462 (1987) 491.
+\bibitem{jkm89} M.F.\ Jiang, R.\ Machleidt and T.T.S.\ Kuo,
+Phys.\ Rev.\
+ C 41 (1989) 2346;
+M.F.\ Jiang, T.T.S.\ Kuo  and H.\ M\"{u}ther,
+Phys.\ Rev.\  C 40 (1989) 1836.
+\bibitem{rpd89} A.\ Ramos, A.\ Polls and W.H.\ Dickhoff,
+Nucl.\ Phys.\  A 503 (1989) 1; A.\ Ramos, PhD thesis, University
+of Barcelona, 1988, unpublished.
+\bibitem{hm87} B.\ ter Haar and R.\ Malfliet, Phys.\ Repts
+ 149 (1987) 207.
+\bibitem{ser92} B.D.\ Serot, Rep.\ Prog.\ Phys.\  55 (1992) 1855.
+\bibitem{bwbs87} G.E.\ Brown, W.\ Weise, G.\ Baym and J.\ Speth, Comments
+Nucl.\ Part.\ Phys.\  17 (1987) 39.
+\bibitem{jkm93}M.F.\ Jiang, R.\ Machleidt and T.T.S.\ Kuo,
+Phys.\ Rev.\  C 47 (1993) 2661.
+\bibitem{chris92a} C.J.\ Pethick and D.G. Ravenhall, Phil.\ Trans.\
+R.\ Soc.\ Lond.\  A 341 (1992) 17.
+\bibitem{wg91} F.\ Weber and N.K.\ Glendenning,
+Hadronic matter and rotating relativistic neutron stars
+(World Scientific, Singapore, 1992);
+H.\ Huber, F.\ Weber and M.K.\ Weigel, Phys.\ Lett.\
+ B 317 (1993) 485.
+\bibitem{chris92b} C.J.\ Pethick, Rev.\ Mod.\ Phys.\  64 (1992) 1133
+\bibitem{thorsett93} S.E.\ Thorsett, Z.\ Arzoumanian, M.M.\ McKinnon
+and J.\ H.\ Taylor, Astrophys.\ J.\  405 (1993) L29.
+\bibitem{kn87} D.B.\ Kaplan and A.E.\ Nelson, Phys.\ Lett.\  B175
+(1987) 57.
+\bibitem{brown93} G.E.\ Brown, Nucl.\ Phys.\  A 574
+(1994) 217c.
+\bibitem{lrp93} C.P.\ Lorenz, D.G.\ Ravenhall and C.J.\ Pethick,
+Phys.\ Rev.\ Lett.\  70 (1993) 379.
+\bibitem{hps93} H.\ Heiselberg, C.J.\ Pethick and E.F.\ Staubo,
+Phys.\ Rev.\ Lett.\  70 (1993) 1355.
+\bibitem{swk92} H.Q.\ Song, Z.X.\ Wang and T.T.S.\ Kuo,
+Phys.\ Rev.\  C 46 (1992) 1788.
+\bibitem{lpph91} J.M.\ Lattimer, C.J.\ Pethick, M.\ Prakash and
+P.\ Haensel, Phys.\ Rev.\ Lett.\  66 (1991) 2701.
+\bibitem{pplp92} M.\ Prakash, M.\ Prakash, J.M.\ Lattimer and C.J.\
+Pethick,
+Astrophys.\ J.\  390 (1992) L77.
+\bibitem{lhobo94} L.\ Engvik, M.\ Hjorth-Jensen, E.\ Osnes, G.\ Bao
+and E.\ \O stgaard, University of Oslo report UIO/PHYS/94-12 and
+submitted to Phys.\ Rev.\ Lett.
+\bibitem{behoo94} G.\ Bao, L.\ Engvik, M.\ Hjorth-Jensen, E.\ Osnes
+and E.\ \O stgaard, Nucl.\ Phys.\  A 575 (1994) 707.
+\bibitem{thorson93} V.\ Thorsson, M.\ Prakash and J.\ M.\ Lattimer,
+Nucl.\ Phys.\  A 572 (1994) 693.
+\bibitem{brown93b} G.\ E.\ Brown, C.-H.\ Lee, M.\ Rho and V.\ Thorsson,
+Nucl.\ Phys.\ A 567 (1994) 937.
+
+
+
+
+% references to section 9 and appendix
+
+\bibitem{eng94} T.\ Engeland and A.\ Holt, private communication, 1994.
+\bibitem{br91} G.E.\ Brown and M.\ Rho, Phys.\ Rev.\ Lett.\ 66 (1991) 2720.
+\bibitem{mbm88} H.\ M\"{u}ther, R.\ Machleidt and
+R.\ Brockmann, Phys.\ Lett.\
+ B 198 (1988) 45.
+\bibitem{bt93} R.\ Brockmann and H.\ Toki, Phys.\ Rev.\ Lett.\ 68 (1992) 3408.
+\bibitem{fmm93} R.\ Fritz, H.\ M\"{u}ther and R.\ Machleidt,
+Phys.\  Rev.\ Lett.\ 71 (1993) 46.
+\bibitem{fm94} R.\ Fritz and H.\ M\"{u}ther,
+Phys.\  Rev.\  C 49 (1994) 633.
+\bibitem{zzm92} D.C.\ Zheng, L.\ Zamick and H.\ M\"{u}ther,
+Phys. Rev.  C 45 (1992) 275.
+\bibitem{zz94} L.\ Zamick and D.C.\ Zheng, Phys.\ Repts.\ 242 (1994) 233.
+\bibitem{ms91} C.\ Mahaux and R.\ Sartor, 
+Avd.\ Nucl.\ Phys.\ 
+ 20 (1991) 1.
+\bibitem{frois} B.\ Frois and C.N.\ Papanicolas, Ann.\ Rev.\ Nucl.\
+Science  27 (1987) 133.
+\bibitem{exp} A.E.L.\ Dieperink and P.K.A.\ de Witt Huberts,Ann.\ Rev.\ Nucl.\ 
+Science  40 (1990) 239.
+\bibitem{dickhoff94} W.H.\ Dickhoff, Phys.\ Repts.\ 242 (1994) 119.
+\bibitem{bbmp92} M.\ Borromeo, D.\ Bonatsos, H.\ M\"{u}ther and A.\ Polls,
+Nucl.\ Phys.\  A 539 (1992) 189.
+\bibitem{hbmp93} M.\ Hjorth-Jensen, M.\ Borromeo, H.\ M\"{u}ther and A.\ Polls,
+Nucl.\ Phys.\  A 551 (1993) 580.
+\bibitem{hmp93} M.\ Hjorth-Jensen, H.\ M\"{u}ther and A.\ Polls,
+Phys.\ Rev.\  C 50 (1994) 501.
+\bibitem{ossigma} E.\ Oset, P.\ Fernandez de Cordoba, L.L.\ Salcedo
+and R.\ Brockman, Phys.\ Repts.\ 188 (1990) 79
+\bibitem{del81} J.\ Delorme, Nucl.\ Phys.\  A 374 (1981) 545c.
+\bibitem{warb91a} E.K.\ Warburton, Phys.\ Rev.\ Lett.\  66 (1991) 1823.
+\bibitem{warb91b} E.K.\ Warburton, Phys.\ Rev.\  C 44 (1991) 233.
+\bibitem{krt92} M.\ Kirchbach, D.O.\ Riska and K.\
+Tsushima, Nucl.\ Phys.\  A 542 (1992) 616.
+\bibitem{mkrt92} M.\ Hjorth-Jensen, M.\ Kirchbach,
+D.O.\ Riska and K.\ Tsushima, Nucl.\ Phys.\  A 563 (1993) 525.
+
+
+\bibitem{kassis} N.I.\ Kassis, Nucl.\ Phys.\  A 194 (1972) 205.
+\bibitem{kstop81} T.T.S.\ Kuo, J.\ Shurpin, K.C.\ Tam, E.\ Osnes
+and P.J.\ Ellis, Ann.\ of Phys.\  132 (1981) 237.
+
+
+
+\end{thebibliography}
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

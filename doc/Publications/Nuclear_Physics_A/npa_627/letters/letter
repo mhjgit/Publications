@@ -1,0 +1,574 @@
+6Dear Artur, Herbert, Lars and Ruprecht,
+
+below you'll find a kind of sketch of a paper on the symmetry
+energy and proton fractions in neutron star matter.
+It is by no means a final draft. Rather, I'd like to hear your comments
+and ideas before I embark on a dull calculation of the proton fractions.
+Thereafter, I'll finalize a draft and send it to you. However, at certain
+stages one needs some feedback.
+
+The calcs of the sym energy have been done with the most modern
+pots on the market, cd-bonn, nijm I and II abd v18.
+They are fit to the same data and have an excellent \chi^2 per datum.
+Nobody can come and say that the results are due to "poor" pots.
+
+The two first pots contain non-local operators in the NN pot, while
+v18 and Njim II are purely local by construct. 
+These pots allows us therefore in a rather clear way to disentagle
+differences which are due to off-shell effects from non-local
+pieces.
+Some people will not like the conclusions, I had quite some discs
+with Pandharipande about the topics discussed in the draft, and if
+we want to continue with the paper and even publish it,
+we may have some hard time.........
+
+The results and disc are meant to address the following more or
+less accepted half-truths/misconceptions etc.
+
+1) only relativistic calcs can give rising symmetry energy and
+   proton fractions
+2) the difference between various calcs are due to different methods
+   and inclusion of three-body forces (see e.g the ref to
+   Prakash in the ms). Especially many people look at the
+   calcs of wiringa et al in 1988 as the truth
+3) there is pion condensation at higher densities.......(vijay)
+
+
+I have not yet plotted in figs 1-3 (included below as uuencoded
+figs) the v18 results (they are not so different from Nijm II).
+The proton fractions are not done, but i can say that 
+they will drop with v18 and nimj II.
+Obviously, the different proton fractions may change 
+quite a lot the neutron star cooling scenarios. However,
+since the EOS in fig 2 are very similar, mass and radius of
+the star will be the same.
+
+
+All the best,
+Morten
+
+
+*********  latex ms
+
+\documentstyle[aps,multicol,psfig]{revtex}
+
+\begin{document}
+
+\draft
+
+\title{Non-local and local potentials: 
+       consequences for neutron star properties}
+ 
+\author{L.\ Engvik$^a$, M.\ Hjorth-Jensen$^b$, R.\ Machleidt$^c$, 
+        H.\ M\"{u}ther$^d$, and A.\ Polls$^e$}
+
+\address{$^a$Department of Physics, University of Oslo, N-0316 Oslo, Norway}
+\address{$^b$Nordita, Blegdamsvej 17, DK-2100 K\o benhavn \O, Denmark}
+\address{$^c$Department of Physics, University of Idaho, Moscow, 
+         ID 83843, U.S.A.}
+\address{$^d$Institut f\"ur Theoretische Physik, Universit\"at T\"ubingen,
+         D-72076 T\"ubingen, Germany}
+\address{$^e$Departament d'Estructura i Costituents de la Mat\`eria,
+         Universitat de Barcelona, E-08028 Barcelona, Spain}
+
+\maketitle
+
+\begin{abstract}
+
+In this work we show that nucleon-nucleon potentials which 
+include only local operators
+yield rather different proton fractions 
+and symmetry energies than
+non-local potentials contructed  from relativistic 
+meson-exchange models. 
+The symmetry energy
+tends to saturate
+at densities around 2-3 times
+nuclear matter for local potentials, while it increases 
+for potentials which are non-local. The differences can be attributed
+to the off-shell behavior of the non-local potentials.
+
+\end{abstract}
+
+\pacs{PACS number(s): 97.60.Jd 21.65.+f }
+
+\begin{multicols}{2}
+
+The equation of state (EOS) for neutron star matter and infinite
+nuclear matter has been intesively studied the last years.
+A correct description of the EOS would have  far reaching consequences
+for topics ranging  from the cooling of neutron stars
+to the physics of heavy ion collisions.
+Several approaches to derive the EOS exit in the literature,
+see e.g.\ Refs. \cite{pr95,prakash94,ms93,hko95} 
+for some recent reviews. 
+In most approaches to infinite nuclear matter, and finite nuclei as
+well,
+one aims at describing the properties of these systems in terms
+of  the free nucleon-nucleon potential (NN). 
+By construction,  the NN interaction reproduces the 
+two-nucleon scattering data and the properties of the deuteron.
+At present, there are several high-quality phenomenological models of the NN 
+interaction based on meson exchange. These NN interactions 
+\cite{cdbonn,nim,v18} are fit to scattering data on the energy shell, that is
+for processes in which the two nucleons have the same energy 
+before and after the interaction. 
+However, in a nuclear many-body environment, the two nucleons may have
+different energies before and after they interact. Thus, in calculating
+properties of infinite nuclear matter, there are also so-called 
+off-shell contributions  from the NN interaction
+to different terms in the many-body scheme. These contributions 
+can not be
+determined by the scattering data, and different approaches to the
+construction of the NN interaction  may therefore yield e.g.,
+different binding energies in nuclear matter. Only careful
+studies of nuclear observables can help in discriminating
+between various potentials. 
+Since several many-body
+schemes and potentials are used in the literature, it is often
+difficult to disentagle the origin of discrepancies between the 
+derived  equations of state and various observables.    
+
+The aim of this work is therefore to show that
+when employing the same many-body scheme, 
+different approximations to the NN potential
+result in  rather different neutron star properties. 
+The potentials we will employ here are the recent models
+of the Nijmegen group \cite{nim}, the charge-dependent
+version \cite{cdbonn} of the Bonn potentials \cite{mac89} and
+the Argonne $V_{18}$ potential \cite{v18}. In 1993, the Nijmegen group
+presented a phase-shift analysis of all proton-proton and neutron-proton
+data below $350$ MeV in lab energy with a $\chi^2$ per datum of $0.99$
+for 4301 data entries. The above potentials have all been contructed
+based on these data. The charge-dependent Bonn potential has 
+a $\chi^2$ per datum of $1.03$, the same is the case for the Nijm I and II
+versions of the Nijmegen group \cite{nim}. The new Argonne
+potential \cite{v18} has a $\chi^2$ per datum of $1.09$. 
+However, the reader should note that, although on a statistical
+ground the potentials are as accurate as they can be, the way they
+are constructed is different. The Argonne potential and the 
+Nijm II potential are non-relativistic potential models which
+include only local operators, either in coordinate space or momentum space.
+Such approaches to the NN potential have been much favored since they
+are numerically easy to use in configuration space calculations.
+The off-shell effects of these two potentials are very similar
+\cite{cdbonn}. 
+The Nijm I model is similar to the Nijm II model, but, it has 
+also a non-local momentum dependent contribution to the 
+central force of the NN interaction, see Eq.\ (13) of Ref.\ 
+\cite{nim}. As we will show
+below, this distinction between the Nijm I and II potentials yields
+non-neglible off-shell effects. Moreover, since both potentials
+fit almost exactly the available data, one has a clear way
+of studying the differences between purely local and non-local
+approaches to the NN interaction. The charge dependent Bonn
+potential is based on the relativistic meson-exchange potentials
+of Ref.\ \cite{mac89}.  Meson-exchange is mainly responsible for
+the long-range and intermediate range of the nuclear force. 
+Such models will therefore only include parts of the full
+non-locality of the NN interaction. 
+However, even the one-pion exchange contribution is non-local
+in a relativistic meson-exchange model,
+and only when the particles are on-shell and one takes the 
+non-relativistic limit does the one-pion
+exchange contribution to the NN interaction become local, 
+see e.g., Eq.\ (8) 
+of Ref.\ \cite{cdbonn}. Thus, 
+the non-locality affects the one-pion exchange only off-shell.
+This has however important consequences for the tensor force
+of the NN interaction and thereby for the binding energy per
+particle in nuclear matter or finite nuclei, as discussed in 
+Ref.\ \cite{hko95}.
+
+
+The neutron star properties we have in mind here 
+are the symmetry energy and the 
+proton fractions for $\beta$-stable matter, being of
+importance for the cooling history of neutron stars \cite{pr95,prakash94}.
+The symmetry energy ${\cal S}(n)$ is defined as the difference between
+the energy per particle in pure neutron matter ${\cal E}(n,x_p=0)$ and 
+the binding energy per particle in symmetric nuclear 
+matter ${\cal E}(n,x_p=1/2)$, where $n$ is the total baryon density
+in units of fm$^{-3}$ and $x_p=n_p/n$ is the proton fraction. 
+The total baryon density is given by $n=n_p+n_n$, where $n_p$ and
+$n_n$ refer to the proton and neutron densities, respectively.
+The symmetry energy can in turn be related to
+the proton fraction in $\beta$-stable matter.  To see this one can
+expand the energy per particle in terms of the proton fraction
+$x_p$ around ${\cal E}(n,x_p=1/2)$ as
+\begin{equation}
+      {\cal E}(n,x_p)={\cal E}(n,x_p=1/2)+
+      {\cal S}(n)\left(1-x_p\right)^2+\dots,
+      \label{eq:energy}
+\end{equation}
+and using the equilibrium condition for $\beta$-stable matter with
+protons, neutrons and ultrarelativistic electrons
+\begin{equation}
+      \mu_e=\mu_n-\mu_p=
+      -\left(\partial{\cal E}(n,x_p)/\partial x_p\right),
+\end{equation} 
+and keeping only terms up to quadratic order in $x_p$ in Eq.\
+(\ref{eq:energy}) \cite{prakash94},
+one finds that the proton fraction is related to the symmetry energy through
+\begin{equation}
+     \left(3\pi^2nx_p\right)^{1/3}=4 {\cal S}(n)\left(1-x_p\right).
+\end{equation}
+The proton fraction is in turn important for the cooling history of
+a neutron star. At a certain critical value, typically $x_p \approx 0.15$,
+the so-called direct Urca processes for neutrino emissions 
+are allowed \cite{pr95,prakash94}. Further, neutrino emissivity 
+ from the so-called modified Urca processes do also
+depend on the given proton fractions, see e.g., Ref.\ \cite{fm79}. 
+In most calculations of neutronic matter, non-relativistic 
+hamiltonians have been used, see e.g., Ref.\ \cite{wff88}. These
+calculations, which employed local NN interactions, gave a 
+symmetry energy which saturated at densities around 2-3 times
+nuclear matter saturation density $n_0=0.17$ fm$^{-3}$. The 
+proton fraction would then also stabilize, or even decrease 
+\cite{prakash94,wff88}, and would typically never reach the critical 
+proton fraction needed   for the direct Urca process.
+Calculations performed within a relativistic inspired approach,
+such as the Dirac-Brueckner-Hartree-Fock approach, gave on the other
+hand a steadily increasing with density proton fraction, see 
+e.g., Ref.\ \cite{ehobo96}. 
+Common knowledge has then been that the increasing proton fractions
+arised  from the fact that one was performing 
+a relativistic calculations \cite{tt96}. In Ref.\ \cite{prakash94},
+the difference between various non-relativistic results, obtained
+with various many-body schemes, 
+for the symmetry energy and the proton fractions
+was ascribed to the role of three-body forces. 
+
+It is however our belief here that the discrepancy can be retraced to
+the use of different two-body NN potentials, and that there is no need
+to invoke relativistic calculations. 
+The many-body method we will employ in deriving the symmetry energy and the 
+relevant proton fractions is the
+simplest possible, the non-relativistic 
+summation of particle-particle ladder
+diagrams only, the Brueckner-Hartree-Fock (BHF) method. 
+Here it will
+serve us as a mere tool to investigate various NN potentials so that
+the discrepancies observed can be retraced to the  NN 
+potentials only. 
+Before we proceed, we feel also that 
+a disclaimer is necessary. We do not, by obvious reasons,
+believe
+that a non-relativistic BHF scheme offers a realistic approach to matter at
+densities above nuclear matter saturation density $\rho_0=0.17$ fm$^{-3}$.
+Other many-body contributions such as three-body effects, screening etc.\
+are definetely important in order to reproduce the data. 
+Moreover, accounting only for nucleonic degrees of freedom 
+should be viewed as a nothing but a first approximation. There is no
+reason why other baryons should not be present at higher densities.
+However, albeit the shortcomings of the many-body approach 
+used in our demonstration, 
+it serves
+the aim of this work, namely to demonstrate that irrespective
+of method, potentials which are local miss terms which become
+important at higher densities. This is in turn a warning if one wishes
+to include interactions between nucleons and other baryons, of relevance
+for higher densities. There is no guarantee for this case as well that
+off-shell effects  from non-local terms would play a negligible role. 
+
+The energy per particle ${\cal E}(n,x_p)$ within the BHF scheme is 
+given in terms of the 
+so-called reaction matrix $G$. The latter is obtained by solving the
+Bethe-Goldstone equation for proton fractions $x_p$ \cite{ehobo96}
+\begin{equation}
+       G(\omega ,x_p )=V+VQ\frac{Q(x_p)}{\omega - H_0}G(\omega ,x_p),
+       \label{eq:bg}
+\end{equation}
+where $\omega$ is the unperturbed energy of the interacting  nucleons,
+$V$ is the free NN potential, $H_0$ is the unperturbed energy of the
+intermediate scattering states,
+and $Q(x_p)$ is the Pauli
+operator preventing scattering into occupied states.
+Only ladder diagrams with intermediate two-particle states are included
+in Eq.\ (\ref{eq:bg}). 
+With the $G$-matrix we have 
+\begin{equation}
+        {\cal E}(n,x_p)=T+\sum _{ab} 
+         n_a n_b\langle ab\vert G(\omega =
+         \epsilon _a + \epsilon _b ,x_p)\vert ab\rangle,
+        \label{eq:g_bhf}
+\end{equation}
+where $T$ is the total kinetic energy
+an the n's are the unperturbed Fermi-Dirac distribution functions,
+namely $n_k$ =1 if $k\leq k_F$ and =0 if $k>k_F$ where  $k_F$ is the 
+Fermi momentum.
+The  sp energies are denoted
+by $\epsilon$, and are determined self-consistently using the BHF theory,
+see Ref.\ \cite{hko95} for further details. 
+
+In Fig.\ \ref{fig:fig1} we plot the binding energy per particle
+for symmetric nuclear matter for the four potentials employed,
+the charge-dependent Bonn potential \cite{cdbonn}(solid line), the two
+Nijmegen potentials Nijm I (long dashes) 
+and II (short dashes) \cite{nim} and the 
+Argonne potential (dotted line) \cite{v18}. In Fig.\ \ref{fig:fig2} we display
+the energy per particle in pure neutron matter for the same potentials, while
+the symmetry energy ${\cal S}(n)$ is shown in Fig.\ \ref{fig:fig3}.
+
+Fig.\ \ref{fig:fig1} displays 
+a common problem of non-relativistic nuclear matter calculations, namely  
+the
+simultaneous reproduction of both the binding  energy per nucleon
+($BE/A=16\pm 1$ MeV) and the saturation density
+$n_0=0.17$ fm$^{-3}$.
+If for a given interaction
+one is able to predict the saturation density, then the binding energy
+is underestimated. Similarly, if one is able to reproduce the
+binding energy of nuclear matter, then the saturation density is
+too high. This results in the so-called Coester band, where the saturation
+point for a given nucleon-nucleon (NN) interaction
+is correlated with the strength of the tensor force in the NN interaction.
+An important difference between the charge-dependent Bonn potential
+and the Argonne and Nimjegen potentials is the strength of the much debated
+tensor force \cite{bm94}. The Bonn potential has 
+a smaller $^{3}D_1$-state admixture in the deuteron $^{3}S_1$
+ground state
+than the Argonne and Nimjegen potentials \cite{cdbonn}.
+A smaller(larger) $D$-state
+admixture in the ground state of the deuteron 
+means that the tensor force is weaker(stronger).
+The strength of the tensor force has in turn important consequences 
+in calculations of the binding energy for both
+finite nuclei and infinite nuclear matter, see e.g., the discussion
+in Ref.\ \cite{hko95}. A potential model  with a weak tensor force
+yields more attraction in a nuclear system than a 
+potential with a strong tensor force. This is clearly seen in
+Fig.\ \ref{fig:fig1} where a partial wave analysis 
+of the contributions to the binding energy shows that the largest
+differences  between the Bonn, the Nijm I and II and the Argonne
+potentials arise  from the $^{3}S_1$ partial wave. 
+The Nijm I has a weaker 
+tensor force compared to Nijm II and the Argonne potential.
+The strength of the tensor force is also reflected in the
+calculation of the binding energy of the triton in Ref.\ \cite{cdbonn}.
+The Bonn potential yields a binding energy of $8.00$ MeV, the 
+Nijm I potential gives $7.72$ MeV while the Nijm II and the Argonne
+potentials yield $7.62$ MeV.  Both the Nijm II and the Argonne potentials
+contain only local operators in the NN interaction and their
+off-shell effects are very similar, as can be seen  from the
+binding energy of nuclear matter in Fig.\ \ref{fig:fig1} and the
+triton. Thus, the differences between off-shell effects 
+due to non-local terms in the construction of the NN potential
+are seen  mainly in the contribution  from the tensor force
+to the $^{3}S_1$ partial wave. 
+For partial waves with $J\geq 1$ the differences between the various
+potentials are small, typically less than $5\%$.
+The differences between the local and the non-local
+potentials in Fig.\ \ref{fig:fig2} is 
+due to 
+the contribution  from the $^1S_0$ channel, and can be ascribed to the 
+non-local terms in the NN interaction.
+
+The differences  in binding energies of Fig.\ \ref{fig:fig1} are in turn
+reflected in the symmetry energy of Fig.\ \ref{fig:fig3}. 
+These results clearly show that the non-saturation of the symmetry energy
+is mainly due to off-shell effects arising  from non-local
+terms in the tensor force contribution to the $^3S_1$ partial wave.
+It ought to be mentioned that the symmetry energy of
+the Bonn and Nijm I potentials saturates as well, but 
+at densities between $0.6-0.7$ fm$^{-3}$. However, 
+at e.g., densities
+like $0.5$ fm$^{-3}$ or higher in pure neutron matter one is far beyond
+the energy region where the NN potentials have been fitted.
+One can therefore not expect any reliable results in these density
+regions.
+This is also the reason why we do not plot results for higher densities
+in Figs.\ \ref{fig:fig1}-\ref{fig:fig3}. 
+
+Finally, in Fig.\ \ref{fig:fig4} we show the resulting
+proton fractions in $\beta$-stable matter. 
+The proton fraction in $\beta$--equilibrium is
+determined by imposing the relevant equilibrium conditions on the processes
+$e^{-}+p \rightarrow n+\nu_{e}$
+and $e^{-}\rightarrow \mu^{-}+\overline{\nu}_{\mu}+\nu_{e}$.
+The conditions for $\beta$--equilibrium require that 
+$\mu_{n}=\mu_{p}+\mu_{e}$,
+where $\mu_{i}$ is the chemical potential of particle species $i$ ,
+and that 
+charge is conserved 
+$n_{p}=n_{e}$.
+We do not include muons. We also assumed that the neutrinos do 
+not contribute.
+The proton and neutron chemical potentials are determined  from 
+the energy per particle ${\cal E}(n,x_p)$. 
+
+---> More bla bla on proton fractions.
+
+---> Some bla bla on consequences for cooling
+
+---> Conclusions and some bla bla 3-body forces.
+
+
+This work has received support  from The Research Council of Norway
+(Programme for Supercomputing) through a grant of computing time.
+Many discussions with \O ystein Elgar\o y, 
+Eivind Osnes, Vijay Pandharipande, Chris Pethick and Angels
+Ramos are greatly acknowledged.
+
+
+\begin{references}
+\bibitem{pr95} C.\ J.\ Pethick and D.\ G.\ Ravenhall, Annu.\ Rev.\ Nucl.\
+Part.\ Phys.\ {\bf 45}, 429 (1995). 
+\bibitem{prakash94} M.\ Prakash, Phys.\ Rep.\ {\bf 242}, 191 (1994).
+\bibitem{ms93} A.\ C.\ M\"uller and B.\ M.\ Sherril,
+Annu.\ Rev.\ Nucl.\
+Part.\ Phys.\ {\bf 43}, 529 (1993).
+\bibitem{hko95} M.\ Hjorth-Jensen, T.\ T.\ S.\ Kuo and E.\ Osnes,
+Phys.\ Rep.\ {\bf 261}, 125 (1995).
+\bibitem{cdbonn} R.\ Machleidt, F.\ Sammarruca and Y.\ Song,
+Phys.\ Rev.\ {\bf C 53}, R1483 (1996).
+\bibitem{nim} V.G.J.\ Stoks, R.A.M.\ Klomp, C.P.F. Terheggen and J.J.\
+de Swart, Phys.\ Rev.\ {\bf C 48}, 792 (1993).
+\bibitem{v18} R.\ B.\ Wiringa, V.\ G.\ J.\ Stoks and R.\ Schiavilla, 
+Phys.\ Rev.\ {\bf C 51}, 38 (1995).
+\bibitem{mac89} R.\ Machleidt, Adv.\ Nucl.\ Phys.\ {\bf 19}, 185 (1989). 
+\bibitem{fm79} B.\ L.\ Friman and O.\ V.\ Maxwell, 
+Ap.\ J. {\bf 232}, 541 (1979)
+\bibitem{wff88} R.\ B.\ Wiringa, V.\ Fiks and A.\ Fabrocini, Phys.\ Rev.\
+{\bf C 38}, 1010 (1988).
+\bibitem{tt96} T.\ Takatsuka and R.\ Tamagaki, HSIU preprint 1996, unpublished.
+\bibitem{ehobo96} L.\ Engvik, E.\ Osnes, M.\ Hjorth-Jensen, G.\ Bao and
+E.\ \O stgaard, Ap.\ J.\ {\bf 469}, 794 (1996).
+%\bibitem{forest96} J.\ L.\ Forest, V.\ R.\ Pandharipande, S.\ C.\ Pieper,
+%R.\ B.\ Wiringa, R.\ Schiavilla and A.\ Arriaga, Phys.\ Rev.\ {\bf C 54}, 646 (1996).
+\bibitem{bm94} G.\ E.\ Brown and R.\ Machleidt, 
+Phys.\ Rev.\ {\bf C 50}, 1731 (1994).
+
+\end{references}
+
+\end{multicols}
+
+
+\begin{figure}[htbp]
+     \begin{center}
+     {\centering\mbox{\psfig{figure=fig1.ps,height=8cm,width=7cm}}}
+     \caption{Binding energy for nuclear matter in MeV as function 
+              of total baryonic density in units of fm$^{-3}$. 
+              The solid lines are the results obtained
+              with the charge-dependent Bonn potential, 
+              the long-dashed line refers to
+              results with the Nijm I potential while the 
+              short-dashed line has
+              been obtained with the Nimj II potential. 
+              The Argonne results are 
+              given by the dotted line.}
+     \label{fig:fig1}
+     \end{center}
+\end{figure}
+
+
+\begin{figure}[htbp]
+     \begin{center}
+     {\centering\mbox{\psfig{figure=fig2.ps,height=8cm,width=7cm}}}
+     \caption{Energy per particle for pure neutron matter. Legend as
+              in Fig.\ 1.}
+     \label{fig:fig2}
+     \end{center}
+\end{figure}
+
+
+\begin{figure}[htbp]
+     \begin{center}
+     {\centering\mbox{\psfig{figure=fig3.ps,height=8cm,width=7cm}}}
+     \caption{Symmetry energy as function of density. Legend as in Fig.\ 1..}
+     \label{fig:fig3}
+     \end{center}
+\end{figure}
+
+
+\begin{figure}[htbp]
+%     \begin{center}
+%     {\centering\mbox{\psfig{figure=fig4.ps,height=8cm,width=7cm}}}
+     \caption{Proton fraction for $\beta$-stable matter as function of density. 
+              Density is in units of fm$^{-3}$. Curve labels as in Fig.\ 1. }
+     \label{fig:fig4}
+%     \end{center}
+\end{figure}
+
+
+\end{document}
+
+
+
+*************  the figs as a uuencoded tarred file. 
+
+#!/bin/csh -f
+# Uuencoded gz-compressed .tar file created by csh script  uufiles
+# For more info (11/95), see e.g. http://xxx.lanl.gov/faq/uufaq.html
+# If you are on a unix machine this file will unpack itself: strip
+# any mail header and call resulting file, e.g., figs.uu
+# (uudecode ignores these header lines and starts at begin line below)
+# Then say        csh figs.uu
+# or explicitly execute the commands (generally more secure):
+#    uudecode figs.uu ;   gunzip figs.tar.gz ;
+#    tar -xvf figs.tar
+# On some non-unix (e.g. VAX/VMS), first use editor to change filename
+# in "begin" line below to figs.tar-gz , then execute
+#    uudecode figs.uu
+#    gzip -d figs.tar-gz
+#    tar -xvf figs.tar
+#
+uudecode $0
+chmod 644 figs.tar.gz
+gunzip -c figs.tar.gz | tar -xvf -
+rm $0 figs.tar.gz
+exit
+
+begin 644 figs.tar.gz
+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
+B_']M_K%O?>M;W_K6M[[UK6]]ZUO?^O9EVC]RC=(3`%```!SY
+`
+end

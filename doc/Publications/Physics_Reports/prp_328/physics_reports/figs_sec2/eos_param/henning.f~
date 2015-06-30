@@ -1,0 +1,13 @@
+      program stupid
+      implicit real*8(a-h,o-z)
+      c=0.2
+      DO i=0,300
+         x=i*0.01
+         y=x/0.16
+         rho=-16.*((2.+c)*y/(1.+c*y)-y*y/(1.+c*y))
+         xnum=(2.+c)+y*(c+c*c-4.)+y*y*(1-2*c)
+         deno=(1+c*y)**2
+         press=-16.*x*x*0.16*xnum/deno
+         WRITE(6,'(E10.4,2X,E10.4,2X,E10.4)') x, rho,press
+      ENDDO
+      end

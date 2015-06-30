@@ -1,0 +1,57 @@
+From Niels.Walet@umist.ac.uk Mon Jul 13 17:44:28 1998
+Return-Path: <Niels.Walet@umist.ac.uk>
+Delivery-Date: Mon, 13 Jul 1998 17:44:28 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Mon, 13 Jul 1998 17:36:23 +0200
+Received: from walet.phy.umist.ac.uk (root@walet.phy.umist.ac.uk [130.88.128.41]) 
+          by pat.uio.no ; Mon, 13 Jul 1998 17:36:22 +0200 (MET DST)
+Received: from umist.ac.uk (mccsnrw@localhost [127.0.0.1]) 
+          by walet.phy.umist.ac.uk (8.8.7/8.8.7) with ESMTP id QAA31833;
+          Mon, 13 Jul 1998 16:35:59 +0100
+Sender: mccsnrw@walet.phy.umist.ac.uk
+Message-ID: <35AA295D.6452534@umist.ac.uk>
+Date: Mon, 13 Jul 1998 16:35:58 +0100
+From: "Niels R. Walet" <Niels.Walet@umist.ac.uk>
+Organization: UMIST
+X-Mailer: Mozilla 4.05 [en] (X11; I; Linux 2.0.32 i586)
+MIME-Version: 1.0
+To: Niels Walet <Niels.Walet@umist.ac.uk>, Ray Bishop <R.F.Bishop@umist.ac.uk>, 
+    Mangalam Nagarajan <M.Nagarajan@umist.ac.uk>, 
+    Jesus Navarro <navarro@kate.fisato.uv.es>, 
+    Rafa Guardiola <Rafael.Guardiola@uv.es>, 
+    Adelchi Fabrocini <fabrocin@mailbox.difi.unipi.it>, 
+    Stefano Fantoni <fantoni@snoopy.ilas.sissa.it>, 
+    Sergio Rosati <rosati@mailbox.difi.unipi.it>, 
+    Morten Hjorth-Jensen <m.h.jensen@fys.uio.no>, 
+    Kenji Suzuki <suzuki@mns.kyutech.ac.jp>, 
+    Ryoji Okamoto <okamoto@mns.kyutech.ac.jp>, 
+    bob wiringa <wiringa@theory.phy.anl.gov>, 
+    Kalman Varga <varga@theory.phy.anl.gov>, Joe Carlson <carlson@qmc.lanl.gov>
+Subject: Various
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: R
+Content-Length: 678
+
+Dear Colleagues,
+
+As we have discussed during the meeting in Manchester, the book is now
+fully in progress. Minor changes concern the format (lprocl.sty from
+WS), see the home page http://www.phy.umist.ac.uk/MASLN/. I have also
+links to subroutines for the AV8' and MS3 potentials on that page, so
+that we can have a common set of potentials with which to benchmark our
+methods.
+We look forward to your timely contributions.
+
+Yours Sincerely,
+
+Niels Walet
+
+--
+Dr Niels R. Walet  http://www.phy.umist.ac.uk/Theory/people/walet.html
+Dept. of Physics,  UMIST,   P.O. Box 88,    Manchester,  M60 1QD,  U.K.
+Phone: +44(0)161-2003693 Fax: +44(0)161-2004303 Niels.Walet@umist.ac.uk
+
+
+
+

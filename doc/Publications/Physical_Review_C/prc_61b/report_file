@@ -1,0 +1,216 @@
+From prc@aps.org Mon Jul 26 21:51:16 1999
+Return-Path: <prc@aps.org>
+Delivery-Date: Mon, 26 Jul 1999 21:51:16 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Mon, 26 Jul 1999 21:51:07 +0200
+Received: from hq.aps.org ([149.28.112.5]) by pat.uio.no with esmtp (Exim 2.12 #6) id 118qmA-00032f-00 for m.h.jensen@fys.uio.no;
+          Mon, 26 Jul 1999 21:51:06 +0200
+Received: from seq2.aps.org (seq2.aps.org [149.28.2.17]) by hq.aps.org (8.8.5/8.8.5) with ESMTP id PAA13879 
+          for <m.h.jensen@fys.uio.no>; Mon, 26 Jul 1999 15:26:55 -0400 (EDT)
+Received: (from prc@localhost) by seq2.aps.org (8.8.5/8.8.5) id PAA23837; Mon, 26 Jul 1999 15:49:57 -0400 (EDT)
+Date: Mon, 26 Jul 1999 15:49:57 -0400 (EDT)
+From: PR/C-email <prc@aps.org>
+Message-Id: <199907261949.PAA23837@seq2.aps.org>
+To: m.h.jensen@fys.uio.no
+Subject: cfr714
+Cc: prc@aps.org
+Status: R
+
+
+CFR714 
+Shell model studies of the proton drip line nucleus $"" sup 106 _Sb 
+Engeland,T./Hjorth-Jensen,M./Osnes,E./
+
+        Dear Dr. Hjorth-Jensen:
+
+              The above manuscript has been reviewed by one of our
+        referees.  Comments from the report are enclosed.
+
+
+              These comments suggest that considerable revision of
+        your paper may be in order.  If you resubmit your
+        manuscript, please include a summary of the changes made,
+        and a brief response to all recommendations or criticisms.
+
+        Sincerely,
+
+        Christopher Wesselborg
+        Associate Editor
+        Physical Review C
+
+        P.S.  We regret the delay in obtaining this report.
+-------------------------------------------------------------------------------
+        Referees report on the manuscript ``Shell model  ----''
+        (ref. no. CFR714) by T. Engeland  et al..\\
+
+              This paper report numerical results of shell model
+        calculations of $^{106}$Sb and compared with recent
+        experimental data. Because of the following reasons, I do
+        not recommend to publish it in Phys. Rev. C as a rapid
+        communications.
+
+              1) The model and some results are already published
+        in several papers (refs. (8), (9), (10), (15), (16)). In
+        this respect, there is no urgent materials in the
+        discussions of the model and effective interactions.
+        However I may agree with the publication if the article
+        contains some remarkable results in comparison with
+        experiments. Unfortunately it is not the case in this
+        article. Calculated results of energy spectra of
+        $^{106}$Sb are model space dependent and have not so much
+        predicting power.
+
+              2) A new part of the study is the calculations of
+        effective charges based on perturbative many-body methods.
+        The authors discuss their results in comparison with
+        previous theoretical studies and also with data of
+        B(E2;4$^+ \rightarrow$ 2$^+ $ ) in $^{106}$Sb . They found
+        that their results are substantially different from the
+        previous ones, and also from experimental data. They
+        should clarify more about the physics behind these
+        differences including other data in A=100 region.
+
+              3) They claim that the calculated results show a
+        good agreement with experiment. I do not see any good
+        agreement neither in energy spectra in Fig.1 nor the
+        effective charges.
+
+
+
+              I think that it will be suitable for a publication
+        in Phys. Rev. C ,as a regular article, if the authors
+        expand their study to include systematic calculations of
+        energy spectra and effective charges around A=100.
+        \end{document}
+
+
+end_report
+************************************************************************
+
+
+
+                                                               elec_sub.asc
+                                                               revised 7/97
+
+                 USE ELECTRONIC MODES TO SUBMIT AND RESUBMIT
+                      TO THE PR/PRL COMPUSCRIPT PROGRAM
+
+Manuscripts intended for the production compuscript-conversion program should 
+be submitted and resubmitted in electronic, not paper, form.  Upload via the 
+APS Web-submission site at the URL: http://publish.aps.org/ESUB/, send 
+electronic mail to prXtex@aps.org (where X=a, b, c, d, e, or l for Physical 
+Review A, B, C, D, E or Letters), or mail a DOS-formatted diskette.  All of 
+the textual material of the paper (including tables, captions, etc.) should 
+be in electronic form, as a single file. For the initial electronic-mail 
+submission, use as the subject ``submit'' followed by the three-letter 
+abbreviation for the name of the journal (pra, prb, prc, prd, pre, or prl) 
+and the last name of the first author (for example, ``submit pra jones'' or 
+``submit PRA Jones''); the first part of the message should consist of a 
+filled-out submission form (the blank form is available at the above URL) or 
+a submittal letter, giving the postal address of the corresponding author, 
+the journal section intended, and other information.
+
+Figures for an electronic submission must be received in at least 
+review-quality form before editorial processing can begin.  Web upload or 
+electronic-mail transmission (one figure per file) of PostScript-formatted 
+figures will normally meet this need.  For color or continuous-tone
+PostScript figures, hard-copy originals are also required.  The originals
+are needed to ensure that the reproductions created from the electronic
+figure files are satisfactory.  (For email transmission, use a subject 
+line similar to that for the text file with the addition of the figure 
+number, e.g., ``submit pra jones fig1''.)  Alternatively, you could send 
+scanner-reproducible journal-quality ``originals'' immediately by overnight 
+mail.  A third possibility is to send review-quality figures by fax 
+(516-591-4141), while the ``originals'' are sent by conventional or overnight 
+mail as soon as possible; please mark the fax transmission as being part of
+an electronic-mail submission.  On resubmission, it is only necessary to 
+resend your figures if the originals in our file are no longer valid.  
+
+Paper copies of the manuscript text should not be sent as a followup unless 
+the electronic-mail transmission has been unsuccessful.  
+
+A diskette submission should be accompanied by a single paper copy of the 
+manuscript, and by scanner-reproducible ``original'' figures.
+
+Include the copyright transfer form with the original figures or forward it 
+alone by conventional mail.  An electronic version of the form is available 
+at the URL http://publish.aps.org/ or via ftp to aps.org in the /pub/jrnls 
+directory, as the files copytrnsfr.asc, etc. (but do not return it 
+electronically, as we need a handwritten signature).
+
+It is important to confirm the accuracy of bibliographic information in 
+references.  This has become more important now that the journal is online.  
+Hyperlinks will be programmed to enable readers to ``click'' on references 
+and jump directly to the material cited.  If your reference citations are 
+incorrect or incomplete (e.g., missing author name, or an incorrect volume 
+number or page), the associated hyperlinks may fail, and the usefulness of 
+your paper in the online environment may be diminished.
+
+Resubmission must be in electronic form if the paper is to remain eligible 
+for the production compuscript-conversion program.  Also, macros and other 
+technical problems with the file which have been pointed out by our 
+compuscript staff must be eliminated by this stage if the paper is to remain 
+eligible.  Resubmission forms are available at http://publish.aps.org/ESUB.  
+For an email resubmission, include the filled-out form as the first part of 
+the message which contains the modified manuscript; alternatively, provide 
+as the first part of the message a summary of changes made and a brief 
+response to all recommendations and criticisms, and also state whether or 
+not the figures have been modified, and update any other relevant 
+information.  Use as the subject of the message ``resub'' followed by the 
+manuscript code number and the last name of the first author; for example, 
+``resub AB1234 Smith'' or ``resub ab1234 smith''.
+
+For further information about procedures for electronic submission, see the 
+General Information for Contributors published in the first issue of each 
+volume of the journal, and material available on APS' ftp and World Wide Web 
+servers.  In particular consult the document at the URL 
+ftp://aps.org/pub/jrnls/esubinform.asc or visit the Web-submission page 
+http://publish.aps.org/ESUB.
+
+  
+
+
+CHECK LIST for electronic submission and resubmission of PR/PRL compuscripts:
+
+
+[] Submit or resubmit electronically:
+
+   * Web upload
+   * Electronic mail
+
+       submission: SUBJECT: submit pra jones
+       resubmission: SUBJECT: resubmit ab1234 jones
+
+   * Internet: no hard copy
+   * DOS-formatted disk: one hard copy
+
+[] For electronic mail, send submission form (or cover letter) and 
+   compuscript as one file.
+
+[] Submit figures as separate PostScript files (one per file), by fax, 
+   or by overnight mail (send originals of fax figures by conventional 
+   mail as soon as possible).  Color figures are accepted.
+
+[] Confirm the accuracy of bibliographic information in references.
+
+[] Compose compuscript in REVTeX, without custom low-level-formatting 
+   macros, or private style files.  Keystroke-saving macros (via 
+   \def and \newcommand) may be used.
+
+[] Addresses:
+
+   * Web upload: http://publish.aps.org/ESUB/
+   * Compuscripts, PostScript files: pratex@aps.org, prbtex@aps.org, ... , 
+       prltex@aps.org
+   * Fax figures:  (USA) 516-591-4141
+   * For other correspondence: pra@aps.org, prb@aps.org, ... , prl@aps.org
+   * For other information: 
+       APS Research Journals home page http://publish.aps.org/
+
+
+
+
+
+
+
+
+

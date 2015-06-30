@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% making \mbf (math-italic bold face) available in LaTeX    %%
+%%    USAGE: {\mbf .....} just like \rm, \bf, etc.           %%
+%%                   by T. Kugo  (26/7/95)                   %%
+%%                   patch for LaTeX2e by K.Oohara (19/6/97) %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Remark:  
+%%  On machines possessing only a POOR font set, using this \mbf style
+%%   may make the preview/print impossible by lack of necessary fonts.
+%% In such a case, put a line of declaration   
+%%   \subfontMBF
+%% in the preamble, which makes the mbf fonts always 
+%%   either \twlmib(12pt) or \elvmib(11pt) 
+%%                        or \tenmib(10pt) or \frtnmib(14pt)
+%% which are usually available, or mere usual math-italic fonts. 
+
+
+%%% To make \mbf work on Greeks properly, we have changed the %%%
+%%% \mathchardef: "01xx  into "71xx.                          %%%
+\mathchardef\alpha="710B
+\mathchardef\beta="710C
+\mathchardef\gamma="710D
+\mathchardef\delta="710E
+\mathchardef\epsilon="710F
+\mathchardef\zeta="7110
+\mathchardef\eta="7111
+\mathchardef\theta="7112
+\mathchardef\iota="7113
+\mathchardef\kappa="7114
+\mathchardef\lambda="7115
+\mathchardef\mu="7116
+\mathchardef\nu="7117
+\mathchardef\xi="7118
+\mathchardef\pi="7119
+\mathchardef\rho="711A
+\mathchardef\sigma="711B
+\mathchardef\tau="711C
+\mathchardef\upsilon="711D
+\mathchardef\phi="711E
+\mathchardef\chi="711F
+\mathchardef\psi="7120
+\mathchardef\omega="7121
+\mathchardef\varepsilon="7122
+\mathchardef\vartheta="7123
+\mathchardef\varpi="7124
+\mathchardef\varrho="7125
+\mathchardef\varsigma="7126
+\mathchardef\varphi="7127
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% In order to make also normalface Greeks ITALIC, we have   %%%
+%%% changed "70xx into "71xx.  If you don't like this, please %%%
+%%% comment out the following. The \mbf works well even then. %%%
+%%% This part is included already in PTPTeX.sty               %%%
+%\mathchardef\Gamma="7100
+%\mathchardef\Delta="7101
+%\mathchardef\Theta="7102
+%\mathchardef\Lambda="7103
+%\mathchardef\Xi="7104
+%\mathchardef\Pi="7105
+%\mathchardef\Sigma="7106
+%\mathchardef\Upsilon="7107
+%\mathchardef\Phi="7108
+%\mathchardef\Psi="7109
+%\mathchardef\Omega="710A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%% font definitions %%%%%%%%%%%%%%%%%%
+% five point
+\font\fivmib = cmmib10  \@ptscale5 % bold math italic
+% six point
+\font\sixmib = cmmib10  \@ptscale6 % bold math italic
+% seven point
+\font\sevmib = cmmib10  \@ptscale7 % bold math italic
+% eight point
+\font\egtmib = cmmib10  \@ptscale8 % bold math italic
+% nine point
+\font\ninmib = cmmib10  \@ptscale9 % bold math italic
+% ten point
+\font\tenmib = cmmib10   % bold math italic
+% eleven point
+\font\elvmib = cmmib10   \@halfmag % bold math italic
+% twelve point
+\font\twlmib = cmmib10   \@magscale1 % bold math italic
+% fourteen point
+\font\frtnmib = cmmib10   \@magscale2 % bold math italic
+% seventeen point
+\font\svtnmib = cmmib10   \@magscale3 % bold math italic
+% twenty point
+\font\twtymib = cmmib10   \@magscale4 % bold math italic
+% twenty-five point
+\font\twfvmib = cmmib10   \@magscale5 % bold math italic
+
+%%%%%% definition of \mbf %%%%%%%%%%%%
+\newcount\f@mnum
+\def\mbf{%
+\f@mnum=\bffam \multiply\f@mnum by 256 
+\advance\f@mnum by "0030
+\mathcode`0=\f@mnum%  %numerals 0 - 9 are set to be of usual boldface
+\advance\f@mnum by 1
+\mathcode`1=\f@mnum%  %otherwise they would become those of oldstyle
+\advance\f@mnum by 1
+\mathcode`2=\f@mnum
+\advance\f@mnum by 1
+\mathcode`3=\f@mnum
+\advance\f@mnum by 1
+\mathcode`4=\f@mnum
+\advance\f@mnum by 1
+\mathcode`5=\f@mnum
+\advance\f@mnum by 1
+\mathcode`6=\f@mnum
+\advance\f@mnum by 1
+\mathcode`7=\f@mnum
+\advance\f@mnum by 1
+\mathcode`8=\f@mnum
+\advance\f@mnum by 1
+\mathcode`9=\f@mnum
+\protect\pmib}
+\newfam\mibfam
+%%%%%% \mbfplus is available for making +-</>()[] also boldface %%%%%%
+\def\mbfplus{%
+\newcount\tmpc@unt
+\f@mnum=\bffam \multiply\f@mnum by 256 
+\tmpc@unt=\f@mnum \advance\tmpc@unt by "202B
+\mathcode`+=\tmpc@unt
+\tmpc@unt=\f@mnum \advance\tmpc@unt by "303D
+\mathcode`==\tmpc@unt
+\tmpc@unt=\f@mnum \advance\tmpc@unt by "4028
+\mathcode`(=\tmpc@unt
+\tmpc@unt=\f@mnum \advance\tmpc@unt by "405B
+\mathcode`[=\tmpc@unt
+\tmpc@unt=\f@mnum \advance\tmpc@unt by "5029
+\mathcode`)=\tmpc@unt
+\tmpc@unt=\f@mnum \advance\tmpc@unt by "505D
+\mathcode`]=\tmpc@unt
+\f@mnum=\mibfam \multiply\f@mnum by 256 
+\advance\f@mnum by "303C 
+\mathcode`<=\f@mnum%     %3B3C or 3E3C
+\advance\f@mnum by 2
+\mathcode`>=\f@mnum%     %3B3E or 3E3E
+\tmpc@unt=\f@mnum \advance\tmpc@unt by "303D
+\f@mnum=\ttfam \multiply\f@mnum by 256 
+\advance\f@mnum by "202D
+\mathcode`-=\f@mnum%     %272D   fam7=typewriter font
+\mathcode`/="713D
+}
+%%%%% Redefine \mib which possibly calls \boldmath somewhere else
+\def\mib#1{{\mbf #1}}
+%%%%
+\newif\ifMB@full \MB@fulltrue
+\def\subfontMBF{\MB@fullfalse}
+%%%%%% definitions of \Xpt %%%%%%%%%%
+%%%%%% \def\pmib{...} part was added to each point-definition  %%%%
+%%%%%% \boldmath is killed since it is dangerous               %%%%
+\let\MB@vpt\vpt
+\let\MB@vipt\vipt
+\let\MB@viipt\viipt
+\let\MB@viiipt\viiipt
+\let\MB@ixpt\ixpt
+\let\MB@xpt\xpt
+\let\MB@xipt\xipt
+\let\MB@xiipt\xiipt
+\let\MB@xivpt\xivpt
+\let\MB@xviipt\xviipt
+\let\MB@xxpt\xxpt
+\let\MB@xxvpt\xxvpt
+
+\def\vpt{\MB@vpt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\fivmib}\textfont\mibfam\fivmib 
+   \scriptfont\mibfam\fivmib \scriptscriptfont\mibfam\fivmib 
+\else \def\pmib{} \fi}
+
+\def\vipt{\MB@vipt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\sixmib}\textfont\mibfam\sixmib 
+   \scriptfont\mibfam\fivmib \scriptscriptfont\mibfam\fivmib 
+\else \def\pmib{} \fi}
+
+\def\viipt{\MB@viipt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\sevmib}\textfont\mibfam\sevmib 
+   \scriptfont\mibfam\sixmib \scriptscriptfont\mibfam\fivmib 
+\else \def\pmib{} \fi}
+
+\def\viiipt{\MB@viiipt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\egtmib}\textfont\mibfam\egtmib 
+   \scriptfont\mibfam\sixmib \scriptscriptfont\mibfam\fivmib 
+\else \def\pmib{} \fi}
+
+\def\ixpt{\MB@ixpt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\ninmib}\textfont\mibfam\ninmib 
+   \scriptfont\mibfam\sixmib \scriptscriptfont\mibfam\fivmib 
+\else \def\pmib{} \fi}
+
+\def\xpt{\MB@xpt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\tenmib}\textfont\mibfam\tenmib 
+    \scriptfont\mibfam\sevmib \scriptscriptfont\mibfam\fivmib 
+\else
+\def\pmib{\fam\mibfam\tenmib}\textfont\mibfam\twlmib 
+    \scriptfont\mibfam\tenmib \scriptscriptfont\mibfam\tenmib 
+\fi}
+
+\def\xipt{\MB@xipt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\elvmib}\textfont\mibfam\elvmib 
+   \scriptfont\mibfam\egtmib \scriptscriptfont\mibfam\sixmib 
+\else
+\def\pmib{\fam\mibfam\elvmib}\textfont\mibfam\twlmib 
+    \scriptfont\mibfam\tenmib \scriptscriptfont\mibfam\tenmib 
+\fi}
+
+\def\xiipt{\MB@xiipt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\twlmib}\textfont\mibfam\twlmib
+   \scriptfont\mibfam\egtmib \scriptscriptfont\mibfam\sixmib
+\else
+\def\pmib{\fam\mibfam\twlmib}\textfont\mibfam\twlmib 
+    \scriptfont\mibfam\tenmib \scriptscriptfont\mibfam\tenmib 
+\fi}
+
+\def\xivpt{\MB@xivpt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\frtnmib}\textfont\mibfam\frtnmib
+   \scriptfont\mibfam\tenmib \scriptscriptfont\mibfam\sevmib
+\else
+\def\pmib{\fam\mibfam\frtnmib}\textfont\mibfam\frtnmib
+    \scriptfont\mibfam\elvmib \scriptscriptfont\mibfam\tenmib 
+\fi}
+
+\def\xviipt{\MB@xviipt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\svtnmib}\textfont\mibfam\svtnmib
+    \scriptfont\mibfam\twlmib \scriptscriptfont\mibfam\tenmib 
+\else \def\pmib{} \fi}
+
+\def\xxpt{\MB@xxpt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\twtymib}\textfont\mibfam\twtymib
+    \scriptfont\mibfam\frtnmib \scriptscriptfont\mibfam\twlmib 
+\else \def\pmib{} \fi}
+
+\def\xxvpt{\MB@xxvpt \def\boldmath{}%
+\ifMB@full
+\def\pmib{\fam\mibfam\twfvmib}\textfont\mibfam\twfvmib
+    \scriptfont\mibfam\twtymib \scriptscriptfont\mibfam\svtnmib 
+\else \def\pmib{} \fi}
+
+%%%%% Patch for LaTeX2e %%%%%%
+\@ifundefined{DeclareOldFontCommand}{}{%  If LaTeX2e
+ \def\@setsize#1#2#3#4{\@setfontsize#1{#4}{#2} \expandafter#3}
+}
+%%%%% End of \mbf %%%%%%
+

@@ -1,0 +1,48 @@
+This is TeX, C Version 2.95 (preloaded format=lplain 92.11.3)  15 MAY 1999 16:14
+**&lplain read
+(read.tex
+LaTeX Version 2.09 <4 Aug 1988>
+(/usr/lpp/tex/inputs/article.sty
+Document Style `article' <16 Mar 88>.
+(/usr/lpp/tex/inputs/art12.sty)
+\c@part=\count78
+\c@section=\count79
+\c@subsection=\count80
+\c@subsubsection=\count81
+\c@paragraph=\count82
+\c@subparagraph=\count83
+\c@figure=\count84
+\c@table=\count85
+) (read.aux) (fig3a.tex) (fig3b.tex)
+Underfull \hbox (badness 2376) in paragraph at lines 830--6
+[][]   []
+
+\hbox(216.8042+0.0)x390.0, glue set 2.8783
+.\hbox(0.0+0.0)x0.0
+.\hbox(216.8042+0.0)x361.34033, glue set 357.4237fil
+..\glue 0.0
+..\hbox(211.68521+0.0)x3.91663
+...\glue 3.91663 plus 1.95831 minus 1.30554
+...\special{" gnudict begin gsave 50 50 translate 0.100 0.100 scale 0 setgray /
+He\ETC.}
+...\hbox(0.0+0.0)x0.0, glue set - 306.53705fil, shifted -155.1756 []
+...\hbox(0.0+0.0)x0.0, glue set - 306.53705fil, shifted -165.21283 []
+...\hbox(0.0+0.0)x0.0, glue set - 306.53705fil, shifted -175.25006 []
+...etc.
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 3.91663 plus 1.95831 minus 1.30554
+.\glue 3.91663 plus 1.95831 minus 1.30554
+.\glue 3.91663 plus 1.95831 minus 1.30554
+.etc.
+
+[1] (read.aux) 
+Here is how much of TeX's memory you used:
+ 149 strings out of 4614
+ 1384 string characters out of 64076
+ 42620 words of memory out of 262141
+ 2083 multiletter control sequences out of 9500
+ 18996 words of font info for 72 fonts, out of 72000 for 255
+ 14 hyphenation exceptions out of 607
+ 14i,10n,15p,153b,167s stack positions out of 300i,40n,60p,2000b,4000s
+
+Output written on read.dvi (1 page, 17040 bytes).

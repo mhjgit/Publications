@@ -1,0 +1,104 @@
+From ptimu01@alpha2.tphys.physik.uni-tuebingen.de Mon Feb 17 17:35:40 1997
+Return-Path: <ptimu01@alpha2.tphys.physik.uni-tuebingen.de>
+Received: from outmail.zdv.uni-tuebingen.de by norsci0.nordita.dk (4.1/SMI-4.1)
+	id AA05213; Mon, 17 Feb 97 17:35:37 +0100
+Received: from alpha2.tphys.physik.uni-tuebingen.de by outmail.zdv.uni-tuebingen.de (4.1/ZDV-Uni-Tuebingen-1.0)
+	id AA04190; Mon, 17 Feb 97 17:31:15 +0100
+Received: from localhost by alpha2.tphys.physik.uni-tuebingen.de; (5.65/1.1.8.2/03Dec96-0327PM)
+	id AA15208; Mon, 17 Feb 1997 17:28:35 +0100
+Date: Mon, 17 Feb 1997 17:28:34 +0100 (MET)
+From: Herbert Muether <ptimu01@alpha2.tphys.physik.uni-tuebingen.de>
+To: mjensen@nordita.dk
+Cc: Ruprecht Machleidt <machleid@phys.uidaho.edu>,
+        Lars Engvik <lars.engvik@fys.uio.no>, artur@dirac.ecm.ub.es
+Subject: Re: Ruprecht's comments
+In-Reply-To: <199702170731.IAA17461@nordita.dk>
+Message-Id: <Pine.OSF.3.95.970217172518.17151A-100000@alpha2.tphys.physik.uni-tuebingen.de>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+
+Dear Morten, Lars, Ruprecht and Arturo,
+
+I am not as fast as Ruprecht in understanding the differences between
+local and non-local NN interactions and their predictions on symmetry
+energies in particular at high densities. Also I am not really sure whether 
+I have understood this difference at all. Let me try to summarize what
+I think we can deduce from our results:
+
+1) Figur 1: There has been a difference in the predictions of symmetry
+ energies between variational or CBF kind of calculations using essentially
+ V14 potential and BHF calculations using OBE potentials. The former obtained
+ a stabilization of the symmetry energy resulting from NN forces while the
+ BHF (OBE) calculations yield an increase of the symmetry energy even at high
+ density. Our figure 1 shows that this difference is not due to the method 
+ (BHF versus variational) but due to the interaction. 
+
+2) Local versus nonlocal potentials in 1s0 channel: The contribution to the
+ energy is calculated from matrix elements of G, which are diagonal in the 
+relative momentum q: G(q). G(q) or T(q) is less atrractive with increasing q.
+This is also true for V(q) = V_direct(momentum transfer=zero) - V_exchange
+For a local potential, the direct contribution is independent on q, while for
+a non-local (if it is of OBE kind) already the direct contribution contains
+a q-dependence such that V_direct(q) get less attractive with increasing q.
+All potentials (local and nonlocal) are fitted to describe
+phase shifts:
+T(q)=V_local(q)+Delta_local(q) = V_nl(q)+Delta_nl(q)
+(Delta=T-V)
+Local potentials require a larger attractive Delta then non-local
+in order that T(q) can exhibit the same q-dependence. 
+Going from T to G, the Delta-contribution gets quenched leading to a G
+which is less attractive than T. This effect is larger for local than for
+non-local potentials. That is what is confirmed in Fig. 4
+
+3) The same feature can also be observed in the 3S1 channel. However, in this
+case the differences local versus non-local are overwhelmed by the effects
+of the tensor force. Note that the 3 Nijmegen potentials have essentially the
+same d-state probability (5.66 percent), the non-local version shows more
+attraction then the local Nijmegen potentials. The cdBonn, however, has a 
+weaker tensor (d-state 4.8 percent) therefore it is much more attractive in
+this channel than the other two. This explains Fig. 3
+
+4) How can we understand the large differences in the channels with l.le.1?
+I am not so sure about this point but I think it is probably the most important
+for the understanding of the symmetry energy:
+The G-matrix in these partial waves is dominated by the Born term. The q-
+dependence of these Born terms for local and non-local potentials is as we
+discussed in 2). This would explain the behavior of the Bonn results in Fig.5 
+and 7 , I cannot explain the behvior of Nijm1 in Fig.5.
+
+5) Also my results for the Ruhrpot dont fit into the picture developed so far:
+Also the ruhrpot is non-local, it yields a symmetry energy increasing with
+density as cdBonn. The behavior in the l=0 channels, hwoever, is quite 
+different (see tables at the end of this message).
+
+6) It seems that we can understand some features and mechanisms relating 
+symmetry energy and NN interaction. I myself, however, do not feel satisfied
+yet. We should try to work out the points which I try to make under 2-4)
+more in detail. If we simply state results for potentials x,y and z, people 
+may ask, so what? 
+
+7) What about the differences in the momentum-dependence of the
+single-particle energies. This could give us an additional clou.
+
+8) Shall we try to incorporate the Ruhrpot results (as listed below)? I
+could go up to higher densities, if we think that is what is needed.
+
+Best regards                 Herbert
+
+
+
+Nuclear Matter (cont. choice)                    Neutron M
+
+kf         1s0        3s1        Vtot             kf          Vtot
+1.0        -8.99      -12.63      -21.24         1.2598       -11.28
+1.2        -12.87     -15.99      -28.43         1.5118       -16.69
+1.4        -17.15     -19.06      -35.87         1.7638       -21.89
+1.6        -21.31     -21.5       -42.22         2.0158       -25.65
+1.7        -23.16     -22.2       -44.52         2.1418       -26.25
+1.8        -24.72     -22.4       -45.88         2.2678       -25.86
+1.9        -26.03     -22.4       -46.65         2.3938       -24.42
+2.0        -26.93     -22.1       -46.31         2.5198       -21.69
+2.1        -27.56     -21.8       -45.25         2.6458       -17.68
+
+

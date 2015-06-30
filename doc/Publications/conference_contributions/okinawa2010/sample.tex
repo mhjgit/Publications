@@ -1,0 +1,586 @@
+%%%=======================================================
+%%% =
+%%% = Sample layout file for the class "aipproc"
+%%% = 
+%%% = DO NOT USE THIS FILE AS A TEMPLATE FOR YOUR DOCUMENTS
+%%% =
+%%% = Instead use the file template-xx.tex
+%%% =
+%%%=======================================================
+
+
+\input{aipcheck.tex}
+
+\newcommand\sps{\space\space\space\space}
+\typeout{}
+\typeout{!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
+\typeout{!! \sps\sps\sps\sps\sps\sps\sps\sps\sps\sps\sps\sps!!}
+\typeout{!! This is *NOT* a template file for producing \sps!!}
+\typeout{!! new documents. \sps\sps\sps\sps\sps\sps\sps\sps\space!!}
+\typeout{!!\sps\sps\sps+---------------+\sps\sps\sps\sps\sps!!}
+\typeout{!! Please use |template-xx.tex| for this purpose! \space!!}
+\typeout{!!\sps\sps\sps+---------------+\sps\sps\sps\sps\sps!!}
+\typeout{!! (the 'xx' depends on the distribution) \sps\sps\space!!}
+\typeout{!! \sps\sps\sps\sps\sps\sps\sps\sps\sps\sps\sps\sps!!}
+\typeout{!! This file is for testing and displaying the \sps!!}
+\typeout{!! AIP layouts only. \sps\sps\sps\sps\sps\sps\sps\space\space!!}
+\typeout{!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
+\typeout{}
+
+
+\typeout{}
+\typeout{**********************************************}
+\typeout{*}
+\typeout{* Here you can type in any options for the class.}
+\typeout{* A full list of supported options is described in}
+\typeout{* the aipguide documentation.}
+\typeout{*}
+\typeout{* Or you may simply press the <RETURN> key in which}
+\typeout{* case the file is processed with the standard settings.}
+\typeout{*}
+\typeout{**********************************************}
+\typeout{}
+\typein[\selectedoptions]{Any options to the class?}
+\ifx\empty\selectedoptions
+  \def\selectedoptions{final}
+\fi
+
+\documentclass[
+   \selectedoptions
+  ]
+  {aipproc}
+
+
+
+\newcommand\sample{%
+ Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+ lamen\-ta\-bile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+ quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+ miles Ulixi temperet a lacrimis? \smallsample
+}
+
+\newcommand\smallsample{%
+ Et iam nox umida caelo praecipitat,
+ suadentque cadentia sidera somnos.
+ Sed si tantus amor casus cognoscere
+ nostros et breviter Troiae supremum audire laborem, quamquam animus
+ meminisse horret, luctuque refugit, incipiam.
+}
+
+\typeout{}
+\typeout{**********************************************}
+\typeout{*}
+\typeout{* Type in the layout style name to be used:}
+\typeout{*}
+\typeout{* `6x9' for AIP proceedings 6x9 inch single column}
+\typeout{* `8x11single' for AIP proceedings 8x11 inch single column}
+\typeout{* `8x11double' for AIP proceedings 8x11 inch double column}
+\typeout{* `arlo' for Acoustics Research Letters Online}
+\typeout{*}
+\typeout{* ATTENTION:}
+\typeout{*}
+\typeout{* \space Typesetting the guide with different styles might
+                  produce}
+\typeout{* \space errors if the .aux file is kept between runs!}
+\typeout{*}
+\typeout{**********************************************}
+\typeout{}
+\typein[\selectedlayoutstyle]{What layout?}
+\layoutstyle\selectedlayoutstyle
+
+\SetInternalRegister\hbadness{8000} % pseudo latin isn't breaking very well :-)
+
+
+% We need something to show special stuff for ARLO only.
+%
+\newcommand\doingARLO[2][]{%
+  \ifx\mmref\undefined #1\else #2\fi
+}
+  
+
+\begin{document}
+
+\title 
+      [Infandum, regina, iubes renovare dolorem]
+      {Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui}
+
+\classification{43.35.Ei, 78.60.Mq}
+\keywords{Document processing, Class file writing, \LaTeXe{}}
+
+\author{F. Mittelbach}{
+  address={Zedernweg 62, 55128 Mainz, Germany},
+  email={frank.mittelbach@latex-project.org},
+  thanks={This work was commissioned by the AIP}
+}
+
+\iftrue
+\author{Arno Mittelbach}{
+  address={Zedernweg 62, 55128 Mainz, Germany},
+  email={arno@mittelbach-online.de},
+}
+
+\author{D. P. Carlisle}{
+  address={Willow House, Souldern},
+  email={david@dcarlisle.demon.co.uk},
+  homepage={http://www.dcarlisle.demon.co.uk},
+  altaddress={When I go to work: NAG Ltd, Oxford}
+}
+\fi
+
+% \copyrightholder{Acoustical Scociety of America}
+\copyrightyear  {2001}
+
+
+
+\begin{abstract}
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna\thanks{A footnote in the abstract} fui. Quis talia
+fando Myrmidonum Dolopumve aut duri miles Ulixi temperet a lacrimis?
+
+Et iam nox umida caelo praecipitat, suadentque cadentia sidera
+somnos. Sed si tantus amor casus cognoscere nostros et breviter Troiae
+supremum audire laborem, quamquam animus meminisse horret, luctuque
+refugit, incipiam.\thanks{A second footnote in the abstract}
+\end{abstract}
+
+
+\date{\today}
+
+
+\maketitle
+
+\section{Introduction}
+
+
+\ifthenelse{\equal\selectedlayoutstyle{6x9}}{\par\bfseries 
+  Note: The entire paper will be reduced 15\% in the printing
+  process. Please make sure all figures as well as the text within the
+  figures are large enough in the manuscript to be readable in the
+  finished book.\par\bfseries 
+  Note: The entire paper will be reduced 15\% in the printing
+  process. Please make sure all figures as well as the text within the
+  figures are large enough in the manuscript to be readable in the
+  finished book.\par\bfseries 
+  Note: The entire paper will be reduced 15\% in the printing
+  process. Please make sure all figures as well as the text within the
+  figures are large enough in the manuscript to be readable in the
+  finished book.\normalfont}{}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+Some url test \url{http://www.world.universe}.
+
+\section{Important words of the universe are shown in this section}
+
+\subsection{A B-head}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile\footnote{Here we test footnotes.} regnum cruerint Danai;
+quaeque ipse miserrima vidi, et quorum pars magna fui. Quis talia
+fando Myrmidonum Dolopumve aut duri miles Ulixi temperet a
+lacrimis? Et iam nox umida caelo praecipitat, suadentque cadentia
+sidera somnos. Sed si tantus amor casus cognoscere nostros
+et\footnote{Et iam nox umida caelo praecipitat, suadentque cadentia
+sidera somnos. Et iam nox umida caelo praecipitat, suadentque cadentia
+sidera somnos.} breviter Troiae supremum audire laborem, quamquam
+animus meminisse\footnote{Here we test footnotes.} horret, luctuque
+refugit, incipiam.  Et iam nox umida caelo praecipitat, suadentque
+cadentia sidera somnos. Sed si tantus amor casus
+cognoscere\footnote{Here we test footnotes.} nostros et breviter Troiae
+supremum audire laborem, quamquam animus meminisse horret,
+luctuque refugit, incipiam.
+
+\subsubsection{A C-head}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. 
+
+Sed si tantus amor casus\doingARLO{ \mmref{fv}}
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+\doingARLO{        % not known elsewhere
+\begin{multimedia}
+  \mmuid{523}
+  \mmtype{gif}
+  \mmsize{1.2Mb}
+  \mmurl{http://yorktown.eng.yale.edu/test/msXXX/}
+  \mmcaption{Fancy video}
+  \label{fv}
+\end{multimedia}}
+
+Et iam nox umida caelo praecipitat $J_{ion}$ suadentque cadentia
+sidera somnos. Sed si tantus amor casus cognoscere nostros et breviter
+Troiae $J_{ion}$ supremum audire laborem:
+\begin{equation}
+J_{ion}=A\frac{exp\left[-\frac{E_a}{kT}\right]}{kT}j \label{ionflux}
+\end{equation}
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. $A$ talia fando, $E_a$ iam nox umida, $k$ caelo
+praecipitat, suadentque cadentia sidera somnos. See \eqref{ionflux}.
+
+
+
+\paragraph{And a D-head}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui \cite{Brown2000,BrownAustin:2000}. Quis talia fando
+Myrmidonum Dolopumve aut duri miles Ulixi temperet
+\cite{Mittelbach/Schoepf:1990} a lacrimis? Et iam
+nox umida caelo praecipitat, suadentque \cite{Wang} cadentia
+sidera somnos.
+
+\doingARLO{        % not known elsewhere
+\begin{multimedia}
+  \mmuid{524}
+  \mmtype{wav}
+  \mmsize{300k}
+  \mmurl{http://yorktown.eng.yale.edu/test/ms524/}
+  \mmcaption{Fancy Wave}
+\end{multimedia}
+}
+
+\begin{figure}
+  \reflectbox{\includegraphics[height=.3\textheight]{golfer}}
+  \caption{Quis talia fando Myrmidonum}
+\end{figure}
+
+
+\begin{figure}[b]
+  \resizebox{12pc}{!}{\includegraphics{outline}}
+\caption{Quis talia fando Myrmidonum}
+\end{figure}
+
+\begin{figure}
+\caption{Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+         lamentabile regnum cruerint Danai; quaeque ipse miserrima
+         vidi, et quorum pars magna fui.}
+\includegraphics[height=.5\textheight]{golfer}
+\end{figure}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+
+
+\begin{table}[!t]
+\begin{tabular}{rrrp{.7\textwidth}} % .4\textwidth
+\hline
+  \tablehead{1}{r}{b}{File} &
+  \tablehead{1}{c}{b}{Date} & 
+  \tablehead{1}{c}{b}{Version} &
+  \tablehead{1}{c}{b}{Description} \\
+\hline
+ aipproc.cls &    1998/08/21 & v0.9a & AIP Proceedings (FMi) \\
+    calc.sty &    1997/11/11 & v4.0e & Infix arithmetic (KKT,FJ) \\
+graphicx.sty &    1997/06/09 & v1.0d & Enhanced LaTeX Graphics (DPC,SPQR) \\
+  keyval.sty &    1997/11/10 & v1.10 & key=value parser (DPC) \\
+graphics.sty &    1997/09/09 & v1.0f & Standard LaTeX Graphics (DPC,SPQR) \\
+    trig.sty &    1994/10/16 & v1.08 & sin cos tan (DPC) \\
+   dvips.def &    1997/09/09 & v3.0e & Driver-dependant file (DPC,SPQR) \\
+ article.cls &    1998/05/05 & v1.3y & Standard LaTeX document class \\
+  size10.clo &    1998/05/05 & v1.3y & Standard LaTeX file (size option) \\
+ mathptm.sty &    1998/01/07 & PSNFSS v.7 & Times + math package from fontinst : S Rahtz \\
+ fontenc.sty &    1998/06/12 & v1.9p & Standard LaTeX package \\
+   t1enc.def &    1998/06/12 & v1.9p & Standard LaTeX file \\
+   times.sty &    1998/01/07 & PSNFSS v.7 & Times font as default roman : S Rahtz \\
+textcomp.sty &    1998/06/12 & v1.9p & Standard LaTeX package \\
+  ts1enc.def &    1998/06/12 & v3.0d & (jk/car/fm) Standard LaTeX file \\
+varioref.sty &    1997/12/06 & v1.1d & package for extended references (FMi) \\
+ fix2col.sty &    1998/08/17 & v0.03 & Output Routine fixes for two
+                                       column mode (DPC,FMi) \\
+shortvrb.sty &    1998/05/19 & v2.0b & Standard LaTeX documentation
+                                       package (FMi) \\
+  ts1cmr.fd &    1998/03/27 & v2.5g  & Standard LaTeX font definitions \\
+   t1ptm.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+T1/ptm. \\
+   t1pcr.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+T1/pcr. \\
+ot1ptmcm.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+OT1/ptmcm. \\
+omlptmcm.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+OML/ptmcm. \\
+omspzccm.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+OMS/pzccm. \\
+omxpsycm.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+OMX/psycm. \\
+  ot1ptm.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+OT1/ptm. \\
+  ts1ptm.fd &    1997/09/30 & Fontinst v1.6 & font definitions for
+TS1/ptm. \\
+\hline
+\end{tabular}
+\caption{Sample of a wide table that is automatically being turned sideways}
+\label{tab:b}
+\end{table}
+
+
+\begin{figure}
+  \resizebox{6pc}{!}{\includegraphics{escher}}
+  \resizebox{6pc}{!}{\reflectbox{\includegraphics{escher}}}
+\caption{The caption}
+\end{figure}
+
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. 
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia\footnote{A few more footnotes} fando
+Myrmidonum Dolopumve aut duri miles Ulixi temperet a lacrimis? Et iam
+nox umida caelo praecipitat, suadentque cadentia\footnote{Here we test
+footnotes.} sidera somnos. Sed si tantus amor casus cognoscere nostros
+et breviter Troiae supremum audire laborem, quamquam animus meminisse
+horret, luctuque refugit, incipiam.
+In the following we test itemize environments up to the forth level.
+\begin{itemize}
+\item
+  An item with more than a line of text. Infandum, regina, iubes 
+  renovare dolorem, Troianas ut opes et lamentabile regnum cruerint 
+  Danai.
+\item 
+  Another item with sub entries
+  \begin{itemize}
+  \item
+   A sub entry.
+  \item
+   Second sub entry.
+    \begin{itemize}
+    \item
+     A sub sub entry.
+      \begin{itemize}
+      \item
+       A sub sub sub entry.
+      \item
+       Second sub sub sub entry.
+      \end{itemize}
+    \item
+     Second sub sub entry.
+    \end{itemize}
+  \end{itemize}
+\item 
+  A final item.
+\end{itemize}
+
+
+\begin{table}
+\begin{tabular}{lrrrr}
+\hline
+  & \tablehead{1}{r}{b}{Single\\outlet}
+  & \tablehead{1}{r}{b}{Small\tablenote{2-9 retail outlets}\\multiple}
+  & \tablehead{1}{r}{b}{Large\\multiple}
+  & \tablehead{1}{r}{b}{Total}   \\
+\hline
+1982 & 98 & 129 & 620    & 847\\
+1987 & 138 & 176 & 1000  & 1314\\
+1991 & 173 & 248 & 1230  & 1651\\
+1998\tablenote{predicted} & 200 & 300 & 1500  & 2000\\
+\hline
+\end{tabular}
+%\source{Central Statistical Office, UK}
+\caption{Average turnover per shop: by type
+  of retail organisation}
+\label{tab:a}
+\end{table}
+
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a \cite{EVH:Office} lacrimis? In the following we test enumrerate
+environments up to the second level. In addition we look how
+ridiculous large labels look.
+\begin{enumerate}
+\item
+  An item \cite{Liang:1983}
+\item 
+  Another item with sub entries
+  \begin{enumerate}
+  \item
+   A sub entry \cite{Wang}
+  \item
+   Second sub entry
+  \end{enumerate}
+\item
+  The final item with normal label.
+\end{enumerate}
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia  fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+\begin{description}
+\item[Infandum] 
+ regina, iubes renovare dolorem, Troianas ut opes et lamentabile
+ regnum cruerint Danai.
+\item[Sed]
+ si tantus amor casus cognoscere nostros et breviter Troiae supremum
+ audire laborem, quamquam animus meminisse horret, luctuque refugit,
+ incipiam.
+\item[Lamentabile] regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia  fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+\end{description}
+
+
+Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+
+
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus  \cite{Liang:1983}
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a  \cite{SJ:1999} lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+\section{Infandum, regina, iubes renovare dolorem}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+
+Et iam nox umida caelo praecipitat, suadentque cadentia sidera
+somnos. Sed si tantus amor casus cognoscere nostros et breviter Troiae
+supremum audire \cite{Knuth:WEB} laborem, quamquam animus meminisse horret, luctuque
+refugitum, refugit, incipitat,
+suadenovare dolorem, Troianas ut opes Ulixi temperet breviter
+Troiaeque ipse nostros et a lacrimis? 
+
+Infandum, regina, iubes renovare dolor casus cognosceret a lacrimis? 
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint \cite{BrownAustin:2000} Danai; quaeque ipse
+miserrima vidi, et quorum pars magna fui. Quis talia fando Myrmidonum
+Dolopumve aut duri miles Ulixi temperet a lacrimis?  Infandum, regina,
+iubes renovare dolorem, Troianas ut opes et lamentabile regnum
+cruerint Danai; quaeque ipse miserrima vidi, et quorum pars magna
+fui. Quis talia fando Myrmidonum Dolopumve aut duri miles Ulixi
+temperet a lacrimis?
+
+\begin{theacknowledgments}
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? 
+\end{theacknowledgments}
+
+% choose bibtex style depending on layout style and options used in
+% sample:
+
+\doingARLO[\bibliographystyle{aipproc}]
+          {\ifthenelse{\equal{\AIPcitestyleselect}{num}}
+             {\bibliographystyle{arlonum}}
+             {\bibliographystyle{arlobib}}
+          }
+\bibliography{sample}
+
+\end{document}
+

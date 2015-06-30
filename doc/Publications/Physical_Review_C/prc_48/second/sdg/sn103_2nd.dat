@@ -1,0 +1,74 @@
+Calculation: 103SN
+
+The basic shell model data:
+The proton number: 0
+The neutron number: 3
+Twice total projection of angular momentum: 1
+The total parity: +
+The number of j-orbits: 4
+	0  4   7   0.20
+	1  2   5   0.00
+	1  2   3   2.89
+	2  0   1   2.80
+Maximum lanczo iterations: 100
+Total number of model eigenstates: 20
+J(J+1) + JT_MIX*T(T+1) - JT_MIX: 1000
+Limit for J (J*(J+1) < JT_MIX): 30
+Angular accuracy (> J*(J+1)): 0.001
+Type of calculation (new or continue): new
+The files:
+Input v_effective in JT scheme: 3p1h0h.dat
+File to store lanczo vectors: store-102.dat
+File to store energy- and JT-matrix elements: h-store-102.dat
+Output file for results: sn103_2nd.dat
+Print eigenvectors: no
+END:
+END:
+
+orb  osc  l  2*j  2*m  link    e
+
+ 0    0   4   7    7    -1      0.200000
+ 0    0   4   7    5    0      0.200000
+ 1    1   2   5    5    -1      0.000000
+ 0    0   4   7    3    1      0.200000
+ 1    1   2   5    3    2      0.000000
+ 2    1   2   3    3    -1      2.890000
+ 0    0   4   7    1    3      0.200000
+ 1    1   2   5    1    4      0.000000
+ 2    1   2   3    1    5      2.890000
+ 3    2   0   1    1    -1      2.800000
+ 3    2   0   1    -1    9      2.800000
+ 2    1   2   3    -1    8      2.890000
+ 1    1   2   5    -1    7      0.000000
+ 0    0   4   7    -1    6      0.200000
+ 2    1   2   3    -3    11      2.890000
+ 1    1   2   5    -3    12      0.000000
+ 0    0   4   7    -3    13      0.200000
+ 1    1   2   5    -5    15      0.000000
+ 0    0   4   7    -5    16      0.200000
+ 0    0   4   7    -7    18      0.200000
+total number of SD = 145
+
+
+ Final Eigenvalues
+ E(0)=-1.6102E+00  <J_J+> =  3758.7500  
+ E(1)=-1.4369E+00  <J_J+> =  3765.7500  
+ E(2)=-1.1424E+00  <J_J+> =  3753.7500  
+ E(3)=-6.2605E-01  <J_J+> =  3774.7500  
+ E(4)=-5.7450E-01  <J_J+> =  3758.7500  
+ E(5)=-5.2372E-01  <J_J+> =  3785.7500  
+ E(6)=-5.0679E-01  <J_J+> =  3774.7500  
+ E(7)=-4.8778E-01  <J_J+> =  3765.7500  
+ E(8)=-4.3786E-01  <J_J+> =  3753.7500  
+ E(9)=-4.1298E-01  <J_J+> =  3758.7500  
+ E(10)=-3.8249E-01  <J_J+> =  3765.7500  
+ E(11)=-3.4355E-01  <J_J+> =  3813.7500  
+ E(12)=-2.5903E-01  <J_J+> =  3750.7500  
+ E(13)=-2.1340E-01  <J_J+> =  3753.7506  
+ E(14)=-2.1205E-01  <J_J+> =  3774.7487  
+ E(15)=-1.0722E-01  <J_J+> =  3798.7500  
+ E(16)=-9.6980E-02  <J_J+> =  3758.7500  
+ E(17)=1.6850E-02  <J_J+> =  3765.7500  
+ E(18)=7.2261E-02  <J_J+> =  3786.5348  
+ E(19)=1.0424E-01  <J_J+> =  3812.9615  
+ run time: 0 hour 0 min 13 sec

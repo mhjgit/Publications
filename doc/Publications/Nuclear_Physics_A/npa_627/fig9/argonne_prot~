@@ -1,0 +1,81 @@
+From lars.engvik@fys.uio.no Tue Jun 10 11:49:12 1997
+Return-Path: <lars.engvik@fys.uio.no>
+Received: from ulrik.uio.no by pat.uio.no with local-SMTP (PP) 
+          id <14545-0@pat.uio.no>; Tue, 10 Jun 1997 11:48:40 +0200
+Received: by isak.uio.no ; Tue, 10 Jun 1997 11:48:22 +0200 (METDST)
+Date: Tue, 10 Jun 1997 11:48:22 +0200 (METDST)
+From: lars.engvik@fys.uio.no
+Message-Id: <199706100948.LAA02400@isak.uio.no>
+To: m.h.jensen@fys.uio.no
+Status: R
+
+Morten, her er data for protonfraksjoner de er vesentlig bedre naa.
+Jeg foeler meg  imidlertid ikke trygg paa resultatene for 
+V18 potensialet. Symetrienergien ser ut til aa naa uante hoeyder 
+ved store tettheter. 
+Jeg har resultater for symetrienergier men de er som foer.
+
+
+Lars
+
+Terskelen for URCA-prosesser er noe forandret:
+
+CD-Bonn 0.88 fm-3
+Nijm-I  1.25 fm-3
+Nijm-II  --------
+Reid93  1.36 fm-3
+   .1000   .22828E-01
+   .1250   .25367E-01
+   .1500   .27417E-01
+   .1750   .29816E-01
+   .2000   .33116E-01
+   .2250   .37725E-01
+   .2500   .41755E-01
+   .2750   .45237E-01
+   .3000   .48354E-01
+   .3250   .51367E-01
+   .3500   .54698E-01
+   .3750   .58229E-01
+   .4000   .61710E-01
+   .4250   .64980E-01
+   .4500   .68346E-01
+   .4750   .72075E-01
+   .5000   .76215E-01
+   .5250   .80520E-01
+   .5500   .84920E-01
+   .5750   .89337E-01
+   .6000   .93640E-01
+   .6250   .97736E-01
+   .6500   .10131E+00
+   .6750   .10462E+00
+   .7000   .10770E+00
+   .7250   .11057E+00
+   .7500   .11326E+00
+   .7750   .11582E+00
+   .8000   .11825E+00
+   .8250   .12059E+00
+   .8500   .12285E+00
+   .8750   .12506E+00
+   .9000   .12725E+00
+   .9250   .12945E+00
+   .9500   .13154E+00
+   .9750   .13364E+00
+  1.0000   .13587E+00
+  1.0250   .13830E+00
+  1.0500   .14098E+00
+  1.0750   .14405E+00
+  1.1000   .14747E+00
+  1.1250   .15124E+00
+  1.1500   .15538E+00
+  1.1750   .15987E+00
+  1.2000   .16494E+00
+  1.2250   .17052E+00
+  1.2500   .17634E+00
+  1.2750   .18233E+00
+  1.3000   .18842E+00
+  1.3250   .19455E+00
+  1.3500   .20066E+00
+  1.3750   .20671E+00
+  1.4000   .21266E+00
+  1.4250   .21849E+00
+  1.4500   .22415E+00

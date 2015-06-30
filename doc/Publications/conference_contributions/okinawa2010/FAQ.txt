@@ -1,0 +1,205 @@
+% $Id: FAQ.txt,v 1.14 2005/12/01 16:16:27 frank Exp $
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This document lists a number of questions/answers to help you in using
+% the aipproc class file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Multiple \caption's in a figure environment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+How can I use several \caption commands inside a "figure" environment?
+
+   Inside the "figure" environment of the aipproc class this is not
+   possible as the class supports only a single caption (in order to
+   automatically place it according to the chosen layout).
+
+   If you urgently need several captions (for example, to place two
+   separate figures side by side to save space) you can use the
+   "ltxfigure" environment instead which corresponds to the standard
+   LaTeX version of the figure environment. Please note, that this
+   means that you have to manually position and format the captions
+   according AIP style.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Multiple author addresses
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+How can I specify that an author has more than one address?
+
+   Inside \author use address={primary address} for the primary
+   address of the author and altaddress={secondary address} for the
+   other address. More than 2 addresses are not supported though you
+   can, of course, add all of the additional ones in altaddress (see
+   also the example in the template file).
+
+   In \layoutstyle{arlo} the key "altaddress" is ignored so there
+   additional addresses will not print.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sorting and presenting citations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+How can I get my citations sorted if they appear like [2,1,3,4] ?
+
+    Use \documentclass[sort]{aipproc}
+
+    (only possible if the natbib package is installed)
+
+    Without natbib the package cite can help.
+
+-------------------------------------
+
+How can I get my citations compressed like [1-4] if they are
+consecutive?
+
+    Use \documentclass[sort&compress]{aipproc}
+
+    (only possible if the natbib package is installed)
+
+    Without natbib the package cite can help.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Symbols and characters in math
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+My math formula shows upright lowercase greek letters, which doesn't
+look nice, what can I do?
+
+   Try the option mathptmx (now the default) instead of mathptm.
+
+-------------------------------------
+
+I need bold symbols but the don't show up.
+
+   Unfortunately the class design requires Times fonts which have no
+   bold symbols (unless you have the commercial MathTime fonts).
+
+   If you desperately need bold symbols you can either try the bm
+   package (which gives you "poor mans bold" by overprinting
+   characters) or you can use the class option "nomathfonts", which
+   will use Computer Modern Math Fonts for math. The latter violates
+   the design specifications of AIP so you may have to check with the
+   editor of your paper.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Processing errors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+When I process the a document I get the error message:
+
+\@begindocumenthook ...gtempa }\citestyle 
+    {\csname AIP\AIPcitestylese... 
+l.81 \begin{document} 
+
+   Your installation contains "natbib.sty" in a very old
+   version. Please upgrade this package.
+
+   Alternatively you may try to use the option "nonatbib" but this
+   doesn't work with all layouts.
+
+-------------------------------------
+
+When I process the document I get the error message:
+
+! LaTeX Error: Counter too large.
+...
+l.289 \maketitle
+
+   Your document most likely contains many authors with many different
+   addresses. The AIP classes only support a limited amount of
+   different addresses, since they are labeled with footnote symbols.
+
+   If you need more addresses you might try
+
+      \renewcommand\XFMaddressmarkstyle{\alph}
+
+   after the \layoutstyle declaration. This will produce lowercase
+   letters as markers which is not according to the AIP spec but
+   better than failure.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Printing problems
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+I have specified the option "letterpaper", but my margins are still
+wrong when the PostScript file is printed.
+
+    The paper format is typically also specified in the program that
+    turns the LaTeX output into PostScript. For example, some dvips
+    installations have A4 as their default paper (typically those in
+    Europe). In that case you have to call the dvips program with the
+    option "-t letter" to ensure that the resulting PostScript file
+    has the correct margins.
+
+    For other printer drivers you have to check in the driver
+    documentation.
+
+
+
+-------------------------------------
+
+The aipcheck.tex document says everything is "ok", but printing my
+PcTeX installation can't print the document correctly.
+
+    Prior to version 5 (July 2003) PCTeX did not have virtual font support and
+    could not use the LaTeX versions that required it.  Users with pre-v5 can
+    upgrade for as little as $0 to $29.  See http://www.pctex.com for details.
+
+
+-------------------------------------
+
+The aipcheck.tex document says everything is "ok", but printing my
+document gives strange errors like, wrong or missing characters,
+strange spacing between characters, or errors like
+
+ Font ptmb8t at Resolution 540 not found, characters will be left
+ blank
+
+What is wrong?
+
+   The most likely cause is that your printer driver can't handle
+   virtual fonts, i.e., that it is unable to support the standard
+   LaTeX font packages (PSNFSS). All freeware distributions and nearly
+   all commercial distributions support LaTeX properly. However there
+   are installations that are incomplete in this respect!
+
+   You can test this by trying the following simple document:
+
+ \documentclass{article}
+
+ \usepackage{times,mathptm}
+
+ \begin{document}
+ A standard LaTeX document in Times with Times Math: $a+ \alpha = \sum \beta$
+ \end{document}
+
+   If this does not print then check with your TeX supplier.
+
+   As an emergency workaround you can use the option "cmfonts" but
+   this gives you a document not containing the right fonts (according
+   to AIP/ARLO proceeding specs).
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Support for ARLO journal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The ARLO journal no longer uses LaTeX as input. However, for processing older
+documents the code support for ARLO is still part of the distribution, see the
+README.txt file for instructions.
+
+-------------------------------------
+

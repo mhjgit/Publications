@@ -1,0 +1,824 @@
+\subsection{Introduction}
+
+In this section and section 8 we will focus on nuclear matter calculations.
+Central
+to the discussion is the Brueckner-Hartree-Fock (BHF) approach, where
+variational methods are used to obtain self-consistent
+sp energies and wave functions.
+
+Nuclear matter is an idealized infinite medium with an equal number
+of protons and neutrons and the Coulomb interaction between the protons
+being artificially removed. These restrictions imply that the phenomenological
+Weizs\"{a}cker mass formula, extrapolated to $A\rightarrow \infty$, gives
+a binding energy per particle ${\cal E}/A=16\pm 1$ MeV. A main purpose 
+of nuclear matter theories is to derive this binding energy
+${\cal E}/A$ from first principle,
+i.e.\ from the underlying NN interaction. Following this microscopic
+line of approach, one can in turn determine the equilibrium nuclear matter
+density $\rho_0$ and the incompressibility coefficient $\kappa$.
+From electron-nucleus scattering experiments one has estimated 
+$\rho_0 \sim 0.17 $ fm$^{-3}$, and from the analysis of nuclear
+breathing modes $\kappa$ is of the order $\sim 200$ MeV.
+Finally, calculations are simplified in 
+nuclear matter, since the solutions to either the Dirac or the 
+sp Schr\"{o}dinger equations are given in terms of plane waves.
+
+Until recently, most microscopic calculations of the energy per particle
+for nuclear or neutron matter have been carried out within a
+non-relativistic framework \cite{mah85,km83,wff88},
+where the non-relativistic Schr\"{o}dinger equation is used to describe the
+sp motion in the nuclear medium. Various degrees of
+sophistication are accounted for in the literature \cite{mac89},
+ranging from first order calculations in the reaction matrix $G$ to the
+inclusion of two- and three-body higher order
+effects \cite{dm92,mah85,km83,wff88}.
+A common problem to non-relativistic nuclear matter calculations, is
+however the
+simultaneous reproduction of both the binding energy per nucleon
+(${\cal E}/A=16\pm 1 $MeV) and the saturation density, with fermi momentum
+$k_F=1.35\pm 0.05 fm^{-1}$.
+Results obtained with a variety of methods and nucleon-nucleon (NN)
+interactions, are located along a band,
+denoted the ``Coester band'', which
+does not meet the empirical data for nuclear matter.
+Albeit these deficiencies, much progress has been achieved recently
+in the description of the saturation properties of nuclear matter.
+Of special relevance is the replacement of the non-relativistic
+Schr\"{o}dinger equation with the Dirac equation to describe the
+sp motion, referred to as the Dirac-Brueckner (DB)
+approach.
+This is motivated by the success of the
+phenomenological Dirac approach in nucleon-nucleus scattering
+\cite{ray91} and in the description of properties of finite nuclei
+\cite{hnm92}, such as e.g. the spin-orbit splitting
+in finite nuclei \cite{br78}. Moreover, rather promising results
+within the framework of the DB approach, have been obtained by Machleidt,
+Brockmann and M\"{u}ther \cite{bm90,mmb90,lmb92}, employing the
+OBE models of the Bonn group. Actually, the empirical properties
+of nuclear matter were quantitatively reproduced by Brockmann
+and Machleidt \cite{bm90}. However, although interesting results
+have been obtained within the DB scheme, these findings need further
+refinements through e.g.\ the introduction of more
+complicated many-body corrections.
+
+
+\subsection{Non-relativistic approaches}
+
+In section 5.3 we discussed the $G$-matrix for nuclear matter,
+using the Brueckner-Hartree-Fock (BHF) approch. Here we will extend 
+those calculations by considering the so-called model-space
+Breuckner-Hartree-Fock (MBHF) method. This method follows much of
+the philosophy behind the effective model-space calculations
+discussed in section 6.
+
+In the MBHF method, the cutoff $k_M$ is given
+as a multiple
+of the Fermi momentum. A frequently used value \cite{km83}
+is $k_M= 2k_F$,
+a choice also used here. This means that we extend
+the BHF spectrum
+beyond $k_F$. The resulting Pauli operator $Q_{\mathrm{MBHF}}$
+(in the laboratory system)
+for the model-space BHF method is
+\begin{equation}
+   Q_{\mathrm{MBHF}}(k_m , k_n ) =
+     \left\{\begin{array}{cccc}1,
+     &min(k_m ,k_n ) > k_F&\mathrm{and}&max(k_m ,k_n ) > k_M \\
+     0,&&\mathrm{else}.&\end{array}\right.
+    \label{eq:qmbhf}
+\end{equation}
+If we set $k_M = k_F$ , we obtain the traditional BHF choice. Note that
+at least one particle must be outside the model space, which means
+that we must have at least $k_m$ or $k_n$ to be greater than $k_M$.
+In actual calculations, it will again be convenient to express the
+MBHF Pauli operator in the coordinates of the relative and
+center-of-mass system. We replace the operator
+$Q_{\mathrm{MBHF}}$ with its
+angle average $\overline{Q}_{\mathrm{MBHF}}$ given by
+\begin{equation}
+     \overline{Q}_{\mathrm{MBHF}}(k,K)=\left\{\begin{array}{cr}
+         1&\mathrm{in} \hspace{3mm}
+         \mathrm{regions}\hspace{3mm} \mathrm{a, b}\\
+         0&\mathrm{c}\\
+	\left(K^2/4+k^2 -k_{F}^2\right)/kK&\mathrm{d}\\
+	\left((K/2+k)^2 -k_{M}^2\right)/kK&\mathrm{e}\\
+	\left(K^2/2+2k^2 -k_F^2-k_M^2\right)/kK&\mathrm{f},
+         \end{array}\right.
+    \label{eq:mbhf}
+\end{equation}
+with the various regions and values of $k$ and $K$ defined in
+fig.\ \ref{fig:mbhfpop}. We have assumed that all relative directions
+between ${\bf k}$ and ${\bf K}$ are equally likely and thereby we
+can average
+over these directions.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,90)
+      \put(25,10){\epsfxsize=12cm \epsfbox{mbhfpauli.eps}}
+      \end{picture}
+\caption{In (a) we show the Pauli operator for the MBHF choice
+in the lab frame, while (b) is the corresponding diagrammatic
+representation in the relative and center-of-mass system. We have defined
+$k_a$ by $k_a^2=\frac{1}{2}(k_F^2+k_M^2)$.
+Note that ${\bf K}={\bf k}_n+{\bf k}_m$ and ${\bf k}=
+\frac{1}{2}({\bf k}_n-{\bf k}_m)$.}
+\label{fig:mbhfpop}
+\end{figure}
+To better understand the analytical expressions for
+$\overline{Q}_{\mathrm{MBHF}}$ in regions
+$d$, $e$ and $f$ it is instructive to consider $\overline{Q}_{\mathrm{MBHF}}$
+as composed of one part which has one particle with momentum between
+$k_F$ and $k_M$ and the other particle with momentum above $k_M$, and
+another piece which has two particles above $k_M$. The latter corresponds
+to region $d$, and here we can use the angle-average $(k^2+K^2/4-k_F^2)/kK$
+from the BHF Pauli operator. In region $e$ we have that the standard BHF
+has $\overline{Q}_{BHF}=1$, but we must take the angle-average for momenta below
+$k_M$, i.e.\
+\[
+     1+\frac{k^2+K^2/4-k_M^2}{kK}=\frac{(k+K/2)^2-k_M^2}{kK}.
+\]
+In region $f$ we need to satisfy
+\begin{eqnarray}
+     k^2+K^2/4+2kKcos\theta_1 &\geq k_M^2 \nonumber\\
+     k^2+K^2/4+2kKcos\theta_1 &\geq k_F^2 \nonumber\\
+     k^2+K^2/4-2kKcos\theta_2 &\geq k_M^2 \nonumber\\
+     k^2+K^2/4-2kKcos\theta_2 &\geq k_F^2 ,
+\end{eqnarray}
+and taking the angle average results in the expression for region $f$.
+Thus, the MBHF $G$-matrix takes into account intermediate energy states
+where we may have a state with one particle outside the model space or
+two particles outside the model space.
+The MBHF Pauli operator and the energy denominators can then be
+expressed as
+\begin{equation}
+     \frac{\overline{Q}_{\mathrm{MBHF}}}{\omega -H_0}=
+     \frac{Q_{1p}}{\omega - E_{1p}}
+     +\frac{Q_{2p}}{\omega - E_{2p}},
+\end{equation}
+where the labels $1p$ and $2p$ refer to one or two particles outside the
+model space, respectively. 
+To define the energy denominators we will also make use of the
+angle-average approximation.
+The angle dependence is again handled by the
+so-called effective mass approximation.
+The self-consistency scheme consists in
+choosing adequate initial values of the
+effective mass and $\Delta$. The obtained $G$-matrix is in turn used to
+determine  new values for $M_{N}^{*}$ and $\Delta$. This procedure
+continues until these parameters vary little.
+The energy variables $E_{1p}$ and $E_{2p}$ are then determined by
+\begin{equation}
+    E_{1p}= \frac{k^2}{M_N}+\frac{K^2}{4M_N}+\frac{1}{4M_N}
+            \left(\frac{M_N}{M_N^*}
+            -1\right) (k_F^2+k_M^2) +\Delta
+\end{equation}
+and 
+\begin{equation}
+     E_{2p}=\frac{k^2}{M_N}+\frac{K^2}{4M_N}.
+\end{equation}
+Similarly, for two particles below $k_M$ we will have
+\begin{equation}
+    E_{0p}= \frac{k^2}{M_N^*}+\frac{K^2}{4M_N^*}+2\Delta,
+\end{equation}
+and this equation defines the starting energy $\omega$ in the
+MBHF scheme.
+
+The $G$-matrix within the MBHF scheme can then be written as
+\begin{equation}
+  G_{ijkl}^M(\omega)=V_{ijkl}+\sum_{mn}V_{ijmn}
+  \frac{\overline{Q}_{\mathrm{MBHF}}(mn)}{\omega -\varepsilon_m-\varepsilon_n}
+  G_{mnkl}^M(\omega),
+  \label{eq:gmbhf}
+\end{equation}
+From $G^M$ we obtain the antisymmetrized model-space BHF matrix
+$\tilde{G}^M$, defined as
+\begin{equation}
+    \tilde{G}_{ijkl}^M =\frac{1}{2}\left(G_{ijkl}^M-G_{ijlk}^M\right),
+\end{equation}
+which we will employ in our evaluation
+of the energy shift. For further notations,
+recall the discussion in section 2, eqs.\ (11) to (15).
+The structure of eq.\ (\ref{eq:gmbhf}) is shown in fig.\
+\ref{fig:structgmbhf}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{gmmat.eps}}
+      \end{picture}
+\caption{The structure of $G^M$.}
+\label{fig:structgmbhf}
+\end{figure}
+The sp states are divided in two groups in $G^M$, those with momenta
+$k>k_M$ and those with momenta $k\leq k_M$. The particles belonging
+to the former are depicted with railed lines in the above figure. The
+intermediate states of $G^M$, must have both particles
+with $k>k_F$ and at least one of them must be outside the
+model space.
+If we relate the model-space BHF
+approach to the conventional BHF sp spectrum
+and the continuous sp spectrum, one may say that the model-space BHF is
+an intermediate
+scheme,
+in the sense that we introduce an extended Pauli operator in eq.\
+(\ref{eq:mbhf}), such that we have a continuous sp spectrum for $k < k_M$,
+while for $k>k_M$ the spectrum is that of a free particle.
+Moreover, the
+model-space BHF definition of the Pauli operator,
+gives a $G$-matrix which does
+not account for scattering into intermediate states if both particles
+have momenta between $k_F$ and $k_M$. This is however a welcome feature
+of the model-space BHF
+method as it allows one to consider collective excitations
+like the summation of particle-particle hole-hole (pp-hh) terms
+without double counting problems. These terms will be discussed
+below in connection with the higher-order corrections.
+Finally, the non-relativistic
+energy per particle ${\cal E}/A$ is formally given as
+\begin{equation}
+   {\cal E}/A =
+   \frac{1}{A}\sum_{h\leq k_F}
+   \frac{k_h^2}{2M_N}+
+   \frac{1}{2A}\sum_{hh'\leq k_F}
+   \bra{hh'}G(\omega=\varepsilon_h +\varepsilon_{h'})\ket{hh'}_{AS},
+   \label{eq:enrel}
+\end{equation}
+where the $G$-matrix may be defined with the BHF or the MBHF
+Pauli operators.
+
+
+
+We present the results of non-relativistic calculations in
+fig.\ \ref{fig:chap3beanr} obtained with the Bonn potentials
+of table A.1 of ref.\ \cite{mac89}.
+There we show the saturation curves employing both the BHF
+and the MBHF choices for the sp spectrum. As can be observed from
+this figure, both the BHF (full line) and the MBHF (dotted line)
+choices for
+all potentials miss the empirical area, a feature
+common to all non-relativistic calculations of nuclear
+matter.  Moreover, the potential
+with the weakest tensor force, Bonn A, gives the largest
+binding energy per
+nucleon.
+The latter can be understood from the
+qualitative arguments already presented in section 5.3.
+Since all potentials
+give essentially the same scattering matrix, they are quenched differently
+in a medium. At small densities
+where both the Pauli operator and the starting energy are small,
+the potentials
+yield similar results, irrespective of whether we use the BHF
+or the MBHF choice
+for the sp spectrum. However, as the density increases, the quenching
+of
+\begin{equation}
+     V_T Q\frac{1}{\omega - QTQ}QV_T
+\end{equation}
+becomes significant
+for potentials with a
+strong tensor force. Fig.\ \ref{fig:chap3beanr}
+illustrates this point clearly.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{mbhf.eps}}
+      \end{picture}
+\caption{The nuclear matter saturation curves as functions of
+the Fermi momentum $k_F$ for the Bonn A, B and C potentials
+discussed in the text. The full lines are the results obtained with
+the conventional non-relativistic BHF method,
+while the dashed line represents
+the results with the MBHF method. The rectangular box describes the
+empirical data.}
+\label{fig:chap3beanr}
+\end{figure}
+In connection with the non-relativistic calculations,
+it is worth noting
+that the saturation density is left almost unchanged
+irrespective
+of sp spectrum approach, i.e.~with the same potential employing
+the BHF and MBHF methods. The binding energy at
+saturation per nucleon changes
+however with approximately
+$-3$ MeV for each potential when we replace  the BHF
+choice with the MBHF choice.
+This is solely due to the introduction of additional
+short-range effects through
+the enlargement of the model space. The increased importance of
+short-range
+correlations in the MBHF method is also reflected in the change of the
+$^{3}S_1$ $-$  $^{3}D_1 $ partial wave contribution.
+With $k_F = 1.5$ fm$^{-1}$, this
+partial wave contribution to the potential energy per particle
+for the Bonn A potential changes from $-20.22$ to $-21.57$
+MeV for the BHF
+and the MBHF choices, respectively. For the remaining
+partial waves
+the changes are less significant or negligible. A thorougher discussion
+of different partial waves will be given below where we also discuss
+the contributions from ring diagrams as presented by
+Song {\em et al.\ } \cite{shk87}.
+The interesting feature of this summation of ring diagrams
+is that it takes hole-hole propagations in intermediate states
+into account. These are long-range correlations which are
+ignored in the standard BHF theory. Hole-hole propagation
+was found to provide an effect which is repulsive and
+strongly density dependent \cite{rpd89}. This effect serves
+to improve the predictions from the conventional BHF results
+discussed above. Short-range correlations through the summation
+of particle-particle ladders are also taken into account, and
+introduce more binding. Thus, the essential effect of these
+particle-particle and hole-hole (pp-hh) correlations is
+to increase the binding energy and decrease the saturation
+density. Note that hitherto we have restricted the attention
+to non-relativistic results.
+
+
+
+
+\subsection{Higher-order terms}
+
+Here we will study the contribution from higher order
+terms represented by the all-order summation of the
+so-called particle-particle
+and hole-hole (pp-hh) ring-diagrams. In so-doing we will make
+contact with the the theory for Green's functions. Moreover, we will
+extend the formalism discussed in section 2, where only we sum over
+intermediate particle states in the calculation of the energy shift.
+A similar approach was presented by Ramos {\em et al.} \cite{rpd89},
+though these authors start with the Green's function approach, as
+discussed in e.g.\ Fetter and Walecka \cite{fw71}.
+
+Before we present the final equation for the energy shift, it is instructive
+to reconsider the steps of section 2 which led to the definition of
+the $G$-matrix. In fig.\ \ref{fig:goldstone} we showed
+contributions to the energy shift $\Delta E$ to third order in the
+interaction.
+The contributions to the energy shift from the three diagrams
+of fig.\ \ref{fig:goldstone} can be rewritten as
+\begin{equation}
+   (i)=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}F_{ij}(\omega)\tilde{V}_{ijij},
+\end{equation}
+where we defined in section 2
+\begin{equation}
+     \tilde{V}_{ijij}=\frac{1}{2}
+     (V_{ijij}-V_{ijij}).
+\end{equation}
+Similarly, diagrams (ii) and (iii) read
+\begin{equation}
+   (ii)=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}\frac{1}{2}F_{ij}(\omega)
+       \tilde{V}_{ijmn}F_{mn}(\omega)\tilde{V}_{mnij},
+\end{equation}
+and
+\begin{equation}
+   (iii)=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}\frac{1}{3}F_{ij}(\omega)
+      \tilde{V}_{ijmn}F_{mn}(\omega)
+     \tilde{V}_{mnpq}F_{pq}(\omega )\tilde{V}_{pqij},
+   \label{eq:thirdeo}
+\end{equation}
+where repeated indices are summed over all sp states and $F_{ij}$
+is the unperturbed pair propagator
+\begin{equation}
+    F_{ij}(\omega)=\frac{\overline{n}_i\overline{n}_j}
+    {\omega -\varepsilon_i -\varepsilon_j +i\eta}
+    -\frac{n_in_j}
+    {\omega -\varepsilon_i -\varepsilon_j -i\eta}.
+\end{equation}
+Here we set $n_i=1$ if $k_i\leq k_F$ and $0$ if $k_i > k_F$, and
+$\overline{n}_i=1-n_i$. The diagrams of
+fig.\ \ref{fig:goldstone}, i.e.\ diagrams (i), (ii) and (iii),
+can then be summed to all orders in much a similar way as we did in the
+construction of the $G$-matrix in section 2, yielding
+\begin{equation}
+   \Delta E^{pp-hh}=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}Tr\left( F\tilde{V}+
+        \frac{1}{2}(F\tilde{V})^2+\frac{1}{3}(F\tilde{V})^3
+        +\dots\right).
+\end{equation}
+For computational purposes it is however convenient to introduce
+the strength parameter $z$ discussed in section 4.2, so that we
+can rewrite the preceeding equation as
+\begin{equation}
+   \Delta E^{pp-hh}=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_0^1\frac{dz}{z}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}Tr\left( zF\tilde{V}+
+        \frac{1}{2}(zF\tilde{V})^2+\frac{1}{3}(zF\tilde{V})^3
+        +\dots\right).
+        \label{eq:ppdeltae}
+\end{equation}
+The strength parameter $z$ makes the trace a simple geometric
+series, and $z$ tells us how the many-body system evolves from the
+non-interacting one with $z=0$ to the fully interacting one with $z=1$.
+At this stage, let us introduce the $z$-dependent particle-particle
+Green's function $G_{ijkl}^{pp}(\omega ,z)$ defined as
+\begin{equation}
+    G_{ijkl}^{pp}(\omega ,z)=F_{ij}(\omega )\delta_{ij,kl}
+    +zF_{ij}(\omega ) \tilde{V}_{ijmn}G_{mnkl}^{pp}(\omega ,z).
+\end{equation}
+The first term on the rhs.\ is simply the free propagation of a pair.
+Eq.\ (\ref{eq:ppdeltae}) can be rewritten as
+\begin{equation}
+   \Delta E^{pp-hh}=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_0^1\frac{dz}{2\pi i}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}Tr\left(
+       z\tilde{V}G^{pp}(\omega ,z)
+       \right).
+        \label{eq:ppdeltae1}
+\end{equation}
+Alternatively, we could define a generalized $G$-matrix $K$ as
+\begin{equation}
+    K_{ijkl}^{pp}(\omega ,z)=z\tilde{V}_{ijkl}
+    +zF_{ij}(\omega ) \tilde{V}_{ijmn}K_{mnkl}^{pp}(\omega ,z),
+    \label{eq:generalG}
+\end{equation}
+and eq.\ (\ref{eq:ppdeltae}) reads
+\begin{equation}
+   \Delta E^{pp-hh}=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_0^1\frac{dz}{z}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}Tr\left( F(\omega )K^{pp}(\omega ,z)
+        \right).
+        \label{eq:ppdeltae2}
+\end{equation}
+The reader should notice the distinction between the generalized
+reaction matrix $K$ and the $G$-matrix discussed in section 2.
+In section 2, we restricted the attention to repetead interactions
+between pairs of particle lines. Such interactions form the
+starting point for nuclear matter calculations within the
+conventional Brueckner-Hartree-Fock (BHF) scheme discussed in section
+5.3. The generalized reaction matrix $K$ of eq.\ (\ref{eq:generalG})
+depends however on the pair propagator $F$. This means that eq.\
+(\ref{eq:ppdeltae2}), or equally well eq.\ (\ref{eq:ppdeltae1}),
+also include the contributions from repeated interactions
+between two hole lines, i.e.\ hole-hole correlations.
+Thus, in addition to including all particle-particle
+interactions through the definition of the $G$-matrix (standard BHF),
+we have hole-hole correlations and ground-state correlations
+connecting two particle lines to two hole lines to all
+orders.  These differences are illustrated in fig.\ \ref{fig:pphh-bhf}.
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{ring1.eps}}
+      \end{picture}
+      \caption{Diagram (i) is a general ring diagram, where the indices
+      $i$ and $j$ can be either particles or holes. A typical diagram
+      which enters the usual BHF nuclear matter calculation is
+      shown in (ii). All particles are determined by $k>k_F$.}
+      \label{fig:pphh-bhf}
+\end{figure}
+
+We wish  now to make contact with the model-space Brueckner-Hartree-Fock
+approach discussed above, in order to study one possible approximation
+to the generalized reaction matrix $K$. We rewrite the equation
+for the model-space BHF $G$-matrix $G^M$ as
+\begin{equation}
+  G_{ijkl}^M(\omega)=V_{ijkl}+\sum_{mn}V_{ijmn}
+  \frac{\overline{Q}_{\mathrm{MBHF}}(mn)}
+  {\omega -\varepsilon_m-\varepsilon_n+i\eta}
+  G_{mnkl}^M(\omega),
+\end{equation}
+with the Pauli operator already defined in eq.\ (\ref{eq:qmbhf}). For
+further details, see the discussions in section 7.2.
+The factor $i\eta$
+ensures that it is only the retarded part of the pair propagator
+$F$ (i.e.\ only two lines propagating upward) that can take
+part in the intermediate states of $G^M$, or stated
+differently, the poles of $G^M$ are only in the lower half of the
+complex $\omega$ plane. This is important since
+we do not want to double count contributions from intermediate
+particle states already included in the definition of $G^M$ in the
+sum of particle-particle and hole-hole ladder diagrams.
+To better understand this, consider the ring diagrams of fig.\
+\ref{fig:ringdiagrams}, where we now use the antisymmetrized
+$G^M$-matrix $\tilde{G}^M$.
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{ring2.eps}}
+      \end{picture}
+      \caption{Examples of ring diagrams with $\tilde{G}^M$
+      interactions discussed in the text.}
+      \label{fig:ringdiagrams}
+\end{figure}
+Diagram (i) is a pp-hh ring diagram with propagators
+for the pairs $(ij)$, $(kl)$ and $(mn)$ all defined within the model
+space $P$, i.e.\ they are composed of both
+retarded and advanced parts.
+For diagram (ii), the propagators for the same pairs
+are also all within the model space. However, the propagators for
+the pairs $(uv)$, $(pq)$ and $(rs)$ are only retarded ones, whereas
+the pairs $(ij)$, $(kl)$ and $(mn)$ have propagators with both
+advanced and retarded parts in $F$. Also, at least one of the
+intermediate states in the pairs $(uv)$, $(pq)$ and $(rs)$ must
+be outside the model space in order to avoid the double
+counting problem when we substitute the interaction $\tilde{V}$
+with $\tilde{G}^M$. The authors of ref.\ \cite{shk87} show 
+then  that e.g.\ eq.\ (\ref{eq:thirdeo}) can 
+be rewritten as
+\begin{equation}
+   (iii)=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}\sum_{ijmnpq}^{P}\frac{1}{3}
+       F_{ij}(\omega)
+      \tilde{G}_{ijmn}^MF_{mn}(\omega)
+      \tilde{G}_{mnpq}^MF_{pq}(\omega )
+      \tilde{G}_{pqij}^M,
+\end{equation}
+where the sum is now restricted to sp states within the model space
+only. With the replacement
+\[
+   \tilde{V}\rightarrow \tilde{G}^M,
+\]
+we can now repeat the steps leading to e.g.\ eq.\ (\ref{eq:ppdeltae1})
+and obtain
+\begin{equation}
+   \Delta E^{pp-hh}=\lim_{\eta \rightarrow 0}
+       -\frac{1}{2\pi i}\int_0^1\frac{dz}{z}\int_{-\infty}^{\infty}
+       d\omega e^{i\omega\eta}Tr_P\left(
+       z\tilde{G}^M(\omega )G^{pp}(\omega ,z)
+       \right),
+\end{equation}
+where the trace is taken over model space states only. Alternatively,
+we could also rewrite eq.\ (\ref{eq:ppdeltae1}) in terms of $\tilde{G}^M$.
+However,
+the authors of ref.\ \cite{shk87} found it more convenient from a
+computational point of view to evaluate eq.\ (\ref{eq:ppdeltae1}) rather
+than eq.\ (\ref{eq:ppdeltae2}). A useful prescription is then
+to write the Green's function $G_{ijkl}^{pp}(\omega ,z)$ in its
+Lehmann  representation
+\begin{equation}
+G_{ijkl}^{pp}(\omega ,z)=\sum_n\frac{X_n(ij,z)X_n^*(kl,z)}
+                         {\omega -\omega_n^+(z)+i\eta}
+                        -\sum_m\frac{Y_m(ij,z)Y_m^*(kl,z)}
+                         {\omega -\omega_m^-(z)-i\eta},
+\end{equation}
+where we have defined
+\begin{equation}
+     \omega_n^+(z)=E_n^{A+2}(z)-E_0^A(z),
+\end{equation}
+\begin{equation}
+     \omega_m^-(z)=E_0^A(z)-E_m^{A-2}(z),
+\end{equation}
+\begin{equation}
+     X_n(ij,z)=\bra{\Psi_0^A(z)}a_ja_i\ket{\Psi_n^{A+2}(z)},
+\end{equation}
+and
+\begin{equation}
+     Y_m(ij,z)=\bra{\Psi_m^{A-2}(z)}a_ja_i\ket{\Psi_0^{A}(z)}.
+\end{equation}
+We have defined the eigenfunctions and eigenvalues through
+\[
+     (H_0+zH_1)\Psi_0^A(z)=E_0^A(z)\Psi_0^A(z),
+\]
+\[
+     (H_0+zH_1)\Psi_n^{A+2}(z)=E_n^{A+2}(z)\Psi_n^{A+2}(z),
+\]
+and similarly for $\Psi_m^{A-2}$ and $E_m^{A-2}$. Substituting
+the above equations into eq.\ (\ref{eq:ppdeltae1}) yields
+\begin{equation}
+   \Delta E^{pp-hh}=
+       \int_0^1\frac{dz}{z}
+        \sum_{m(A-2)}\sum_{ijkl}Y_m(ij,z)Y_m^*(kl,z)z\tilde{V}_{ijkl}.
+        \label{eq:ppdeltae3}
+\end{equation}
+The
+convergence factor $e^{i\omega\eta}$ (connected with the
+limit $\eta\rightarrow 0$) in eq.\
+(\ref{eq:ppdeltae1}) enables us to
+convert the integral over $\omega$ in eq.\ (\ref{eq:ppdeltae1})
+into a contour integral closed in the upper $\omega$ plane.
+Using $\tilde{G}^M$ we obtain the final result of ref.\
+\cite{shk87}
+\begin{equation}
+       \Delta E^{pp-hh}=
+       \int_0^1\frac{dz}{z}
+       \sum_{m(A-2)}\sum_{ijkl}^{P}Y_m(ij,z)
+       Y_m^*(kl,z)\tilde{G}_{ijkl}^M(\omega_m^-(z))z,
+       \label{eq:ppdeltae4}
+\end{equation}
+where the sum is restricted to model space states only.
+The amplitudes $Y_m$ are determined through the RPA-type
+equation of
+\begin{equation}
+   \sum_{ef}\left\{(\varepsilon_i+\varepsilon_j)\delta_{ij,ef}
+   +(\overline{n}_i\overline{n}_j-n_in_j)z\tilde{G}_{ijef}^M\right\}
+   Y_m(ef,z)=\omega_m^-(z)Y_m(ij,z).
+\end{equation}
+Note that the indices $ijklef$ run over all
+possible sp states within the model space. At the present
+stage only two-body terms are included in the above expression
+through the approximation $\tilde{G}^M$. As discussed by the authors
+of ref.\ \cite{shk87}, one-body terms are also important, and
+can be taken into account when sp self-energy insertions are included.
+The normalization condition for the $Y$-amplitudes is \cite{shk87}
+\begin{equation}
+  \sum_{p_1>p_2>k_F}^{P}\left| Y_m(p_1p_2,z)\right|^2
+ -\sum_{h_1<h_2<k_F}^{P}\left| Y_m(h_1h_2,z)\right|^2
+  =-\left(1-\frac{\partial \omega_m^-(z)}{\partial\omega}\right)^{-1},
+\end{equation}
+where $p_1,p_2,h_1,h_2$ are sp states within the chosen model space
+and the rhs.\ of this equation  expresses the model-space
+overlap. Computational details for solving
+the above set of equations can be found in ref.\ \cite{shk87}.
+
+How does this ring-diagram approach compare with the usual
+BHF method in section 5.3 and the MBHF method
+of section 7.2
+for nuclear matter? To understand
+these differences, consider the three diagrams of fig.\
+\ref{fig:diff-mbhfring}.
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{ring3.eps}}
+      \end{picture}
+      \caption{Diagram (a) is included in the conventional
+      BHF procedure, while (b) is included in the MBHF method.
+      Diagram (c) represents a ring-diagram. The label B is the
+      BHF reaction matrix, while label M refers to the model-space
+      BHF reaction matrix. }
+      \label{fig:diff-mbhfring}
+\end{figure}
+Diagram (a) is the typical two-hole line diagram included in the
+conventional BHF scheme. The label B represents the BHF $G$-matrix
+using a discontinuous sp spectrum at $k_F$. Diagram (b) is
+a diagram included in the MBHF scheme, and the label M refers to
+the MBHF $G$-matrix with the particle labels $p_1$, $p_2$, $p_3$ and $p_4$
+with momenta between $k_F$ and $k_M$. The main difference between the BHF 
+and the MBHF schemes,
+as discussed in section 7.2, is the use of different sp spectra
+between $k_F$ and $k_M$. For the BHF approach, a free particle
+sp spectrum is used for momenta larger than $k_F$, whereas for the
+MBHF scheme, a free particle sp spectrum is employed for momenta
+larger than $k_M$. In the ring-diagram approach, we sum
+diagrams of type (c) to all orders, but in this case, the
+intermediate states from $i$ to $s$ are all within the model
+space, and they can be both particle pairs and hole pairs.
+Thus, we sum a larger class of diagrams in this approach
+than in either the BHF or the MBHF approaches.
+
+In summary, the calculational steps in the ring-diagram method
+proceed as follows: first we evaluate the MBHF $G$-matrix
+and obtain a sp spectrum
+following the steps in section 7.2. Then we solve the RPA-type of 
+equations
+to obtain the $Y$-amplitudes. These are in turn used to evaluate
+the potential energy for nuclear matter by the integral
+of eq.\ (\ref{eq:ppdeltae4}) involving the product
+$YY^{\dagger}G^M$.
+We conclude then this section by showing the results from ring-diagram
+calculations using the Bonn potentials discussed in
+sections 3, 5, 6 and  7.2. These results are compared
+with those from the conventional BHF and the MBHF approaches of section
+7.2.
+
+In fig.\ \ref{fig:benrring} we show the non-relativistic
+ring-diagram results, compared with those from the
+BHF calculation of the previous section. As clearly can be seen from
+this figure,
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{ring.eps}}
+      \end{picture}
+\caption{The nuclear matter saturation curves as functions of
+the Fermi momentum $k_F$ for the Bonn A, B and C potentials
+discussed in the text. The dashed lines are the results obtained with
+ring-diagram scheme,
+while the full lines represents
+the results with the BHF method. The rectangular box describes the
+empirical data. The ring-diagram results are taken from ref.\
+[123].}
+\label{fig:benrring}
+\end{figure}
+we see a rather substantial difference between the BHF
+scheme and the ring-diagram scheme. More attraction is provided
+by the ring-diagram approach, in addition to an improved
+saturation density. Moreover, the differences in saturation
+energies and density for the various potentials is smaller
+within the framework of the ring-diagram approach. This means
+that the uncertainty due to the choice of potential
+model is reduced in nuclear matter calculation. Typically, for
+the ring-diagram calculations, the difference between the binding
+energies and the saturation densities for the Bonn A and Bonn C
+potentials are $2.4$ MeV and $0.11$ fm$^{-1}$, respectively. For
+the BHF calculation the corresponding differences are
+$4$ MeV and $0.2$ fm$^{-1}$, respectively.
+
+It is also instructive to consider the contributions from the
+different partial waves. This is shown in table \ref{tab:rings1}.
+\begin{table}[hbtp]
+\caption{Partial wave contribution to the ring-diagram
+energy shift $\Delta E_0^{pp-hh}/A$ at $k_F=1.4$ fm$^{-1}$
+for the three Bonn potentials. All entries in MeV. Taken from
+ref.\ [123].}
+\begin{center}
+\begin{tabular}{lrrr}
+\\\hline
+&
+\multicolumn{1}{c}{Bonn A}&
+\multicolumn{1}{c}{Bonn B}&
+\multicolumn{1}{c}{Bonn C}
+\\ \hline
+$^{1}S_0$&-17.65&-17.61&-17.57\\
+$^{3}S_1$-$^{3}D_1$&-22.21&-21.31&-20.58\\
+$^{1}P_1$&5.10&5.17&4.87\\
+$^{3}P_0$&-3.95&-3.85&-3.75\\
+$^{3}P_1$&11.30&11.19&10.76\\
+$^{3}P_2$-$^{3}F_2$&-9.19&-9.24&-9.13\\
+$^{1}D_2$&-2.78&-2.74&-2.67\\
+$^{3}D_2$&-4.67&-4.57&-4.52\\
+$^{3}D_3$-$^{3}G_3$&0.49&0.49&0.49\\
+$^{1}F_3$&1.00&0.98&0.96\\
+$^{3}F_3$&1.86&1.81&1.77\\
+$^{3}F_4$-$^{3}H_4$&-0.49&-0.49&-0.47\\
+$^{1}G_4$&-0.51&-0.50&-0.49\\
+$^{3}G_4$&-0.87&-0.85&-0.83\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:rings1}
+\end{table}
+Clearly, the largest difference arises  for the 
+$^3S_1$-$^3D_1$ contribution.
+\begin{table}[hbtp]
+\caption{The $z$ dependence of the potential energy
+contribution
+$\Delta E_0^{pp-hh}/A$ in the $^{3}S_1$-$^{3}D_1$ channel
+for the Bonn A potential. All energies in MeV. Taken from
+ref.\ [123].}
+\begin{center}
+\begin{tabular}{lrrr}
+\\\hline
+\multicolumn{1}{c}{$k_F$ fm$^{-1}$}&
+\multicolumn{1}{c}{$z=0.113$}&
+\multicolumn{1}{c}{$z=0.500$}&
+\multicolumn{1}{c}{$z=0.887$}
+\\ \hline
+1.2&-12.66&-18.37&-28.19\\
+1.3&-14.74&-20.21&-27.19\\
+1.4&-16.83&-21.96&-27.98\\
+1.5&-18.91&-23.57&-28.78\\
+1.6&-21.06&-25.12&-29.54\\
+1.7&-22.99&-26.37&-29.98\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:rings2}
+\end{table}
+As mentioned previously, the ring-diagram effect is strongest
+in this channel. Therefore, it may be of some interest to to look into
+the relevance of the tensor force for the ring-diagram effect. We rewrite
+the energy-shift as
+\begin{equation}
+  \Delta E_0^{pp-hh}=\int_0^1dz\Delta E_0^{pp-hh}(z).
+\end{equation}
+The dependence of $\Delta E_0^{pp-hh}(z)$ on $z$ is a direct measure
+for the importance of the higher-order ring diagrams. In tables
+\ref{tab:rings2} and \ref{tab:rings3}, we plot the dependence on $z$ for the
+Bonn A and the Bonn C potentials, respectively. We see that the difference
+between $\Delta E_0^{pp-hh}(z=0.887)$ and $\Delta E_0^{pp-hh}(z=0.113)$ is 
+of the order $-10$ MeV, which implies that the higher-order ring diagrams
+are important and not negligible. We also see that the difference is larger
+with the Bonn C potential, thus the larger the tensor force, the larger the
+effect of higher-order ring diagrams. These tables also tell us that the
+difference decreases with density. Note that the energy in the 
+$^3S_1$-$^3D_1$ channel is attractive; therefore such a decrease implies
+an increase of the repulsive effect with density. This effect has the
+important consequence that the saturation density will be lowered.
+\begin{table}[hbtp]
+\caption{The $z$ dependence of the potential energy
+contribution
+$\Delta E_0^{pp-hh}/A$ in the $^{3}S_1$-$^{3}D_1$ channel
+for the Bonn C potential. All energies in MeV. Taken from
+ref.\ [123].}
+\begin{center}
+\begin{tabular}{lrrr}
+\\\hline
+\multicolumn{1}{c}{$k_F$ fm$^{-1}$}&
+\multicolumn{1}{c}{$z=0.113$}&
+\multicolumn{1}{c}{$z=0.500$}&
+\multicolumn{1}{c}{$z=0.887$}
+\\ \hline
+1.2&-10.29&-17.72&-28.19\\
+1.3&-11.69&-19.18&-28.15\\
+1.4&-12.94&-20.37&-28.55\\
+1.5&-14.04&-21.24&-28.72\\
+1.6&-15.13&-21.87&-28.63\\
+1.7&-15.67&-21.81&-27.80\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:rings3}
+\end{table}
+
+
+
+

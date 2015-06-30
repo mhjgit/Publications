@@ -1,0 +1,2222 @@
+%	\documentstyle[11pt,epsf,a4]{article}
+%%
+\documentstyle[11pt,epsf,pstricks,pst-plot,a4]{article}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\braket}[2]{\left\langle #1 \right| #2 \right\rangle}
+\newcommand{\OP}[1]{{\bf\widehat{#1}}}
+\newcommand{\matr}[1]{{\bf \cal{#1}}}
+%%%%%%%%%%%%%%%%
+%
+\title{Large Shell Model Calculations with Realistic  Effective Interaction}
+\author{T. Engeland, M. Hjorth-Jensen, A. Holt and E. Osnes\\[2ex]
+Department of Physics, University of Oslo, N-0316 Oslo, Norway}
+%
+
+\begin{document}
+
+%
+\maketitle
+%
+\begin{abstract}
+In this work we discuss methods to calculate shell model
+effective interaction, starting from the basic nucleon--nucleon
+interaction. The result is applied in large shell model calculations
+using the Lanczos iterative method with m--scheme basic states.
+Perspectives for such large--scale shell model calculations with
+realistic effective interactions in heavy nuclei are discussed.
+Results are shown for the Sn isotopes.
+\end{abstract}
+%
+
+
+%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%% file: intro.tex %%%%%%%%%%%%%%%%%%%
+%
+\section{Introduction.}
+%
+One of the fundamental and yet unsolved problems in nuclear theory
+is to describe the properties of complex nuclei in terms of
+the constituent nucleons and the interaction between them.
+Firstly, this represents a quantal many--body problem which can only
+be approximately solved. Secondly, the basic nucleon--nucleon
+interaction is not well known. Thus, it may be difficult to
+know whether an eventual failure to solve this problem should be
+ascribed to the many--body methods or the interaction model used.
+
+Ideally, one should derive the free nucleon--nucleon interaction
+from the interaction between quarks. Although attempted,
+this program has not been quantitatively successful. Thus, one would
+be  content to start from a nucleon--nucleon interaction
+derived from  meson models which reproduces relevant
+two--nucleon data. Examples of such potentials are the Paris\cite{lac80},
+and Bonn\cite{mac89} potentials.
+ Once the basic nucleon--nucleon
+interaction has been established, it should be employed in a
+quantal many--body approximation to the actual nuclear structure
+problem of interest. Here we shall be concerned  with the spherical
+nuclear shell model which has provided a successfull microscopic
+approach.
+
+%
+The non-relativistic shell model problem for
+a nucleus $_Z^{A}X_N$ with $Z$ protons and $N$ neutrons
+amounts to solving the Schr\"{o}dinger equation
+%
+\be
+H\ket{\Psi_m(A)} = E_m \ket{\Psi_m(A)},
+\label{theor1}
+\ee
+%
+with $H=T+V$, $T$ being the kinetic energy operator and $V$
+the nucleon--nucleon (NN) potential.
+$E_m$ and $\Psi_m$ are the eigenvalues and eigenfunctions
+for a state $m$ in the Hilbert space.
+Introducing the auxiliary single--particle potential $U$, $H$ can
+be rewritten as
+%
+\be
+    \begin{array}{ccc}H=H_{0}+H_1, &H_{0}=T+U, &H_1=V-U\end{array}.
+\ee
+%
+If $U$ is chosen such that $H_1$ becomes small, then $H_1$
+can be treated as a perturbation.
+
+The first step in this  $A$--nucleon problem is to reduce
+the infinitely many degrees of freedom of the Hibert space
+to those represented by a physically motivated subspace.
+In shell model calculations one usually refers to spherical closed shells
+and considers the valence particles or holes
+as the relevant model space degrees of freedom.
+More formally, one  defines projection operators
+%
+\be
+P = \sum_{i = 1}^n \ket{\psi_i} \bra{\psi_i} ,
+\;\;\;
+Q = \sum_{i = n+1}^{\infty} \ket{\psi_i} \bra{\psi_i}.
+\label{theor2}
+\ee
+%
+The operator $P$ projects onto the chosen reduced shell model space
+(or P--space), $\ket{\psi_i}$ being the basic functions spanning
+this space and $n$ the dimension of the space.
+The operator $Q$ defines the complement of $P$, $Q = {\bf 1} - P$,
+which projects out of the shell model
+space. The basic shell model problem is then to obtain an effective
+Hamiltonian $H_{eff}$ acting in the P--space and defined by
+%
+\be
+PH_{eff}P\ket{\Psi_m}
+= P\left (H_0 + H_1 \right ) P \ket{\Psi_m}
+= E_m P\ket{\Psi_m},
+\label{theor3}
+\ee
+%
+where again $E_m$ is the m-th eigenvalue and $\ket{\Psi_m}$ the m-th
+eigenstate of the original Hamiltonian $H$ in eq.~(\ref{theor1}).
+Thus the eigenfunctions of $H_{eff}$ are projections of the true
+eigenfunctions of $H$ onto the P--space.
+The $H_{eff}$ includes a one--body term $PH_0P$ which represents
+the mean--field degrees of freedom of the chosen P--space
+and an effective iteraction $PH_1P$  acting between the nucleons
+in the P-space.
+
+In eq.~(\ref{theor3}) we face two separate problems. Firstly, we
+need to find a relevant expression for $H_1$. Secondly, with
+a proper effective interaction between nucleons in the P--space
+eq.~(\ref{theor3}) must be solved. In actual cases
+the dimension $n$ is not small and the problem to find
+eigenvalues and eigenvectors of $PH_{eff}P$ requires
+efficient  numerical  methods.
+As a typical example, a shell model calculation
+for $^{106}$Sn with six valence neutrons
+in the P--space (discussed later in this work, see fig.~\ref{res-fig4})
+results in a reduced Hilbert space
+of dimension $n = 31124$. Heavier isotopes gives $n > 10^{6}$.
+
+Many alternative
+approximate solutions to the above two basic problems
+can be found in the
+literature\cite{vall89}. A typical approach to the question of
+$H_{eff}$ is a parametrization followed by a
+fitting procedure to the data of interest. In a  work by
+R. D. Lawson and J. M. Soper\cite{law65}, they analyzed
+a fictitious set of nuclei named pseudonium
+and showed how dangerous such a fitting procedure can be
+if one wants to obtain  reasonable realistic wave functions
+for a nuclear system. An alternative is to calculate
+$H_{eff}$ from the basic interaction between nucleons.
+There are basically two main approaches in perturbation theory
+used to define the effective interation  $H_{eff}$.
+One of these is the energy--dependent Brillouin--Wigner(BW)
+perturbation theory while the Rayleigh--Schr\"{o}dinger (RS)
+perturbation expansion stands for the energy independent approach.
+In our work we calculate the effective interaction within the framework
+of the time--independent RS perturbation theory and within this
+theory we deal with the open--shell many--body problem for a
+degenerate model space. Up to now this technique has only
+been applied to light nuclei, in the p-, sd- and pf-shells.
+We have now generated a computer code which can take these
+calculations into medium and heavy nuclei.  At present we have
+a restriction of $Z = N$ for the core system, a limitation
+which will be eliminated shortly.
+
+The next problem is to solve  eq.~(\ref{theor3}) with a
+given $H_{eff}$. That has also produced many
+alternative solutions since one  in many nuclei is faced
+with an enormous number of degrees of freedom even with a very restricted
+choice of P--space. In this context group theoretical methods have been
+developed as a mean to pick out the relevant physical
+properties of the nuclear system.
+On the other hand, there has been made enormous
+progress in modern computer technology and this tendency will continue.
+We therefore feel that it is an important challenge
+to use modern hardware technology coupled to efficient
+numerical methods developed for  other fields of science
+and technology in nuclear physics structure problems.
+
+To sum up our basic philosophy,
+we want to analyze nuclear systems based on eq.~(\ref{theor3})
+with a microscopic realistic effective interaction
+and perform a  test
+on nuclei with many degrees of freedom in the light, medium
+and heavy mass regions. The purpose will be to thoroughly test
+the theory of the effective interaction which up to now mainly
+has been applied to two--particle P--space systems.
+The question of the importance of effective three--particle interaction
+is also an important problem in this context and reasonably
+easy to implement in our shell model code,
+although it is not dealt with in the present work.
+
+In sec.~2 we analyze the effective interaction and sec.~3 contains
+a discussion of numerical methods which are available
+for solving the many--particle
+Schr\"{o}dinger equation in a large basis. As a first application
+we present in sec.~4 some results for the Sn isotopes and sum up
+the situation and discuss further possibilities in sec.5.
+%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%% file: proceed.tex %%%%%%%%
+%
+\section{Effective Interaction.}
+%
+In this section we briefly sketch how to evaluate an effective
+interaction appropriate for the 
+low--lying states in a nuclear system, within the framework
+of degenerate Rayleigh--Schr\"{o}dinger perturbation theory. Central
+here is the summation to all orders of the so--called folded diagrams,
+which arise due to the removal of the dependence of the exact energy
+in perturbation theory. A major function of the folded diagrams
+is to account for the fact that a valence particle is not
+in a given single--particle state  all the time.
+
+As discussed in the previous section,
+one is only interested in solving eq.~(\ref{theor1})
+for certain
+low--lying states. We then divided the Hilbert space
+in a model space defined by the operators $P$
+and $Q$ in eq.~(\ref{theor2}).
+The assumption then is that the components of these low--lying
+states can be fairly well reproduced by configurations consisting
+of few particles and holes occupying physically selected orbits.
+These selected orbits then define the model space.
+Eq.~(\ref{theor1})  is then  rewritten as the secular
+equation given in eq.~(\ref{theor3}),
+where $H_{eff}$  now is an effective hamiltonian acting solely
+within the chosen model space.
+Our scheme to obtain an effective interaction
+can be divided into three steps,
+outlined below\footnote{A  more detailed
+exposition can be found in refs.\ \cite{ko90,hko94}.}.
+
+\subsection{The nucleon--nucleon potential}
+
+First, one needs a free NN interaction $V$ which is
+appropriate for nuclear physics at low and intermediate energies. 
+Since quantum chromodynamics (QCD) is commonly
+accepted as the theory of the strong interaction, the
+NN interaction $V$ should be  completely determined by the underlying
+quark--quark dynamics in QCD. However, due to the nonperturbative
+character of QCD at low energies, one is still far from a
+quantitative understanding of the NN interaction from the QCD point of
+view. This problem is circumvented by introducing
+models containing some of the properties of QCD, such as
+confinement and chiral symmetry breaking. One of the most used models
+is the so--called bag model, where a crucial question is the
+size of the radius ($R$) of the confining bag. If the size of the bag radius
+is chosen as in the "Little bag" ($R\leq 0.5$ fm) \cite{br79}, then
+low--energy nuclear physics phenomena can be fairly well described
+in terms of hadrons like nucleons, isobars and various mesons,
+which are to be understood as an effective description of complicated
+multiquark interactions.
+However, other models which
+seek to approximate QCD also indicate that an effective theory in terms
+of hadronic degrees of freedom may very well be the most appropriate
+picture for low energy nuclear physics.
+Although there is no unique prescription for how to construct
+a free NN interaction, a description
+of the NN interaction in terms of various meson exchanges is presently
+the most quantitative representation of the NN interaction
+\cite{mac89}
+in the energy regime of nuclear physics.
+
+Motivated by these arguments we employ in this work a model for the
+NN interaction based on the exchange of six non--strange mesons, including
+the pseudo--scalar $\pi$ and $\eta$ mesons, the vector $\rho$ and $\omega$
+mesons and the scalar $\delta$ and $\sigma$ mesons. The latter is
+a fictitious meson used in one--boson--exchange (OBE) models to provide in an
+effective way the intermediate
+range attraction of the potential. This attraction
+originates from the $2\pi$ exchange processes.
+Realistic calculations \cite{mac89}
+which include $2\pi$ exchange differ only negligibly from calculations
+with OBE models, justifying thereby the introduction of the effective
+$\sigma$ meson.
+The NN potential V is then a superposition of OBE interactions $V_i$
+and is represented as
+\[
+V=\sum_{i=\pi\eta\rho\omega\delta\sigma}V_i .
+\]
+The OBE interaction $V_i$, is then constructed using
+standard Lagrangian expressions.
+To evaluate the OBE amplitudes we use in this work the
+Bonn potential as it is defined by the meson parameters of the Bonn A potential
+in table
+A.2 of ref.~\cite{mac89}. The reason why we favor the Bonn meson--exchange
+potential models, is that  they  all exhibit a weak tensor force,
+as compared to previous models for the NN potential.
+A weak tensor force introduces more binding in systems like nuclear matter
+and finite nuclei, yielding a better agreement with the
+experimental binding energy data compared with earlier calculations.
+Actually, results obtained with the Bonn potentials
+for several nuclear systems \cite{mac89,hko94} may indicate that these potential
+models allow for a more consistent description of nuclear structure than more
+traditional nuclear--force models.
+%
+\subsection{The nuclear reaction matrix $G$}
+
+In nuclear many--body calculations, the first problem one is
+confronted with is the fact that the repulsive core of the NN potential $V$
+is unsuitable for perturbative approaches. This problem is overcome
+by introducing the reaction matrix $G$ given by the solution of the
+Bethe--Goldstone equation
+\begin{equation}
+    G=V+V\frac{Q}{\omega - H_0}G,
+\end{equation}
+where $\omega$ is the unperturbed energy of the interacting nucleons,
+and $H_0$ is the unperturbed hamiltonian.
+The operator $Q$,
+is again the projection operator which prevents the
+interacting nucleons from scattering into states occupied by other nucleons.
+Note that the definition of $Q$ in eq.~(\ref{theor2}) may differ from that
+used in the calculations of the $G$--matrix. If this is the case, then
+certain diagrams have to be included or excluded from the calculation
+of the effective interaction in eq.~(\ref{theor3}). For further details,
+see e.g.\ ref.~\cite{hko94}.
+
+The equation for the $G$--matrix is solved in this work using the
+double--partitioning scheme discussed in ref.~\cite{kkko76}.
+
+\subsection{Perturbative many--body approaches}
+
+Finally, we briefly sketch how to calculate an effective interaction
+in terms of the $G$--matrix.
+The first step here is to define the so--called $\hat{Q}$--box given by
+\begin{equation}
+   P\hat{Q}P=PH_1P+
+   P\left(H_1 \frac{Q}{\omega-H_{0}}H_1+H_1
+   \frac{Q}{\omega-H_{0}}H_1 \frac{Q}{\omega-H_{0}}H_1 +\dots\right)P,
+   \label{eq:qbox}
+\end{equation}
+where we will replace $H_1$ with $G-U$ ($G$ replaces the free NN interaction
+$V$).
+The $\hat{Q}$--box\footnote{The $\hat{Q}$--box should not be confused
+with the exclusion operator $Q$.}
+is made up of non--folded diagrams which are irreducible
+and valence linked. A diagram is said to be irreducible if between each pair
+of vertices there is at least one hole state or a particle state outside
+the model space. In a valence--linked diagram the interactions are linked
+(via fermion lines) to at least one valence line. Note that a valence--linked
+diagram can be either connected (consisting of a single piece) or
+disconnected. In the final expansion including folded diagrams as well, the
+disconnected diagrams are found to cancel out \cite{ko90}.
+This corresponds to the cancellation of unlinked diagrams
+of the Goldstone expansion \cite{ko90}.
+We illustrate
+these definitions by the diagrams shown in fig.~\ref{fig:diagsexam},
+where an arrow pointing upwards
+(downwards) is a particle (hole) state.
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1cm}
+ \begin{center}
+   \begin{picture}(7,3.5)
+%%%\put(0,0){\framebox(7,3.5){}}
+  \put(0,0){\epsfxsize=7cm,\epsfbox{qbox1.eps}}
+   \end{picture}
+  \end{center}
+\caption{Different types of valence--linked diagrams. Diagram (a)
+is irreducible and connected, (b) is reducible, while (c) is irreducible
+and disconnected.}
+\label{fig:diagsexam}
+\end{figure}
+Particle states outside the model space are given by railed lines.
+Diagram (a) is irreducible, valence linked and connected,
+while (b) is reducible since
+the intermediate particle states belong to the model space.
+Diagram (c) is irreducible, valence linked and disconnected.
+
+We can then obtain an effective interaction
+$H_{eff}$ in terms of the $\hat{Q}$--box,
+with \cite{ko90,hko94}
+\begin{equation}
+    H_{eff}^{(n)} = \omega + \hat{Q}+{\displaystyle\sum_{m=1}^{\infty}}
+    \frac{1}{m!}\frac{d^m\hat{Q}}{d\omega^m}\left\{
+    H_{eff}^{(n-1)} - \omega \right\}^m .
+    \label{eq:fd}
+\end{equation}
+Observe also that the
+effective interaction $H_{eff}^{(n)}$
+is evaluated at a given model space energy
+$\omega$, as is the case for the $G$--matrix as well. We choose this
+starting energy to be $-20$ MeV.
+Moreover, although $\hat{Q}$ and its derivatives contain disconnected
+diagrams, such diagrams cancel exactly in each order \cite{ko90}, thus
+yielding a fully connected expansion in eq.\ (\ref{eq:fd}).
+The first iteration is then given by
+\begin{equation}
+   H_{eff}^{(0)} =  \omega + \hat{Q}.
+\end{equation}
+We define the $\hat{Q}$--box to consist of all two--body
+diagrams\footnote{With two--body we also mean one--body diagrams like
+diagram (a) in fig.~\ref{fig:qbox} with a spectator valence line.}
+through third order in the $G$--matrix, as shown in
+ref.~\cite{hko94}. Typical examples of diagrams which are included
+in the $\hat{Q}$--box are shown in fig.~\ref{fig:qbox}. The summations
+over intermediate states is restricted to excitations
+of $2\hbar\Omega$ ($\hbar\Omega$ is the oscillator energy)
+in oscillator energy, an approximation which has
+been found to be appropriate if one uses a potential with a weak
+tensor force like the Bonn A potential. The reader should note that
+diagram (c) in fig.~\ref{fig:qbox} is not included in
+the $\hat{Q}$--box. Three--body
+and other many--body effective contributions may be of importance
+in the study of spectra of nuclei with more than two valence
+nucleons. These contributions will be studied by us in future works.
+%
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1cm}
+  \begin{center}
+   \begin{picture}(7,3)
+%%     \put(0,0){\framebox(7,3){}}
+      \put(0,0){\epsfxsize= 7cm,\epsfbox{qbox2.eps}}
+\end{picture}
+\end{center}
+\caption{Examples of diagrams included in the $\hat{Q}$--box.
+Diagram (a) is a one--body diagram, whereas diagram (b) is a two--body
+diagram. Diagram (c) is an effective three--body diagram which is not
+included in our definition of the $\hat{Q}$--box.}
+\label{fig:qbox}
+\end{figure}
+%
+
+Another iterative scheme which has been much favored in the literature
+is a method proposed by Lee and Suzuki (LS) \cite{ls80}. The effective interaction
+we will employ in this work has been obtained using the LS method, which
+gives the following expression for the effective interaction
+%
+\begin{equation}
+H_{eff}^{(n)} =  \omega + \left[1-\hat{Q}_{1}-\sum_{m=2}^{n-1}\hat{Q}_{m}
+\prod_{k=n-m+1}^{n-1} \left ( H_{eff}^{(k)} - \omega \right )
+              \right]^{-1}\hat{Q},
+\end{equation}
+where
+\begin{equation}
+\hat{Q}_{m}=\frac{1}{m!}\frac{d^m\hat{Q}}{d\omega^m}.
+\end{equation}
+%
+\subsection{Application to the Sn isotopes.}
+%
+We end this section with some calculational details regarding
+the effective interaction appropriate for the Sn isotopes.
+The Bethe--Goldstone equation is solved
+for the $G$--matrix for five starting
+energies $\omega$, by way of the so--called double--partitioning scheme
+defined in ref.~\cite{kkko76}. The Pauli operator is constructed so as to
+prevent scattering into intermediate states with a single
+nucleon in any of the
+states defined by the orbitals from the $0s$ state, the states
+in the $0p$--shell, the
+$1s0d$--shell and the $1p0f$--shell, in addition we also have the $0g_{9/2}$
+orbit. Moreover, the Pauli operator prevents scattering into intermediate
+states with two particles in the orbits of the $2s1d0g$--shell (except the $0g_{9/2}$
+orbit) and the $2p1f0h$--shell.
+A harmonic--oscillator basis was chosen for the
+single--particle wave functions, with an oscillator energy $\hbar\Omega$ given
+by
+$\hbar\Omega = 45A^{-1/3} - 25A^{-2/3}= 8.5~$MeV,  $A=100$ being the mass
+number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% file:sh-alg.tex %%%%%%%%%%%%%
+%
+\section{Shell Model Algorithm.}
+%
+The shell model problem requires the solution of a real symmetric
+$n \times n$ matrix eigenvalue equation
+\be
+H\ket{vec_k} = E_k \ket{vec_k},
+\label{e1}
+\ee
+with $k = 1,\ldots, K$. The eigenvalues $E_k$ are understood to be
+numbered in increasing order. In a typical shell model problem
+we are interested in only the lowest eigenstates of eq.~(\ref{e1}),
+so $K$ may be of the order of 10 to 50.
+The total dimension $n$ of the eigenvalue matrix $H$ is large,
+for the Sn isotopes of interest up to $n \approx 2 \times 10^{7}$.
+
+Such large matrix problems are increasingly used in science and
+enginering and practical numerical algorithms for determining their
+properties are continually being developed\cite{dav89}.
+These methods are closely related to the development of modern
+computer technology, both  hardware and software.
+What was impossible to solve a few years ago may now be within
+reach and we should also be prepared for an increased  future
+development. To indicate the present possibility,
+in a work by J.~Olsen {\sl et al.}\cite{ols90} in a quantum
+chemistry configuration interaction calculation (FCI), eq.~(\ref{e1})
+was solved in a basis with $n = 10^{9}$.
+
+Different computational approaches to solve eq.(\ref{e1}) can
+be distinguished
+based on the size of $n$.
+For $n$ small, i.e. $10^2 < n < 10^3$ and with  the number of
+matrix elements of $H$
+less than $10^6$ such  problems can be accomodated within the direct
+access memory of a modern work station and can be diagonalized by
+standard matrix routines.
+In a second domain  with  $ n > 10^3$ but small enough that $H$
+has no more than $10^8$ elements. This will require $\approx 1.5$~Gbyte
+of storage.Then all matrix elements may be stored in memory
+or alternatively on a standard disk.
+In these cases the complete diagonalization of
+$H$ will not be of physical interest and efficient iteration
+procedures have been developed to find the lowest energy eigenvalues
+and eigenvectors.
+
+The last domain with $n$ so large that the number of
+non--diagonal matrix elements
+of $H$ exceed $\approx 10^{10}$, no storage medium is at present large
+enough  and the matrix elements have to be calculated when needed.
+This requires a fast computer algorithm since the matrix elements of
+$H$ have to be calculated repeatedly throughout the iteration process,
+again using similar algorithms as in the second domain. Our cases of
+special interest are of this last type.
+
+Based on the present computer methods we have developed a code
+which is under continuous improvement
+to solve the eigenvalue problem given in eq.~(\ref{e1}).
+The basic requirement
+is to be able to handle problems with $n > 10^6$. In the following
+we discuss some of the important elements which enter the algorithm.
+
+We separate the discussion into three parts:
+%
+\begin{itemize}
+%
+\item The m--scheme representation of the basic states.
+%
+\item The Lanczos iteration algorithm.
+%
+\item The Davidson--Liu iteration technique.
+%
+\end{itemize}
+%
+\subsection{The m--scheme representation.}
+%
+We write the eigenstates in eq.~(\ref{e1})  as  linear combinations
+of slater determinants. In a second quantization representation
+a slater determinant (SD) is given by
+%
+\be
+\ket{SD_{\nu}(N)} = \prod_{(jm)\in {\nu}} a_{jm}^{\dagger}\ket{0},
+\ee
+%
+and the complete set is generated by distributing the $N$ particles
+in all possible ways throughout the basic one--particle states constituting
+the P--space. This is a very efficient
+representation. A single $\ket{SD}$ requires only one  computer word
+(32 or 64 bits) and  in memory a $\ket{SD}$ with $N$ particles
+is given by
+%
+\be
+\ket{SD} \longrightarrow (\underbrace{00111101010 \cdots}_{N 1's}),
+\ee
+%
+where each 0 and 1 corresponds to an m--orbit in the valence
+P--space. Occupied orbits  have a 1 and empty orbits a 0.
+ Furthermore, all important calculations  can
+be handled in Boolean algebra which is very efficient on modern computers.
+The action  of operators of the form $a_{\alpha}^{\dagger} a_{\beta}$ or
+$a_{\alpha}^{\dagger} a_{\beta}^{\dagger} a_{\gamma} a_{\delta}$
+acting on an $\ket{SD}$ is easy to perform.
+
+A disadvantage of this m--scheme approach is that the basic states
+$\ket{SD}$ does not have the relevant physical properties such as
+good total angular momentum $J$ and in case of both protons and neutrons
+total isospin $T$. However, after the iterative solutions have been obtained
+they will of course reflect all physical
+properties of $H$. But the  computational consequence is larger matrices
+than in a more conventional j--j coupling calculation since no reduction
+in groups of definite $J$ and $T$ is possible.
+There is one solution to this problem. We may replace $H$ by
+%
+\be
+H \longrightarrow H_M = H + \alpha \left [ J^2 - M \cdot (M + 1) \right ],
+\ee
+%
+and construct all the basic $\ket{SD}$ with $\sum_i m_i = M$.
+Only states with $ J \geq M$ are calculated. Eigenstates
+with $J= M$ are the same for $H$ and $H_M$ whereas eigenstates
+of $H_M$ with $J > M$ are pushed up in energy.
+Thus with $\alpha = 5 - 10$ ~MeV the lowest states of $H_M$
+obtained through the iteration process will all have $J = M$.
+Our experience with this technique so far is that it is useful
+in cases where many states of a given $J$ are needed such as in double
+$\beta$--decay processes but is of no help if the total low--energy
+spectrum is of interest.
+%
+\subsection{The Lanczos iteration process.}
+%
+At present our basic approach to finding solutions to eq.~(\ref{e1})
+is the Lanczos algorithm. This method was already applied to nuclear
+physics problems by Whitehead {\sl et al.} in 1977.
+In a review article \cite{whit77} they describe the technique in detail.
+For the present discussion we outline the basic elements
+of the method.\\[2ex]
+%
+The Lanczos method:
+
+\begin{enumerate}
+%
+\item We choose  an initial lanczos vector $\ket{lanc_0}$ as the zeroth order
+approximation to the lowest eigenvector in eq.~(\ref{e1}). Our experience
+is that any  reasonable choice  is acceptable as long as the
+vector does not have special properties such as good angular momentum.
+That would usually terminate the iteration process at too early a
+stage.
+%
+\item The next step involves generating a new  vector
+through the process $|new_{p+1}> = H |lanc_p>$.
+Throughout this process we construct the energy matrix elements
+of $H$ in this lanczos basis. First, the diagonal matrix elements of $H$
+are then obtained by
+
+%
+\be
+\bra{lanc_p} H \ket{lanc_p} = \bra{lanc_p} \left . new_{p+1} \right \rangle,
+\label{lanc1}
+\ee
+%
+
+\item The new vector $\ket{new_{p+1}}$ is then orthogonalized to all
+previously calculated lanczos vectors
+%
+\be
+\ket{new_{p+1}^{'}} = \ket{new_{p+1}} - \ket{lanc_p} \cdot
+	                \bra{lanc_p} \left . new_{p+1} \right \rangle		 - \sum_{q = 0}^{p-1} \ket{lanc_q} \cdot
+	          \bra{lanc_q} \left . new_{p+1} \right \rangle,
+\ee
+%
+and finally normalized
+
+%
+\be
+\ket{lanc_{p+1}} = \frac{1}{\sqrt{\bra{new_{p+1}^{'}}
+                      \left . new_{p+1}^{'} \right \rangle}}
+						\ket{new_{p+1}^{'}},
+\ee
+%
+to produce a new lanczos vector.
+%
+\item The off--diagonal matrix elements of $H$ are calculated by
+%
+\be
+\bra{lanc_{p+1}} H \ket{lanc_p} = \bra{new_{p+1}^{'}}
+                                \left . new _{p+1}^{'}\right \rangle,
+\label{off1}
+\ee
+
+%
+and all others are zero.
+%
+\item After n iterations we have an energy matrix of the form
+%
+\be
+\left \{
+\begin{array}{ccccc}
+H_{0,0} & H_{0,1} & 0       & \cdots   & 0  \\
+H_{0,1} & H_{1,1} & H_{1,2} & \cdots   & 0  \\
+0       & H_{2,1} & H_{2,2} & \cdots   & 0  \\
+\vdots  & \vdots  & \vdots  & \vdots   & H_{p-1,p}  \\
+0       & 0       & 0       & H_{p,p-1}   & H_{p,p}\\
+\end{array}
+\right \}
+\label{matr1}
+\ee
+as the p'th approximation to the eigenvalue problem in eq.~(\ref{e1}).
+The number p is a reasonably small number and we can diagonalize
+the matrix by standard methods to obtain eigenvalues and eigenvectors
+which are linear combinations of the lanczos vectors.
+%
+\item This process is repeated until a suitable convergence
+criterium has been reached.
+%
+\end{enumerate}
+%
+In this method each lanczos vector is a linear combination
+of the basic $\ket{SD}$ with dimension $n$. For
+$n \approx 10^6$, as in our case of interest, this means 8~Mb
+of storage for one  single vector.
+Here is  one of the important difficulties associated
+with the lanczos method. Large disk storage is needed when
+the number of lanczos vector exceeds $\approx 100$.
+Another difficulty is found in the calculation of
+$|new_{p+1}> = H |lanc_p>$ when $n > 10^6$.
+The number of terms needed to be calculated may exceed
+$10^{10}$. However, with an  optimistic view we can
+certainly expect increasing computer resources in the future
+which will reduce these problem to become moderate.
+
+One important objection found in the computer literature\cite{dav89}
+to the lanczos method is its slow convergence. This
+is also our experience so far and means
+that a large number of lanczos vectors have to be calculated
+and stored in order to obtain convergence.
+One improvement which we have implemented is to
+terminate the lanczos process earlier, diagonalize the energy
+matrix and choose some
+of the lowest thus obtained eigenvectors as a starting point
+for a new lanczos iteration.
+This modifies the energy matrix in eq.~(\ref{matr1}) slightly,
+since the matrix will not be tri--diagonal any more.
+It reduces the disk storage requirement, but the convergence
+problem is left. A possible way out here is the Davidson--Liu
+method.
+%
+
+\subsection{The Davidson--Liu method.}
+%
+We outline the basic elements of this technique and refer to
+the literature\cite{dav89} for details.
+The first important improvement to the lanczos process given in
+eqs.~(\ref{lanc1},\ref{matr1}) is to start with
+several orthogonalized  and normalized initial vectors
+and the second difference is the  way new additional vectors
+are chosen. The method can be viewed
+as an improvement of the lanczos technique and can be described
+in the following steps:
+%
+\begin{enumerate}
+%
+\item Choose a (small) set  of start vectors
+$\ket{x_k^{(0)}},\;\; k = 1,\ldots, K$.
+%
+\item $K$ new vectors are generated through the process
+$\ket{new_k^{(0)}} = H \ket{x_k^{(0)}}$.
+%
+\item The matrix elements of $H$ are again obtained by
+
+%
+\be
+\bra{x_p^{(0)}} H \ket{x_q^{(0)}}
+= \bra{x_p^{(0)}} \left . new_q^{(0)}\right \rangle,
+\label{dav1}
+\ee
+%
+and the matrix $H$ is no longer tri--diagonal.
+$H$ is diagonalized within the set of states
+$\ket{x_k^{(0)}},\;\; k = 1, \ldots, K$
+and $K$ eigenvalues and corresponding eigenstates are obtained
+as the zero'th approximation to the lowest true eigenstates
+of eq.~(\ref{e1}) in the form
+%
+
+\be
+\ket{x_p^{(1)}} = \sum_{q = 1}^{K} a_{q, p} \ket{x_q^{(0)}}
+                = \sum_{\nu = 1}^{n} C_{\nu,p}^{(1)} \ket{SD_{\nu}}.
+\label{dav2}
+\ee
+
+%
+The vectors $\ket{x_p^{(1)}}$ now constitute the basis for a new iteration.
+%
+\item New correction vectors are calculated through the steps
+%
+%
+\begin{eqnarray}
+\ket{r_p} &=&(H - \varepsilon_p^{(n)}) \ket{x_p^{(n)}}
+	 =\ket{h_p^{(n)}} - \varepsilon_p^{(n)} \ket{x_p^{(n)}},
+			                       \nonumber\\
+\ket{\delta_p} &=& (H_{diag}-\varepsilon_p^{(n)})^{-1} \ket{r_p}.
+\label{dav3}
+\end{eqnarray}
+%
+Then new additional vectors are obtained by orthogonalizing
+to all previous vectors, and finally normalized
+%
+
+\be
+\ket{x_{k'+p}^{(n)}}
+	= \sqrt{\frac{1}{norm}} \{ \ket{\delta_p}
+		  -\sum_{q=1}^K \ket{x_q^{(n)}} \cdot
+	                    \bra{x_q^{(n)}} \delta_p \rangle 
+  -\sum_{q<p}^K \ket{x_{k'+q}^{(n)}} \cdot \bra{x_{K+q}^{(n)}}
+		                  \delta_p \rangle  \},
+\ee
+%
+witk $k' = 1, \ldots, K' \leq K$. Thus up to $K$ new vectors
+may be generated through one iteration.
+Then the diagonalization process in eqs.~(\ref{dav1}--\ref{dav2}) is
+repeated and a new iteration to the true eigenvectors is obtained.
+%
+\item Again this process may be repeated until some convergence
+criterium has been reached.
+%
+\end{enumerate}
+%
+At present we have only very preliminary experience with
+this technique applied to nuclear physics problems, but experience
+from other fields, in particular from ref.~\cite{ols90}, should
+give hope for essential improvements over the lanczos
+method.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%% file: sh-alg.tex  %%%%%%%%%%%%
+%
+%
+ \section{Shell Model Applications.}
+ %
+ Shell model calculations with realistic effective interactions
+ have mainly been applied to light nuclei
+ and with a rather small number of particles in the defined P--space.
+ This makes the test of the effective interaction methods limited.
+ In addition, the shell structure in these regions of the periodic table is
+ not well separated. In many cases one struggles with so--called
+ intruder states which make the analysis difficult.
+
+ We are now in the position to carry these methods into medium and
+ heavy nuclei. The effective interactions for such systems can be
+ calculated reliably and  the shell model problem in the defined
+ P--space both with many single--particle states and
+ large number of  valence particles can be performed.  At present we
+ have concentrated on identical particle systems as the first step.
+
+ During the last few years a  rich
+ variety of data has become available for nuclei far from the stability line.
+ Recently, substantial progress has been made in the spectroscopic approach
+ to the neutron deficient doubly magic $^{100}$Sn core. Experimental
+ spectroscopic data are presently available down to $^{104}$Sn[13--16]
+%%%%%    \cite{schu92--ryk92}.
+ Thus theoretical shell model calculations for these nuclei
+ are greatly needed. The starting point for such an analysis is the doubly
+ magic core $^{100}$Sn. This system has been studied theoretically, using
+ either approaches inspired by the relativistic Serot-Walecka \cite{sw86}
+ model, such as the calculations of Hirata {\em et al.} \cite{hir91}
+ and Nikolaus {\em et al.} \cite{nhm92}, or non-relativistic
+ models used by Leander {\em et al.} \cite{lean84}. In both approaches it
+ is concluded that $^{100}$Sn is a reasonably stable closed core.
+ Thus the Sn isotopes should be well suited for a shell model
+ analysis.
+
+ From a theoretical point of view the Sn isotopes are interesting
+ to study as they are a unique testing ground for nuclear structure
+ calculations. We have a large sequence of nuclei ranging from
+ the closed $Z = N = 50$ shell and up to the closed
+ $Z = 50$, $N = 82$ shell and they can be described in terms of
+ neutron degrees of freedom only.
+ In these nuclei it is often assumed that the seniority or
+ generalized seniority scheme is a good approximation \cite{tal77}
+ to the large shell model problem which these isotopes represents.
+ This assumption can now be tested with our present shell model code.
+ Another important topic is the question  of an additional effective
+ three--body interaction \cite{mfko83}.
+ With so many valence particles available this problem can now
+ be thoroughly investigated and our shell model code based on the
+ Lanczos iteration procedure is well suited for such a study.
+
+ %
+ \begin{table}[htbp]
+ %
+ \begin{center}
+ %
+ \begin{tabular}{|l|r|| l|r|} \hline
+ System & Dimension & System & Dimension\\ \hline
+ $^{102}$Sn  & 36&  $^{110}$Sn  & 1,853,256\\
+ $^{103}$Sn  & 245&  $^{111}$Sn  & 3,608,550\\
+ $^{104}$Sn  & 1504&  $^{112}$Sn  & 6,210,638\\
+ $^{105}$Sn  & 7,451&  $^{113}$Sn  & 9,397,335\\
+ $^{106}$Sn  & 31,124&  $^{114}$Sn  & 12,655,280\\
+ $^{107}$Sn  & 108,297&  $^{115}$Sn  & 15,064,787\\
+ $^{108}$Sn  & 323,682&  $^{116}$Sn  & 16,010,204 \\
+ $^{109}$Sn  & 828,422&              &           \\ \hline
+ \end{tabular}
+ \end{center}
+ %
+ \caption{\label{res-table1}Number of basic states for the shell model
+ calculation in the Sn isotopes with $1d_{5/2}$, $0g_{7/2}$,
+ $1d_{3/2}$, $2s_{1/2}$ and $0h_{11/2}$ single particle orbits.}
+ %
+ \end{table}
+ %
+ Based on a closed $Z = N = 50$ core  we define the model space to
+ consist of the spherical single--particle orbits in
+ the $N = 4$ oscillator shell ($1d_{5/2}$, $0g_{7/2}$, $1d_{3/2}$,
+ $2s_{1/2}$) plus the intruder  $0h_{11/2}$ orbit
+ from the $N = 5$ oscillator shell. This means that our P--space
+ ranges from the closed $Z = N =50$ core to the closed $Z=50,\; N = 82$ core.
+ As shown below, the inclusion of the $h_{11/2}$ orbit to our model space
+ is essential  to obtain a quantitative description of the data.
+ Within this P--space the total number of basic states for the
+ different isotopes are shown in table~\ref{res-table1}.
+
+%
+ \begin{table}[htbp]
+ %
+ \begin{center}
+ %
+ \begin{tabular}{||r|r||r|r||r|r||r|r||r|r||}\hline
+ J&Number&J&Number&J&Number&J&Number&J&Number\\ \hline
+ 0&18705&6&159972&12&100117&18&19303&24&816\\
+ 1&53648&7&160803&13&82466&19&12826&25&368\\
+ 2&86990&8&156674&14&66229&20&8280&26&157\\
+ 3&114192&9&146505&15&51087&21&5013&27&40\\
+ 4&136672&10&133449&16&38398&22&2945&28&15\\
+ 5&151239&11&117043&17&27601&23&1581&29&1\\ \hline
+ %
+ \end{tabular}
+ %
+ \end{center}
+ %
+ \caption{\label{res-table2}Number of
+ basic states separated into different groups of
+ total angular momentum J for the $^{110}$Sn isotope.}
+ %
+ \end{table}
+%
+
+ To compare with more conventional shell model calculations we list the number
+ of basic states for $^{110}$Sn separated into different J--groups in
+ table~\ref{res-table2}. This shows how prohibitively difficult
+ it would be to perform such an analysis in a conventional j--j
+ coupled shell model scheme.
+ %
+ \begin{figure}[htbp]
+ %
+ \setlength{\unitlength}{1cm}
+ \begin{center}
+ %
+ \setlength{\unitlength}{1cm}
+ \thicklines
+ %
+%%\begin{picture}(13,5)
+%
+%%\put(0,0){\framebox(13,5){}}
+
+ \Cartesian(0.75cm,1cm)
+ %
+ \pspicture(-1,-1)(16,4)
+ %
+ \psaxes[Ox=100,Dx=2,dx=1,showorigin=false,linewidth=1pt]{->}(0,0)(15.5,3.5)
+ %
+ \uput[0](0.0,3.5){MeV}
+ %
+ \uput[90](15.5,0.2){N}
+ %
+\psline[showpoints=true,linestyle=dotted,dotstyle=*,dotscale=1.2,linewidth=1pt]
+ (2,1.942)(3,2.019)(4,2.019)(5,2.197)(6,2.247)(7,2.187)(8,2.390)(9,2.280)
+ (10,2.194)(11,2.144)(12,2.109)(13,2.050)(14,2.0)(15,1.996)
+ %
+ \uput[90](2.1,1.96){$4^{+}$}
+ %
+\psline[showpoints=true,linestyle=dashed,dotstyle=+,dotangle=45,dotscale=1.2,linewidth=1pt]
+(1,1.3)(2,1.259)(3,1.207)(4,1.205)(5,1.212)(6,1.256)(7,1.299)(8,1.293)
+(9,1.229)(10,1.171)(11,1.141)(12,1.132)(13,1.141)(14,1.169)(15,1.227)
+ %
+\uput[90](1.1,1.4){$2^{+}$}
+ %
+\endpspicture
+%
+%%\end{picture}
+ %
+ \end{center}
+ %
+ \caption{\label{res-fig1}Experimental excitation energies for the lowest
+ $2^{+}$ and $4^{+}$ states in the Sn isotopes.}
+ %
+ \end{figure}
+ %
+
+ %
+ \begin{figure}[htbp]
+ %
+ \setlength{\unitlength}{1cm}
+ \begin{center}
+ \thicklines
+%
+%%\begin{picture}(11.5,6.5)
+%
+%%\put(0,0){\framebox(8,5){}}
+%
+\Cartesian(1.5cm,2cm)
+%
+\pspicture(0,-0.25)(7.5,3)
+%
+\psaxes[Ox=103,Dx=2,dx=1,Oy=-0.5,Dy=0.5,dy=0.5,
+showorigin=false,linewidth=1pt]{->}(0,-0.25)(7.5,2.5)
+%
+\uput[0](0.2,2.5){MeV}
+\uput[90](7.5,-0.25){N}
+\psline[showpoints=true,dotstyle=triangle*,dotscale=1.2]
+(1,0.25)(2,0.25)(3,0.25)(4,0.404)(5,0.660)(6,1.237)
+%
+\uput[270](1,0.24){$5/2^{+}$}
+%
+\psline[showpoints=true,linestyle=dashed,dotstyle=triangle*,dotscale=1.2]
+(1,0.45)(2,0.401)(3,0.25)(4,0.25)(5,0.337)(6,0.863)(7,0.961)
+%
+\uput[90](1,0.46){$7/2^{+}$}
+%
+\psline[showpoints=true,linestyle=dotted,dotstyle=triangle*,dotscale=1.2]
+(2,1.916)(3,1.506)(4,1.229)(5,0.988)(6,0.913)
+%
+\uput[270](2,1.9){$11/2^{-}$}
+%
+\psline[showpoints=true,dotstyle=triangle*,dotscale=1.2]
+(4,0.505)(5,0.25)(6,0.25)(7,0.25)
+%
+\uput[180](4,0.505){$1/2^{+}$}
+%
+\psline[showpoints=true,linestyle=dashed,dotstyle=triangle*,dotscale=1.2]
+(4,0.894)(5,0.748)(6,0.747)(7,0.408)
+%
+\uput[135](4,0.894){$3/2^{+}$}
+%
+\endpspicture
+%
+%%\end{picture}
+%
+\end{center}
+%
+\caption{\label{res-fig2}Experimental "one--quasiparticle" states
+in the odd Sn isotopes.}
+%
+\end{figure}
+%
+
+ At present rather few energy levels are known for the lightest
+ Sn isotopes, a fact which makes a detailed comparison  difficult
+between theory and experiment.
+ However, some characteristic properties  can be found in the data.
+ In the even $N$ isotopes there is a remarkably constant spacing between
+ the $0^{+}$ ground state and the first excited $2^{+}$ state,
+ see fig.~\ref{res-fig1}, all the way from the 2--particle system $^{102}$Sn
+ to the 30--particle or 2--hole system. A nearly similar feature is found
+ for the spacing between the $0^{+}$ ground state and the first
+ excited $4^{+}$ state. Furthermore,
+ in the odd $N$ isotopes the lowest states can easily be described
+ as one--quasiparticle states with increasing fermi level as shown in
+ fig.~\ref{res-fig2}. These important properties
+ indicate a collective pairing effect or a seniority coupling scheme
+ for the Sn  nuclei.  It is  essential that our microscopic shell model
+ calculation is able to reproduce such phenomena.
+ This  was also the basis for the pioneering
+ BCS shell model analysis by Kisslinger and Sorensen~\cite{ks60}
+ and also in the generalized seniority scheme discussed by
+ Talmi~\cite{tal77}.
+
+%
+\begin{figure}[htbp]
+%
+%%%%%%%%%% fra Anne %%%%%%%%%%%
+%
+\setlength{\unitlength}{1.3cm}
+
+\begin{center}
+\begin{picture}(8,3.5)(1,-1.5)
+
+\newcommand{\lc}[1]{\put(-.5,#1){\line(1,0){1}}}
+\newcommand{\ls}[2]{\put(.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsr}[2]{\put(.9,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcc}[1]{\put(1.5,#1){\line(1,0){1}}}
+\newcommand{\lss}[2]{\put(2.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssr}[2]{\put(2.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccc}[1]{\put(3.5,#1){\line(1,0){1}}}
+\newcommand{\lsss}[2]{\put(4.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssr}[2]{\put(4.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccc}[1]{\put(5.5,#1){\line(1,0){1}}}
+\newcommand{\lssss}[2]{\put(6.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssr}[2]{\put(6.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccccc}[1]{\put(7.5,#1){\line(1,0){1}}}
+\newcommand{\lsssss}[2]{\put(8.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssssr}[2]{\put(8.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccccc}[1]{\put(9.5,#1){\line(1,0){1}}}
+\newcommand{\lssssss}[2]{\put(10.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssssr}[2]{\put(10.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\put(-.25,2.5){\makebox(0,0){MeV}}
+\put(4.5,2.3){\makebox(0,0){{g$_{7/2} -$ d$_{5/2} = 0.0$ MeV}}}
+
+\thicklines
+\put(-.75,-.5){\line(0,1){3}}
+\multiput(-.75,.0)(0,1){3}{\line(1,0){.1}}
+\multiput(-.75,.5)(0,1){2}{\line(1,0){.05}}
+
+\put(-1.,2){\makebox(0,0){2}}
+\put(-1.,1){\makebox(0,0){1}}
+\put(-1.,0){\makebox(0,0){0}}
+
+%single-particle levels g_7/2 - d_5/2 = 0.0
+
+\lc{.0}      \ls{.0}{0}
+\lc{1.194}   \ls{1.194}{2}
+\lc{1.478}   \ls{1.478}{4}
+\put(0,-.5){\makebox(0,0){{\large $^{102}$Sn}}}
+
+\lcc{.0}      \lss{.0}{0}
+\lcc{1.009}   \lss{1.009}{2}
+\lcc{1.423}   \lssr{1.423}{4}
+\put(2,-.5){\makebox(0,0){{\large $^{104}$Sn}}}
+
+\lccc{.0}      \lsss{.0}{0}
+\lccc{1.080}   \lsss{1.080}{2}
+\lccc{1.332}   \lsss{1.332}{0}
+\lccc{1.443}   \lsssr{1.473}{4}
+\put(4,-.5){\makebox(0,0){{\large $^{106}$Sn}}}
+
+\lcccc{.0}      \lssss{.0}{0}
+\lcccc{.963}    \lssss{.963}{2}
+\lcccc{1.373}   \lssss{1.373}{4}
+\lcccc{1.510}   \lssssr{1.510}{0}
+\put(6,-.5){\makebox(0,0){{\large $^{108}$Sn}}}
+
+\lccccc{.0}     \lsssss{.0}{0}
+\lccccc{.829}   \lsssss{.829}{2}
+\lccccc{1.225}  \lsssss{1.225}{4}
+\lccccc{1.352}  \lsssssr{1.372}{4}
+\put(8,-.5){\makebox(0,0){{\large $^{110}$Sn}}}
+
+\lcccccc{.0}     \lssssss{.0}{0}
+\lcccccc{.736}   \lssssss{.736}{2}
+\lcccccc{1.104}  \lssssss{1.104}{4}
+\put(10,-.5){\makebox(0,0){{\large $^{112}$Sn}}}
+
+\end{picture}
+%
+\end{center}
+%
+
+%
+\begin{center}
+\begin{picture}(8,2.5)(1,0)
+
+\newcommand{\lc}[1]{\put(-.5,#1){\line(1,0){1}}}
+\newcommand{\ls}[2]{\put(.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsr}[2]{\put(.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcc}[1]{\put(1.5,#1){\line(1,0){1}}}
+\newcommand{\lss}[2]{\put(2.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssr}[2]{\put(2.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccc}[1]{\put(3.5,#1){\line(1,0){1}}}
+\newcommand{\lsss}[2]{\put(4.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssr}[2]{\put(4.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccc}[1]{\put(5.5,#1){\line(1,0){1}}}
+\newcommand{\lssss}[2]{\put(6.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssr}[2]{\put(6.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccccc}[1]{\put(7.5,#1){\line(1,0){1}}}
+\newcommand{\lsssss}[2]{\put(8.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssssr}[2]{\put(8.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccccc}[1]{\put(9.5,#1){\line(1,0){1}}}
+\newcommand{\lssssss}[2]{\put(10.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssssr}[2]{\put(10.8,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+
+\put(-.25,2.5){\makebox(0,0){MeV}}
+\put(4.5,3){\makebox(0,0){{g$_{7/2} - $ d$_{5/2} = 1.0$ MeV}}}
+
+\thicklines
+\put(-.75,-.5){\line(0,1){3}}
+\multiput(-.75,.0)(0,1){3}{\line(1,0){.1}}
+\multiput(-.75,.5)(0,1){2}{\line(1,0){.05}}
+
+\put(-1.,2){\makebox(0,0){2}}
+\put(-1.,1){\makebox(0,0){1}}
+\put(-1.,0){\makebox(0,0){0}}
+
+%single-particle levels g_7/2 - d_5/2 = 1.0
+%
+\lc{.0}      \ls{.0}{0}
+\lc{.715}    \ls{.715}{2}
+\lc{.944}    \ls{.944}{4}
+\put(0,-.5){\makebox(0,0){{\large $^{102}$Sn}}}
+
+\lcc{.0}      \lss{.0}{0}
+\lcc{.722}    \lss{.722}{2}
+\lcc{.949}    \lss{.949}{4}
+\put(2,-.5){\makebox(0,0){{\large $^{104}$Sn}}}
+
+\lccc{.0}      \lsss{.0}{0}
+\lccc{1.834}   \lsss{1.834}{4}
+\lccc{2.002}   \lsss{2.082}{0}
+\lccc{2.1783}  \lsss{2.2}{2}
+\put(4,-.5){\makebox(0,0){{\large $^{106}$Sn}}}
+
+\lcccc{.0}      \lssss{.0}{0}
+\lcccc{.682}    \lssss{.682}{2}
+\lcccc{1.056}   \lssss{1.056}{4}
+\put(6,-.5){\makebox(0,0){{\large $^{108}$Sn}}}
+
+\lccccc{.0}     \lsssss{.0}{0}
+\lccccc{.636}   \lsssss{.636}{2}
+\lccccc{1.006}  \lsssssr{1.006}{4,4}
+\lccccc{1.029}  %\lsssssr{1.029}{4}
+\put(8,-.5){\makebox(0,0){{\large $^{110}$Sn}}}
+
+\lcccccc{.0}     \lssssss{.0}{0}
+\lcccccc{.598}   \lssssss{.598}{2}
+\lcccccc{.965}   \lssssss{.965}{4}
+\put(10,-.5){\makebox(0,0){{\large $^{112}$Sn}}}
+%
+\end{picture}
+%
+\end{center}
+%%%%%%%%%%%%%% slutt Anne %%%%%%%%%%%
+%
+
+\vspace*{3mm}
+
+\caption{\label{res-fig3}Energy spectra of $^{102\mbox{--}112}$Sn with a
+model space consisting of the
+$\varepsilon_{d_{5/2}}$ and $\varepsilon_{g_{7/2}}$ orbits only.}
+%
+\end{figure}
+%
+
+
+\subsection{The single--particle spectrum.}
+%
+The properties of the mean field defining the energies of the single--particle
+states in the P--space are important for our shell model calculation.
+At present it seems not possible to calculate these values
+along the same lines as for the effective two--body interaction.
+The theoretical framework is available but the results are not
+accurate enough for our purpose. Futhermore, no experimental information
+is available for the $^{101}$Sn  one--neutron system
+to establish the single--particle energies.
+Thus, these must be estimated theoretically.
+
+As our first guide we have the mean--field work of
+Leander {\em et al.} \cite{lean84}.
+They obtain nearly degenerate
+$\varepsilon_{d_{5/2}}, \varepsilon_{g_{7/2}}$ orbits.
+A simplified calculation with only these two orbits in the P--space
+are shown in fig.~\ref{res-fig3}. The results 
+show that a large energy separation between the two orbits  would produce
+a shell closure around $^{106}$Sn. Thus we choose $
+\varepsilon_{d_{5/2}} - \varepsilon_{g_{7/2}} = 0.20$~MeV
+in agreement with ref.~ \cite{grawe92}. The next important orbit
+is $\varepsilon_{h_{11/2}}$. From the experimental data in
+fig.~\ref{res-fig1} only a weak shell closure can be seen around
+$N = 12\mbox{--}14$. 
+This indicates an important contribution from
+the $\varepsilon_{h_{11/2}}$ orbit.
+Any shell model calculation must include this orbit in the valence 
+P--space  if one wants to treat all Sn isotopes from $N = 102$ to 
+$N= 130$ on the same footing.
+At $^{107}$Sn an experimental level at 1.666~MeV with $J = (11/2)^{-}$
+has been found. In a complete  calculation  we adjust the position
+of the $\varepsilon_{h_{11/2}}$ to reproduce this level.
+That gives
+$\varepsilon_{h_{11/2}}-\varepsilon_{d_{5/2}} = 3.0$~MeV.
+Then we are left with  the two last orbits
+$\varepsilon_{d_{3/2}}$ and $\varepsilon_{s_{1/2}}$ which are of minor
+importance for the spectra of the light Sn isotopes.
+However, in $^{111}$Sn the low--lying  $(1/2)^{+}$ and $(3/2)^{+}$
+are found experimentally at 0.255~MeV and 0.644~MeV
+and are expected to be one--quasiparticle states\cite{san-94}.
+Based on this information we choose
+$\varepsilon_{s_{1/2}}-\varepsilon_{d_{5/2}} = 2.45$~MeV
+and $\varepsilon_{d_{3/2}}-\varepsilon_{d_{5/2}} = 2.54$~MeV.
+The final single--particle spectrum is shown in fig.~\ref{res-fig4}.
+
+
+%
+\begin{figure}[htbp]
+%
+\setlength{\unitlength}{1cm}
+\begin{center}
+%
+\thicklines
+%
+\Cartesian(1cm,1cm)
+%
+\pspicture(0,-1.5)(6,5)
+%
+\psline[linewidth=1pt,linestyle=dashed](1,-1)(3,-1)
+\psline[linewidth=1pt,linestyle=dashed](1,-1.5)(3,-1.5)
+\uput[0](4,-1.5){\Large Q--space}
+\uput[0](1.1,-0.5){\Large N = 50}
+%
+\psline[linewidth=1pt](1,0)(3,0)
+%
+\uput[0](0,-0.1){\footnotesize 5/2$^{+}$}
+\uput[0](3.1,-0.1){\footnotesize 0.0 MeV}
+%
+\psline[linewidth=1pt](1,0.2)(3,0.2)
+\uput[0](0,0.3){\footnotesize 7/2$^{+}$}
+\uput[0](3.1,0.3){\footnotesize 0.20 MeV}
+%
+\psline[linewidth=1pt](1,2.45)(3,2.45)
+\uput[0](0,2.3){\footnotesize 1/2$^{+}$}
+\uput[0](3.1,2.3){\footnotesize 2.45 MeV}
+%
+\psline[linewidth=1pt](1,2.54)(3,2.54)
+\uput[0](0,2.69){\footnotesize 3/2$^{+}$}
+\uput[0](3.1,2.69){\footnotesize 2.54 MeV}
+%
+\psline[linewidth=1pt](1,3)(3,3)
+\uput[0](0,3.1){\footnotesize 11/2$^{-}$}
+\uput[0](3.1,3.1){\footnotesize 3.0 MeV}
+%
+\uput[0](1.1,3.5){\Large N = 82}
+%
+\uput[0](4,1.5){\Large P--space}
+%%%	
+\psline[linewidth=1pt,linestyle=dashed](1,4)(3,4)
+\psline[linewidth=1pt,linestyle=dashed](1,4.3)(3,4.3)
+\uput[0](4,4.3){\Large Q--space}
+%
+\endpspicture
+%
+\end{center}
+%
+\caption{\label{res-fig4}The single--particle spectrum
+for the Sn isotopes.}.
+%
+\end{figure}
+%
+%
+\begin{figure}[htbp]
+%
+%%%%%%%%%%%%%%%%% even.tex file fra Anne %%%%%%%%%%%%%%%%
+
+\setlength{\unitlength}{1.75cm}
+
+\begin{center}
+\begin{picture}(7.9,4.5)(.4,-1.)
+\newcommand{\lc}[1]{\put(-.5,#1){\line(1,0){1}}}
+\newcommand{\ls}[2]{\put(.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsr}[2]{\put(.75,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcc}[1]{\put(1.25,#1){\line(1,0){1}}}
+\newcommand{\lss}[2]{\put(2.45,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssr}[2]{\put(2.53,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccc}[1]{\put(3.,#1){\line(1,0){1}}}
+\newcommand{\lsss}[2]{\put(4.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssr}[2]{\put(4.28,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccc}[1]{\put(4.75,#1){\line(1,0){1}}}
+\newcommand{\lssss}[2]{\put(5.95,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssr}[2]{\put(6.03,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccccc}[1]{\put(6.5,#1){\line(1,0){1}}}
+\newcommand{\lsssss}[2]{\put(7.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssssr}[2]{\put(7.78,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccccc}[1]{\put(8.25,#1){\line(1,0){1}}}
+\newcommand{\lssssss}[2]{\put(9.45,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssssr}[2]{\put(9.53,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\put(-.25,4.4){\makebox(0,0){\large MeV}}
+%\put(4,4){\makebox(0,0){\large ($d_{5/2}$, $g_{7/2}$, $d_{3/2}$, $s_{1/2}$,
+%$h_{11/2}$) = (0.00, 0.20, 1.50, 2.80, 3.00 MeV)}}
+
+\thicklines
+\put(-.75,-.5){\line(0,1){5}}
+\multiput(-.75,.0)(0,1){5}{\line(1,0){.1}}
+\multiput(-.75,.5)(0,1){4}{\line(1,0){.05}}
+
+\put(-1.,4){\makebox(0,0){4}}
+\put(-1.,3){\makebox(0,0){3}}
+\put(-1.,2){\makebox(0,0){2}}
+\put(-1.,1){\makebox(0,0){1}}
+\put(-1.,0){\makebox(0,0){0}}
+
+% Theoretical spect. Sn-102
+\lc{.0}      \ls{.0}{0}
+\lc{1.3741}   \ls{1.3741}{2}
+\lc{1.6447}   \ls{1.5947}{4}
+\lc{1.6876}   \ls{1.6976}{6}
+\lc{1.8163}   \ls{1.8163}{2}
+\lc{1.9923}   \lsr{1.9923}{0,2}
+\lc{1.9987}   %\ls{1.9987}{2}
+\lc{2.0944}   \ls{2.1044}{4}
+\lc{2.2335}   \ls{2.2335}{4}
+\lc{2.3865}   \ls{2.3865}{6}
+\lc{4.0046}   \ls{3.9646}{8} 
+\put(1.4,3.9646){\makebox(0,0){{\scriptsize (6.005 MeV)}}}
+\lc{4.0198}   \ls{4.0898}{10} 
+\put(1.4,4.0898){\makebox(0,0){{\scriptsize (6.020 MeV)}}}
+\put(0,-.3){\makebox(0,0){{\large $^{102}$Sn}}}
+
+%Theoretical spect. Sn-104
+\lcc{.0}      \lss{.0}{0}
+\lcc{1.2308}   \lss{1.2308}{2}
+\lcc{1.6713}   \lss{1.6713}{4}
+\lcc{1.8464}   \lssr{1.7964}{0,6}
+\lcc{1.8633}   %\lss{1.8633}{6}
+\lcc{1.9124}   \lss{1.9124}{2}
+\lcc{1.9820}   %\lss{1.9820}{4}
+\lcc{2.0067}   \lssr{2.0467}{4,2}
+\lcc{2.2854}   \lss{2.2854}{4}
+\lcc{2.4038}   \lss{2.4038}{4}
+\lcc{2.8394}   \lss{2.8394}{8} 
+\lcc{3.1503}   \lss{3.1503}{10}
+\put(1.75,-.3){\makebox(0,0){{\large $^{104}$Sn}}}
+\put(4.2,4.5){\makebox(0,0){{\Large {\sc Theoretical energy spectra}}}}
+
+%Theoretical spect. Sn106
+\lccc{.0}      \lsss{.0}{0}
+\lccc{1.2584}   \lsss{1.2584}{2}
+\lccc{1.6279}   \lsss{1.6279}{0}
+\lccc{1.8436}   \lsss{1.8136}{4}
+\lccc{1.9288}   \lsssr{1.9288}{4,6}
+\lccc{1.9603}   %\lsss{1.9603}{6}
+\lccc{1.9747}   \lsss{2.0247}{2}
+\lccc{2.1398}   \lsss{2.1398}{2}
+\lccc{2.1809}   \lsss{2.2409}{4} 
+\lccc{2.4252}   \lsss{2.4252}{6}
+\lccc{3.0478}   \lsss{3.0478}{8}
+%\lccc{3.5927}   %\lsss{3.5927}{8}
+\lccc{3.1550}   \lsss{3.1650}{10}
+\put(3.5,-.3){\makebox(0,0){{\large $^{106}$Sn}}}
+
+%Theoretical spect. Sn108
+\lcccc{.0}    \lssss{.0}{0}
+\lcccc{1.3164} \lssss{1.3164}{2}
+\lcccc{1.7232} \lssss{1.7232}{0}
+\lcccc{1.9267} \lssss{1.8567}{2}
+\lcccc{1.9863} \lssss{1.9563}{4}
+\lcccc{2.0700} \lssss{2.0600}{6}
+\lcccc{2.1271} %\lssss{2.1271}{4}
+\lcccc{2.1567} \lssssr{2.1767}{4,2}
+\lcccc{2.2637} \lssssr{2.3037}{4,6}
+\lcccc{2.2640} %\lssss{2.2640}{6}
+\lcccc{3.1831} \lssss{3.1931}{8}
+\lcccc{3.8796} \lssss{3.8796}{10}
+\put(5.25,-.3){\makebox(0,0){{\large $^{108}$Sn}}}
+
+%Theoretical spect. Sn110
+\lccccc{0.0}   \lsssss{0.0}{0}
+\lccccc{1.2994}  \lsssss{1.2994}{2}
+\lccccc{2.0100}  \lsssssr{2.010}{0,4}
+\lccccc{2.023}   %\lsssss{2.023}{4}
+\lccccc{2.1451}  \lsssssr{2.1251}{2,4}
+\lccccc{2.1927}  %\lsssss{2.1927}{4}
+\lccccc{2.2079}  \lsssss{2.2479}{6}
+\lccccc{2.2711}  %\lsssss{2.2711}{6}
+\lccccc{2.3434}  \lsssss{2.3834}{2}
+\lccccc{2.4307}  \lsssss{2.4807}{4}
+\lccccc{3.443} \lsssss{3.443}{8}
+\lccccc{3.956} \lsssss{3.956}{10}
+\put(7,-.3){\makebox(0,0){{\large $^{110}$Sn}}}
+
+%Theoretical spect. Sn112
+\lcccccc{0,0}     \lssssss{0,0}{0}
+\lcccccc{1.3395}  \lssssss{1.3395}{2}
+\lcccccc{1.9748}  \lssssss{1.8848}{0}
+\lcccccc{1.9806}  \lssssss{1.9806}{2}
+\lcccccc{2.0982}  \lssssss{2.0982}{0}
+\lcccccc{2.1600}  \lssssssr{2.1800}{4,4}
+\lcccccc{2.1989}  %\lssssss{2.1989}{4}
+\lcccccc{2.2911}  \lssssss{2.3011}{6}
+\lcccccc{2.4614}  \lssssss{2.4614}{2}
+
+\put(8.75,-.3){\makebox(0,0){{\large $^{112}$Sn}}}
+
+\end{picture}
+\end{center}
+
+\begin{center}
+\begin{picture}(7.9,5)(.4,-.25)
+
+\newcommand{\lc}[1]{\put(-.5,#1){\line(1,0){1}}}
+\newcommand{\ls}[2]{\put(.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsr}[2]{\put(.9,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcc}[1]{\put(1.25,#1){\line(1,0){1}}}
+\newcommand{\lss}[2]{\put(2.45,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssr}[2]{\put(2.55,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccc}[1]{\put(3.,#1){\line(1,0){1}}}
+\newcommand{\lsss}[2]{\put(4.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssr}[2]{\put(4.3,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccc}[1]{\put(4.75,#1){\line(1,0){1}}}
+\newcommand{\lssss}[2]{\put(5.95,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssr}[2]{\put(5.05,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccccc}[1]{\put(6.5,#1){\line(1,0){1}}}
+\newcommand{\lsssss}[2]{\put(7.7,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccccc}[1]{\put(8.25,#1){\line(1,0){1}}}
+\newcommand{\lssssss}[2]{\put(9.45,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\put(-.25,4.4){\makebox(0,0){\large MeV}}
+
+\thicklines
+\put(-.75,-.5){\line(0,1){5}}
+\multiput(-.75,.0)(0,1){5}{\line(1,0){.1}}
+\multiput(-.75,.5)(0,1){4}{\line(1,0){.05}}
+
+\put(-1.,4){\makebox(0,0){4}}
+\put(-1.,3){\makebox(0,0){3}}
+\put(-1.,2){\makebox(0,0){2}}
+\put(-1.,1){\makebox(0,0){1}}
+\put(-1.,0){\makebox(0,0){0}}
+
+
+%Exp. spectra Sn-104
+\lcc{.0}      \lss{.0}{0}
+\lcc{1.259}   \lss{1.259}{2}
+\lcc{1.942}   \lss{1.942}{4}
+\lcc{2.257}   \lss{2.257}{6}
+\lcc{3.440}   \lss{3.440}{8}
+\lcc{3.980}   \lss{3.980}{10}
+
+\put(1.75,-.3){\makebox(0,0){{\large $^{104}$Sn}}}
+\put(4.2,5.){\makebox(0,0){{\Large {\sc Experimental energy spectra}}}}
+
+%Exp. spectra Sn-106
+\lccc{.0}      \lsss{.0}{0}
+\lccc{1.208}   \lsss{1.208}{2}
+\lccc{2.020}   \lsss{2.020}{4}
+\lccc{2.324}   \lsss{2.324}{6}
+\lccc{3.476}   \lsss{3.476}{8}
+\lccc{4.128}   \lsss{4.128}{10}
+\put(3.5,-.3){\makebox(0,0){{\large $^{106}$Sn}}}
+
+%Exp. spect. Sn-108
+\lcccc{.0}      \lssss{.0}{0}
+\lcccc{1.206}    \lssss{1.206}{2}
+\lcccc{2.111}   \lssss{2.112}{4}
+\lcccc{2.365}   \lssss{2.365}{6}
+\lcccc{2.700}   \lssss{2.700}{0}
+\lcccc{2.817}   \lssss{2.817}{6}
+\lcccc{3.561}   \lssss{3.551}{8}
+%\lcccc{4.140}   \lssss{4.140}{8}
+\lcccc{4.251}   \lssss{4.251}{10}
+\put(5.25,-.3){\makebox(0,0){{\large $^{108}$Sn}}}
+
+%Exp. spect. Sn-110
+\lccccc{.0}      \lsssss{.0}{0}
+\lccccc{1.212}   \lsssss{1.212}{2}
+\lccccc{2.197}   \lsssss{2.197}{4}
+\lccccc{2.4559}  \lsssss{2.4159}{4}
+\lccccc{2.480}   \lsssss{2.5300}{6}
+\lccccc{2.753}   \lsssss{2.753}{6}
+\lccccc{3.8148}  \lsssss{3.8148}{8}
+\lccccc{4.319}   \lsssss{4.319}{10}
+\put(7,-.3){\makebox(0,0){{\large $^{110}$Sn}}}
+
+%Exp. spect. Sn112
+\lcccccc{0,0}     \lssssss{0,0}{0}
+\lcccccc{1.2569}  \lssssss{1.2569}{2}
+\lcccccc{2.1511}  \lssssss{2.0911}{2}
+\lcccccc{2.1909}  \lssssss{2.1909}{0}
+\lcccccc{2.2476}  \lssssss{2.2976}{4}
+\lcccccc{2.4762}  \lssssss{2.4262}{2}
+\lcccccc{2.5211}  \lssssss{2.5211}{4}
+\lcccccc{2.5493}  \lssssss{2.6193}{6}
+\lcccccc{4.0779}  \lssssss{4.0779}{8}
+\lcccccc{4.8197}  \lssssss{4.8197}{10}
+\put(8.75,-.3){\makebox(0,0){{\large $^{112}$Sn}}}
+
+\end{picture}
+\end{center}
+%%%%%%%%%%%% end fil even.tex  fra Anee %%%%%%%%%%%%%
+
+\caption{\label{res-fig5}Theoretical (upper) and experimental (lower)%%	
+energy spectra for the even isoptopes $^{102-112}$Sn.}
+%%
+\end{figure}
+%
+%
+\begin{figure}[htbp]
+%
+%%
+\setlength{\unitlength}{3.5cm}
+\begin{center}
+\begin{picture}(4.25,1.5)(-.2,-.25)
+\newcommand{\lc}[1]{\put(-.5,#1){\line(1,0){.5}}}
+\newcommand{\ls}[2]{\put(.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsr}[2]{\put(.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcc}[1]{\put(.5,#1){\line(1,0){.5}}}
+\newcommand{\lss}[2]{\put(1.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssr}[2]{\put(1.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccc}[1]{\put(1.5,#1){\line(1,0){.5}}}
+\newcommand{\lsss}[2]{\put(2.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssr}[2]{\put(2.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssneg}[2]{\put(2.1,#1){\makebox(0,0){{\scriptsize $#2^{-}$}}}}
+
+\newcommand{\lcccc}[1]{\put(2.5,#1){\line(1,0){.5}}}
+\newcommand{\lssss}[2]{\put(3.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssr}[2]{\put(3.25,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccccc}[3]{\put(3.5,#1){\line(1,0){.5}}
+\put(4.15,#2){\makebox(0,0){{\scriptsize $#3^{+}$}}}}
+\newcommand{\lcccccr}[3]{\put(3.5,#1){\line(1,0){.5}}
+\put(4.2,#2){\makebox(0,0){{\scriptsize $#3^{+}$}}}}
+
+\put(-.5,1.75){\makebox(0,0){\large MeV}}
+%\put(1.05,1.75){\makebox(0,0){\large ($d_{5/2}$, $g_{7/2}$, $d_{3/2}$,
+%$s_{1/2}$, $h_{11/2}$) = (0.00, 0.20, 1.50, 2.80, 3.00 MeV)}}
+
+\thicklines
+\put(-.75,-.25){\line(0,1){2.}}
+\multiput(-.75,.0)(0,1){2}{\line(1,0){.05}}
+\multiput(-.75,.5)(0,1){2}{\line(1,0){.025}}
+
+%\put(-.85,2){\makebox(0,0){2}}
+\put(-.85,1){\makebox(0,0){1}}
+\put(-.85,0){\makebox(0,0){0}}
+
+
+% Teoretisk spektra Sn-103
+\lc{0}        \ls{0}{5/2}
+\lc{0.3075}    \ls{.3075}{7/2}
+\lc{0.8073}    \ls{.8073}{3/2}
+\lc{1.2095}    \ls{1.1895}{9/2}
+\lc{1.2488}    \ls{1.2488}{5/2}
+\lc{1.3051}    \ls{1.3051}{9/2}
+\lc{1.3542}    \lsr{1.3642}{7/2, 11/2}
+\lc{1.3607}    %\ls{1.3607}{11/2}
+\lc{1.3986}    \ls{1.4186}{7/2}
+\lc{1.4180}    \ls{1.4680}{3/2}
+
+\put(-.25,-.15){\makebox(0,0){{\Large $^{103}$Sn}}}
+
+%Theoretical spect. Sn-105
+\lcc{0}    \lss{0}{5/2}
+\lcc{0.3288}    \lss{.3288}{7/2}
+\lcc{0.7883}    \lss{.7883}{3/2}
+\lcc{1.1240}    \lssr{1.1240}{3/2, 5/2}
+\lcc{1.1292}    %\lss{1.1292}{5/2}
+\lcc{1.2347}    \lssr{1.2357}{9/2, 11/2}
+\lcc{1.2379}    %\lss{1.2379}{11/2}
+\lcc{1.3494}    \lssr{1.3494}{5/2, 1/2}
+\lcc{1.3510}    %\lss{1.3510}{1/2}
+\lcc{1.4257}    \lss{1.4257}{7/2}
+\lcc{1.4659}    \lss{1.4889}{9/2}
+\put(.75,-.15){\makebox(0,0){{\Large $^{105}$Sn}}}
+\put(2.,1.75){\makebox(0,0){{\Large {\sc Theoretical energy spectra}}}}
+
+
+%Theoretical spect. Sn-107
+\lccc{0}    \lsss{0}{5/2}
+\lccc{0.1697}    \lsss{.1697}{7/2}
+\lccc{0.9275}    \lsssr{.9275}{3/2, 5/2}
+\lccc{0.9341}    %\lsss{.9341}{5/2}
+\lccc{1.1339}    \lsss{1.0939}{1/2}
+\lccc{1.1809}    \lsss{1.1409}{9/2}
+\lccc{1.2046}    \lsssr{1.2046}{1/2, 3/2}
+\lccc{1.2079}    %\lsss{1.2079}{3/2}
+\lccc{1.2578}    \lsss{1.2578}{7/2}
+\lccc{1.2931}    \lsss{1.3231}{11/2}
+%\lccc{1.6}    \lsssneg{1.6}{11/2}
+%Theoretical spect. Sn-107
+\put(1.75,-.15){\makebox(0,0){{\Large $^{107}$Sn}}}
+
+%Theoretical spect. Sn109
+\lcccc{0}       \lssss{0}{7/2}
+\lcccc{0.0517}  \lssss{0.0617}{5/2}
+\lcccc{0.6091}  \lssss{0.6091}{1/2}
+\lcccc{0.6671}  \lssss{0.6671}{5/2}
+\lcccc{0.8664}  \lssss{0.8664}{3/2}
+\lcccc{1.0440}  \lssss{1.0440}{3/2}
+\lcccc{1.1162}  \lssss{1.1162}{7/2}
+\lcccc{1.2511}  \lssss{1.2511}{11/2}
+\put(2.75,-.15){\makebox(0,0){{\Large $^{109}$Sn}}}
+
+%Theoretical spect. Sn111
+\lccccc{0.}{0.}{7/2}
+\lcccccr{.2420}{.2420}{5/2, 1/2}
+\lccccc{.2504}{.2504}{}
+\lccccc{.6368}{.6368}{3/2}
+\lccccc{.7002}{.7002}{5/2}
+\lccccc{1.1735}{1.1735}{3/2}
+\lccccc{1.3796}{1.3796}{9/2}
+\put(3.75,-.15){\makebox(0,0){{\Large $^{111}$Sn}}}
+\end{picture}
+\end{center}
+
+
+\begin{center}
+\begin{picture}(4.25,2.5)(-.2,-.15)
+
+\newcommand{\lc}[1]{\put(-.5,#1){\line(1,0){.5}}}
+\newcommand{\ls}[2]{\put(.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsr}[2]{\put(.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcc}[1]{\put(.5,#1){\line(1,0){.5}}}
+\newcommand{\lss}[2]{\put(1.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssr}[2]{\put(1.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccc}[1]{\put(1.5,#1){\line(1,0){.5}}}
+\newcommand{\lsss}[2]{\put(2.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lsssr}[2]{\put(2.2,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lcccc}[1]{\put(2.5,#1){\line(1,0){.5}}}
+\newcommand{\lssss}[2]{\put(3.15,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+\newcommand{\lssssr}[2]{\put(3.25,#1){\makebox(0,0){{\scriptsize $#2^{+}$}}}}
+
+\newcommand{\lccccc}[3]{\put(3.5,#1){\line(1,0){.5}}
+\put(4.15,#2){\makebox(0,0){{\scriptsize $#3^{+}$}}}}
+\newcommand{\lcccccr}[3]{\put(3.5,#1){\line(1,0){.5}}
+\put(4.25,#2){\makebox(0,0){{\scriptsize $#3^{+}$}}}}
+\put(-.5,1.75){\makebox(0,0){\large MeV}}
+
+\thicklines
+\put(-.75,-.25){\line(0,1){2.}}
+\multiput(-.75,.0)(0,1){2}{\line(1,0){.05}}
+\multiput(-.75,.5)(0,1){2}{\line(1,0){.025}}
+
+%\put(-.85,2){\makebox(0,0){2}}
+\put(-.85,1){\makebox(0,0){1}}
+\put(-.85,0){\makebox(0,0){0}}
+
+%Exp. spectra Sn-105
+\lcc{0.0}        \lss{0.0}{5/2}
+\lcc{0.200}      \lss{.200}{7/2}
+\lcc{1.195}      \lss{1.195}{9/2}
+\lcc{1.393}      \lss{1.393}{11/2}
+%\lcc{1.849}      \lss{1.849}{13/2}
+%\lcc{2.031}      \lss{2.031}{15/2}
+
+%\lcc{2.204}      \lss{2.204}{17/2}
+
+\put(.75,-.15){\makebox(0,0){{\Large $^{105}$Sn}}}
+\put(2.05,1.75){\makebox(0,0){{\Large {\sc Experimental energy spectra}}}}
+
+%Exp. spect. Sn-107
+\lccc{0.0}        \lsss{0.0}{5/2}
+\lccc{0.151}      \lsss{.151}{7/2}
+\lccc{1.221}      \lsss{1.221}{9/2}
+\lccc{1.348}      \lsss{1.340}{11/2}
+\lccc{1.371}      \lsss{1.401}{9/2}
+%\lccc{1.798}      \lsss{1.798}{13/2}
+%\lccc{1.943}      \lsss{1.943}{13/2}
+%\lccc{2.067}      \lsss{2.067}{15/2}
+
+\put(1.75,-.15){\makebox(0,0){{\Large $^{107}$Sn}}}
+
+%Exp. spect. Sn-109
+\lcccc{0.0}     \lssssr{0.0}{5/2,(7/2)}
+\lcccc{.5449}   \lssss{.5449}{5/2}
+\lcccc{.6645}   \lssss{.6445}{5/2}
+\lcccc{.6787}   \lssss{.6987}{3/2}
+\lcccc{.8911}   \lssss{.8711}{9/2}
+\lcccc{.9256}   \lssssr{.9256}{3/2, 5/2}
+\lcccc{.9921}   \lssssr{.9921}{5/2, 7/2, 9/2}
+\lcccc{1.0628}  \lssss{1.0728}{5/2}
+\put(2.75,-.15){\makebox(0,0){{\Large $^{109}$Sn}}}
+
+%Exp. spect. Sn111
+\lccccc{0.0}{0.0}{7/2}
+\lccccc{.1545}{.1545}{5/2}
+\lccccc{.2547}{.2547}{1/2}
+\lccccc{.6435}{.6435}{3/2}
+\lccccc{.7554}{.7554}{5/2}
+\lcccccr{1.0326}{1.0226}{3/2, 5/2}
+\lccccc{1.1001}{1.1001}{1/2}
+\lcccccr{1.1517}{1.1617}{(3/2, 5/2)}
+\lcccccr{1.2356}{1.2456}{5/2,7/2,9/2}
+\put(3.75,-.15){\makebox(0,0){{\Large $^{111}$Sn}}}
+
+\end{picture}
+\end{center}
+%%%%%%%%%%%%%%% end fil odd.tex fra Anne %%%%%%%%%%%%%%%%%
+
+
+%
+\caption{\label{res-fig6}Theoretical (upper) and experimental (lower)
+energy spectra for the odd isoptopes $^{103-111}$Sn.}
+%
+\end{figure}
+%
+
+\subsection{Results and discussion.}
+%
+The resulting energy spectra obtained with a complete single-particle basis
+including the $h_{11/2}$ orbit and the above--mentioned
+effective interaction are displayed in fig.~\ref{res-fig5} 
+and fig.~\ref{res-fig6}.
+It shows all theoretical levels below 2.5~MeV exitation energy.
+In addition the lowest $8^{+}$ and $10^{+}$ states in the even isotopes up 
+to $^{110}$Sn are displayed.
+
+
+For the even Sn isotopes (fig.~\ref{res-fig5}) the excitation energies
+of the lowest $J=2$ states  are in good agreement with
+the experimental values, with a spacing of about 1.2 MeV.
+We find that the $h_{11/2}$ is important for this stability
+even if the admixture  in wave functions is small. 
+The theoretical spectra above the first excited $J = 2$ state
+are  more difficult to interpret.
+Compared to the levels experimentally found our calculation gives many
+more levels in the region between 1 and 2~MeV. However, we believe
+that additional experimental levels are to be found
+in this region in the future.
+The $8^{+}$ and $10^{+}$ yrast states show some interesting and 
+challenging behaviour.  In $^{108}$Sn   and $^{110}$Sn our calculated
+states are in reasonably good agreement with experiment. But in
+the lighter isotopes we obtain  clear disagreements. This should 
+be investigated further.
+At present we have rather preliminary calculations of transition rates.
+But it seems clear that it is not possible to reproduce
+the experimentally found E2 transitions from
+$6^{+} \longrightarrow 4^{+}$ 
+without an  unphysically large  neutron effective charge.
+Thus there are still many open questions in our shell model description of 
+the light Sn isotopes and more experimental data are  greatly needed.
+
+The odd Sn isotopes are displayed in fig.~\ref{res-fig6}. The two lowest energy
+levels $J=5/2^{+}$ and $J=7/2^{+}$ are reproduced in correct order
+and we find the level crossing between $J=5/2^{+}$ and $J=7/2^{+}$ around
+$^{109}$Sn in agreement with experiment.
+In $^{111}$Sn all states below 1~MeV are well reproduced. However, one
+should keep in mind that the single--particle energies of the
+$J=1/2^{+}$ and $J=3/2^{+}$ orbits are adjusted to reproduce these
+levels. In $^{109}$Sn a tentative third $J=5/2^{+}$ at $\approx 0.6$~MeV is 
+missing in our theoretical description compared to experiment. 
+The next theoretical level with $J=5/2^{+}$ is
+well above 1.5~MeV. Thus  theory will have large difficulties to
+reduce the energy by as much as 1.0~MeV.
+In the lighter Sn isotopes the experimental data are so limited that 
+a further comparision must be postponed.
+%
+\subsection{Generalized seniority.}
+%
+The near constancy of the $2^{+}$ -- $0^{+}$ spacing is remarkable and may
+indicate that the generalized seniority is approximately conserved\cite{tal77}.
+In order to test this we construct the pair correlation operator
+%
+\be
+S^{\dagger} = \sum_j C_j   \sum_{m > 0} (-)^{j - m} 
+             a_{j m}^{\dagger} a_{j m}^{\dagger}
+\label{sen}
+\ee
+where the coefficients $C_j$ are determined from the $^{102}$Sn
+ground state. With our wave functions we then evaluate the square overlap
+$|\bra{^{A}\makebox{Sn}} S^{\dagger} \ket{^{A - 2}\makebox{Sn}}|^{2}$.
+The results are given in Table~\ref{tab-sen}.
+
+%
+\begin{table}[htbp]
+%%
+%
+\begin{center}
+\begin{tabular}{|r|ccccc||r|cccc|} \hline
+ $J^{\pi}$ & A = 104 &  106 & 108 & 110 & 112 &
+$J^{\pi}$ & A = 103 & 105 & 107 & 109\\
+\hline
+$0^{+}_{1}$ & 0.949       & 0.939       & 0.956       & 0.972       & 0.976&
+$5/2^{+}_{1}$ & 0.967       & 0.899       & 0.911       & 0.940             \\
+$2^{+}_{1}$   & 0.898       & 0.878       & 0.825       & 0.880       & 0.897&
+$7/2^{+}_{1}$ & 0.935       & 0.912       & 0.897       & 0.939            \\
+$4^{+}_{1}$   & 0.901       & 0.519       & 0.627       & 0.632       & 0.850&
+$1/2^{+}_{1}$ & $\approx 0$ & 0.010       & 0.515       &             \\
+$4^{+}_{2}$   & $\approx 0$ & 0.293       & 0.132    & 0.069 &$\approx 0 $ &
+$1/2^{+}_{2}$ & $\approx 0$ & 0.680       & 0.346       &             \\
+{$4^{+}_{3}$} & $\approx 0$ & 0.067       & 0.100       & 0.129 &$\approx 0 $
+&$1/2^{+}_{3}$ & 0.828       & 0.187       & $\approx 0$ &             \\
+$6^{+}_{1}$   & 0.922       & 0.879       & 0.895    & $\approx 0$ & 0.849& 
+$3/2^{+}_{1}$ & $\approx 0$ & $\approx 0$ &$\approx 0$  &             \\
+$6^{+}_{2}$ & $\approx 0$   & $\approx 0$ &$\approx 0$  & 0.893       
+&$\approx 0 $     &
+$3/2^{+}_{5}$ & 0.888       & 0.174       & $\approx 0$ &             \\ 
+\hline
+\end{tabular}
+%%%%%
+\end{center}
+%%%%%%%%  end tabular %%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%%
+\caption{\label{tab-sen}The seniority zero overlap (see eq.~\ref{sen})
+for the lowest calculated eigenstates in $^{103}$Sn -- $^{112}$Sn.}
+%%
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+For the even systems our shell model wave functions for 
+$0^{+}$ ground state and the first $2^{+}$ excited state
+ are reasonably well described in a generalized seniority scheme.
+More than 80~\% of the wave functions for the $^{A}$Sn system
+is given as the $^{A-2}$Sn system pluss a seniority zero pair. Similar feature
+are seen for the lowest $(5/2)^{+}$ and $(7/2)^{+}$ states.
+On the other hand, higher--lying states, both in even and odd cases
+do not show  this simple behaviour. This may  indicate
+that the pairing picture and the seniority coupling scheme 
+does not give a proper description of these nuclei.
+
+%%%%%%%%%%%%%%  Summary %%%%%%%%%%%%%%%%%%
+\section{Conclusion.}
+%
+We have presented the basic elements and methods
+ for a  large--basis shell model calculation with  a realistic microscopic
+effective interation.
+The potential is derived from a modern meson--exchange NN potential using
+many--body perturbation theory. 
+An application to the Sn isotopes ranging from
+$A = 102$ to $A = 112$ are shown.  
+In view of the fact that this is a truly realistic and microscopic calculation,
+with very few parameters, the overall agrement with data is indeed remarkable.
+
+In order to make a more complete assessment of the calculation, however,
+we need additional experimental data, in particular on non--yrast states.
+Electromagnetic transition rates are also needed for a more 
+stringent test of the wave functions than obtained from the 
+energy spectra only.
+
+
+On the theoretical side, we are proceeding towards higher mass numbers.
+The rather slow convergence of the Lanczos process is a difficulty and 
+we plan to use the Davidson--Liu methods for the heavier Sn isotopes.
+One should also include effective three--body forces.
+Although these effects are expected to be small, they 
+may give a sizeable effect for systems with many valence nucleons. 
+It would also be useful to compare our calculations with
+more phenomenological   calculations in order to facilitate a 
+more direct physical interpretation of our  results.
+%%%%%%%%%%%%%%%%% end %%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%       Reference list
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{thebibliography}{9}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%% file: intro.tex %%%%%%%%%%%%%%%%%%
+%
+\bibitem{lac80} M. Lacombe et al.,Phys. Rev. {\bf C21} (1980) 861
+%
+\bibitem{mac89} R.\ Machleidt, Adv.\ Nucl.\ Phys.\ {\bf 19} (1989)  189
+%
+\bibitem{vall89} M. Valli\`{e}res, " Computational Atomic and Nuclear
+Physics", Proc. Summer school, Oak Ridge 1989, page 302,
+ed. C. Bottcher et al., World Scientific, Singapore 1989,
+ISBN 981--02--0125--7.
+\bibitem{law65} R. D. Lawson and J. M. Soper, Intern. Nucl. Phys.
+Conf., Gatlinburg 1966, page 511, eds. R. Becker, C. D. Goodman.
+%
+
+%%%%%%%%%%%%%%%%%%%%%%% file sect. 2 proceed.tex %%%%%%%%%
+
+\bibitem{ko90} T.T.S.\ Kuo and E.\ Osnes, Folded-Diagram Theory
+of the Effective Interaction in Atomic Nuclei, Springer Lecture
+Notes in Physics, (Springer, Berlin, 1990) Vol. 364
+%
+\bibitem{hko94} M.\ Hjorth-Jensen, T.T.S.\ Kuo and
+E.\ Osnes, submitted to Phys.\ Reports; M.\ Hjorth-Jensen,
+E.\ Osnes and H.\ M\"{u}ther, Ann.\ of Phys.\  {\bf 213} (1992) 108;
+M.\ Hjorth-Jensen, T.\ Engeland, A.\ Holt and E.\ Osnes, Phys.\ Reports
+{\bf 242} (1994) 37
+%
+\bibitem{br79} G.E.\ Brown and M.\ Rho, Phys.\ Lett.\ {\bf B82} (1979) 177
+%
+\bibitem{kkko76}  E.M.\ Krenciglowa, C.L.\ Kung, T.T.S.\ Kuo
+and E.\ Osnes, Ann.\ of Phys.\   {\bf 101} (1976) 154
+%
+\bibitem{ls80} S.Y.\ Lee and K.\ Suzuki, Prog.\ Theor.\ Phys.\
+{\bf 64} (1980) 2091
+%
+%%%%%%%%%%%%%%%%%%%% file sh-alg.tex %%%%%%%%%%%%%%%%%%%%
+\bibitem{dav89} E. R. Davidson, Comp. Phys. Comm. {\bf 53} (1989) 49\\
+                E. R. Davidson, Comp. in  Phys. {\bf No.~5} (1993) 519
+%
+\bibitem{ols90} J. Olsen, P.J{\o}rgensen and J. Simons, Chem. Phys. Lett.
+{\bf vol 169} (1990) 463
+%
+\bibitem{whit77} R. R. Whitehead, A. Watt, B. J. Cole and I Morrison,
+Advances in Nuclear Physics, {\bf vol 9} (1977) New York, Plenum.
+%
+
+%%%%%%%%%%%%% file result.tex %%%%%%%%%%%%%%%%%%
+\bibitem{schu92}  R. Schubart {\em et al.}, Z. Phys. {\bf A343} (1992) 123
+\bibitem{schu91}  R. Schubart {\em et al.}, Z. Phys. {\bf A340} (1991) 109
+\bibitem{grawe92}  H. Grawe {\em et al.}, Prog. Part. Nucl. Phys. {\bf 28}
+(1992) 281
+\bibitem{ryk92}  A. Plochocki {\em et al.}, Z. Phys. {\bf A342} (1992) 43
+\bibitem{sw86}  S.D. Serot and J.D. Walecka, Adv. Nucl. Phys. {\bf 16} (1986)
+1
+\bibitem{san-94} N. Sandulesco, private communication
+\bibitem{hir91}  D. Hirata {\em et al.}, Phys. Rev. {\bf C 44}, (1991) 1467
+\bibitem{nhm92}  T. Nikolaus, T. Hoch and D.G. Madland,
+Phys. Rev. {\bf C~46} (1992) 1757
+\bibitem{lean84}  G.A. Leander, J. Dudek, W. Nazarewicz, J.R. Nix and Ph.
+Quentin, Phys. Rev. {\bf C 30} (1984) 416
+\bibitem{tal77} I. Talmi in Elementary Modes of Excitation in Nuclei,
+ed. A. Bohr and R.A. Broglia, (North-Holland, Amsterdam, 1977);
+private communication
+\bibitem{mfko83} H. M\"{u}ther, A. Faessler, T.T.S. Kuo and E. Osnes,
+Nucl.\ Phys. {\bf 401} (1983) 124;
+H. M\"{u}ther, A. Polls and T.T.S. Kuo, Nucl.\ Phys. {\bf 435} (1985) 548
+\bibitem{ehho93}  T. Engeland, M. Hjorth-Jensen, A. Holt and E. Osnes,
+Phys. Rev. {\bf C 48} (1993) 535
+%
+\bibitem{wwcm} R.R. Whitehead, A. Watt, B.J. Cole and I. Morrison,
+Adv.\ Nucl.\ Phys.\ {\bf 7} (1977) 123
+\bibitem{ks60} L.S. Kisslinger and R.A. Sorensen, Mat.\ Fys.\ Medd.\ Dan.\
+Vid.\ Selsk.\ {\bf 32} (1960) 1
+\bibitem{blom93} J. Blomqvist, private communication
+\bibitem{ehho94} T. Engeland, M. Hjorth-Jensen, A. Holt and E. Osnes,
+unpublished
+\end{thebibliography}
+%
+\end{document}
+
+%
+
+%%%%%%%%%%%%%%%%  fig.1 %%%%%%%%%%%%%%
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1cm}
+ \begin{center}
+   \begin{picture}(7,3.5)
+%%%\put(0,0){\framebox(7,3.5){}}
+  \put(0,0){\epsfxsize=7cm,\epsfbox{qbox1.eps}}
+   \end{picture}
+  \end{center}
+\caption{Different types of valence--linked diagrams. Diagram (a)
+is irreducible and connected, (b) is reducible, while (c) is irreducible
+and disconnected.}
+\label{fig:diagsexam}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%  fig.2 %%%%%%%%%%%%%%%%%%%
+
+%
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1cm}
+  \begin{center}
+   \begin{picture}(7,3)
+%%     \put(0,0){\framebox(7,3){}}
+      \put(0,0){\epsfxsize= 7cm,\epsfbox{qbox2.eps}}
+\end{picture}
+\end{center}
+\caption{Examples of diagrams included in the $\hat{Q}$--box.
+Diagram (a) is a one--body diagram, whereas diagram (b) is a two--body
+diagram. Diagram (c) is an effective three--body diagram which is not
+included in our definition of the $\hat{Q}$--box.}
+\label{fig:qbox}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+ \begin{figure}[htbp]
+ %
+ \setlength{\unitlength}{1cm}
+ \begin{center}
+ %
+ \setlength{\unitlength}{1cm}
+ \thicklines
+ %
+%%\begin{picture}(13,5)
+%
+%%\put(0,0){\framebox(13,5){}}
+
+ \Cartesian(0.75cm,1cm)
+ %
+ \pspicture(-1,-1)(16,4)
+ %
+ \psaxes[Ox=100,Dx=2,dx=1,showorigin=false,linewidth=1pt]{->}(0,0)(15.5,3.5)
+ %
+ \uput[0](0.0,3.5){MeV}
+ %
+ \uput[90](15.5,0.2){N}
+ %
+\psline[showpoints=true,linestyle=dotted,dotstyle=*,dotscale=1.2,linewidth=1pt]
+ (2,1.942)(3,2.019)(4,2.019)(5,2.197)(6,2.247)(7,2.187)(8,2.390)(9,2.280)
+ (10,2.194)(11,2.144)(12,2.109)(13,2.050)(14,2.0)(15,1.996)
+ %
+ \uput[90](2.1,1.96){$4^{+}$}
+ %
+\psline[showpoints=true,linestyle=dashed,dotstyle=+,dotangle=45,dotscale=1.2,linewidth=1pt]
+(1,1.3)(2,1.259)(3,1.207)(4,1.205)(5,1.212)(6,1.256)(7,1.299)(8,1.293)
+(9,1.229)(10,1.171)(11,1.141)(12,1.132)(13,1.141)(14,1.169)(15,1.227)
+ %
+\uput[90](1.1,1.4){$2^{+}$}
+ %
+\endpspicture
+%
+%%\end{picture}
+ %
+ \end{center}
+ %
+ \caption{\label{res-fig1}Experimental excitation energies for the lowest
+ $2^{+}$ and $4^{+}$ states in the Sn isotopes.}
+ %
+ \end{figure}
+ %
+%%%%%%%%%%%%%%%%%%%%%%%% fig.3 %%%%%%%%%%%%%%%%%
+ %
+ \begin{figure}[htbp]
+ %
+ \setlength{\unitlength}{1cm}
+ \begin{center}
+ \thicklines
+%
+%%\begin{picture}(11.5,6.5)
+%
+%%\put(0,0){\framebox(8,5){}}
+%
+\Cartesian(1.5cm,2cm)
+%
+\pspicture(0,-0.25)(7.5,3)
+%
+\psaxes[Ox=103,Dx=2,dx=1,Oy=-0.5,Dy=0.5,dy=0.5,
+showorigin=false,linewidth=1pt]{->}(0,-0.25)(7.5,2.5)
+%
+\uput[0](0.2,2.5){MeV}
+\uput[90](7.5,-0.25){N}
+\psline[showpoints=true,dotstyle=triangle*,dotscale=1.2]
+(1,0.25)(2,0.25)(3,0.25)(4,0.404)(5,0.660)(6,1.237)
+%
+\uput[270](1,0.24){$5/2^{+}$}
+%
+\psline[showpoints=true,linestyle=dashed,dotstyle=triangle*,dotscale=1.2]
+(1,0.45)(2,0.401)(3,0.25)(4,0.25)(5,0.337)(6,0.863)(7,0.961)
+%
+\uput[90](1,0.46){$7/2^{+}$}
+%
+\psline[showpoints=true,linestyle=dotted,dotstyle=triangle*,dotscale=1.2]
+(2,1.916)(3,1.506)(4,1.229)(5,0.988)(6,0.913)
+%
+\uput[270](2,1.9){$11/2^{-}$}
+%
+\psline[showpoints=true,dotstyle=triangle*,dotscale=1.2]
+(4,0.505)(5,0.25)(6,0.25)(7,0.25)
+%
+\uput[180](4,0.505){$1/2^{+}$}
+%
+\psline[showpoints=true,linestyle=dashed,dotstyle=triangle*,dotscale=1.2]
+(4,0.894)(5,0.748)(6,0.747)(7,0.408)
+%
+\uput[135](4,0.894){$3/2^{+}$}
+%
+\endpspicture
+%
+%%\end{picture}
+%
+\end{center}
+%
+\caption{\label{res-fig2}Experimental "one--quasiparticle" states
+in the odd Sn isotopes.}
+%
+\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%% fig.4 %%%%%%%%%%%%%
+%
+\begin{figure}[htbp]
+%
+\setlength{\unitlength}{1cm}
+\begin{center}
+%
+\thicklines
+%
+\Cartesian(1cm,1cm)
+%
+\pspicture(0,-1.5)(6,5)
+%
+\psline[linewidth=1pt,linestyle=dashed](1,-1)(3,-1)
+\psline[linewidth=1pt,linestyle=dashed](1,-1.5)(3,-1.5)
+\uput[0](4,-1.5){\Large Q--space}
+\uput[0](1.1,-0.5){\Large N = 50}
+%
+\psline[linewidth=1pt](1,0)(3,0)
+%
+\uput[0](0,-0.1){\footnotesize 5/2$^{+}$}
+\uput[0](3.1,-0.1){\footnotesize 0.0 MeV}
+%
+\psline[linewidth=1pt](1,0.2)(3,0.2)
+\uput[0](0,0.3){\footnotesize 7/2$^{+}$}
+\uput[0](3.1,0.3){\footnotesize 0.20 MeV}
+%
+\psline[linewidth=1pt](1,2.45)(3,2.45)
+\uput[0](0,2.3){\footnotesize 1/2$^{+}$}
+\uput[0](3.1,2.3){\footnotesize 2.45 MeV}
+%
+\psline[linewidth=1pt](1,2.54)(3,2.54)
+\uput[0](0,2.69){\footnotesize 3/2$^{+}$}
+\uput[0](3.1,2.69){\footnotesize 2.54 MeV}
+%
+\psline[linewidth=1pt](1,3)(3,3)
+\uput[0](0,3.1){\footnotesize 11/2$^{-}$}
+\uput[0](3.1,3.1){\footnotesize 3.0 MeV}
+%
+\uput[0](1.1,3.5){\Large N = 82}
+%
+\uput[0](4,1.5){\Large P--space}
+%%%	
+\psline[linewidth=1pt,linestyle=dashed](1,4)(3,4)
+\psline[linewidth=1pt,linestyle=dashed](1,4.3)(3,4.3)
+\uput[0](4,4.3){\Large Q--space}
+%
+\endpspicture
+%
+\end{center}
+%
+\caption{\label{res-fig4}The single--particle spectrum
+for the Sn isotopes.}.
+%
+\end{figure}
+%
+%
+\end{document}
+%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+

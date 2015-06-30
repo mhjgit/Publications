@@ -1,0 +1,112 @@
+From npa@jnl.nucphys.nl Thu Aug 28 08:14:06 1997
+Return-Path: <npa@jnl.nucphys.nl>
+Received: from danpost.uni-c.dk by pat.uio.no with SMTP (PP) 
+          id <02144-0@pat.uio.no>; Thu, 28 Aug 1997 08:13:46 +0200
+Received: from norsci0.nordita.dk (norsci0.nordita.dk [130.225.213.129]) 
+          by danpost.uni-c.dk (8.8.6/8.6) with SMTP id IAA17976 
+          for <m.h.jensen@fys.uio.no>; Thu, 28 Aug 1997 08:13:43 +0200 (METDST)
+Received: from nikhefh.nikhef.nl by norsci0.nordita.dk (4.1/SMI-4.1) id AA20076;
+          Thu, 28 Aug 97 08:13:41 +0200
+Received: from quark.nucphys.nl [145.36.5.8] by nikhefh.nikhef.nl with SMTP 
+          id IA02442; Thu, 28 Aug 1997 08:13:40 +0200
+Received: from kaon.nucphys.nl [145.36.4.229] (jnl.nucphys.nl) 
+          by quark.nucphys.nl with SMTP id IA14552;
+          Thu, 28 Aug 1997 08:13:38 +0200
+Received: from ES#u#NPEO-Message_Server by jnl.nucphys.nl with Novell_GroupWise;
+          Thu, 28 Aug 1997 07:12:51 +0200
+Message-Id: <s40524f2.030@jnl.nucphys.nl>
+X-Mailer: Novell GroupWise 4.1
+Date: Thu, 28 Aug 1997 08:18:25 +0200
+From: Nuclear Physics A <npa@jnl.nucphys.nl>
+To: mjensen@nordita.dk
+Cc: npa@jnl.nucphys.nl
+Subject: Review of NUCPHA 1671
+Status: R
+Content-Length: 3546
+
+Re: Modern nucleon-nucleon potentials and symmetry energy 
+    in infinite matter
+    by
+    L. Engvik, M. Hjorth-Jensen, R. Machleidt, H. Muther and A. Polls
+
+
+Dear Dr. Hjorth-Jensen,
+
+The above paper has just returned from the referee with the attached
+report, in view of which we look forward to receiving a revised version 
+of your work in due course.
+
+Yours sincerely,
+
+Jeanette Bakker
+for The Editors 
+
+**********************************************************************
+Referee's report on: Modern nucleon-nucleon potentials and symmetry 
+                     energy in infinite matter
+
+Authors: L. Engvik, M. Hjorth-Jensen, R. Machleidt, H. M\"uther and A. Polls
+
+Reference number:  A1671
+
+This paper presents a very thorough study of the symmetry energy and other
+energetic properties of infinite nucleon matter.  This study is important
+in that it is based on the most realistic nucleon-nucleon interactions
+currently on the market, potentials that achieve precision fits of
+a recently updated body of nucleon-nucleon scattering data and are
+essentially phase-shift equivalent.  The paper will have significant 
+impact by virtue of the insights it provides into the differences between 
+these competing potential models, differences that may be traced mainly 
+to the treatment of non-localities.  I predict that it will be cited
+for many years to come.  The work is quite timely, as fundamental nuclear 
+many-body theory is experiencing a modest revival due, in large part, to 
+the development of this new generation of NN potentials.
+
+It is true that the actual predictions for the symmetry energy, potential
+energy, proton fraction, etc., cannot be taken seriously at the higher
+densities considered in this study.  The non-relativistic Brueckner-Hartree-
+Fock description simply cannot be trusted at such high densities (an
+order of magnitude greater than the central density in ordinary nuclei).  
+Three-body forces, many-body clusters, relativity, exotic baryons, quark or 
+kaon condensation, and quark/gluon structure could, in some combination,
+change the picture substantially.  However, the detailed and systematic
+investigation that has been carried out will remain of high value as a
+baseline for more elaborate treatments.
+
+I can strongly recommend publication of this paper in Nucl. Phys. A.
+
+The paper is very well written and I have detected relatively few mistakes
+and misprints.  However, a few stylistic or grammatical lapses, and
+a couple of glitches, should be corrected:
+
+page 5, line 12: To avoid misunderstanding, it would be better to omit
+   the phrase "which represents the Born approximation to the R matrix".
+   The Born approximation has already been identified.
+
+page 5, line 2 from bottom:  "are getting smaller" --> decrease  
+
+page 6, Fig. 3:  1 subscript missing from the S-state symbol, and 3 
+   superscript missing from the D-state symbol, in the lower plot.
+
+page 8, line 17:  The sentence ending with "Akmal and Pandharipande [22]"
+   appears to be incomplete.
+
+eq. (3):  I'm not sure this (the G-matrix equation, usually considered as
+   an integral equation) should be called the Bethe-Goldstone equation,
+   which is strictly an equation for the Bethe-Goldstone wave function.
+   
+page 10, line 25:  Sentence ending "more attraction in" is incomplete.
+
+page 16, last line: Use a semicolon instead of a comma.
+
+page 17, line 12: "being" --> "is"
+
+page 18, line 13: "directly" should be deleted -- it is redundant.
+
+page 18, line 17: What exactly is meant by a "stiffer" symmetry energy?
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+Re: AZ8966
+    Vortices in atomic Bose-Einstein condensates in the large gas
+    parameter region
+    by J.K. Nilsen, J. Mur-Petit, M. Guilleumas, M. Hjorth-Jensen, et al.
+
+Dear Editors,
+please find enclosed a revised version of the above manuscript (Latex file
+and 3 figure files) and 
+-our answer to the referee 
+-required upgrades of units in figs: Units are listed in the figure captions), included
+ in the revised manuscript (latex file) 
+-PACS numbers: 03.75.Hh, 03.75.Lm, 02.70.Uu, included as well in the revised manuscript.
+
+We also agree that the manuscript belongs to the 
+A-8D section of Physical Review A.
+
+
+Yours sincerely,
+Morten Hjorth-Jensen, on behalf of the authors

@@ -1,0 +1,60 @@
+From ptimu01@alpha2.tphys.physik.uni-tuebingen.de Wed Feb 19 17:51:43 1997
+Return-Path: <ptimu01@alpha2.tphys.physik.uni-tuebingen.de>
+Received: from outmail.zdv.uni-tuebingen.de by norsci0.nordita.dk (4.1/SMI-4.1)
+	id AA20277; Wed, 19 Feb 97 17:51:42 +0100
+Received: from alpha2.tphys.physik.uni-tuebingen.de by outmail.zdv.uni-tuebingen.de (4.1/ZDV-Uni-Tuebingen-1.0)
+	id AA26439; Wed, 19 Feb 97 17:49:41 +0100
+Received: from localhost by alpha2.tphys.physik.uni-tuebingen.de; (5.65/1.1.8.2/03Dec96-0327PM)
+	id AA11875; Wed, 19 Feb 1997 17:49:38 +0100
+Date: Wed, 19 Feb 1997 17:49:37 +0100 (MET)
+From: Herbert Muether <ptimu01@alpha2.tphys.physik.uni-tuebingen.de>
+To: mjensen@nordita.dk
+Cc: Lars Engvik <lars.engvik@fys.uio.no>, artur@dirac.ecm.ub.es,
+        machleid@tamaluit.phys.uidaho.edu
+Subject: Re: Back to square one!
+In-Reply-To: <199702190733.IAA10641@nordita.dk>
+Message-Id: <Pine.OSF.3.95.970219173013.21609A-100000@alpha2.tphys.physik.uni-tuebingen.de>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+
+Dear Friends of the local and non-local interactions
+
+I try to approach the differences from a slightly different point of view:
+Go back to the calculation of phase shifts!!
+ 
+What I have been doing is calculate the phase shifts by diagonalyzing
+the two-body Hamiltonian in a Box of a fixed radius
+(famous box method of Arturo Polls and others).
+Since all interactions fit the same NN phase shifts, the eigenvalues
+which we obtain should (and are) identical for the various NN interactions.
+What is different is the different wavefunctions which we obtain for
+the different NN interactions at one given energy. Again asymptotically
+the wave functions are identical, not, however, in the region of the
+NN interaction.
+
+The situation is similar to nucleon-nucleus scattering. Also there one has
+local and non-local potentials leading to the same phase shifts. But the
+wave functions in that regime where V is different from zero exhibits
+typical differences, the famous Perey factor. Is there a similar Perey
+factor also between local and non-local forces for NN scattering? Until 
+now I tried cdBonn and Argonne potential in 1S0 partial wave. What I observe
+is that the Bonn wave function is "smoother" at small r than the Argonne 
+one (in line with the Perey factor argument). Now going to the medium, it 
+will be more difficult to generate the same correlated wave function for
+the Argonne potential therefore the 1S0 contribution to the binding energy
+shall be less attractive .....
+
+In order to see whether this differences are quite general, I should
+explore the differences for the other potentials and in other partial waves.
+
+For that purpose I would need
+1) Program to generate Nijmegen potentials in momentum space (it would be
+best to have them in a calling form similar to the Bonn potentials)
+
+2) Arturo: What to do for coupled (tensor) channels? Did you not extend the
+box method to Tensor channels as well? What is the reference?
+
+Best regards    Herbert  
+
+

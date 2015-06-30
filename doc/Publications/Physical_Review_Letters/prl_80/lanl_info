@@ -1,0 +1,156 @@
+From no-reply@xxx.lanl.gov Tue Jan 20 13:52:55 1998
+Return-Path: <no-reply@xxx.lanl.gov>
+Delivery-Date: Tue, 20 Jan 1998 13:52:55 +0100
+Received: from yyy.lanl.gov (actually yyy.lanl.gov [128.165.23.100]) 
+          by pat.uio.no with SMTP (PP); Tue, 20 Jan 1998 13:52:36 +0100
+Received: from xxx.lanl.gov (e-prints@xxx.lanl.gov [128.165.23.9]) 
+          by yyy.lanl.gov (x.x.x/x.x.x) with ESMTP id FAA05014 
+          for <m.h.jensen@fys.uio.no>; Tue, 20 Jan 1998 05:52:23 -0700 (MST)
+Received: (from e-prints@localhost) by xxx.lanl.gov (x.x.x/x.x.x) id FAA27890;
+          Tue, 20 Jan 1998 05:52:19 -0700 (MST)
+Date: Tue, 20 Jan 1998 05:52:19 -0700 (MST)
+Message-Id: <199801201252.FAA27890@xxx.lanl.gov>
+Precedence: bulk
+X-Note: e-print archive software written by PG at LANL (8/91,...,11/96) GTDA
+X-Supported-By: U.S. National Science Foundation, Agreement 9413208 (3/95-2/98)
+From: no-reply@xxx.lanl.gov (send mail ONLY to astro-ph)
+Reply-To: astro-ph@xxx.lanl.gov
+To: m.h.jensen@fys.uio.no
+Subject: RE: put (astro-ph/9801187, 12kb)
+Status: R
+Content-Length: 7530
+
+To verify abstract and postscript, use http://xxx.lanl.gov/abs/astro-ph/9801187
+  User: astro-ph/9801187, Password: 7i2wa (access still password restricted)
+ See http://xxx.lanl.gov/help/uploads for additional uses of password.
+ Abstract will appear in mailing scheduled to begin two hours before
+  Tuesday midnight US Mountain time (i.e., Wed 21 Jan 98 05:00:00 GMT).
+
+Your title and abstract will appear in the next mailing exactly as below
+(except possibly for the NUMBER which IS NOT OFFICIAL until the next mailing
+of abstracts [22:00 LANL time Sun - Thu] -- it cannot be used to cross-list
+until after that time.) -- to correct any problems, you MUST replace NOW.
+Replacements on the same day (until the 18:00 LANL time deadline Mon - Fri)
+do not generate a revised date line, so do not hesitate to replace submission
+until everything is perfect (including removal of extraneous files).
+
+------------------------------------------------------------------------------
+\\
+Paper: astro-ph/9801187
+From: m.h.jensen@fys.uio.no
+Date: Tue, 20 Jan 1998 12:51:58 GMT   (12kb)
+
+Title: Phase Transitions in Rotating Neutron Stars
+Author: H. Heiselberg and M. Hjorth-Jensen
+Comments: 5 pages, one figure included, revtex latex style
+\\
+  As rotating neutron stars slow down, the pressure and the density in the core
+region increase due to the decreasing centrifugal forces and phase transitions
+may occur in the center. We extract the analytic behavior near the critical
+angular velocity $\Omega_0$, where the phase transitions occur in the center of
+a neutron star, and calculate the moment of inertia, angular velocity, rate of
+slow down, braking index, etc. For a first order phase transition these
+quantities have a characteristic behavior, e.g., the braking index diverges as
+$\sim(\Omega_0-\Omega)^{-1/2}$. Observational consequences for first, second
+and other phase transitions are discussed.
+\\
+
+Contains:
+ rot.eps: 13210 bytes
+ rot.tex: 25366 bytes
+
+Stored as: 9801187.tar.gz (12kb)
+
+PS files:
+ 9801187.ps.gz (43kb)
+
+------------------------------------------------------------------------------
+Successful submission to the archives can be a significant source of pride
+and accomplishment. It entails many serious responsibilities: if you cannot
+check off on all of the items below, then you should replace your submission.
+
+  ___ The Title/Author attached above is correct.
+     ___ The abstract is complete, correct, and wrapped correctly.
+     ___ Capitalization in title correct (we automatically lower case titles
+	 with excessive use of upper case, but we get some acronyms incorrect
+	 -- replace with uppercase letters only where they should be).
+     ___ The authors are listed in `Firstname Lastname' order.
+     ___ any anonymous ftp pointers to additional files are given in
+         standard url format (e.g. ftp://myhost.domain/path/filename.ext )
+     ___ Periods are separated by a space from the end of any URL's
+     ___ Any Journal-ref is a complete bibliographic reference to an already
+         published version (includes volume and page number info in the case
+         of a print journal).
+  ___ No raw (uncompressed, un-uuencoded) PostScript was submitted (by e-mail)
+  ___ All files including PostScript figures were included.
+  ___ This paper has not been `put' to any other xxx e-print archives.
+  ___ The text of the paper itself is available directly from the archive.
+  ___ The paper can be retrieved uncorrupted (TRY IT).
+
+Submitters who repeatedly leave errors uncorrected may lose submission
+privilege to the archives. (Replace using the current tentative papernumber
+unless notified otherwise.) If your abstract is improperly wrapped, note that
+abstract linefill stops at whitespace indentation (e.g. a blank line or a line
+indented with space(s) denotes a new paragraph,and won't be wrapped).
+
+For further hints, keep reading or get the help text by sending a 
+message with the subject `help', or see http://xxx.lanl.gov/help/ . Guidelines
+for a  properly formatted abstract are given in prep.txt (available via the
+`get' command or at http://xxx.lanl.gov/help/prep ). If you have not already
+read this, please read it now to ensure that you have followed the guidelines.
+The archive admins detest correcting abstracts and your negligence will be
+noted, with the possible result of losing future `put' privileges.
+
+If you need to replace this paper, use the `replace' command described in the
+help text (available via `help' or at http://xxx.lanl.gov/help/). The format
+of the resubmission itself (with \\'s delineating title/abs etc.) is the same
+as for `put'.  Your entry will not officially appear in the listings until the
+next mailing goes out (and thus cannot yet be accessed via `find' or
+`listings' commands), and your papernumber may be shifted until then so it is
+preferable to wait a day before cross-listing, etc.
+
+DO NOT UNDER ANY CIRCUMSTANCES USE `put' TO RESUBMIT THIS PAPER, since that 
+will result in a new paper# which will have to be removed by hand
+(and in consequence your email address will automatically be added 
+to a permanent blacklist whose subsequent queries are ignored).
+Instead use the replace command (described in the help text).
+
+DO NOT UNDER ANY CIRCUMSTANCES USE `put' TO SUBMIT THIS PAPER TO ANOTHER
+e-print archive, since it is silly to store the same thing in more than one
+place. Instead send a cross-list command (described in the help text) to 
+the other e-print archive to generate a cross-listing on it.
+
+Figures should not be appended to the TeX file. Instead all of your files
+should be tarred, compressed, and uuencoded, and submitted with the `put'
+command or replaced with the `replace' command. The utility `uufiles'
+available via `get uufiles' or at http://xxx.lanl.gov/faq/uufaq.html will
+help (`get uufiles' returns the Unix version; use the web link or ftp to
+ftp://xxx.lanl.gov/software for other platforms).
+If you have e-mailed raw PostScript, then it may have been corrupted
+in transmission. PostScript should always be compressed and uuencoded
+before sending via e-mail -- again, `uufiles' will help with this process.
+
+If your mailer limits the size of your outgoing files, use the `fput' command
+(Use `get fput.txt' or http://xxx.lanl.gov/help/fput for further information),
+or web upload (see http://xxx.lanl.gov/help/uploads ).
+
+***NOTES***
+1) Avoid excessive cross-listings: cross-listings of a paper on archive-x to
+ archive-y are intended for subjects of *direct* interest to subscribers of
+ archive-y. Those subscribers of archive-y who have peripheral or direct
+ interest in the subjects of archive-x are already subscribed to archive-x and
+ neither need nor desire multiple receipt of the same abstract. (In particular,
+ it is exceedingly unlikely that you could decide what is of direct interest to
+ readers of archive-y if you yourself are not an active reader of archive-y.)
+
+2) Statistical fabrication shows that `replaced' papers are not immediately
+ rerequested so if your intent is to communicate correct research
+ it is in your interest to submit a final version in the first place,
+ i.e. *avoid premature submissions*.
+ If you absolutely need to replace the paper, it would be helpful to indicate 
+ in the Comments: field (i.e. below Authors: ) how serious is the revision
+ (e.g. major conceptual changes, minor grammatical changes, etc.), and include
+ as a commented header in the revised version of the paper a guide to the
+ changes so that interested parties need not be bothered to reaccess
+ unnecessarily.
+

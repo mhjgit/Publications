@@ -1,0 +1,9 @@
+\documentstyle{article}
+\begin{document}
+\begin{figure}
+\input{pots10.tex}
+\end{figure}
+\begin{figure}
+\input{potp32.tex}
+\end{figure}
+\end{document}

@@ -1,0 +1,154 @@
+\documentstyle[aps]{revtex}
+
+\begin{document}
+
+\draft
+
+\title{Simple matrix model for demonstration of HPC concepts}
+\author{M.~Hjorth-Jensen} 
+\address{Department of Physics, University of Oslo, N-0316 Oslo, Norway}
+
+\maketitle
+
+\section{The problem}
+In order to demonstrate various profiling and tuning examples,
+I include below a simple algorithm (with various program examples
+in Fortran90) that obtains eigenvalues and eigenvectors of the ground 
+state through an interative scheme.
+The problem is to solve the eigenvalue problem
+\[
+   \hat{\bf H}{\bf c} = E{\bf c}
+\]
+with the aid of a pertubative scheme, i.e.,
+\[
+   c_k \approx c_k +\frac{\hat{\bf H}-E}{E-{\bf H}_{kk}}c_k
+\]
+where $c_k$ is the kth-element of the vector ${\bf c}$. 
+The energy is given by
+\[
+  E=  \frac{{\bf c} \hat{\bf H}{\bf c} }{\bf c}{\bf c}}.
+\]
+
+\section{First program example}
+\begin{verbatim}
+
+PROGRAM test_one
+  IMPLICIT NONE
+  INTEGER :: dim, outer_loop, inner_loop, iteration
+  DOUBLE PRECISION, ALLOCATABLE, DIMENSION(:,:) :: hamiltonian
+  DOUBLE PRECISION, ALLOCATABLE, DIMENSION(:) :: coefficient, sigma
+  DOUBLE PRECISION :: error, energy, overlap, convergence_test, step
+  WRITE(*,*) 'Read in dimension of hamiltonian matrix and vector'
+  READ(*,*) dim
+
+  ALLOCATE ( hamiltonian(dim,dim))
+  ALLOCATE( coefficient(dim), sigma(dim)) 
+
+
+  error = 1. ; convergence_test = 1.D-6
+  !     initialise vectors and matrices
+
+  coefficient = 0; sigma = 0.
+  coefficient(1) = 1.
+  !     simple model for the hamiltonian
+
+  DO outer_loop =1, dim
+     DO inner_loop =1, dim
+        IF (ABS( outer_loop-inner_loop) > 10) THEN
+           hamiltonian(inner_loop, outer_loop) = 0.
+        ELSE
+           hamiltonian(inner_loop, outer_loop) = &
+                0.3**(ABS( outer_loop-inner_loop))
+        ENDIF
+     ENDDO ! end outer loop
+     hamiltonian(outer_loop,outer_loop)= outer_loop
+  ENDDO    ! end outer loop
+
+
+  !     the iterative search for the solution starts here
+
+  iteration = 0
+  DO WHILE ( (iteration < 20 ) .AND. ( ABS(error) > convergence_test )) 
+     energy = 0; overlap = 0.
+     iteration = iteration +1 
+
+     DO outer_loop =1, dim
+        overlap = overlap +coefficient(outer_loop)*coefficient(outer_loop)
+
+        sigma(outer_loop) = 0.
+
+        DO inner_loop =1, dim
+           sigma(outer_loop) = sigma(outer_loop) + &
+                coefficient(inner_loop)*hamiltonian(inner_loop, outer_loop)
+        ENDDO
+        energy = energy+coefficient(outer_loop)*sigma(outer_loop)
+     ENDDO
+
+     energy= energy/overlap
+
+     coefficient=coefficient/SQRT(overlap)
+     sigma=sigma/SQRT(overlap)
+
+     error =0.
+     DO outer_loop = 2, dim
+         step = (sigma(outer_loop)-energy*coefficient(outer_loop)) / &
+        (energy-hamiltonian(outer_loop, outer_loop))
+        coefficient(outer_loop) = coefficient(outer_loop) + step
+        error = error + step*step
+     ENDDO
+     error = SQRT(error)
+     WRITE(6,*) iteration, energy, error, coefficient(1)
+
+
+  ENDDO  ! end while loop
+
+
+END PROGRAM test_one
+\end{verbatim}
+
+The entries in the matrix to diagonalize do not reflect a specific
+physical, rather, they serve just the mere purpose of illustrating selected
+HPC concepts.
+
+The program computes the lowest eigenvalue ($energy$) and the corresponding
+eigenvector ($coefficient$)  of a predominantely diagonal hamiltonian
+($hamiltonian$).
+
+The first test is simply to compile and run the code with different compiler
+options and profiling through e.g.,
+\begin{verbatim}
+    >f90 -O2 -pg -c program1.f
+\end{verbatim}
+
+Using the profiling tool $gprof$ one notes immediately that
+statements like 
+\begin{verbatim} 
+
+     coefficient=coefficient/SQRT(overlap)
+     sigma=sigma/SQRT(overlap)
+
+\end{verbatim}
+are repeated uncessarely many times. The call to $SQRT$ for all
+elements in the vectors $coefficient$ and $sigma$ can easily be eliminated by
+defining a variable 
+
+
+\begin{verbatim} 
+     overlap = 1/overlap
+     overlapsq = SQRT(overlap)
+     coefficient=coefficient*overlapsq
+     sigma=sigma*overlapsq
+\end{verbatim}
+
+This is done in the next program example
+
+\section{Elimination of unnecessary calls}
+
+\begin{verbatim} 
+
+\end{verbatim}
+
+
+\end{document}
+
+

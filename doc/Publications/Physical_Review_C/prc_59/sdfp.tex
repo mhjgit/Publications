@@ -1,0 +1,263 @@
+%Hi David, 
+%here's an eventual addendum to the paper, it should be less
+%than a journal page. I've tried to not make it too long, but let me 
+%know if you think it became too short.
+%Regarding the nomenclature I always label sp orbits in the 
+%shells of interest as 1s, 0d, 0f and 1p. Please correct me
+%if you prefer 2s, 1d, 1f and 2p.
+%Moreover, please feel free to `massage' the text the way 
+%you feel for, remove whatever you may think seems 
+%redundant to the discussion.
+%BTW, my coordinates are
+%\author{M.\ Hjorth-Jensen}
+%\address{Nordita, Blegdamsvej 17, DK-2100 Copenhagen \O, Denmark}
+
+%After 1 january 1999 it is
+%\address{Department of Physics, University of Oslo, N-0316 Oslo, Norway}
+%which hopefully will be my permanent address till I retire
+%(another 30 years).
+
+%All the best,
+%morten
+
+%*************   plain latex text with references at the bottom
+\documentstyle{article}
+\begin{document}
+
+
+In order to obtain a microscopic 
+ effective shell-model interaction
+which spans both the $1s0d$ and the $0f1p$ shells, our many-body
+scheme 
+starts with a free nucleon-nucleon  interaction $V$ which is
+appropriate for nuclear physics at low and intermediate energies. 
+At present there are several potentials
+available. The most recent versions of Machleidt and co-workers
+\cite{cdbonn}, the Nimjegen group \cite{nim} and the Argonne
+group \cite{v18} have a $\chi^2$ per datum close to $1$
+with the respect to the Nijmegen data base \cite{nimbase}. 
+The potential
+model of Ref.\ \cite{cdbonn} is an extension 
+of the one-boson-exchange
+models of the Bonn group \cite{mac89}, where mesons like 
+$\pi$, $\rho$, $\eta$, $\delta$, $\omega$ and the fictitious
+$\sigma$ meson are included. In the charge-dependent version
+of Ref.\ \cite{cdbonn}, the first five mesons have the same set
+of parameters for all partial waves, whereas the parameters of
+the $\sigma$ meson are allowed to vary. The recent Argonne potential
+\cite{v18} is also a charge-dependent version of the Argonne
+$V14$ \cite{v14} potential. The Argonne potential models
+are local potentials in coordinate space and include
+a $\pi$-exchange plus parametrizations of the short-range
+and intermediate range part of the potential. The Nimjegen group   
+\cite{nim} 
+has contructed potentials based on meson exchange and models parametrized
+in similars ways as the Argonne potentials.
+Another important difference between e.g., the Bonn potentials
+and the Argonne and Nimjegen potentials is the strength of the much debated
+tensor force \cite{bm95}. Typically, the Bonn potentials have 
+a smaller $D$-state admixture in the deuteron wave function
+than the Argonne and Nimjegen potentials, as well as
+other potential models. A smaller(larger) $D$-state
+admixture in the ground state of the deuteron 
+means that the tensor force is weaker(stronger).
+The strength of the tensor force has important consequences 
+in calculations of the binding energy for both
+finite nuclei and infinite nuclear matter, 
+see e.g., the discussion
+in Ref.\ \cite{hko95}. 
+A potential model  with a weak tensor force
+tends to yield more attraction in a nuclear system than a 
+potential with a strong tensor force. However,
+all these modern nucleon-nucleon interactions yield
+very similar excitation spectra. Moreover, in calculations
+of Feynman-Goldstone diagrams in perturbation theory, a potential with a
+weak tensor force tends to suppress certain intermediate
+states of long-range character, like particle-hole excitations
+\cite{sommer81}.
+In this work we will thus choose to work with the charge-dependent
+version of the Bonn potential models, see Ref.\ \cite{cdbonn}.
+
+The next step 
+in our many-body scheme is to handle 
+the fact that the repulsive core of the nucleon-nucleon potential $V$
+is unsuitable for perturbative approaches. This problem is overcome
+by introducing the reaction matrix $G$ given by the solution of the
+Bethe-Goldstone equation
+\begin{equation}
+    G=V+V\frac{Q}{\omega - H_0}G,
+\end{equation}
+where $\omega$ is the unperturbed energy of the interacting nucleons,
+and $H_0$ is the unperturbed hamiltonian. 
+The operator $Q$, commonly referred to
+as the Pauli operator, is a projection operator which prevents the
+interacting nucleons from scattering into states occupied by other nucleons.
+In this work we solve the Bethe-Goldstone equation for several
+starting
+energies $\Omega$, by way of the so-called double-partitioning scheme
+discussed in e.g.,  Ref.\ \cite{hko95}.  
+As closed-shell core in the $G$-matrix calculation
+we choose $^{40}$Ca and employ a harmonic-oscillator basis for the
+single-particle
+wave functions, with an oscillator energy $\hbar\Omega$ given
+by
+$\hbar\Omega = 45A^{-1/3} - 25A^{-2/3}=11 $ MeV,  
+$A=40$ being the mass
+number.
+
+Finally, we briefly sketch how to calculate an effective 
+two-body interaction for the chosen model space
+in terms of the $G$-matrix.  Since the $G$-matrix represents just
+the summmation to all orders of ladder diagrams with particle-particle
+diagrams, there are obviously other terms which need to included
+in an effective interaction. Long-range effects represented by 
+core-polarizations terms are also needed.
+The first step then is to define the so-called $\hat{Q}$-box given by
+\begin{equation}
+   P\hat{Q}P=PGP+
+   P\left(G\frac{Q}{\omega-H_{0}}G\\ +G
+   \frac{Q}{\omega-H_{0}}G \frac{Q}{\omega-H_{0}}G +\dots\right)P.
+   \label{eq:qbox}
+\end{equation}
+The $\hat{Q}$-box is made up of non-folded diagrams which are irreducible
+and valence linked.
+We can then obtain an effective interaction
+$H_{\mathrm{eff}}=\tilde{H}_0+V_{\mathrm{eff}}$ in 
+terms of the $\hat{Q}$-box,
+with \cite{hko95}
+\begin{equation}
+    V_{\mathrm{eff}}(n)=\hat{Q}+{\displaystyle\sum_{m=1}^{\infty}}
+    \frac{1}{m!}\frac{d^m\hat{Q}}{d\omega^m}\left\{
+    V_{\mathrm{eff}}^{(n-1)}\right\}^m,
+    \label{eq:fd}
+\end{equation}
+where $(n)$ and $(n-1)$ refer to the effective interaction after
+$n$ and $n-1$ iterations. The zeroth iteration is represented by just the 
+$\hat{Q}$-box.
+Observe also that the
+effective interaction $V_{\mathrm{eff}}(n)$
+is evaluated at a given model space energy
+$\omega$, as is the case for the $G$-matrix as well. Here we choose
+$\omega =-20$ MeV. The final interaction after folding
+results in eigenvalues which depend rather weakly on the 
+chosen starting energy, see e.g., Ref.\ \cite{converge93}
+for a discussion.
+All non-folded diagrams through 
+second-order in the interaction $G$ are included.
+For further details, see Ref.\ \cite{hko95}.
+Finally, the reader should note that when one defines an
+effective interaction for several shells, the effective
+interaction may be strongly non-hermitian. 
+This non-hermiticity should arise already at the level
+of the $G$-matrix. However, since the $G$-matrix
+is calculated at a fixed starting energy
+for both incoming and outgoing states, it is by construction
+hermitian. Since we are calculating an effective interaction at a
+fixed starting energy, the individual diagrams
+entering the definition of the $\hat{Q}$-box 
+are thereby also made hermitian. The non-hermiticity 
+which however stems from folded diagrams
+is made explicitely hermitian through the 
+approach of Suzuki {\em et al.\ } 
+in Ref.\ \cite{kenji}.
+
+
+However, microscopic effective interactions
+like the above derived from available $NN$ interactions 
+typically fail in reproducing properties of nuclei like 
+e.g., shell-closure in $^{48}$Ca or excitation spectra
+of the odd nuclei $^{47}$Ca and $^{49}$Ca \cite{hko95}.
+Therefore, Zuker and co-workers \cite{zuk94,zuk98} 
+have adopted a slightly
+different scheme where the effective interaction is 
+rewritten in terms of a multipole expansion \cite{zuk94}.
+The monopole part of the interaction 
+can in turn be rewritten in terms of
+global, one-body and two-body contributions. 
+These contributions are all proportional
+to the energy centroids $\overline{V}_{ij}$
+\begin{equation}
+     \overline{V}_{ij}=
+     \frac{\sum_J (2J+1) \left\langle ij \right | V_{\mathrm{eff}}^J 
+     \left | ij \right \rangle}{\sum_J (2J+1)},
+\end{equation}
+where $i,j$ represent single-particle states
+forming a two-body state coupled to final
+angular momentum $J$.
+ 
+In Ref.\ \cite{zuk98} it is demonstrated how
+one can extract the energy centroids, which enter the 
+one-body term of the monopole interaction, through the
+available 
+spectra of particle
+and hole states of doubly magic cores. We have thus employed this
+prescription to our effective interaction
+This phenomenological recipe consists in replacing
+our centroids $\overline{V}_{ij}$ with those 
+derived by Duflo and Zuker \cite{zuk98}. 
+With this prescription we are in turn able to resolve 
+the spectroscopy problems we had in e.g., 
+the excitation spectra of $^{47}$Ca, $^{48}$Ca and
+$^{49}$Ca. Since however it is only the one-body part
+of the monopole term which is corrected, the binding
+energies will therefore not be properly reproduced.
+But this feature does not affect the excitation spectra,
+since it involves only a global term. 
+
+
+
+
+% references
+
+
+\begin{thebibliography}{200}
+\bibitem{cdbonn} R.\ Machleidt, F.\ Sammarruca, and Y.\ Song,
+Phys.\ Rev.\ C {\bf 53}, R1483  (1996).
+\bibitem{nim} V.\ G.\ J.\ Stoks, R.\ A.\ M.\ Klomp, C.\ P.\ F.\ Terheggen, and J.\ J.\
+de Swart, Phys.\ Rev.\ C {\bf 48}, 792 (1993).
+\bibitem{v18} R.\ B.\ Wiringa, V.\ G.\ J.\ Stoks, and R.\ Schiavilla, Phys.\ Rev.\
+C {\bf 51}, 38 (1995).
+\bibitem{nimbase} V.\ G.\ J.\ Stoks, R.\ A.\ M.\ Klomp, C.\ P.\ F.\ Terheggen, and J.\ J.\
+de Swart, Phys.\ Rev.\ C {\bf 49}, 2950 (1994).
+\bibitem{mac89}  R.\ Machleidt, Adv.\ Nucl.\ Phys.\ 19 (1989)  189. 
+\bibitem{v14} R.\ B.\ Wiringa, R.\ A.\ Smith, and T.\ L.\ Ainsworth,
+Phys.\ Rev.\ C {\bf 29}, 1207 (1984).
+\bibitem{bm95} G.\ E.\ Brown and R.\ Machleidt, 
+Phys.\ Rev.\ C {\bf 50}, 1731 (1994).
+\bibitem{hko95} M.\ Hjorth-Jensen, T.\ T.\ S.\ Kuo, and E.\ Osnes,
+Phys.\ Rep.\ {\bf 261}, 125 (1995).
+\bibitem{sommer81} H.\ M.\ Sommerman, H.\ M\"uther, K.\ C.\ Tam, and T.\ T.\ S.\ Kuo,
+Phys.\ Rev.\ C {\bf 23}, 1765 (1981).
+\bibitem{converge93} P.\ J.\ Ellis, T.\ Engeland, M.\ Hjorth-Jensen,
+A.\ Holt, and E.\ Osnes, Nucl.\ Phys.\ {\bf A573}, 216 (1994).
+\bibitem{kenji} K.\ Suzuki, R.\ Okamoto, P.\ J.\ Ellis, and
+T.\ T.\ S.\ Kuo, Nucl.\ Phys.\  {\bf A567}, 565 (1994).
+\bibitem{zuk94} A.\ P.\ Zuker, Nucl.\ Phys.\ {\bf A576}, 65 (1994).
+\bibitem{zuk98} J.\ Duflo and A.\ P.\ Zuker, submitted to Phys.\ Rev.\ Lett.
+
+\end{thebibliography}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

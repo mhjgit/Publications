@@ -1,0 +1,29 @@
+      internalinterface
+      function RHO ( X )
+       intent ( in ) X
+       doubleprecision X
+       doubleprecision RHO
+      end function RHO
+      function DRHO ( X )
+       intent ( in ) X
+       doubleprecision X
+       doubleprecision DRHO
+      end function DRHO
+      function DDRHO ( X )
+       intent ( in ) X
+       doubleprecision X
+       doubleprecision DDRHO
+      end function DDRHO
+      function PRESS ( X )
+       intent ( in ) X
+       doubleprecision X
+       doubleprecision PRESS
+      end function PRESS
+      function DPDN ( X )
+       intent ( in ) X
+       doubleprecision X
+       doubleprecision DPDN
+      end function DPDN
+      end interface
+      doubleprecision POLYNOM_TERMS(100)
+      integer NUMBER_TERMS

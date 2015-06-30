@@ -1,0 +1,76 @@
+From lars.engvik@fys.uio.no Fri Sep  4 14:06:54 1998
+Received: from pat.uio.no (6089@pat.uio.no [129.240.130.16])
+	by norserv.nordita.dk (8.8.5/8.8.5) with SMTP id OAA26896
+	for <mjensen@nordita.dk>; Fri, 4 Sep 1998 14:06:54 +0200 (MET DST)
+Received: from tid.uio.no (actually tid.uio.no [129.240.84.18]) by pat.uio.no 
+          with SMTP (PP); Fri, 4 Sep 1998 14:07:40 +0200
+Received: from localhost (lengvik@localhost) by tid.uio.no ;
+          Fri, 4 Sep 1998 14:07:39 +0200 (MET DST)
+Date: Fri, 4 Sep 1998 14:07:39 +0200 (MET DST)
+From: Lars Engvik <lars.engvik@fys.uio.no>
+X-Sender: lengvik@tid
+To: Morten Hjorth-Jensen <mjensen@nordita.dk>
+Subject: Re: har du ikke ei enkel datafil?
+In-Reply-To: <199809041116.NAA22026@norsg1.nordita.dk>
+Message-ID: <Pine.GSO.3.96.980904132045.10821A-100000@tid>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Content-Length: 1553
+Status: R
+
+Hei morten,
+
+sender noen faa byttes istedet
+
+Ha en god helg
+
+Resultater
+symmetrisk materie beregninger med effektiv masse
+kf-verdier
+1.00     1.10     1.20     1.30     1.40     1.50     1.60     1.70   1.80     
+1.90     2.00     2.10     2.20     2.30     2.40     2.5      2.6    2.7
+2.8 
+
+CD-bonn
+-10.80   -12.43   -13.93   -15.81   -17.41   -18.92   -19.71   -20.11   -19.66   
+-18.76   -16.97   -13.37    -8.51    -1.96     6.61    16.15    26.60    39.58    
+55.18
+
+v18
+-9.93   -11.12   -12.39   -13.60   -14.51   -14.84   -14.41   -12.99    -11.12
+-7.85    -3.83     1.83     9.38      19.40    29.37    41.37    58.47   72.29    
+89.62
+
+resultater ved  bruk av kontinuerlig sp spektrum uten!! effektiv masse
+approx:
+
+cdbonn
+  1.20     1.30     1.40     1.50     1.60     1.70    1.80    1.90      2.00 
+   2.1      2.2 
+-15.48   -17.30   -19.08   -20.78   -22.06   -22.65   -22.80   -21.63   -19.47   
+-15.94   -10.14
+
+v18
+  1.20     1.30     1.40     1.50     1.60     1.70    1.80    1.90      2.00 
+-14.11  -15.61   -17.06   -17.80   -18.01   -16.86   -14.04  -10.22     -4.30 
+
+pphh-data:
+
+  1.2    1.3    1.4    1.5    1.6    1.70   1.8 
+-16.91 -18.47 -19.78 -20.66 -21.10 -20.82 -19.61
+-15.31 -16.83 -17.72 -18.13 -18.06 -17.18 -15.63
+-13.63 -14.69 -15.30 -15.30 -14.73 -13.32 -10.80
+-12.65 -13.35 -13.62 -13.37 -12.48 -10.64  -8.02
+-15.91 -17.62 -19.29 -20.55 -21.49 -21.84 -21.42
+-15.70 -17.21 -18.55 -19.56 -20.12 -20.01 -19.30
+
+for henholdsvis
+Nijm-I km=3.8
+Nijm-I km=3.0
+Nijm-II km=3.8
+Nijm-II km=3.0
+CD-bonn km=3.8
+CD-bonn km=3.0
+
+
+

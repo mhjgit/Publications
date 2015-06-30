@@ -1,0 +1,53 @@
+From machleid@deepthought.phys.uidaho.edu Thu Apr 23 18:03:07 1998
+Return-Path: <machleid@deepthought.phys.uidaho.edu>
+Delivery-Date: Thu, 23 Apr 1998 18:03:06 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Thu, 23 Apr 1998 18:02:50 +0200
+Received: from deepthought.phys.uidaho.edu (machleid@deepthought.phys.uidaho.edu [129.101.65.101]) 
+          by pat.uio.no ; Thu, 23 Apr 1998 18:02:47 +0200 (MET DST)
+Received: (from machleid@localhost) 
+          by deepthought.phys.uidaho.edu (8.8.5/8.8.5) id JAA31737;
+          Thu, 23 Apr 1998 09:02:44 -0700
+Date: Thu, 23 Apr 1998 09:02:44 -0700
+From: Ruprecht Machleidt <machleid@deepthought.phys.uidaho.edu>
+Message-Id: <199804231602.JAA31737@deepthought.phys.uidaho.edu>
+To: m.h.jensen@fys.uio.no
+Cc: machleid@deepthought.phys.uidaho.edu
+Status: R
+Content-Length: 1333
+
+Morten,
+
+I have looked at the phase shift predictions for 3P2 up to
+Tlab = 1000 MeV for the high-precision pots.
+The result is that none can get the phase shifts between 400 and 1000 MeV
+right. The reason for this is that there is a cusp in the 3P2
+phase shifts around 600 MeV (see e.g. Fig. 7.9 of Adv. Nucl. Phys.
+19, 189 (1989), p. 277 therein). The dotted curve in that figure is
+a typical potential model prediction (Bonn B in this case), while
+the solid curve is from a model that includes explicit Delta isobars.
+It is the threshold of the N-Delta channel that makes the cusp.
+So, no way any potential model can do it.
+
+What potential models do is typically the following:
+Some have generally "high" phase shifts, best example:
+Nijm-II; then the phase shifts up to 600 MeV are described well,
+however, after that far too high.
+
+Or they are not too high at 100 MeV (good example: V_18),
+but then they are far too low in the 400 - 800 MeV region.
+
+The CD-Bonn is "in the middle", because when I was fitting
+the CD-Bonn , I always also had an eye on all the phase
+shifts up to 1000 MeV. (As you know, we are always a little
+bit smarter than the others.)
+
+In conclusion, using the empirical phase shifts for your purpose
+is probably the best, under these circumstances.
+
+I hope this was useful information,
+
+all the best
+
+Rupert.
+

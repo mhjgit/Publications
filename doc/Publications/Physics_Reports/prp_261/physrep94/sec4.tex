@@ -1,0 +1,1937 @@
+\subsection{Introduction}
+There are basically two main approaches in perturbation theory used
+to define an effective operator and the effective interaction,
+each with its hierarchy of sub-approaches. One of these main
+approaches is an energy-dependent, i.e. depending on the
+exact energy $E$, approach, known as Brillouin-Wigner
+perturbation theory, while the Rayleigh-Schr\"{o}dinger (RS) perturbation
+expansion stands for the energy independent approach. The latter is
+the most commonly used approach in the literature \cite{ko90,lm85}.
+
+In order to derive a microscopic theory of the effective interaction
+within the framework of perturbation theory, we need to introduce various
+notations and definitions pertinent to the methods exposed.
+This is discussed in the first subsection together with an outline of
+time-independent RS perturbation theory for the effective interaction.
+Throughout this section, we focus on a valence-linked effective
+interaction.
+In the next subsection  we review how to
+calculate the effective interaction
+within the framework of time-dependent degenerate
+or nearly degenerate
+RS perturbation theory \cite{ko90,no88}.
+
+\subsection{Time-independent
+perturbation theory}
+
+It is common practice in perturbation theory to reduce the infinitely
+many degrees of freedom of the Hilbert space to those represented
+by a physically motivated subspace, the model space.
+In such truncations of the Hilbert space, the notions of a projection
+operator $P$ onto the model space and its complement $Q$ are
+introduced. The projection operators defining the model and excluded
+spaces are defined by
+\begin{equation}
+    P=\sum_{i=1}^{D} \ket{\psi_i}\bra{\psi_i},
+\end{equation}
+and
+\begin{equation}
+    Q=\sum_{i=D+1}^{\infty} \ket{\psi_i}\bra{\psi_i},
+\end{equation}
+with $D$ being the dimension of the model space, and $PQ=0$, $P^2 =P$,
+$Q^2 =Q$ and $P+Q=I$. The wave functions $\ket{\psi_i}$ are eigenfunctions
+of the unperturbed hamiltonian $H_0 = T+U$ (with eigenvalues
+$\varepsilon_i$), where $T$ is the kinetic
+energy and $U$ an appropriately chosen one-body potential, normally
+that of the
+harmonic oscillator (h.o.). The full hamiltonian
+is then rewritten as $H=H_0 +H_1$ with $H_1=V-U$, $V$ being e.g. the
+nucleon-nucleon (NN) interaction\footnote{In this section we will
+assume a potential $V$ which is suitable for perturbative
+methods. In section 5 we will discuss how $V$ is to be represented
+in a nuclear medium, in order to apply the perturbative
+techniques to be discussed here.}.
+
+We define the projection of the exact wave function $\ket{\Psi_{\alpha}}$
+of a state $\alpha$, i.e. the solution to the full
+Schr\"{o}dinger equation
+\begin{equation}
+   H\ket{\Psi_{\alpha}} =E_{\alpha}\ket{\Psi_{\alpha}},
+   \label{eq:schro}
+\end{equation}
+as $P\ket{\Psi_{\alpha}}=\ket{\Psi_{\alpha}^M}$ and a wave operator $\Omega$
+which transforms all the model states back into the corresponding
+exact states as $\ket{\Psi_{\alpha}}=\Omega\ket{\Psi_{\alpha}^M}$.  The latter
+statement is however not trivial, it actually means that there is
+a one-to-one correspondence between  the $d$ exact states and the
+model functions. Actually, the only proof we are aware of, is given
+within the framework of the complex-time approach to be discussed
+in the next subsection.
+
+
+We will now assume that the wave operator $\Omega$ has an inverse and
+consider a similarity transformation of the hamiltonian $H$ such that
+eq.\ (\ref{eq:schro}) can be rewritten as
+\begin{equation}
+   \Omega^{-1}H\Omega\Omega^{-1}\ket{\Psi_{\alpha}} = 
+    E_{\alpha}\Omega^{-1}\ket{\Psi_{\alpha}}.
+   \label{eq:htrans}
+\end{equation}
+Recall also that $\ket{\Psi_{\alpha}}= 
+\Omega\ket{\Psi_{\alpha}^{M}}$, which means that
+ $\Omega^{-1}\ket{\Psi_{\alpha}} = \ket{\Psi_{\alpha}^{M}}$ insofar as the inverse of
+ $\Omega$ exists. Let us define the transformed hamiltonian ${\cal H}
+ =\Omega^{-1}H\Omega$, which can be rewritten in terms of the
+operators $P$ and $Q$ ($P+Q=I$) as
+\begin{equation}
+  {\cal H}=P{\cal H}P+P{\cal H}Q+Q{\cal H}P+Q{\cal H}Q.
+\end{equation}
+The eigenvalues of ${\cal H}$ are the same as those of $H$, since a
+similarity transformation does not affect the eigenvalues.
+If we now operate  on eq.\ (\ref{eq:htrans}), which in terms of the model
+space wave function reads
+\begin{equation}
+  {\cal H}\ket{\Psi_{\alpha}^{M}} = E_{\alpha}\ket{\Psi_{\alpha}^{M}},
+\end{equation}
+with the operator $Q$, we readily see that
+\begin{equation}
+   Q{\cal H}P=0.\label{eq:qhp}
+\end{equation}
+
+Eq.\ (\ref{eq:qhp}) is an important relation which states that the eigenfunction
+$P\ket{\Psi_{\alpha}}$ is a {\em pure model space eigenfunction}. This implies that
+we can define an {\em effective model space hamiltonian}
+\begin{equation}
+  H_{\mathrm{eff}}=P{\cal H}P = P\Omega^{-1} H \Omega P,
+\end{equation}
+or equivalently
+\begin{equation}
+   H\Omega P=\Omega PH_{\mathrm{eff}}P,
+  \label{eq:bloch}
+\end{equation}
+which is the Bloch \cite{bloch59} equation. This equation can
+be used to determine the wave operator $\Omega$.
+
+At this stage we should point out that there are no unique representations
+for the wave operator $\Omega$. There is a considerable degree of variation
+in the choice of $\Omega$, yielding different approaches to the perturbative
+expansion of the effective interaction. As a consequence,
+since in applications we truncate the perturbative expansion at a given
+order, different choices for the wave operator $\Omega$ may then give
+different results for the effective interaction. Moreover, even the same
+defining equation for the wave operator can be solved by e.g.\
+different iterative schemes. Let us consider some examples.
+The wave operator is often expressed as
+\begin{equation}
+  \Omega = 1 +\chi,
+\end{equation}
+where $\chi$ is known as the correlation operator. The correlation
+operator generates the component of the wave function in the $Q$-space
+and must therefore contain at least one interaction. Observing
+that $P\Omega P = P$, we see that the correlation operator $\chi$
+has the properties
+\begin{equation}
+   P\chi P = 0, \hspace{1cm} Q\Omega P = Q\chi P =\chi P. \label{eq:chi1}
+\end{equation}
+Since  
+$\ket{\Psi_{\alpha}}=\Omega\ket{\Psi_{\alpha}^{M}}$ determines the wave operator
+only when it operates to the right on the model space, i.e. only the
+$\Omega P$  part is defined, the term $\Omega Q$
+never appears in the theory,
+and we could therefore add the conditions $Q\chi Q =0$ and $P\chi Q =0$
+to eq.\ (\ref{eq:chi1}). This leads to the following choice for $\chi$
+\begin{equation}
+   \chi = Q\chi P. \label{eq:chi2}
+\end{equation}
+
+The wave operator $\Omega$ can be ordered in terms of the number
+of interactions with the perturbation $H_1$
+\begin{equation}
+\Omega = 1 +\Omega^{(1)} + \Omega^{(2)}+\dots ,
+\end{equation}
+where $\Omega^{(n)}$ means that we have $n$ $H_1$ terms. Explicitly,
+the above
+equation reads
+\begin{eqnarray}\label{eq:wavef}
+   \Omega\ket{\psi_{\alpha}}=&{\displaystyle\ket{\psi_{\alpha}}
+   +\sum_{i}\frac{\ket{i}
+   \bra{i}H_1\ket{\psi_{\alpha}}}{ \varepsilon_{\alpha}-\varepsilon_i}
+   +\sum_{ij}\frac{\ket{i}
+   \bra{i}H_1\ket{j}\bra{j}H_1\ket{\psi_{\alpha}}}
+  {(\varepsilon_{\alpha}-\varepsilon_i)
+  (\varepsilon_{\alpha}-\varepsilon_j)} }\\   \nonumber
+& {\displaystyle  -\sum_{\beta i}\frac{\ket{i}
+   \bra{i}H_1\ket{\psi_{\beta}}\bra{\psi_{\beta} }H_1\ket{\psi_{\alpha}}}
+  {(\varepsilon_{\alpha}-\varepsilon_i)
+  (\varepsilon_{\alpha}-\varepsilon_{\beta})} }
+  +\dots ,
+\end{eqnarray}
+where $\varepsilon$ are the unperturbed energies of the $P$-space
+and $Q$-space states defined by $H_0$.
+The latin letters refer to
+$Q$-space states, whereas greek letters refer to model-space
+states.
+Throughout this work we will employ such a notation. The second term
+in the above equation corresponds to $\Omega^{(1)}$ while the third
+and fourth define $\Omega^{(2)}$.
+Note that the fourth term diverges
+in case we have a degenerate or nearly degenerate model space. It is
+actually divergencies like these which are to be removed by the folded
+diagram procedure. We will come back to this in section 4.3. Terms
+like these
+arise due to the introduction of an energy independent perturbative
+expansion. Conventionally, the various contributions to the
+perturbative expansion are represented by Feynman-Goldstone
+diagrams, or just
+Feynmann-Goldstone diagrams.
+In fig.\ \ref{fig:chap2effint} we display some contributions to
+the wave operator eq.\ (\ref{eq:wavef})
+in terms of Goldstone diagrams.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{chap2effint.eps}}
+      \end{picture}
+\caption{Examples of diagrams which contribute to the wave operator
+$\Omega^{(n)}$,
+Both the railed lines, which  denote particle states,
+and lines with downgoing arrows, hole states, belong to the excluded
+space $Q$.}
+\label{fig:chap2effint}
+\end{figure}
+
+One way of obtaining $\Omega$ is through the generalized Bloch
+equation given by Lindgren and Morrison \cite{lm85}
+\begin{equation}
+[\Omega, H_0]P=QH_1\Omega P-\chi PH_1\Omega P,
+\label{eq:lind}
+\end{equation}
+which offers a suitable way of generating the RS perturbation expansion.
+Writing eq.\ (\ref{eq:lind}) in terms of $\Omega^{(n)}$ we have
+\begin{equation}
+[\Omega^{(1)}, H_0]P=QH_1P,
+\end{equation}
+\begin{equation}
+[\Omega^{(2)}, H_0]P=QH_1\Omega^{(1)} P- \Omega^{(1)} PH_1P,
+\end{equation}
+and so forth,  which can be generalized to
+\begin{equation}
+[\Omega^{(n)}, H_0]P=QH_1\Omega^{(n-1)} P- \sum_{m=1}^{n-1}
+\Omega^{(n-m)} PH_1\Omega^{(m-1)}P.
+\end{equation}
+The effective interaction to a given order can then be obtained from
+$\Omega^{(n)}$, see \cite{lm85}.
+
+
+
+
+
+Another possibility is to assume that we can start with a given
+approximation to $\Omega$, and through an iterative scheme generate
+higher order terms. Such schemes will in general differ from the
+order-by-order scheme of eq.\ (\ref{eq:lind}).  Two such iterative
+schemes were derived  by Lee and Suzuki \cite{ls80}. 
+
+
+Having defined the wave operator $\Omega = 1 +\chi$ (note that $
+\Omega^{-1}=1-\chi$) with
+$\chi$ given by eq.\ (\ref{eq:chi2}) we can rewrite
+eq.\ (\ref{eq:qhp}) as
+\begin{equation}
+     QHP-\chi HP +QH\chi - \chi H\chi = 0. \label{eq:basic}
+\end{equation}
+This is the basic equation to which a solution to $\chi$ is
+to be sought.
+Since we will work with a degenerate model space we define
+\[
+   PH_0 P = \omega P,
+\]
+where $\omega$ is the unperturbed model space eigenvalue
+(or starting energy) in the degenerate case,
+such that eq.\ (\ref{eq:basic}) reads in a slightly modified form
+($H=H_0 + H_1$)
+\[
+    (\omega -QH_0 Q -QH_1 Q)\chi = QH_1 P -\chi PH_1 P -\chi PH_1 Q\chi,
+\]
+which yields the following equation for $\chi$
+\begin{equation}
+    \chi = \frac{1}{\omega - QHQ}QH_1 P -\frac{1}{\omega -QHQ}\chi\left(PH_1 P +
+    PH_1 Q\chi P\right).\label{eq:chi3}
+\end{equation}
+Observing that  the $P$-space effective hamiltonian is given as
+\[
+     H_{\mathrm{eff}}= PHP+PH\chi=PH_0 P + V_{\mathrm{eff}}(\chi),
+\]
+with $V_{\mathrm{eff}}(\chi)= PH_1 P + PH_1Q\chi P$, eq. (\ref{eq:chi3}) becomes
+\begin{equation}
+     \chi = \frac{1}{\omega - QHQ}QH_1 P -\frac{1}{\omega -QHQ}
+     \chi V_{\mathrm{eff}}(\chi ).
+     \label{eq:chi4}
+\end{equation}
+Now we find it convenient to introduce the so-called $\hat{Q}$-box,
+defined as
+\begin{equation}
+     \hat{Q}(\omega)=PH_1 P + PH_1 Q\frac{1}{\omega - QHQ}
+      QH_1 P.\label{eq:qbox}
+\end{equation}
+The $\hat{Q}$-box is made up of non-folded diagrams which are irreducible
+and valence linked. A diagram is said to be irreducible if between each pair
+of vertices there is at least one hole state or a particle state outside
+the model space. In a valence-linked diagram the interactions are linked
+(via fermion lines) to at least one valence line. Note that a valence-linked
+diagram can be either connected (consisting of a single piece) or
+disconnected. In the final expansion including folded diagrams as well, the
+disconnected diagrams are found to cancel out \cite{ko90}. 
+This corresponds to the cancellation of unlinked diagrams
+of the Goldstone expansion discussed in section 2.
+We illustrate
+these definitions by the diagrams shown in fig.\ 
+\ref{fig:diagsexam}, where an arrow pointing upwards
+(downwards) is a particle (hole) state.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{diagsexam.eps}}
+      \end{picture}
+\caption{Different types of valence-linked diagrams. Diagram (a)
+is irreducible and connected, (b) is reducible, while (c) is irreducible
+and disconnected.}
+\label{fig:diagsexam}
+\end{figure}
+Particle states outside the model space are given by railed lines. 
+Diagram (a) is irreducible, valence linked and connected, 
+while (b) is reducible since 
+the intermediate particle states belong to the model space. 
+Diagram (c) is irreducible, valence linked and disconnected. 
+
+
+
+Multiplying both sides of eq.\ (\ref{eq:chi4}) with $PH_1$ and
+adding $PH_1 P$ to both sides we get
+\[
+    PH_1 P + PH_1 \chi =
+    PH_1 P + PH_1 Q\frac{1}{\omega - QHQ}QH_1 P -
+    PH_1 \frac{1}{\omega -QHQ}\chi V_{\mathrm{eff}}(\chi ),
+\]
+which gives
+\begin{equation}
+     V_{\mathrm{eff}}(\chi )=\hat{Q}(\omega)-
+     PH_1 \frac{1}{\omega -QHQ}\chi V_{\mathrm{eff}}(\chi ).
+     \label{eq:veff}
+\end{equation}
+
+There are several ways to solve eq.\ (\ref{eq:veff}). The idea is
+to set up an iteration scheme where we determine $\chi_n$ and
+thus $V_{\mathrm{eff}}(\chi_n )$ from 
+$\chi_{n-1}$ and $V_{\mathrm{eff}}(\chi_{n-1})$.
+For the mere sake of simplicity we write 
+$V_{\mathrm{eff}}^{(n)}=V_{\mathrm{eff}}(\chi_{n})$.
+
+\subsubsection{The FD method}
+
+Let us write eq.\ (\ref{eq:veff}) as
+\[
+   V_{\mathrm{eff}}^{(n)}=\hat{Q}(\omega)-
+   PH_1 \frac{1}{\omega -QHQ}\chi_n V_{\mathrm{eff}}^{(n-1)}.
+\]
+The solution to this equation can be shown to be \cite{ls80}
+\begin{equation}
+    V_{\mathrm{eff}}^{(n)}=\hat{Q}+{\displaystyle\sum_{m=1}^{\infty}}
+    \frac{1}{m!}\frac{d^m\hat{Q}}{d\omega^m}\left\{
+    V_{\mathrm{eff}}^{(n-1)}\right\}^m . 
+    \label{eq:fd}
+\end{equation}
+Observe also that the
+effective interaction is $V_{\mathrm{eff}}^{(n)}$ 
+is evaluated at a given model space energy
+$\omega$. If
+$V_{\mathrm{eff}}^{(n)}=V_{\mathrm{eff}}^{(n-1)}$, the iteration is said to
+converge. In the limiting case $n\rightarrow \infty$, the
+solution $V_{\mathrm{eff}}^{(\infty)}$ agrees with the formal solution of
+Brandow
+\cite{bran67} and Des Cloizeaux \cite{des}
+\begin{equation}
+    V_{\mathrm{eff}}^{(\infty)}=\sum_{m=0}^{\infty}\frac{1}{m!}
+    \frac{d^{m}\hat{Q}}{d\omega^{m}}\left\{
+    V_{\mathrm{eff}}^{(\infty)}\right\}^{m}.\label{eq:pert}
+\end{equation}
+
+
+Note that although $\hat{Q}$ and its derivatives contain disconnected
+diagrams, such diagrams cancel exactly in each order \cite{ko90}, thus
+yielding a fully connected expansion in eq.\ (\ref{eq:fd}).
+It is further important to note both in connection with the FD expansion and in
+the subsequent discussion of the LS method, that a term like
+$F_1= \hat{Q}_1 \hat{Q}$ actually means $P\hat{Q}_1 P\hat{Q}P$ since
+the $\hat{Q}$-box is defined in the model space only. Here we have defined
+$\hat{Q}_{m}=\frac{1}{m!}\frac{d^{m}\hat{Q}}
+{d\omega^{m}}$.
+Due to this structure, only so-called folded diagrams
+contain $P$-space intermediate states.
+
+The perturbation expansion of eq.\ (\ref{eq:pert})
+diverges if so-called intruder states are
+present in the low-lying spectrum, as shown by Schucan and Weidenm\"{u}ller
+\cite{sw72}. Typical examples of intruder states for nuclei with
+two valence nucleons are represented by four-particle two-hole
+core-deformed
+states. Several techniques to handle the intruder state problem
+have been discussed during the last two decades \cite{eo77,lk75,lk77,sm90}.
+Here we merely observe that a regrouping of the perturbation expansion
+as given by the partial summation of the folded diagrams in the FD method,
+may result in a converged result even if intruder states are present.
+If the FD expansion converges, the converged solutions are then those states
+which have the largest overlap with the chosen model space \cite{ls80}.
+If the coupling between the model space states and the intruder states
+is weak, as in the weak coupling model of ref.\ \cite{ee70}, the
+derived two-body effective interaction is expected to reproduce fairly well
+the spectra of nuclei with few valence nucleons.  We demonstrate this 
+in a simple example at the end of this subsection.
+
+\subsubsection{The LS method}
+
+Another iterative solution has been
+presented by Lee and Suzuki \cite{ls80}.
+In their approach eq.\ (\ref{eq:veff}) is rewritten as
+\begin{equation}
+    V_{\mathrm{eff}}^{(n)}=
+    \left\{1+PH_1 \frac{1}{\omega -QHQ}\chi_{n-1}\right\}^{-1}
+    \hat{Q}(\omega), \label{eq:ls}
+\end{equation}
+for $n\geq 1$ and with the equation for $\chi_n$ given as
+\begin{equation}
+       \chi_n =Q\frac{1}{\omega - QHQ}QH_1 P -Q\frac{1}{\omega -QHQ}\chi_{n-1}
+       V_{\mathrm{eff}}^{(n)}.
+       \label{eq:chils}
+\end{equation}
+Since the wave operator $\Omega$ is given as $\Omega = P+\chi$, a natural
+zeroth approximation to $\chi_0$ would be to set $\chi_0 = 0$, resulting in
+\[
+     \chi_1 =\frac{1}{\omega - QHQ}QH_1 P,
+\]
+and
+\[
+     V_{\mathrm{eff}}^{(1)}=\hat{Q}(\omega),
+\]
+i.e. the bare $\hat{Q}$-box only evaluated at a given model space energy
+$\omega$. No folded diagrams are included at this stage.
+The next iterative step yields
+\[
+     \chi_2 =Q\frac{1}{\omega - QHQ}QH_1 P-Q\frac{1}{\omega -QHQ}\chi_{1}
+     V_{\mathrm{eff}}^{(2)},
+\]
+and
+\[
+    V_{\mathrm{eff}}^{(2)}=\left\{1+PH_1 
+    \frac{1}{\omega -QHQ}\chi_{1}\right\}^{-1}
+    \hat{Q}(\omega)=\frac{1}{1-\hat{Q}_1}\hat{Q}(\omega ).
+\]
+The solution to this iterative scheme is given as \cite{ls80}
+\begin{equation}
+     V_{\mathrm{eff}}^{(n)}=\left[1-\hat{Q}_{1}-\sum_{m=2}^{n-1}\hat{Q}_{m}
+     \prod_{k=n-m+1}^{n-1}V_{\mathrm{eff}}^{(k)}\right]^{-1}\hat{Q}.
+\end{equation}
+
+It should be noted that the FD and LS expansions 
+may give different results for $V_{\mathrm{eff}}$ if terminated after
+a given, finite number of iterations. 
+The question is which method should one prefer, the FD or the LS method?
+In this work we will limit the attention to the FD method.
+The reason is as follows. We observe that the convergence criterion for the FD
+method states that if the FD expansion converges, it converges to those
+states which have the largest $P$-space overlap, while the LS method
+converges to those states which have an energy closest to the chosen 
+starting energy $\omega$. With the LS method we should
+therefore be able to even reproduce states not accounted for
+by the actual model space. However, Ellis {\em et al.} \cite{eehho94}
+showed that
+the criterion for the LS method is only applicable if one is able
+to determine an exact $\hat{Q}$-box, else the FD and LS methods
+give similar results at low orders in the
+interaction, irrespectively of
+the choice of starting energy. 
+At low orders in the interaction we are not able to reproduce the 
+$Q$-space eigenvalue  with the LS method, even for a starting energy close to this
+eigenvalue.
+The FD method (if it converges) always gives a
+result close to the  eigenvalue with the largest $P$-space
+overlap. With increasing order of the interaction, the $\hat{Q}$-box
+incorporates more $Q$-space degrees of freedom and the LS and FD methods
+give unstable results. 
+To see this, consider the following simple example, taken from
+the work of Ellis {\em et al.} \cite{eehho94}.
+
+
+In order to study the importance of intruder states, let
+the hamiltonian depend linearly on a strength parameter $z$
+\[
+       H=H_0+zH_1,
+\]
+with $0\leq z\leq1$, where the limits $z=0$ and $z=1$ represent the 
+non-interacting (unperturbed) and fully interacting system, respectively.
+The model is an eigenvalue
+problem with only two available states, which we label
+$P$ and $Q$. Below we will let 
+state $P$ represent the model-space
+eigenvalue whereas state $Q$ represents 
+the eigenvalue of the excluded space.
+The unperturbed solutions to this problem are
+\begin{equation}
+       H_0\Phi_P =\epsilon_P\Phi_P
+\end{equation}
+and
+\begin{equation}
+       H_0\Phi_Q =\epsilon_Q\Phi_Q,
+\end{equation}
+with $\epsilon_P < \epsilon_Q$. We label the off-diagonal
+matrix elements $X$, while $X_P=\bra{\Phi_P}H_1\ket{\Phi_P}$ and
+$X_Q=\bra{\Phi_Q}H_1\ket{\Phi_Q}$.
+The exact eigenvalues problem
+\begin{equation}
+\left(\begin{array}{cc}\epsilon_P+zX_P &zX \\
+zX &\epsilon_Q+zX_Q \end{array}\right)
+\end{equation}
+yields
+\begin{eqnarray}
+     \label{eq:exact}
+     E(z)=&\frac{1}{2}\left\{\epsilon_P +\epsilon_Q +zX_P
+     +zX_Q \pm \left(
+     \epsilon_Q -\epsilon_P +zX_Q-zX_P\right) \right. \\ \nonumber
+     & \left. \times\sqrt{1+\frac{4z^2X^2}{\left(
+     \epsilon_Q -\epsilon_P +zX_Q-zX_P\right)^2}}
+     \right\}.
+\end{eqnarray}
+The authors of ref.\ \cite{eo77}
+demonstrated how Brillouin-Wigner and
+Rayleigh-Schr\"{o}dinger (RS) perturbation theories relate
+within the framework of this simple model.
+An RS expansion for the lowest
+eigenstate (defining states $P$ and $Q$ as the model and excluded
+spaces, respectively) can be obtained by expanding the lowest
+eigenvalue as
+\begin{equation}
+      E=\epsilon_P +zX_P+\frac{z^2X^2}{\epsilon_P -\epsilon_Q}+
+      \frac{z^3X^2(X_Q-X_P)}{(\epsilon_P -\epsilon_Q)^2}+
+      \frac{z^4X^2(X_Q-X_P)^2}{(\epsilon_P -\epsilon_Q)^3}
+      -\frac{z^4X^4}{(\epsilon_P -\epsilon_Q)^3}+\dots,
+      \label{eq:modela}
+\end{equation}
+which can be viewed as an effective interaction for state $P$ in which
+state $Q$ is taken into account to successive orders of the perturbation.
+In this work we choose the parameters $\epsilon_P=0$, $\epsilon_Q=4$,
+$X_P=-X_Q=3$ and $X=0.2$. The exact solutions
+given by eq.\ (\ref{eq:exact})
+are shown in fig.\ \ref{fig:model} as functions of the
+strength parameter $z$. Pertinent to the choice of
+parameters, is that at $z\geq 2/3$,  the lowest eigenstate is
+dominated by $\Phi_Q$ while the upper is $\Phi_P$. At $z=1$ the
+$\Phi_P$ mixing of the lowest eigenvalue
+is $1\%$ while for $z\leq 2/3$
+we have a $\Phi_P$ component of more than $90\%$.
+The character of the eigenvectors has therefore been interchanged
+when passing $z=2/3$. The value of the parameter $X$ represents the
+strength of the coupling between the model space and the excluded space.
+Thus, this simple
+model allows us to study how the perturbation expansion with a
+model space defined to consist of state $P$ only, behaves
+as the interaction strength $z$ increases. The order-by-order
+convergence in eq.\ (\ref{eq:modela}) was discussed by the authors
+of ref.\ \cite{eo77}. Here we will thence only repeat
+their conclusion:
+For small values of $z$ one obtains
+good convergence to the lower eigenvalue. For larger values of $z$ 
+(i.e.\ $z> 2/3$),
+increasing orders in the perturbation expansion yield a divergent
+perturbation series, as expected \cite{sw72}.
+However, it may be possible to rewrite
+the perturbative expansion in such a way that one sums
+subsets of diagrams to all orders. The hope is then that the
+expansion becomes convergent for appropriate infinite partial
+summations.
+This is actually the philosophy
+behind both the FD method and the LS method. Having defined
+a set of linked and irreducible valence diagrams,
+the so-called $\hat{Q}$-box\footnote{
+The $\hat{Q}$-box should not be confused with the exclusion
+operator $Q$.}, we can define an
+iterative scheme to sum the contributions
+from folded diagrams.
+The $\hat{Q}$-box serves therefore as the starting point
+for the iterative schemes, and within the framework of the
+$2\times 2$ model one can
+study the FD and LS methods for various
+approximations of the $\hat{Q}$-box.
+As an example, to fifth order in the parameter $z$ we have
+\begin{equation}
+       \hat{Q}_5=zX_P+\frac{z^2X^2}{\epsilon_P -\epsilon_Q}+
+       \frac{z^3X^2X_Q}{(\epsilon_P -\epsilon_Q)^2}+
+       \frac{z^4X^2X_Q^2}{(\epsilon_P -\epsilon_Q)^3}+
+        \frac{z^5X^2X_Q^3}{(\epsilon_P -\epsilon_Q)^4},
+       \label{eq:qapprox}
+\end{equation}
+and it
+is easy to see that a $\hat{Q}$-box of order $l+2$ can be written
+as
+\[
+               \hat{Q}_{l+2}=
+                zX_P+\frac{z^2X^2}{\epsilon_P -\epsilon_Q-zX_Q}
+                \left\{1-\left(\frac{zX_Q}
+                {\epsilon_P-\epsilon_Q}\right)^{l+1}\right\},
+\]
+which in the limit $l\rightarrow \infty$ 
+gives\footnote{$l=0$ gives a second-order $\hat{Q}$-box, $l=1$ a third-order
+$\hat{Q}$-box and so forth.} 
+\begin{equation}
+      \hat{Q}_{\mathrm{exact}}(\epsilon_P)=
+      zX_P+\frac{z^2X^2}{\epsilon_P -\epsilon_Q-zX_Q},
+      \label{eq:qexact}
+\end{equation}
+if
+\begin{equation}
+     \left|\frac{zX_Q}{\epsilon_P-\epsilon_Q}\right| < 1.
+     \label{eq:constr}
+\end{equation}
+The latter equation clearly restricts the possible 
+values of $\epsilon_P$ for
+given $X_Q$ and $\epsilon_Q$. Actually, 
+if one lets $\epsilon_P$ vary, the present values of
+$X_Q$ and $\epsilon_Q$ restrict  $\epsilon_P$ to 
+$\epsilon_P \leq 1$ and $\epsilon_P\geq 7$, in order 
+to have a finite $\hat{Q}$-box.
+ 
+The exact $\hat{Q}$-box
+may be used to define the first iteration of
+the FD expansion as a function of the starting energy 
+$\omega$ as\footnote{We replace here $\epsilon_P$ with $\omega$.}
+\begin{equation}
+      \lambda_1= \omega+\hat{Q}_{\mathrm{exact}}(\omega)
+\end{equation}
+The subsequent steps are
+\begin{equation}
+     \lambda_2= \lambda_1+
+     {\displaystyle \sum_{m=1}^{\infty}
+     \frac{1}{m!}\frac{d^m \hat{Q}}{d\omega^m}(\lambda_1
+     -\omega )^m },
+\end{equation}
+and
+\begin{equation}
+    \lambda_3= \lambda_1+
+     {\displaystyle \sum_{m=1}^{\infty}
+     \frac{1}{m!}\frac{d^m \hat{Q}}{d\omega^m}(\lambda_2-
+     \omega )^m }.
+\end{equation}
+In general we have
+\begin{equation}
+     \lambda_n= \lambda_1+
+     {\displaystyle \sum_{m=1}^{\infty}
+     \frac{1}{m!}\frac{d^m \hat{Q}}{d\omega^m}(\lambda_{n-1}-
+     \omega )^m }.
+\end{equation}
+If this iteration scheme converges we have, with
+$\lambda=\lambda_{n}=\lambda_{n-1}$,
+\begin{equation}
+   \lambda=\omega +zX_P+\frac{z^2X^2}{\lambda -\epsilon_Q-zX_Q},
+   \label{eq:exact2}
+\end{equation}
+which is just eq.\ (\ref{eq:exact}), so that one has
+obtained the true eigenvalues.
+In a similar way one can use the LS expansion defined
+in eq.\ (\ref{eq:ls}) to sum the folded diagrams.
+\begin{table}[hbtp]
+\begin{center}
+\caption{The exact solutions $E_P$ ( model space) and 
+$E_Q$ (excluded space) of eq.\ (111) 
+as functions of the strength parameter $z$.
+The results obtained with the LS and FD methods with an
+exact $\hat{Q}$-box as functions
+of the starting energy $\omega$ are also given.
+Taken from ref.\ [52].}
+\begin{tabular}{rrrrrr}
+&&&&&\\\hline
+\multicolumn{1}{c}{$\omega$}&
+\multicolumn{1}{c}{$z$}&
+\multicolumn{1}{c}{$E_P$}&
+\multicolumn{1}{c}{$E_Q$}&
+\multicolumn{1}{c}{$FD$}&
+\multicolumn{1}{c}{$LS$}\\
+\hline
+0.5&0.0&0.00&4.00&0.00&0.00\\
+   &0.2&0.60&3.40&0.60&0.60\\
+   &0.4&1.20&2.80&1.20&1.20\\
+   &0.6&1.77&2.23&1.77&1.77\\
+   &0.7&2.17&1.83&2.17&1.83\\
+   &0.8&2.43&1.57&2.43&1.57\\
+   &1.0&3.02&0.98&3.02&0.98\\
+7.5&0.0&0.00&4.00&0.00&4.00\\
+   &0.2&0.60&3.40&0.60&3.40\\
+   &0.4&1.20&2.80&1.20&2.80\\
+   &0.6&1.77&2.23&1.77&2.23\\
+   &0.7&2.17&1.83&2.17&2.17\\
+   &0.8&2.43&1.57&2.43&2.43\\
+   &1.0&3.02&0.98&3.02&3.02\\
+   \hline 
+\end{tabular}
+\end{center}
+\end{table}
+We demonstrate the properties of the LS and FD methods with an
+exact $\hat{Q}$-box in table 3 for two starting energies,
+$0.5$ and $7.5$ (arbitrary units). Clearly, we see that with a starting 
+energy $0.5$ the LS method yields the $Q$-space eigenvalue at $z\geq 2/3$.
+Below $z=2/3$, the LS method reproduces the $P$-space eigenvalue. 
+With a starting energy of $7.5$, the LS method 
+gives the $Q$-space eigenvalue
+for $z\leq 2/3$, whereas the $P$-space eigenvalue is reproduced for
+$z\geq 2/3$. Thus, this simple model demonstrates nicely the properties of
+the LS scheme, i.e.\ it converges to those eigenvalues which are
+closest to the chosen starting energy, irrespectively of the structure of
+the wave function. From table 3 we also see that the FD
+method always reproduces the $P$-space eigenvalue. 
+At $z=2/3$, the FD
+scheme does not stabilize, the eigenvalue fluctuates and there is
+no convergence. More precisely this means that we can not
+go from the lower to the upper
+eigenvalue along the real axis $z$ \cite{eo77}.
+The fluctuation is intimately connected to the convergence
+criterion for the FD scheme. If one of the solutions contains
+more than $50\%$ valence state intensity, the FD method converges
+to that solution. At $z=2/3$, equal admixtures of $\Phi_P$
+and $\Phi_Q$ occur in the true wave functions.
+
+
+This simple example, {\em starting with the
+exact $\hat{Q}$-box},  serves to demonstrate significant
+differences in convergence behavior of the two methods. Of
+importance is the fact that with the LS scheme
+one is  able to reproduce a
+$Q$-space state insofar one defines a starting energy which is
+close to the actual $Q$-space state.
+However, in actual nuclear structure calculations, we are not
+able to define an exact $\hat{Q}$-box. The question the authors of ref.\
+\cite{eehho94} addressed 
+was if an
+approximation of the $\hat{Q}$-box still gives the same
+difference between the LS and FD methods at $z=1$.
+To shed light on this, we redisplay their discussion  in 
+fig.\ \ref{fig:model} for results obtained with various low-order
+approximations to the $\hat{Q}$-box, recall eq.\ (\ref{eq:qapprox}).
+The starting energy for the LS and 
+FD calculations was set equal $0.5$, since
+one is interested in seeing if the convergence criterion for the
+LS method holds for an approximate $\hat{Q}$-box. 
+Clearly, with a $\hat{Q}$-box of second order
+in the interaction, the
+difference\footnote{It ought be emphasized that all results
+with either the FD or the LS method represent converged
+eigenvalues, which means that contributions from folded diagrams
+to high order are included.}
+between the LS and the FD method is negligible. 
+A second-order $\hat{Q}$-box corresponds to setting $X_Q=0$, which
+means that in the range of {\em physically interesting} 
+$z$ values ($0\leq z \leq 1$)
+there is no intruder state, yielding an approximately straight line
+for the LS method.
+Up to fourth order in the interaction, both 
+the LS and FD methods yield almost 
+the same value. With a fifth-order
+$\hat{Q}$-box the FD method becomes unstable at $z=1$.
+This can 
+be inferred from the structure of the FD expansion, 
+which with a fifth-order $\hat{Q}$-box
+reads
+\[
+     \lambda_n=\epsilon_P+zX_P+\frac{z^2X^2}{\lambda_{n-1} -\epsilon_Q}+
+      \frac{z^3X^2X_Q}{(\lambda_{n-1} -\epsilon_Q)^2}+
+      \frac{z^4X^2X_Q^2}{(\lambda_{n-1} -\epsilon_Q)^3}+
+     \frac{z^5X^2X_Q^3}{(\lambda_{n-1} -\epsilon_Q)^4}.
+\] 
+The first iteration is just $\lambda_1=\epsilon_P+\hat{Q}$, 
+which gives a result close to the model space eigenvalue
+$\approx 3$ at $z=1$. Inserting $\lambda_1$ and higher iterations
+in the above expansion
+results in an
+FD expansion which for each iteration will fluctuate
+between a large value $\lambda$ and $\epsilon_P+X_P$. 
+The large eigenvalue stems
+from the fact that the energy denominators in the higher-order terms become
+small. With $X=0.2$ this oscillating behavior sets in already at fifth 
+order in the interaction, whereas 
+if one chooses the coupling
+between the model space and the excluded space to be $X=0.01$, 
+this divergence appears first
+with a $\hat{Q}$-box of tenth order. However, 
+one will ultimately end up with a series which fluctuates,
+except for the trivial case $X=0$. 
+With the given parameters and a $\hat{Q}$-box of tenth or higher 
+order in the interaction,
+the FD method converges only if $z<2/3$. 
+If the FD method converges, Ellis {\em et al.} \cite{eehho94}
+obtained result close to the model-space eigenvalue,
+and, if the coupling between the model space and 
+the excluded space is weak,
+low-order perturbation theory was shown to work rather well.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig14.eps}}
+      \end{picture}
+       \caption{
+        Exact solutions (solid line) and the results 
+        obtained with  the FD and LS methods 
+        with various approximations to the
+        $\hat{Q}$-box. FD-2nd and LS-2nd (dashed line) 
+        indicate that the FD and LS methods 
+        were used with a second-order $\hat{Q}$-box, 
+        while FD-4th and LS-4th are the results obtained
+        with a fourth-order $\hat{Q}$-box. Similarly, LS-10th and LS-50th
+        are the LS results with a tenth- and fiftieth-order
+        $\hat{Q}$-box, respectively. 
+        A starting energy $0.5$ was chosen in all calculations. Taken 
+        from ref.\ [52].}
+        \label{fig:model}
+\end{figure}
+For the LS method with a low-order $\hat{Q}$-box one is
+not able to reproduce the lowest eigenstate, even with an adequately
+chosen starting energy, as stated by the convergence criterion
+of the LS method.  Ellis {\em et al.} had actually to go as far as to
+a $\hat{Q}$-box of fiftieth order before they got a result close 
+to the lowest eigenvalue. However, if the order of the $\hat{Q}$-box
+is further increased ($\approx 150$ with the above parameters), even 
+the LS method diverges.
+Thus, in summary, the general convergence properties of
+the LS method discussed above
+are demonstrated only for an exact $\hat{Q}$-box.
+If the $\hat{Q}$-box is approximated to a given order in the
+interaction, the convergence criterion cannot be applied.
+
+
+In realistic calculations, like those discussed by Ellis {\em et al.} 
+for $^{18}$O,
+one can only evaluate some low-order terms in the perturbation
+expansion, 
+and although the FD and LS methods
+give negligible differences in the
+realistic calculations,
+the FD
+method is the preferable one 
+in nuclear structure calculations since
+it converges to those eigenstates which have the largest $P$-space
+overlap, a desirable property since we in general can only employ a
+rather small shell-model space. We will come back to this in
+section 6.
+
+
+
+
+
+
+
+
+
+\subsection{Time-dependent perturbation theory}
+
+In this work we will primarily be interested in valence-linked
+perturbative expansions for the effective interaction. Such expansions
+can be conveniently expressed within the framework of time-dependent
+perturbation theory. In this section we will review some of the
+properties of the time-development operator $U(t,t')$ and its
+connection to the decomposition theorem, which yields a
+valence-linked expression for the actual operator. However, some
+of the divergencies which occur can only be handled by the
+introduction of the so-called folded diagrams, to be
+discussed below. The folded diagrams
+arise due to the removal of the dependence on the exact
+energy of the perturbative expansion. This is the price one has
+to pay when introducing the Rayleigh-Schr\"{o}dinger expansion.
+
+The time-development operator $U$ has the
+properties that
+\begin{equation}
+     U^{\dagger}(t,t')U(t,t')=U(t,t')U^{\dagger}(t,t')=1,
+\end{equation}
+which implies that $U$ is unitary
+\begin{equation}
+     U^{\dagger}(t,t')=U^{-1}(t,t').
+\end{equation}
+Further,
+\begin{equation}
+    U(t,t')U(t't'')=U(t,t'')
+\end{equation}
+and
+\begin{equation}
+    U(t,t')U(t',t)=1,
+\end{equation}
+which leads to
+\begin{equation}
+    U(t,t')=U^{\dagger}(t',t).
+\end{equation}
+We can then construct the true eigenvectors $\Psi_{\alpha ,\beta}$, 
+where $\alpha$ and
+$\beta$ indicate the initial and final states, respectively, in
+terms of the unperturbed wave functions $\psi_{\alpha,\beta}$  
+through the
+action of the time-development operator $U$.
+In the present discussion of the time-dependent theory we will make
+use of the so-called complex-time approach to describe the time
+evolution operator $U$ \cite{ko90}\footnote{The time-development 
+operator used here is determined by use
+of the interaction picture. The suffix $I$, which is commonly
+used in the literature to distinguish $U_I$ in the interaction
+picture from $U$ in the
+Schr\"{o}dinger or Heisenberg pictures, has been omitted.}.
+This means that we
+allow the time $t$ to be rotated by a small angle $\epsilon$
+relative to the real time axis. The complex time $t$ is then
+related to the real time $\tilde{t}$ by
+\begin{equation}
+t=\tilde{t}(1-i\epsilon ).
+\end{equation}
+Let us first study the true eigenvector $\Psi_{\alpha}$ which evolves
+from the unperturbed eigenvectors $\psi_{\alpha}$ through the action of the
+time development operator
+\begin{eqnarray}
+   U(t,t')&=\lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+   {\displaystyle\sum_{n=0}^{\infty}\frac{(-i)^n}{n!}
+   \int_{t'}^{t}dt_1  \int_{t'}^{t}dt_2\dots  \int_{t'}^{t}dt_n}
+		\\ \nonumber
+	     &  \times T\left[H_1(t_1)H_1(t_2)\dots H_1(t_n)\right],
+	     \label{eq:timeu}
+\end{eqnarray}
+where $T$ stands for the correct time-ordering \cite{no88,fw71}.
+
+In time-dependent
+perturbation theory we let $\Psi_{\alpha}$ develop from $\psi_{\alpha}$ in the
+remote past to a given time $t$
+\begin{equation}
+    \frac{\ket{\Psi_{\alpha}}}
+    {\left\langle\psi_{\alpha} | \Psi_{\alpha} \right\rangle}=
+    \lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+   \frac{U(t,t' )\ket{\psi_{\alpha}} }
+   { \bra{\psi_{\alpha}} U(t,t' )\ket{\psi_{\alpha}} },
+   \label{eq:psii}
+\end{equation}
+and similarly, we let
+$\Psi_{\beta}$ develop from $\psi_{\beta}$ in the remote future
+\begin{equation}
+    \frac{\bra{\Psi_{\beta}}}{\left\langle
+    \psi_{\beta} | \Psi_{\beta} \right\rangle}=
+    \lim_{\epsilon \rightarrow 0}
+    \lim_{t'\rightarrow \infty (1-i\epsilon )}
+    \frac{\bra{\psi_{\beta}}U(t' ,t) }
+    { \bra{\psi_{\beta}} U(t' ,t)\ket{\psi_{\beta}} }.
+    \label{eq:psif}
+\end{equation}
+
+Here we are interested in the expectation value of a given
+operator ${\cal O}$ acting at a time $t=0$. This can be achieved
+from eqs.\ (\ref{eq:psii}) and (\ref{eq:psif}) defining
+\begin{equation}
+     \ket{\Psi_{\alpha ,\beta}'}=
+     \frac{\ket{\Psi_{\alpha ,\beta}}}
+     {\left\langle\psi_{\alpha ,\beta} | \Psi_{\alpha ,\beta} \right\rangle}
+\end{equation}
+we have
+\begin{equation}
+   {\cal O}_{\alpha\beta}
+  =\frac{N_{\beta\alpha}}{D_{\beta}D_{\alpha}},
+   \label{eq:expect}
+\end{equation}
+where we have introduced
+\begin{equation}
+   N_{\beta\alpha}=
+   \bra{\psi_{\beta}}U(\infty ,0){\cal O}U(0,-\infty )\ket{\psi_{\alpha}} ,
+\end{equation}
+and 
+\begin{equation}
+   D_{\alpha ,\beta}=
+   \sqrt{\bra{\psi_{\alpha ,\beta}}
+   U(\infty ,0)U(0,-\infty )\ket{\psi_{\alpha ,\beta}}}. 
+\end{equation}
+If the operator ${\cal O}$ stands for the hamiltonian $H$ we obtain
+\begin{equation}
+    {\displaystyle  \frac{\bra{\Psi_{\lambda}'}H\ket{\Psi_{\lambda}'} }
+   { \left\langle\Psi_{\lambda}' | \Psi_{\lambda}' \right\rangle} }
+   \label{eq:hexpect}.
+\end{equation}
+
+At this stage, {\em it is important to observe} that our 
+expression for the expectation value of a given operator ${\cal O}$
+{\em is hermitian} insofar ${\cal O}^{\dagger}={\cal O}$. This is readily 
+demonstrated. Eq.\ (\ref{eq:expect}) is of the general form
+\begin{equation}
+U(t,t_0){\cal O}U(t_0,-t),
+\end{equation}
+and noting that 
+\begin{equation}
+   U^{\dagger}(t,t_0)=
+   \left({\displaystyle e^{iH_0t}e^{-iH(t-t_0)}e^{-iH_0t}}\right)^{\dagger}
+   =U(t_0,-t),
+\end{equation}
+since $H^{\dagger}=H$ and $H_0^{\dagger}=H_0$, we have that
+\begin{equation}
+    \left(U(t,t_0){\cal O}U(t_0,-t)\right)^{\dagger}
+    =U(t,t_0){\cal O}U(t_0,-t).
+\end{equation}
+In this form, the expression for the effective interaction differs
+from that given by either the folded-diagram  method of eq.\ (\ref{eq:fd}) 
+or the
+Lee-Suzuki method of eq.\ (\ref{eq:ls}). To define these perturbation
+expansions we employed the similarity transformation given by eq.\ 
+(\ref{eq:htrans})
+\begin{equation}
+   \Omega^{-1}H\Omega = e^{-\chi}He^{\chi},
+\end{equation}
+where
+\begin{equation}
+     \Omega =1+\chi = 1+Q\chi P = e^{\chi}.
+\end{equation}
+The important point to note here is that $e^{\chi}$ does not in general
+fulfill the condition $\chi^{\dagger}=-\chi$, which in turn leads to
+non-hermitian expansions for the effective interaction defined by 
+the folded-diagram method or the Lee-Suzuki expansion. 
+This non-hermiticity is however weak if we define a model space entirely
+within the same harmonic oscillator shell, as we will see 
+in our calculations of the effective interaction in section 6. 
+If one wishes to obtain an effective
+interaction which spans over several shells the non-hermiticity may no longer 
+be weak. How to obtain a hermitian effective interaction in these 
+cases will be discussed at the end of section 6. 
+In our derivation below, we will not use eq.\ (\ref{eq:hexpect}), but act 
+with the unperturbed wave function to the left of $H_1$. This will in turn
+lead to the familiar Goldstone perturbation expansion or linked
+valence expansion in our case. 
+
+
+Note that the operator ${\cal O}$ may be of one-body, two-body or
+of a more complicated structure. Similarly, the wave functions
+$\psi_{\alpha}$ may represent the degrees of freedom of one, two or
+more particles. As an example,
+an unperturbed model-space two-body wave function can be written
+as
+\begin{equation}
+   \ket{\psi_{\alpha}}=\sum_{\lambda\gamma=1}^{D}
+    C_{\lambda\gamma}^{\alpha} a_{\lambda}^{\dagger}a_{\gamma}^{\dagger}
+	       \ket{\tilde{c}},
+    \label{eq:twowf}
+\end{equation}
+with $C_{\lambda\gamma}^{\alpha}$ 
+a coupling coefficient and $\ket{\tilde{c}}$ referring
+to some selected vacuum state, e.g.\ the Slater determinant of
+the $^{16}$O core if we are
+studying systems with mass $A=18$.
+Eq.\ (\ref{eq:expect}) is our basic matrix element for an
+operator ${\cal O}$, though in its present form it is not suitable
+for computation, since both the numerator and denominator contain
+divergencies. These divergencies have to be removed in order to
+obtain a meaningful expression for ${\cal O}$. The final expression
+we are seeking, will be a valence-linked expansion where
+every term in the expansion for ${\cal O}$ is finite.
+To see how such divergencies arise, consider the contribution
+to the exact wave function shown in fig.\ \ref{fig:wavefex}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(80,80)
+      \put(30,10){\epsfxsize=8cm \epsfbox{wavefex.eps}}
+      \end{picture}
+\caption{A contribution to the exact wave function. The time orderings
+are $0>t_1>t_2>-\infty$. The railed line belongs to the $Q$-space, while
+the other represent valence space states. }
+\label{fig:wavefex}
+\end{figure}
+The exact wave function is proportional to
+\[
+  U(0,-\infty )a_{\alpha}^{\dagger}a_{\beta}^{\dagger}
+	       \ket{\tilde{c}},
+\]
+and the diagram shown in the above figure is an example
+of one possible contribution. It has two interaction terms
+acting successively at times $t_2$ and $t_1$. At $t_2$, the
+valence particles are scattered into the valence states
+$\gamma$ and $\delta$, and at $t_1$ they are scattered into
+the passive particle states $i$ and $j$. It is then possible to show
+that this diagram is given by \cite{ko90}
+\begin{equation}
+     a_{i}^{\dagger}a_{j}^{\dagger}
+	       \ket{\tilde{c}}\times\frac{1}{4}\tilde{V}_{ij\gamma\delta}
+               \tilde{V}_{\gamma\delta\alpha\beta}\times I,
+\end{equation}
+where we have used antisymmetrized interaction matrix elements
+and 
+\begin{equation}
+  I=
+  \lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+   {\displaystyle (-i)^2
+   \int_{t'}^{0}dt_1  \int_{t'}^{t_1}dt_2}
+   e^{-i(\varepsilon_{\gamma}+\varepsilon_{\delta}-\varepsilon_{i}
+   -\varepsilon_{j})t_1}
+      e^{-i(\varepsilon_{\alpha}+\varepsilon_{\beta}-\varepsilon_{\gamma}
+   -\varepsilon_{\delta})t_2}.
+\end{equation}
+As we will employ a degenerate or nearly degenerate model
+space\footnote{Even if we use sp energies from say a
+Brueckner-Hartree-Fock calculation, the model-space sp energies may be nearly
+degenerate if we have a model space which consists of the sp
+orbits from one shell only.}, we have
+$\varepsilon_{\alpha}+\varepsilon_{\beta}-\varepsilon_{\gamma}
+-\varepsilon_{\delta}\approx 0$, and the above integral
+diverges. In order to handle such divergencies, we will
+in the procedure below factorize out such divergent terms in
+$U(0,-\infty )a_{\alpha}^{\dagger}a_{\beta}^{\dagger}
+\ket{\tilde{c}}$. We can then rewrite the diagram in
+fig.\ \ref{fig:wavefex} as in fig.\ \ref{fig:wavefex2},
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,70)
+      \put(25,10){\epsfxsize=12cm \epsfbox{wavefex2.eps}}
+      \end{picture}
+\caption{The divergent diagram in (i) can be factorized
+in two pieces, (ii) and (iii), with time orderings for (i)
+$0>t_1>t_2>-\infty$, for (ii) $0>t_1>-\infty$ and $0>t_2>-\infty$ 
+and for (iii) $0>t_2>t_1>-\infty$.}
+\label{fig:wavefex2}
+\end{figure}
+where diagram (ii) represents a factorization of diagram (i)
+in two independet pieces and reads
+\begin{equation}
+     a_{i}^{\dagger}a_{j}^{\dagger}
+	       \ket{\tilde{c}}\times\frac{1}{4}\tilde{V}_{ij\gamma\delta}
+               \tilde{V}_{\gamma\delta\alpha\beta}\times I(ii),
+\end{equation}
+with
+\begin{equation}
+  I(ii)=
+  \lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+   {\displaystyle (-i)^2
+   \int_{t'}^{0}dt_1  \int_{t'}^{0}dt_2}
+   e^{-i(\varepsilon_{\gamma}+\varepsilon_{\delta}-\varepsilon_{i}
+   -\varepsilon_{j})t_1}
+      e^{-i(\varepsilon_{\alpha}+\varepsilon_{\beta}-\varepsilon_{\gamma}
+   -\varepsilon_{\delta})t_2},
+\end{equation}
+which is also divergent.  Diagram (iii) is given as
+\begin{equation}
+   (iii)=(ii)-(i)=
+    -a_{i}^{\dagger}a_{j}^{\dagger}
+	       \ket{\tilde{c}}\times\frac{1}{4}\tilde{V}_{ij\gamma\delta}
+               \tilde{V}_{\gamma\delta\alpha\beta}\times I(iii),
+\end{equation}
+and
+\begin{equation}
+  I(iii)=
+  \lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+   {\displaystyle (-i)^2
+   \int_{t'}^{0}dt_1  \int_{t_1}^{0}dt_2}
+   e^{-i(\varepsilon_{\gamma}+\varepsilon_{\delta}-\varepsilon_{i}
+   -\varepsilon_{j})t_1}
+      e^{-i(\varepsilon_{\alpha}+\varepsilon_{\beta}-\varepsilon_{\gamma}
+   -\varepsilon_{\delta})t_2}.
+\end{equation}
+This integral is finite even though $I(i)$ and $I(ii)$ are
+infinite. To evaluate the last integral, we note first
+that
+\begin{equation}
+   \int_{t'}^{0}dt_1  \int_{t_1}^{0}dt_2
+   =   \int_{t'}^{0}dt_2  \int_{t'}^{t_2}dt_1.
+\end{equation}
+Substituting the above in the integral for $I(iii)$ we obtain
+\begin{equation}
+  I(iii)=\frac{1}{(\varepsilon_{\gamma}+\varepsilon_{\delta}-
+                   \varepsilon_{i}-\varepsilon_{j})}
+          \frac{1}{(\varepsilon_{\alpha}+\varepsilon_{\beta}-
+                   \varepsilon_{i}-\varepsilon_{j})}.
+\end{equation}
+We then obtain for diagram (iii)
+\begin{equation}
+   (iii)=
+    -a_{i}^{\dagger}a_{j}^{\dagger}
+	       \ket{\tilde{c}}\times\frac{1}{4}\tilde{V}_{ij\gamma\delta}
+               \tilde{V}_{\gamma\delta\alpha\beta}
+             \frac{1}{(\varepsilon_{\gamma}+\varepsilon_{\delta}-
+                   \varepsilon_{i}-\varepsilon_{j})}
+          \frac{1}{(\varepsilon_{\alpha}+\varepsilon_{\beta}-
+                   \varepsilon_{i}-\varepsilon_{j})}.
+\end{equation}
+This expression can be further simplified if the model space
+is degenerate. If we set
+$\varepsilon_{\gamma}+\varepsilon_{\delta}=
+\varepsilon_{\alpha}+\varepsilon_{\beta}=\omega$, we have
+\begin{equation}
+   (iii)=
+    -a_{i}^{\dagger}a_{j}^{\dagger}
+	       \ket{\tilde{c}}\times\frac{1}{4}\tilde{V}_{ij\gamma\delta}
+               \tilde{V}_{\gamma\delta\alpha\beta}
+             \frac{1}{(\omega -
+                   \varepsilon_{i}-\varepsilon_{j})^2},
+         \label{eq:wavefex6}
+\end{equation}
+or
+\begin{equation}
+   (iii)=
+    a_{i}^{\dagger}a_{j}^{\dagger}
+	       \ket{\tilde{c}}\times\frac{1}{4}
+               \tilde{V}_{ij\gamma\delta}
+              \frac{d}{d\omega}\left(
+             \frac{1}{(\omega -
+                   \varepsilon_{i}-\varepsilon_{j})}\right)
+               \tilde{V}_{\gamma\delta\alpha\beta} ,
+\end{equation}
+an observation we will utilize below in the derivation of the
+effective interaction. Diagram (iii) is an example of a folded
+diagram. The folded lines refer to the intermediate
+particle states $\gamma$ and $\delta$, which belong to the model
+space. Conventionally, they are drawn by way of downgoing
+lines with a circle to distinguish them from hole lines.
+The above diagrams are just mere examples of infinitely
+many diagrams which arise in the evaluation of the wave function.
+Further examples can be found in the work of ref.\ \cite{ko90}.
+Here we will discuss how one in general can remove these
+unwanted divergencies in an expedient and computationally
+simple manner. Note that diagram (ii) may give rise to
+a valence disconnected diagram to the
+effective interaction. This can be understood if we let
+the interaction $H_1$ act on the leftmost part of diagram
+(ii) at $t=0$, as shown in fig.\ \ref{fig:wavefex3}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(120,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{wavefex3.eps}}
+      \end{picture}
+\caption{The divergent diagram in (ii) of the previous figure
+may yield a valence disconnected diagram if we let the
+interaction $H_1$ act at $t=0$ as shown.}
+\label{fig:wavefex3}
+\end{figure}
+These valence disconnected diagrams are then cancelled exactly
+to all orders in the folded-diagram expansion. This cancellation
+in the folded-diagram series\footnote{There are also other types
+of disconnected  diagrams which will be cancelled in the expansion
+delineated below.}
+corresponds to the familiar cancellation of unlinked diagrams
+in the Goldstone expansion.
+In order to discuss the removal of
+these terms, we will use the
+definition of the time-development operator in eq.\
+(\ref{eq:timeu}), such that the numerator $N_{\alpha\beta}$ and the
+denominator $D_{\alpha,\beta}$ can be expressed as collections
+of time-ordered Goldstone diagrams.  The aim of the development here is
+to factorize
+\begin{equation}
+\lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+\frac{U(t,t' )\ket{\psi_{\alpha}} }
+{ \bra{\psi_{\alpha}} U(t,t' )\ket{\psi_{\alpha}} },
+\end{equation}
+as a whole. To achieve this, we will make use of the decomposition
+theorem\footnote{In order to avoid unnecessary overlap
+with the existing literature, only the essential results
+behind the decomposition theorem will be given here. For a more detailed
+account, we refer the reader to ref.\ \cite{ko90}.}
+exposed in e.g.\ ref.\ \cite{ko90}. Let us illustrate the 
+decomposition theorem by considering an example to the two-body
+wave function of eq.\ (\ref{eq:twowf})
+\begin{equation}
+               U(0,-\infty )\ket{\psi_{\alpha}} =
+               U(0,-\infty )a_{\lambda}^{\dagger}
+               a_{\gamma}^{\dagger}
+	       \ket{\tilde{c}},
+\label{eq:exam1}
+\end{equation}
+where $\lambda$ and $\gamma$ are valence space sp states.
+Examples of diagrams which contribute to eq.\ (\ref{eq:exam1}) are 
+shown in fig.\ \ref{fig:waveex}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,120)
+      \put(25,10){\epsfxsize=12cm \epsfbox{waveex.eps}}
+      \end{picture}
+\caption{Diagrams which contribute to
+$U(0,-\infty )\ket{\psi_{\alpha}} $. The upper part shows diagrams, (i) and (ii),
+linked to at
+least one valence line, while the lower part exhibits examples
+of diagrams where no vertices are connected to valence lines.
+Diagrams (iii) is a contribution to the true ground-state
+wave function of the core system while diagram (iv) is a vacuum
+fluctuation diagram.}
+\label{fig:waveex}
+\end{figure}
+The philosophy behind the decomposition theorem is that eq.\ (\ref{eq:exam1})
+can be factorized into a group of diagrams
+which consists of a given number of 
+interactions linked to one or both the valence lines $\lambda$ and $\gamma$ and 
+a group of diagrams with no vertices linked to any of the
+valence states. Examples of the latter case are shown in the lower
+part of fig.\ \ref{fig:waveex}, while diagrams contributing to the 
+former are shown in the upper part. Thus, 
+as a first step, one can rewrite eq.\ (\ref{eq:exam1}) as
+\begin{equation}
+     U(0,-\infty )a_{\lambda}^{\dagger}a_{\gamma}^{\dagger}\ket{\tilde{c}}=
+     U_V(0,-\infty ) a_{\lambda}^{\dagger}a_{\gamma}^{\dagger}
+     \ket{\tilde{c}}\times
+     U(0,-\infty )\ket{\tilde{c}}.
+\label{eq:exam2}
+\end{equation}
+The subscript $V$ refers to the fact that we have at least one valence line
+present.  Then, we can in turn factorize each term on the rhs.\ of
+eq.\ (\ref{eq:exam2}). The term $U(0,-\infty )\ket{\tilde{c}}$ factorizes
+as
+\begin{equation}
+     U(0,-\infty )\ket{\tilde{c}}=U_Q(0,-\infty )\ket{\tilde{c}}
+     \bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}},
+     \label{eq:corewf}
+\end{equation}
+where $\bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}$ represents all vacuum
+fluctuations like diagram (iv) of fig.\ \ref{fig:waveex}, whereas the first
+term is the 
+sum of all contributions to the true ground-state wave function of the 
+core system \cite{ko90}, 
+examplified by diagram (iii) of fig.\ \ref{fig:waveex}. The subscript $Q$ refers
+to the fact that all states belong to the $Q$-space at $t=0$.
+
+A similar factorization can be applied to the $U_V$ term. 
+This term contains diagrams which begin and end in a model-space state
+$P$ or which begin with a model-space state and end in a passive state
+at $t=0$, i.e.\
+\begin{equation}
+    U_V(0,-\infty ) \ket{\psi_{\alpha}}=
+    \ket{\chi_{\alpha}^P}+\ket{\chi_{\alpha}^Q}.
+\end{equation}
+The diagrams
+contained in these two terms can conveniently be expressed in terms of chains
+of so-called $\hat{Q}$-boxes. The $\hat{Q}$-box is defined as the sum
+of all irreducible\footnote{At least one passive state between two interactions
+$H_1$.} and 
+valence-linked diagrams with at least one $H_1$ vertex. This \qbox is defined
+for incoming and outgoing model-space states. Examples of diagrams
+which contribute are given in fig.\ \ref{fig:pqbox}. 
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{pqbox.eps}}
+      \end{picture}
+\caption{Diagrams which contribute to the \qbox with only model-space
+states as final and initial states.}
+\label{fig:pqbox}
+\end{figure}
+However, in order
+to obtain the $\ket{\chi_i^Q}$ term, we need a \qbox defined for
+incoming model-space states and outgoing $Q$-space states. Typical
+examples of topologies which arise in the determination of the
+latter are shown in fig.\ \ref{fig:qqbox}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,90)
+      \put(25,10){\epsfxsize=12cm \epsfbox{qqbox.eps}}
+      \end{picture}
+\caption{Diagrams which contribute to the \qbox with initial model-space
+states and final $Q$-space  states. }
+\label{fig:qqbox}
+\end{figure}
+The structures of $\ket{\chi_{\alpha}^P}$ and $\ket{\chi_{\alpha}^Q}$ 
+is shown in the 
+upper and lower parts of fig.\ \ref{fig:chipq}, respectively.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,140)
+      \put(25,10){\epsfxsize=12cm \epsfbox{chipq.eps}}
+      \end{picture}
+\caption{The upper part shows a schematic representation
+of $\ket{\chi_{\alpha}^P}$, where the time $t=0$ is set at the top of the diagram.
+For contributions to an operator, there will always be an interaction
+or operator at $t=0$. The lower part of this figure is a sketch of the
+structure of $\ket{\chi_{\alpha}^Q}$. The circles are shorthands for the \qbox .}
+\label{fig:chipq}
+\end{figure}
+As discussed in the previous subsection in connection with eq.\ (\ref{eq:wavef}),
+certain terms of $\ket{\chi_{\alpha}^Q}$ give rise to divergencies. These
+divergencies can however be factorized out through the folding operation
+\cite{ko90}, such that a term proportional to $\ket{\chi_{\alpha}^P}$ can be 
+extracted from $\ket{\chi_{\alpha}^Q}$. The final expression for $U_V$ then reads 
+\begin{equation}
+     U_V(0,-\infty ) \ket{\psi_{\alpha}} ={\displaystyle \sum_{\beta=1}^{D}
+     U_{VQ}(0,-\infty )\ket{\psi_{\beta}}\bra{\psi_{\beta}}
+     U_V(0,-\infty )\ket{\psi_{\alpha}}}.
+     \label{eq:uv}
+\end{equation}
+The form of $U_{VQ}$ is shown in fig.\ \ref{fig:uvq}, where the integration
+sign represents the folding operation. The first term vanishes 
+if $\beta\neq\alpha$
+while the remaining terms end in passive states at $t=0$.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,70)
+      \put(25,10){\epsfxsize=12cm \epsfbox{uvq.eps}}
+      \end{picture}
+\caption{Schematic structure of $U_{VQ}$. Note, that, except for the
+first term, all other contributions end in a $Q$-space state.}
+\label{fig:uvq}
+\end{figure}
+Correspondingly, the structure of
+$\bra{\psi_{\beta}}U_V(0,-\infty )\ket{\psi_{\alpha}}$ is displayed in fig.\ 
+\ref{fig:uvv}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,90)
+      \put(25,10){\epsfxsize=12cm \epsfbox{uvv.eps}}
+      \end{picture}
+\caption{Schematic structure of
+$\bra{\psi_{\beta}}U_V(0,-\infty )\ket{\psi_{\alpha}}$.}
+\label{fig:uvv}
+\end{figure}
+
+Thus, collecting eqs.\ (\ref{eq:corewf}) and (\ref{eq:uv}) we arrive at
+the following form of eq.\ (\ref{eq:exam1})
+\begin{equation}
+     U(0,-\infty )\ket{\psi_{\alpha}} =
+     U_Q(0,-\infty )\ket{\tilde{c}}\bra{\tilde{c}}
+     U(0,-\infty )\ket{\tilde{c}}
+     {\displaystyle \sum_{\beta=1}^{D}
+     U_{VQ}(0,-\infty )\ket{\psi_{\beta}}\bra{\psi_{\beta}}
+     U_V(0,-\infty )\ket{\psi_{\alpha}}}
+\label{eq:decomp}
+\end{equation}
+The decomposition theorem applies equally well to eq.\ (\ref{eq:psif}).
+
+
+Starting with the decomposition theorem as given by 
+eq.\ (\ref{eq:decomp}), we will here
+detail the derivation of a valence-linked expression
+for the effective interaction appropriate for finite nuclei. 
+
+
+
+Let now the operator ${\cal O}$ correspond to the
+familiar two-body hamiltonian $H=H_0 +H_1$. The unperturbed
+part $H_0$ is
+\begin{equation}
+       H_0(t) ={\displaystyle \sum_{\alpha\beta}\bra{\alpha}(t+u)\ket{\beta}
+		       a_{\alpha}^{\dagger}(t)a_{\beta}(t)},
+    \label{eq:unpert}
+\end{equation}
+with $t$ and $u$ the sp kinetic energy and auxiliary potential, 
+respectively. The eigenfunctions of $H_0$ are the unperturbed
+wave 
+functions given by eq.\ (\ref{eq:twowf}).
+The eigenvalues
+correspond to the sum of the unperturbed sp energies. The interaction
+$H_1$ is given by a two-body term
+\begin{equation}
+H_1(t) = {\displaystyle \frac{1}{2}
+	   \sum_{\alpha\beta\gamma\delta}\bra{\alpha\beta}H_1
+	   \ket{\gamma\delta}a_{\alpha}^{\dagger}(t)
+	   a_{\beta}^{\dagger}(t)
+	   a_{\delta}(t)a_{\gamma}(t)}.
+     \label{eq:inter}
+\end{equation}
+Here we let the indices $\alpha\beta\gamma\delta$ run over both valence-
+and $Q$-space sp states.
+
+The effective interaction we will derive should have the following
+properties:
+\begin{itemize}
+\item The original eigenvalue problem given by eq.\ (\ref{eq:schro})
+ reduces to a model-space eigenvalue problem
+\begin{equation}
+    PH_{\mathrm{eff}}P\Psi_{\alpha} = E_{\alpha} P\Psi_{\alpha}.
+    \label{eq:mspacee1}
+\end{equation}
+ The main purpose is to derive an effective interaction from the 
+  original hamiltonian. Moreover, we wish our final model-space
+  eigenvalue problem to reproduce the empirical shell-model
+  secular equation. More explicitly, we expect that eq.\ (\ref{eq:mspacee1})
+  can be separated into a valence-space part and a core contribution
+\begin{equation}
+    PH_{\mathrm{eff}}'P\Psi_{\alpha} = 
+    \left( E_{\alpha} -E_C\right) P\Psi_{\alpha},
+    \label{eq:mspacee}
+\end{equation}
+  where $E_C$ is the true energy of the core. If one considers a nucleus
+ like $^{18}$O, $E_C$ corresponds then to the energy of $^{16}$O.
+ In the empirical shell model we have
+\begin{equation}
+  PH_{\mathrm{eff}}'P = PH_0'P + PH_1'P,
+\end{equation}
+ where the sp energies of $H_0'$ in the last equation are taken
+ to be thedifference in binding energy between a state in the appropriate nucleus
+ with one nucleon in addition to closed shells and the ground state of
+the corresponding closed-shell nucleus. Following this prescription,
+ $PH_1'P$ should contain two-body interactions only. Note well that 
+ $H_1'$ is different from $H_1$ since the latter includes both one-
+and two-body terms. Similarly, $H_0'$ is normally approximated with the
+experimental sp energies.
+\item
+  The model-space eq.\ (\ref{eq:mspacee}) is supposed to give
+  $D$ solutions, $D$ being the dimension of the model space. We need therefore
+  a scheme which gives us a one-to-one correspondence between $D$ parent
+states $\ket{\rho_{\lambda}}$ in the model space and the true eigenstates 
+$\ket{\Psi_{\lambda}}$. 
+We define the parent states as the projections of the true eigenvectors
+onto the model space. Further, we assume that they are linearly independent
+and expand them in terms of the model-space basis states $\ket{\psi_{\alpha}}$
+\begin{equation}
+    \ket{\rho_{\lambda}}=\sum_{\alpha=1}^{D}
+    C_{\alpha}^{(\lambda)}\ket{\psi_{\alpha}},
+\label{eq:parent}
+\end{equation}
+where 
+\begin{equation}
+{\left\langle\rho_{\lambda} | P\Psi_{\mu} \right\rangle}=0,
+\end{equation}
+for $\lambda\neq\mu =1,2,\dots ,D$. Recall that the unperturbed
+eigenfunctions $\ket{\psi_{\alpha}}$ are the eigenfunctions of $H_0$, with
+corresponding unperturbed eigenvalues $\varepsilon_{\alpha}$.
+The latter equality holds because we
+have assumed that the parent states are linearly independent.
+The parent states should only be regarded as a mathematical tool in order
+to obtain the effective interaction, since the construction of the parent
+states depends on the projection of the true eigenfunctions onto the model
+space. This projection is not available until one knows the effective
+interaction. The final expression for eq. (\ref{eq:mspacee}) should
+therefore not depend on the knowledge of $\ket{\rho_{\lambda}}$, as will
+be demonstrated below.
+Thus we wish to have a one-to-one correspondence between between $D$ parent
+states $\ket{\rho_{\lambda}}$ in the model space and the true eigenstates
+\begin{equation}
+   \lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+   \frac{U(0,t' )\ket{\rho_{\lambda}} }
+   { \bra{\rho_{\lambda}} U(0,t' )\ket{\rho_{\lambda}} }=
+   \frac{\ket{\Psi_{\lambda}}}
+   {\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle},
+\end{equation}
+such that 
+\begin{equation}
+    H\frac{U(0,-\infty )\ket{\rho_{\lambda}} }
+    { \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }=
+    E_{\lambda}\frac{U(0,-\infty )\ket{\rho_{\lambda}} }
+    { \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }.
+    \label{eq:truee}
+\end{equation}
+This equation states that the parent states $\rho_{\lambda}$
+should give the true eigenvalues $E_{\lambda}$. In eq.\ (\ref{eq:truee})
+we have suppressed the complex time limit. Such a one-to-one correspondence
+can only be proven in the complex time approach, as demonstrated in ref.\
+\cite{ko90}\footnote{We will not repeat the proof leading to the above statement.
+For the details, we refer the reader to ref.\ \cite{ko90}, p.\ 35f.}. 
+According to the complex-time approach, the eigenvalues
+reproduced by eq.\ (\ref{eq:mspacee})
+are the lowest $D$ eigenvalues with eigenvectors $\ket{\Psi_{\lambda}}$,
+$\lambda =1,2,\dots ,D$, with non-zero projection $P\ket{\Psi_{\lambda}}$ onto
+the model space. In actual calculations however, we may not obtain the 
+lowest $D$ eigenstates of $H$ with non-zero model-space overlaps since we are
+are not able to compute the effective interaction exactly. In the present
+work we will approximate the effective hamiltonian with certain classes of 
+diagrams, thus only qualitative arguments about e.g.\ the convergence
+property of the effective interaction can be made. 
+\end{itemize}
+
+We wish now to derive an expression for the model-space effective 
+interaction which has the structure of eq.\ (\ref{eq:mspacee}). 
+Employing the definition of the parent state in eq.\ (\ref{eq:parent}),
+we can rewrite eq.\ (\ref{eq:truee}) as
+\begin{equation}
+    {\displaystyle \sum_{\alpha =1}^{D}C_{\alpha}^{(\lambda )}
+    H\frac{U(0,-\infty )\ket{\psi_{\alpha}} }
+    { \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }=
+    \sum_{\beta =1}^{D}C_{\beta}^{(\lambda )}
+    E_{\lambda}\frac{U(0,-\infty )\ket{\psi_{\beta}} }
+    { \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }},
+    \label{eq:truee1}
+\end{equation}
+which, through use of the decomposition theorem in eq.\ (\ref{eq:decomp}) 
+can be written as
+\begin{equation}
+{\displaystyle \sum_{\gamma=1}^{D}b_{\gamma}^{(\lambda )}
+HU_Q(0,-\infty )\ket{\tilde{c}}U_{VQ}(0,-\infty )\ket{\psi_{\gamma}}=
+\sum_{\sigma =1}^{D}b_{\sigma}^{(\lambda )}E_{\lambda}
+U_Q(0,-\infty )\ket{\tilde{c}}U_{VQ}(0,-\infty )\ket{\psi_{\sigma}}},
+\label{eq:truee2}
+\end{equation}
+where we have defined 
+\begin{equation}
+b_{\sigma}^{(\lambda )}=
+{\displaystyle \sum_{\alpha =1}^{D}C_{\alpha}^{(\lambda )}
+\frac{\bra{\psi_{\sigma}}U_V(0,-\infty )\ket{\psi_{\alpha}}
+\bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}}
+{ \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }}.
+\label{eq:bk}
+\end{equation}
+Note that both the terms 
+$\bra{\psi_{\sigma}}U_V(0,-\infty )\ket{\psi_{\alpha}} $ and
+$\bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}$ contain
+divergencies, these are however cancelled by corresponding terms in the
+denominator of eq.\ (\ref{eq:bk}). The quantity $b_{\sigma}$ 
+is in turn proportional
+to the projection of the true eigenstate onto the model space, a property
+which follows by multiplying 
+\begin{equation}
+    \frac{\ket{\Psi_{\lambda}}}
+    {\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle},
+\end{equation}
+with the model-space basis state $\bra{\psi_{\sigma}}$
+\begin{equation}
+    \frac{\left\langle\psi_{\sigma} | \Psi_{\lambda} \right\rangle }
+    {\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle}=
+    {\displaystyle \sum_{\alpha =1}^{D}C_{\alpha}^{(\lambda )}
+    \frac{\bra{\psi_{\sigma}}U_V(0,-\infty )\ket{\psi_{\alpha}} 
+    \bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}}
+    { \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }}=
+    b_{\sigma}^{(\lambda )}.
+    \label{eq:bk1}
+\end{equation}
+Thus, the only dependence of the model-space eigenvalue problem
+on the parent state $\ket{\rho_{\lambda}}$ is through the
+coefficient $b_{\sigma}^{(\lambda )}$, and, as we will 
+demonstrate below, we may solve the model-space eigenvalue
+problem directly for $b_{\sigma}^{(\lambda )}$. 
+For a known $b_{\sigma}^{(\lambda )}$, 
+eq.\ (\ref{eq:bk1}) serves to establish that the parent state 
+really can be constructed as the projection of the true eigenstate. We can
+then construct a model-space eigenstate $\ket{b_{\lambda}}$ as
+\begin{equation}
+     \ket{b_{\lambda}}=\sum_{\alpha =1}^{D}
+     b_{\alpha}^{(\lambda )}\ket{\psi_{\alpha}}=
+     \frac{P\ket{\Psi_{\lambda}}}
+     {\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle}.
+     \label{eq:wfb}
+\end{equation}
+Before we construct the final expression for $H_{\mathrm{eff}}$ we observe that in general
+\begin{equation}
+    {\left\langle b_{\lambda} | b_{\lambda} \right\rangle}\neq 1,
+\end{equation}
+since the projections of the true orthogonal eigenvectors onto the 
+model space, do not in general preserve orthogonality. This deficiency, which
+may lead to a non-hermitian $H_{\mathrm{eff}}$ can be overcome by introducing the 
+biorthogonal wave function
+\begin{equation}
+     \ket{\overline{b}_{\lambda}}=\sum_{\alpha=1}^{D}
+      \overline{b}_{\alpha}^{(\lambda )}
+     \ket{\overline{\psi}_{\alpha}},
+     \label{wfbi}
+\end{equation}
+such that 
+\begin{equation}
+     {\left\langle \overline{b}_{\lambda} | b_{\mu} \right\rangle}=
+     \delta_{\lambda\mu}.
+\end{equation}
+
+With these preliminaries we are now able to write a model-space equation
+for the effective interaction of the form given by eq.\
+(\ref{eq:expect}). 
+Let us first introduce the shorthand notation
+\begin{equation}
+    U_L(t,t')\ket{\psi_{\alpha}}=U_{VQ}(t,t' )U_Q(t,t' )\ket{\psi_{\alpha}}
+\end{equation}
+which can be written as, employing the folding operation \cite{ko90},
+\begin{equation}
+    U_L(t,t')\ket{\psi_{\alpha}}=\ket{\psi_{\alpha}}+
+     \left( {\displaystyle W-W\int\hat{Q} 
+    +W\int\hat{Q}\int\hat{Q} -\dots}\right)\ket{\psi_{\alpha}}
+    =\ket{\psi_{\alpha}} +\tilde{W}(t,t')\ket{\psi_{\alpha}},
+\label{eq:wavefold}
+\end{equation}
+where the $\int$ signs represent the folding operation and the structure
+of the wave function operator $\tilde{W}$ is shown in fig.\ \ref{fig:uvq}.
+Observe also that 
+\begin{equation}
+U_L^{\dagger}(0,-\infty)=U_L(\infty ,0).
+\end{equation}
+The first term in eq.\ (\ref{eq:wavefold}) is just the free propagation 
+of a state. The remaining terms include at least one nuclear interaction
+and always end in a passive state. The folding operation $\int$ 
+means that the states
+connecting the \qbox and the wave operator $W$  must be active states.
+
+Multiplying eq.\ (\ref{eq:truee2}) from the left with 
+$\bra{\psi_{\sigma}}$ we obtain
+\begin{equation}
+     {\displaystyle
+     \sum_{\gamma =1}^{D}b_{\gamma}^{(\lambda )}\bra{\psi_{\sigma}}
+     HU_L(0,-\infty )\ket{\psi_{\gamma}}  } =
+     E_{\lambda}b_{\sigma}^{(\lambda )},
+     \label{eq:truee3}
+\end{equation}
+or
+\begin{equation}
+     PH_{\mathrm{eff}}\ket{P\Psi_{\lambda}}=
+     E_{\lambda}\ket{P\Psi_{\lambda}},
+     \label{eq:truee4}
+\end{equation}
+where
+\begin{equation}
+     H_{\mathrm{eff}}=
+     \bra{\psi_{\sigma}}
+     HU_L(0,-\infty )\ket{\psi_{\gamma}}  
+\label{eq:heff1}
+\end{equation}
+Eqs.\ (\ref{eq:truee3}) and (\ref{eq:truee4}) have indeed the form of a
+model space effective interaction equation. 
+The reader should now note an important point. To obtain
+eq.\ (\ref{eq:truee3}) we multiply from the left with the
+unperturbed wave function $\bra{\psi_{\sigma}}$. This operation gives rise
+to a non-hermitian effective interaction if the expansion
+is truncated at a given order in the interaction, though  for model spaces
+defined within a single shell, this  non-hermiticity is weak. At the 
+end of section 6 we will discuss how to obtain a hermitian effective
+interaction which is hermitian to all orders. If one is able to evaluate
+the effective interaction to all orders, then all perturbative schemes
+should in principle result in the same and hermitian effective interaction.
+Our presentation here follows the traditional Goldstone expansion for
+valence spaces.
+
+The hamiltonian $H$ is written as the sum of an unperturbed part $H_0$ and an
+interaction term $H_1$.
+In order to understand the structure of eq.\
+(\ref{eq:heff1}) and obtain a secular model-space equation which resembles
+that of the empirical shell model, we study first the contributions from
+$H_0$ to eq.\ (\ref{eq:heff1}). This contribution can be written as
+\begin{equation}
+    \bra{\psi_{\sigma}}
+    H_0U_L(0,-\infty )\ket{\psi_{\gamma}}  =
+    \bra{\psi_{\sigma}}H_0\ket{\psi_{\gamma}}
+\end{equation}
+The term on the rhs.\ of the
+latter equation comes through due to the fact that the only $P$-space
+component in the wave operator $U_L$ is the unperturbed
+wave function $\psi$. This term represents therefore nothing but the
+unperturbed energies and is conventionally \cite{ko90}
+split into a valence
+component and a core contribution
+\begin{equation}
+     \bra{\psi_{\sigma}}H_0\ket{\psi_{\gamma}}=\delta_{\sigma\gamma}\left(
+     \varepsilon_V + \varepsilon_C \right),
+\end{equation}
+where $\varepsilon_V$ is the eigenvalue of the valence part while 
+$\varepsilon_C$ is the core contribution. In our example,
+$^{18}$O, $\varepsilon_V$ is the unperturbed energy of the valence
+particles while $\varepsilon_C$ is the unperturbed energy of the
+$^{16}$O core.  Below we will show that the effective interaction can 
+conveniently be expressed in terms of eq.\ (\ref{eq:fd}).
+To obtain this, we decompose the interaction term $H_1$
+into a valence part $H_1(V)$ and 
+into a part $H_1(C)$ which at the time $t=0$ is not linked to any valence
+line. The latter contributions give rise to contributions to the true core
+energy $E_C$. Examples of such terms are exhibited in the upper part
+of fig.\ \ref{fig:heff12}. Typical contributions to $H_1(V)$ are shown
+in the lower part of fig.\ \ref{fig:heff12}. Thus, summarizing, we may write
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(90,90)
+      \put(30,10){\epsfxsize=9cm \epsfbox{heff12.eps}}
+      \end{picture}
+\caption{Examples of terms which contribute to $H_1(C)$,
+upper part, and $H_1(V)$, lower part.}
+\label{fig:heff12}
+\end{figure}
+\begin{equation}
+    \bra{\psi_{\sigma}}
+    HU_L(0,-\infty )\ket{\psi_{\gamma}}  =
+    \delta_{\sigma\gamma}\left(
+    \varepsilon_V + \varepsilon_C \right)+
+    \bra{\psi_{\sigma}}
+    \left(H_1(V)+H_1(C)\right) U_L(0,-\infty )
+    \ket{\psi_{\gamma}} ,
+\end{equation}
+which finally yields 
+\begin{equation}
+     {\displaystyle
+     \sum_{\gamma =1}^{D}b_{\gamma}^{(\lambda )}\bra{\psi_{\sigma}}
+     \left(H_0(V)+H_1(V)\right) U_L(0,-\infty )
+     \ket{\psi_{\sigma}}  } =
+     \left(E_{\lambda}-E_C\right) b_{\sigma}^{(\lambda )},
+     \label{eq:truee5}
+\end{equation}
+with $E_C=\varepsilon_C +H_1(C)$. Clearly, eq.\ (\ref{eq:truee5}) has the 
+form of the empirical shell-model secular eq.\ (\ref{eq:mspacee}). 
+Due to the inclusion of folded diagrams, eq.\ (\ref{eq:truee3}) is 
+in general non-hermitian. 
+A standard approach to obtain a hermitian effective
+interaction, is 
+\begin{equation}
+      \bra{\psi_{\sigma}}H_{\mathrm{eff}}^{(\mathrm{her})}
+      \ket{\psi_{\gamma}}\approx
+      \frac{1}{2}\left( \bra{\psi_{\sigma}}H_{\mathrm{eff}}^{(\mathrm{nher})}
+      \ket{\psi_{\gamma}}+
+      \bra{\psi_{\gamma}}H_{\mathrm{eff}}^{(\mathrm{nher})}
+      \ket{\psi_{\sigma}}\right),
+      \label{eq:bruteforce}
+\end{equation}
+where $(\mathrm{her})$ and $(\mathrm{nher})$
+stand for hermitian and non-hermitian,
+respectively.
+The non-hermiticity is not unphysical, since, if we were able
+to sum all possible terms, this non-hermiticity will not arise, though
+it is possible to obtain an effective interaction which is
+hermitian for every order in the interaction, as demonstrated 
+in section 6.6.
+
+The expression we have obtained from time-dependent perturbation
+theory is not directly applicable for computations. A compact 
+expression like eq.\ (\ref{eq:fd}) is desirable. 
+
+When we include all terms from 
+the wave operator $U_L$ in eq.\ (\ref{eq:wavefold}), we obtain,
+by acting with $H$ on $U_L$,
+\begin{equation}
+   \bra{\psi_{\beta}}H_{\mathrm{eff}}\ket{\psi_{\alpha}}=
+   \bra{\psi_{\beta}}HU_L(t,t')\ket{\psi_{\alpha}},
+\end{equation} 
+which we illustrate in fig.\ \ref{fig:foldedexp}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,60)
+      \put(25,10){\epsfxsize=12cm \epsfbox{foldedexp.eps}}
+      \end{picture}
+      \caption{The structure of the folded-diagram expansion.}
+       \label{fig:foldedexp}
+\end{figure}
+The various $\hat{Q}$-boxes have different meanings. Both
+$\hat{Q}$-boxes are composed of irreducible diagrams in which
+the vertices are linked to at least one valence line and $\hat{Q}'$
+is at least second order in the interaction, while $\hat{Q}$ 
+starts with first order terms\footnote{With the inclusion 
+of the nuclear reaction matrix $G$, the difference between 
+the two $\hat{Q}$-boxes vanish. Further, we have dropped any
+reference to so-called last-moment core-insertions \cite{ko90},
+since this diagrams also vanish when we include the nuclear reaction matrix
+$G$.}. The structure of the effective interaction can then be
+written as
+\begin{equation}
+   H_{\mathrm{eff}}=
+     \hat{Q}   -\hat{Q}'\int\hat{Q} 
+    +\hat{Q}'\int\hat{Q}\int\hat{Q} -\dots
+\end{equation} 
+A contribution to the second term in this equation is shown
+in fig.\ \ref{fig:foldedex5}
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,70)
+      \put(25,10){\epsfxsize=12cm \epsfbox{foldedex5.eps}}
+      \end{picture}
+      \caption{(i) shows an example of  a contribution to $\hat{Q}'\int\hat{Q}$,
+       where (ii) belongs to $\hat{Q}'$ and (iii) belongs to $\hat{Q}$.}
+       \label{fig:foldedex5}
+\end{figure}
+where the time $t_2$ is between $0$ and $t_1$. With a degenerate model space
+we obtain the expression for (i)
+\begin{equation}
+              \frac{1}{8}\tilde{V}_{\alpha\beta ij}
+              \tilde{V}_{ij \gamma\delta}
+               \tilde{V}_{\gamma\delta\mu\nu}
+             \frac{1}{(\omega -
+                   \varepsilon_{i}-\varepsilon_{j})^2},
+\end{equation}
+where we have used the expression for the wave function contribution
+in eq.\ (\ref{eq:wavefex6}). In fact, what we have done is to act on the
+expression in eq.\ (\ref{eq:wavefex6}) with $H_1$. The expression
+for diagram (i) can in turn be written as
+\begin{equation}
+              -\frac{1}{8}\frac{d}{d\omega}
+              \left(\tilde{V}_{\alpha\beta ij}
+              \tilde{V}_{ij \gamma\delta}
+              \frac{1}{\omega -
+              \varepsilon_{i}-\varepsilon_{j}}\right)
+               \tilde{V}_{\gamma\delta\mu\nu}.
+\end{equation}
+This is a rather general result which can be extended to all possible
+folded diagrams. Using the fact that the \qbox can be written as
+\begin{equation}
+  \hat{Q}_{\alpha\beta}=\tilde{V}_{\alpha\beta}+
+          \sum_i\frac{\tilde{V}_{\alpha i}\tilde{V}_{i\beta}}
+                     {\omega -\varepsilon_i}+
+           \sum_{ij}\frac{\tilde{V}_{\alpha i}\tilde{V}_{ij}\tilde{V}_{j\beta}}
+                     {(\omega -\varepsilon_i)(\omega -\varepsilon_j)}+\dots ,
+\end{equation}
+where $ij$ are intermediate states not belonging to the model space, it 
+is easy to show that a term like $-\hat{Q}'\int\hat{Q}$ is equal
+to
+\begin{equation}
+   -\hat{Q}'\int\hat{Q}=-\frac{d\hat{Q}'(\omega)}{d\omega}\hat{Q}(\omega),
+\end{equation}
+and we have assumed that $0>t_2>t_1$ and used generalized time ordering
+so that all diagrams with $0>t_2>t_1$ are included.
+A contribution to the folded diagram expansion like
+$\hat{Q}'\int\hat{Q}\int\hat{Q}$ are of the form as shown
+in fig.\ \ref{fig:foldedex6}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,75)
+      \put(25,10){\epsfxsize=12cm \epsfbox{foldedex6.eps}}
+      \end{picture}
+       \caption{Examples of contributions to
+       $\hat{Q}'\int\hat{Q}\int\hat{Q}$. (i) has the time
+       ordering $0>t_4>t_2>t_1$, $t_2>t_3$ and $t_4>t_5$. For (ii)
+       we have $0>t_2>t_1$, $t_2>t_4>t_3$ and $t_4>t_5$.}
+       \label{fig:foldedex6}
+\end{figure}
+Diagram (i) in fig.\ \ref{fig:foldedex6} reads
+\begin{equation}
+  (i)=\frac{1}{2!}\frac{d^2\hat{Q}'(\omega)}{d\omega^2}
+       \hat{Q}(\omega)\hat{Q}(\omega),
+\end{equation}
+and diagram (ii) in the same figure is
+\begin{equation}
+  (ii)=\frac{d\hat{Q}'(\omega)}{d\omega}\frac{d\hat{Q}(\omega)}{d\omega}
+       \hat{Q}(\omega).
+\end{equation}
+The total contribution from diagrams (i) and (ii) has the following
+time constraints 
+\begin{equation}
+  0>t_2>t_1, \hspace{5mm} 0>t_4>t_3,\hspace{5mm} t_4>t_5,
+  \hspace{5mm} t_2>t_3.
+\end{equation}
+
+These results can be extended to the general case with $n$ folds. In
+an $n$-folded \qbox there are of course $n+1$ $\hat{Q}$-boxes. The 
+general expression for an $n$-folded \qbox is then
+\begin{equation}
+        \hat{Q}   -\hat{Q}'\int\hat{Q} 
+    +\hat{Q}'\int\hat{Q}\int\hat{Q} -\dots=
+    {\displaystyle\sum_{m_1m_2\dots m_n}}
+    \frac{1}{m_1!}\frac{d^{m_1}\hat{Q}'}{d\omega^{m_1}}P
+    \frac{1}{m_2!}\frac{d^{m_2}\hat{Q}}{d\omega^{m_2}}P
+    \dots
+    \frac{1}{m_n!}\frac{d^{m_n}\hat{Q}}{d\omega^{m_n}}P\hat{Q},
+\label{eq:fdfinal}
+\end{equation}
+where we have the constraints
+\[
+  m_1+m_2+\dots m_n=n,
+\]
+\[
+m_1\geq 1,
+\]
+\[
+m_2, m_3, \dots m_n \geq 0,
+\]
+and
+\[
+m_k \leq n-k+1.
+\]
+The last restriction follows from the fact that there are only
+$n-k+1$ $\hat{Q}$-boxes to the right of $k^{\mathrm{th}}$ \qbox.
+Thus, it can at most be differentiated $n-k+1$ times. 
+We have inserted the model-space projection operator in the above
+expression, in order to emphasize that folded diagrams have as intermediate
+states between successive $\hat{Q}$-boxes 
+only model-space states. Therefore, the sum in eq.\ (\ref{eq:fdfinal})
+includes a sum over all model-space states with the same quantum 
+numbers such as isospin and total angular momentum. It is understood
+that the \qbox  and its derivatives are evaluated at the
+same starting energy, which should correspond to the unperturbed 
+energy of the model-space state.     
+It is then straightforward to show that eq.\ (\ref{eq:fdfinal}) 
+can be recast into the form (we exclude $H_0$)
+\begin{equation}
+    V_{\mathrm{eff}}^{(n)}=\hat{Q}+{\displaystyle\sum_{m=1}^{\infty}}
+    \frac{1}{m!}\frac{d^m\hat{Q}'}{d\omega^m}\left\{
+    V_{\mathrm{eff}}^{(n-1)}\right\}^m,
+\end{equation}
+where we have chosen $V_{\mathrm{eff}}^{(0)}=\hat{Q}$. 
+
+This expansion will be studied for finite nuclei in section 6. In the next
+section we discuss the evaluation of the $G$-matrix for both finite
+nuclei and nuclear matter.

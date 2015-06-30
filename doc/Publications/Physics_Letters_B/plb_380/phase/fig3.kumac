@@ -1,0 +1,60 @@
+ macro one        
+ zone 1 1
+ opt NBOX
+ opt zfl1
+ opt tic
+ set gfon -1042
+ set vfon -42
+ set lfon -1042
+ set bwid 3.
+ set fwid 1.
+ set ylab 1.3
+ set xsiz 12.0
+ set ysiz 12.0
+ set vsiz 0.35
+ set asiz 0.40
+ set gsiz 0.40
+ ve/cr xbar(150) r
+ ve/cr rhop(150) r
+ ve/cr rhon(150) r
+ ve/cr xq(150) r
+ ve/cr rhou(150) r
+ ve/cr rhod(150) r
+ ve/cr rhos(150) r
+ ve/cr xel(150) r
+ ve/cr rhoe(150) r
+ do i =1,19
+    vector/read xbar,rhop,rhon 'baryons_star.dat'  
+ enddo
+ do i =1,100
+    vector/read xq,rhou,rhod,rhos 'quarks_star.dat'  
+ enddo
+ do i =1,104
+    vector/read xel,rhoel 'electron_star.dat'  
+ enddo
+ null 0.0 10.7  0.0  0.3
+ igset txfp -20
+ igset chhe 0.30
+ igset txal 10
+ itx 6. 0.165 'u'
+ itx 6. 0.185 'd'
+ itx 6. 0.145 's'
+ itx 9.5 0.01 'p'
+ itx 9.5 0.04 'n'
+ set dmod 1
+ graph 19 xbar rhop c
+ graph 19 xbar rhon c
+ set dmod 2
+ graph 104 xel rhoel c
+ set dmod 3
+ graph 100 xq rhou c
+ graph 100 xq rhod c
+ graph 100 xq rhos c
+ atitle 'Radius "M# km "N#' ' Number density "M#fm^-3!"N#'
+ set dmod 1
+ fortran/file 66 fig3.ps
+ metafile 66 -111
+ pict/plot 
+ close 66
+return
+

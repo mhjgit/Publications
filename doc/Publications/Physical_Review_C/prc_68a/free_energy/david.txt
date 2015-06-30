@@ -1,0 +1,226 @@
+From deandj@ornl.gov Tue Apr 23 17:03:28 2002
+Date: Thu, 18 Apr 2002 12:20:14 -0700
+From: David J. Dean <deandj@ornl.gov>
+To: Morten Hjorth-Jensen <morten.hjorth-jensen@fys.uio.no>
+Subject: Re: FWD: RE: In
+
+Hi Morten,
+
+Did you have a chance to look at the magne paper?
+
+I guess the discussion of what happens to F there are
+some low-lying states below roughly 2 MeV is okay.
+
+David
+
+
+Morten Hjorth-Jensen wrote:
+
+> Ok, Magne's paper first.
+> I'll do my homework.
+> Morten
+>
+> On Mon, 15 Apr 2002, David J. Dean wrote:
+>
+> > Okay.... Let's do Magne's paper first. It's more
+> > interesting.  I previously rewrote the last para on pg
+> > 1 and the first para on pg 2. And I asked about the
+> > DF dependence (have to find the answer to that e-mail...)...
+> >
+> > Here's the previous chatter.... (You have all this, but
+> > just to get it into the same file).... It seems that some of the DF
+> > discussion got into the this last version of the paper.... Now
+> > I have to remember what it all means.
+> >
+> > David
+> >
+> >
+> > Comment from me to you and Magne (11 Feb)
+> > Hi Morten and Magne,
+> >
+> > Please find attached some changes to the paper.
+> > The actual version of the text file that I have includes
+> > no line breaks, so I found it hard to edit. What I've done
+> > is attach some text that you may find useful for the
+> > paper in the file....
+> >
+> > The paragraph I would replace starts with the word
+> > "Previously, Helmholtz...." on the top of page 2, left.
+> > It ends just before eqn 4.
+> >
+> > I would also insert somewhere, the brief discussion
+> > on the higher excitation energy for going to a spherical
+> > system (it's marked INSERT SOMEWHER in the file).
+> >
+> > Here's what I think happens physically, and you've
+> > already stated this in the conclusions. This is sort
+> > of an interpretation of Figs 3 and 4. As you wrote, at very
+> > low excitation energy,  one pair, the first pair, breaks. This
+> > always appears to occur at less than E*=2 MeV (or even
+> > a bit lower, around 1 MeV). That pair is a non-localized
+> > object of the cooper type (since the ground state spin is 0+),
+> > and maybe more than one pair breaks.... (but I suppose one would
+> > have to know spherical spectroscopic factors to really
+> > say more).
+> >
+> > The free-energy barrier is not really discussed in
+> > the manuscript, but maybe it could have an interpretation.
+> > I tried one idea:  Look at the energy where new bands
+> > (not the ground-state band) start appearing. You see:
+> >
+> > 172 Yb, rotational nucleus   -- 1.042 MeV  beta-band
+> > 166 Er, rotational nucleus    -- 0.785 MeV gamma-band
+> > 162 Dy, rotational nucleus   -- 0.888 MeV gamma-band
+> > 148 Sm, pair-vibrator?         -- 1.161 MeV octupole band
+> >
+> > Now, look at the peak hights in fig3. A crude ruler estimate
+> > makes it look like those numbers and the \Delta F might
+> > correspond (to within a multiplicative factor)
+> > (but here more data may eventually be needed to decrease the error
+> > bars).
+> > I don't know whether this makes total sense, but it is
+> > something that should be visible. After all, the moment
+> > of inertia should change when one has a band crossing,
+> > and the density-of-states will increase significantly too.
+> >
+> > I need some experimental help in the next thing I'm going
+> > to posit:  172Yb, 166Er, and 162Dy all exhibit highly collective
+> > rotational ground-state bands.  So, the pair-breaking picture
+> > can be involked to explain the 2+,4+,... energies of that band.
+> > When one reaches e.g, 1.042 MeV in 172Yb, the nucleus
+> > exists in two different internal configurations (the gs band
+> > and the beta-band  begin to coincide in energy).  At that point, it
+> > would
+> > then become very difficult to see any further structure in F, and
+> > indeed we see none.
+> >
+> > So, at very low excitation energies, when
+> > you experimentally probe only the gs band, you are picking up
+> > nuclear states that have a basic underlying configuration that
+> > is the same to within pair-breaking (the mechanism that allows
+> > the 2+,4+... in the rotational band), at some excitation energy,
+> > the nuclear configuration may be different. I think that may
+> > contribute to the free energy bump.  At higher excitation energies,
+> > I think we are seeing 'continuous melting' -- a transition from
+> > an ordered to a disordered system, but no phase transitions.
+> >
+> > Figure 4 tells me what the Belic paper indicated, as
+> > did your previous works. Odd nuclei and even-even nuclei
+> > are different: no pair gap exists in odd-A systems.
+> >
+> > Those are my thoughts today.
+> >
+> > David
+> >
+> >
+> >
+> >
+> >
+> > Magne Guttormsen wrote: (reply of Magne -- 13 Feb)
+> >
+> > > Dear David,
+> > > thank you for the response to the F(E) paper. I think the replaced
+> > > paragraph you suggests makes things much more clear concerning the
+> > > links to Lee and Kosterlitz.
+> > >
+> > > The free barrier DeltaF is interesting. If there were no vibrational
+> > > bands in the 0-2 MeV region, we would approximatelly see this (the
+> > > drawings looks OK with ²courier², but with e.g. ²times² the stars and
+> > > minus use different place...) :
+> > >
+> > > I  ln(rho)
+> > > I
+> > > I                                                  *C
+> > > I                                         *
+> > > I                     B         *
+> > > I                     *
+> > > I                     *
+> > > I                     *
+> > > I                     *
+> > > A**********************-------------------------------------->E(MeV)
+> > > 0                    2                               8
+> > >
+> > > Here, we see the adrupt increase at 2Delta=2MeV with a temperature
+> > > from A -> B which is less than in the continues melting region B->C.
+> > > This is what we see, namely T(A,B) < T(B,C). The corresponding F-plot
+> > > with a Tc=T(A,B) will look like (not scaled correctly):
+> > >
+> > > I  F
+> > > I
+> > > I                   B
+> > > I                   *
+> > > I              *    *                                  *C
+> > > I         *         *                    *
+> > > I    *              *      *
+> > > *------------------D*E--------------------------------------->E(MeV)
+> > >   0                  2                                 8
+> > >
+> > > Here, DeltaF is calculated from the points just left (D) and right (E) for B.
+> > > F(D)-F(E)=E(D)-T(A,B)xS(D) ­ [E(E)-T(A,B)xS(E)]
+> > > E(D)=E(E)=2 MeV, S(D)=0 and S(E)=2x2 (2q.p. gives 2 x singel particle
+> > > entropy, see Fig.5) T(A,B)=0.45 MeV
+> > > DeltaF = 2-0.45x0-[2-0.45x4)=1.8 MeV.
+> > >
+> > > The fact that DeltaF peaks experimentally at 1 MeV, and is only 30 %
+> > > of the maximum value is due to vibrational bands starting at around 1
+> > > MeV, carrying significant entropy. However, the rise of F from o to 1
+> > > MeV should point at 1.8 MeV et E=2 MeV, like this:
+> > >
+> > > I  F
+> > > I
+> > > I
+> > > I
+> > > I                                                      *C
+> > > I         *  *                          *
+> > > I    *          *          *
+> > > *------------------D*E--------------------------------------->E(MeV)
+> > >   0                  2                                 8
+> > >
+> > > that I indeed feel the data supports (or at least not contradicts).
+> > >
+> > > I am sorry I did not understand the things with 0+, 2+, 4+ ground
+> > > band. I look on these states as still coupled Cooper-pairs, however,
+> > > with a collective rotation of the whole nucleus (Copenhagen school).
+> > > The energyspacings are so much smaller than 2*\Delta that no breaking
+> > > take place here, but I think I have misundersood something.
+> > >
+> > > Also, backbending is hardly taking place in our case, because our
+> > > spin window is 0-6 hbar, and is buildt of singleparticle j's and not
+> > > much rotation. We pick up high-j neutrons below the Fermi surface
+> > > prior to thermalization and emission of gamma-rays.
+> > >
+> > > Best regards
+> > > Magne
+> > > --
+> > > +------------------------------------------------------------+
+> > > |                Magne Guttormsen                            |
+> > > |  OO   CC  L    Oslo Cyclotron Laboratory (OCL)             |
+> > > | O  O C    L    Department of Physics, University of Oslo   |
+> > > | O  O C    L    P.O.Box 1048 Blindern, N-0316 Oslo, NORWAY  |
+> > > |  OO   CC  LLL  Tel:+47-22-856460/855076  Fax:+47-22-856422 |
+> > > |                E-mail: magne.guttormsen@fys.uio.no         |
+> > > |                WWW: http://lynx.uio.no/magne/index.html    |
+> > > +------------------------------------------------------------+
+> >
+> > --
+> > David J. Dean                    Phone : 865-576-5229
+> > Oak Ridge National Laboratory    Cell  : 865-567-2484
+> > Physics Division                 Fax   : 865-574-4745
+> > P.O. Box 2008                    Sec   : 865-574-4576
+> > Bldg. 6011, M.S. 6373            e-mail: deandj@ornl.gov
+> > Oak Ridge, TN 37831-6373
+> >
+> >
+> >
+> >
+
+--
+David J. Dean                    Phone : 865-576-5229
+Oak Ridge National Laboratory    Cell  : 865-567-2484
+Physics Division                 Fax   : 865-574-4745
+P.O. Box 2008                    Sec   : 865-574-4576
+Bldg. 6011, M.S. 6373            e-mail: deandj@ornl.gov
+Oak Ridge, TN 37831-6373
+
+
+

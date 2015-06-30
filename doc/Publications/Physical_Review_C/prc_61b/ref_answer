@@ -1,0 +1,188 @@
+Dear Editors,
+
+please find enclosed our reply to the referee for ms 
+------
+CFR714 
+Shell model studies of the proton drip line nucleus $"" sup 106 _Sb 
+Engeland,T./Hjorth-Jensen,M./Osnes,E./
+------
+
+We cannot agree 
+with several of the arguments put forward 
+by the referee about both the 
+theoretical and experimental topics discussed by us in the ms.
+The discussion by the referee about the agreement with 
+experiment misses the point totally and shows, in our
+opinion, a lack of knowledge concerning state of the 
+art shell model calculations and applications 
+of effective interactions. Especially we would like to point to
+the concept of effective charges, where we feel that the 
+referee does not fully understand what an effective charge
+actually is.
+
+Finally, we will insist on this paper being considered
+as a rapid communication. The reason being that
+our results follow up recent experiments on the nucleus
+addressed. In addition, our results are far better than the
+theoretical ones which accompany the experimental
+paper, and show that the methods we have applied can be
+used to describe systems where one has
+weakly bound particles. 
+
+All these points are discussed in our answer to the referee.
+We feel however, in case of insistince, that a new referee
+may be more appropriate.
+In this case we would like to propose Prof. Hubert Grawe at the GSI,
+Darmstadt, Germany. He was one of the co-authors of the experimental paper
+which we address.
+
+Yours sincerely,
+Morten Hjorth-Jensen, on behalf of all auhtors 
+
+
+******   answer to the referee
+
+
+We thank the referee for his/her comments about our manuscript
+on Sb 106.  We have made some revisions to our paper,
+but in general 
+we disagree strongly with several of the conclusions raised 
+by the referee and argue that our ms indeed should be considered as
+a rapid communication.  
+Our arguments (following the referee's comments are as follows
+
+-------------------- referee text
+        1) The model and some results are already published
+        in several papers (refs. (8), (9), (10), (15), (16)). In
+        this respect, there is no urgent materials in the
+        discussions of the model and effective interactions.
+        However I may agree with the publication if the article
+        contains some remarkable results in comparison with
+        experiments. Unfortunately it is not the case in this
+        article. Calculated results of energy spectra of
+        $^{106}$Sb are model space dependent and have not so much
+        predicting power. 
+-------------------
+answer to 1) :  
+        The reason why we gave priority to the paper as a rapid
+        communication is that it follows up a recent experiment
+        in nuclei close to the proton drip line. This is an area
+        of great experimental and theoretical interest. Furthermore,
+        since these are weakly bound systems, it is not obvious that
+        shell model techniques could be applied with the same success
+        as in other mass regions. The fact that they do, and that 
+        the agreement with the data are rather good, merits in our
+        opinion publication as a rapid follow up of the experiment. 
+        In addition, contrary to what the referee says, 
+        we would actually infer, compared with e.g. the 
+        theoretical results reported in Ref. [7] of the ms, that 
+        the theoretical results are quite good. The referee
+        could e.g., view Fig 2 of that reference. If one considers
+        that this is a weakly bound system with a proton close
+        to the drip line, then to  obtain an agreement within some few keV,
+        is in itself an amazing support to the many-body scheme 
+        employed in the manuscript. In addition, this is an odd-odd
+        system, with many states under 1 MeV of excitation energy.
+        Such systems are  typically more difficult  to describe
+        than e.g., even-even ones. 
+         
+
+--------------------   referee text
+        2) A new part of the study is the calculations of
+        effective charges based on perturbative many-body methods.
+        The authors discuss their results in comparison with
+        previous theoretical studies and also with data of
+        B(E2;4$^+ \rightarrow$ 2$^+ $ ) in $^{106}$Sb . They found
+        that their results are substantially different from the
+        previous ones, and also from experimental data. They
+        should clarify more about the physics behind these
+        differences including other data in A=100 region.
+---------------------
+answer to 2)  :
+First of all, effective charges based on perturbative
+many-body methods have not been presented for this mass region,
+and as such are of interest themselves.
+However, this is not our main point. 
+
+We would first like to stress that THERE IS NO SUCH THING AS AN 
+EXPERIMENTAL EFFECTIVE CHARGE. Effective charges are mainly a theoretical
+concept and reflect in shell-model calculations the chosen
+model space. If a shell-model calculation results in a B(E2) 
+value  which differs from the EXPERIMENTAL B(E2) one ( which
+does not have anything to do with an effective charge) when 
+employing a given effective charge, several THEORETICAL improvements
+may be needed. Reasons for  disagreement between theory 
+and experiment could be 
+
+a) the chosen model space is not representative, need more degrees
+   of freedom in the shell model calc. 
+b) the calculational technique for  effective charges 
+   needs to be improved, one could e.g., use
+   more realistic single-particle wave functions, better renormalization
+   techniques etc etc
+c) a combination of both a) and b)
+
+ 
+The point is that when one compares a theoretical calculation of 
+B(E2) values with experiment, one can always fix an effective  charge
+which yields an agreement with experiment. However, such a result 
+will differ from model space to model space, i.e. from theoretical
+calculation to theoretical calculation. 
+To give an example, in order to reproduce 
+the B(E2;6$^+ \rightarrow$ 4$^+ $ ) transition in
+Sn 104 when one employs a model space like ours (sdgh11/2), one needs 
+effective charges for neutrons of the order of 2 or more in order
+to reproduce experiment. However, as shown recently by
+Caurier and Nowacki (see ref [25] in the revised version of the ms), 
+if one increases the model space to include
+single-particle states below Sn 100 as closed shell core, one is able
+to reproduce the experimental B(E2) value with effective 
+charges close to the theoretically calculated ones in our manuscript, i.e.
+between 0.5 and 0.7. 
+Thus, the proposed huge effective charge
+of 2 or more for that specific transition has its origin in
+a bad approximation to the shell model space. Similar cases can be found
+in O 18 if one uses just the sd-shell as shell-model space, or 
+ca 42 in the case of the fp-shell and so forth.
+A disagrement between experimental B(E2) values and theoretical
+calculations is normally an indication of neglected degrees
+of freedom in the shell model calculation. 
+
+This means that the different values for effective charges which figure
+in the literature have to be gauged with the fact that different
+model spaces 
+have been employed in the THEORETICAL shell model calculation.
+
+The aim of fig 2 was to give a window on possible values
+for effective charges based on the experimental values for the 
+measured B(E2) transition. The message is that there is no
+need for the large effective charges proposed in Ref. [7]
+and that the extracted  effective charges do not differ
+dramatically from those calculated from a one-body operator.
+This also implies that the shell model space adopted
+in the present calculation is a reasonable one.
+Fig 2 shows that  effective charges can be accomodated within what are
+more or less accepted values. 
+
+We have added some statements concerning effective charges
+in the revised manuscript.  
+
+--------------------  referee text
+        3) They claim that the calculated results show a
+        good agreement with experiment. I do not see any good
+        agreement neither in energy spectra in Fig.1 nor the
+        effective charges.
+--------------------
+answer : in the light of especially points 1 and  2, we mean that this 
+conclusion is not correct. There is for instance no such thing as an 
+experimental effective charge. Fig 2 gives a window on possible 
+effective charge calculated within a given model space, and these
+charges do not deviate dramatically from the one-body ones calculated
+used perturbative many-body methods. 
+
+
+
+
+
+
+

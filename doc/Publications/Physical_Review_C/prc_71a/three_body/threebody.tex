@@ -1,0 +1,280 @@
+\documentstyle[aps,preprint]{revtex}
+
+\draft
+
+\begin{document}
+
+\title{Effective three-body interactions and the nuclear shell model}
+
+\author{T.\ Engeland, M.\ Hjorth-Jensen, and E.\ Osnes}
+ 
+\address{Department of Physics, University of Oslo, N-0316 Oslo, Norway}
+
+\maketitle
+
+\begin{abstract}
+
+We perform large-scale shell-model calculations
+with realistic two-body  and three-body effective interactions
+for Sn isotopes from $A=100$ to $A=132$.
+The effective interactions are derived from recent
+nucleon-nucleon potentials. 
+
+\end{abstract}
+
+
+
+
+\section{Introduction}\label{sec:sec1}
+
+
+Traditional shell-model studies 
+have recently received a kind of renewed
+interest through large-scale shell model calculations
+in both the $0f1p$ shell and the $0g1d2s$ shells with
+the inclusion of the $0h_{11/2}$ intruder state as well. 
+It is now fully possible to perform large-scale 
+shell-model investigations
+and study the excitation spectra 
+for systems with 
+some 10 million basis states. With recent advances in
+Monte Carlo methods one is also 
+able to enlarge the dimensionality
+of the systems under study considerably,
+and important information on e.g., ground state properties
+has thereby been obtained.
+
+An important feature of such large scale calculations
+is that it allows one to probe the underlying many-body
+physics in a hitherto unprecedented way.
+The crucial starting point in all such shell-model 
+calculations is
+the derivation of an effective interaction, be it
+either an approach based on a microscopic theory
+starting from the free $NN$ interaction or a more 
+phenomenologically determined interaction. 
+In shell-model studies of e.g., the Sn isotopes, one may have
+up to 31 valence particles or holes interacting via e.g.,
+an effective two-body interaction. The results of such 
+calculations can therefore yield, when compared with 
+the availiable body of experimental data, critical
+inputs to the underlying theory of the effective interaction.
+Until very recently, realistic shell-model effective interactions have
+mainly been applied to nuclei with two or a few valence particles beyond
+closed shells, such as the oxygen and calcium isotopes. Thus, by going to the
+tin isotopes, in which the major neutron shell between neutron numbers 50 and
+82 is being filled beyond the $^{100}$Sn closed shell core, we have the opportunity
+of testing the potential of large-scale 
+shell-model calculations as well as the realiability of
+realistic effective interactions in systems with many valence particles. It should
+be noted that in many current shell-model calculations the effective interaction
+is frequently either parametrized or adjusted in order to optimize the fit to the
+data. As a matter of principle we shall refrain from making any such
+adjustments and stick to the interaction obtained by a 
+rigorous calculation consistent with the many-body scheme chosen. 
+Only then may one 
+be able to assess the quality and reliability of the interaction 
+obtained and the possible
+needs for improvement. 
+It is our firm belief that 
+one of the important  aims  
+behind many-body based derivations of effective
+interactions for the shell model is namely
+to provide a link between e.g., the free
+nucleon-nucleon interaction and properties of
+finite nuclei. 
+Clearly, although the nucleon-nucleon interaction is of short
+but finite range, with typical interparticle
+distances of the order of $1\sim 2$ fm, there are  
+indications from both studies of few-body systems such as the triton and
+infinite nuclear matter, that at least three-body
+interactions, both real and effective ones, may be of
+importance. 
+Thus, with many valence nucleons present, such
+large-scale shell-model calculations may
+tell us how well e.g., an effective interaction
+which only includes two-body terms does in
+reproducing properties such as excitation spectra and
+binding energies. 
+
+The aim of this work is therefore to present 
+results of shell model calculations 
+for the Sn isotopes from $^{100}$Sn to $^{132}$Sn
+with a special focus on the role of effective 
+three-body interactions. 
+To motivate the study of three-body effective interactions and 
+set the scene for the present investigation, we mention 
+two facets of recent works on
+the heavy Sn isotopes, see Refs.\ \cite{tin98a,tin98b}. 
+In general, 
+excitation spectra for the chain of both odd and
+even isotopes from  
+$^{116}$Sn to $^{130}$Sn exhibit an excellent agreement
+with the data, see e.g., Ref.\ \cite{tin98a}.
+The  results reported in Refs.\ \cite{tin98a,tin98b} were 
+based on shell-model calculations starting with
+a two-body effective interaction determined from the 
+recent charge dependent $NN$ potential of Machleidt
+and co-workers \cite{cdbonn96}. This $NN$-interaction
+was renormalized for the given nuclear medium, using $^{132}$Sn as closed
+shell core, through
+the introduction of the so-called reaction matrix $G$,
+which corresponds to solving the Lippmann-Schwinger
+equation for a finite nucleus. The $G$-matrix formed then
+the basis for a perturbative calculation of more complicated
+Feynman-Goldstone diagrams (see the discussion in
+the next section). 
+However, if one studies  \ref{tab:sec1table1},
+one sees that the binding energy relative to $^{131}$Sn  
+is clearly at askance with the data. 
+The binding energy is defined as
+\begin{equation}
+      BE[^{132 - n}Sn)] = BE[^{132 - n}Sn] - BE[^{132}Sn] 
+      - n  \left (BE[^{131}Sn] -  BE([^{132}Sn] \right ).
+\end{equation}
+Experiment indicates a minimum around $^{124}$Sn-$^{122}$Sn and consequently
+a shell closure around $^{116}$Sn whereas theoretical 
+binding energies increase linearly all the way 
+down to $^{116}$Sn. 
+
+The above is just an example of one of the problems which beset the theory
+of effective interactions for the shell model. In this case, as also
+pointed out by Zuker and co-workers \cite{andres94,andres96,andres98},
+one is not able to obtain simultaneously a good reproduction
+of both the excitation spectra and the binding energy. Similar problems
+have also been discussed in connection with large scale shell-model
+calculations of $1f0p$ shell nuclei. To give an example, effective
+interactions derived from two-body $NN$ interactions which fit 
+nucleon-nucleon scattering data, are not able to reproduce the 
+well-known shell clousure in $^{48}$Ca or the excitation spectra 
+of $^{47}$Ca and $^{49}$Ca, see e.g., the discussion in Ref.\ \cite{hko95}.
+
+In this work we wish to address the discrepancy between theory and experiment
+shown in Table \ref{tab:sec1table1} by including effective three-body
+forces in our shell-model calculations. The reason for this follows
+from the observation that the introduction of a global monopole correction
+of the form $Wn(n-1)/2$, with $n$ being the number of valence particles and
+$W$ a quantity which is related to the energy centroids, 
+can, when added to our theoretical binding energy, partly cure the 
+discrepancy seen in Table \ref{tab:sec1table1}. Three-body forces
+typically yield repulsive corrections which scale as $n(n-1)$.  
+In Table \ref{tab:sec1table1} we adjusted the term $W$ by simply requiring
+it to equal the difference in binding energy between the calculated and
+experimental values for $^{130}$Sn. This resulted in $W=0.15$ MeV.
+Adding such a global correction to even nuclei shown in Table  
+\ref{tab:sec1table1} results in the column labelled Mod.\ shell model.
+Clearly this improves the theoretical results in the correct direction
+and such a global modification of the matrix elements has no
+effect on the excitation spectra. 
+
+These observations form thus the starting point for our investigation
+of three-body effective interactions. 
+More explicitely, we aim at seeing whether three-body interactions
+may yield a more microscopic understanding of the above problem. 
+The theory for such effective interactions is thus revisited  
+in the next section.
+There we also show how one can obtain a fully valence-linked 
+three body interaction when folded diagrams are included. In addition,
+we show how one can obtain valence-space effective interactions
+through the solution of the Bethe-Faddev equations.
+Shell-model results with these two-body and three-body interactions
+for the Sn isotopes are then presented in Sec.\ \ref{sec:sec3}.
+Our concluding remarks are given in Sec.\ \ref{sec:sec4}. 
+
+\section{Effective interactions and the shell model}\label{sec:sec2}
+
+In this section we discuss the theory of effective interactions
+for open-shell systems. We will especially pay attention
+to the cancellation of so-called unlinked diagrams which arise
+due to the summation of
+folded diagrams. In Sec.\ \ref{subsec:sec21} we revisit time-dependent
+perturbation and its connection to a valence-particle effective
+interaction containing linked Feynman-Goldstone diagrams only.
+The cancellation of unlinked diagrams is demonstrated through the 
+application of the decomposition theorem and applied to the 
+case of effective interactions based on two-body interactions 
+only.
+In  Sec.\ \ref{subsec:sec22} we discuss the evaluation of 
+effective non-folded three-body diagrams 
+through the solution of the Bethe-Faddeev equations 
+and present how to 
+obtain a folded-diagram expansion which contains only linked
+diagrams. 
+
+
+\subsection{Effective interactions for valence nucleon systems}
+\label{subsec:sec21}
+
+In this work we will primarily be interested in valence-linked
+perturbative expansions for selected operators. Such expansions
+can be conveniently expressed within the framework of time-dependent
+perturbation theory. In this section we will review some of the
+properties of the time-development operator $U(t,t')$ and its
+connection to the decomposition theorem, which yields a
+valence-linked expression for the actual operator. However, some
+of the divergencies which occur can only be handled by the
+introduction of the so-called folded diagrams, to be
+discussed below. The folded diagrams
+arise due to the removal of the dependence on the exact
+energy of the perturbative expansion. This is the price one has
+to pay when introducing the Rayleigh-Schr\"{o}dinger expansion.
+In this section we derive valence-linked expressions for 
+the effective interaction.
+
+\subsection{Inclusion of three-body interactions}\label{subsec:sec22}
+
+\section{Results and discussion}\label{sec:sec3}
+
+
+\section{Conclusions}\label{sec:sec4}
+
+
+\begin{thebibliography}{99}
+
+\bibitem{tin98a} A.\ Holt, T.\ Engeland, M.\ Hjorth-Jensen, and E.\ Osnes,
+Nucl.\ Phys.\ {\bf A634}, 41 (1998).
+\bibitem{tin98b} T.\ Engeland, M.\ Hjorth-Jensen, A.\ Holt, and E.\ Osnes,
+in proceedings of ``Highlights of modern nuclear structure'', Ed.\ A.\ Covello,
+(World Sientific, Singapore, 1999), in press.
+\bibitem{cdbonn96}  R.\ Machleidt, F.\ Sammarruca, and Y.\ Song,
+Phys.\ Rev.\ C {\bf 53}, 1483 (1996).
+
+\end{thebibliography}
+
+%    table 1, section 1
+\begin{table}[htbp]
+     \caption{Binding energies for even Sn isotopes.}
+     \label{tab:sec1table1}
+     \begin{center}
+     \begin{tabular}{lrrrrrrrr}
+      &$^{130}$Sn &$^{128}$Sn &$^{126}$Sn &$^{124}$Sn &$^{122}$Sn
+                              &$^{120}$Sn &$^{118}$Sn &$^{116}$Sn\\\hline
+      Experiment       &-2.09&-3.64&-4.79&-5.47& -5.64& -5.26& -4.28& -2.61\\
+      Shell Model      &-2.24&-4.60&-6.99&-9.39&-11.77&-14.11&-16.39&-18.58\\
+      Mod.\ Shell Model &-2.09&-3.72&-4.81&-5.32& -5.22& -4.51& -3.15& -1.12\\
+      \end{tabular}
+     \end{center}
+\end{table}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,298 @@
+	
+
+\documentclass[12pt]{iopart}
+
+\begin{document}
+\title{Nuclear Forces and the Quantum Many-Body Problem} 
+
+
+\author{B.~R.~Barrett}
+\address{Department of Physics, University of Arizona, Tucson, Arizona 85721, USA}
+
+
+\author{D.~J.~Dean}
+\address{Physics Division, Oak Ridge National Laboratory,
+P.O. Box 2008, Oak Ridge, TN 37831-6373, USA\\
+Center of Mathematics for Applications, 
+University of Oslo,
+N-0316 Oslo, Norway}
+
+
+\author{M~Hjorth-Jensen}
+\address{Department of Physics and Center of Mathematics for Applications, 
+University of Oslo,
+N-0316 Oslo, Norway\\
+PH Division, CERN, CH-1211 Geneva 23, Switzerland\\
+Department of Physics and Astronomy, Michigan State University,
+East Lansing, MI 48824, USA}
+
+
+\author{J.~P.~Vary}
+\address{Department of Physics and Astronomy, Iowa State University, Ames, Iowa 50011, USA}
+
+
+\maketitle
+ 
+\section{Challenges for the Nuclear Many-Body Problem} 
+
+Physical properties, such as masses and life-times,
+of very short-lived, and hence very rare, nuclei are important
+ingredients that determine element production mechanisms in
+the universe. Given that present and proposed nuclear structure research facilities
+will open significant
+territory into regions of medium-mass and heavier nuclei,
+it becomes important to investigate theoretical methods that will allow
+for a description of medium-mass systems that are involved in such
+element production. Such systems pose significant
+challenges to existing nuclear structure models, especially since many of
+these nuclei will be unstable and short-lived. How to deal with weakly
+bound systems and coupling to resonant states is an unsettled problem in
+nuclear spectroscopy. Similarly,  a description of  larger nuclei using a
+fully microscopic first principles ("ab initio") approach, starting from the
+fundamental laws of quantum theory is another unresolved problem
+in nuclear physics that awaits a satisfactory, computationally tractable,
+solution.
+
+The aim of this meeting and its pertinent Institute of Nuclear 
+Theory workshop for the fall of 2004, is to shed light  
+on such challenges and particularly 
+on several open questions facing the 
+nuclear few- and many-body problems. In particular, in order to spark off possible 
+new directions of research, we have singled out five major topics we feel encompass
+several of the open problems in nuclear many-body theory. The program of this meeting 
+reflects hopefully these choices, listed in the following subsection.
+
+\subsection{From Free Interactions to Few- and Many-Body Systems}  
+
+The connection between the so-called free two-body and three-body interactions
+derived from effective field theory and their applications in few and many-body systems.
+This is still an open and unsettled problem in nuclear physics and is crucial to the 
+dialectics of all ``ab initio'' methods, which start 
+typically with a two-body interaction and eventual three-body interaction 
+fitted to reproduce low-energy scattering data and properties
+of selected light nuclei. The contributions from Machleidt, van Kolck, Hammer,
+Nogga and Phillips deal with many of these issues.  
+How a two-body and/or three-body interaction evolves in a many-body medium is an 
+open problem in nuclear physics since e.g., a two-body interaction fitted to reproduce
+phase shifts introduces an off-shell dependence in the medium.
+
+\subsection{'Ab Initio' Many-Body Methods}
+
+Identify methods which can complement the shell model for heavier systems and
+preserve an 'ab initio' philosophy. Presently, the Green's function Monte Carlo
+\cite{bobsteve1,bobsteve2} and the No-Core shell-model \cite{bruce1,bruce2,bruce3}
+approaches offer very precise few and many-body calculations of systems with 
+$A\le 16$.   The Coupled Cluster approaches, inspired from the success in 
+quantum chemistry, have shown a potential for performing similar calculations
+for nuclei with $A\le 16$ and $A> 16$, see for example Refs.~\cite{cc1,cc2}.
+Other methods based on Green's function approaches and 
+Block-Horowitz are interesting candidates for 'ab initio' studies, see the 
+contributions of Barbieri \cite{carlo} and Luu \cite{tom}.
+
+\subsection{Methods for Unstable Systems} 
+
+Identify and investigate methods that will extend to unstable systems, where
+especially we face the problem of an increasing single-particle level density and 
+likely resonant states.
+Presently, there are several attempts at  combining shell-model 
+technologies with  studies of weakly bound systems. One of the promising approaches is 
+the so-called Gamow shell model, see for example Refs.~\cite{witek,roberto,hagen}, 
+based on 
+complex scaling techniques developed in quantum chemistry and atomic physics 
+\cite{nimrod}.
+
+
+\subsection{Shell Model and Effective Interactions} 
+
+For heavier systems, one will most likely need to 
+complement the shell model with methods which allow for precise derivations of effective
+interactions including both two-body and three-body effective interactions.
+Presently, the  shell model with effective two-body interactions based on e.g., 
+perturbative many-body methods,
+offers a very good description of the excited spectra of several nuclei, see for example
+the cntribution of Brown in this volume.
+However, this approach fails in reproducing 
+binding energies, single-particle energies and basically  
+all known shell closures. Recent Green's function Monte Carlo and No-Core shell-model 
+calculations demonstrate the need of three-body interactions.  But for heavier nuclei
+such calculations are not feasible due to the large dimensionalities involved.
+One needs therefore 
+in parallel more phenomenoligically based effective interactions. These 
+play a crucial role
+since, being fitted to reproduce the available body of data, 
+they may be of great help in clarifying
+which matrix elements are of importance for shell closures and other features of 
+excited states.   The talks by Brown and Otsuka demonstrate the latter, 
+see also Ref.~\cite{taka}. 
+Another interesting topic is how to match the above 'ab initio' methods with extensions
+of density functional theories, as discussed by Furnstahl and Bender.
+
+\subsection{Computational and Algorithmic Issues}
+
+Single out important computational and algorithmic developements. The 
+factorization scheme developed by Papenbrock and co-workers is one such 
+candidate
+which offers a reduction by more than an order of magnitude in dimensionality 
+for shell-model studies. Similarly, the Coupled Cluster approaches
+allow one to study ground- and excited-state properties of nuclei
+with dimensionalities beyond the capability of present shell-model
+approaches, with a much smaller numerical effort when compared to
+the more traditional shell-model methods aimed at similar accuracies.
+Furthermore, we feel it is important to stress recent advances in computational
+science.
+Parallel technology offers for example a totally new paradigm
+for many-body theories. It is imperative therefore to develop methods which are capable
+of utilizing these advances fully.  
+
+
+
+In the next section we wish to link the above with present and future challenges
+from experiments, in order to emphasize our requirements to many-body theories
+in nuclear physics.
+
+\section{Experimental Challenges and Many-Body Methods} 
+
+Twelve years ago two of us (BRB and JVP) organized a similar three-month workshop
+at the INT in Seattle. Back in 1992 we were not in a situation where one could perform
+almost exact calculations of nuclear systems.
+At the time writing, we feel that nuclear many-body theory is now in the position
+where precise and benchmark calculations can be performed with a given
+two-body and/or three-body Hamiltonian. 
+For mass $A\le 16$, the Green's function Monte Carlo
+approach, the No-Core shell model and recently the Coupled Cluster approaches,
+represent in principle 'ab initio' methods. This offers wide perspectives for studies
+of various Hamiltonians used in  solving the non-relativistic Schr\"odinger
+equation. An eventual disagreement with data can then be retraced to our Hamiltonian.
+The calculations with three-body interactions of Refs.~\cite{bobsteve1,erichpetr}
+clearly demonstrate this point. Unless a three-body interaction is included, one 
+cannot  reproduce the binding energy or some excited states for nuclei with 
+$A\le 16$. 
+
+
+For stable nuclei, important for the $s$-process and Big Bang nucleosynthesis,
+we have typically proton and
+neutron separation energies $S_p$ and $S_n$ of the  order of $S_p\sim S_n sim 8$ MeV,
+and the excited states are dominated by an interplay between collective and 
+single-particle  degrees of freedom. 
+However, for stable nuclei with $A > 16$, we are not able to describe
+properties such as shell closures or the binding energy based on a microscopic appproach,
+unless we employ a fitted two-body interaction in shell-model studies. 
+Well-known cases are the shell-closures in $^{48}$Ca or the chain of oxygen isotopes,
+see Brown's contribution in this volume.
+We may however be able
+to reproduce several excited states of stable nuclei starting from a perturbative 
+many-body approach, see for example Refs.~\cite{mhj95,dean2004}. 
+It is on the other hand difficult to extend such approaches in 
+order to include three-body interactions or go 
+beyond a certain order in perturbation theory. 
+This poses serious challenges to nuclear many-body theories when we move to proton-rich
+or neutron rich nuclei. Such nuclei have been produced recently 
+or will be studied in the near future. As an example, neutron-rich nuclei, with 
+$S_p\sim 15$ MeV and $S_n\sim 0$ MeV and crucial for the $r$-process, supernovae and 
+star formation, have been studied extensively in the last years. They exhibit features 
+like halos and resonances which put a strong pressure on existing   
+many-body techniques. How to deal with weakly bound states and an increased number of 
+single-particle degrees of freedom is not easy to account for in present shell-model 
+approaches. Other features like the predictions of new shell-closures and their origin
+are also properties we would expect a many-body approach to deal with. 
+
+Summarizing, it is our firm belief that new developments in many-body theories
+for nuclear problems should contain as many as possible of the following ingredients
+\begin{itemize}
+\item
+It should be fully microscopic and start with present two- and three-body
+interactions derived from e.g., effective field theory.
+\item Can be improved upon systematically, e.g., by inclusion of
+three-body interactions and more complicated correlations.
+\item Allows for description of both closed-shell systems and valence systems.
+\item For nuclear systems where shell-model studies are the only feasible ones,
+viz., a small model space requiring an effective interaction, one should be able to
+derive  effective two and three-body equations and interactions for the shell
+model.
+\item Amenable to parallel computing
+\item Can be used to generate excited spectra for nuclei like 
+where many shells are involved. It is hard for the traditional shell model
+to go beyond one major shell.
+The inclusion of several shells may imply the need of  complex effective interactions
+needed in studies of weakly bound systems.
+\item Finally, nuclear structure results should be used in marrying microscopic 
+many-body results with 
+reaction studies. A very promising method in this direction is the Lorentz transformation
+method developed by Barnea, Efros, Leidemann and Orlandini, see Ref.~\cite{giusi}.
+\end{itemize}
+
+
+\ack
+%  Bruce, David and James, please add your sponsors/support so forth.
+We are much indebted to the Institute of Nuclear Theory (INT) in Seattle for 
+all their support
+in organizing this meeting. We are especially indebted 
+to Laura Lee, Lesley Reece and Linda Vilet at the INT for their 
+kind assistance and help in all practical matters. Furthermore, BRB 
+thanks his sponsor, so does DJD, 
+MHJ thanks the Research Council of Norway and finally JPV thanks his sponsors.
+
+
+\section*{References}
+\begin{thebibliography}{200}
+
+
+\bibitem{bobsteve1} S.~C.~Pieper, K.~Varga, and R.~B.~Wiringa, Phys.~Rev.~{\bf C66},
+0044310 (2002). 
+
+\bibitem{bobsteve2}  R.~B.~Wiringa and S.C.~Pieper, Phys.~Rev.~Lett.~{\bf 89},
+182501 (2002). 
+
+\bibitem{bruce1} P.~Navr\'atil and B.~R.~Barrett, Phys. Rev. {\bf C57}, 562 (1998).
+
+\bibitem{bruce2} P.~Navr\'atil, J.~P.~Vary, and B.~R.~Barrett,
+Phys.~Rev.~Lett.~{\bf 84}, 5728 (2000).
+
+\bibitem{bruce3} P.~Navr\'atil, J.~P.~Vary, and B.~R.~Barrett, 
+Phys. Rev. {\bf C62 }, 054311 (2000).
+
+\bibitem{cc1} D.~J.~Dean  and M.~Hjorth-Jensen,
+Phys.~Rev.~{\bf C69}, 054320 (2004).
+ 
+\bibitem{cc2} K.~Kowalski, D.~J.~Dean, M.~Hjorth-Jensen, T.~Papenbrock,
+and P.~Piecuch, Phys.~Rev.~Lett.~{\bf 92}, 132501 (2004).
+
+\bibitem{carlo} W.~H.~Dickhoff and C.~Barbieri, Prog.~Part.~Nucl.~Phys.~{\bf 52},
+377 (2004).
+
+\bibitem{tom} T.~C.~Luu, S.~Bogner, W.~C.~Haxton, and P.~Navr\'atil, 
+Phys.~Rev.~C {\bf 70}, 014316 (2004).
+\bibitem{witek} N.~Michel, W.~Nazarewicz, M.~P{\l}oszajczak, and K.~Bennaceur, 
+                 Phys.~Rev.~Lett.~{\bf 89}, 042502 (2002).
+
+\bibitem{roberto}R.~Id Betan, R.~J.~Liotta, N.~Sandulescu, and T.~Vertse, 
+                 Phys.~Rev.~Lett.~{\bf 89}, 042501 (2002).
+
+\bibitem{hagen} G.~Hagen, J.~S.~Vaagen, and M.~Hjorth-Jensen,
+  J. ~Phys. ~A: ~Math.~ Gen. {\bf 37}, 8991 (2004).
+
+\bibitem{nimrod} N.~Moiseyev, Phys.~Rep.~{\bf 302}, 211 (1998). 
+
+\bibitem{taka} M.~Honma, T.~Otsuka, B.~A.~Brown, and T.~Mizusaki, Phys.~Rev.~C {\bf 69},
+034335 (2004).
+
+\bibitem{erichpetr} P.~Navr\'atil and W.~E.~Ormand, Phys.~Rev.~Lett.~{\bf 88},
+152502  (2002).
+
+\bibitem{mhj95}  M.\ Hjorth-Jensen, T.~T.~S.~Kuo and E.~Osnes,
+Phys.~Rep.~{\bf 261}, 125 (1995).
+
+\bibitem{dean2004} D.~J.~Dean, T.~Engeland, M.~Hjorth-Jensen, M.~P.~Kartamyshev,
+and E.~Osnes, Prog.~Part.~Nucl.~Phys.~{\bf 53}, 419 (2004).
+
+\bibitem{giusi} 
+S.~Quaglioni, W.~Leidemann, G.~Orlandini, N.~Barnea, 
+and V.~D.~Efros
+Phys.~Rev.~C {\bf 69}, 044002 (2004);
+S.~Bacca, M.~A.~Marchisio, N.~Barnea, W.~Leidemann, and G.~Orlandini,
+Phys.~Rev.~Lett.~{\bf 89}, 052502 (2002).   
+
+
+\end{thebibliography}
+
+\end{document}

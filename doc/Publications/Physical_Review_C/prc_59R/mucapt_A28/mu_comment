@@ -1,0 +1,87 @@
+From suhonen@phys.jyu.fi Fri Jun 26 11:21:26 1998
+Return-Path: <suhonen@phys.jyu.fi>
+Delivery-Date: Fri, 26 Jun 1998 11:21:25 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Fri, 26 Jun 1998 11:21:23 +0200
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Fri, 26 Jun 1998 11:21:21 +0200 (MET DST)
+Received: from cc.jyu.fi (root@cc.jyu.fi [130.234.1.3]) 
+          by norserv.nordita.dk (8.8.5/8.8.5) with ESMTP id LAA03450 
+          for <mjensen@nordita.dk>; Fri, 26 Jun 1998 11:20:30 +0200 (MET DST)
+Received: from smtp.phys.jyu.fi (smtp.phys.jyu.fi [130.234.96.50]) 
+          by cc.jyu.fi (8.8.8/8.8.8/antispam-1 [postmaster@cc.jyu.fi]) 
+          with SMTP id MAA03338 for <mjensen@nordita.dk>;
+          Fri, 26 Jun 1998 12:21:19 +0300 (EET DST)
+Received: from fs.ux.phys.jyu.fi 
+          by smtp.phys.jyu.fi (5.65v4.0/1.1.10.5/06Apr98-0835PM) id AA05266;
+          Fri, 26 Jun 1998 12:21:15 +0300
+Received: from touho.ux.phys.jyu.fi 
+          by fs.ux.phys.jyu.fi (5.65v4.0/1.1.10.5/05Apr98-0453PM) id AA07879;
+          Fri, 26 Jun 1998 12:21:14 +0300
+Received: from localhost 
+          by touho.ux.phys.jyu.fi (5.65v4.0/1.1.10.5/27Apr98-0400PM) 
+          id AA20756; Fri, 26 Jun 1998 12:21:14 +0300
+Date: Fri, 26 Jun 1998 12:21:14 +0300 (EET DST)
+From: Jouni Suhonen <suhonen@phys.jyu.fi>
+X-Sender: suhonen@touho.ux.phys.jyu.fi
+To: siiskonen@phys.jyu.fi
+Cc: mjensen@nordita.dk
+Subject: your paper nucl-th/9806052 (fwd)
+Message-Id: <Pine.OSF.3.96.980626122031.20703A-100000@touho.ux.phys.jyu.fi>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+Content-Length: 1876
+
+
+
+---------- Forwarded message ----------
+
+Return-Path: kuzmin@thsun1.jinr.ru
+Received: by jyflpr.jyu.fi (UCX V4.1-12A, OpenVMS V7.1 Alpha);
+	Tue, 23 Jun 1998 09:28:24 +0200
+Received: from nusun.jinr.dubna.su by smtp.phys.jyu.fi (5.65v4.0/1.1.10.5/06Apr98-0835PM)
+	id AA01899; Tue, 23 Jun 1998 09:28:17 +0300
+Received: from thsun1.jinr.ru (thsun1.jinr.dubna.su [159.93.129.2])
+          by nusun.jinr.dubna.su (8.8.7/8.8.4) with SMTP
+	  id KAA17185 for <suhonen@jyfl.jyu.fi>; Tue, 23 Jun 1998 10:28:12 +0400 (MSD)
+Received: by thsun1.jinr.ru (SMI-8.6/SMI-SVR4)
+	id KAA08264; Tue, 23 Jun 1998 10:28:06 +0400
+Date: Tue, 23 Jun 1998 10:28:06 +0400
+From: kuzmin@thsun1.jinr.ru (Vladimir Kuz'min)
+Message-Id: <199806230628.KAA08264@thsun1.jinr.ru>
+To: suhonen@jyfl.jyu.fi
+Subject: your paper nucl-th/9806052
+
+Dear Jouni,
+
+Congratulations with nice results obtained by
+you for the interpretation of the 28Si correlation
+experiments data.
+
+The effective transition operators work very well
+for $x$.  Unfortunately, the paper gives no detail
+description about the construction of the effective
+operators.  If you will make the paper which will
+contain more information please send it us.  May be
+we will try to use similar procedure for our radiative
+muon capture calculations.  We believe that it is
+the movement in right direction to use the transition
+operators coordinated with the used shell model
+space.
+
+I would like to ask you two questions to check my
+understanding of your paper.
+1. May I conclude that 10% variations in the muon
+   capture transition operators produce very strong
+   effect for the values of $x$?
+2. May I conclude from Fig. 1 that the partial muon
+   capture rate calculated with CDB interaction is
+   almost four time smaller than the capture rate
+   calculated with USD interaction?
+
+Thank you for advance.
+Cheers,
+                             Volodya
+
+

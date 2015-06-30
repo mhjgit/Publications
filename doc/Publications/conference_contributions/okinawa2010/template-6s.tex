@@ -1,0 +1,395 @@
+%%
+%% This is file `template-6s.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% template.raw  (with options: `6s')
+%% 
+%% Template for the LaTeX class aipproc.
+%% 
+%% (C) 1998,2000,2001 American Institute of Physics and Frank Mittelbach
+%% All rights reserved
+%% 
+%%
+%% $Id: template.raw,v 1.12 2005/07/06 19:22:14 frank Exp $
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Please remove the next line of code if you
+%% are satisfied that your installation is
+%% complete and working.
+%%
+%% It is only there to help you in detecting
+%% potential problems.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{aipcheck}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SELECT THE LAYOUT
+%%
+%% The class supports further options.
+%% See aipguide.pdf for details.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+    ,final            % use final for the camera ready runs
+%%  ,draft            % use draft while you are working on the paper
+%%  ,numberedheadings % uncomment this option for numbered sections
+%%  ,                 % add further options here if necessary
+  ]
+  {aipproc}
+
+\layoutstyle{6x9}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FRONTMATTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{<Full Title>}
+
+\classification{<Replace this text with PACS numbers; choose from this list:
+                \texttt{http://www.aip..org/pacs/index.html}>}
+\keywords      {<Enter Keywords here>}
+
+\author{<author1>}{
+  address={<author1 address>}
+}
+
+\author{<author2>}{
+  address={<common address for author2 and author3>}
+}
+
+\author{<author3>}{
+  address={<common address for author2 and author3>}
+  ,altaddress={<author1 address>} % additional visiting address
+}
+
+
+\begin{abstract}
+ This template file shows how to use the \texttt{aipproc} class to
+ produce a paper with the correct layout for \emph{%
+   AIP Conference Proceedings  6in   x 9in single column}.
+
+ A full description of the features supported by the \texttt{aipproc}
+ class can be found in the \texttt{aipguide.pdf} document accompanying
+ the distribution.
+
+ Frequently asked questions can be found in the \texttt{FAQ.txt}
+ document.
+\end{abstract}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MAINMATTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{<A section>}
+
+  Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+  lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+  quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut
+  duri miles Ulixi temperet a lacrimis? Et iam nox umida caelo
+  praecipitat, suadentque cadentia sidera somnos.
+
+\section{<Another section>}
+
+\subsection{<A subsection>}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile\footnote{Here we test footnotes.} regnum cruerint Danai;
+quaeque ipse miserrima vidi, et quorum pars magna fui. Quis talia
+fando Myrmidonum Dolopumve aut duri miles Ulixi temperet a
+lacrimis? Et iam nox umida caelo praecipitat, suadentque cadentia
+sidera somnos. Sed si tantus amor casus cognoscere nostros
+et\footnote{Et iam nox umida caelo praecipitat, suadentque cadentia
+sidera somnos. Et iam nox umida caelo praecipitat, suadentque cadentia
+sidera somnos.} breviter Troiae supremum audire laborem, quamquam
+animus meminisse\footnote{Here we test footnotes.} horret, luctuque
+refugit, incipiam.  Et iam nox umida caelo praecipitat, suadentque
+cadentia sidera somnos. Sed si tantus amor casus
+cognoscere\footnote{Here we test footnotes.} nostros et breviter Troiae
+supremum audire laborem, quamquam animus meminisse horret,
+luctuque refugit, incipiam.
+
+Some url test \url{http://www.world.universe}.
+
+\subsubsection{<A subsubsection>}
+
+Et iam nox umida caelo praecipitat $J_{ion}$ suadentque cadentia
+sidera somnos. Sed si tantus amor casus cognoscere nostros et breviter
+Troiae $J_{ion}$ supremum audire laborem:
+\begin{equation}
+J_{ion}=A\frac{exp\left[-\frac{E_a}{kT}\right]}{kT}\alpha \label{ionflux}
+\end{equation}
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. $A$ talia fando, $E_a$ iam nox umida, $k$ caelo
+praecipitat, suadentque cadentia sidera somnos. See \eqref{ionflux}.
+
+\paragraph{<A subsubsubsection>}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui \cite{Brown2000,BrownAustin:2000}. Quis talia fando
+Myrmidonum Dolopumve aut duri miles Ulixi temperet
+\cite{Mittelbach/Schoepf:1990} a lacrimis? Et iam
+nox umida caelo praecipitat, suadentque \cite{Wang} cadentia
+sidera somnos.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Sample figure:
+%%
+%% The option [height=...] scales the picture to the given height,
+%% without it it would be printed at its nominal size
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+  \includegraphics[height=.3\textheight]{golfer}
+  \caption{Picture to fixed height}
+\end{figure}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis?
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia\footnote{A few more footnotes} fando
+Myrmidonum Dolopumve aut duri miles Ulixi temperet a lacrimis? Et iam
+nox umida caelo praecipitat, suadentque cadentia\footnote{Here we test
+footnotes.} sidera somnos. Sed si tantus amor casus cognoscere nostros
+et breviter Troiae supremum audire laborem, quamquam animus meminisse
+horret, luctuque refugit, incipiam.
+In the following we test itemize environments up to the forth level.
+\begin{itemize}
+\item
+  An item with more than a line of text. Infandum, regina, iubes
+  renovare dolorem, Troianas ut opes et lamentabile regnum cruerint
+  Danai.
+\item
+  Another item with sub entries
+  \begin{itemize}
+  \item
+   A sub entry.
+  \item
+   Second sub entry.
+    \begin{itemize}
+    \item
+     A sub sub entry.
+      \begin{itemize}
+      \item
+       A sub sub sub entry.
+      \item
+       Second sub sub sub entry.
+      \end{itemize}
+    \item
+     Second sub sub entry.
+    \end{itemize}
+  \end{itemize}
+\item
+  A final item.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SAMPLE TABLE
+%%
+%% Shows the use of \tablehead and \tablenote
+%% macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+\begin{tabular}{lrrrr}
+\hline
+  & \tablehead{1}{r}{b}{Single\\outlet}
+  & \tablehead{1}{r}{b}{Small\tablenote{2-9 retail outlets}\\multiple}
+  & \tablehead{1}{r}{b}{Large\\multiple}
+  & \tablehead{1}{r}{b}{Total}   \\
+\hline
+1982 & 98 & 129 & 620    & 847\\
+1987 & 138 & 176 & 1000  & 1314\\
+1991 & 173 & 248 & 1230  & 1651\\
+1998\tablenote{predicted} & 200 & 300 & 1500  & 2000\\
+\hline
+\end{tabular}
+\caption{Average turnover per shop: by type
+  of retail organisation}
+\label{tab:a}
+\end{table}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a \cite{EVH:Office} lacrimis? In the following we
+test enumrerate environments up to the second level. In addition we
+look how ridiculous large labels look.
+\begin{enumerate}
+\item
+  An item \cite{Liang:1983}
+\item
+  Another item with sub entries
+  \begin{enumerate}
+  \item
+   A sub entry \cite{Wang}
+  \item
+   Second sub entry
+  \end{enumerate}
+\item
+  The final item with normal label.
+\end{enumerate}
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia  fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis?
+\begin{description}
+\item[Infandum]
+ regina, iubes renovare dolorem, Troianas ut opes et lamentabile
+ regnum cruerint Danai.
+\item[Sed]
+ si tantus amor casus cognoscere nostros et breviter Troiae supremum
+ audire laborem, quamquam animus meminisse horret, luctuque refugit,
+ incipiam.
+\item[Lamentabile] regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia  fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis?
+\end{description}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis?
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis?
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis? Et iam nox umida caelo praecipitat,
+suadentque cadentia sidera somnos. Sed si tantus amor casus
+\cite{Liang:1983} cognoscere nostros et breviter Troiae supremum
+audire laborem, quamquam animus meminisse horret, luctuque refugit,
+incipiam.  Infandum, regina, iubes renovare dolorem, Troianas ut opes
+et lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a \cite{SJ:1999} lacrimis? Et iam nox umida caelo
+praecipitat, suadentque cadentia sidera somnos. Sed si tantus amor
+casus cognoscere nostros et breviter Troiae supremum audire laborem,
+quamquam animus meminisse horret, luctuque refugit, incipiam.
+
+\section{<A section>}
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+miles Ulixi temperet a lacrimis?
+
+Et iam nox umida caelo praecipitat, suadentque cadentia sidera
+somnos. Sed si tantus amor casus cognoscere nostros et breviter Troiae
+supremum audire \cite{Knuth:WEB} laborem, quamquam animus meminisse
+horret, luctuque refugitum, refugit, incipitat, suadenovare dolorem,
+Troianas ut opes Ulixi temperet breviter Troiaeque ipse nostros et a
+lacrimis?
+
+Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+lamentabile regnum cruerint \cite{BrownAustin:2000} Danai; quaeque ipse
+miserrima vidi, et quorum pars magna fui. Quis talia fando Myrmidonum
+Dolopumve aut duri miles Ulixi temperet a lacrimis?  Infandum, regina,
+iubes renovare dolorem, Troianas ut opes et lamentabile regnum
+cruerint Danai; quaeque ipse miserrima vidi, et quorum pars magna
+fui. Quis talia fando Myrmidonum Dolopumve aut duri miles Ulixi
+temperet a lacrimis?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BACKMATTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{theacknowledgments}
+  Infandum, regina, iubes renovare dolorem, Troianas ut opes et
+  lamentabile regnum cruerint Danai; quaeque ipse miserrima vidi, et
+  quorum pars magna fui. Quis talia fando Myrmidonum Dolopumve aut duri
+  miles Ulixi temperet a lacrimis?
+\end{theacknowledgments}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The bibliography can be prepared using the BibTeX program or
+%% manually.
+%%
+%% The code below assumes that BibTeX is used.  If the bibliography is
+%% produced without BibTeX comment out the following lines and see the
+%% aipguide.pdf for further information.
+%%
+%% For your convenience a manually coded example is appended
+%% after the \end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% You may have to change the BibTeX style below, depending on your
+%% setup or preferences.
+%%
+%%
+%% For The AIP proceedings layouts use either
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{aipproc}   % if natbib is available
+%\bibliographystyle{aipprocl} % if natbib is missing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% You probably want to use your own bibtex database here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{sample}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Just a reminder that you may have to run bibtex
+%% All of it up to \end{document} can be removed
+%% if you don't like the warning.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\IfFileExists{\jobname.bbl}{}
+ {\typeout{}
+  \typeout{******************************************}
+  \typeout{** Please run "bibtex \jobname" to optain}
+  \typeout{** the bibliography and then re-run LaTeX}
+  \typeout{** twice to fix the references!}
+  \typeout{******************************************}
+  \typeout{}
+ }
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The following lines show an example how to produce a bibliography
+%% without the help of the BibTeX program. This could be used instead
+%% of the above.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{9}
+
+\bibitem{Brown2000}
+M.~P. Brown,  and K.~Austin, \emph{The New Physique}, Publisher Name,
+  Publisher City, 2000, pp. 212--213.
+
+\bibitem{BrownAustin:2000}
+M.~P. Brown,  and K.~Austin, \emph{Appl. Phys. Letters} \textbf{85},
+  2503--2504 (2000).
+
+\bibitem{Wang}
+R.~Wang, ``Title of Chapter,'' in \emph{Classic Physiques}, edited by
+  R.~B. Hamil, Publisher Name, Publisher City, 2000, pp. 212--213.
+
+\bibitem{SJ:1999}
+C.~D.~Smith and E.~F.~Jones,  ``Load-Cycling in Cubic Press,'' in
+  \emph{Shock Compression of Condensed Matter-1999}, edited by M.~D.~F. et~al.,
+  AIP Conference Proceedings 505, American Institute of Physics, New York,
+  1999, pp. 651--654.
+
+\end{thebibliography}
+
+\endinput
+%%
+%% End of file `template-6s.tex'.

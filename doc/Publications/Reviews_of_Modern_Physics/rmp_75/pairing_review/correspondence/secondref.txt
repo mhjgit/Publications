@@ -1,0 +1,118 @@
+From flocard@csnsm.in2p3.fr Thu Jun  6 16:03:09 2002
+Date: Wed, 05 Jun 2002 19:04:03 +0200
+From: Hubert Flocard <flocard@csnsm.in2p3.fr>
+To: Morten Hjorth-Jensen <morten.hjorth-jensen@fys.uio.no>,
+     David Dean <deandj@ornl.gov>, flocard@csnsm.in2p3.fr,
+     Karie Friedman <rmp@phys.washington.edu>
+Subject: Second Referee Report
+
+Orsay June 5
+
+			Morton, David,
+
+This is the report of the second referee. Many of the suggestions he
+made can be handled easily.
+What do you think of the points IV, V,VI and VIII ?
+
+			Hubert
+========================================================================================
+Report on 'Pairing in nuclear systems: from neutron stars to finite
+nuclei'
+by DJ Dean and M Hjorth-Jensen
+
+  The present work gives an overview of the status of pairing in nuclear
+systems. Since nuclear superfluidity is again on the forefront of
+interest in nuclear physics this review article comes very timely. In
+the first part of the article homogeneous systems like neutron (star)
+matter and nuclear matter are considered. The different approaches and
+aspects to tackle with the subtle and difficult problem are well
+exposed. Instead of enumerating what has been treated, I will give below
+a list of items which in my opinion have gotten too little or no
+attention at all. The same holds true for the second part on finite
+nuclei. There mostly the results of the shell model Monte-Carlo method
+has been analysed. Again all is generally well written but some
+omissions are present.
+
+Let me come to the homogeneous matter part first:
+
+i)When the pairing Hamiltonian is introduced in sect II.C one misses a
+reference to the important works of Richardson who solved this model
+exactly in the 60's and whose solution helped a lot to analyse
+superconducting metallic grains in the recent past. I can only find a
+preprint citation of a work by Richardson which, I think, is not enough.
+
+ii) Formula (29) is almost as old as BCS. One could look up works by
+Wilets et al in Phys Rev in the 60's. Relation of gap to phase shifts is
+also very old, see eg works by Emery and Sessler,Phys Rev 60's.
+
+iii) Just at the end of II.D there is quite some repetition of what has
+bee said already shortly before.
+
+iv) I think the discussion on Proton-neutron pairing remains a bit
+short. For instance the important aspect of the transition of Cooper
+pairing (high density) to Bose-Einstein condensation of bound deuterons
+at low density has not been discussed. In connection with this one may
+also touch upon the appearance of a pseudo gap in this channel for T -->
+Tc. Works on these subjest by Baldo, Lombardo, Schuck;Bozek; Alm,
+Roepke, Schuck, and may be more are worth to be discussed in this
+respect.
+
+v) On bottom of p 31 the importance of J=O+ p-n correlations in N+Z
+nuxclei are mentioned. I think, to avoid any confusion in this section
+on iso sclar and isovector pairing, it would be appropriate to discuss
+shortly at the beginning of this section the physical meaning and
+distinction of T=1 and T=0 pairs and to enumerate the various channels
+possible.
+
+vi) Again in this section I feel that thr discussion is too exclusiveley
+based on the shell model approach. For example using boson expansion
+techniques, van Isacker and O Juillet have made quite extensive
+investigations on T=1 vs T=0 pairing. There exists also very interesting
+work by A Goodman with the HFB approach for rotating N=Z nuclei. He
+shows how T=0 and T=1 pairs are affected differently by rotation,
+discusses band crossings phenomena between T=0 and T=1 rotational
+bands,etc. Quite generally the HFB approach which, it is true may have
+been treated in other reviews before, is practically not discussed in
+the present article. The Wigner energy has also been estimated from n-p
+T=0 pairing using a LDA approach by T Alm et al.
+
+vii) In sect V I am missing the mentioning of important recent work on
+nuclear level densities including pairing by S Hilaire and by S Goriely.
+
+viii)The only link between nuclear matter and finite nuclei which is
+discussed is that in both cases one has predominance of the 1S0 part of
+the force. I am missing a further link between nm and finite nuclei
+which is LDA. Broglia et al have recently calculated specific heat of
+neutron stars with embedded nuclei using such an approach.
+
+Style and misprints.
+--------------------
+
+I find the review is written in a style easy to read. The number of
+misprints is also very low. Here comes the list of a few I detected:
+
+p 6:  pertaining NOT petaning
+
+      notation NOT nptation
+
+p 20:  neutrino NOT neutrin
+
+p 25:    word 'nuclei' is missing
+
+        remaining NOT reamining
+
+p 40   point after 'studied' is missing
+
+        distribution NOT distrubution
+
+        spontaneously NOT spontaineously
+
+p41    nevertheless  NOT netherhteless
+
+p52    ... the the ... after eq(86)
+
+p54:style:  ... includes... included... in same phrase
+
+    ...contribute...contribution... in same phrase
+
+ p 55:   quadrupole  NOT quadropole

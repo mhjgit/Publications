@@ -1,0 +1,324 @@
+From lars.engvik@fys.uio.no Mon Jul 20 10:15:35 1998
+Return-Path: <lars.engvik@fys.uio.no>
+Delivery-Date: Mon, 20 Jul 1998 10:15:35 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Mon, 20 Jul 1998 10:15:26 +0200
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Mon, 20 Jul 1998 10:15:25 +0200 (MET DST)
+Received: from pat.uio.no (6089@pat.uio.no [129.240.130.16]) 
+          by norserv.nordita.dk (8.9.0/8.9.0) with SMTP id KAA13720 
+          for <mjensen@nordita.dk>; Mon, 20 Jul 1998 10:14:50 +0200 (MET DST)
+Received: from isak.uio.no (actually isak.uio.no [129.240.84.99]) by pat.uio.no 
+          with SMTP (PP); Mon, 20 Jul 1998 10:15:07 +0200
+Received: from localhost (lengvik@localhost) by isak.uio.no ;
+          Mon, 20 Jul 1998 10:15:03 +0200 (METDST)
+Date: Mon, 20 Jul 1998 10:15:03 +0200 (METDST)
+From: Lars Engvik <lars.engvik@fys.uio.no>
+X-Sender: lengvik@isak.uio.no
+To: Morten Hjorth-Jensen <mjensen@nordita.dk>
+Subject: Re: data pkt
+In-Reply-To: <199807021241.OAA17502@norsg1.nordita.dk>
+Message-ID: <Pine.HPP.3.96.980720100825.2690B-100000@isak.uio.no>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Content-Length: 521
+
+Hei morten,
+jeg er paa nordvestlandet for tida. Skal vaere her til over helga
+Har ikke logget inn paa en stund. Beklager at jeg ikke har informert deg. 
+Jeg skal forsoeke aa spa opp data.
+
+Lars
+
+On Thu, 2 Jul 1998, Morten Hjorth-Jensen wrote:
+
+> hei Lars,
+> du har ikke liggende noe sted datapunktene for pp-hh beregninga
+> med Tom (npa 622) for fig 14 og 12 for cd-bonn, nijm I og II?
+> du har vel ikke noe tilsvarende for argonne v18 og reid93?
+> har du ikke saa gjoer dt ikke noe for de to sistnvente.
+> morten
+> 
+> 
+
+
+From lars.engvik@fys.uio.no Mon Jul 20 10:36:24 1998
+Return-Path: <lars.engvik@fys.uio.no>
+Delivery-Date: Mon, 20 Jul 1998 10:36:24 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Mon, 20 Jul 1998 10:35:59 +0200
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Mon, 20 Jul 1998 10:35:52 +0200 (MET DST)
+Received: from pat.uio.no (6089@pat.uio.no [129.240.130.16]) 
+          by norserv.nordita.dk (8.9.0/8.9.0) with SMTP id KAA14203 
+          for <mjensen@nordita.dk>; Mon, 20 Jul 1998 10:35:16 +0200 (MET DST)
+Received: from isak.uio.no (actually isak.uio.no [129.240.84.99]) by pat.uio.no 
+          with SMTP (PP); Mon, 20 Jul 1998 10:35:29 +0200
+Received: from localhost (lengvik@localhost) by isak.uio.no ;
+          Mon, 20 Jul 1998 10:35:27 +0200 (METDST)
+Date: Mon, 20 Jul 1998 10:35:26 +0200 (METDST)
+From: Lars Engvik <lars.engvik@fys.uio.no>
+X-Sender: lengvik@isak.uio.no
+Reply-To: Lars Engvik <lars.engvik@fys.uio.no>
+To: Morten Hjorth-Jensen <mjensen@nordita.dk>
+Message-ID: <Pine.HPP.3.96.980720102712.2720B-100000@isak.uio.no>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Content-Length: 6589
+
+
+Hei igjen Morten,
+
+Her har du to paw-filer som skulle inneholde data
+som tilsvarer henholdsvis figur  12 og 14 
+Haaper det er forstaaelig.
+Jeg har ikke forettatt kjoeringer for de oevrige potensialene
+
+Lars
+
+figur 12
+
+ macro one        
+ set *
+ igset *
+ set xsiz 14.0
+ set ysiz 12.0
+ zone 1 1
+ opt zfl1
+ opt tic
+ opt NBOX
+ set gfon -1042
+ set vfon -42
+ set lfon -1042
+ set bwid 3.
+ set fwid 1.
+ set ylab  1.3
+ set xlab  1.5
+ set vsiz 0.40
+ set gsiz 0.50
+ set asiz 0.40
+ set lfon 20
+ set ndvy 510.0
+ set ywin 1.0
+ title_global '          '
+ vector/create kf(9) r _
+     1.2    1.3     1.4     1.5     1.6     1.70    1.8     1.9    2.0
+ ve/create n138(7) r   -16.91 -18.47 -19.78 -20.66 -21.10 -20.82 -19.61
+ ve/create n130(7) r   -15.31 -16.83 -17.72 -18.13 -18.06 -17.18 -15.63
+ ve/create n238(7) r   -13.63 -14.69 -15.30 -15.30 -14.73 -13.32 -10.80
+ ve/create n230(7) r   -12.65 -13.35 -13.62 -13.37 -12.48 -10.64  -8.02
+ ve/create obe38(7) r  -15.92 -17.21 -18.19 -18.50 -18.27 -17.16 -14.96
+ ve/create obe30(7) r  -14.55 -15.48 -16.04 -16.06 -15.40 -13.81 -11.46
+ ve/create cdbo38(7) r -15.91 -17.62 -19.29 -20.55 -21.49 -21.84 -21.42
+ ve/create cdbo30(7) r -15.70 -17.21 -18.55 -19.56 -20.12 -20.01 -19.30
+ ve/create abc_k_r38(3) r   1.495   1.565   1.678
+ ve/create abc_b_r38(3) r -19.46  -17.24  -18.93
+ ve/create abc_k_r30(3) r   1.42    1.536 1.647
+ ve/create abc_b_r30(3) r -16.75  -16.32  -18.23
+ ve/create c_k_r(2) r   1.42  1.495
+ ve/create c_b_r(2) r  -16.75  -19.46
+ ve/create b_k_r(2) r   1.536 1.565 
+ ve/create b_b_r(2) r  -16.32  -17.24
+ ve/create a_k_r(2) r   1.647 1.678
+ ve/create a_b_r(2) r  -18.23  -18.93
+
+ ve/create abc_k_b(3) r 1.565    1.64    1.775
+ ve/create abc_b_b(3) r -12.415  -14.36  -17.794
+ ve/create abc_k_m(3) r 1.58    1.655   1.78
+ ve/create abc_b_m(3) r -14.96 -16.84  -20.28
+ ve/create cdb_k_b(1) r  1.76
+ ve/create cdb_b_b(1) r  -18.10
+ ve/create cdb_k_m(1) r  1.78
+ ve/create cdb_b_m(1) r  -21.135
+ ve/create nob_k_b(1) r  1.58
+ ve/create nob_b_b(1) r  -13.79 
+ ve/create nob_k_m(1) r  1.61
+ ve/create nob_b_m(1) r  -16.825
+ ve/create n1_k_b(1) r  1.66 
+ ve/create n1_b_b(1) r  -14.814
+ ve/create n1_k_m(1) r  1.685
+ ve/create n1_b_m(1) r  -18.04
+ ve/create n1_k_r30(1) r  1.54 
+ ve/create n1_b_r30(1) r  -18.18
+ ve/create n1_k_r38(1) r  1.615
+ ve/create n1_b_r38(1) r  -21.11
+ ve/create n2_k_b(1) r  1.52 
+ ve/create n2_b_b(1) r  -12.15
+ ve/create n2_k_m(1) r  1.55 
+ ve/create n2_b_m(1) r  -15.00
+
+ null  1.2 2.0 -22.0 -10.0
+ igset fais  3
+ igset fasi 309
+ box   1.3  1.4 -15 -17
+ igset txal 20
+ igset txfp -20
+ igset chhe 0.30
+ itx 1.60 -12.2 'C'
+   itx 1.67 -14.0 'B'
+  itx 1.80 -17.3 'A'
+  itx 1.85 -18.6 'CD-Bonn'
+*  itx 1.49 -14.1 'Nijm-obe'
+  itx 1.73 -15.1 'Nijm-I'
+ itx 1.44 -12.5 'Nijm-II'
+* itx 1.48 -15.5 'Nijm-II'
+*itx 1.43 -17.8 'C'
+*itx 1.46 -19.5 'C'
+*itx 1.50 -17.0 'B'
+*itx 1.53 -17.8 'B'
+*itx 1.63 -19.3 'A'
+* itx 1.75 -19.2 'CD'
+* itx 1.49 -14.1 'Nijm-obe'
+* itx 1.73 -15.1 'Nijm-I'
+set dmod 1
+ graph 7 kf cdbo38 c
+ graph 7 kf cdbo30 c
+set dmod 2
+ graph 7 kf n138 c
+ graph 7 kf n130 c
+set dmod 3
+ graph 7 kf n238 c
+ graph 7 kf n230 c
+ igset mscf 2.0
+* 
+****************  saturation points NijmII potential **********
+ igset mtyp 25
+ graph 1 n2_k_b n2_b_b p
+ graph 1 n2_k_m  n2_b_m  p  
+ igset mtyp 26
+ graph 1 n2_k_b n2_b_b p
+ igset mtyp 22
+ graph 1 n2_k_m  n2_b_m  p
+****************************************************************
+*
+******************CD-Bonn
+ igset mtyp 24
+ graph 1 cdb_k_b cdb_b_b p
+ igset mtyp 20
+ graph 1 cdb_k_m cdb_b_m p 
+*
+***************** NijmI
+ igset mtyp 26
+ graph 1 n1_k_b n1_b_b p
+ igset mtyp 22
+ graph 1 n1_k_m  n1_b_m  p
+*
+************** Saturation points for Bonn A, B and C potentials
+
+ igset mtyp 25
+ graph 3 abc_k_b abc_b_b p
+ igset mtyp 21
+ graph 3 abc_k_m abc_b_m p
+
+**************with PPHH diagrams
+ set dmod 1
+  graph 2 a_k_r a_b_r c
+  graph 2 b_k_r b_b_r c
+  graph 2 c_k_r c_b_r c
+ igset mtyp 29
+ graph 2 a_k_r a_b_r p
+ igset mtyp 30
+ graph 2 b_k_r b_b_r p
+ igset mtyp 27
+ graph 2 c_k_r c_b_r p
+****************************************************
+
+* graph 3 abc_k_r38 abc_b_r38 p
+* igset mtyp 30
+* graph 3 abc_k_r30 abc_b_r30 p
+
+
+ atitle '  k?F!  "M# fm^-1!   "N#    ' 'E/A   "M# MeV   "N#'
+ ve/de *
+fortran/file 66 satp.eps
+metafile 66 -113
+pict/plot
+close 66
+
+return
+
+
+figur 14:
+
+ macro one        
+ set *
+ igset *
+ set xsiz 14.0
+ set ysiz 12.0
+ zone 1 1
+ opt zfl1
+ opt tic
+ opt NBOX
+ set gfon -1042
+ set vfon -42
+ set lfon -1042
+ set bwid 3.
+ set fwid 1.
+ set ylab  1.3
+ set xlab  1.5
+ set vsiz 0.40
+ set gsiz 0.50
+ set asiz 0.40
+ set lfon 20
+ set ndvy 510.0
+ set ywin 1.0
+ title_global '          '
+ vector/create dens(9) r _
+.0675    .0899    .1167    .1484    .1854    .2280    .2767    .3319    .3939
+ vector/create cdbo_mbhfkf(9) r _
+ 8.13     9.43    10.89    12.64    14.78    17.49    20.86    25.23    30.46
+ vector/create cdbo_mbhf30(9) r _
+7.81     9.05    10.41    12.07    14.08    16.69    19.92    24.22    29.38
+ vector/create cdbo_mbhf38(9) r _
+7.87     9.12    10.52    12.20    14.25    16.89    20.17    24.51    29.73 
+ vector/create cdbo_pphhkf(9) r _
+   8.30   9.68  11.25  13.15  15.48  18.41  22.23  26.65  32.34
+ vector/create cdbo_pphh30(9) r _
+   7.66   8.94  10.40  12.16  14.36  17.18  20.77  25.34  31.06
+ vector/create cdbo_pphh34(9) r _
+   7.65   8.92  10.34  12.05  14.18  16.94  20.44  24.92  30.59
+ vector/create cdbo_pphh38(9) r _
+   7.64   8.90  10.33  12.02  14.12  16.82  20.31  24.78  30.42
+ vector/create n1_pphh38(9) r _
+   7.62   8.87  10.27  11.93  13.98  16.61  19.96  24.23  29.56
+ vector/create n1_pphh34(9) r _
+   7.63   8.89  10.30  11.98  14.08  16.76  20.14  24.43  29.82
+ vector/create n1_pphh30(9) r _
+   7.65   8.92  10.37  12.10  14.27  17.02  20.49  24.88  30.49
+ vector/create ob_pphh38(9) r _
+   7.52   8.84  10.39  12.32  14.82  18.11  22.43  28.05  35.18
+ vector/create ob_pphh34(9) r _
+   7.54   8.86  10.42  12.36  14.87  18.18  22.46  27.99  35.04
+ vector/create ob_pphh30(9) r _
+   7.56   8.91  10.49  12.48  15.05  18.40  22.72  28.27  35.33
+ vector/create n2_pphh38(9) r _
+   7.74   9.07  10.61  12.47  14.80  17.81  21.65  26.51  32.50
+null  0.05 0.5 5. 35.0
+ igset fais  3
+ igset fasi 309
+ igset txal 20
+ igset txfp -20
+ igset chhe 0.30 
+* itx 0.430 32.7 'Nijm-OBE'
+ itx 0.430 32.7 'Nijm-II'
+ itx 0.435 30.3  'CD-Bonn'
+ itx 0.415 27.5 'Nijm-I'
+
+set dmod 1
+  graph 9 dens cdbo_pphh38 c
+ set dmod 2
+  graph 9 dens   n1_pphh38 c
+ set dmod 3
+  graph 9 dens   n2_pphh38 c
+ atitle '  [r]  "M# fm^-3!   "N#    ' 'E/A   "M# MeV   "N#'
+ ve/de *
+fortran/file 66 eos.eps
+metafile 66 -113
+pict/plot
+close 66
+
+return
+
+
+
+

@@ -1,0 +1,2852 @@
+
+\subsection{Introduction}
+
+In this section  we calculate effective interactions
+appropriate for nuclei in the mass regions of oxygen, calcium and
+tin, using the formalism presented in section 4   and
+$G$-matrices obtained with the Bonn A, B and C potentials
+from table A.1 of \cite{mac89}. However, before
+presenting these results, we need to deal with technicalities and problems
+which arise in the evaluation of the effective interaction.
+Typical problems which arise are the convergence of the
+order-by-order perturbative expansion, the summation over
+intermediate states which arise in the various Feynman-Goldstone
+diagrams and so forth. In the next subsection we discuss
+some of these problems, and methods to overcome the difficulties
+which arise. In the subsequent
+subsections, we present our results
+for nuclei in the above mass regions. Finally, in subsection 6.6 we outline
+how to calculate a hermitian effective interaction, appropriate
+for multi-shell effective interactions.
+
+Concluding remarks and open
+problems resulting from our calculations
+will be presented in section 9. 
+
+
+\subsection{Problems in perturbation theory}
+
+\subsubsection{Intruder states}
+
+It is a well-known fact that the presence of so-called
+intruder states \cite{ko90,sw72}
+may lead to the divergence of the order-by-order
+perturbative expansion
+for $H_{\mathrm{eff}}$.
+To understand the intruder-state problem, let
+us illustrate their meaning and importance by
+considering the spectra for the
+three lowest-lying $0^+$ states in $^{18}$O.
+These are displayed in fig.\ \ref{fig:intruder}.
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(100,70)
+      \put(25,10){\epsfxsize=10cm \epsfbox{intruder.eps}}
+     \end{picture}
+  \caption{Intruder states in $^{18}$O.}
+\label{fig:intruder}
+\end{figure}
+In calculations of effective interactions for $^{18}$O,
+one normally chooses a model space
+consisting of a closed $^{16}$O core with two nucleons
+in the sp states of the $sd$-shell.
+This model space consists of two-particle states only,
+and for $J=0$ we have
+three $0^+$ states.
+However, from model calculations of energies and
+electromagnetic properties and experimental
+data, the belief is that the $0_2^+$ state is predominantly of a
+four-particle-two-hole nature, while the ground
+state and the $0_3^+$ state are classified as two-particle
+states. In the left part of fig.\ \ref{fig:intruder} we show, in a
+schematic way, the unperturbed
+eigenstates with a degenerate model space,
+arising from the unperturbed hamiltonian
+$H_0$. The model space states are separated from those
+of the excluded space by an amount $\Delta$.
+We let the hamiltonian of the system be described as $H_0+zH_1$,
+where $H_1$ is the interaction term and $0\leq z\leq 1$ is just
+a strength parameter with $z=1$ resulting in the fully interacting
+system.
+As we switch
+on the interaction term $zH_1$, the $Q$-space
+terms come down into the $P$-space region,
+and we have a situation where one
+$Q$-space eigenvalue becomes the $0_2^+$ state.
+Thus, as inferred by
+Schuchan and Weidenm\"{u}ller \cite{sw72},
+the order-by-order perturbative expansion should not
+converge if we restrict a model space to
+consist of two-particle states only.
+
+
+One way to handle intruder states is that of introducing an
+enlarged
+model space which includes intruder states.  Such calculations
+do however become prohibitively time-consuming for nuclei heavier
+than $sd$-shell nuclei.
+There are also other approaches which aim at overcoming the
+divergence of the order-by-order expansion of $H_{\mathrm{eff}}$. One may
+e.g.\
+regroup the perturbative expansion and perform infinite partial
+summations to
+obtain convergence. The folded-diagram approach  
+we will apply in our calculations,
+is an example of such a method.
+
+An important point in connection with the intruder state discussion,
+is that the derived two-body (or three-body) effective interaction,
+is in conventional shell-model calculations used to compute 
+the spectra for nuclei with more than two valence nucleons.
+For such systems, the degrees of freedom represented by 
+intruder states, may not be relevant for say $^{28}$Si. From 
+this argument, although the effective $sd$-shell interaction
+is not fully appropriate for $^{18}$O, it may very well
+be a good approximation to the low-lying spectra 
+of nuclei with more than two valence nucleons. 
+Finally, even if the effective interaction expansion for $^{18}$O should
+diverge at higher order, most effective interaction calculations 
+show that (see e.g.\ \cite{eehho94}) the admixture of 
+$Q$-space states is weak at low orders in the interaction, and
+gives a fairly good reproduction of the lowest lying states,
+though, this effective interaction, 
+as we will discuss in the next subsections,
+is not able to reproduce e.g.\ the second $0^+$ state in $^{18}$O.
+
+\subsubsection{Evaluation of the \qbox}
+
+There are also other problems which arise in the
+evaluation of the effective interactions.
+In section 5 we studied the stability of the
+$G$-matrix
+as a function of $n_3$, where $n_3$ defines the Pauli operator
+for finite nuclei, see
+fig.\ \ref{fig:qoperat}.
+Here we extend this discussion to higher-order
+diagrams as well.
+Other questions we deal with is how to approximate the $\hat{Q}$-box,
+and how to restrict the summation over intermediate states
+in each \qbox diagram in  a reliable way. The \qbox is the starting
+point in our calculations of the folded-diagram (FD) effective
+interaction.
+Thus, the reader should note that when we discuss the convergence
+of the effective interaction, we will not only deal with
+the order-by-order convergence of the effective interaction, but
+extend our discussion on convergence to include the convergence
+of the sum over intermediate states in each diagram, and the convergence
+in terms of $n_3$.
+We limit the discussions  to the $sd$-shell,
+although the qualitative behaviors presented apply equally well to the
+other mass areas.
+
+To obtain the effective interaction we first need to
+calculate the Brueckner $G$-matrix by solving the Bethe-Goldstone
+equation. The latter
+has been
+solved employing the Bonn A, B and C potentials discussed
+in section 5  for various starting energies $\omega$, with
+$\omega=-140,-90,-50,-20,-5$ MeV. The Pauli-exclusion operator
+is defined such as to prevent scattering into
+intermediate
+particle states with a nucleon in $0s$ or $0p$ states or both
+nucleons in the $1s-0d$ or $1p-0f$ shell, or in terms of the
+boundaries $n_1, n_2$ and $n_3$ $(n_1=3, n_2=10, n_3=\infty )$. Below we will
+see that $n_3=66$ is a fairly good approximation.
+We use an oscillator parameter $b$ defined through the
+relation
+$\hbar\omega = 45A^{-1/3} - 25A^{-2/3}= 14$ MeV, which gives $b=1.72$ fm.
+The ladder terms with two particles in the $1p0f$
+shell are taken into account explicitly when we evaluate the
+diagrams which
+enter the $\hat{Q}$-box.
+
+The open question is how to approximate the $\hat{Q}$-box. Until
+recently, a $\hat{Q}$-box including all linked and irreducible diagrams
+through second order in the $G$-matrix has been the common choice.
+Examples of such calculations with a second-order
+$\hat{Q}$-box can be found in ref.\ \cite{skd83} for the $sd$-shell
+and the recent work of Polls {\em et al.}
+\cite{prm90} for the $pf$-shell.
+The constituent topologies of a second-order $\hat{Q}$-box are listed
+in appendix A for the one-body
+and two-body diagrams respectively, i.e.\ diagrams (1-1) to (1-4)
+in fig.\ \ref{fig:onebody} and (2-1) to (2-4) in fig.\ \ref{fig:twobody}.
+Conventionally, since the single-particle energies are poorly reproduced, one
+approximates the one-body part with the experimental
+single-particle energies.
+Having accounted for the one-body terms in an effective way,
+one could represent the
+$\hat{Q}$-box by only including the bare $G$-matrix and the
+core-polarization term,
+diagram (2-2) in fig.\ \ref{fig:twobody}.
+This was the original approach presented by Kuo and Brown
+\cite{kb66,kuo68} in order to
+determine an effective interaction for mass-18 nuclei.
+The remaining second-order
+two-body diagrams of fig.\ \ref{fig:twobody} were
+also included. Moreover,
+the area of investigation was extended to heavier nuclei,
+such as those in the calcium region \cite{kb68} and
+to the lead region in the work
+by Kuo and Herling \cite{hk72}.
+
+The success of these early calculations is demonstrated,
+in spite of their age,  by the frequent
+use of the obtained interactions in various calculations
+of nuclear properties, either
+in their original form or in a somewhat
+modified form \cite{brown88,ryd90,wb91}.
+Several improvements to the original Kuo-Brown
+approach can be found in the literature
+\cite{eo77}, using either the partial summations
+of the folded diagrams as discussed
+above, or by including renormalized particle-hole
+interactions as advocated by the
+random-phase approximation or studying the perturbation expansion
+order-by-order
+in the interaction. Following the latter philosophy,
+Barrett and Kirson \cite{bk70}
+showed that third-order contributions played a sizable role, questioning
+thereby many of the conclusions reached in previous works.
+Typical examples of third-order topologies
+are shown in appendix A, figs.\ \ref{fig:onebody} and \ref{fig:twobody}.
+To evaluate the $\hat{Q}$-box 
+we will expand the denominator of eq.\ (\ref{eq:qbox}) such that
+we obtain a perturbative expansion for the $\hat{Q}$-box which reads
+\begin{equation}
+P\hat{Q}P=PH_1P+
+P\left(H_1 \frac{Q}{\omega-H_{0}}H_1+H_1
+\frac{Q}{\omega-H_{0}}H_1 \frac{Q}{\omega-H_{0}}H_1 +\dots\right)P,
+\label{eq:newqbox}
+\end{equation}
+In actual calculations, the interaction $H_1$ is replaced by $G-U$.
+
+Before we study various properties of the \qbox,
+let us first discuss the physical meaning of many of the diagrams
+shown in appendix A.
+The second-order
+two-particle ladder diagram has already been discussed in section 5.
+Diagram 2-4 of fig.\ \ref{fig:twobody} in appendix A,
+represents the
+admixture of four-particle-two-hole states, configurations
+which are important for nuclei near a closed core nucleus like
+$^{16}$O. In this sense, diagram 2-4 is supposed to represent
+degrees of freedom (such as 4p-2h intruder states)
+not included in the definition of the model
+space. One might then argue that in calculations of the $sd$-shell
+effective interactions one should not include diagrams with
+4p-2h intermediate states in order to avoid  double counting.
+However, the majority of 4p-2h states are not intruder states, so one
+would probably make less error by including diagrams with 4p-2h
+intermediate states.
+Also, to low orders in the interaction, the
+$Q$-space component is weak \cite{eehho94}. Diagram 2-2 in the
+same figure is the well-know core-polarization term, and its
+physical interpretation has been discussed by several authors,
+see e.g.\ refs.\ \cite{eo77,kb66}.
+Here we restate the arguments of ref.\ \cite{eo77}. A decomposition
+of the core-polarization diagram into $J$ and $T$ of the intermediate
+states, shows that the dominant contribution comes from $J=2$ and $T=0$,
+which corresponds to a quadropole-quadropole interaction. This
+quadropole component gives rise to a long-range component
+in the effective interaction, a long-range component which 
+can be understood from the following pictorial configuration 
+space representation of the core polarization process in fig.\ 
+\ref{fig:pictorialcore}. 
+\begin{figure}
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,100)
+     \put(25,10){\epsfxsize=12cm \epsfbox{snapshot.eps}}
+     \end{picture}
+\caption{Snapshots of the core-polarization process.}
+\label{fig:pictorialcore}
+\end{figure}
+In order for two nucleons to interact via the $G$-matrix, they must be
+fairly close to each other. Thus two valence nucleons on opposite sites
+of the core, see (a) in the above figure, cannot interact directly
+via $G$. However, they may interact via the exchange of a particle-hole
+excitation as shown by the series of snapshots of the process depicted
+in (b)-(d). First, the valence particle $\alpha$ interacts, thus
+being left in a state $\gamma$, with a nearby core particle, creating
+a particle-hole pair (b). This particle-hole pair 
+propagates over to the valence particle $\beta$ (c) in a time
+interval $\Delta T \approx \hbar/\Delta E$, where $\Delta E$ is the
+excitation energy. When the particle-hole pair is close enough 
+to $\beta$ (d), it is then annihilated, leaving $\beta$ in a state
+$\delta$ (e). Thus a long-range effective interaction is generated
+between a pair of valence particles $\alpha$ and $\beta$, leaving them
+in states $\gamma$ and $\delta$. 
+
+For several years, the belief was after the work of
+Kuo and Brown \cite{kb66}, that
+the effective interaction could very well be approximated by
+the $G$-matrix, which accounts for the short-range part
+of the interaction, and the core-polarization diagram to second-order.
+However, although the results of Kuo and Brown resulted
+in a good agreement with the data, these findings were questioned
+by Barrett and Kirson \cite{bk70}
+who found many third-order
+$JT=01$ matrix elements to be as large as the second-order contributions,
+and of opposite sign.
+To demonstrate the importance of third-order diagrams, we present in
+table \ref{tab:sdmtxel} various contributions to a third-order
+\qbox for selected model-space
+configurations\footnote{Note well that we omit higher-order
+diagrams with Hartree-Fock insertions. We will tacitly assume that
+a h.o.\ basis reproduces the spectra fairly well, although
+for the less bound states in e.g.\ $^{18}$O, this may not be too
+realistic a choice, see the discussion of ref.\ \cite{eo77}.}
+in the $sd$-shell. The value of $n_3=66$ was used,
+an approximation we found
+to be rather good in section 5 and in the discussion below, see
+table \ref{tab:n32ndconv}.
+\begin{table}[hbtp]
+\caption{The $sd$-shell two-body contributions to the $\hat{Q}$-box
+for selected configurations
+obtained with the Bonn A potential.
+$G$ denotes the bare $G$-matrix, $CP$
+is the second-order core-polarization diagram
+whereas $2nd$ means all two-body second-order diagrams.
+$3rd$ means all third-order diagrams without folded diagrams.
+All entries in MeV.}
+\begin{center}
+\begin{tabular}{lllllrrrr}
+\hline
+$JT$&$j_{a}$&$j_{b}$&$j_{c}$&$j_{d}$&
+\multicolumn{1}{c}{$G$}&
+\multicolumn{1}{c}{$CP$}&
+\multicolumn{1}{c}{$2nd$}&
+\multicolumn{1}{c}{$3rd$}\\ \hline
+01&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&-1.712&-1.086&-1.763&0.471\\
+10&&&&&-0.314&-0.353&-1.126&-0.179\\
+01&$d_{5/2}$&$d_{5/2}$&$d_{3/2}$&$d_{3/2}$&-3.462&-0.843&-1.193&1.247\\
+10&&&&&2.668&-0.721&-0.692&-0.044\\
+01&$d_{5/2}$&$d_{5/2}$&$s_{1/2}$&$s_{1/2}$&-0.810&-0.409&-0.588&-0.135\\
+10&&&&&-0.493&-0.204&-0.548&-0.263\\
+01&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$&-0.323&-0.522&-1.057&0.061\\
+10&&&&&-0.113&-0.108&-0.428&-1.006\\
+01&$d_{3/2}$&$d_{3/2}$&$s_{1/2}$&$s_{1/2}$&-0.662&-0.253&-0.399&-0.007\\
+10&&&&&-0.395&0.253&0.310&0.225\\
+01&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$&-2.417&-0.054&-0.136&-0.301\\
+10&&&&&-3.509&0.176&-0.422&-0.665\\ \hline
+\end{tabular}
+\end{center}
+\label{tab:sdmtxel}
+\end{table}
+We see from table \ref{tab:sdmtxel} that, although many third-order
+contributions are small compared with the second-order ones, some of
+them are rather large, of the size of, or even larger than
+the $G$-matrix. Thus, we can
+not neglect third-order terms completely and will retain
+them in our calculation of the \qbox. Moreover, in this table
+we have neglected third-order folded diagrams,
+which may be rather large and repulsive.
+Similar conclusions apply to matrix
+elements in the $pf$- and $sdg$-shells as well. The reader should
+note that the above $JT$ combinations have been chosen since they
+give the largest differences between second and third order.
+For the other $JT$ configurations such differences are smaller.
+The $JT=01$ and $JT=10$ configurations yield the largest third-order
+terms
+in the tin and calcium regions as well.
+
+The third-order contributions can however be reduced if one uses
+a Hartree-Fock basis, as shown in ref.\ \cite{homs90},
+though the
+agreement with the experimental data for $^{18}$O was not as good
+as that obtained with a h.o.\ basis. Another mechanism which
+reduces the size of a higher-order diagram, is to take into account
+the
+dependence of the $G$-matrix of the starting energy, see
+appendix A for relevant examples. Since the $G$-matrix is not
+on-shell for the intermediate states, a proper evaluation
+of the starting energy dependence reduces the absolute value of
+the $G$-matrix (see the discussion in section 5), and thereby
+the absolute value of the higher-order diagram.
+For starting energies close to the chosen unperturbed
+model-space sp energies, the variations in $G$ are rather small,
+though for a diagram like the 2p-1h diagram discussed in appendix
+A, the starting energy of the intermediate $G$-matrices is
+$\omega \approx \varepsilon_h -\varepsilon_p$, which is of the order
+$-30$ MeV or more. This number should be compared to the
+starting energy appropriate for $sd$-shell nuclei, approximately
+$-10$ MeV. The relevant matrix elements are on the average
+reduced with $5\%$ when decreasing the starting energy from
+$-10$ to $-30$ MeV. This effect comes in squared in the 2p-1h
+diagram, since we have two interactions which are reduced.
+For higher-order diagrams this effect is even stronger, and the
+total effect on third-order diagrams with a proper evaluation
+of the starting energy, is a reduction of their absolute value
+of the order of $10-20\%$. The latter effect is properly taken 
+into account into the results shown in the above
+table, and in all our calculations of the effective interaction.
+
+Although there are several third-order contributions, most of them
+can be given a physical interpretation. Diagram 2-14 in fig.\
+\ref{fig:twobody} in appendix A, is the third-order core-polarization
+diagram, and can be interpreted as a renormalization of the particle-hole
+propagator
+of the second-order core-polarization diagram.
+In a similar way, diagrams
+2-15(A) and 2-15(B), which  are the third-order RPA diagrams,
+and diagrams 2-18 and
+2-19 in fig.\ \ref{fig:twobody} are also examples of corrections to the
+second-order core-polarization diagram, since they modify the
+propagator
+which couples the particle-hole pair to the valence particles.
+
+Another class of third-order diagrams which have a neat physical
+interpretation are diagrams 2-5 to 2-10 in the appendix. We redisplay
+diagrams 2-5 and 2-6 plus a third-order folded diagram
+not included in the \qbox 
+in fig.\ \ref{fig:nocosets}. It was suggested by Brandow
+\cite{bran67} 
+\begin{figure}
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,80)
+    \put(25,10){\epsfxsize=12cm \epsfbox{nocons.eps}}
+     \end{picture}
+\caption{The set of number-conserving diagrams discussed
+in text.}
+\label{fig:nocosets}
+\end{figure}
+that these diagrams should cancel approximately
+according to the principle of number conservation.
+If the middle vertex is replaced by the number operator, these
+diagrams should cancel exactly. In physical terms, these diagrams
+may be thought of as a correction to the bare $G$-matrix due to the creation
+of a particle-hole pair. In 2-5, the particle in the particle-hole
+pair interacts with the other valence particle. The folded diagram
+is a correction of the same form as 2-5 to the $G$-matrix, but it
+accounts for the fact that the valence particle may not be
+in the same orbit all the time. This diagram has in general an opposite
+sign to diagram 2-5. Diagram 2-6  represents the interaction of the
+hole (core) with the other valence particle and balances
+diagram 2-5.
+Most NN potentials reproduce only approximately this number conserving
+feature
+\cite{eko85,ho90} in the $T=1$ channel, while in the $T=0$ channel,
+the cancellation is rather poor. The qualitative conclusions reached
+in refs.\ \cite{eko85,ho90} apply to the present potentials as well.
+The second set of number-conserving diagrams exhibits a similar
+behavior, here diagrams 2-7, 2-8 and 2-10(B) in fig.\ \ref{fig:twobody}
+in the appendix
+should cancel if the
+middle interaction vertex is replaced by the number operator.
+There are  also two other diagrams belonging
+to this number-conserving set,
+but they do not contribute if we restrict the
+attention to excitations of $2\hbar\omega$.
+
+We have seen that third-order contributions may be large, and
+can not be neglected. In the evaluation of the \qbox, a third-order
+\qbox contains some hundred diagrams if we include Hartree-Fock
+contributions, and it is rather straightforward, but tedious, to
+evaluate such a \qbox.
+To fourth order in the interaction there are several hundreds of
+diagrams which contribute to the effective interaction, and it is
+still an open question how important such contributions will be, although
+an estimation by Goode and Koltun \cite{gk75} by way of a diagrammatic
+technique where averages of valence-particle diagrams in terms
+of diagrams of closed-shell form are studied,
+shows that fourth-order contributions
+may be large. We can therefore not say anything about the
+order-by-order convergence of the effective interaction.
+However, as we discussed in section 4, a reordering of the perturbation
+expansion can in principle yield a convergent perturbation
+expansion. This is the philosophy behind the \qbox approach and the
+summation of the folded diagrams, employed in this work. As we will show
+in this section, the differences between $\hat{Q}$-boxes to various
+orders in perturbation theory, become small when we sum folded diagrams
+to all orders.
+
+
+In the calculation of the \qbox and the
+effective interaction for $sd$-nuclei
+we will only allow intermediate
+energy state excitations
+of $2\hbar\omega -4\hbar\omega$ in oscillator energy when we evaluate
+the various diagrams.
+It was demonstrated by Sommerman {\em et al.} \cite{sommer}
+that when one employs potentials with a weak tensor force, the
+core-polarization diagram, (diagram 2-2 in
+appendix A), the
+intermediate state contributions could be approximated by
+$2\hbar\omega$ in oscillator energy. The potentials
+we will employ all exhibit a weak tensor force.
+We will not include high-lying sp states in
+our analysis of various \qbox diagrams, since an appropriate inclusion
+of high-lying intermediate particle states would require a 
+description in terms of plane waves. A $G$-matrix where
+one or two of the particle states are in a plane wave basis
+and the other two sp states are described in terms of 
+h.o.\ states, can in principle be calculated  using the
+techniques outlined at the end of section 5 (see eqs.\
+(\ref{eq:kho}) and (\ref{eq:kk}). Though, the 
+numerical expenditure would grow tremendously.
+Here we will assume the analysis 
+of ref.\ \cite{sommer} to be approximately valid for the
+other diagrams as well, and carry
+out our calculations restricting the summation over intermediate
+states to $2\hbar\omega -4\hbar\omega$ in oscillator energy.
+Actually, for third-order \qbox diagrams, the contributions from
+high-lying states is indeed rather weak, since the energy
+denominator appears as $(n\hbar\omega)^2$ ($n$ being the
+number of oscillator shells). Thus such contributions are largely
+quenched in higher-order diagrams.
+
+We conclude this subsection by justifying our choice
+of $n_3$ (which defines the Pauli operator
+for finite nuclei in fig.\ \ref{fig:qoperat})
+in table \ref{tab:n32ndconv}, where we show
+\begin{table}[hbtp]
+\caption{Dependence of the second-order diagrams
+on the choice of $n_3$ for
+matrix elements in the $sd$-shell for $J=0,1$ and $T=0,1$.
+The results are for the $\hat{Q}$-box without the auxiliary
+potential $U$.
+Note that the \qbox includes both one-body and
+two-body diagrams. No folded diagrams are included, and the results
+were obtained with the Bonn A potential at a starting energy
+$\omega =-10$ MeV.}
+\begin{center}
+\begin{tabular}{lllllrrrrr}
+\\\hline
+$JT$&$j_{a}$&$j_{b}$&$j_{c}$&$j_{d}$&
+\multicolumn{1}{c}{(3,10,45)}&
+\multicolumn{1}{c}{(3,10,66)}&
+\multicolumn{1}{c}{(3,10,78)}&
+\multicolumn{1}{c}{(3,10,91)}&
+\multicolumn{1}{c}{(3,10,120)}
+\\\hline
+01&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&-60.33&-60.13&-60.10&-60.07&-60.05\\
+10&&&& &-58.56&-58.97&-58.33&-58.29&-58.28\\
+01&$d_{5/2}$&$d_{5/2}$&$d_{3/2}$&$d_{3/2}$&-4.59&-4.59&-4.60&-4.60&-4.60\\
+10&&&& &2.12&2.11&2.11&2.11&2.11\\
+01&$d_{5/2}$&$d_{5/2}$&$s_{1/2}$&$s_{1/2}$&-1.39&-1.40&-1.40&-1.40&-1.40\\
+10&&&& &-1.12&-1.12&-1.12&-1.12&-1.12\\
+01&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$&-47.19&-47.05&-47.02&-47.00&-46.98\\
+10&&&& &-46.59&-46.45&-46.42&-46.40&-46.40\\
+01&$d_{3/2}$&$d_{3/2}$&$s_{1/2}$&$s_{1/2}$&-1.06&-1.06&-1.06&-1.06&-1.06\\
+10&&&& &-0.02&-0.03&-0.03&-0.03&-0.03\\
+01&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$&-60.54&-60.09&-59.99&-59.91&-59.85\\
+10&&&& &-62.13&-61.67&-61.56&-61.48&-61.41 \\\hline
+\end{tabular}
+\end{center}
+\label{tab:n32ndconv}
+\end{table}
+the dependence of the \qbox on the choice of $n_3$ in the
+calculation of the $G$-matrix.
+The results list all diagrams of appendix A
+to second order in $G$ (third-order diagrams show a neglible
+dependence upon $n_3$), except for the auxiliary potential $U$,
+diagram 1-2 in fig.\ \ref{fig:onebody}.
+The \qbox consists of both one-body and two-body diagrams, and
+as can be deduced from this table, the dependence on $n_3$
+is rather weak, and the largest discrepancies occur for
+the diagonal contributions. This is ascribed to
+the first-order Hartree-Fock diagram, which does not stabilize
+properly, as can be seen from table \ref{tab:un3dep}. However,
+we subtract this diagram from our effective interaction, and our
+approximation of $n_3=66$ introduces on the average an error of the order
+$0.1\%$ or even less, a negligible effect.
+\begin{table}[hbtp]
+\caption{Dependence of
+the Hartree-Fock sp potential, diagram 1-1 in fig.\ A.7,
+on the choice of $n_3$ for the Bonn A
+potential for a starting energy
+$-10$ MeV for various sp orbits.}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\\ \hline
+&
+\multicolumn{1}{c}{(3,10,45)}&
+\multicolumn{1}{c}{(3,10,66)}&
+\multicolumn{1}{c}{(3,10,78)}&
+\multicolumn{1}{c}{(3,10,91)}&
+\multicolumn{1}{c}{(3,10,120)}
+\\  \hline
+$\bra{(1s_{1/2})}U\ket{(1s_{1/2})}$&-25.728&-25.539&-25.500&-25.464&-25.436\\
+$\bra{(0d_{3/2})}U\ket{(0d_{3/2})}$&-21.031&-20.957&-20.945&-20.931&-20.922\\
+$\bra{(0d_{5/2})}U\ket{(0d_{5/2})}$&-26.517&-26.405&-26.384&-26.364&-26.350\\
+\\ \hline
+\end{tabular}
+\end{center}
+\label{tab:un3dep}
+\end{table}
+
+
+
+
+
+\subsection{Results for nuclei in the mass region of $^{16}$O}
+
+We present here
+the results from effective interaction calculations for several
+nuclei in the $sd$-shell.
+First we will discuss the convergence of the order-by-order
+perturbative expansion for the effective interaction, by considering
+the results through third order in conventional Rayleigh-Schr\"{o}dinger (RS)
+perturbation theory. In connection with the convergence of RS perturbation
+theory,
+we focus also on various approximations to the \qbox and study
+the summation of the folded diagrams. Thereafter, we discuss the
+convergence of the folded-diagram method itself. To study these
+topics we will use nuclei in the $sd$-shell with two valence
+nucleons only, in our case $^{18}$O and $^{18}$F. The effective
+interactions we derive will in turn be used to calculate the
+spectra for nuclei in the $sd$-shell with more than two
+valence nucleons, here the nuclei $^{19}$F,
+$^{20}$O, $^{20}$Ne,
+and $^{22}$Ne. The effective matrix elements
+are tabulated in appendix C.
+The starting point for our calculations is the $G$-matrix, which
+was defined in section 5 with
+$(n_1=3, n_2=10, n_3 =66)$ and an oscillator parameter
+$b=1.72$ fm. The three Bonn potentials, A, B and C will be used,
+in order to study the role played by different tensor forces.
+
+
+\subsubsection{Order-by-order perturbation theory and folded diagrams}
+
+Here we present the results for various approximations to perturbation
+theory, including the converged results from the folded-diagram
+method with a \qbox of second and third order. These results are listed
+in figs.\ \ref{fig:rs18oa}-\ref{fig:rs18fc} for the nuclei $^{18}$O and
+$^{18}$F. Observe that, throughout this work we will only plot
+the lowest lying states for each value of $J$. Thereby we omit
+any discussion on intruder states and focus on those states which
+from experimental data are expected to have a large overlap
+with the  chosen model spaces.
+We have employed all three Bonn potentials, i.e.\
+versions A, B and C of table A.1 of ref.\ \cite{mac89}.
+
+The label $\hat{Q}^{(1)}$ in these six figures stands for perturbation
+theory to first order in the $G$-matrix. $\hat{Q}^{(2)}$ is
+second-order perturbation theory, while $\hat{Q}^{(3)}$
+is the third-order \qbox, i.e.\ no third-order folded diagrams
+are included. Third-order folded diagrams are included in
+$H_{\mathrm{eff}}^{(3)}$, which is RS perturbation theory
+to third order. The converged results (for a discussion
+on how to obtain these results, see below)
+of a folded diagrams calculation
+are shown in columns five and six, under the labels
+$\hat{Q}^{(2)}+fold$ and $\hat{Q}^{(3)}+fold$, obtained with a
+\qbox of second order and third order in $G$, respectively.
+\begin{figure}[hbtp]
+\begin{center}
+\setlength{\unitlength}{1.0mm}
+\begin{picture}(150,120)(0,-80)
+\thicklines
+\put(5,-65){\line(0,1){85}}
+\put(5,20){\line(1,0){145}}
+\put(5,-65){\line(1,0){145}}
+\put(150,-65){\line(0,1){85}}
+\multiput(5,-60)(0,10){8}{\line(1,0){2}}
+\thinlines
+\put(0,-61){-6}
+\put(0,-51){-5}
+\put(0,-41){-4}
+\put(0,-31){-3}
+\put(0,-21){-2}
+\put(0,-11){-1}
+\put(1,-1){0}
+\put(1,9){1}
+\multiput(5,-55)(0,10){8}{\line(1,0){1}}
+\put(10,-30.3){\nl{0}}
+\put(10,-19.9){\nl{2}}
+\put(10,4.9){\nl{3}}
+\put(10,-8.7){\nl{4}}
+\put(30,-55.9){\nl{0}}
+\put(30,-26.5){\nl{2}}
+\put(30,11.6){\nl{3}}
+\put(30,-6.1){\nl{4}}
+\put(50,-47.4){\nl{0}}
+\put(50,-27.1){\nl{2}}
+\put(50,13.3){\nl{3}}
+\put(50,-7.7){\nl{4}}
+\put(70,-37.5){\nl{0}}
+\put(70,-21.8){\nl{2}}
+\put(70,13.9){\nl{3}}
+\put(70,-5.5){\nl{4}}
+\put(90,-38.1){\nl{0}}
+\put(90,-18.8){\nl{2}}
+\put(90,10.3){\nl{3}}
+\put(90,-4.1){\nl{4}}
+\put(110,-37.4){\nl{0}}
+\put(110,-19.95){\nl{2}}
+\put(110,11.46){\nl{3}}
+\put(110,-5.3){\nl{4}}
+\put(130,-39.0){\nl{0}}
+\put(130,14.8){\nl{3}}
+\put(130,-19.2){\nl{2}}
+\put(130,-3.5){\nl{4}}
+\put(10,-75){$\hat{Q}^{(1)}$}
+\put(30,-75){$\hat{Q}^{(2)}$}
+\put(50,-75){$\hat{Q}^{(3)}$}
+\put(70,-75){$H_{\mathrm{eff}}^{(3)}$}
+\put(90,-75){$\hat{Q}^{(2)}+$fold}
+\put(110,-75){$\hat{Q}^{(3)}+$fold}
+\put(132,-75){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{18}$O with the Bonn A potential.}
+\label{fig:rs18oa}
+\end{figure}
+\begin{figure}[hbtp]
+\begin{center}
+\setlength{\unitlength}{1.0mm}
+\begin{picture}(150,120)(0,-80)
+\thicklines
+\put(5,-65){\line(0,1){85}}
+\put(5,20){\line(1,0){145}}
+\put(5,-65){\line(1,0){145}}
+\put(150,-65){\line(0,1){85}}
+\multiput(5,-60)(0,10){8}{\line(1,0){2}}
+\thinlines
+\put(0,-61){-6}
+\put(0,-51){-5}
+\put(0,-41){-4}
+\put(0,-31){-3}
+\put(0,-21){-2}
+\put(0,-11){-1}
+\put(1,-1){0}
+\put(1,9){1}
+\multiput(5,-55)(0,10){8}{\line(1,0){1}}
+\put(10,-30){\nl{0}}
+\put(10,-19.9){\nl{2}}
+\put(10,4.9){\nl{3}}
+\put(10,-8.7){\nl{4}}
+\put(30,-54.4){\nl{0}}
+\put(30,-26.2){\nl{2}}
+\put(30,11.5){\nl{3}}
+\put(30,-6.1){\nl{4}}
+\put(50,-46.7){\nl{0}}
+\put(50,-26.7){\nl{2}}
+\put(50,13.0){\nl{3}}
+\put(50,-7.7){\nl{4}}
+\put(70,-37.2){\nl{0}}
+\put(70,-21.6){\nl{2}}
+\put(70,13.5){\nl{3}}
+\put(70,-5.5){\nl{4}}
+\put(90,-36.8){\nl{0}}
+\put(90,-18.4){\nl{2}}
+\put(90,10.2){\nl{3}}
+\put(90,-4.1){\nl{4}}
+\put(110,-36.1){\nl{0}}
+\put(110,-19.5){\nl{2}}
+\put(110,11.2){\nl{3}}
+\put(110,-5.2){\nl{4}}
+\put(130,-39.0){\nl{0}}
+\put(130,14.8){\nl{3}}
+\put(130,-19.2){\nl{2}}
+\put(130,-3.5){\nl{4}}
+\put(10,-75){$\hat{Q}^{(1)}$}
+\put(30,-75){$\hat{Q}^{(2)}$}
+\put(50,-75){$\hat{Q}^{(3)}$}
+\put(70,-75){$H_{\mathrm{eff}}^{(3)}$}
+\put(90,-75){$\hat{Q}^{(2)}+$fold}
+\put(110,-75){$\hat{Q}^{(3)}+$fold}
+\put(132,-75){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{18}$O with the Bonn B potential.}
+\label{fig:rs18ob}
+\end{figure}
+\begin{figure}[hbtp]
+\begin{center}
+\setlength{\unitlength}{1.0mm}
+\begin{picture}(150,120)(0,-80)
+\thicklines
+\put(5,-65){\line(0,1){85}}
+\put(5,20){\line(1,0){145}}
+\put(5,-65){\line(1,0){145}}
+\put(150,-65){\line(0,1){85}}
+\multiput(5,-60)(0,10){8}{\line(1,0){2}}
+\thinlines
+\put(0,-61){-6}
+\put(0,-51){-5}
+\put(0,-41){-4}
+\put(0,-31){-3}
+\put(0,-21){-2}
+\put(0,-11){-1}
+\put(1,-1){0}
+\put(1,9){1}
+\multiput(5,-55)(0,10){8}{\line(1,0){1}}
+\put(10,-30.7){\nl{0}}
+\put(10,-20.0){\nl{2}}
+\put(10,4.9){\nl{3}}
+\put(10,-8.7){\nl{4}}
+\put(30,-54.2){\nl{0}}
+\put(30,-26.0){\nl{2}}
+\put(30,11.2){\nl{3}}
+\put(30,-6.1){\nl{4}}
+\put(50,-47.4){\nl{0}}
+\put(50,-26.6){\nl{2}}
+\put(50,13.0){\nl{3}}
+\put(50,-7.6){\nl{4}}
+\put(70,-38.0){\nl{0}}
+\put(70,-21.7){\nl{2}}
+\put(70,13.0){\nl{3}}
+\put(70,-5.5){\nl{4}}
+\put(90,-36.4){\nl{0}}
+\put(90,-18.1){\nl{2}}
+\put(90,10.0){\nl{3}}
+\put(90,-4.1){\nl{4}}
+\put(110,-36.0){\nl{0}}
+\put(110,-19.2){\nl{2}}
+\put(110,10.9){\nl{3}}
+\put(110,-5.1){\nl{4}}
+\put(130,-39.0){\nl{0}}
+\put(130,14.8){\nl{3}}
+\put(130,-19.2){\nl{2}}
+\put(130,-3.5){\nl{4}}
+\put(10,-75){$\hat{Q}^{(1)}$}
+\put(30,-75){$\hat{Q}^{(2)}$}
+\put(50,-75){$\hat{Q}^{(3)}$}
+\put(70,-75){$H_{\mathrm{eff}}^{(3)}$}
+\put(90,-75){$\hat{Q}^{(2)}+$fold}
+\put(110,-75){$\hat{Q}^{(3)}+$fold}
+\put(132,-75){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{18}$O with the Bonn C potential.}
+\label{fig:rs18oc}
+\end{figure}
+\begin{figure}[hbtp]
+\begin{center}
+\setlength{\unitlength}{1.0mm}
+\begin{picture}(150,150)(0,-110)
+\thicklines
+\put(5,-95){\line(0,1){125}}
+\put(5,30){\line(1,0){145}}
+\put(5,-95){\line(1,0){145}}
+\put(150,-95){\line(0,1){125}}
+\multiput(5,-80)(0,10){11}{\line(1,0){2}}
+\thinlines
+\put(0,-81){-8}
+\put(0,-71){-7}
+\put(0,-61){-6}
+\put(0,-51){-5}
+\put(0,-41){-4}
+\put(0,-31){-3}
+\put(0,-21){-2}
+\put(0,-11){-1}
+\put(1,-1){0}
+\put(1,9){1}
+\put(1,19){2}
+\multiput(5,-75)(0,10){10}{\line(1,0){1}}
+\put(10,-53.1){\nl{1}}
+\put(10,-26.7){\nl{2}}
+\put(10,-39.9){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(10,4.3){\nl{4}}
+\put(10,-36.5){\nl{5}}
+\put(30,-82){\nl{1}}
+\put(30,-34){\nl{2}}
+\put(30,-51.5){\nl{3}}
+\put(30,1.5){\nl{4}}
+\put(30,-39.8){\nl{5}}
+\put(50,-89.1){\nl{1}}
+\put(50,-34.1){\nl{2}}
+\put(50,-58){\nl{3}}
+\put(50,-2.6){\nl{4}}
+\put(50,-46.0){\nl{5}}
+\put(70,-68.7){\nl{1}}
+\put(70,-23.6){\nl{2}}
+\put(70,-49){\nl{3}}
+\put(70,3.7){\nl{4}}
+\put(70,-41){\nl{5}}
+\put(90,-52.6){\nl{1}}
+\put(90,-18.9){\nl{2}}
+\put(90,-36.5){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(90,4.3){\nl{4}}
+\put(90,-31.8){\nl{5}}
+\put(110,-57.8){\nl{1}}
+\put(110,-21.0){\nl{2}}
+\put(110,-40.7){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(110,6.5){\nl{4}}
+\put(110,-36.9){\nl{5}}
+\put(130,-50){\nl{1}}
+\put(130,-40.7){\line(1,0){10}\raisebox{-1.5ex}{\hspace{1mm}3}}
+\put(130,-38.8){\nl{5}}
+\put(130,-24.8){\nl{2}}
+\put(130,3.5){\nl{4}}
+\put(10,-105){$\hat{Q}^{(1)}$}
+\put(30,-105){$\hat{Q}^{(2)}$}
+\put(50,-105){$\hat{Q}^{(3)}$}
+\put(70,-105){$H_{\mathrm{eff}}^{(3)}$}
+\put(90,-105){$\hat{Q}^{(2)}+$fold}
+\put(110,-105){$\hat{Q}^{(3)}+$fold}
+\put(132,-105){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{18}$F with the Bonn A potential.}
+\label{fig:rs18fa}
+\end{figure}
+\begin{figure}[hbtp]
+\begin{center}
+\setlength{\unitlength}{1.0mm}
+\begin{picture}(150,150)(0,-110)
+\thicklines
+\put(5,-95){\line(0,1){125}}
+\put(5,30){\line(1,0){145}}
+\put(5,-95){\line(1,0){145}}
+\put(150,-95){\line(0,1){125}}
+\multiput(5,-80)(0,10){11}{\line(1,0){2}}
+\thinlines
+\put(0,-81){-8}
+\put(0,-71){-7}
+\put(0,-61){-6}
+\put(0,-51){-5}
+\put(0,-41){-4}
+\put(0,-31){-3}
+\put(0,-21){-2}
+\put(0,-11){-1}
+\put(1,-1){0}
+\put(1,9){1}
+\put(1,19){2}
+\multiput(5,-75)(0,10){10}{\line(1,0){1}}
+\put(10,-50.4){\nl{1}}
+\put(10,-25.3){\nl{2}}
+\put(10,-38.6){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(10,5.4){\nl{4}}
+\put(10,-35.6){\nl{5}}
+\put(30,-78.2){\nl{1}}
+\put(30,-32.3){\nl{2}}
+\put(30,-49.9){\nl{3}}
+\put(30,2.7){\nl{4}}
+\put(30,-38.8){\nl{5}}
+\put(50,-84.2){\nl{1}}
+\put(50,-31.7){\nl{2}}
+\put(50,-55.7){\nl{3}}
+\put(50,-1){\nl{4}}
+\put(50,-44.6){\nl{5}}
+\put(70,-65.1){\nl{1}}
+\put(70,-21.8){\nl{2}}
+\put(70,-46.8){\nl{3}}
+\put(70,5.0){\nl{4}}
+\put(70,-39.8){\nl{5}}
+\put(90,-48.8){\nl{1}}
+\put(90,-17.1){\nl{2}}
+\put(90,-34.9){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(90,1.3){\nl{4}}
+\put(90,-30.7){\nl{5}}
+\put(110,-52.2){\nl{1}}
+\put(110,-18.8){\nl{2}}
+\put(110,-38.6){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(110,8.3){\nl{4}}
+\put(110,-35.3){\nl{5}}
+\put(130,-50){\nl{1}}
+\put(130,-40.7){\line(1,0){10}\raisebox{-1.5ex}{\hspace{1mm}3}}
+\put(130,-38.8){\nl{5}}
+\put(130,-24.8){\nl{2}}
+\put(130,3.5){\nl{4}}
+\put(10,-105){$\hat{Q}^{(1)}$}
+\put(30,-105){$\hat{Q}^{(2)}$}
+\put(50,-105){$\hat{Q}^{(3)}$}
+\put(70,-105){$H_{\mathrm{eff}}^{(3)}$}
+\put(90,-105){$\hat{Q}^{(2)}+$fold}
+\put(110,-105){$\hat{Q}^{(3)}+$fold}
+\put(132,-105){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{18}$F with the Bonn B potential.}
+\label{fig:rs18fb}
+\end{figure}
+\begin{figure}[hbtp]
+\begin{center}
+\setlength{\unitlength}{1.0mm}
+\begin{picture}(150,150)(0,-110)
+\thicklines
+\put(5,-95){\line(0,1){125}}
+\put(5,30){\line(1,0){145}}
+\put(5,-95){\line(1,0){145}}
+\put(150,-95){\line(0,1){125}}
+\multiput(5,-80)(0,10){11}{\line(1,0){2}}
+\thinlines
+\put(0,-81){-8}
+\put(0,-71){-7}
+\put(0,-61){-6}
+\put(0,-51){-5}
+\put(0,-41){-4}
+\put(0,-31){-3}
+\put(0,-21){-2}
+\put(0,-11){-1}
+\put(1,-1){0}
+\put(1,9){1}
+\put(1,19){2}
+\multiput(5,-75)(0,10){10}{\line(1,0){1}}
+\put(10,-48.0){\nl{1}}
+\put(10,-24.1){\nl{2}}
+\put(10,-37.3){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(10,6.6){\nl{4}}
+\put(10,-34.4){\nl{5}}
+\put(30,-75.0){\nl{1}}
+\put(30,-31.0){\nl{2}}
+\put(30,-48.3){\nl{3}}
+\put(30,3.9){\nl{4}}
+\put(30,-37.6){\nl{5}}
+\put(50,-80.1){\nl{1}}
+\put(50,-30.1){\nl{2}}
+\put(50,-53.5){\nl{3}}
+\put(50,0.5){\nl{4}}
+\put(50,-43.1){\nl{5}}
+\put(70,-62.3){\nl{1}}
+\put(70,-20.9){\nl{2}}
+\put(70,-45.2){\nl{3}}
+\put(70,6.2){\nl{4}}
+\put(70,-38.6){\nl{5}}
+\put(90,-45.3){\nl{1}}
+\put(90,-15.6){\nl{2}}
+\put(90,-33.2){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(90,14.0){\nl{4}}
+\put(90,-29.4){\nl{5}}
+\put(110,-49.1){\nl{1}}
+\put(110,-17){\nl{2}}
+\put(110,-36.5){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}3}}
+\put(110,10.1){\nl{4}}
+\put(110,-33.5){\nl{5}}
+\put(130,-50){\nl{1}}
+\put(130,-40.7){\line(1,0){10}\raisebox{-1.5ex}{\hspace{1mm}3}}
+\put(130,-38.8){\nl{5}}
+\put(130,-24.8){\nl{2}}
+\put(130,3.5){\nl{4}}
+\put(10,-105){$\hat{Q}^{(1)}$}
+\put(30,-105){$\hat{Q}^{(2)}$}
+\put(50,-105){$\hat{Q}^{(3)}$}
+\put(70,-105){$H_{\mathrm{eff}}^{(3)}$}
+\put(90,-105){$\hat{Q}^{(2)}+$fold}
+\put(110,-105){$\hat{Q}^{(3)}+$fold}
+\put(132,-105){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{18}$F with the Bonn C potential.}
+\label{fig:rs18fc}
+\end{figure}
+
+
+
+The following is to be noted from these figures:
+\begin{itemize}
+\item For all potentials and both nuclei, order-by-order
+RS perturbation theory does not seem to converge. This conclusion
+was first pointed out by Barrett and Kirson \cite{bk70},
+and later several workers in the field have obtained the same
+conclusion, but with different potentials. Though, the difference
+between the results with a second-order and a third-order
+\qbox is not as large as the difference between pertubation
+theory to first- and second-order in $G$. Thus, one is led
+to conclude that the order-by-order convergence, if we
+omit any discussion on intruder states, is slow in terms of the
+$G$-matrix.
+\item For $^{18}$O we observe however that there are small
+differences between the results obtained with third-order
+perturbation theory, and folded diagrams with either a
+second- or a third-order \qbox. This is a very promising
+conclusion, and may indicate that the most important higher-order
+terms come from folded diagrams. For $^{18}$O we note that
+the probably largest contribution to the effective interaction,
+stems from folded diagrams of third order in $G$, since the
+difference between
+$H_{\mathrm{eff}}^{(3)}$ and $\hat{Q}^{(3)}+fold$, is negligible.
+\item For $^{18}$F, the contribution from folded diagrams
+of order higher than third order, is important, since we find a difference
+of approximately 1 MeV between
+$H_{\mathrm{eff}}^{(3)}$ and $\hat{Q}^{(3)}+fold$. However, as
+was the case with $^{18}$O, the difference between
+$\hat{Q}^{(2)}+fold$ and $\hat{Q}^{(3)}+fold$ is small, lending
+support to our conclusion that the contributions from folded diagrams
+which are important. The fact that high-order folded diagrams are
+more important in the $T=0$ than in the $T=1$ can simply be
+ascribed to the role of the tensor force.
+\item In connection with the tensor force, we note that the potential
+with the weakest tensor force, introduces too much binding in the
+$T=0$ channel. This has in turn consequences for the
+excited spectra as well, yielding a larger separation
+between the ground state and the excited states.
+Our $T=1$ results show small differences for the various potentials,
+and the agreement with the data is rather good. Compared with the
+experimental value, we obtain less binding, though this is
+desirable since the inclusion of configurations representing
+intruder states are expected to bring in an additional binding
+of $0.1-0.5$ MeV \cite{ee70}. For $T=0$, the Bonn B and Bonn C
+potentials seem to the preferable ones. From our results,
+one could therefore feel tempted to infer that the tensor
+force of the Bonn A potential is too weak.
+However,
+the reader should observe that there are several
+many-body effects we have not
+considered, such as the replacement of a h.o.\ basis with a
+Brueckner-Hartree-Fock basis. As demonstrated by Goodin {\em et al.}
+\cite{geg77}, the average effect of a self-consistent Hartree-Fock
+basis is to reduce the effective $sd$-shell matrix elements by a
+factor $0.7$. Then, the Bonn A potential would be the most likely
+candidate. It is important to note that
+all the Bonn potentials we consider have a weak tensor
+force compared with earlier potential models.
+\end{itemize}
+
+
+
+In connection with the folded-diagram expansion for
+$H_{\mathrm{eff}}$, the most important question is
+actually whether they converge or not and which factors influence
+the convergence. As can be seen from the equation for the folded-diagram
+expansion of eq.\ (\ref{eq:fd}), which we rewrite here
+\[
+    V_{\mathrm{eff}}^{(n)}=\hat{Q} +{\displaystyle\sum_{m=1}^{\infty}}
+    \frac{1}{m!}\frac{d^m\hat{Q}}{d\omega^m}\left\{
+    V_{\mathrm{eff}}^{(n-1)}\right\}^m,
+\]
+the
+energy dependence of the $\hat{Q}$-box is of central importance.
+As discussed in section 4, we approximate
+\[
+V_{\mathrm{eff}}^{(0)}=\hat{Q}.
+\]
+Since the $\hat{Q}$-box employed in this work is the sum of all
+non-folded linked-valence diagrams through third order, one ought
+to find the energy dependence of the $\hat{Q}$-box to be more
+pronounced
+the higher the order of the diagrams included. This can be seen
+from table \ref{tab:qboxder1}, where we list the values of some selected
+diagrams through third order.
+\begin{table}
+\caption{Dependence on the starting energy $\omega$ for various
+included in the
+$\hat{Q}$-box. We have chosen diagrams with a similar magnitude
+at $\omega =-2$ MeV.
+All results have been obtained with the Bonn A potential.
+The numbering follows figure A.7 in appendix A. Diagram 2-1 is then
+the bare $G$-matrix and diagram 2-2 is the core-polarization
+diagram, while 2-5 is the third-order diagram.
+All entries in MeV.}
+\begin{center}
+\begin{tabular}{llllllrrrrr}\\\hline
+\multicolumn{1}{c}{$JT$}&\multicolumn{1}{c}{$j_{a}$}&
+\multicolumn{1}{c}{$j_{b}$}&\multicolumn{1}{c}{$j_{c}$}&
+\multicolumn{1}
+{c}{$j_{d}$}&\multicolumn{1}{c}{}&\multicolumn{1}{c}
+{$\omega =-18$}&\multicolumn{1}{c}{$\omega =-14$}
+&\multicolumn{1}{c}{$\omega =-10$}&
+\multicolumn{1}{c}{$\omega =-6$}
+&\multicolumn{1}{c}{$\omega =-2$}\\ \hline
+01&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&2-1&-1.687&1.693
+&-1.712&-1.726&-1.739\\
+&&&&&2-2&-0.821&-0.936&-1.086&-1.286&-1.569\\
+&&&&&2-5&-0.470&-0.606&-0.807&-1.122&-1.653\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:qboxder1}
+\end{table}
+The diagrams listed in table \ref{tab:qboxder1}
+are all of comparable size in
+absolute value at $\omega =-2$ MeV,
+and it is clearly seen that the third-order
+diagram (diagram 2-5)  exhibits 
+the strongest dependence on energy when one
+compares the relative increment for each diagram.
+A similar conclusion was reached by Shurpin
+{\em et al.} \cite{skd83}. They calculated the folded diagrams using
+four approximations to the $\hat{Q}$-box, in the first 
+approximation they used with 
+all diagrams up to second order in $G$, while the most extensive
+approach was to include 
+all diagrams to second order in $G$ plus hole-hole and
+particle-hole phonons. The latter calculation, involving
+{\em selected} higher-order effects, resulted in a much more
+pronounced dependence on the energy as compared to the
+first approach to the $\hat{Q}$-box.
+It was then shown by Shurpin {\em et al.} \cite{skd83} that larger
+$\hat{Q}$-box derivatives led to a slower converging FD
+expansion. This can easily be understood from the structure of
+eq.\ (\ref{eq:fd}).
+
+
+Therefore, since some individual third-order diagrams exhibit a
+stronger dependence
+upon the starting energy $\omega$, we may expect larger
+$\hat{Q}$-box derivatives, which may suggest that the effects of
+folded
+diagrams should be larger if third-order diagrams are considered
+in the $\hat{Q}$-box.
+This conclusion, however, seems to be premature. One must keep
+in mind that there are many
+(see appendix A) third-order topologies which
+contribute to the $\hat{Q}$-box. Many of these third-order
+topologies have been found to be quite large in absolute value
+\cite{hom92,bk70}. Therefore one should not extrapolate
+from
+the energy
+dependence of some individual diagrams to that of all terms.
+Actually, in ref.\ \cite{hom92}
+we found several of the third-order
+$\hat{Q}$-box derivatives to be smaller than those obtained with
+a second-order $\hat{Q}$-box. Especially, the derivatives of the
+diagonal matrix elements tend to be smaller with a third-order
+$\hat{Q}$-box. This is mainly due to the contribution
+from the one-body-diagrams with  a passive valence line.
+As discussed in ref.\ \cite{hom92},
+some {\em total} third-order contributions to the $\hat Q$-box are
+repulsive. Furthermore, they tend to increase with energy, and hence
+result in a derivative of the third-order contribution which is positive.
+The derivatives of the $\hat{Q}$-boxes including all diagrams through
+third order tend therefore
+to be smaller than the corresponding derivatives of
+the $\hat{Q}$-boxes
+to second order in the interaction. This
+should improve
+the convergence of the folded diagram expansion if all terms
+through third order
+are included in the $\hat Q$-box as compared to a calculation
+which only
+accounts for terms through second order.
+Another interesting feature observed in ref.\ \cite{hom92}, is that the
+higher derivatives become small, this means in turn that, if the \qbox is
+small (of the order some few MeV), the series in eq.\ (\ref{eq:fd}) can
+be terminated after the inclusion of some few higher-order terms, since
+the derivatives have to be divided by their respective factorials.
+These observations apply to this work as well.
+In most calculations, we find the first derivative to be in the range
+$0.01-0.3$ MeV. This is the case in  the other mass areas studied
+in this work. The fourth derivative multiplied with its factorial
+is on the average of  the order $10^{-7}-10^{-6}$, and we can in most cases
+terminate our expansion in eq.\ (\ref{eq:fd}) after  $m\approx 4-5$.
+The effective interaction
+$V_{\mathrm{eff}}^{(1)}$
+can then in turn be used to calculate $V_{\mathrm{eff}}^{(2)}$ and so forth.
+In all our calculations we truncate the sum over $m$ at $m=10$, which means
+that we need to evaluate the \qbox at 11 starting energies in
+order to calculate
+derivatives up till the tenth order derivative.
+In this sense we differ from ref.\ \cite{hom92}. There only four
+iterations were considered, and the FD method did not  converge properly.
+Thus, it was important to have a \qbox which yielded a weaker
+dependence on the starting energy $\omega$. In our calculations
+however, the difference in $\omega$ dependence of a \qbox
+of second or third order in $G$, is not so important, since the
+results stabilize with $n \approx 6-10$. 
+We show in fig.\ \ref{fig:fdconv}
+the reliability of our approximation. We see that after four or
+five  iterations
+the eigenvalues for the low-lying states in $^{18}$O are close
+to the result after ten iterations in  eq.\ (\ref{eq:fd}). The
+lowest $JT=01$ state
+and the lowest $JT=10$ state (not shown in this figure) require
+more iterations than the other states in order to arrive at a converged
+result for the effective matrix elements with an accuracy
+of $0.0001$ MeV. However, the convergence is in general rather
+rapid for all effective interactions investigated in this work.
+\begin{figure}[hbtp]
+\begin{center}
+\setlength{\unitlength}{1.0mm}
+\begin{picture}(150,120)(0,-80)
+\thicklines
+\put(5,-65){\line(0,1){85}}
+\put(5,20){\line(1,0){145}}
+\put(5,-65){\line(1,0){145}}
+\put(150,-65){\line(0,1){85}}
+\multiput(5,-60)(0,10){8}{\line(1,0){2}}
+\thinlines
+\put(0,-61){-6}
+\put(0,-51){-5}
+\put(0,-41){-4}
+\put(0,-31){-3}
+\put(0,-21){-2}
+\put(0,-11){-1}
+\put(1,-1){0}
+\put(1,9){1}
+\multiput(5,-55)(0,10){8}{\line(1,0){1}}
+\put(10,-47.4){\nl{0}}
+\put(10,-27.1){\nl{2}}
+\put(10,13.3){\nl{3}}
+\put(10,-7.7){\nl{4}}
+\put(30,-35.45){\nl{0}}
+\put(30,-18.67){\nl{2}}
+\put(30,11.50){\nl{3}}
+\put(30,-5.0){\nl{4}}
+\put(50,-37.63){\nl{0}}
+\put(50,-20.55){\nl{2}}
+\put(50,12.04){\nl{3}}
+\put(50,-5.42){\nl{4}}
+\put(70,-37.56){\nl{0}}
+\put(70,-20.20){\nl{2}}
+\put(70,11.93){\nl{3}}
+\put(70,-5.36){\nl{4}}
+\put(90,-37.58){\nl{0}}
+\put(90,-20.18){\nl{2}}
+\put(90,11.92){\nl{3}}
+\put(90,-5.36){\nl{4}}
+\put(110,-37.58){\nl{0}}
+\put(110,-20.18){\nl{2}}
+\put(110,11.92){\nl{3}}
+\put(110,-5.36){\nl{4}}
+\put(130,-37.58){\nl{0}}
+\put(130,-20.18){\nl{2}}
+\put(130,11.92){\nl{3}}
+\put(130,-5.36){\nl{4}}
+\put(10,-75){$n=0$}
+\put(30,-75){$n=1$}
+\put(50,-75){$n=4$}
+\put(70,-75){$n=5$}
+\put(90,-75){$n=8$}
+\put(110,-75){$n=9$}
+\put(130,-75){$n=10$}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{18}$O with the Bonn A potential as
+function of the number of iterations $n$ needed in the FD
+expansion. The results have been obtained with a \qbox of third order
+in the interaction $G$. The label $n=0$ represents 
+the results with the \qbox
+only. All entries in MeV.}
+\label{fig:fdconv}
+\end{figure}
+
+It also worth noting that for values
+of $\omega$ close to the chosen starting energy, the \qbox
+shows only a weak dependence upon the starting energy.
+This behavior of
+the \qbox is important, since we will obtain an effective interaction
+and energy eigenvalues which depend only weakly on the chosen
+$\omega$, see e.g.\ figs.\ 2 and 3 in ref.\ \cite{eehho94}.
+
+
+In summary, we have seen that the potential models
+of the Bonn group are successful in describing the property
+of $^{18}$O ans $^{18}$F. Although the results of an FD
+calculation with either a second- or third-order \qbox are
+rather similar, we will henceforth employ the third-order
+results in the calculations of nuclei with more than two
+valence nucleons. This is done in order to be consistent with
+the fact that third-order terms in the \qbox are not negligible.
+Finally,
+before
+we can conclude on which potential model one should prefer,
+we need to test our effective interactions by applying
+them in the calculation of properties of nuclei with more than
+two valence nucleons and to other mass areas as well.
+
+
+
+\subsubsection{Results for nuclei with more than two valence nucleons}
+
+We end this subsection by computing the spectra for nuclei with more than
+two valence nucleons. The FD results with a \qbox of third order in the
+$G$-matrix
+has been used as the effective interaction. We display the results
+for $^{19}$F, $^{20}$O, $^{20}$Ne and $^{22}$Ne as functions
+of the Bonn A, B and C potentials in figs.\
+\ref{fig:19f}-\ref{fig:ne22}. We only include the lowest-lying states
+for each angular momentum, and avoid thereby any discussion
+on possible intruder configurations. For a review of the latter,
+see e.g.\ the text of Lawson \cite{law80}.
+%    19f
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,110)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){85}}
+\put(5,75){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){85}}
+\multiput(5,0)(0,10){8}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\put(1,39){4}
+\put(1,49){5}
+\put(1,59){6}
+\put(1,69){7}
+\multiput(5,5)(0,10){8}{\line(1,0){1}}
+\put(10,0){\nl{1}}
+\put(10,2.5){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}5}}
+\put(10,8.5){\nl{3}}
+\put(10,29.9){\nl{9}}
+\put(10,50.4){\line(1,0){10}\raisebox{-2.2ex}{\hspace{1mm}7}}
+\put(10,50.8){\nl{13}}
+\put(10,51.7){\line(1,0){10}\raisebox{1.0ex}{\hspace{1mm}5}}
+\put(40,0){\nl{1}}
+\put(40,2.8){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}5}}
+\put(40,9.3){\nl{3}}
+\put(40,27.8){\nl{9}}
+\put(40,48.5){\line(1,0){10}\raisebox{-2.2ex}{\hspace{1mm}13}}
+\put(40,48.7){\nl{7}}
+\put(40,49.7){\line(1,0){10}\raisebox{1.0ex}{\hspace{1mm}5}}
+\put(70,0){\nl{1}}
+\put(70,2.7){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}5}}
+\put(70,9.8){\nl{3}}
+\put(70,26.6){\nl{9}}
+\put(70,47){\line(1,0){10}\raisebox{-2.0ex}{\hspace{1mm}13}}
+\put(70,47.6){\nl{7}}
+\put(70,48){\line(1,0){10}\raisebox{1.0ex}{\hspace{1mm}5}}
+\put(100,0){\nl{1}}
+\put(100,2.0){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}5}}
+\put(100,15.5){\nl{3}}
+\put(100,27.8){\nl{9}}
+\put(100,46.5){\line(1,0){10}\raisebox{0.8ex}{\hspace{1mm}13}}
+\put(100,43.8){\line(1,0){10}\raisebox{-1.5ex}{\hspace{1mm}7}}
+\put(100,45.5){\nl{5}}
+\put(9,-7){\small{(--24.44)}}
+\put(39,-7){\small{(--23.87)}}
+\put(69,-7){\small{(--23.40)}}
+\put(99,-7){\small{(--23.7)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying  $^{19}$F spectra relative to $^{16}$O.
+The labels A, B, and C refer to the  various versions of the Bonn potential
+discussed in the text. Twice the total
+angular momentum is used.
+All energies in MeV.}
+\label{fig:19f}
+\end{figure}
+%    ox-20
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,80)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){60}}
+\put(5,50){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){60}}
+\multiput(5,0)(0,10){4}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\multiput(5,5)(0,10){4}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,16){\nl{2}}
+\put(10,40.1){\nl{4}}
+\put(10,32.5){\nl{2}}
+\put(10,35.6){\nl{0}}
+\put(40,0){\nl{0}}
+\put(40,15.3){\nl{2}}
+\put(40,38.44){\nl{4}}
+\put(40,31.4){\nl{2}}
+\put(40,35){\nl{0}}
+\put(70,0){\nl{0}}
+\put(70,15.3){\nl{2}}
+\put(70,37.7){\nl{4}}
+\put(70,30.9){\nl{2}}
+\put(70,34.5){\nl{0}}
+\put(100,0){\nl{0}}
+\put(100,16.7){\nl{2}}
+\put(100,35.7){\nl{4}}
+\put(100,40.7){\nl{2}}
+\put(100,44.5){\nl{0}}
+\put(9,-7){\small{(--24.40)}}
+\put(39,-7){\small{(--24.22)}}
+\put(69,-7){\small{(--24.22)}}
+\put(99,-7){\small{(--23.75)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying $^{20}$O spectra relative to $^{16}$O.}
+\label{fig:ox20}
+\end{figure}
+%    ne-20
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,135)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){110}}
+\put(5,100){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){110}}
+\multiput(5,0)(0,10){10}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\put(1,39){4}
+\put(1,49){5}
+\put(1,59){6}
+\put(1,69){7}
+\put(1,79){8}
+\put(1,89){9}
+\multiput(5,5)(0,10){10}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,17.1){\nl{2}}
+\put(10,39.5){\nl{4}}
+\put(10,85.2){\nl{6}}
+\put(40,0){\nl{0}}
+\put(40,15.6){\nl{2}}
+\put(40,37.3){\nl{4}}
+\put(40,80.4){\nl{6}}
+\put(70,0){\nl{0}}
+\put(70,14.8){\nl{2}}
+\put(70,36.1){\nl{4}}
+\put(70,77.5){\nl{6}}
+\put(100,0){\nl{0}}
+\put(100,16.3){\nl{2}}
+\put(100,42.5){\nl{4}}
+\put(100,87.8){\nl{6}}
+\put(9,-7){\small{(--41.81)}}
+\put(39,-7){\small{(--40.62)}}
+\put(69,-7){\small{(--39.65)}}
+\put(99,-7){\small{(--40.70)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying  $^{20}$Ne spectra relative to $^{16}$O.}
+\label{fig:ne20}
+\end{figure}
+%    ne-22
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,100)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){80}}
+\put(5,70){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){80}}
+\multiput(5,0)(0,10){7}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\put(1,39){4}
+\put(1,49){5}
+\put(1,59){6}
+\multiput(5,5)(0,10){6}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,12.7){\nl{2}}
+\put(10,32.3){\nl{4}}
+\put(10,64){\nl{6}}
+\put(40,0){\nl{0}}
+\put(40,11.9){\nl{2}}
+\put(40,31.0){\nl{4}}
+\put(40,62.1){\nl{6}}
+\put(70,0){\nl{0}}
+\put(70,11.5){\nl{2}}
+\put(70,30.5){\nl{4}}
+\put(70,61){\nl{6}}
+\put(100,0){\nl{0}}
+\put(100,12.7){\nl{2}}
+\put(100,33.6){\nl{4}}
+\put(100,63.1){\nl{6}}
+\put(9,-7){\small{(--60.46)}}
+\put(39,-7){\small{(--58.96)}}
+\put(69,-7){\small{(--57.80)}}
+\put(99,-7){\small{(--57.75)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying  $^{22}$Ne spectra relative to $^{16}$O.}
+\label{fig:ne22}
+\end{figure}
+
+For $^{19}$F we see that all potentials give, except for the
+first $\frac{3}{2}^+$ state, a very  good agreement with the data.
+Also, as compared with earlier calculations such as those
+of Shurpin {\em et al.} \cite{skd83}, 
+all potentials result in a binding
+energy for the ground state which is close to the experimental
+value. We note however that both the Bonn A and Bonn B potentials
+introduce too much binding, a fact which can be ascribed to the
+strong attraction in the $T=0$ matrix elements. However, here one has
+to consider effective three-body forces as well. As shown by Polls
+{\em et al.} \cite{pmfko82}, the effect of three-body diagrams
+is small for systems with three valence nucleons only, though
+the net result would be to bring our results with the Bonn A and
+B potentials closer to the experimental binding energy.
+For the two Ne isotopes in figs.\ \ref{fig:ne20} and \ref{fig:ne22},
+the agreement with the excited spectra is very good with the Bonn A
+potential, although this potential yields too much binding. 
+Again, however,
+we would expect effective three-body forces to bring the ground state
+closer to the experimental value. For the Bonn B and C potentials, which
+have stronger tensor forces, we obtain less attraction and a more
+compressed spectrum. We will observe this feature in the other
+mass areas as well, i.e.\ the potential which has the
+weakest tensor force, yields a more bound ground state and a less
+compressed excited spectrum compared with potentials with a
+stronger tensor force.
+
+Another point which should be noted from figs.\ \ref{fig:ne20}
+and \ref{fig:ne22}, is that the $4^+$ and $6^+$ states
+in $^{20}$Ne are slightly below the experimental value for all potentials,
+whereas in $^{22}$Ne, the agreement with the data is excellent.
+
+Our effective interactions have also been applied to other $sd$-shell
+nuclei,
+with rather good results, except for odd-odd nuclei like $^{22}$Na, where
+all realistic effective interactions
+fail to reproduce
+the order between the $1^+$ and $3^+$ states. In our calculations
+however, the $1^+$ state is only some few keV below the $3^+$ state.
+
+In summary, we have seen that our effective interactions do
+fairly well in reproducing the properties of several nuclei in the
+$sd$-shell. Although the Bonn A potential introduces more attraction
+than the Bonn B and C potentials, all these potentials yield a much
+better reproduction of both the binding energy and the excited
+spectra than previous calculations with potentials with strong
+tensor forces, see e.g.\ \cite{skd83}. Also, there is room for
+both introduction of three-body forces and intruder state
+configurations. We have however not tested the quality of our
+wave functions in the evaluation of transition operators.
+As mentioned in the introductory section, we will defer from this
+here.
+
+The effective interactions are listed in table C.1, together with
+the phenomenological 
+interaction of Brown and Wildenthal \cite{brown88}.
+
+\subsection{Results for nuclei in the mass region of
+$^{40}$Ca}
+
+Recently, several systematic shell-model calculations
+have been presented for nuclei in the $pf$-shell, to mention
+a few, we note  the work of Richter {\em et al.} \cite{richt91}, the
+compilations of the Strasbourg-Madrid groups \cite{pz80,czpm94}
+or refs.\ \cite{heho94,heho92}.
+The model space has usually been chosen to be represented
+by the degrees of freedom of the  $pf$-shell. In ref.\
+\cite{richt91}, a phenomenological effective interaction is
+constructed through a fit to the available data, whereas in
+the work of Zuker and Poves and co-workers \cite{pz80,czpm94},
+the philosophy has been to adjust realistic effective interactions
+so that the modified interaction reproduces the spectra
+of different nuclei. Especially, in refs.\ \cite{pz80,czpm94},
+monopole terms of the Kuo-Brown interaction in the
+$pf$-shell were modified by adding constant shifts to make
+the interaction spectroscopically viable.
+
+Our philosophy is however to start with the free NN potential,
+which is determined by the various meson parameters, and
+use this interaction in a perturbative scheme. If the final
+effective interaction does not reproduce various
+properties of selected nuclei, this deficiency may be ascribed
+to the potential itself, or the chosen many-body approach,
+or the chosen model space. From our calculations in the
+$sd$-shell we feel that both the potential and the many-body
+formalism is reliable. If we then observe discrepancies
+between the calculated spectra and the data, a possible
+improvement is to extend the model space.
+As we will show in this subsection,
+a model
+space given by the $pf$-shell
+is sufficient to reproduce the data, although our agreement
+for the $A=42$ nuclei is poor.
+
+The single-particle energies of $^{41}$Ca are \cite{kb68}
+$\varepsilon_{f_{5/2}}-\varepsilon_{f_{7/2}}=6.5$ MeV,
+$\varepsilon_{p_{3/2}}-\varepsilon_{f_{7/2}}=2.1$ MeV and
+$\varepsilon_{p_{1/2}}-\varepsilon_{f_{7/2}}=3.9$ MeV.
+The unperturbed energy at which
+we evaluate the $\hat{Q}$-box was set to $-16$ MeV,
+approximately twice the energy
+of the $f_{7/2}$ state. The $G$-matrix was defined  with
+$n_1=6, n_2=15, n_3 =66$ and an oscillator parameter
+$b=2.02$ fm.
+The Bonn
+potentials
+we use here are the same as those employed for $sd$-shell nuclei.
+
+Again we note
+that the difference between results obtained with the folded
+diagram summations with either a second- or third-order \qbox,
+are rather similar, see the results
+labelled $\hat{Q}^{(2)}+fold$ and $\hat{Q}^{(3)}+fold$ in the preceeding
+subsection.
+For the $T=1$ channel there is barely any difference. We note also,
+as was the case in the $sd$-shell, that the difference between
+the results obtained with a \qbox of second order in $G$ and the
+third-order results without folded diagrams, is not so large.
+Actually, the average third-order contributions
+in the $pf$-shell are slightly smaller than
+those in the $sd$-shell.
+This is an interesting property, since it is not a priori clear
+whether third-order contributions may be large or small in the
+$pf$-shell. For the $pf$-shell effective interaction, there are
+two mechanisms which may increase the contribution from a given
+third-order diagram. These are the smaller energy denominators
+due to a smaller oscillator energy and the increased
+number of intermediate states which contribute. The mechanism
+which counterbalances these effects is the decrease in absolute
+value of the $G$-matrix, since the oscillator energy is smaller
+here, i.e.\ $11$ MeV in the $pf$-shell and $14$ MeV in the
+$sd$-shell. These conclusions apply to the nuclei in the
+tin mass areas as well. However, third-order
+terms are still not negligible, and in order to be
+consistent we will, as in the $sd$-shell, use effective
+interactions obtained with a \qbox through third order in the
+interaction.
+We show our results obtained with a third-order \qbox and summing
+the folded diagrams to arbitrary order in table \ref{tab:casc}.
+\begin{table}[hbtp]
+\caption{Eigenvalues for the $T=1$ and $T=0$ $(pf)^2$ systems
+obtained with
+the Bonn A, B and C potentials using a third-order \qbox
+and the FD method.
+All entries in MeV.}
+\begin{center}
+\begin{tabular}{crrrr}
+\\\hline
+$JT$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Expt}
+\\\hline
+$10$&-3.44&-2.99&-2.60&-2.57\\
+$30$&-1.53&-1.36&-1.20&-1.69\\
+$50$&-1.43&-1.32&-1.21&-1.67\\
+$70$&-2.47&-2.36&-2.24&-2.56\\
+$01$&-2.69&-2.58&-2.56&-3.12\\
+$21$&-1.17&-1.13&-1.12&-1.60\\
+$41$&-0.28&-0.28&-0.28&-0.37\\
+$61$&0.07&0.06&0.04 &0.07\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:casc}
+\end{table}
+The agreement with the data is rather poor. For all three 
+potentials, the
+$JT=10$ state is below the $JT=01$ state. The latter state
+differs $400-600$ keV from the experimental value, however, we
+would expect 
+that the inclusion of intruder state configurations
+will bring the calculated ground state closer to the experimental
+value and account for a correct
+ordering between the lowest $JT=01$ and $JT=10$ states, since the
+corrections from intruder state configurations are stronger
+in the 
+$T=1$ channel than in the $T=0$ channel.
+This conclusion was also made in refs.\
+\cite{heho94,heho92}. 
+Since intruder state configurations are important near the 
+closed shell nucleus, we will apply
+the effective interactions to calculate the spectra of 
+nuclei with more than two valence nucleons, here
+$^{44}$Ca, $^{44}$Sc, $^{44}$Ti, $^{45}$Ca, $^{46}$Ca and $^{48}$Ca.
+These are shown in figs.\
+\ref{fig:ca44}-\ref{fig:ca48}.
+A comparison with the experimental data from \cite{endt90}
+including the Coulomb corrections of Richter {\em et al.}
+\cite{richt91} is also added.
+%    ca-44
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,70)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){50}}
+\put(5,40){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){50}}
+\multiput(5,0)(0,10){4}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\multiput(5,5)(0,10){4}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,13.2){\nl{2}}
+\put(10,22){\nl{4}}
+\put(10,30.8){\nl{6}}
+\put(40,0){\nl{0}}
+\put(40,12.7){\nl{2}}
+\put(40,21.0){\nl{4}}
+\put(40,29){\nl{6}}
+\put(70,0){\nl{0}}
+\put(70,12.7){\nl{2}}
+\put(70,20.9){\nl{4}}
+\put(70,28.2){\nl{6}}
+\put(100,0){\nl{0}}
+\put(100,11.57){\nl{2}}
+\put(100,22.83){\nl{4}}
+\put(100,32.85){\nl{6}}
+\put(9,-7){\small{(--38.44)}}
+\put(39,-7){\small{(--38.29)}}
+\put(69,-7){\small{(--38.27)}}
+\put(99,-7){\small{(--38.91)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying $^{44}$Ca spectra relative to $^{40}$Ca.}
+\label{fig:ca44}
+\end{figure}
+%    sc-44
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,95)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){75}}
+\put(5,65){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){75}}
+\multiput(5,0)(0,10){6}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\put(1,39){4}
+\put(1,49){5}
+\multiput(5,5)(0,10){6}{\line(1,0){1}}
+\put(10,0){\line(1,0){10}\raisebox{-2.0ex}{\hspace{1mm}2}}
+\put(10,7.2){\line(1,0){10}}
+\put(10,6.0){\nl{4,6}}
+\put(10,3.7){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}1}}
+\put(10,8.6){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}3}}
+\put(10,16.2){\nl{7}}
+\put(10,13){\nl{5}}
+\put(10,34.3){\nl{9}}
+\put(10,44.5){\nl{11}}
+\put(10,51.0){\nl{10}}
+\put(40,0){\nl{2}}
+\put(40,6.2){\line(1,0){10}}
+\put(40,5.4){\line(1,0){10}\raisebox{-1.2ex}{\hspace{1mm}1,4,6}}
+\put(40,4.3){\line(1,0){10}}
+\put(40,8){\nl{3}}
+\put(40,14.4){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}7}}
+\put(40,11.99){\nl{5}}
+\put(40,31.1){\nl{9}}
+\put(40,40.1){\nl{11}}
+\put(40,47){\nl{10}}
+\put(70,0){\nl{2}}
+\put(70,5.4){\line(1,0){10}}
+\put(70,4.9){\nl{4,1,6}}
+\put(70,7.6){\line(1,0){10}\raisebox{-0.4ex}{\hspace{1mm}3}}
+\put(70,13){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}7}}
+\put(70,11.2){\nl{5}}
+\put(70,29){\nl{9}}
+\put(70,38.1){\nl{11}}
+\put(70,44.4){\nl{10}}
+\put(100,0){\nl{2}}
+\put(100,2.7){\line(1,0){10}}
+\put(100,3.5){\nl{6,4}}
+\put(100,6.7){\line(1,0){10}}
+\put(100,7.6){\nl{1,3}}
+\put(100,9.5){\line(1,0){10}}
+\put(100,10.5){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}7,5}}
+\put(100,26.72){\nl{9}}
+\put(100,35.67){\nl{11}}
+\put(100,41.1){\nl{10}}
+\put(9,-7){\small{(--42.39)}}
+\put(39,-7){\small{(--41.85)}}
+\put(69,-7){\small{(--41.42)}}
+\put(99,-7){\small{(--41.70)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying  $^{44}$Sc spectra relative to $^{40}$Ca.
+For the cases with more than one angular momentum value per level,
+the first angular momentum value, corresponds to the
+lowest lying level.}
+\label{fig:sc44}
+\end{figure}
+%    ti-44
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,115)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){95}}
+\put(5,85){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){95}}
+\multiput(5,0)(0,10){9}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\put(1,39){4}
+\put(1,49){5}
+\put(1,59){6}
+\put(1,69){7}
+\put(1,79){8}
+\multiput(5,5)(0,10){8}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,13.7){\nl{2}}
+\put(10,24.8){\nl{4}}
+\put(10,34){\nl{6}}
+\put(10,65.2){\nl{8}}
+\put(10,81.3){\nl{10}}
+\put(40,0){\nl{0}}
+\put(40,12.5){\nl{2}}
+\put(40,23.0){\nl{4}}
+\put(40,32){\nl{6}}
+\put(40,60.3){\nl{8}}
+\put(40,75.2){\nl{10}}
+\put(70,0){\nl{0}}
+\put(70,11.8){\nl{2}}
+\put(70,21.94){\nl{4}}
+\put(70,30.78){\nl{6}}
+\put(70,57.1){\nl{8}}
+\put(70,71.2){\nl{10}}
+\put(100,0){\nl{0}}
+\put(100,10.8){\nl{2}}
+\put(100,24.54){\nl{4}}
+\put(100,40.15){\nl{6}}
+\put(100,65.09){\nl{8}}
+\put(100,76.71){\nl{10}}
+\put(9,-7){\small{(--48.76)}}
+\put(39,-7){\small{(--47.79)}}
+\put(69,-7){\small{(--47.03)}}
+\put(99,-7){\small{(--48.24)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying  $^{44}$Ti spectra relative to $^{40}$Ca.}
+\label{fig:ti44}
+\end{figure}
+%    ca-45
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,55)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){35}}
+\put(5,25){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){35}}
+\multiput(5,0)(0,10){3}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\multiput(5,5)(0,10){4}{\line(1,0){1}}
+\put(10,0){\line(1,0){10}\raisebox{-1.5ex}{\hspace{1mm}7}}
+\put(10,1.4){\line(1,0){10}\raisebox{1.0ex}{\hspace{1mm}5}}
+\put(10,14.4){\line(1,0){10}\raisebox{-2.0ex}{\hspace{1mm}3}}
+\put(10,15.3){\nl{11}}
+\put(10,16){\line(1,0){10}\raisebox{1.0ex}{\hspace{1mm}9}}
+\put(40,0){\nl{7}}
+\put(40,1.5){\line(1,0){10}\raisebox{0.8ex}{\hspace{1mm}5}}
+\put(40,14.0){\line(1,0){10}\raisebox{-2.0ex}{\hspace{1mm}3}}
+\put(40,14.6){\nl{11}}
+\put(40,15.4){\line(1,0){10}\raisebox{1.2ex}{\hspace{1mm}9}}
+\put(70,0){\nl{7}}
+\put(70,1.9){\line(1,0){10}\raisebox{1.0ex}{\hspace{1mm}5}}
+\put(70,13.9){\line(1,0){10}\raisebox{-2.0ex}{\hspace{1mm}3}}
+\put(70,14.3){\nl{11}}
+\put(70,15.34){\line(1,0){10}\raisebox{1.2ex}{\hspace{1mm}9}}
+\put(100,0){\nl{7}}
+\put(100,1.7){\line(1,0){10}\raisebox{0.8ex}{\hspace{1mm}5}}
+\put(100,14.4){\line(1,0){10}\raisebox{-2.0ex}{\hspace{1mm}3}}
+\put(100,15.6){\nl{11}}
+\put(100,19){\line(1,0){10}\raisebox{0.5ex}{\hspace{1mm}9}}
+\put(9,-7){\small{(--46.03)}}
+\put(39,-7){\small{(--46.00)}}
+\put(69,-7){\small{(--46.06)}}
+\put(99,-7){\small{(--46.32)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying  $^{45}$Ca spectra relative to $^{40}$Ca. Twice
+the angular momentum is used. }
+\label{fig:ca45}
+\end{figure}
+%    ca-46
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,70)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){50}}
+\put(5,40){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){50}}
+\multiput(5,0)(0,10){4}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\multiput(5,5)(0,10){4}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,12.8){\nl{2}}
+\put(10,27.8){\nl{4}}
+\put(10,32.9){\nl{6}}
+\put(40,0){\nl{0}}
+\put(40,12.3){\nl{2}}
+\put(40,26.4){\nl{4}}
+\put(40,30.7){\nl{6}}
+\put(70,0){\nl{0}}
+\put(70,12.4){\nl{2}}
+\put(70,25.76){\nl{4}}
+\put(70,29.6){\nl{6}}
+\put(100,0){\nl{0}}
+\put(100,13.46){\nl{2}}
+\put(100,25.74){\nl{4}}
+\put(100,29.73){\nl{6}}
+\put(9,-7){\small{(--56.45)}}
+\put(39,-7){\small{(--56.38)}}
+\put(69,-7){\small{(--56.47)}}
+\put(99,-7){\small{(--56.72)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying $^{46}$Ca spectra relative to $^{40}$Ca.}
+\label{fig:ca46}
+\end{figure}
+%    ca-48
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,80)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){60}}
+\put(5,50){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){60}}
+\multiput(5,0)(0,10){5}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\put(1,39){4}
+\multiput(5,5)(0,10){5}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,10.8){\line(1,0){10}\raisebox{-1.5ex}{\hspace{1mm}0}}
+\put(10,12.6){\nl{2}}
+\put(10,18.5){\nl{2}}
+\put(10,24.5){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}4}}
+\put(40,0){\nl{0}}
+\put(40,10.4){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}0}}
+\put(40,13.5){\nl{2}}
+\put(40,18.9){\nl{2}}
+\put(40,22.9){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}4}}
+\put(70,0){\nl{0}}
+\put(70,11.2){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}0}}
+\put(70,14.6){\nl{2}}
+\put(70,19.9){\nl{2}}
+\put(70,22.7){\line(1,0){10}\raisebox{0.2ex}{\hspace{1mm}4}}
+\put(100,0){\nl{0}}
+\put(100,38.3){\nl{2}}
+\put(100,45){\nl{4}}
+\put(9,-7){\small{(--73.26)}}
+\put(39,-7){\small{(--73.28)}}
+\put(69,-7){\small{(--73.57)}}
+\put(99,-7){\small{(--73.94)}}
+\put(15,-20){A}
+\put(45,-20){B}
+\put(75,-20){C}
+\put(101,-20){Expt}
+\end{picture}
+\end{center}
+\caption{The low-lying $^{48}$Ca spectra relative to $^{40}$Ca.}
+\label{fig:ca48}
+\end{figure}
+
+
+Although our results for the $A=42$ system did not reproduce
+properly the experimental levels, we see that the
+correspondence between levels in all the nuclei
+shown in figs.\ \ref{fig:ca44}-\ref{fig:ca48} is
+in general rather good, except for the excited states
+in $^{48}$Ca. The binding energies are within some few keV close to
+the experimental values, and our results with a two-body
+effective interaction in the $pf$-shell
+allow both for intruder state corrections\footnote{Again
+we omit any reference to possible intruder states in our spectra.}
+and the inclusion
+of effective three-body forces, probably without loosing
+the degree of accuracy presented in these figures. Actually, the
+present results are close to those of Richter {\em et al.}
+\cite{richt91} where a phenomenological effective interaction
+was constructed through a fit to the available body of data.
+Though, our effective interactions are not directly
+comparable to those of Richter {\em et al.}, since these authors
+try to construct an effective interaction meant to reproduce
+the observed levels,
+with the least possible deviation. In
+such a fit, intruder state admixtures may be present
+in the wave functions of the various states, and
+accounting for such admixtures could then very well spoil their
+agreement with the data. 
+The matrix elements of Richter {\em et al.} \cite{richt91} are
+shown in table C.2 together with our effective interactions. The differences
+are discussed below in connection with the results for $^{48}$Ca.
+
+The remarkable feature of the effective interactions
+obtained with the Bonn potentials is that their monopole
+terms are realistic enough to reproduce the known
+binding energies of most of the nuclei we have studied.
+This should be contrasted to the Kuo-Brown interaction
+in the $pf$-shell \cite{kb68}, which produced too little
+binding for the ground states in general. Extensive
+discussions of the effective interactions from ref.\ \cite{kb68}
+can be found in refs.\ \cite{richt91} and
+\cite{pz80}. In the latter work, the Kuo-Brown
+matrix elements were adjusted in order to make
+them spectroscopically viable.
+These findings
+apply to other potentials which have a tensor force
+stronger than those of the Bonn potentials, like
+the Reid potential \cite{reid68} or the Paris potential
+\cite{paris80}. Results obtained with the latter potential
+are given in ref.\
+\cite{heho92}. There the binding energy of e.g.\
+$^{44}$Sc was 2 MeV lower than the experimental value.
+For this nucleus, shown in fig.\ \ref{fig:sc44},
+although our effective interactions
+do not
+reproduce precisely the correct ordering, the deviations
+are not very large, the calculated ground states are close
+to the experimental value. The high-spin states
+$9^+$, $10^+$ and $11^+$, which are expected to be dominated by the
+$(f_ {7/2})^4$ configuration, are reproduced
+at about the right energies for the Bonn C potential,
+while the Bonn A and B potentials, which introduce too much attraction,
+give high-spin states in less agreement with
+the experimental values. This
+conforms with what we saw in the $sd$-shell, the potentials
+with a stronger tensor force result in spectra which are
+more compressed.
+In general, our excited spectra are within some $100-300$ keV
+of the experimental values.   One of the exceptions are the low-lying
+states of $^{48}$Ca. Although the binding energy is correctly
+reproduced, we are not able (even if we include the $g_{9/2}$
+orbit) to reproduce the typical shell-closure feature of
+$^{48}$Ca. It seems that the pairing structure
+seen in the lighter calcium isotopes like
+$^{42}$Ca, $^{44}$Ca and $^{46}$Ca prevails
+in $^{48}$Ca as well, with an almost constant
+spacing between the $0_1^+$ and $2_1^+$
+states.
+This observation applies to the Kuo-Brown
+interaction as well \cite{richt91}, or to the effective
+interaction derived from the Paris potential in ref.\
+\cite{heho92}.
+The question we then pose is whether our results for $^{48}$Ca could
+be retraced to certain effective matrix elements. In $^{48}$Ca the
+$f_{7/2}$ orbit is filled up, and the $p_{3/2}$ orbit is the next close
+one. We would therefore expect matrix elements
+which involve these two orbits to be the most important ones in the
+description of the low-lying spectra of $^{48}$Ca. Moreover, since the
+matrix elements of Richter {\em et al.} \cite{richt91}
+reproduce nicely the experimental
+$0_1^+$ and $2_1^+$ states for this nucleus, it is of interest to compare
+our matrix elements with theirs. In table \ref{tab:fpveff} we list
+our matrix elements and those of Richter {\em et al.} For the Bonn C potential
+there is a rather close agreement for almost all matrix elements\footnote{The average
+difference is 125 KeV for both $T=0$ and $T=1$ matrix elements.}
+with the empirical ones. The only exceptions are
+our $\bra{f_{7/2}p_{3/2}}V_{\mathrm{eff}}\ket{f_{7/2}p_{3/2}}$
+matrix elements for $T=1$ and $J=3,4,5$, which
+are more attractive  than those in ref.\ \cite{richt91}. Our energy centroid
+$\overline{V}$ for
+this matrix element, i.e.\
+\[
+\bra{f_{7/2}p_{3/2}}\overline{V}\ket{f_{7/2}p_{3/2}}_{T=1}
+=\frac{\sum_{J}\hat{J}^2
+ \bra{f_{7/2}p_{3/2}J}V_{\mathrm{eff}}\ket{f_{7/2}p_{3/2}J}_{T=1}}
+  {\sum_{J}\hat{J}^2},
+\]
+is $-0.1303$ MeV, whereas with the empirical interaction we get
+$+0.1631$ MeV,
+a repulsitivity which is expected from phenomenological studies. The latter
+number is almost equal to the one extracted by Cole \cite{cole91}
+from an analysis of sp spectra in the mass regions of $A=40-48$, see table
+1 of ref.\ \cite{cole91}.
+
+The question then is which mechanisms may affect these matrix elements.
+One possibililty is to abandon the h.o. basis and use a
+self-consistent Brueckner-Hartree-Fock (BHF) basis. The latter yields in
+general less attractive matrix elements, though the
+final result for the spectra
+of all the studied calcium isotopes may not turn out as good as it is
+with a h.o. basis. Results from BHF calculations in the $sd$-shell
+seem to suggest this \cite{homs90}.
+Another possibility is to look at the nucleon-nucleon
+interaction.
+There one could
+consider the relevant medium modifications of the
+parameters which define the NN potential, such as the meson and nucleon
+masses. However, this is a fairly involved scheme  which implies
+that one has to solve self-consistently the Dyson equations
+for the various particles, in order to obtain their effective masses.
+The outcome of this scheme is also not clear.
+Moreover, the reader has probably noticed that we have omitted
+effective three-body forces like those displayed in fig.\
+\ref{fig:threebody}.
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{threebody.eps}}
+     \end{picture}
+  \caption{Examples of effective three-body forces not included
+  in the definition of the \qbox.}
+\label{fig:threebody}
+\end{figure}
+Three-body forces are in general repulsive \cite{pmfko82},
+and we would therefore expect that their inclusion  may improve the agreement
+for $^{48}$Ca. Calculations with three-body forces are under study
+\cite{three94}.
+In summary, however, before any conclusion can be drawn, we need
+to further investigate some of the possible mechanisms
+discussed above.
+
+
+
+
+
+
+\subsection{Nuclei with two or more
+valence nucleons in the mass region of $^{100}$Sn}
+
+Considerable attention is at present being devoted to the
+experimental
+study of light Sn isotopes \cite{schu92,schu91,grawe92,ryk92,joh93}.
+During
+the last few years,
+a rich
+variety of data has 
+become available for nuclei far from the stability line.
+Recently, substantial progress has been made in the spectroscopic approach
+to the neutron deficient doubly magic $^{100}$Sn core. Experimental
+spectroscopic data are presently available down to $^{104}$Sn
+\cite{schu92,schu91,grawe92,ryk92}. A recent work by Schneider
+{\em et al.} \cite{sn100} reports on the production and
+identification of $^{100}$Sn. This nucleus is the heaviest
+doubly-magic nucleus close to the proton drip line, and has
+been studied theoretically, using
+approaches inspired by the relativistic Serot-Walecka \cite{sw86}
+model, such as the calculations of Hirata {\em et al.} \cite{hir91}
+and Nikolaus {\em et al.} \cite{hnm92}, or non-relativistic
+models used by Leander {\em et al.} \cite{lean84}.  The theoretical
+studies of refs.\ \cite{hir91,hnm92} indicate 
+that $^{100}$Sn is a reasonably stable closed shell model
+core. 
+
+To evaluate physical quantities in light tin isotopes, we will
+proceed in the standard fashion as done in the previous
+subsections. But this requires the knowledge of the
+experimental sp energies of $^{101}$Sn, which are not known.
+One can however guess on an optimal set of sp energies by
+extrapolating them from the data of tin isotopes with more
+valence nucleons, as done here, in refs.\ \cite{ehho93,holt94,physcripta94}
+and in the work of
+Sandulescu {\em et al.} \cite{nicu93,nicu94}.
+In ref.\
+\cite{nicu94},
+the sp energies were derived from a fit to the levels in
+$^{111}$Sn with a one quasiparticle content. These authors
+use the BCS method, and the spuriosities that appear as a
+result of the breaking of the particle number conservation symmetry,
+were removed using the quasiparticle multistep shell-model method
+(QMSM) of ref.\ \cite{pomar92}. The QMSM method offers a direct
+and nice interpretation of the spectra of
+tin isotopes in terms of quasiparticle excitations. Recently, 
+the authors of ref.\ \cite{nicuoslo94}
+have performed a quantitative comparison with the
+QMSM and the shell-model approach discussed here, using the effective
+interactions of ref.\ \cite{ehho93}. 
+The agreement between the two methods was striking
+\cite{nicuoslo94}, both for odd and even tin isotopes.
+Since shell-model calculations like the ones reported here, are
+rather intensive from a computational point of view,
+methods like the QMSM may provide information on the sp energies
+from nuclei like $^{111}$Sn, were full shell-model
+calculations are extremely time consuming. That the dimensionality
+of the systems to consider is large, can be seen from table
+\ref{tab:tindim}.
+\begin{table}
+\label{tab:tindim}
+\begin{center}
+\caption{Number of basic states for the shell-model calculation
+for selected tin isotopes with the 
+$1d_{5/2}$, $0g_{7/2}$, $1d_{3/2}$, $2s_{1/2}$
+and the $0h_{11/2}$ sp orbits defining the model space.}
+\begin{tabular}{lr lr}\\ \hline
+System & Dimension & System & Dimension\\ \hline
+$^{102}$Sn  & 26&  $^{110}$Sn  & 1,853,256\\
+$^{103}$Sn  & 245&  $^{111}$Sn  & 3,608,550\\
+$^{104}$Sn  & 1504&  $^{112}$Sn  & 6,210,638\\
+$^{105}$Sn  & 7,451&  $^{113}$Sn  & 9,397,335\\
+$^{106}$Sn  & 31,124&  $^{114}$Sn  & 12,655,280\\
+$^{107}$Sn  & 108,297&  $^{115}$Sn  & 15,064,787\\
+$^{108}$Sn  & 323,682&  $^{116}$Sn  & 16,010,204 \\
+$^{109}$Sn  & 828,422&              &           \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+In this subsection we present results for
+the even  $^{102, 104, 106, 108, 110}$Sn isotopes\footnote{The results
+for the odd tin isotopes will be presented
+in refs.\ \cite{physcripta94,nicuoslo94}.} using the doubly magic
+nucleus $^{100}$Sn as
+core and distributing the valence neutrons over
+the single-particle orbits in
+the $N = 4$ oscillator shell
+($1d_{5/2}$, $0g_{7/2}$, $1d_{3/2}$, $2s_{1/2}$)
+and the orbital $0h_{11/2}$ from the $N = 5$ oscillator shell.
+We include the  $0h_{11/2}$ orbital, which is known to
+be important for the structure of the heavier Sn isotopes \cite{bon84}
+particularly in order to produce the pairing correlation found in these
+nuclei. This is also supported by the conclusions of refs.\
+\cite{ehho93,holt94,physcripta94,nicu94,nicuoslo94}.
+
+
+Since
+no experimental information is available for the $^{101}$Sn
+one-neutron system
+to establish the sp energies,
+we adopt here the sp energies from \cite{nicuoslo94},
+which reproduce the lowest lying
+$h_{11/2}$ energy level n $^{107,109}$Sn, and the $g_{7/2}$
+and the $d_{5/2}$ energy levels in the same nuclei. This means
+that our sp energies are
+$\varepsilon_{0g_{7/2}}-\varepsilon_{1d_{5/2}} =0.20$ MeV,
+$\varepsilon_{1d_{3/2}}-\varepsilon_{1d_{5/2}} =1.50$ MeV,
+$\varepsilon_{2s_{1/2}}-\varepsilon_{1d_{5/2}} =2.80$ MeV and
+$\varepsilon_{0h_{11/2}}-\varepsilon_{1d_{5/2}}$ set to 3.0 MeV.
+At present we have not yet carried out full shell-model calculations
+of $^{111}$Sn, thus our sp energies for the $1d_{3/2}$ and the
+$2s_{1/2}$ orbits may not be fully adequate.
+The QMSM calculation of ref.\ \cite{nicuoslo94}
+using the effective interactions of ref.\ \cite{ehho93}, 
+suggest that the sp energies for the
+latter two orbits should be changed to roughly $2.5$ MeV.
+However, for all other
+tin isotopes, the agreement between the data  and our shell-model
+results from realistic effective
+interactions is rather satisfactory, though we
+are not able to reproduce well the only known E2 transitions in
+$^{104,106}$Sn (see also the discussion below).
+The Pauli operator used in the evaluation of the $G$-matrix
+was defined in chapter 5, with $n_1=11, n_2=21, n_3=66$, so as to
+prevent scattering into intermediate states with a single
+nucleon in any of the
+states defined by the orbitals from the $0s$ state to the $0g_{9/2}$ state
+or with two nucleons in the $sdg$ ($0g_{9/2}$ excluded) or the $pfh$
+shells. A harmonic-oscillator basis was chosen for the
+single-particle wave functions, with an oscillator energy $\hbar\omega$,
+where $\omega$  is determined through the relation
+$\hbar\omega = 45A^{-1/3} - 25A^{-2/3}= 8.5$ MeV,  $A$ being the mass
+number. Only effective interactions obtained
+from the FD method with a third-order
+\qbox are used  in the calculation of the spectra.
+\begin{table}[hbpt]
+\caption{Results for $^{102}$Sn for the Bonn A, B and C
+potentials.}\label{tab:sn102}
+\begin{center}
+\begin{tabular}{rcccc}
+\\\hline
+$J$& A& B
+& C & Expt \\[1ex]
+\hline
+0 & 0.000   & 0.000   & 0.000&\\
+ 2 &1.485  &1.452  &1.481 &1.3\\
+ 4 &1.864  &1.715  &1.752 &\\
+ 6 &1.968  &1.814  &1.851 &\\
+ 8 &8.150  &7.974  &8.000 &\\
+ 10&8.271  &8.085  &8.116 &\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{table}[hbpt]
+\caption{Results for $^{104}$Sn for the Bonn A, B and C
+potentials.}\label{tab:sn104}
+\begin{center}
+\begin{tabular}{rcccc}
+\\\hline
+$J$& A& B
+& C & Expt \\[1ex]
+\hline
+0 & 0.000   & 0.000   & 0.000&0.000\\
+ 2 & 1.265 & 1.211 &1.230 &1.259\\
+ 4 & 1.702 & 1.621 &1.641 &1.942\\
+ 6 & 2.137 & 1.962 &1.999 &2.257\\
+ 8 & 3.262 & 3.005 &3.073 &3.440\\
+ 10& 3.808 & 3.495 &3.561 &3.980\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{table}[hbpt]
+\caption{Results for $^{106}$Sn for the Bonn A, B and C
+potentials.}\label{tab:sn106}
+\begin{center}
+\begin{tabular}{rcccc}
+\\\hline
+$J$& A& B
+& C & Expt \\[1ex]
+\hline
+0 & 0.000   & 0.000   & 0.000&0.000\\
+ 2 & 1.186 &1.150  &1.164 &1.206\\
+ 4 & 1.835 &1.745  &1.756 &2.017\\
+ 6 & 2.255 &2.066  &2.099 &2.321\\
+ 8 & 3.313 &3.079  &3.119 &3.476\\
+ 10& 4.169 &3.796  &3.864 &4.128\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+The results of the calculations for $^{102, 104, 106}$Sn, are shown
+in tables \ref{tab:sn102}-\ref{tab:sn106}
+for the three
+potentials used in the previous sections.
+The $2^+$ state
+in $^{102}$Sn is tentative \cite{janb93}. The other experimental
+data are from refs.\ \cite{schu92,schu91,grawe92}.
+Since the experimental binding energies relative to $^{100}$Sn are
+unknown, these are not
+displayed in these tables, though, as was the case in the
+$sd$- and $pf$-shells, it is the Bonn A potential which gives
+the most strongly bound ground state. Similarly, as observed in previous
+sections, this yields excited spectra for high-spin states
+which are close to the experimental values. For the Bonn B and
+C potentials, we obtain spectra which are more compressed, in
+agreement with our findings in the $sd$- and $pf$-shells.
+We note also that with an increasing number of valence nucleons,
+the agreement for the theoretical high-spin states with the
+experimental values, becomes better.
+
+
+Engeland {\em et al.} \cite{ehho93} have evaluated
+the only known E2 transitions in $^{104,106}$Sn, namely
+$6_1^+ \rightarrow 4_1^+$. In that work, one was  not able
+to reproduce the experimental values for these transitions,
+and in $^{104}$Sn the computed $6_3^+ \rightarrow 4_2^+$
+was closest to the experimental value of $4$ W.u. These results
+were however premature, since the main decay trend follows the
+Yrast states \cite{janb93}. The theoretical  $6_1^+ \rightarrow 4_1^+$
+E2 transitions for $^{104,106}$Sn with the interaction in ref.\
+\cite{ehho93} and the present work, disagree with
+the experimental values \cite{holtp94}. One possible explanation
+is that the choice of a h.o.\ basis for the wave functions
+is not too realistic in the E2 calculations.
+%    tin isotopes
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1.0mm}
+\begin{center}
+\begin{picture}(140,95)(0,-30)
+\thicklines
+\put(5,-10){\line(0,1){70}}
+\put(5,60){\line(1,0){115}}
+\put(5,-10){\line(1,0){115}}
+\put(120,-10){\line(0,1){70}}
+\multiput(5,0)(0,10){6}{\line(1,0){2}}
+\thinlines
+\put(1,0){0}
+\put(1,9){1}
+\put(1,19){2}
+\put(1,29){3}
+\put(1,39){4}
+\put(1,49){5}
+\multiput(5,5)(0,10){6}{\line(1,0){1}}
+\put(10,0){\nl{0}}
+\put(10,12.65){\nl{2}}
+\put(10,12.59){\ndot}
+\put(10,17.02){\line(1,0){10}\raisebox{-0.1ex}{\hspace{1mm}4}}
+\put(10,19.42){\ndot}
+\put(10,21.37){\line(1,0){10}\raisebox{-0.1ex}{\hspace{1mm}6}}
+\put(10,22.57){\ndot}
+\put(10,32.62){\line(1,0){10}\raisebox{-0.1ex}{\hspace{1mm}8}}
+\put(10,34.40){\ndot}
+\put(10,38.08){\line(1,0){10}\raisebox{-0.1ex}{\hspace{1mm}10}}
+\put(10,39.80){\ndot}
+\put(40,0){\nl{0}}
+\put(40,11.86){\nl{2}}
+\put(40,12.06){\ndot}
+\put(40,18.35){\line(1,0){10}\raisebox{-0.1ex}{\hspace{1mm}4}}
+\put(40,20.17){\ndot}
+\put(40,22.55){\line(1,0){10}\raisebox{-0.1ex}{\hspace{1mm}6}}
+\put(40,23.21){\ndot}
+\put(40,33.13){\nl{8}}
+\put(40,34.76){\ndot}
+\put(40,41.69){\nl{10}}
+\put(40,41.28){\ndot}
+\put(70,0){\nl{0}}
+%    gs = -7.2629 MeV
+\put(70,12.9){\nl{2}}
+\put(70,12.06){\ndot}
+\put(70,20.6){\line(1,0){10}\raisebox{-1.0ex}{\hspace{1mm}4}}
+\put(70,21.12){\ndot}
+\put(70,23.5){\nl{6}}
+\put(70,23.65){\ndot}
+\put(70,37.08){\line(1,0){10}\raisebox{-0.9ex}{\hspace{1mm}8}}
+\put(70,35.66){\ndot}
+\put(70,43.52){\nl{10}}
+\put(70,42.52){\ndot}
+%    gs = -8.3228 MeV  110 sn
+\put(100,0){\nl{0}}
+\put(100,13.0){\nl{2}}
+\put(100,21.00){\line(1,0){10}\raisebox{-1.4ex}{\hspace{1mm}4}}
+\put(100,23){\nl{6}}
+\put(100,36){\nl{8}}
+\put(100,42){\nl{10}}
+\put(100,12.59){\ndot}
+\put(100,19.42){\ndot}
+\put(100,22.57){\ndot}
+\put(100,34.40){\ndot}
+\put(100,39.80){\ndot}
+\put(15,-20){$^{104}$Sn}
+\put(45,-20){$^{106}$Sn}
+\put(75,-20){$^{108}$Sn}
+\put(101,-20){$^{110}$Sn}
+\end{picture}
+\end{center}
+\caption{The low-lying spectra for $^{104, 106, 108, 110}$Sn
+obtained with the folded-diagram method and the Bonn A potential.
+Solid lines are the theoretical values while a dashed line
+represents the experimental values.}
+\label{fig:tin100}
+\end{figure}
+
+
+Since it is the Bonn A potential which gives the best agreement
+with the data, we choose to display the final results
+for all the nuclei $^{104, 106, 108, 110}$Sn for this
+potential only in fig.\ \ref{fig:tin100}. The experimental
+values are those with the dashed lines. Clearly, as can be seen
+from this figure, the agreement with the data is indeed rather
+good.
+The corresponding effective interaction is listed in appendix C.
+
+For  the heavier tin isotopes, only recently the sp energies
+for $^{131}$Sn were reasonably established \cite{fb84}.
+For these isotopes, one can then get a much clearer picture of whether
+our effective interaction is suited or not for calculating properties
+of nuclei like $^{126}$Sn. 
+The results for these nuclei will be presented elsewehere.
+
+\subsection{Hermitian effective interactions}
+
+Typical examples where the non-hermiticity is weak, can be found
+in the calculations presented hitherto.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(120,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{hermitic.eps}}
+      \end{picture}
+      \caption{Illustration of the non-hermiticity
+               for the core-polarization diagram.}
+      \label{fig:corepol}
+\end{figure}
+Consider again the core-polarization diagram shown in (a) and (b)
+of fig.\ \ref{fig:corepol}.
+Diagram (a) is proportional to
+\begin{equation}
+  (a) \propto \frac{1}{\varepsilon_{\alpha}+\varepsilon_h
+      -\varepsilon_p-\varepsilon_{\gamma}},
+\end{equation}
+while (b) is proportional to
+\begin{equation}
+   (b) \propto \frac{1}{\varepsilon_{\gamma}+\varepsilon_h
+       -\varepsilon_p-\varepsilon_{\alpha}},
+\end{equation}
+where $\varepsilon$ is the unperturbed single-particle energy.
+If the model space is degenerate, $(a)-(b)=0$, the contribution to the
+effective interaction from the core-polarization diagram is hermitian.
+In general
+however, the model space is not degenerate,
+although if we define a model-space
+to consist of single-particle orbitals  from the same shell,
+we will
+have $(a)-(b)\approx 0$. As discussed in the
+preceeding subsections, such a model
+space is believed to be  appropriate for
+calculations of e.g.\ nuclei like $^{18}$O or $^{42}$Ca.
+
+For model spaces which include orbits from several shells
+the non-hermiticity may not be
+weak, and the above brute force
+scheme questionable. As an example, consider
+a model space consisting of both the $sd$- and $pf$-shells.
+Such a multi-shell model space may be appropriate in the
+description of closed shell nuclei like $^{40}$Ca.
+We let the labels $\gamma$ and $\delta$ 
+in fig.\ \ref{fig:corepol} be single-particle
+orbits in the $pf$ shell, while $\alpha$ and $\beta$ 
+are $sd$-shell single-particle
+orbits. If we restrict the attention to intermediate state excitations
+of $2\hbar\omega$ in oscillator energy, then diagram (a) in fig.\
+\ref{fig:corepol} gives
+\begin{equation}
+	  \frac{1}{\varepsilon_{sd}+\varepsilon_h
+	  -\varepsilon_p-\varepsilon_{pf}}=
+	  -\frac{1}{2\hbar\omega},
+\end{equation}
+when we employ harmonic oscillator single-particle energies and the hole
+state $h$ is in the $0p$ shell and the particle state $p$ is in the
+$sd$-shell. Diagram (b)
+gives, with the same single-particle orbits,
+\begin{equation}
+	 \frac{1}{\varepsilon_{pf}+\varepsilon_h
+	 -\varepsilon_p-\varepsilon_{sd}}=
+	 -\frac{1}{0}.
+\end{equation}
+Even with the insertion of self-consistent Brueckner-Hartree-Fock or
+experimental single-particle energies, diagrams (a)
+and (b) will be rather different, yielding
+a possibly large non-hermitian contribution to $H_{\mathrm{eff}}$.
+
+In summary, this example shows that with a single-shell model space, the
+non-hermiticity may be weak, whereas multi-shell model spaces may result in
+large non-hermitian contributions to the effective interaction. Thus,
+multi-shell effective interactions call for a hermitian description.
+Even the $G$-matrix is non-hermitian if we employ
+different starting energies.
+Several procedures exist to obtain a hermitian effective interaction. One
+is to transform the non-hermitian matrix through bi-unitary
+transformations to a hermitian matrix. Furthermore,
+recently, several authors have presented a hermitian formulation for the
+effective interaction $H_{\mathrm{eff}}$ \cite{lindgren91,suzuki93,kuo93},
+obtained within the framework of time-independent perturbation theory
+\cite{eo77,lm85,bran67}.
+These authors impose subsidiary conditions
+in order to obtain a hermitian effective interaction.
+Though, the reader should note that there is nothing more fundamental
+in the hermitian schemes compared to the traditional RS schemes. To all
+orders, whatever formulation of perturbation theory we employ, we
+should obtain the same results.
+However, in actual calculations we are only able to evaluate
+a limited number of terms in the perturbation expansion. If we truncate
+the various expansions at a given order, the results may differ.
+
+
+The question now is
+whether we may obtain a hermitian secular equation for the effective interaction
+which has the structure of eq.\ (\ref{eq:mspacee})
+and is of the form given by eq.\ (\ref{eq:hexpect}).
+In deriving such an equation, we will follow Ellis, Kuo, Suzuki and co-workers
+\cite{suzuki93,kuo93}.
+
+
+Let us first recall some of the results and definitions of section 4.
+In that section we defined a model-space eigenstate
+$\ket{b_{\lambda}}$ in eq.\ (\ref{eq:wfb}) as
+\[
+     \ket{b_{\lambda}}=\sum_{\alpha =1}^{D}
+     b_{\alpha}^{(\lambda )}\ket{\psi_{\alpha}}
+\]
+and the biorthogonal wave function
+\[
+     \ket{\overline{b}_{\lambda}}=\sum_{\alpha=1}^{D}
+      \overline{b}_{\alpha}^{(\lambda )}
+     \ket{\overline{\psi}_{\alpha}},
+\]
+such that
+\[
+     {\left\langle \overline{b}_{\lambda} | b_{\mu} \right\rangle}=
+     \delta_{\lambda\mu}.
+\]
+Finally, in
+eq.\ (\ref{eq:truee3}) we defined a model-space eigenvalue equation
+in terms of the time-development operator and the unperturbed
+wave functions
+\[
+     {\displaystyle
+     \sum_{\gamma =1}^{D}b_l^{(\lambda )}\bra{\psi_{\sigma}}
+     HU_L(0,-\infty )\ket{\psi_{\gamma}}\ket{\Psi_{\tilde{c}}} } =
+     E_{\lambda}b_{\sigma}^{(\lambda )},
+\]
+and  an effective interaction as
+\[
+     H_{\mathrm{eff}}=
+     \bra{\psi_{\sigma}}
+     HU_L(0,-\infty )\ket{\psi_{\gamma}}\ket{\Psi_{\tilde{c}}} .
+\]
+The exact wave function was expressed in terms of the correlation 
+operator
+\begin{equation}
+      \ket{\Psi_{\lambda}}=({\bf 1}+\chi)\ket{\psi_{\lambda}}.
+\end{equation}
+The part $\chi\ket{\psi_{\lambda}}$ can be expressed in terms
+of the time-development operator
+\begin{equation}
+  \chi\ket{\psi_{\lambda}}\propto   
+  \tilde{W}(0,-\infty )\ket{\psi_{\lambda}}\ket{\Psi_{\tilde{c}}} ,
+\end{equation}
+or using the time-independent formalism
+\begin{equation}
+  \chi\ket{\psi_{\lambda}}=
+  \frac{Q}{E_{\lambda}-QHQ}QVP\ket{\psi_{\lambda}},
+  \label{eq:newchi}
+\end{equation}
+where $Q$ is the exclusion operator. Note that this equation is given
+in terms of the Brillouin-Wigner perturbation expansion, since
+we have the exact energy $E_{\lambda}$ in the denominator.
+As in section 4, we will use the folded-diagram technique to remove
+this energy dependence.
+
+Using the normalization condition for the true wave function
+we obtain
+\begin{equation}
+  \left\langle \Psi_{\gamma} |\Psi_{\lambda}\right\rangle
+  N_{\lambda}\delta_{\lambda\gamma}=
+  \bra{\psi_{\gamma}}({\bf 1} +\chi^{\dagger}\chi\ket{\psi_{\lambda}},
+  \label{eq:newnorm}
+\end{equation}
+where we have used the fact that
+$\bra{\psi_{\gamma}}\chi\ket{\psi_{\lambda}}=0$. Recalling that the
+time-development operator is hermitian we have that $\chi^{\dagger}\chi$ is
+also hermitian. We can then define an orthogonal basis $d$ whose eigenvalue
+relation is
+\begin{equation}
+   \sum_{\alpha}\bra{\psi_{\beta}}\chi^{\dagger}
+   \chi\ket{\psi_{\alpha}}d_{\alpha}^{\lambda}=\mu^{2}_{\lambda}
+   d_{\beta}^{\lambda},
+   \label{eq:newbasis1}
+\end{equation}
+with eigenvalues greater than $0$.
+Using the definition in eq.\ (\ref{eq:newchi}), we note
+that the diagonal element of
+\begin{equation}
+   \bra{\psi_{\lambda}}\chi^{\dagger}
+   \chi\ket{\psi_{\lambda}}=
+   \bra{\psi_{\lambda}}PVQ\frac{1}{(E_{\lambda}-QHQ)^2}QVP
+   \ket{\psi_{\lambda}},
+\end{equation}
+which is nothing but the derivative of the \qbox, with an additional
+minus sign. Thus, noting that if $\gamma\neq\lambda$
+\begin{equation}
+  \left\langle \Psi_{\gamma} |\Psi_{\lambda}\right\rangle=0=
+    \left\langle \psi_{\gamma} |\psi_{\lambda}\right\rangle
+   +\bra{\psi_{\gamma}}\chi^{\dagger}\chi\ket{\psi_{\lambda}},
+\end{equation}  
+we can write $\chi^{\dagger}\chi$
+in operator form as
+\begin{equation}
+   \chi^{\dagger}\chi =-\sum_{\alpha}\ket{\overline{\psi}_{\alpha}}
+   \bra{\psi_{\alpha}}\hat{Q}_1(E_{\alpha})\ket{\psi_{\alpha}}
+   \bra{\overline{\psi}_{\alpha}}
+   -\sum_{\alpha\neq\beta}\ket{\overline{\psi}_{\alpha}}
+    \left\langle \psi_{\alpha} |\psi_{\beta}\right\rangle
+   \ket{\overline{\psi}_{\beta}}.
+\end{equation}
+Using the new basis in eq.\ (\ref{eq:newbasis1}), we see that
+eq.\ (\ref{eq:newnorm}) allows us to define another
+orthogonal basis $h$
+\begin{equation}
+  h_{\alpha}^{\lambda}=\sqrt{\mu_{\alpha}^2+1}\sum_{\beta}
+  d_{\beta}^{\alpha}b_{\beta}^{\lambda}\frac{1}{\sqrt{N_{\lambda}}}
+  =\frac{1}{\sqrt{\mu_{\alpha}^2+1}}\sum_{\beta}
+  d_{\beta}^{\alpha}\overline{b}_{\beta}^{\lambda}\sqrt{N_{\lambda}},
+\end{equation}
+where we have used the orthogonality properties of the vectors
+involved. The vector $h$ was used by the authors of ref.\ \cite{kuo93}
+to obtain a hermitian effective interaction as
+\begin{equation}
+   \bra{\psi_{\alpha}}V_{\mathrm{eff}}^{\mathrm{(her)}}\ket{\psi_{\beta}}=
+   \frac{\sqrt{\mu_{\alpha}^2+1}\bra{\psi_{\alpha}}
+   V_{\mathrm{eff}}^{\mathrm{(nher)}}\ket{\psi_{\beta}}
+   +\sqrt{\mu_{\beta}^2+1}\bra{\psi_{\alpha}}
+   V_{\mathrm{eff}}^{\dagger\mathrm{(nher)}}\ket{\psi_{\beta}}   }
+   {\sqrt{\mu_{\alpha}^2+1}+\sqrt{\mu_{\beta}^2+1} },
+\end{equation}
+where (her) and (nher) stand for hermitian and non-hermitian
+respectively. This equation is rather simple to compute, since
+we can use either the Lee-Suzuki or the folded-diagram method
+to obtain the non-hermitian part.
+To obtain the total hermitian effective interaction, we have to
+add the $H_0$ term. The above equation is manifestly hermitian and
+was used in ref.\ \cite{kuo93} to compute effective
+interactions with the Bonn A potential of table A.1 in ref.\
+\cite{mac89}, using the same parameters for $sd$-shell nuclei as in this
+work.
+The Lee-Suzuki method was used to obtain
+the non-hermitian effective interactions
+$V_{\mathrm{eff}}^{\mathrm{(nher)}}$, see section 4. The results
+for both a hermitian and a non-hermitian effective interactions
+from ref.\ \cite{kuo93} are shown in table \ref{tab:hermiteveff}.
+Clearly, the non-hermiticity is rather weak, 
+and the hermitian  $sd$-shell
+effective is in general close to
+\begin{equation}
+   \bra{\psi_{\alpha}}V_{\mathrm{eff}}^{\mathrm{(her)}}\ket{\psi_{\beta}}
+   \approx\frac{1}{2}\left(\bra{\psi_{\alpha}}
+    V_{\mathrm{eff}}^{\mathrm{(nher)}}
+    \ket{\psi_{\beta}}
+   +\bra{\psi_{\alpha}}V_{\mathrm{eff}}^{\dagger\mathrm{(nher)}}
+   \ket{\psi_{\beta}}\right).
+\end{equation}
+Similar results were also obtained for the $pf$-shell.
+\begin{table}[hbtp]
+\caption{Hermitian and non-hermitian effective
+interactions derived from a second-order \qbox using the
+Bonn A potential. The results are taken from ref.\ [113].}
+\begin{center}
+\begin{tabular}{lllllrrr}
+\\\hline
+$JT$&$j_{a}$&$j_{b}$&$j_{c}$&$j_{d}$&
+\multicolumn{1}{c}{$V_{\mathrm{eff}}^{\mathrm{(her)}}$}&
+\multicolumn{1}{c}{$V_{\mathrm{eff}}^{\mathrm{(nher)}}$}&
+\multicolumn{1}{c}{$V_{\mathrm{eff}}^{\dagger\mathrm{(nher)}}$}
+\\\hline
+01&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&-2.676&&-2.676\\
+01&$d_{5/2}$&$d_{5/2}$&$d_{3/2}$&$d_{3/2}$&-3.546&-3.589&-3.567\\
+01&$d_{5/2}$&$d_{5/2}$&$s_{1/2}$&$s_{1/2}$&-1.080&-1.032&-1.056\\
+01&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$&-1.059&&-1.059\\
+01&$d_{3/2}$&$d_{3/2}$&$s_{1/2}$&$s_{1/2}$&-0.826&-0.774&-0.800\\
+01&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$&-2.011&&-2.013\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:hermiteveff}
+\end{table}
+However, if one takes into account a model space which spans over more
+than one shell, the eigenvalues of eq.\ (\ref{eq:newbasis1}) may become
+rather large, and the approximation used in this work may no longer
+be valid. For such extended model spaces, the hermitian formulation
+of ref.\ \cite{kuo93} may be appropriate, though one of the
+problems with this expansion, is that eq.\ (\ref{eq:newbasis1})
+depends on the exact energy $E$. This is an undesirable property
+of the above expansion, since we would like to use this effective
+interaction for nuclei other than those with two valence nucleons
+only. The expansion presented by Lindgren \cite{lindgren91} seems
+at present to be free of such problems, though it would be desirable
+to present an effective hermitian interaction based on time-dependent
+perturbation theory. Such an approach will be presented elsewhere
+\cite{mhj94}. Finally, we mention that an expression for a folded-diagram
+expansion with a non-degenerate model space has been presented by
+Suzuki {\em et al.} \cite{suz94}.
+
+
+
+
+
+
+

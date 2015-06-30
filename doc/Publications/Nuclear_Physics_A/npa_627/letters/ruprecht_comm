@@ -1,0 +1,118 @@
+From m.h.jensen@fys.uio.no Sun Feb 16 22:56:56 1997
+Received: from pat.uio.no by norsci0.nordita.dk (4.1/SMI-4.1)
+	id AA15485; Sun, 16 Feb 97 22:56:56 +0100
+Resent-Message-Id: <9702162156.AA15485@norsci0.nordita.dk>
+Received: from ulrik.uio.no by pat.uio.no id <28108-0@pat.uio.no>;
+          Sun, 16 Feb 1997 22:56:44 +0100
+Return-Path: <machleid@phys.uidaho.edu>
+Old-Received: from 129.101.65.111 by pat.uio.no with SMTP (PP) id 
+              <28095-0@pat.uio.no>; Sun, 16 Feb 1997 22:56:30 +0100
+Old-Received: by tamaluit.phys.uidaho.edu (5.61/UW-NDC Revision: 2.21 ) id 
+              AA06285; Sun, 16 Feb 97 13:56:23 -0800
+Date: Sun, 16 Feb 97 13:56:23 -0800
+From: Ruprecht Machleidt <machleid@phys.uidaho.edu>
+Message-Id: <9702162156.AA06285@tamaluit.phys.uidaho.edu>
+To: m.h.jensen@fys.uio.no
+Cc: machleid@phys.uidaho.edu
+Resent-Date: Sun, 16 Feb 1997 22:56:44 +0100
+Resent-From: m.h.jensen@fys.uio.no
+Resent-To: mjensen@nordita.dk
+Status: R
+
+Dear Morten,
+
+the neutron-star paper has developed into a really great
+paper. What the non-locality in different parts of the nuclear
+force does, comes out very clearly, now.
+In particular, I like those Figs. 3 and 4: Fig. 4 demonstrates
+clearly what nonlocality in the central force does; very convincing,
+since you have two locals and two nonlocals and they both agree.
+Then, Fig. 3 shows clearly the additional effect of the nonlocal
+tensor force. Also very clear: the nonlocality in the tensor
+force is the largest effect.
+
+There are only a few remarks that I'd like to make:
+
+For local potentials, you sometimes use the term "potentials
+that include only local operators". That may be misleading,
+because the L.S operator, which any (local or nonlocal) potential
+includes, is a non-local operator.
+It may be better to say simply "local function" instead of
+"local operator" in those places.
+
+The "disclaimer" on p. 6, middle, I feel, is somewhat too strong.
+A referee may turn this against us and say: well, you yourself admit
+it's all unrealistic, so it's not worth publishing.
+BHF is not a complete calculation, including all possible effects,
+but it's an important contribution, the largest of all, and thus
+an important first approach.
+
+On page 12, middle, you mention the contribution from 3-body
+forces (3BF). On line 9/10 from the top, it is stated:
+"Three-body forces are KNOWN to add repulsion at higher
+densities [5]."
+And 4 lines below this: "...the rise in symmetry energy and proton
+fractions due to the inclusion of three-body forces ... is CLEAR."
+
+The truth is: nothing is KNOWN and nothing is CLEAR.
+
+We do not have a reliable theory for the three-body force,
+and as long as we don't have it, we know nothing reliably.
+The only thing there is, are some purely phenomenological
+3BF that are pure fit products to get some "good" results
+for light nuclei, and they do whatever they do.
+
+Thus, I feel, the only correct statement one can make is,
+that IN THE CALCULATIONS OF REF ... the particular 3NF  
+THAT IS USED IN THAT PARTICULAR WORK 
+(and that has now foundation and no general validity) happens
+to be repulsive at higher densities and happens to rise
+the the symmetry energy and proton fractions.
+However, one day when we will hopefully have a reliable theory
+of the 3BF, then it may be all quite different (it could
+well be opposite); we simply do not know.
+
+
+Some merely "technical" stuff:
+
+page 4, top: title of Section II: May be better:
+             "Results and Discussion"
+
+page 7, line 8 from top: may be better: " ... H_0 is the
+unperturbed Hamiltonian, and ..."
+
+page 8, line 8/9 from bottom: " ... contribution from
+the $^3S_1$ partial wave to the 
+potential energy ... "  [ no `in the contribution']
+
+page 9, line 6/7 from bottom: " ... Bonn potential
+yields a TRITON binding energy of ... 
+... yields 7.62 MeV, the same as the new Argonne potential [9]."
+[ no `does']
+
+page 13, 4 from top: " ... note that theRE are ... "
+
+page 13, last line (of Acknowledgement):
+" ... are greatFULLY acknowledged."
+
+
+
+I like, of course, also this Fig. 9 which clearly shows:
+the more nonlocality the higher the proton fractions,
+and the Bonn gives easily rise to URCA.
+So here we have a "measurable" difference, in case the
+3BF stuff all turns out to be a flopp one day
+(in the year of 2050, when we are all dead).
+
+
+I always prefer PRC (which costs no publications fees
+when you submit your REVTEX file; only reprints would cost something,
+but one doesn't need them anymore),
+however, NPA is also fine with me.
+But I would not consider any other journals; they would all
+be lower level.
+
+All the best,
+
+Ruprecht.
+

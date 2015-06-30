@@ -1,0 +1,164 @@
+Dear Editors,
+
+please find enclosed as a uuencoded file attached below
+1)  a  revised version of LT6729 as text file set in Revtex
+2) two figures in postscript format.
+
+Together with the file there is a also an answer to
+the referees.
+
+Yours sincerely 
+
+The authors,
+Teemu Siiskonen, Jouni Suhonen and Morten Hjorth-Jensen
+
+
+*******  Answer to referees (both A and B)
+
+We thank the referees for several useful comments on our manuscript,
+and for thereby allowing us to spot an error in our previous calculation.
+The revised manuscript has been revised accordingly. The changes and our
+answers to the various comments are listed below.
+
+First we would however like to discuss a possible resolution of the discrepancy
+between the so-called bare results obtained with the USD and the CD-Bonn interaction
+in the previous manuscript. This was pointed out by both referees
+(Ref A point 1-2 and Ref B point 2) and clearly created a confusion in 
+the interpretation of the data.
+As pointed out by Ref A in his/her points 1, the use of  a microscopic 
+interaction like the CD-Bonn clearly gives inadequate results for the 
+spectroscopy of nuclei like 28 Si. To be more precise, an effective
+interaction which starts from whatever realistic NN interactions 
+(which fit the scattering data)
+and is derived from say a G-matrix approach with additional terms like
+core-polarization diagrams, typically fails in certain aspects like the 
+structure of Si 28, or in reproducing the shell closure
+in Ca 48, or Ni 68, or in reproducing the binding energy of the tin isotopes.
+The state of the art effective interactions, of which the one used here is 
+an example, may give yield good spectroscopy and fail in reproducing
+the binding energy for say a series of isotopes, or they may reproduce
+the binding energy and fail in the spectroscopy. An example of the latter
+is given in [21] of the manuscript, see sect 6 and the discussion of the Ca
+isotopes. There, the binding energies are in reasonable agreement
+with experiment, whereas the 0+-2+ spacing in Ca 48 is more than 2.5 MeV 
+away from the experimental value. Similarly, the spectra of 47 and 49 Ca 
+agree also poorly with experiment. This happens with all kinds of effective
+interactions derived  within the present many-body scheme, from the
+Kuo-Brown to the presently used.
+
+Possible cures do however exist. The one we have employed here, is 
+based on a decomposition of the effective interaction in terms of 
+a multipole expansion. This method has been advocated by Zuker and
+co-workers (see refs 24 and 25 of the revised ms). The so-called
+monopole part which arises from this multipole expansion 
+can be rewritten (with a two-body interaction) in terms of a global
+term, a one-body term and a two-body term. All these terms are proportional
+to the energy centroids of a given configuration. Recently Duflo and
+Zuker (ref 25 in the ms) proposed a way to cure the one-body part 
+of the monopole term through a fit to the available single-particle
+energies in all known A pluss minus 1 nuclei. 
+
+The recipe then consists in replacing our energy centroids from the 
+CD-bonn and Nijemegen I interactions (i.e. the configuration dependent
+energy centroids) with those obtained by Zuker and Duflo using the 
+empirical determined energy centroids.
+This recipe forms the basis of Zuker and co-workers succesfull
+modification of the kuo-brown interaction for the fp shell, the so-called
+KB3 interaction. 
+We have also applied this recipe to our effective interactions
+for the fp shell and found excellent spectroscopy.
+
+With this recipe we have recalculated the capture rates with
+a modified CD-Bonn potential. This accounts for one of the changes
+in the manuscript. 
+The disturbing discrepancies between the bare results for the USD and CD-Bonn
+interactions, have now disappeared, and both calculations
+with unrenormalized transition operators yield similar results,
+and in agreement with previous shell model calculations. 
+And the spectroscopy for both 28 Si and Al for the Cd-Bonn and
+Nijemegen interactions are fairly good agreement with the data.
+Thus, hopefully, the discrepancy raised by Ref A in
+point 1 and Ref B in point 2 has now been resolved.
+The GT-distribution and spectrum for the Cd-bonn and Nijmegen interactions
+agree fairly well with the data.
+
+The next important change in the revised manuscript concerns 
+the size of the correction to the transition
+operators themselves. 
+ 
+There Ref A noted in his/her points 3-5 that the size of the renormalized
+matrix elements should in general (for the isovector part) be smaller,
+and especially the [101] matrix, which is similar to the GT operator,
+should be reduced by some 20 %. 
+This led us to reaximine the effective operator and indeed an error was discovered.
+Now the renormalization leads to a quenching of the order of 10-30 % in general, and our
+new GT results agree with those of other workers.
+The new results for the various matrix elements are now listed
+in the revised Fig 1 and should conform better with what is expected
+(points 4-5 of Ref A).
+
+
+Thus, the modification of the effective interaction according to the
+prescription of Zuker and co-workers and the correction of the 
+error in connection with the effective operator, should partially
+answer the criticism raised by Ref A in his/her points 1-5 and Ref 
+B in point 2. 
+
+
+Further changes and/or replies to the referees are
+
+REF. A:
+-------
+point 6) as far as we are aware of, there is seemingly no expt. data for 23Na
+point 7) The FPA approximation is not employed in our work
+point 8) We have shortened the introduction
+
+
+REF. B.
+-------
+
+Point 1) we have added a table in order to, hopefully, enhance the 
+         readability of the ms.
+point 2) We have skipped a presentantion of the Nijemegen I data, since
+         they are very close to those from the CD-bonn interaction. That means
+         that new interactions will not change the picture dramatically.
+point 3) We have used the bare value in order to avoid double counting, see also
+         the new ms for further discussion.
+point 4) We have removed the phrase about wave function renormalizations.
+
+
+
+Finally, we would like to address the discussion of the x-value compared
+to the fact that the effective matrix elements get quenched by only 10-30 %,
+while the effect on x is to bring it closer to the experimental region.
+(this point is also a partial reply to the comments raised by Ref A
+in points 2-3)
+
+
+------->  Teeme, can you say something here....???????
+
+like
+
+3) Corrections 30% (average). No cancellations, numerical coefficient in the front of [101] important. One sees that, if one
+takes [101] as a common factor. All the ratios of rme are decreased by the same amount. Thus we can take this factor 0.7 to
+the front and divide the coefficient in front of [101] by 0.7. We have an expression of the form (a+(small)*b)/(d+(larger)*g),
+where b\approx g are the factors in front of [101]. When using the renormalization, we must divide b and g by 0.7. That gives
+reduction in x.
+
+
+
+
+
+We hope that the manuscript is its present form, is more suitable
+for PRL.
+
+Yours sincerely,
+
+The authors
+
+
+
+
+
+
+****************  the manuscript as uunecoded file

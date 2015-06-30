@@ -1,0 +1,313 @@
+From ptimu01@alpha3.tphys.physik.uni-tuebingen.de Wed Mar  5 09:43:22 1997
+Return-Path: <ptimu01@alpha3.tphys.physik.uni-tuebingen.de>
+Received: from outmail.zdv.uni-tuebingen.de by goggins.uio.no with SMTP (PP) 
+          id <28974-0@goggins.uio.no>; Wed, 5 Mar 1997 09:43:13 +0100
+Received: from alpha3.tphys.physik.uni-tuebingen.de 
+          by outmail.zdv.uni-tuebingen.de (4.1/ZDV-Uni-Tuebingen-1.0) 
+          id AA00126; Wed, 5 Mar 97 09:43:02 +0100
+Received: from localhost by alpha3.tphys.physik.uni-tuebingen.de;
+          (5.65/1.1.8.2/03Dec96-0342PM) id AA02279;
+          Wed, 5 Mar 1997 09:42:59 +0100
+Date: Wed, 5 Mar 1997 09:42:58 +0100 (MET)
+From: Herbert Muether <ptimu01@alpha3.tphys.physik.uni-tuebingen.de>
+To: Ruprecht Machleidt <machleid@phys.uidaho.edu>
+Cc: m.h.jensen@fys.uio.no, artur@dirac.ecm.ub.es, 
+    herbert.muether@uni-tuebingen.de, lars.engvik@fys.uio.no
+Subject: Re: your mail
+In-Reply-To: <9703042309.AA00373@tamaluit.phys.uidaho.edu>
+Message-Id: <Pine.OSF.3.95.970305094126.1998A-100000@alpha3.tphys.physik.uni-tuebingen.de>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+
+Dear friends of the non-local potentials,
+
+1) let me try to recall: the original idea has been to explain
+the difference in the prediction for the symmetry energy at high 
+densities. Our observation has been that OBE potential lead to
+a symmetry energy increasing with density, Argonne potential yields
+a saturation of the symmetry energy, which is obtained both in
+BHF calculations as well as in variational ones. This is an intriguing
+observation, which we wanted and I guess still want to understand:
+The first idea has been that this is due to the locality of the Argonne
+pot.
+
+2) I am not so sure whether the accuracy of phase shifts is of that
+importance. If one wants to study the constraints due to phase shifts,
+one should construct phase-shift equivalent potentials and see the differences
+in nuclear matter calculations. It is not a problem to generate such
+potentials and perform corresponding calculations. (Actually studies in
+this direction have been performed many years ago) What one observes is
+tremendous differences, if one does not try to put any consatraints on
+the off-shell behaviour.
+
+3) But lets continue and try to understand differences of the various
+potentials. I made some studies of the BHF single-particle potential U(k)
+using cdBonn (cdb), NijmI (ni1), Nijm II (ni2), Nijm93 (ni0) and the 
+Argonne potential (ar1). In order to avoid any disturbance from self-
+consistency, I assume one parametrization of the continous single-particle
+spectrum for all 3 potentials: k_f=1.36, U=-90.4, m*=623.5
+Using the same parameters I also did calculations for neutron matter (note
+it is the sam k_f not the same density) and repeated them for the 
+Hartree-Fock approximation: Born approximation for all partial waves.
+What you will find in the figures added below is the single-particle potential
+plotted as a function of k (given in units k/k_f) for those potentials. The
+nomenclature is that figures and files called "usel.xxx" refer to BHF nuclear
+matter, "unel.xxx" refer to BHF neutron matter, "vsel.xxx" means HF nuclear
+matter and "vnel.xxx" is HF neutron matter. Also I include a figure "isel.ps"
+which shows the imaginary part of U(k), which is of course different from 0
+only for $k>k_F$ The extensions "xxx" refer to the various potentials and
+have been identified in the () above.
+
+4) The cdbonn and the Nijm I are rather soft potentials. The HF results
+is relatively close to the BHF (both for nuclear and neutron matter).
+This means of course the Pauli and dispersive effects cannot be very large.
+This is in line with Ruprechts figures, in which the matrix elements of
+V were close to those of T for these potentials.
+Nevertheless the 2 potentials exhibit a different k-dependence of the HF
+potentials and yield quite different BHF single-particle potentials.
+
+5) The Argonne potential yields HF results for nuclear matter which are
+close to nij2 and nij0 but quite different in the T=1 channels of
+neutron matter
+
+6) The imaginary part which is some kind of average over the non-diagonal
+matrix elements of V is rather similar for all potentials considered.
+
+7) Maybe that you can detect more from those studies. It may also be
+helpfull to study HF and BHF (separated in the various partial waves) for
+the total energy ?
+
+
+Best regards    Herbert
+
+#!/bin/csh -f
+# this uuencoded Z-compressed .tar file created by csh script  uufiles
+# for more information, see e.g. http://xxx.lanl.gov/faq/uufaq.html
+# if you are on a unix machine this file will unpack itself:
+# strip off any mail header and call resulting file, e.g., nlocf.uu
+# (uudecode ignores these header lines and starts at begin line below)
+# then say        csh nlocf.uu
+# or explicitly execute the commands (generally more secure):
+#    uudecode nlocf.uu ;   uncompress nlocf.tar.Z ;
+#    tar -xvf nlocf.tar
+# on some non-unix (e.g. VAX/VMS), first use an editor to change the
+# filename in "begin" line below to nlocf.tar_Z , then execute
+#    uudecode nlocf.uu
+#    compress -d nlocf.tar_Z
+#    tar -xvf nlocf.tar
+#
+uudecode $0
+chmod 644 nlocf.tar.Z
+zcat nlocf.tar.Z | tar -xvf -
+rm $0 nlocf.tar.Z
+exit
+
+begin 644 nlocf.tar.Z
+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
+852%BT$NK-<D0H&";:>S5:B$36#91(%H"
+`
+end
+
+
+
+

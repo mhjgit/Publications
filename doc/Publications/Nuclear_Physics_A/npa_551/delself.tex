@@ -1,0 +1,1156 @@
+%\documentstyle[//saphire/user/mhjensen/text/style/aps]{revtex}
+\documentstyle[/local/tex/inputs/fig]{article}
+
+
+
+%               Preamble
+
+%               definition of various commands
+
+\setlength{\hoffset}{-0.5in}
+\setlength{\textwidth}{6in}
+\setlength{\voffset}{-0.5in}
+\setlength{\textheight}{8.5in}
+%\renewcommand{\baselinestretch}{1,5}
+%\APLfig{<filnavn> } {hoyde [cm]}   
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+
+%               end of definitions and begin of document
+
+\begin{document}
+\pagestyle{plain}
+\title{Isobar contributions to the optical-model potential for $^{16}$O.}
+\author{M.\ Borromeo$^1$, M. Hjorth-Jensen$^2$, H.\ M\"{u}ther$^3$
+and A.\ Polls$^4$\\\\
+$^1$ Dipartimento di Fisica, Universita' di Milano, Italia
+\\
+$^2$ Fysisk Institutt, Universitetet i Oslo, N-0316 Oslo, Norway\\
+$^3$ Institut f\"{u}r Theoretische Physik, Universit\"{a}t T\"{u}bingen,\\
+D-7400 T\"{u}bingen, Germany
+\\ $^4$ Departament d'Estructura i Constituentes de la Materia,\\
+Universitat de Barcelona, E-08028 Barcelona, Spain}
+%\address{}
+\maketitle
+
+%\date{\today}
+
+\begin{abstract}
+In this work we evaluate the optical-model potential for $^{16}$O
+by accounting for the effect of $\Delta$ isobars  contributions to
+both the imaginary and real
+part of the optical potential.
+We also investigate the role played
+by a
+finite $\Delta$ isobar self-energy
+in the evaluation of the two-particle-one-hole (2p1h)
+and three-particle-two-hole (3p2h)
+diagrams. Here we employ the energy-dependent parametrization 
+of the self-energy of Oset and co-workers.
+
+The effect of the finite isobar self-energy is to redistribute
+the strength of the imaginary parts.
+However, the total integrated strength with and without a finite 
+$\Delta$ isobar self-energy, is conserved.
+Thus, in the
+determination of quantities like the occupation probabilities for
+$l=1$ and $l=2$ states, the largest uncertainty due to isobar contributions
+lies in the choice of coupling constants for the meson-nucleon-$\Delta$ 
+vertices.
+\end{abstract}
+
+%\pacs{}
+
+
+\clearpage
+
+\section{Introduction}
+
+In this work we derive the self-energy for nucleons with
+orbital momentum $l=1,2$ in $^{16}$O from a microscopic point 
+of view. With microscopic we will mean a perturbative
+many-body  approach which departs from the underlying
+nucleon-nucleon interaction defined through the exchange of 
+selected mesons. This interaction is renormalized in a
+nuclear medium through the introduction of the Brueckner reaction matrix
+$G$. The $G$-matrix can in turn be used to calculate
+higher-order contributions to the self-energy, such as diagrams
+(b) and (c) in fig.\ \ref{fig:diagrams}. Diagram (b) is the 
+two-particle-one-hole (2p1h) diagram while (c) represents the
+three-particle-two-hole (3p2h) contribution to the self-energy.
+
+The self-energy is intimately related to the optical-model
+potential, and provides a microscopic justification 
+for the real and imaginary parts of the scattering potential of a free
+nucleon interacting with a nucleus. The wealth of data which exist 
+on elastic nucleon-nucleus scattering and (e, e') experiments
+provide significant information about excitation modes of nuclei. The 
+theoretical description of such properties are linked to the self-energy.
+As an example, 
+the self-energy can be used to define properties like the 
+spectral functions.
+The integration of the spectral function with respect to the energy yields
+information about the e.g.\ the occupation probability of a single-particle
+configuration. In the simple
+shell-model picture for a closed-shell nucleus like $^{16}$O, the
+occupation probabilities for single-particle states below the Fermi energy
+are one and zero for single-particle states above. 
+As such, the self-energy determines the deviation from the
+naive single-particle picture due to nuclear correlations. 
+
+
+
+The motivation behind this work is twofold:\newline
+Firstly, we wish to extend the analysis of the optical-model potential
+for $^{16}$O of refs.\ [1-2]
+to
+incoming nucleons with orbital angular momentum $l=1,2$. The emphasize in
+this work is on the contribution from isobars $\Delta$. 
+In ref.\ \cite{hbmp93} we found $\Delta$ excitations to yield a
+depletion of the occupation probability of the $s_{1/2}$ state to be around
+$2.5\%$, whereas contributions from short-range nucleon-nucleon (NN) 
+correlations accounted for $8.5\%$. Our results 
+in \cite{hbmp93} were however to be viewed as a qualitative estimate of
+isobar contributions, since there is a large uncertainty in the values
+of both coupling constants and energy cutoffs used in the evaluation of
+$N\Delta$ potentials based on meson exchange ($\pi$ and $\rho$ mesons
+in our case). Furthermore, in the analysis of ref.\ \cite{hbmp93} we set
+the self-energy of the isobar equal zero, whereas a more realistic 
+analysis should account for a finite and medium dependent self-energy.
+It was pointed out to us by Oset \cite{os93}, that
+the inclusion of a finite self-energy would not only shift the peaks
+of the isobar contributions to lower energies, but also the width of these
+contributions may get modified. With a constant self-energy, the 
+total integrated strengths of the isobar contributions are 
+conserved, though, whether a more realistic energy-dependent self-energy
+conserves
+the total strength or not is an open question. 
+These remarks lead us to the second point we wish to address:
+Using the parametrization of Oset and co-workers \cite{os87,nieves93},
+we investigate the role played by a finite and energy-dependent 
+self-energy in the evaluation of the 2p1h and 3p2h diagrams. 
+
+The reason why we focus on isobar contributions is due to the fact
+that we relate the real part of the optical potential to the imaginary
+part through a dispersion relation. The latter implies that, in order
+to have a real part at low energies, we need the imaginary part at both 
+low energies and at energies
+of several hundreds of MeV (see e.g. the discussion in [1-2]). At high
+energies  nucleonic resonances such as the isobar $\Delta$ become of
+importance. The $\Delta$ resonance has a mass of 1232 MeV, roughly 300
+MeV higher than that of the nucleon. Other resonances come also
+into play at higher energies, or meson production not described in terms
+of resonances. However, we wish here to focus on the isobar 
+$\Delta$ only, since it is the lightest pion-nucleon resonance. 
+
+This work falls in four sections. The next section is devoted to a review
+of our approach
+and a discussion on the self-energy of the isobar
+We recast there the necessary formulae for calculating the 
+nucleon self-energy, for more details we will refer the reader
+to refs.\ [1-2]. In the
+subsequent section we present and discuss our results for $^{16}$O. Finally,
+our conclusions are drawn in section four.
+
+
+\section{A microscopic approach to the optical-model potential}
+
+\subsection{Construction of the $G$-matrix for nucleons and isobars}
+
+
+For a nucleon and an isobar $\Delta$
+interacting through the exchange of $\pi$ plus $\rho$ mesons,
+the transition potential $V_{NNN\Delta}$ depicted in fig. \ref{fig:deltrans} 
+is usually written, in the static
+ non-relativistic
+limit, as
+\cite{ew88,tow87,mut85}
+\be
+V_{NNN\Delta}({\bf k})={\displaystyle -\left\{
+D_{\pi}^{N\Delta}({\bf k})\frac{f_{\pi NN}f_{\pi
+ N\Delta}}{m_{\pi}^{2}}
+\mbox{\boldmath $\sigma$} \cdot {\bf k}{\bf S}\cdot
+{\bf k}
++D_{\rho}^{N\Delta}({\bf k})\frac{f_{\rho NN}f_{\rho N\Delta}}{m_{\rho}^{2}}
+\mbox{\boldmath $\sigma$}\times {\bf k}\cdot {\bf S}\times {\bf k}
+\right\}
+\mbox{\boldmath $\tau$}{\bf T},}   \label{eq:vndel}
+\ee
+with $S(T)$ the transition matrix which creates a spin (isospin)
+$3/2$ object from a spin (isospin) $1/2$ one.
+The meson propagator $D_{\pi , \rho}({\bf k})$ is defined as
+\[
+D_{\pi , \rho}^{N\Delta}({\bf k})=
+\frac{1}{2}\left(\frac{1}{m_{\pi ,\rho}^{2}+{\bf k} ^{2} }+
+\frac{1}{m_{\pi , \rho}^{2}+{\bf k} ^{2} +
+m_{\pi , \rho}(m_{\Delta}-m_{N})}\right).
+\]
+Similarly, the $V_{NN\Delta\Delta}$ potential is easily
+evaluated by simply replacing $\sigma \rightarrow S$,
+$\tau\rightarrow T$
+and $f_{\pi,\rho NN}\rightarrow f_{\pi,\rho N\Delta}$ in eq.\
+(\ref{eq:vndel}), yielding
+\be
+V_{NN\Delta\Delta}({\bf k})={\displaystyle -\left\{
+D_{\pi}^{\Delta\Delta}({\bf k})\frac{f_{\pi
+ N\Delta}^{2}}{m_{\pi}^{2}}
+{\bf S}_1 \ \cdot {\bf k}{\bf S}_2 \cdot
+{\bf k}
++D_{\rho}^{\Delta\Delta}({\bf k})\frac{f_{\rho N\Delta}^{2}}{m_{\rho}^{2}}
+{\bf S}_1 \times {\bf k}\cdot {\bf S}_2 \times {\bf k}
+\right\}
+{\bf T}_1{\bf T}_2,}   \label{eq:vdeldel}
+\ee
+The  meson propagator for the
+$V_{\Delta\Delta}$ transition potential is given as
+\[
+D_{\pi , \rho}^{\Delta\Delta}({\bf k})=
+\frac{1}{m_{\pi ,\rho}^{2}+{\bf k} ^{2}+m_{\pi ,\rho}(m_{\Delta}-m_{N})} .
+\]
+The coupling constant for the $\pi$
+meson is given by a relation obtained from
+the non-relativistic quark model \cite{bw75}
+\be
+f_{\pi N\Delta} = \frac{6}{5}\sqrt{2}f_{\pi NN}=
+\frac{6}{5}\sqrt{2}g_{\pi NN}\frac{m_{\pi}}{2m_{N}},
+\ee
+and similarly for the $\rho$ meson we have
+\be
+f_{\rho N\Delta} =\frac{f_{\pi N\Delta}}{f_{\pi NN}}
+g_{\rho NN}\frac{m_{\rho}}{4m_{N}}\left(
+1+\frac{f_{\rho NN}}{g_{\rho NN}}\right),
+\ee
+with
+\be
+f_{\rho NN} = \sqrt{4\pi}g_{\rho NN}\frac{m_{\rho}}{m_{N}}\left(
+1+\frac{f_{\rho NN}}{g_{\rho NN}}\right),
+\ee
+where we have taken the values of vector (tensor) coupling constants
+$g_{\rho NN}(f_{\rho NN})$ from table A.2 of reference \cite{mac89}
+implying $g_{\rho NN}=0.95$ and $\frac{f_{\rho NN}}{g_{\rho NN}} =6.1$.
+In addition we need to include form factors in order to regularize the
+potentials at short distances.
+Our choice for the relation $f_{\pi N\Delta}/f_{\pi NN}=1.7$ follows that 
+of the Bonn NN potential model employed here, though it is smaller than
+the experimental value of $2.15$. This difference  leaves  therefore room
+for large uncertainties ( of the order $50\%$)  in the evaluation of 
+isobar contributions. As to be discussed below in connection with both
+the strength of the Wood-Saxon potential and occupation probabilities, our
+results are to be viewed as  mere qualitative estimates of isobar contributions. 
+In this work we take the cutoff masses which enter the form factors 
+and the remaining meson coupling constants
+for the $NN$ potential model from the potential model B of table
+A.2 of ref.\ \cite{mac89}.
+The cutoff parameters  for the $N\Delta$ vertices will be discussed in section 3.
+
+Having defined the various potentials we are now able to write down the corresponding
+expressions for the reactions matrices $G$. For nucleons only we have, see also
+the discussion in [1-2],
+\be
+G_{NN}(\Omega) = V_{NN}+V_{NN}Q\frac{1}{\Omega - QTQ}QG_{NN}(\Omega),
+\label{eq:gnn}
+\ee
+where $T$ is the kinetic energy for two particles and $Q$ the Pauli
+exclusion operator. The angle-averaged Pauli operator defined in
+ref.\ \cite{bbmp91} is used here as well.
+The $NN$ potential is conventionally determined in terms of partial waves
+and the coordinates of the relative and center of mass motion (RCM),
+which means that the $G_{NN}$-matrix in eq.\ (\ref{eq:gnn}) reads
+\be
+\bra{klKLJST}G_{NN}\ket{k'l'KLJST}.
+\ee
+The variables
+$k$, $k'$ denote the relative momentum, and $l$ and $l'$ the orbital
+angular momentum for the relative motion. The quantities
+$K$ and $L$ are the corresponding
+quantum numbers of the center of mass motion. Finally, $J$, $S$
+and $T$ represent the total angular momentum, spin and isospin, respectively.
+Transformations from the RCM system to the lab system will be discussed
+below.
+Starting from the transition potentials $V_{NNN\Delta}$ and
+$V_{NN\Delta\Delta}$
+we are now able to construct the corresponding $G$-matrices $G_{N\Delta}$
+and $G_{\Delta\Delta}$, respectively, by defining
+\be
+G_{N\Delta}(\Omega)
+= V_{NNN\Delta}+G_{NN}(\Omega)
+Q\frac{1}{\Omega - QTQ}Q V_{NNN\Delta},
+\label{eq:gndel}
+\ee
+and
+\be
+G_{\Delta\Delta}(\Omega)
+= V_{NN\Delta\Delta}+G_{NN}(\Omega)
+Q\frac{1}{\Omega - QTQ}Q V_{NN\Delta\Delta}.
+\label{eq:gdeldel}
+\ee
+Observe that the above equations
+are approximations to full the $G_{N\Delta}$- or $G_{\Delta\Delta}$-matrices,
+since we omit terms involving the transitions potentials such as 
+$V_{\Delta N\Delta N}$ shown in fig.\ \ref{fig:deltrans}. 
+One of the problems with this transition potential is the fact that it contains
+$\Delta\Delta$-meson vertex on which very little is known.
+The attidude in the literature has been either to ignore this potential
+or to include only the exchange of $\pi$ and $\rho$ mesons. As in ref.\ 
+\cite{hbmp93} we choose here to ignore terms arising from diagrams
+(c-e) in fig.\ \ref{fig:deltrans}.
+
+In defining the $G$-matrices we include partial waves for $J,l\leq 4$.
+This approximation was found to be sufficient in ref.\ \cite{hbmp93}.
+
+
+
+
+\subsection{Evaluation of the 2p1h and 3p2h contributions to the
+self-energy}
+
+The evaluation of the imaginary part arising from the 2p1h and the 3p2h
+diagrams with only nucleons or isobars as intermediate states have already 
+been discussed in [1-2]. Here we briefly recast the necessary
+equations.
+In the evaluation of the optical-model potential, we will need to
+describe two-particle wave functions in a mixed representation
+where differing single-particle wave functions define a two-particle
+state.
+This leads
+to complications in the evaluation of the above diagrams, since
+a two-particle wave function may be represented by a particle in a bound
+orbital with e.g., the quantum numbers of the harmomic oscillator and the
+other particle in the continuum, conveniently given by the quantum numbers
+of plane wave functions.
+Depending on the choice of single-particle basis, the $G$-matrix elements
+needed in the evaluation of the above expressions take different forms.
+The most commonly employed sp basis is the harmonic oscillator, which
+in turn means that e.g., the symbolic notation for the
+two-particle wave function
+$\ket{p_1 p_2}$ can be expressed as \cite{law80}
+\be
+\begin{array}{ll}
+&\\
+\ket{(n_{1}l_{1}j_{1})(n_{2}l_{2}j_{2})JT}=&
+{\displaystyle
+\frac{1}{\sqrt{(1+\delta_{12})}}
+\sum_{\lambda S{\cal J}}\sum_{nNlL}}
+F\times\left\{\begin{array}{ccc}l_{1}&l_{2}&\lambda\\s_1&s_2&S\\
+j_{1}&j_{1}&J\end{array}
+\right\}\\&\\
+&\times (-1)^{\lambda +{\cal J}-L-S}\hat{{\cal J}}\hat{\lambda}^{2}
+\hat{j_{1}}\hat{j_{2}}\hat{S}
+\left\{\begin{array}{ccc}L&l&\lambda\\S&J&{\cal J}
+\end{array}\right\}\\&\\
+&\times \left\langle nlNL| n_{1}l_{1}n_{2}l_{2}\right\rangle
+\ket{nlNL({\cal J})SJT},\end{array}\label{eq:hoho}
+\ee
+where the term
+$\left\langle nlNL| n_{1}l_{1}n_{2}l_{2}\right\rangle$
+is the familiar Moshinsky bracket, see e.g. ref.\ \cite{law80}. Here
+we use $\hat{x} = \sqrt{2x +1}$.
+The factor $F$ is defined as $F=\frac{1-(-1)^{l+S+T}}{\sqrt{2}}$ when
+$s_1 = s_2$, i.e. if we have either two nucleons or two isobars
+which define   $\ket{p_1 p_2}$, or $F=\sqrt{2}$ if we have one nucleon
+and one isobar. The latter is introduced in order to obtain a normalized
+wave function. This is of importance, since we want to employ
+anti-symmetrized matrix elements in the evaluation of either the 2p1h or the
+3p2h diagrams.
+Moreover, the wave function $\ket{nlNL({\cal J})SJT}$, with $nNlL$ the
+oscillator quantum numbers of the relative motion and center of mass (RCM),
+is related
+to $\ket{klKL({\cal J})SJT}$ by \cite{bm89}
+\[
+\ket{nlNL({\cal J})SJT}= \int k^{2}K^{2}dkdKR_{nl}(\sqrt{2}\alpha k)
+R_{NL}(\sqrt{1/2}\alpha K)
+\ket{klKL({\cal J})SJT},
+\]
+with $\alpha$ being the oscillator length and $R_{nl}$ and $R_{NL}$ the HO
+functions in momentum space.
+
+A representation for the two-particle wave function were both particles
+are represented by plane waves will also be needed. In this case we have
+\cite{bm89,kkr79,wc72}
+\be
+\begin{array}{ll}
+&\\
+\ket{(k_{1}l_{1}j_{1})(k_{2}l_{2}j_{2})JT}=&
+{\displaystyle \sum_{lL\lambda S{\cal J}}\int k^{2}dk\int K^{2}dK}
+F\times\left\{\begin{array}{ccc}l_{1}&l_{2}&\lambda\\s_1&s_2&S\\
+j_{1}&j_{2}&J\end{array}
+\right\}\\&\\
+&\times (-1)^{\lambda +{\cal J}-L-S}
+\hat{{\cal J}}\hat{\lambda}^{2}
+\hat{j_{1}}\hat{j_{2}}\hat{S}
+\left\{\begin{array}{ccc}L&l&\lambda\\S&J&{\cal J}
+\end{array}\right\}\\&\\
+&\times \left\langle klKL| k_{1}l_{1}k_{2}l_{2}\right\rangle
+\ket{klKL({\cal J})SJT},\end{array}\label{eq:kk}
+\ee
+where the term $\left\langle klKL| k_{a}l_{a}k_{b}l_{b}\right\rangle$
+is the vector bracket defined in refs.\ \cite{kkr79,wc72}.
+
+
+Finally, two-particle wave functions with
+$\ket{(n_{1}l_{1}j_{1})(k_{2}l_{2}j_{2})JT}$,
+can be obtained from the latter equation by noting that
+\be
+\ket{(n_{a}l_{a}j_{a})(k_{b}l_{b}j_{b})JT}=
+\int k_{a}^{2}dk_{a}R_{n_{a}l_{a}}(\alpha k_{a})
+\ket{(k_{a}l_{a}j_{a})(k_{b}l_{b}j_{b})JT}.    \label{eq:kho}
+\ee
+
+The diagrams involved in the evaluation of the imaginary part of self-energy
+are displayed in fig.\ \ref{fig:diagrams} and the corresponding analytical
+expressions are obtained using
+\[
+\frac{1}{\omega\pm i\eta}=P\frac{1}{\omega}\mp i\pi\delta (\omega),
+\]
+$P$ referring to the principal value, which 
+gives for the imaginary part of the 2p1h diagram \cite{hbmp93}, diagrams
+(a) in fig.\ \ref{fig:diagrams},
+\be
+\begin{array}{ll}
+{\cal W}_{2p1h}^{BB'}(j_cl_ck_{c}k_{a}\omega) = &{\displaystyle -\frac{1}
+{2(2j_c+1)}\sum_{n_{h}l_{h}j_{h}}
+\sum_{JT}\sum_{lLS{\cal J}}\int k^{2}dk\int K^{2}dK\hat{J}\hat{T}}\\&\\
+&\times \bra{k_{a}l_{c}j_{c}n_{h}l_{h}j_{h}JT}G_{BB'}\ket{klKL({\cal J})SJT}\\&\\
+&\times\bra{klKL({\cal J})SJT}G_{BB'}\ket{k_{c}l_{c}j_{c}n_{h}l_{h}j_{h}JT}\\&\\
+&\times\pi\delta(\omega + \varepsilon_{h}-\varepsilon_{B}
+-\varepsilon_{B'}),
+\end{array} \label{eq:2p1hbb}
+\ee
+where $BB'=NN$, $BB' = N\Delta$ or
+$BB' = \Delta\Delta$. 
+The single-hole energy $\varepsilon_{h}$ is given by the eigenvalues
+of the harmonic oscillator.
+Only positive energies $\omega$ contribute, as can be deduced from the
+$\delta$ function in eq.\ (\ref{eq:2p1hbb}). Note that we have
+assumed that
+the self-energy of the isobar is set equal to zero in order to obtain
+the above result. The latter implies that we set the energy of
+the isobar to be given by a pure kinetic energy term plus the mass
+difference between the isobar and the nucleon, i.e.,
+\[
+\omega_{\Delta} = \frac{k_{\Delta}^{2}}{2m_{\Delta}}
++m_{\Delta}-m_{N}.
+\]
+The energies of the intermediate states are further given in terms
+of $k$ and $K$ using an angle average prescription such that 
+$<{\bf k}{\bf K}>=0$.
+
+Correspondingly, the imaginary contribution arising from the 3p2h
+diagram, (c) in fig.\ \ref{fig:diagrams}, with either one nucleon particle
+$BB'=NN$ or one intermediate $\Delta$ state $BB'=N\Delta$ reads
+\be
+\begin{array}{ll}
+{\cal W}_{3p2h}^{BB'}(j_cl_ck_{c}k_{a}\omega) = &{\displaystyle -\frac{1}
+{2(2j_c+1)}\sum_{l_{B'}j_{B'}}
+\sum_{JT}\sum_{nNlLS{\cal J}}\int k_{B'}^{2}dk_{B'}\hat{J}\hat{T}}\\&\\
+&\times \bra{k_{a}l_{c}j_{c}k_{B'}l_{B'}j_{B'}JT}
+G_{BB'}\ket{nlNL({\cal J})SJT}\\&\\
+&\times\bra{nlNL({\cal J})SJT}G_{BB'}\ket{k_{c}l_{c}j_{c}
+k_{B'}l_{B'}j_{B'}JT}\\&\\
+&\times\pi\delta(-\omega + \varepsilon_{nNlL}-\varepsilon_{B'}),
+\end{array} \label{eq:3p2hbb}
+\ee
+where $\varepsilon_{nNlL}$ is the total energy of the two holes in the center
+of mass and relative coordinate system represented in this
+work in terms of a  HO basis.
+
+
+
+\subsubsection{Contributions to the isobar self-energy}
+
+In the previous subsection we assumed that the isobar energy
+was given by a pure kinetic energy term, plus the difference in mass
+between the isobar and the nucleon.
+If we now take  the self-energy of the isobar to be
+composed of both a real and  an
+imaginary part, the isobar energy reads
+\[
+\omega_{\Delta} = \frac{k_{\Delta}^{2}}{2m_{\Delta}}
++m_{\Delta}-m_{N} + \Sigma_{\Delta}(\omega_{\Delta},k_{\Delta})
+\]
+with
+\[
+\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta})=
+Re\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta})
++iIm\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta}).
+\]
+
+As there exist no direct experimental measurements of the $\Delta$
+self-energy, which, combined with the fact that the coupling constants
+which determine e.g., the $V_{N\Delta N\Delta}$ potential
+discussed in subsection 2.1, are unknown, one has in principle
+little control on
+whether a theoretically derived self-energy is reliable or not.
+Typical contributions to $\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta})$
+are displayed in fig.\ \ref{fig:delself}. Diagram (a)
+involves the decay of the isobar into a nucleon and pion,
+and gives rise to the free $\Delta$ width if the nucleon and the pion
+were free particles. However, the intermediate nucleon states are partly
+blocked for the decaying isobar, since some of these states are occupied.
+These contributions lead to an energy dependent correction due to the
+Pauli principle (Pauli blocking) of the free width \cite{ow79}. Here we
+approximate diagram (a) with the empirical free width. 
+Diagrams (b) and (c) represent further $\Delta$-nucleus interactions.
+Experimental data for protons derived by pions at various energies covering
+the isobar resonance region indicate that
+the dominant process for pion absorption
+is represented by  diagram (b), which couples the isobar to two-nucleon
+one-hole states ($\Delta + N \rightarrow 2N$).
+Within the terminology of the isobar-hole model \cite{ew88,otw83},
+diagram (c) is then supposed to represent the rescattering of e.g., a real
+pion, so-called reflection contributions to quasi-free scattering.
+Diagram (d) is an example of a
+self-energy contribution arising from three-body
+absorption mechanisms. 
+
+
+Albeit one in principle is not able to derive a theoretical
+consistent $\Delta$ self-energy, indirect information about the self-energy
+can be derived from e.g.\ pion-nucleus scattering. In the extensive
+analyses of ref.\ \cite{hirata80}, contributions arising from diagrams
+like (b) and (c) in fig.\ \ref{fig:delself}, are represented by way
+of a $\Delta$-spreading potential, fitted to provide best results for
+pion-nucleus elastic scattering.
+
+Typical contributions
+to both the imaginary and real parts of the self-energy arise
+from topologies like those diplayed in fig.\ \ref{fig:delself}.
+In ref.\ \cite{os87}, a parametrization for the imaginary part of the
+$\Delta$ self-energy is obtained in nuclear matter by considering the
+contributions from the diagrams  in fig.\ \ref{fig:delself}, accounting
+thus for quasielastic corrections, two-body and three-body
+absorption. The nuclear matter results are then compared to the
+$\Delta$-spreading potential from the empirical determination in
+ref.\ \cite{hirata80} by allowing for a density dependent self-energy,
+given by the approximate analytical expression
+\be
+Im\Sigma_{\Delta} =
+Im\Sigma_{\Delta}^{A2} +Im\Sigma_{\Delta}^{A3} +Im\Sigma_{\Delta}^{Q}, 
+\label{eq:oset}
+\ee
+The term ${Q}$ accounts for the quasielastic part and goes to zero at
+$T_{\pi}\approx 80$ MeV, while ${A2}$ is the 
+two-body absorption part, which is zero at $\omega_{\Delta} =0$. Finally, 
+${A3}$ represents three-body absorption, going to zero at $T_{\pi}=0$. 
+A numerical parametrization for these terms was given by Oset and Salcedo
+\cite{os87}, while analytical expressions based on the results of ref.\
+\cite{os87} were recently presented by Nieves {\em et al.} \cite{nieves93}. 
+In the latter work the terms of eq.\ (\ref{eq:oset}) are given as
+\be
+Im\Sigma_{\Delta}^{A2}=Im\hat{\Sigma}_{\Delta}(x)\frac{1}{a(x)}
+arctg\left(a(x)(\rho/\rho_0)\right),
+\ee
+with $x=\frac{T}{m_{\pi}}$, $T$ and $m_{\pi}$ being the energy and
+mass of the pion, respectively. $\rho$ is the density of particles and
+we set the relation $\rho/\rho_0=0.75$ \cite{os87}. Further, the function 
+$\hat{\Sigma}_{\Delta}$  is 
+\be 
+Im\hat{\Sigma}_{\Delta}(x)=-38.3\left(1-0.85x+0.54x^2\right),
+\ee
+and
+\be
+a(x)=2.72-4.07x+3.07x^2.
+\ee
+The three-body therm $A3$ is parametrized as
+\be
+Im\Sigma_{\Delta}^{A3}=-C_{A3}(x)\left(\rho_/\rho_0\right)^{\alpha (x)},
+\ee
+with 
+\be
+C_{A3}(x)=\left\{
+\begin{array}{cc} x\left(-7.08+27.4x-9.49x^2\right)& x\geq 0.62\\
+                  \frac{3.7xm_{\pi}}{85}
+              & x\leq 0.62 \end{array}\right. ,
+\ee
+and
+\be
+\alpha (x)= 1+x\left(0.984-0.512x+0.1x^2\right).
+\ee
+Finally, the quasielastic part is given as
+\be
+Im\Sigma_{\Delta}^{Q}=-C_{Q}(x)\left(\rho/\rho_0\right)^{\beta (x)},
+\ee
+with
+\be
+C_{Q}(x) = x\left(20.2 -8.58x+0.702x^2\right),
+\ee
+and
+\be
+\beta (x)=1+x\left(-0.309-0.315x+0.151x^2\right).
+\ee
+
+
+
+For the real part, which in principle can be deduced from the imaginary part
+through a dispersion relation, we also choose to adopt the  phenomenological
+parametrization of ref.\ \cite{os87}
+\[
+Re\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta})\approx -35\rho/\rho_0 MeV. 
+\]
+
+The parametrization of refs.\ \cite{os87,nieves93} is also of great interest because
+it provides information about the different sources to the imaginary part
+of the $\Delta$ spreading potential. In this work we employ the ansatz
+defined by eq.\ (\ref{eq:oset}) in order to determine the self-energy of the
+isobar, in addition to the terms provided by the free width and the Pauli
+correction to the free width.
+Finally, it is worth noting that both the imaginary and real parts 
+in eq.\ (\ref{eq:oset}) 
+depend only on the
+energy of the isobar, whereas, see the discussion below, 
+the self-energy which enter our calculations depends, in principle,
+on the momentum of the isobar and the  orbital and angular momenta
+as well.
+
+\subsubsection{The 2p1h and 3p2h diagrams with a finite isobar self-energy}
+
+Here we list the final expressions for the 2p1h and 3p2h diagrams including
+one or two isobars $\Delta$ as intermediate states allowing for a 
+finite isobar self-energy.
+
+With one isobar as intermediate state we obtain for the imaginary contribution
+to the 2p1h diagram
+\be
+\begin{array}{ll}
+{\cal W}_{2p1h}^{N\Delta}(j_cl_ck_{c}k_{a}\omega) = &{\displaystyle -\frac{1}
+{2(2j_c+1)}\sum_{n_{h}l_{h}j_{h}}
+\sum_{JT}\sum_{lLS{\cal J}}\int k^{2}dk\int K^{2}dK\hat{J}\hat{T}}\\&\\
+&\times \bra{k_{a}l_{c}j_{c}n_{h}l_{h}j_{h}JT}G_{N\Delta}
+\ket{klKL({\cal J})SJT}\\&\\
+&\times\bra{klKL({\cal J})SJT}G_{N\Delta}
+\ket{k_{c}l_{c}j_{c}n_{h}l_{h}j_{h}JT}\\&\\
+&\times\frac{Im\Sigma_{\Delta}
+(\omega_{\Delta},k_{\Delta})}{\alpha^{2}
++Im\Sigma_{\Delta}^2
+(\omega_{\Delta},k_{\Delta})},
+\end{array} \label{eq:2p1himdel}
+\ee
+while with two isobars we have
+\be
+\begin{array}{ll}
+{\cal W}_{2p1h}^{N\Delta}(j_cl_ck_{c}k_{a}\omega) = &{\displaystyle -\frac{1}
+{2(2j_c+1)}\sum_{n_{h}l_{h}j_{h}}
+\sum_{JT}\sum_{lLS{\cal J}}\int k^{2}dk\int K^{2}dK\hat{J}\hat{T}}\\&\\
+&\times \bra{k_{a}l_{c}j_{c}n_{h}l_{h}j_{h}JT}G_{\Delta\Delta}
+\ket{klKL({\cal J})SJT}\\&\\
+&\times\bra{klKL({\cal J})SJT}G_{\Delta\Delta}
+\ket{k_{c}l_{c}j_{c}n_{h}l_{h}j_{h}JT}\\&\\
+&\times\frac{2Im\Sigma_{\Delta}
+(\omega_{\Delta},k_{\Delta})}{\beta^{2}
++4Im\Sigma_{\Delta}^2
+(\omega_{\Delta},k_{\Delta})}.
+\end{array} \label{eq:2p1him2del}
+\ee
+It ought to be remarked that
+with our RCM representation for the intermediate states,
+we are not able to define directly an energy and momentum for e.g.\ the isobar
+intermerdiate state(s). Further, the isobar self-energy depends also
+on the orbital and angular momentum. This would however require that we sum
+explicitely over the quantum numbers of the intermediate states in the 
+lab frame, a procedure which would blow up the computational expenditure since
+there is no restriction on e.g. angular momentum for the intermediate states
+in the lab frame. We will therefore stick to our representation of the 
+intermediate states in the RCM representation and pragmatically adopt
+the parametrization of Oset and co-workers \cite{os87,nieves93}.   
+Furthermore, the energy and momentum of the intermediate isobar
+determines in turn the self-energy $Im \Sigma_{\Delta}$. We can however
+circumvent the latter deficiency by the following prescription ( we discuss
+here eqs.\ (\ref{eq:2p1himdel}) and (\ref{eq:2p1him2del})):
+\begin{itemize}
+\item We can determine $k_{\Delta}$ and $k_p$ from momentum
+conservation (using an angle average $<{\bf k}{\bf K}>=0$) such that
+\[
+k_{\Delta}^2=k_p^2 = \frac{K^2}{4}+k^2.
+\]
+With two isobars as intermediate states we simply replace $k_p$ with
+$k_{\Delta}$.
+\item
+The energy of the intermediate isobar can be found from
+\[
+\omega_{\Delta} = \omega + \varepsilon_h - \varepsilon_p
+=\omega + \varepsilon_h -\frac{K^2 /4+k^2}{2m_N}.
+\]
+Similar to the previous point, with two isobars we replace $\varepsilon_p$
+with $\frac{K^2 /4+k^2}{2m_{\Delta}}+(m_{\Delta}-m_n)+Re\Sigma_{\Delta}$.
+The energy $\omega_{\Delta}$ is used to determine the energy in the parametrization
+of the isobar self-energy, see eq.\ (\ref{eq:oset}).
+\item 
+The term $\alpha$ in the energy denominator of eq.\ (\ref{eq:2p1himdel}) reads
+\[
+\alpha=\omega+\varepsilon_{h}
+-m_{\Delta}+m_{N}-
+Re\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta})
+-\frac{K^{2}}{8\mu_{\Delta N}}-
+\frac{k^{2}}{2\mu_{\Delta N}},
+\]
+with $\mu_{\Delta N}=\frac{m_{\Delta}m_{N}}{m_N + m_{\Delta}}$. Similarly, we have
+that $\beta$ in eq.\ (\ref{eq:2p1him2del}) is
+\[
+\beta=\omega+\varepsilon_{h}-
+-2(m_{\Delta}-m_{N})-
+2Re\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta})
+-\frac{K^{2}}{4m_{\Delta}}-
+\frac{k^{2}}{m_{\Delta}}.
+\]
+
+\end{itemize}
+
+For the 3p2h diagram we have
+\be
+\begin{array}{ll}
+{\cal W}_{3p2h}^{N\Delta}(j_cl_ck_{c}k_{a}\omega) = &{\displaystyle -\frac{1}
+{2(2j_c+1)}\sum_{l_{\Delta}j_{\Delta}}
+\sum_{JT}\sum_{nNlLS{\cal J}}\int k^{2}_{\Delta}dk_{\Delta}
+\hat{J}\hat{T}}\\&\\
+&\times \bra{k_{a}l_{c}j_{c}k_{\Delta}l_{\Delta}j_{\Delta}JT}
+G_{N\Delta}\ket{nlNL({\cal J})SJT}\\&\\
+&\times\bra{nlNL({\cal J})SJT}G_{N\Delta}
+\ket{k_{c}l_{c}j_{c}k_{\Delta}l_{\Delta}j_{\Delta}JT}\\&\\
+&\times\frac{Im\Sigma_{\Delta}
+(\omega_{\Delta},k_{\Delta})}{\delta^{2}
++Im\Sigma_{\Delta}^2
+(\omega_{\Delta},k_{\Delta})},
+\end{array} \label{eq:3p2him}
+\ee
+with the isobar in the lab system and
+\[\delta=-\omega+\varepsilon_{nNlL}-
+\frac{k_{\Delta}^{2}}{2m_{\Delta}}
+-m_{\Delta}+m_{N}-
+Re\Sigma_{\Delta}(\omega_{\Delta},k_{\Delta}).
+\]
+
+\subsection{Isobar contributions to the real part of the 
+optical-model potential}
+After calculating the imaginary parts for the nucleon self-energy terms
+displayed in fig.\ \ref{fig:diagrams}  one may also calculate 
+the corresponding real
+parts by means of the dispersion relations \cite{bhmp93a,bbmp91}
+\be
+{\cal V}_{2p1h}(j_cl_ck_ck_a\omega)=\frac{P}{\pi} \int_{-\infty}^{\infty}
+\frac{{\cal W}_{2p1h}^{NN}(j_cl_ck_ck_a\omega')}{\omega'-\omega} d\omega',
+\ee
+where $P$ means a principal value integral. Since  ${\cal W}_{2p1h}^{NN}$
+is different from zero only for positive values of
+$\omega'$ and as its diagonal matrix elements are negative,
+this dispersion relation  implies that the diagonal elements of
+${\cal V}_{2p1h}$ will be attractive for
+negative energies $\omega$. This attraction should increase for small
+positive energies. It will decrease and will change sign only for large
+positive values for the energy of the interacting nucleon. This analysis 
+was performed in the preceeding paper \cite{bhmp93a}. Here
+we  wish also to account for the presence of isobars in the
+evaluation of the above equation. This is simply achieved by replacing
+${\cal W}_{2p1h}^{NN}(j_cl_ck_ck_a\omega')$ with either
+${\cal W}_{2p1h}^{N\Delta}(j_cl_ck_ck_a\omega')$ or
+${\cal W}_{2p1h}^{\Delta\Delta}(j_cl_ck_ck_a\omega')$. 
+
+Similar dispersion
+relations hold for the real (${\cal V}_{3p2h}^{N\Delta}$) and imaginary part (${\cal
+W}_{3p2h}^{N\Delta}$) of the 3p2h contribution  to the self-energy
+\be
+{\cal V}_{3p2h}^{N\Delta}(j_cl_ck_ck_a\omega)=-\frac{P}{\pi} \int_{-\infty}^{\infty}
+\frac{{\cal W}_{3p2h}^{N\Delta}(j_cl_ck_ck_a\omega')}{ \omega'-\omega} d\omega' .
+\ee
+Since ${\cal W}_{3p2h}^{NN}$ is positive (at least its diagonal matrix
+elements) and
+different from zero for negative energies $\omega'$ only, it is evident
+that ${\cal V}_{3p2h}^{N\Delta}$ is repulsive for positive energies and decreases
+with increasing energy. Only for large and negative energies it will become
+attractive. 
+
+
+\section{Results and discussion}
+
+\subsection{The imaginary part}
+Several of the discussions of ref.\ \cite{hbmp93} on isobar contributions
+for $l=0$, apply to the present study as well.
+We will therefore 
+not repeat some of the arguments presented in \cite{hbmp93}, rather, 
+in this subsection, 
+we wish first to
+investigate the dependence of the imaginary part
+on the cutoff for the $\pi$ and $\rho$ mesons, $\Lambda_{\pi ,\rho}$.
+Secondly, we focus on the role played by a finite and energy-dependent
+$Im\Sigma_{\Delta}$. Furthermore, in this subsection, 
+we will limit the discussion to
+eq.\ (\ref{eq:2p1himdel}) only, with $l=1$ and $j=1/2$ for the incoming
+nucleon. The reason being that eqs.\ (\ref{eq:2p1him2del}) and 
+(\ref{eq:3p2him}) exhibit a qualitative similar behavior.
+
+In the determination of cutoffs which enter the evaluation of the
+$V_{NNN\Delta}$ and $V_{NN\Delta\Delta}$ potentials, we choose, in order
+to be consistent, the same
+parameters as those which define the Bonn B potential of ref.\ \cite{mac89},
+table A.2. This leads to $\Lambda_{\pi}=1.2$ and $\Lambda_{\rho}=1.3$ GeV.
+These parameters lie in the higher region of accepted values, though other
+workers in the field even choose $\Lambda_{\rho}=2.0-2.5$ GeV
+\cite{garc91,ost92} and $\Lambda_{\pi}=0.8$ GeV
+\cite{ost92}. Thus, although it is not consistent with the 
+parameters of the Bonn B potential, we display in fig.\ \ref{fig:test1}
+results for eq.\ (\ref{eq:2p1himdel}) with $\Sigma_{\Delta}=0$ for three
+choices of $\Lambda_{\pi ,\rho}$, i.e. (i) $\Lambda_{\pi}=1.2$ GeV
+and $\Lambda_{\rho}=1.3$ GeV, (ii) $\Lambda_{\pi}=1.2$ GeV and
+$\Lambda_{\rho}=2.5$ GeV, (iii) $\Lambda_{\pi}=0.8$ GeV and 
+$\Lambda_{\rho}=2.0$ GeV and (iv)
+$\Lambda_{\pi}=0.8$ GeV and 
+$\Lambda_{\rho}=1.3$ GeV.
+Here we used $k=100$ MeV and $l=1$ and 
+$j=1/2$. We see from fig.\ \ref{fig:test1} 
+that  
+with $\Lambda_{\rho}\geq 2.0$ GeV we obtain results which are quite different
+at high energies than the results obtained with the parameters of the
+Bonn B potential. One possible explanation to these differing behaviors
+is simply that we are not being consistent with the parameters which define
+the NN potential. Thus, results with other parameters than those of
+the potential  may give rather unrealistic imaginary parts. Another
+possibility, is that
+with $\Lambda_{\rho}\geq 2.0$ GeV, we
+are probing the short range part of the potential, which is known
+to diverge at small distances. If we choose $\Lambda_{\rho}\geq 2.0$ GeV,
+or even 1.5 GeV, we are actually pushing the meson-exchange picture
+beyond its range of validity, yielding unrealistic results for the
+self-energy. If we choose $\Lambda_{\pi}=0.8$ GeV and $\Lambda_{\rho}=1.3$ GeV
+(not shown in fig.\ \ref{fig:test1}), we obtain a reduction 
+of the total integrated strength of about $50\%$ 
+compared to the results with the parameters of the Bonn B potential.
+A similar qualitative behavior as that discussed above, apply to the 
+3p2h diagram with one isobar and the 2p1h diagram with two isobars
+as intermediate states. 
+Here we wish to conclude that one has to be consistent with choice of
+parameters which define the NN potential, although the results of fig.\
+\ref{fig:test1} leave a large degree of uncertainty in the determination
+of $\Delta$ contributions.
+
+
+
+If we now include a finite isobar self-energy,
+a useful numerical test on the double integrations in eqs.\ (\ref{eq:2p1himdel})-
+(\ref{eq:3p2him}) is to first consider a constant imaginary part
+$Im\Sigma_{\Delta}$. Application of
+\[
+\int_{-\infty}^{\infty}dx\frac{Im\Sigma_{\Delta}}{x^2
++Im\Sigma_{\Delta}^2} =\pi,
+\label{eq:const}
+\]
+shows then that the total strength should be conserved. Note also
+that in limit $\Sigma_{\Delta}\rightarrow 0$, one obtains a
+$\delta$-function
+\[
+{\displaystyle lim_{\Sigma_{\Delta}\rightarrow 0}\frac{Im\Sigma_{\Delta}}{x^2
++Im\Sigma_{\Delta}^2}=\pi \delta (x)}.
+\]
+In connection with the latter, it is important to note
+that with our choice of imaginary part described by eq.\
+(\ref{eq:oset}), we have that  due to the two-body absorption term
+the imaginary part is zero when $\omega_{\Delta}$ is zero. This leads in turn
+to an integrand in eqs. (\ref{eq:2p1himdel}), (\ref{eq:2p1him2del}) 
+and (\ref{eq:3p2him}) which never gives
+rise to a $\delta$-function singularity when $x$ occasionally becomes
+equal zero. This observation should be compared to the
+recent nuclear matter analysis of Davies \cite{dav92}, where 
+$Im\Sigma_{\Delta}$ is set equal the free width, which occurs at 
+$\omega_{\Delta}>0$. Several of the numerical instabilities reported in the work of
+Davies \cite{dav92} could  then be retraced to the use of a less realistic
+$Im\Sigma_{\Delta}$. 
+
+In fig. \ref{fig:test2}
+we compare the imaginary part arising from eq.\ (\ref{eq:2p1himdel}), 
+for an incoming
+nucleon with $l=1$, $j=1/2$  and momentum $k=100$ MeV, upper part,
+and $k=200$ MeV, lower part,
+using (i) no finite self-energy of the isobars (solid line) and
+(ii)
+employing the parametrization of Oset and Salcedo of eq.\ (\ref{eq:oset})
+for $\Sigma_{\Delta}$ (dashed line).
+AS can be seen from this figure, the total integrated areas with 
+$\Sigma_{\Delta}=0$ and $\Sigma_{\Delta}\neq 0$ are roughly conserved (a
+numerical integration over $\omega$ confirms this). The strenghts are however
+redistributed and the positions of the peaks shift slightly. 
+The qualitative pattern we exhibit in fig.\ \ref{fig:test2}
+pertains to other values of $k$ and orbital and angular momentum
+of the incoming nucleon. This result is however not surprising as can 
+easily be understood from the following argument. Consider a simple
+shell-model example with only one sp state $\alpha$ 
+and two configurations of
+a more complicated character. The latter represent the admixture of
+$2p1h$ and $\Delta ph$ configurations. The eigenvalue problem is then
+\be
+\left(\begin{array}{ccc}\varepsilon_{\alpha}&V_{2p1h}&V_{\Delta ph}\\
+                        V_{2p1h}&\varepsilon_{2p1h}&0\\
+                        V_{\Delta ph}&0&\varepsilon_{\Delta ph}
+      \end{array}\right)
+\left(\begin{array}{c}X_{\alpha}\\X_{2p1h}\\X_{\Delta ph}
+      \end{array}\right)=
+E\left(\begin{array}{c}X_{\alpha}\\X_{2p1h}\\X_{\Delta ph}
+      \end{array}\right),
+\ee
+where we have set
+\[
+\varepsilon_{2p1h}=\varepsilon_{p1}+\varepsilon_{p2}-\varepsilon_h,
+\]
+and 
+\[
+\varepsilon_{\Delta p1h}=\varepsilon_{\Delta}+\varepsilon_{p}-\varepsilon_h,
+\]
+with the $\varepsilon$s being the unperturbed sp energies. The overlap
+between the $2p1h$ and $\Delta ph$ configurations is obviously zero.
+We assume first that both the interaction terms  $V$ 
+and $\varepsilon_{\Delta}$  are real. The above eigenvalue problem is
+trivially solved
+\be
+\left(\varepsilon_{\alpha}+\frac{V_{2p1h}^2}{E-\varepsilon_{2p1h}}
+\frac{V_{\Delta ph}^2}{E-\varepsilon_{\Delta ph}}\right)X_{\alpha}
+=EX_{\alpha}.
+\ee
+The normalization condition for the expansion coefficients $X$ is
+\be
+1=X_{\alpha}^2+X_{2p1h}^2+X_{\Delta ph}^2 =
+\left(1+\frac{V_{2p1h}^2}{(E-\varepsilon_{2p1h})^2}
+\frac{V_{\Delta ph}^2}{(E-\varepsilon_{\Delta ph})^2}\right)X_{\alpha}^2.
+\ee
+
+
+
+Thus, since the shape of the curves exhibited
+in fig.\ \ref{fig:test2}, their widths and position of maxima, are not so
+different, we claim that the largest uncertainty in the evaluation
+of isobar contributions to the 2p1h and 3p2h terms lies in the choice of
+coupling constants $f_{\pi N\Delta}$. Actually, a contribution like
+eq.\ (\ref{eq:2p1himdel}) gives rise to a difference between our choice
+of $f_{\pi N\Delta  }$ and the experimental value of $\approx 40\%$, while a
+difference of $\approx 60\% $ occurs in eq.\ (\ref{eq:2p1him2del}).
+Our choice of $f_{\pi N\Delta}$ and $f_{\rho N\Delta}$ follows that of the
+Bonn B potential \cite{mac89}.
+The difference between a calculation which
+accounts for a finite isobar self-energy and one with $\Sigma_{\Delta}=0$, is
+therefore couched by the choice of coupling constants.
+Finally, the quantities we are looking for, e.g. the occupation
+probabilities and the real part of self-energy, are given in terms of integrals
+over the energy. Since the positions of the peaks are not so different, 
+and the total integrated
+strenghts are roughly the same, we don't expect large differences between
+a calculation with a finite $\Sigma_{\Delta}$ or one without. Also, the 
+numerical expenditures favor the $\Sigma_{\Delta}=0$ approximation
+\footnote{A note on
+technicalities: If one in addition to the above observation
+adds the fact that, in order to obtain
+a stable result with a finite isobar width, we needed
+$40-50$ mesh points in the integration over $k$-relative. With
+12 mesh points needed in the integration of $K$-center of mass and the hole
+momentum $k_h$, the computational time expenditure grows tremendously.
+To obtain results for e.g. eq.\ (\ref{eq:2p1himdel}) with $l=1$ and $j=1/2$,
+and 8 values of the incoming momentum $k$ and 25 values of the energy $\omega$,
+we needed several
+days (CPU time) on a Convex supercomputer. With $\Sigma_{\Delta}=0$,
+the corresponding number is one CPU hour.}.
+
+
+
+
+
+
+
+\subsection{Real part and occupation probabilities for $l=1,2$ states}
+
+
+
+
+\section{Conclusions}
+Many discussions with Prof.\ Eulogio Oset (Valencia) are gratefully
+acknowledged.
+This work has been supported by the Norwegian Research
+Council for Science and the Humanities (NAVF), the
+``Bundesministerium f\"ur Forschung und
+Technologie'' (?? T\"u ??) (Germany) and
+by DGICYT-grant No.\ PB???? (Spain).
+
+
+%        bibliography
+
+%\begin{references}
+\footnotesize{\begin{thebibliography}{99}
+\bibitem{bbmp91} M.\ Borromeo, D.\ Bonatsos, H.\ M\"{u}ther and A.\ Polls,
+Nucl. Phys. {\bf A539} (1992) 189
+\bibitem{hbmp93} M.\ Hjorth-Jensen, M.\ Borromeo, H.\ M\"{u}ther
+and A.\ Polls,
+Nucl.\ Phys.\ {\bf  A551} (1993) 580
+\bibitem{os93} E.\ Oset, private communication
+\bibitem{os87} E.\ Oset and L.L.\ Salcedo, Nucl.\ Phys.\ {\bf A468} (1987) 631
+\bibitem{nieves93} J.\ Nieves, E.\ Oset and C.\ Garcia-Recio,
+Nucl. Phys. {\bf A554} (1993) 554
+\bibitem{ew88} T.E.O.\ Ericson and W.\ Weise, Pions and Nuclei
+(Clarendon press, Oxford, 1988)
+\bibitem{tow87} I.S.\ Towner, Phys.\ Rep.\ {\bf 155} (1987) 263
+\bibitem{mut85} H.\ M\"{u}ther, Prog.\ Part.\ Nucl.\ Phys.\ {\bf 14} (1985) 123
+\bibitem{bw75} G.E.\ Brown and W.\ Weise, Phys.\ Rep.\ {\bf 22} (1975) 279
+\bibitem{mac89} R.\ Machleidt, Adv.\ Nucl.\ Phys.\ {\bf 19} (1989) 189
+\bibitem{law80} R.D.\ Lawson, Theory of the Nuclear Shell Model
+(Clarendon Press, Oxford, 1980), p.\ 208
+\bibitem{bm89} D.\ Bonatsos and H.\ M\"{u}ther, Nucl.\ Phys.\ {\bf A496} (1989) 23
+\bibitem{kkr79} C.L.\ Kung, T.T.S.\ Kuo and K.F.\ Ratcliff, Phys. Rev.
+{\bf C19} (1979) 1063
+\bibitem{wc72} C.W.\ Wong and D.M.\ Clement, Nucl.\ Phys.\ {\bf A183} (1972) 210
+\bibitem{ow79} E.\ Oset and W.\ Weise, Nucl.\ Phys.\ {\bf A319} (1979) 477;
+W.\ Weise, Nucl.\ Phys.\ {\bf A278} (1977) 402
+\bibitem{otw83} E. Oset, H. Toki and W. Weise, Phys.\ Rep.\ {\bf 83} (1982) 281
+\bibitem{hirata80} M.\ Hirata, F.\ Lenz and K.\ Yazaki, Ann. of Phys. 
+{\bf 108} (1977) 108; M.\ Hirata, J.H.\ Koch and E.J.\ Moniz, Ann.\ of Phys.\
+{\bf 120} (1979) 205; Y.\ Horikawa, M.\ Thies and F.\ Lenz, Nucl.\ Phys.\
+{\bf A345} (1980) 386
+\bibitem{ost92} F.\ Osterfeld, Rev. Mod. Phys. {\bf 64} (1992) 491
+\bibitem{garc91} C.\ Garcia-Recio, E.\ Oset and L.L.\ Salcedo, D.\ Strottman
+and M.J.\ Lopez, Nucl.\ Phys.\ {\bf A526} (1991) 685
+\bibitem{dav92} K.T.R.\ Davies, Ann.\ of Phys.\ {\bf 215} (1992) 386
+\end{thebibliography}}
+%\end{references}
+
+\begin{table}[hbtp]
+\caption{The coefficients of eq.\ (15) used in the calculation
+of the imaginary part of the isobar self-energy in the case of pion
+nuclear scattering. Taken from ref.\ [4].}
+\begin{center}
+\begin{tabular}{ccccrrr}
+&&&&&&\\ \hline\hline
+&&&&&&\\
+\multicolumn{1}{c}{$T_{\pi}$(MeV)}&\multicolumn{1}{c}{$C_Q$(MeV)}&
+\multicolumn{1}{c}{$C_{A2}$(MeV)}&\multicolumn{1}{c}{$C_{A3}$(MeV)}&
+\multicolumn{1}{c}{$\alpha$}&\multicolumn{1}{c}{$\beta$}
+&\multicolumn{1}{c}{$\gamma$}\\
+&&&&&&\\ \hline
+&&&&&&\\
+85&9.7&18.9&3.7&0.79&0.72&1.44\\
+125&11.9&17.7&8.6&0.62&0.77&1.54\\
+165&12.0&16.3&15.8&0.42&0.80&1.60\\
+205&13.0&15.2&18.0&0.31&0.83&1.66\\
+245&14.3&14.1&20.2&0.36&0.85&1.70\\
+315&9.8&13.1&14.7&0.42&0.88&1.76\\
+&&&&&&\\ \hline\hline
+\end{tabular}
+\end{center}
+\label{tab:delparam}
+\end{table}
+%\begin{figure}[hbtp]
+\PSfigure{fig5.fig }{10}
+%\caption
+{Diagram (a) is the energy independent 
+Hartree-Fock contribution. The 2p1h diagrams with nucleons only, 
+one isobar and two isobars as intermediate state(s)
+are depicted in (b). The corresponding 3p2h term with nucleons only
+and one isobar as intermediate state are shown 
+in (c).}
+%\label
+{fig:diagrams}
+%\end{figure}
+\clearpage
+
+
+%\begin{figure}[hbtp]
+\PSfigure{fig4.fig }{10}
+%\caption
+{Transitions potentials for the $V_{N\Delta NN}$ (a), $V_{\Delta\Delta NN}$
+(b), $V_{\Delta N\Delta N}$ (c), $V_{\Delta\Delta\Delta N}$ (d) and
+$V_{\Delta\Delta\Delta\Delta}$ (e) processes. Since there is no empirical 
+knowledge on the meson-$\Delta\Delta$ vertices we choose to omit the contributions
+from diagrams (c-e) in the evaluation of the $G_{N\Delta}$- and
+$G_{\Delta\Delta}$-matrices discussed in eqs.\ (8) and (9).}
+%\label
+{fig:deltrans}
+%\end{figure}
+
+\clearpage
+
+%\begin{figure}[hbtp]
+\PSfigure{fig6.fig }{10}
+%\caption
+{Example of diagrams which arise in the evaluation
+of the self-energy of the isobar. (a) is the free width which is
+accompanied with a Pauli blocking term. (b) is the two-body absorption term, while
+(c) is an example of a so-called reflection contribution to quasi-free
+scattering. Finally, (d) is a three-body contribution.}
+%\label
+{fig:delself}
+%\end{figure}
+\clearpage
+\begin{figure}[hbtp]
+\vspace{10cm}
+\caption{The parametrization of the imaginary part
+of the isobar self-energy
+from ref.\ [4] . $A2$ stands for two-body absorption, $A3$ for three-body
+absorption while $Q$ is the quasielastic contribution. The bars are from the
+empirical determination of ref.\ [18].}
+\label{fig:osetdel}
+\end{figure}
+
+\clearpage
+%\begin{figure}[hbtp]
+\PSfigure{lambda.fig }{15}
+%\caption
+{Role of various cutoff choices for $\Lambda_{\pi ,\rho}$
+of eq.\ (\ref{eq:2p1himdel}). Here we
+have chosen $k=100$ MeV and $l=1$ and $j=1/2$.
+The solid line represents the results
+with the parameters of the Bonn B potential, $\Lambda_{\pi}=1.2$ GeV
+and $\Lambda_{\rho}=1.3$ GeV. The dashed line represent the results with
+$\Lambda_{\rho}=2.5$ GeV and $\Lambda_{\pi}=1.2$, while the dotted line
+is for $\Lambda_{\pi}=0.8$ GeV and $\Lambda_{\rho}=2.0$ GeV.}
+%\label
+{fig:test1}
+%\end{figure}
+
+
+\clearpage
+%\begin{figure}[hbtp]
+\PSfigure{k100.fig }{15}
+%\caption
+{Here
+we compare the imaginary part arising from eq.\ (\ref{eq:2p1himdel})
+for an incoming
+nucleon with $l=1$, $j=1/2$  and momentum $k=100$ MeV, upper part,
+and $k=200$ MeV, lower part. Two cases were
+studied; (i) no finite self-energy of the isobars (solid line)
+and (ii)
+employing the parametrization of Oset and Salcedo of eq.\ (\ref{eq:oset})
+for $\Sigma_{\Delta}$ (broken line).}
+%\label
+{fig:test2}
+%\end{figure}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+
+      
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      

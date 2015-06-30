@@ -1,0 +1,92 @@
+From magne.guttormsen@fys.uio.no Fri Feb 15 15:33:41 2002
+Date: Wed, 13 Feb 2002 12:54:31 +0100
+From: Magne Guttormsen <magne.guttormsen@fys.uio.no>
+To: David J. Dean <deandj@ornl.gov>
+Cc: morten.hjorth-jensen@fys.uio.no, andreas.schiller@llnl.gov,
+     sunniva.siem@fys.uio.no
+Subject: dF(E)
+
+Dear David,
+thank you for the response to the F(E) paper. I think the replaced
+paragraph you suggests makes things much more clear concerning the
+links to Lee and Kosterlitz.
+
+The free barrier DeltaF is interesting. If there were no vibrational
+bands in the 0-2 MeV region, we would approximatelly see this (the
+drawings looks OK with ²courier², but with e.g. ²times² the stars and
+minus use different place...) :
+
+I  ln(rho)
+I
+I                                                  *C
+I                                         *
+I                     B         *
+I                     *
+I                     *
+I                     *
+I                     *
+A**********************-------------------------------------->E(MeV)
+0                    2                               8
+
+Here, we see the adrupt increase at 2Delta=2MeV with a temperature
+from A -> B which is less than in the continues melting region B->C.
+This is what we see, namely T(A,B) < T(B,C). The corresponding F-plot
+with a Tc=T(A,B) will look like (not scaled correctly):
+
+I  F
+I
+I                   B
+I                   *
+I              *    *                                  *C
+I         *         *                    *
+I    *              *      *
+*------------------D*E--------------------------------------->E(MeV)
+  0                  2                                 8
+
+Here, DeltaF is calculated from the points just left (D) and right (E) for B.
+F(D)-F(E)=E(D)-T(A,B)xS(D) ­ [E(E)-T(A,B)xS(E)]
+E(D)=E(E)=2 MeV, S(D)=0 and S(E)=2x2 (2q.p. gives 2 x singel particle
+entropy, see Fig.5) T(A,B)=0.45 MeV
+DeltaF = 2-0.45x0-[2-0.45x4)=1.8 MeV.
+
+The fact that DeltaF peaks experimentally at 1 MeV, and is only 30 %
+of the maximum value is due to vibrational bands starting at around 1
+MeV, carrying significant entropy. However, the rise of F from o to 1
+MeV should point at 1.8 MeV et E=2 MeV, like this:
+
+
+I  F
+I
+I
+I
+I                                                      *C
+I         *  *                          *
+I    *          *          *
+*------------------D*E--------------------------------------->E(MeV)
+  0                  2                                 8
+
+that I indeed feel the data supports (or at least not contradicts).
+
+I am sorry I did not understand the things with 0+, 2+, 4+ ground
+band. I look on these states as still coupled Cooper-pairs, however,
+with a collective rotation of the whole nucleus (Copenhagen school).
+The energyspacings are so much smaller than 2*\Delta that no breaking
+take place here, but I think I have misundersood something.
+
+Also, backbending is hardly taking place in our case, because our
+spin window is 0-6 hbar, and is buildt of singleparticle j's and not
+much rotation. We pick up high-j neutrons below the Fermi surface
+prior to thermalization and emission of gamma-rays.
+
+Best regards
+Magne
+--
++------------------------------------------------------------+
+|                Magne Guttormsen                            |
+|  OO   CC  L    Oslo Cyclotron Laboratory (OCL)             |
+| O  O C    L    Department of Physics, University of Oslo   |
+| O  O C    L    P.O.Box 1048 Blindern, N-0316 Oslo, NORWAY  |
+|  OO   CC  LLL  Tel:+47-22-856460/855076  Fax:+47-22-856422 |
+|                E-mail: magne.guttormsen@fys.uio.no         |
+|                WWW: http://lynx.uio.no/magne/index.html    |
++------------------------------------------------------------+

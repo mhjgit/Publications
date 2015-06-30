@@ -1,0 +1,210 @@
+Calculation: 102SN
+
+The basic shell model data:
+The proton number: 0
+The neutron number: 2
+Twice total projection of angular momentum: 0
+The total parity: +
+The number of j-orbits: 5
+	0  5  11   5.00
+	0  4   7   0.20
+	1  2   5   0.00
+	1  2   3   2.89
+	2  0   1   2.80
+Maximum lanczo iterations: 150
+Total number of model eigenstates: 30
+J(J+1) + JT_MIX*T(T+1) - JT_MIX: 1000
+Limit for J (J*(J+1) < JT_MIX): 30
+Angular accuracy (> J*(J+1)): 0.001
+Type of calculation (new or continue): new
+The files:
+Input v_effective in JT scheme: veff2h.dat
+File to store lanczo vectors: store-102.dat
+File to store energy- and JT-matrix elements: h-store-102.dat
+Output file for results: sn102_2h.dat
+Print eigenvectors: no
+END:
+END:
+
+ Final Eigenvalues
+ E(0)=-1.7427E+00  <J_J+> =  2000.0000  
+ E(1)=-4.4022E-01  <J_J+> =  2006.0000  
+ E(2)=-1.8110E-01  <J_J+> =  2020.0000  
+ E(3)=-1.5069E-01  <J_J+> =  2042.0000  
+ E(4)=-4.9646E-02  <J_J+> =  2002.0000  
+ E(5)=-1.9030E-02  <J_J+> =  2006.0000  
+ E(6)=1.6875E-01  <J_J+> =  2006.0000  
+ E(7)=2.0004E-01  <J_J+> =  2000.0000  
+ E(8)=2.5864E-01  <J_J+> =  2012.0000  
+ E(9)=2.6243E-01  <J_J+> =  2020.0000  
+ E(10)=2.9390E-01  <J_J+> =  2030.0000  
+ E(11)=3.9468E-01  <J_J+> =  2020.0000  
+ E(12)=5.4636E-01  <J_J+> =  2042.0000  
+ E(13)=2.1569E+00  <J_J+> =  2006.0000  
+ E(14)=2.3351E+00  <J_J+> =  2020.0000  
+ E(15)=2.7464E+00  <J_J+> =  2012.0000  
+ E(16)=2.7520E+00  <J_J+> =  2006.0000  
+ E(17)=2.7745E+00  <J_J+> =  2002.0000  
+ E(18)=2.8788E+00  <J_J+> =  2006.0000  
+ E(19)=2.9257E+00  <J_J+> =  2020.0000  
+ E(20)=2.9276E+00  <J_J+> =  2012.0000  
+ E(21)=3.0087E+00  <J_J+> =  2012.0000  
+ E(22)=3.1903E+00  <J_J+> =  2030.0000  
+ E(23)=3.2410E+00  <J_J+> =  2020.0000  
+ E(24)=3.2965E+00  <J_J+> =  2012.0000  
+ E(25)=4.7996E+00  <J_J+> =  2000.0000  
+ E(26)=5.4924E+00  <J_J+> =  2006.0000  
+ E(27)=5.6632E+00  <J_J+> =  2002.0000  
+ E(28)=5.6997E+00  <J_J+> =  2000.0000  
+ E(29)=5.7668E+00  <J_J+> =  2006.0000  
+ run time: 0 hour 0 min 12 sec
+
+
+
+Calculation: 103SN
+
+The basic shell model data:
+The proton number: 0
+The neutron number: 3
+Twice total projection of angular momentum: 1
+The total parity: +
+The number of j-orbits: 5
+	0  5  11   5.00
+	0  4   7   0.20
+	1  2   5   0.00
+	1  2   3   2.89
+	2  0   1   2.80
+Maximum lanczo iterations: 150
+Total number of model eigenstates: 30
+J(J+1) + JT_MIX*T(T+1) - JT_MIX: 1000
+Limit for J (J*(J+1) < JT_MIX): 30
+Angular accuracy (> J*(J+1)): 0.001
+Type of calculation (new or continue): new
+The files:
+Input v_effective in JT scheme: veff2h.dat
+File to store lanczo vectors: store-102.dat
+File to store energy- and JT-matrix elements: h-store-102.dat
+Output file for results: sn103_2h.dat
+Print eigenvectors: no
+END:
+END:
+
+ Final Eigenvalues
+ E(0)=-1.7602E+00  <J_J+> =  3758.7500  
+ E(1)=-1.4689E+00  <J_J+> =  3765.7500  
+ E(2)=-1.0018E+00  <J_J+> =  3753.7500  
+ E(3)=-6.1590E-01  <J_J+> =  3774.7500  
+ E(4)=-5.4989E-01  <J_J+> =  3758.7500  
+ E(5)=-5.2942E-01  <J_J+> =  3774.7500  
+ E(6)=-4.6726E-01  <J_J+> =  3785.7500  
+ E(7)=-4.6315E-01  <J_J+> =  3765.7500  
+ E(8)=-4.2786E-01  <J_J+> =  3765.7500  
+ E(9)=-3.7054E-01  <J_J+> =  3758.7500  
+ E(10)=-3.7037E-01  <J_J+> =  3813.7500  
+ E(11)=-3.6178E-01  <J_J+> =  3753.7500  
+ E(12)=-2.7151E-01  <J_J+> =  3750.7500  
+ E(13)=-2.4334E-01  <J_J+> =  3774.7500  
+ E(14)=-1.5366E-01  <J_J+> =  3798.7500  
+ E(15)=-1.3565E-01  <J_J+> =  3753.7500  
+ E(16)=-5.3982E-02  <J_J+> =  3758.7500  
+ E(17)=3.6424E-02  <J_J+> =  3806.9782  
+ E(18)=4.8650E-02  <J_J+> =  3781.8365  
+ E(19)=6.3888E-02  <J_J+> =  3786.6081  
+ E(20)=9.1339E-02  <J_J+> =  3785.4098  
+ E(21)=1.2945E-01  <J_J+> =  3759.8071  
+ E(22)=1.5479E-01  <J_J+> =  3774.8130  
+ E(23)=2.9832E-01  <J_J+> =  3755.4030  
+ E(24)=3.2992E-01  <J_J+> =  3767.7874  
+ E(25)=3.7644E-01  <J_J+> =  3793.2118  
+ E(26)=4.0286E-01  <J_J+> =  3771.9289  
+ E(27)=4.7254E-01  <J_J+> =  3760.5011  
+ E(28)=5.0556E-01  <J_J+> =  3773.9523  
+ E(29)=5.3915E-01  <J_J+> =  3766.2169  
+ run time: 0 hour 1 min 41 sec
+
+Calculation: 104SN
+
+The basic shell model data:
+The proton number: 0
+The neutron number: 4
+Twice total projection of angular momentum: 0
+The total parity: +
+The number of j-orbits: 5
+	0  5  11   5.00
+	0  4   7   0.20
+	1  2   5   0.00
+	1  2   3   2.89
+	2  0   1   2.80
+Maximum lanczo iterations: 150
+Total number of model eigenstates: 30
+J(J+1) + JT_MIX*T(T+1) - JT_MIX: 1000
+Limit for J (J*(J+1) < JT_MIX): 30
+Angular accuracy (> J*(J+1)): 0.001
+Type of calculation (new or continue): new
+The files:
+Input v_effective in JT scheme: veff2h.dat
+File to store lanczo vectors: store-102.dat
+File to store energy- and JT-matrix elements: h-store-102.dat
+Output file for results: sn104_2h.dat
+Print eigenvectors: no
+END:
+END:
+
+ Final Eigenvalues
+ E(0)=-3.4489E+00  <J_J+> =  6000.0000  
+ E(1)=-2.2749E+00  <J_J+> =  6006.0000  
+ E(2)=-1.8597E+00  <J_J+> =  6020.0000  
+ E(3)=-1.6861E+00  <J_J+> =  6042.0000  
+ E(4)=-1.6685E+00  <J_J+> =  6000.0000  
+ E(5)=-1.6543E+00  <J_J+> =  6006.0000  
+ E(6)=-1.6408E+00  <J_J+> =  6030.0000  
+ E(7)=-1.5836E+00  <J_J+> =  6012.0000  
+ E(8)=-1.5728E+00  <J_J+> =  6020.0000  
+ E(9)=-1.5458E+00  <J_J+> =  6006.0000  
+ E(10)=-1.4460E+00  <J_J+> =  6002.0000  
+ E(11)=-1.2844E+00  <J_J+> =  6020.0000  
+ E(12)=-1.1496E+00  <J_J+> =  6020.0000  
+ E(13)=-1.0845E+00  <J_J+> =  6033.4817  
+ E(14)=-1.0409E+00  <J_J+> =  6020.3299  
+ E(15)=-9.6319E-01  <J_J+> =  6004.3637  
+ E(16)=-9.2346E-01  <J_J+> =  6018.5990  
+ E(17)=-8.3596E-01  <J_J+> =  6012.3963  
+ E(18)=-7.8359E-01  <J_J+> =  6028.5797  
+ E(19)=-7.1745E-01  <J_J+> =  6033.6445  
+ E(20)=-6.4468E-01  <J_J+> =  6034.5462  
+ E(21)=-5.6870E-01  <J_J+> =  6011.9719  
+ E(22)=-4.6793E-01  <J_J+> =  6009.7216  
+ E(23)=-3.6223E-01  <J_J+> =  6016.2343  
+ E(24)=-2.8894E-01  <J_J+> =  6017.8204  
+ E(25)=-1.4986E-01  <J_J+> =  6027.8223  
+ E(26)=-3.8566E-02  <J_J+> =  6032.5650  
+ E(27)=5.6543E-02  <J_J+> =  6019.2576  
+ E(28)=1.9604E-01  <J_J+> =  6008.3048  
+ E(29)=2.9745E-01  <J_J+> =  6012.7444  
+
+
+ Final Eigenvalues
+ E(0)=-1.6861E+00  <J_J+> =  6042.0000  
+ E(1)=-1.0871E+00  <J_J+> =  6042.0000  
+ E(2)=-7.6554E-01  <J_J+> =  6072.0000  
+ E(3)=-7.4919E-01  <J_J+> =  6042.0000  
+ E(4)=-6.6594E-01  <J_J+> =  6056.0000  
+ E(5)=-5.4286E-01  <J_J+> =  6042.0000  
+ E(6)=-4.5332E-01  <J_J+> =  6072.0000  
+ E(7)=-3.7388E-01  <J_J+> =  6056.0000  
+ E(8)=-3.3864E-01  <J_J+> =  6042.0000  
+ E(9)=-3.1236E-01  <J_J+> =  6110.0000  
+ E(10)=-2.8996E-01  <J_J+> =  6042.0000  
+ E(11)=-9.7596E-02  <J_J+> =  6042.9320  
+ E(12)=-8.9244E-02  <J_J+> =  6056.0001  
+ E(13)=-4.2727E-02  <J_J+> =  6042.0053  
+ E(14)=9.9138E-03  <J_J+> =  6068.8452  
+ E(15)=1.3793E-02  <J_J+> =  6076.9195  
+ E(16)=4.6101E-02  <J_J+> =  6072.0001  
+ E(17)=2.2888E-01  <J_J+> =  6051.3890  
+ E(18)=2.4815E-01  <J_J+> =  6045.3509  
+ E(19)=2.6793E-01  <J_J+> =  6057.5498  
+ run time: 0 hour 5 min 26 sec
+
+
+

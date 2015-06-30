@@ -1,0 +1,1048 @@
+
+\subsection{Introduction}
+
+Since quantum chromodynamics (QCD) is commonly
+accepted as the theory of the strong interaction, the
+NN interaction $V$ is completely determined by the underlying
+quark-quark dynamics in QCD. However, due to the non--perturbative
+character of QCD at low energies, one is still far from a
+quantitative understanding of the NN interaction from the QCD point of
+view. This problem is circumvented by introducing
+models containing some of the properties of QCD, such as
+confinement and chiral symmetry breaking. One of the most used models
+is the so-called bag model, where a crucial question is the
+size of the radius ($R$) of the confining bag. If the size of the bag radius
+is chosen as in the "Little bag" ($R\leq 0.5$ fm) \cite{br79}, then
+low-energy nuclear physics phenomena can be fairly well described
+in terms of hadrons like nucleons, isobars and various mesons,
+which are to be understood as effective descriptions of complicated
+multiquark interactions.
+However, other models which
+seek to approximate QCD also indicate that an effective theory in terms
+of hadronic degrees of freedom may very well be the most appropriate
+picture for low energy nuclear physics.
+Although there is no unique prescription for how to construct
+a free NN interaction, a description
+of the NN interaction in terms of various meson exchanges is presently
+the most quantitative representation of the NN interaction
+\cite{mac89,mes79}
+in the energy regime of nuclear physics.
+We will assume that meson-exchange is an appropriate picture at low
+and intermediate energies. Further, we will restrict the attention
+to one-boson-exchange (OBE) models only.
+
+In the next subsection we discuss the three-dimensional
+reduction of the Bethe-Salpeter equation and
+the phenomenological lagrangians
+which define the interactions between the various baryons and mesons.
+Thereafter, we briefly review the general properties of the nucleon-nucleon
+(NN) potential.
+To avoid unnecessary overlaps with already existing review articles and
+books
+on the subject \cite{mhe87,mac89,erk74,bj76}, only a brief
+exposition of the underlying theory is given. The reader is referred
+to the above extensive works for the more sophisticated details.
+
+
+\subsection{The one-boson-exchange interaction and the Bethe-Salpeter
+equation}
+
+To describe the interaction between the various baryons and mesons of table
+\ref{tab:chap3tab1}, we choose the following phenomenological
+lagrangians\footnote{We will also employ a pseudovector
+lagrangian for the pseudoscalar mesons.
+In this case we have
+   ${\cal L}_{pv} =g^{pv}\overline{\Psi}\gamma^{5}
+   \gamma^{\mu}\Psi\partial_{\mu}\phi^{(ps)}$, where $g^{pv}$ is the
+   pseudovector coupling constant.
+The relativistic notations follow
+Itzykson and Zuber \cite{iz80}. Throughout this work we will also
+set $c=\hbar =G=1$, where $G$ is the gravitational constant.}
+for spin $1/2$ baryons
+\begin{equation}
+   {\cal L}_{ps} =g^{ps}\overline{\Psi}\gamma^{5}
+   \Psi\phi^{(ps)},
+   \label{eq:pseudo}
+\end{equation}
+\begin{equation}
+   {\cal L}_{s} =g^{s}\overline{\Psi}\Psi\phi^{(s)},
+   \label{eq:scalar}
+\end{equation}
+and
+\begin{equation}
+   {\cal L}_{v} =g^{v}\overline{\Psi}\gamma_{\mu}\Psi\phi_{\mu}^{(v)}
+   +g^{t}\overline{\Psi}\sigma^{\mu\nu}\Psi\left
+   (\partial_{\mu}\phi_{\nu}^{(v)}
+   -\partial_{\nu}\phi_{\mu}^{(v)}\right),
+   \label{eq:vector}
+\end{equation}
+for pseudoscalar (ps), scalar (s) and vector (v) coupling, respectively.
+The factors $g^{v}$ and $g^{t}$ are the vector
+and tensor coupling constants, respectively.
+Similarly the factor $g^s$ is the
+phenomenological coupling coefficient for scalar mesons while
+$g^{ps}$ is the corresponding coupling constant for
+pseudoscalar meson
+exchanges. These coupling constants may be
+constrained by e.g. the nucleon-nucleon scattering data.
+In the above equations, we have defined $\Psi$ to be the baryon field for
+spin $1/2$ baryons, while $\phi^{(ps)}$, $\phi^{(s)}$ and $\phi^{(v)}$
+are the corresponding meson fields for pseudoscalar,
+scalar and vector mesons, respectively.
+\begin{table}[hbtp]
+\caption{List over selected baryons and mesons.
+We also include strange hadrons since the non-relativistic
+transition potential we will present applies to these hadrons as well.}
+\begin{center}
+\begin{tabular}{llll}
+\\\hline
+\multicolumn{1}{c}{Baryons}&
+\multicolumn{1}{c}{Mass (MeV)}&
+\multicolumn{1}{c}{Mesons}&
+\multicolumn{1}{c}{Mass (MeV)}
+\\ \hline
+$p,n$&938.926&$\pi$&138.03\\
+$\Lambda$&1116.0&$\eta$&548.8\\
+$\Sigma$&1197.3&$\sigma$&$\approx 550.0$\\
+$\Delta$&1232.0&$\rho$&770\\
+$\Sigma^{\star}$&1385.0&$\omega$&782.6\\
+&&$\delta$&983.0\\
+&&$K$&495.8\\
+&&$K^{\star}$&895.0\\ \hline
+\end{tabular}
+\end{center}
+\label{tab:chap3tab1}
+\end{table}
+In table \ref{tab:chap3tab1}\footnote{Note that we keep
+the name $\delta$ for the scalar isovector meson with mass $980$ MeV,
+in order to abide to the usage in previous works \cite{mac89}. The recent
+label is $a_0(980)$.} we list selected baryons with masses below $1400$ MeV,
+though in our calculations we will only deal with those mesons which define
+the NN potential.
+Note that the above equations are for isoscalar mesons, however,
+for isovector mesons, the fields $\phi$ trivially modify to
+$\mbox{\boldmath $\tau$} \phi$ with
+$\mbox{\boldmath $\tau$}$ the familar isospinor Pauli matrices.
+For spin $1/2$ baryons, the fields $\Psi$ are expanded
+in terms of the Dirac spinors (positive energy
+solution shown here with $\overline{u}u=1$)
+\begin{equation}
+   u(k\sigma)=\sqrt{\frac{E(k)+m}{2m}}
+	  \left(\begin{array}{c} \chi\\ \\
+	  \frac{\mbox{\boldmath $\sigma$}{\bf k}}{E(k)+m}\chi
+	  \end{array}\right), 
+   \label{eq:freespinor}
+\end{equation}
+with $\chi$ the familiar Pauli spinor and $E(k) =\sqrt{m^2 +|{\bf k}|^2}$. 
+The positive energy part of the field $\Psi$ reads
+\begin{equation}
+\Psi (x)={\displaystyle \frac{1}{(2\pi )^{3/2}}
+        \sum_{{\bf k}\sigma}u(k\sigma)e^{-ikx}a_{{\bf k}\sigma}},
+\end{equation}
+with $a$ a fermion annihilation operator.
+Similarly, the spin $3/2$ field operator $\Psi_{\mu}$ 
+are represented in terms of the Rarita-Schwinger
+spinors $u_{\mu}$,
+a spin $1/2$ spinor coupled to a four-vector, which in the rest-frame reads
+\begin{equation}
+   u_{\mu}({\bf 0},j)=
+   \sum_{\sigma_z,r}{\cal C}_{mrj}^{\frac{1}{2}1\frac{3}{2}}\epsilon_{\mu}(r)
+   u({\bf 0},\sigma_z),\hspace{0.5cm}
+          j=-\frac{3}{2},-\frac{1}{2},\frac{1}{2},\frac{3}{2},
+   \label{eq:spin32}
+\end{equation}
+where ${\cal C}$ is a Clebsch-Gordan coefficient,
+$\epsilon_{\mu}$ a spin-1 spinor and
+$u({\bf 0}, \sigma_z)$ the free Dirac spinor in
+the rest frame with spin projections
+$\sigma_z=\pm \frac{1}{2}$. The $u_{\mu}({\bf 0},j)$ can be boosted to an
+arbitrary frame such that the Rarita-Schwinger field is
+\begin{equation}
+\Psi_{\mu}(x)={\displaystyle \frac{1}{(2\pi )^{3/2}}
+	\sum_{{\bf k}s}u_{\mu}(ks)e^{-ikx}a_{{\bf k}s}}.
+\end{equation}
+The lagrangians which describe e.g. the interaction
+between a spin $1/2$ and a spin $3/2$ baryon are
+\begin{equation}
+   {\cal L}_{ps} =g^{ps'} \overline{\Psi}\Psi_{\mu}\partial^{\mu}
+		 \phi^{(ps)},
+   \label{eq:pseudo13}
+\end{equation}
+for the exchange of a pseudoscalar meson
+and
+\begin{equation}
+   {\cal L}_{v} =ig^{v'} \overline{\Psi}\gamma_{5}\gamma_{\mu}
+    \Psi^{\nu}\left(\partial_{\mu}\psi_{\nu}^{(v)}
+   -\partial_{\nu}\psi_{\mu}^{(v)}\right)+h.c. ,
+   \label{eq:vector13}
+\end{equation}
+for the exchange of a vector meson.
+As mentioned above, we limit the attention in this work to nucleons only
+and thereby spin $1/2$ baryons, 
+and the corresponding mesons.
+Employing the above lagrangians,
+it is then possible to construct a one-boson-exchange
+potential model. Typically, a contribution $V_s^{OBE}$
+arising from the exchange of a scalar meson
+between two spin $1/2$ baryons with equal masses is given by
+\begin{equation}
+   \bra{p_1'p_2'}V_s^{OBE}\ket{p_1p_2}=
+   g_s^2\frac{\overline{u}(p_1')\overline{u}(p_2')u(p_1)u(p_2)}
+   {\left(p_1'+p_2'-p_1-p_2\right)^2-m_s^2},
+\end{equation}
+where $m_s$ is the mass of the exchanged scalar  
+meson\footnote{Detailed expressions for the 
+one-boson-exchange contributions can be 
+found in e.g. refs.\ \cite{mhe87,mac89}.}. The diagrammatic structure
+of this equation is shown in fig.\ \ref{fig:scalarobe}.
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1mm}
+      \begin{picture}(140,70)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig4.eps}}
+\end{picture}
+\caption{
+Diagrammatic representation of the exchange of a scalar boson between
+two equal mass and spin baryons. The leftmost picture is a shorthand
+for the two time-orderings to the right.}
+\label{fig:scalarobe}
+\end{figure}
+
+In order to obtain the parameters which define an
+NN potential derived from OBE models,
+the Bethe-Salpeter equation is used as 
+the starting point for most calculations.
+This equation serves to define a
+two-particle interaction
+${\cal T}$, meant to reproduce 
+properties like low-energy scattering data.
+A self-consistent comparison with the data, may in turn define
+the parameters
+of the NN interaction, such as meson cutoff parameters, or coupling
+constants not constrained by the data.  The fully covariant
+Bethe-Salpeter equation
+reads (suppressing spin and isospin) in an arbitrary frame
+\begin{eqnarray}
+   \label{eq:bs4dim}
+   \bra{p_1'p_2'}{\cal T}\ket{p_1p_2}&=
+   \bra{p_1'p_2'}{\cal V}\ket{p_1p_2}
+   {\displaystyle +\frac{i}{(2\pi )^4} \int d^4 k}
+   \bra{p_1'p_2'} {\cal V} \ket{ P+k,P-k}\\ \nonumber
+   & \times  S_{(1)}(P+k)S_{(2)}(P-k)
+   \bra{P+k,P-k}{\cal T}\ket{p_1p_2},
+\end{eqnarray}
+where we have defined $P$ to be {\em half} the total four-momentum,
+i.e. $P=\frac{1}{2}(p_1 +p_2)$, and
+$k$ to be the relative four-momentum. The term $S_{(i)}$
+is the fermion propagator, which for e.g.\ positive energy spin $1/2$ baryons
+reads
+\begin{equation}
+  S_{(i)}(p) = \left(\not p_i -m_i +i\epsilon\right)^{-1},
+\end{equation}
+with the subscript $i$
+referring to baryon $i$.
+
+In principle ${\cal V}$ is supposed to represent all kinds of
+irreducible two-particle interactions, though it is commonly
+approximated by the lowest order two-particle diagram. With this
+prescription we obtain the familiar ladder approach to the Bethe-Salpeter
+equation,
+similar to the approach discussed in connection with the $G$-matrix. The
+schematic structure of the ladder equation, representative for both
+the scattering matrix and the reaction matrix $G$, is shown in fig.\
+\ref{fig:gschem}.
+Eq.\ (\ref{eq:bs4dim}) is a four-dimensional integral equation, which is
+rather tedious to solve numerically.
+It is therefore commonly replaced by a three-dimensional
+quasi-potential equation, where the time components of the four-momenta
+of the incoming and outgoing particles have been fixed by some adequate
+choice. Eq.\ (\ref{eq:bs4dim}) becomes, still in an arbitrary frame,
+\begin{eqnarray}
+   \label{eq:bs3dim}
+   \bra{{\bf p}_1'{\bf p}_2'}T\ket{{\bf p}_1{\bf p}_2}&=
+   \bra{{\bf p}_1'{\bf p}_2'}V\ket{{\bf p}_1{\bf p}_2}
+   +{\displaystyle \frac{1}{(2\pi )^3}\int d^3k}
+   \bra{{\bf p}_1'{\bf p}_2'}V
+   \ket{{\bf P}+{\bf k},{\bf P}-{\bf k}} \\ \nonumber
+   & g({\bf k},s)
+   \bra{{\bf P}+{\bf k},{\bf P}-{\bf k}}
+   T\ket{{\bf p}_1{\bf p}_2}.
+\end{eqnarray}
+$V$ is now the so-called ``quasi-potential'', with fixed time components
+of the in- and outgoing particle momenta. As such, it is no longer
+an independent quantity.
+A much favored choice for the time components of the four-momenta is to fix
+$p_1^0=p_2^0=\frac{1}{2}\sqrt{s}$, $s=(p_1+p_2)^2$ being one of 
+the familiar Mandelstam invariants. This prescription puts the two
+particles symmetrically off-shell, and is used in connection with the
+Blankenbecler-Sugar \cite{bbs68} and the
+Thompson \cite{thomp70} equations. The
+latter are two possible of several 
+three-dimensional reductions of the 
+Bethe-Salpeter equation. The quantity $g$ is 
+related to the baryon propagators
+$S_{(1)}S_{(2)}$ through
+\begin{equation}
+     g({\bf k},s)=-i\int dk_0 S_{(1)}(k) S_{(2)}(-k).
+\end{equation}
+The Blankenbecler-Sugar choice for $g$ is 
+(assuming $m_1=m_2$ and spin $1/2$ fermions)
+\begin{equation}
+   g({\bf k},s)=\frac{m^2}{E_k}
+                \frac{\Lambda_{(1)}^+ ({\bf k})\Lambda_{(2)}^+ ({\bf -k})}
+                {\frac{1}{4}s -E_k^2 +i\epsilon},
+   \label{bbs}
+\end{equation}
+and the Thompson choice
+\begin{equation}
+   g({\bf k},s)=\frac{m^2}{2E_k^2}
+                \frac{\Lambda_{(1)}^+ ({\bf k})\Lambda_{(2)}^+ ({\bf -k})}
+                {\frac{1}{2}\sqrt{s} -E_k +i\epsilon}.
+   \label{gthomp}
+\end{equation}
+Note that the above equations are in the two-baryon center-of-mass frame with
+${\bf P}=0$.
+Here  $\Lambda_i^+ ({\bf k})$ is the projection operator for positive 
+energy states with spin $1/2$
+\begin{equation}
+     \Lambda^+({\bf k})=
+     \sum_{\sigma}\ket{u({\bf k},\sigma)}\bra{u({\bf k},\sigma)}=
+     \frac{\gamma\cdot k +m}{2m}.
+\end{equation}
+With a
+pseudovector coupling
+for the pion one obtains also a strong reduction of negative energy states compared
+with the pseudoscalar choice \cite{zt81}.
+By construction, the operator $g$ has the same
+imaginary cut as the propagators in the full four-dimensional
+Bethe-Salpeter equation and preserves therefore the unitarity relations
+satisfied by ${\cal T}$.
+The mere fact that we have fixed the time component of the four-momenta of
+the incoming baryons to be equally off-shell, implies that
+the exchanged bosons transfer three-momentum only. The meson propagators
+then reduce  to
+\begin{equation}
+  \frac{i}{-{\bf k}^2-m_{\alpha}^2},
+  \label{eq:mesprop}
+\end{equation}
+with $m_{\alpha}$ the mass of the exchanged boson.
+This prescription for the meson propagators
+yields a so-called static interaction.
+The one-boson interaction then
+takes the form (omitting spin and isospin
+assignements)
+\begin{equation}
+   V=\bar u({\bf p}_1{'}) \bar u({\bf p}_2{'})
+   \left(\sum_{j=1}^{5} v_j({\bf k})F_j\right) u({\bf p}_1)u({\bf p}_2).
+   \label{eq:vobe}
+\end{equation}
+Here $F_j$ ($j=1,...,5$) denote the Fermi invariants
+defined as:
+\begin{equation}
+S=1^{(1)}1^{(2)}, \quad V=\gamma_\mu^{(1)} \gamma_\mu^{(2)},\quad T={1\over2}
+\sigma_{\mu \nu}^{(1)} \sigma_{\mu \nu}^{(2)},
+\end{equation}
+\begin{equation}
+A=i\gamma_5^{(1)} \gamma_\mu^{(1)} i\gamma_5^{(2)} \gamma_\mu^{(2)},
+\quad P=\gamma_5^{(1)} \gamma_5^{(2)},
+\end{equation}
+or if we wish to have a pseudovector coupling for the pseudoscalar mesons
+one has to replace $P$ with the on-shell equivalent pseudovector
+invariant
+\begin{equation}
+  P'\propto (\gamma_{\mu}^{(1)}\cdot \partial^{\mu})\gamma_5^{(1)}
+(\gamma_{\nu}^{(2)}\cdot \partial^{\nu})\gamma_5^{(2)},
+\end{equation}
+with the labels $(1,2)$ meaning
+the interacting baryons $1$ and $2$. The $v_j$ term
+refers to the appropriate meson
+propagator defined in eq.\ (\ref{eq:mesprop}), including the appropriate
+coupling constants. In general, the coefficients $v_j({\bf k})$ are functions
+of the three Mandelstam invariants $s$, $t$ and $u$,
+though we have chosen the interaction
+to depend on the momentum transfer.
+It ought also to be stressed that neither the Blankenbecler-Sugar nor the
+Thompson approximations are unique approaches. However, the
+extensive compilations of Tjon and co-workers \cite{zt81} indicate that
+the three-dimensional Blankenbecler-Sugar 
+reduction of the Bethe-Salpeter equation gives
+only small differences compared 
+with the results obtained by solving the full four-dimensional
+eq.\ (\ref{eq:bs4dim}). This conclusion applies to the Thompson choice as well
+\cite{mac89,bm90}.
+
+Expanding the free Dirac spinors
+in terms of $1/m$ ($m$ is here the mass of the relevant baryon) 
+results, to lowest order, in the familiar non-relativistic
+expressions for baryon-baryon potentials. Explicitly, in momentum space, 
+the non-relativistic version of eq.\
+(\ref{eq:vobe}) reads
+\begin{equation}
+   V(k)=
+   \sum_{j=1}^{5} \tilde{v}_j(k)\tilde{F}_j.
+   \label{eq:vobek}
+\end{equation}
+Here the operators $\tilde{F}_j$ are given by the familar expressions 
+\begin{equation}
+\tilde{F}_1=1, \quad \tilde{F}_2={1\over2}i(\mbox{\boldmath $\sigma$}_1
++\mbox{\boldmath $\sigma$}_2)\cdot {\bf k}\times {\bf P},
+\quad \tilde{F}_3=\mbox{\boldmath $\sigma$}_1\cdot
+\mbox{\boldmath $\sigma$}_2k^2
+-3\mbox{\boldmath $\sigma$}_1\cdot {\bf k}
+\mbox{\boldmath $\sigma$}_2\cdot {\bf k},
+\end{equation}
+\begin{equation}
+\tilde{F}_4=\mbox{\boldmath $\sigma$}_1\mbox{\boldmath $\sigma$}_2
+\quad \tilde{F}_5=\mbox{\boldmath $\sigma$}_1\cdot {\bf k}\times {\bf P}
+\mbox{\boldmath $\sigma$}_2\cdot {\bf k}\times {\bf P}.
+\end{equation}
+In certain models also operators like ${\bf L}^2$ or an antisymmetric
+spin-orbit term
+appear \cite{mac89,lomon92}, but these can be expressed as linear combinations
+of the above set on the energy shell \cite{br92}. Velocity dependent terms are also
+omitted and $\mbox{\boldmath $\sigma$}$ is the spin operator
+for spin $1/2$ particles.
+We end this subsubsection by displaying the expression for a baryon-baryon
+interaction in configuration space.
+The configuration space version of the interaction can be obtained through Hankel
+transformations of the above
+momentum-space components \cite{br92}.  The following
+expressions listed below are for a general baryon-baryon interaction for
+spin $1/2$ fermions where
+the baryons at each vertex may have different masses. Hereafter, baryon
+masses are always represented with a capital $M$, with the nucleon mass
+given by the average of the proton and neutron masses $M_N$. Following
+Greenberg and Lomon \cite{lomon92} we have the
+time-honored expression (omitting isospin)
+\begin{eqnarray}
+V({\bf r})&= \left\{ C^0_C + C^1_C + C_\sigma 
+\mbox{\boldmath $\sigma$}_1\cdot\mbox{\boldmath $\sigma$}_2
+ + C_T \left( 1 + {3\over m_\alpha r} + {3\over
+\left(m_\alpha r\right)^2}
+\right) S_{12} (\hat r)\right. \\ \nonumber 
+&\left. + C_{SL} \left( {1\over m_\alpha r} + {1\over \left( m_\alpha r\right)^2}
+\right) {\bf L}\cdot {\bf S}
+\right\} \frac{e^{-m_\alpha r}}{m_\alpha r},
+\end{eqnarray}
+where $m_{\alpha}$ is the mass of the relevant meson and
+$S_{12}$ is the familiar tensor term.
+The coefficients are as
+follows.  For a scalar meson exchange ($\sigma$ or $\delta$):
+\begin{equation}
+C^0_C = - {g_1 g_2\over 4\pi} m_\alpha,
+\end{equation}
+and
+\begin{equation}
+4C^1_C = - C_{SL} = {g_1 g_2\over 4\pi}\ {m^3_\alpha\over 4}
+\left( {1\over
+M'_1M_1} + {1\over M'_2M_2}\right) ,
+\end{equation}
+\begin{equation}
+C_\sigma = C_T = 0.
+\end{equation}
+
+For a pseudoscalar meson exchange $(\pi,\eta ,K)$:
+\begin{equation}
+C_\sigma =C_T = {g_1g_2\over 4\pi}\ {m^3_\alpha\over 48} \left(
+{1\over M'_1} + {1\over M_1}\right) \left( {1\over M'_2}+{1\over M_2}\right),
+\end{equation}
+\begin{equation}
+C^0_C = C^1_C = C_{SL} = 0.
+\end{equation}
+
+For a vector meson exchange $(\rho,\omega ,K^*)$:
+\begin{equation}
+C^0_C = {m_\alpha\over 4\pi} \left[ G_1 G_2 - {G_1 g^t_2\over 2M}
+\left( M'_2 + M_2\right) - {G_2 g^t_1\over 2M} \left( M'_1 + M_1\right) +
+{g^t_1g^t_2\over 4M^2}
+\left( M'_1+M_1\right) \left( M'_2 + M_2\right)\right],
+\end{equation}
+and
+\begin{eqnarray}
+C^1_C &= {m^3_\alpha\over 4\pi} \Biggl[ {G_1G_2\over 16} \left\{ \left(
+{1\over M_1} - {1\over M'_1}\right) \left( {1\over M_2}-{1\over M'_2}\right) -
+{1\over M'_1M_1}-{1\over M'_2M_2}\right\} \\ \nonumber
+&- {G_1 g^t_2\over 16M} \left\{ {\left( M'_2+M_2\right)\over 2} \left( {1\over
+M'_2 M_2} - {1\over M'_1 M_1}\right) + \left( {1\over M'_2}+{1\over M_2}
+\right) \right\} \\ \nonumber
+&- {G_2 g^t_1\over 16M} \left\{ {\left( M'_1 + M_1\right)\over 2} \left(
+{1\over M'_1M_1} - {1\over M'_2 M_2}\right) + \left( {1\over M'_1} + {1\over
+M_1}\right) \right\} \\ \nonumber
+&+ {g^t_1g^t_2\over 32M^2} \left\{ {\left( M'_1 + M_1\right)\over 2}
+\left(M'_2 + M_2\right) \left(
+{1\over M'_1M_1} + {1\over M'_2 M_2}\right) \right. \\ \nonumber
+& + \left. \left( M'_1 + M_1\right) \left( {1\over M'_2} + {1\over
+M_2}\right) + \left( M'_2 + M_2\right) \left( {1\over M'_1} + {1\over
+M_1}\right) \right\} \Biggr],
+\end{eqnarray}
+and
+\begin{equation}
+C_\sigma = - 2C_T = {m^3_\alpha\over 4\pi} \  {G_1G_2\over 24} \left( {1\over
+M'_1} + {1\over M_1}\right) \left( {1\over M'_2} + {1\over M_2}\right),
+\end{equation}
+and
+\begin{eqnarray}
+C_{SL} &= - {m^3_\alpha\over 32\pi} \Biggl[ 2G_1 G_2 \left( {1\over M'_1M_1}
++{1\over M'_2 M_2} + {2\over M'_2 M_1} + {2\over M'_1M_2}\right) \\ \nonumber
+&- {G_1 g^t_2\over M} \left( {M'_2 + M_2\over M'_1 M_1} + {2\over M_1} +
+{2\over M'_1} - {1\over M_2} - {1\over M'_2}\right) \\ \nonumber
+&- {G_2 g^t_1\over M} \left( {M'_1+ M_1\over M'_2 M_2} + {2\over M_2} +
+{2\over M'_2} - {1\over M_1} - {1\over M'_1}\right) \\ \nonumber
+&- {g^t_1 g^t_2\over 2M^2} \left( M'_1 + M_1\right) \left( M'_2 + M_2\right)
+\left( {1\over M'_1M_1} + {1\over M'_2 M_2}\right) \Biggr]
+\end{eqnarray}
+
+
+The $g_i$ are the standard scalar and pseudovector
+coupling constants of the meson-baryon-baryon vertex, 
+the $g^t_i$ are the vector meson exchange tensor
+coupling constants, and
+\begin{equation}
+    G_i = g^v_i + {M'_i + M_i\over 2M_N} g^t_i 
+\end{equation}
+where the $g^v_i$ are the vector meson exchange vector coupling constants. 
+
+As an example, consider the NN potential. Here we may have e.g., the
+exchange of $\pi , \eta , \rho , \omega , \sigma$ and $\delta$ mesons.
+Then we have $M_1'=M_1=M_2'=M_2=M_N$ and the coefficients for the
+exchange of a $\pi$ meson become
+\begin{equation}
+   C_\sigma =C_T = {g_{NN\pi}^2\over 4\pi}\frac{m^3_{\pi}}{12M_N^2}, 
+\end{equation}
+and
+\begin{equation}
+     C^0_C = C^1_C = C_{SL} = 0.
+\end{equation}
+For the exchange of a $\delta$ meson we have
+\begin{equation}
+     C^0_C = - {g_{NN\delta}^2\over 4\pi} m_\delta,
+\end{equation}
+and
+\begin{equation}
+    4C^1_C = - C_{SL} = {g_{NN\delta}^2\over 4\pi}\ {m^3_\delta\over 2M_N},
+\end{equation}
+and
+\begin{equation}
+     C_\sigma = C_T = 0.
+\end{equation}
+Further, for the vector mesons we will throughout this work use the
+relations
+\begin{equation}
+     \frac{g_{\rho NN}^t}{g_{\rho NN}^v} =6.1,
+\end{equation}
+and
+\begin{equation}
+    \frac{g_{\omega NN}^t}{g_{\omega NN}^v} =0.0.
+\end{equation}
+In so doing we follow reference \cite{mac89}. The fact that we choose such
+a strong factor for the relation between $g^t$ and $g^v$ for the
+$\rho$ meson, leads to a tensor force for the NN interaction which is weak.
+Recall that the other important contribution to the tensor force
+stems from the exchange of the $\pi$ meson. Although the coupling constants
+for the various mesons in different potential models vary ( the variation
+is in general rather small), the 
+$g_{\rho NN}^t/g_{\rho NN}^v$ relation of e.g.\ the Bonn potentials
+\cite{mac89} employed here remains fixed. As we will discuss in the
+subsequent section, the strength of the tensor force is of central
+inportance in explaining how a free NN potential is modified in the
+nuclear medium.
+
+In conclusion, although we list an analytical expression for 
+a non-relativistic potential in $r$-space, we will work 
+in momentum space, since both the equations for the scattering
+matrix and the $G$-matrix are given in terms of integral equations.
+In coordinate space, the corresponding equations are given by differential
+equations, which are numerically more involved than integral equations.
+In terms of the relative and center-of-mass momenta ${\bf k}$ and
+${\bf K}$, the potential in momentum space is related to the nonlocal operator
+$V({\bf r},{\bf r}')$ by
+\begin{equation}
+      \bra{{\bf k'K'}}V \ket{{\bf kK}} =
+       \int d {\bf r}d {\bf r'}
+        e^{-\imath {\bf k'r'}}V({\bf r'},{\bf r}) e^{\imath {\bf kr}}
+       \delta({\bf K},{\bf K'}).
+\end{equation}
+We will assume that the interaction is spherically symmetric and use
+the partial wave expansion of the plane waves in
+terms of spherical harmonics.
+This means that we can separate the radial part of the wave function from its
+angular dependence. The wave function of the relative motion is described
+in terms of plane waves as
+\begin{equation}
+       e^{\imath {\bf kr}}  =
+       \bra{\bf r}{\bf k}\rangle =  4\pi \sum_{lm} \imath ^{l}
+        j_{l} (kr) Y_{lm}^{*}({\bf \hat{k}}) Y_{lm}({\bf \hat{r}}),
+\end{equation}
+where $j_l$ is a spherical Bessel function and $Y_{lm}$ the
+spherical harmonic.
+This partial wave basis is useful for defining the operator for
+the nucleon-nucleon interaction, which
+is symmetric with respect to rotations, parity and
+isospin transformations. These symmetries imply that the interaction is
+diagonal with respect to the quantum numbers of total angular
+momentum $J$, spin $S$ and isospin $T$. Using the above plane wave expansion,
+and coupling to final $J$, $S$ and $T$ we get
+\begin{equation}
+      \bra{{\bf k'}} V \ket{{\bf k}}
+       = (4\pi)^2 \sum_{STll'mJ}
+      \imath ^{l+l'} Y_{lm}^{*}({\bf \hat{k}}) Y_{l'm'}({\bf \hat{k}'})
+      {\cal C}_{m'M_SM}^{l'SJ}{\cal C}_{mM_SM}^{lSJ}
+      \bra{k'l'STJM}V \ket{klSTJM},
+\label{eq:vpartial}
+\end{equation}
+where we have defined
+\begin{equation}
+    \bra{k'l'STJM}V \ket{klSTJM}=
+    \int   j_{l'}(k'r')\bra{l'STJM}V(r',r)\ket{lSTJM}j_l(kr) {r'}^2 dr' r^2 dr.
+\end{equation}
+We have omitted the momentum of the center-of-mass motion ${\bf K}$ and the 
+corresponding orbital momentum $L$, since the interaction is diagonal
+in these variables. The potentials we will employ in this work, like
+those of the Bonn group, are all non-local potentials defined in 
+momentum space, and we will therefore not need the last equation.
+
+
+
+
+\subsection{The nucleon-nucleon potential}\label{subsec:sec312}
+
+One of the key topics of this work
+is the behavior of the NN interaction in a nuclear medium. We therefore
+restrict the attention here to those details of the NN interaction which
+we feel are essential to our purposes. For details about the theoretical
+foundation of the one-boson-exchange (OBE) picture, we refer the reader to the
+literature, see e.g. refs. \cite{erk74,bj76,mac93}. Here we will however
+briefly repeat some of the arguments presented by the Bonn group
+\cite{mhe87,mac89} to justify
+the OBE picture. 
+During the last three decades, several NN potential models have been presented,
+however, the reason for focusing on the Bonn potential is the
+fact that, this model offers perhaps the most consistent
+approach to the nuclear many-body problem at low energies.
+
+As our line of approach is based on one-boson-exchange models, we need to
+present arguments which justify this effective picture. The full Bonn
+potential model includes
+higher-order meson-exchange processes. Typical examples
+of such higher-order contributions are shown in fig.\ \ref{fig:chap32pi}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig5.eps}}
+      \end{picture}
+\caption{Selected contributions to $2\pi$ exchange processes. The single
+line represents a nucleon, the double line is an isobar $\Delta$, while
+the dashed line is the $\pi$-meson. The circles represent
+$\pi\pi$ correlations.}
+\label{fig:chap32pi}
+\end{figure}
+The diagrams with circles
+in fig.\ \ref{fig:chap32pi} represent  contributions from $\pi\pi$ correlations,
+while
+the remaining diagrams represent
+exchanges of two pions, giving
+rise to the contributions of the longest range.
+While the two-pion correlations
+in the $P$-wave form a resonance (the $\rho$ meson), there
+is no proper resonance in the $S$-wave. However, there are strong correlations
+in the $S$-wave at low energies, and Durso {\em et al.\ } \cite{dur77} have
+shown that these correlations can be described in terms of a broad mass
+distribution of about $600\pm 260$ MeV. This can then in turn be
+approximated by a zero-width scalar-isoscalar meson of mass $\approx 550$ MeV,
+justifying the introduction of the
+fictitious $\sigma$ meson in one-boson-exchange models. For peripheral
+partial waves, the low-energy scattering data can be accounted for by the
+construction of a potential which includes $(\pi +2\pi )$-meson
+and $\omega$-meson
+exchanges. At shorter internucleonic distances, this model gives however
+too much attraction. The necessary repulsion at the shorter 
+ranges, and correspondingly lower partial waves, 
+is provided by the inclusion
+of the $\pi\rho$ diagrams shown in fig.\ \ref{fig:chap3rho}.
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig6.eps}}
+\end{picture}
+\caption{Selected $\pi\rho$ contributions to the NN potential.}
+\label{fig:chap3rho}
+\end{figure}
+
+The full Bonn potential model can be approximated by a one-boson-exchange
+model, where selected mesons (with masses below 1000 MeV) are included. 
+Thus, as in the full Bonn model, the only parameters which enter the nuclear
+many-body approach exposed in this work are the coupling constants and cutoff
+parameters which serve to regularize the potential at short distances. 
+As an example we redisplay in table \ref{tab:chap3tab2} the mesons and their
+related parameters which define the Bonn potential
+models employed in this work. These potential models
+employ the Blankenbecler and Sugar (defined in table A.1 of ref.\
+\cite{mac89}) and
+Thompson (defined in table A.2 of ref.\ \cite{mac89})
+reductions of the four-dimensional Bethe-Salpeter
+equation.
+In total there are 13 parameters which
+need to be determined through a fit to the low-energy scattering data.
+\begin{table}[hbtp]
+\caption{The meson parameters which define the Bonn A, B and C
+potentials of tables A.1 and A.2 from ref.\ [12]. The first row
+in each entry gives
+the parameters from table A.1, while the second line represents
+those of table A.2. The numbers in parentheses refer to the $T=0$ channel
+for the potentials defined in table A.1. Potential A uses a mass $710$ MeV,
+while B and C employ $720$ MeV for the $\sigma$-meson.}
+\begin{center}
+\begin{tabular}{cccccccc}
+\\ \hline
+&&
+\multicolumn{2}{c}{A}&
+\multicolumn{2}{c}{B}&
+\multicolumn{2}{c}{C}\\
+\multicolumn{1}{c}{Meson}&
+\multicolumn{1}{c}{mass(MeV)}&
+\multicolumn{1}{c}{$g^{2}/4\pi$}&
+\multicolumn{1}{c}{$\Lambda$(GeV)}&
+\multicolumn{1}{c}{$g^{2}/4\pi$}&
+\multicolumn{1}{c}{$\Lambda$(GeV)}&
+\multicolumn{1}{c}{$g^{2}/4\pi$}&
+\multicolumn{1}{c}{$\Lambda$(GeV)}
+\\\hline
+$\pi$&138.03&14.7&1.3&14.4&1.7&14.2&3.0\\
+&138.03&14.9&1.05&14.6&1.2&14.6&1.3\\
+$\eta$&548.8&4&1.5&3&1.5&0&-\\
+&548.8&7&1.5&5&1.5&3&1.5\\
+$\rho$&769&0.86&1.95&0.9&1.85&1.0&1.7\\
+&769&0.99&1.3&0.95&1.3&0.95&1.3\\
+$\omega$&782.6&25&1.35 &24.5&1.85&24&1.4\\
+&782.6&20&1.5 &20&1.5&20&1.5\\
+$\sigma$&550&8.8&2.0&8.9437&1.9&8.6289&1.7\\
+&(710-720)&(17.194)&(2.0)&(18.3773)&(2.0)&(17.5667)&(2.0)\\
+&550&8.3141&2.0&8.0769&2.0&8.0279&1.8\\
+$\delta$&983&1.3&2.0&2.488&2.0&4.722&2.0\\
+&983&0.7707&2.0&3.1155&1.5&5.0742&1.5\\
+\hline
+\end{tabular}
+\end{center} \label{tab:chap3tab2}
+\end{table}
+Although we will concentrate on the Bonn 
+potential models, other potential models
+will also be discussed, such as the Paris 
+\cite{paris80} or the Reid-soft-core potentials \cite{reid68}. In principle, all
+NN potentials
+reproduce essentially the same set of low-energy NN scattering data
+($E_{lab} \leq 300$ MeV) and properties of the deuteron.
+These are referred to as the
+``on-shell'' properties of an NN potential, since all potential
+models result in a roughly
+similar on-shell scattering matrix $T$.
+As discussed by Machleidt and Li \cite{mac93}, the on-shell properties of
+various potentials yield only rather small differences in nuclear structure
+observables. The crucial point is
+then the differing off-shell behavior of the
+NN potentials.
+Since the body of scattering data is conventionally
+given in terms of partial waves, the Blankenbecler-Sugar
+approach to the four-dimensional
+Bethe-Salpeter equation reads in the center-of-mass  system (omitting
+angular momentum, isospin, spin etc.\ assignments)
+\begin{equation}
+   T({\bf k}, {\bf k}')=V({\bf k}, {\bf k}')
+   +\int_{0}^{\infty} \frac{d^3 q}{(2\pi )^3}
+     V({\bf k}, {\bf q})\frac{M_N^2}{E_q}
+     \frac{\Lambda_{(1)}^+ ({\bf q})\Lambda_{(2)}^+ ({\bf -q})}
+     {{\bf k}^2-{\bf q}^2 +i\epsilon}T({\bf q}, {\bf k}'),
+\end{equation}
+where $E_q=\sqrt{M_N^2+{\bf q}^2}$.
+Since we are only interested in the matrix elements for positive-energy
+spinors, we obtain
+\begin{equation}
+   T({\bf k}, {\bf k}')=V({\bf k}, {\bf k}')
+   +\int_{0}^{\infty} \frac{d^3 q}{(2\pi )^3}
+     V({\bf k}, {\bf q})\frac{M_N^2}{E_q}
+     \frac{1}
+     {{\bf k}^2-{\bf q}^2 +i\epsilon}T({\bf q}, {\bf k}').
+    \label{eq:bbs3}
+\end{equation}
+If we define
+\begin{equation}
+   \hat{T}({\bf k}, {\bf k}')=
+   \sqrt{\frac{M_N}{E_{k'}}}T({\bf k}, {\bf k}')\sqrt{\frac{M_N}{E_{k}}},
+\end{equation}
+and
+\begin{equation}
+    \hat{V}({\bf k}, {\bf k}')=
+    \sqrt{\frac{M_N}{E_{k'}}}V({\bf k}, {\bf k}')\sqrt{\frac{M_N}{E_{k}}},
+\end{equation}
+we can rewrite eq.\ (\ref{eq:bbs3}) as
+\begin{equation}
+  \hat{ T}({\bf k}, {\bf k}')=\hat{V}({\bf k}, {\bf k}')
+   +\int_{0}^{\infty} \frac{d^3 q}{(2\pi )^3}
+     \hat{V}({\bf k}, {\bf q})
+     \frac{1}
+     {{\bf k}^2-{\bf q}^2 +i\epsilon}\hat{T}({\bf q}, {\bf k}'),
+   \label{eq:bbs2}
+\end{equation}
+which has the same form as the non-relativistic Lippmann-Schwinger
+equation, and serves therefore as a starting point for non-relativistic
+nuclear structure calculations. In our calculations of properties
+of finite nuclei in section 6 (where relativistic effects
+are negligible), we will therefore employ the Bonn potential
+as it is defined in table A.1 of ref.\ \cite{mac89},
+with the Blankenbecler-Sugar
+reduction of the four-dimensional Bethe-Salpeter equation.
+
+With the Thompson choice, we obtain
+\begin{equation}
+   T({\bf k}, {\bf k}')=V({\bf k}, {\bf k}')
+   +\int_{0}^{\infty} \frac{d^3 q}{(2\pi )^3}
+     V({\bf k}, {\bf q})\frac{M_N^2}{2E_q^2}
+     \frac{1}
+     {E_k-E_q +i\epsilon}T({\bf q}, {\bf k}'),
+\label{eq:thomp2}
+\end{equation}
+and defining
+\begin{equation}
+\tilde{T}({\bf k}, {\bf k}')=
+\frac{M_N}{E_{k'}}T({\bf k}, {\bf k}')\frac{M_N}{E_{k}},
+\end{equation}
+and
+\begin{equation}
+\tilde{V}({\bf k}, {\bf k}')=
+\frac{M_N}{E_{k'}}V({\bf k}, {\bf k}')\frac{M_N}{E_{k}},
+\end{equation}
+we can rewrite eq.\ (\ref{eq:thomp2}) as
+\begin{equation}
+  \tilde{ T}({\bf k}, {\bf k}')=\tilde{V}({\bf k}, {\bf k}')
+   +\int_{0}^{\infty} \frac{d^3 q}{(2\pi )^3}
+     \tilde{V}({\bf k}, {\bf q})
+     \frac{1}
+     {E_k-E_q +i\epsilon}\tilde{T}({\bf q}, {\bf k}'),
+   \label{eq:thomp3}
+\end{equation}
+which has the form of the Lippmann-Schwinger equation, but with
+relativistic energies. We will use the potentials defined through the
+Thompson choice in our nuclear matter and neutron matter calculations, where
+relativistic effects become of importance at large momenta.
+
+Let us now assign the relevant quantum numbers to the $T$-matrix. Recalling
+the structure of eq.\ (\ref{eq:vpartial}),
+the general structure of the $T$-matrix is
+\begin{equation}
+   T_{ll'}^{\alpha}(kk'K\omega)=V_{ll'}^{\alpha}(kk')
+   +{\displaystyle \frac{2}{\pi}\sum_{l''mM_S}\int_{0}^{\infty} d {\bf q}
+   ({\cal C}_{mM_SM}^{l''S{\cal J}})^2
+   \frac{Y_{l''m}^*(\hat{{\bf q}})
+   Y_{l''m}(\hat{{\bf q}}) V_{ll''}^{\alpha}(kq)
+   T_{l''l'}^{\alpha}(qk'K\omega)}
+   {\omega -H_0}},
+   \label{eq:bspartial}
+\end{equation}
+where we let the denominator $\omega -H_0$ be an abbreviation
+for one of the denominators in
+eqs.\ (\ref{eq:bbs2}) and (\ref{eq:thomp3}).
+Further, the  shorthand notation
+\begin{equation}
+    T_{ll'}^{\alpha}(kk'K\omega)=
+   \bra{kKlL{\cal J}ST}T(\omega)\ket{k'Kl'L{\cal J}ST},
+\end{equation}
+is introduced to denote the $T$-matrix
+with momenta $k$ and $k'$ and orbital momenta $l$ and $l'$
+of the relative motion, and
+$K$ is the corresponding momentum of
+the center-of-mass motion. Further, $L$, ${\cal J}$, $S$ and $T$
+are the orbital momentum of the center-of-mass motion, the
+total angular momentum,
+spin and isospin, respectively. They are all represented by the
+label $\alpha$. This notation applies to the potential $V$ and the
+$G$-matrix as well.
+
+Eq.\ (\ref{eq:bspartial}) can be further simplified
+by using the orthogonality
+properties of the Clebsch-Gordan coefficients and the spherical harmonics.
+Eq.\ (\ref{eq:bspartial}) then reduces to the well-known
+one-dimensional angle independent
+integral equation
+\begin{equation}
+   T_{ll'}^{\alpha}(kk'K\omega)=V_{ll'}^{\alpha}(kk')
+   +\frac{2}{\pi}\sum_{l''}\int_{0}^{\infty} dqq^2
+   \frac{V_{ll''}^{\alpha}(kq)
+   T_{l''l'}^{\alpha}(qk'K\omega)}
+   {\omega -H_0}.
+\end{equation}
+Inserting the denominators for the Blankenbecler-Sugar and Thompson
+reductions of the full Bethe-Salpeter equation, eqs.\
+(\ref{eq:bbs2}) and (\ref{eq:thomp3}) can be rewritten as
+\begin{equation}
+   \hat{T}_{ll'}^{\alpha}(kk'K)=\hat{V}_{ll'}^{\alpha}(kk')
+   +\frac{2}{\pi}\sum_{l''}\int_{0}^{\infty} dqq^2
+   \hat{V}_{ll''}^{\alpha}(kq)
+   \frac{1}{k^2-q^2 +i\epsilon}
+   \hat{T}_{l''l'}^{\alpha}(qk'K),
+\end{equation}
+for eq.\ (\ref{eq:bbs2}) and
+\begin{equation}
+   \hat{T}_{ll'}^{\alpha}(kk'K)=\hat{V}_{ll'}^{\alpha}(kk')
+   +\frac{2}{\pi}\sum_{l''}\int_{0}^{\infty} dqq^2
+   \hat{V}_{ll''}^{\alpha}(kq)
+    \frac{1}
+     {E_k-E_q +i\epsilon}\hat{T}_{l''l'}^{\alpha}(qk'K)
+\end{equation}
+for eq.\ (\ref{eq:thomp3}).
+Techniques to solve these equations will be discussed in
+section 5. The reader should also observe that these equations are similar
+to that for the $G$-matrix, the only difference being the omission of the
+Pauli operator $Q$ and the medium dependence of the sp energies.
+For intermediate states in the two latter equations with $k\neq q$, energy
+is not conserved and the nucleons are off their energy shell. It is this
+aspect of various potentials which becomes of importance in a nuclear medium.
+Consider the contribution to the above scattering matrices for the $^3S_1$
+partial wave, exhibited in
+fig.\ \ref{fig:chap33s1} to second order
+in the ladder approximation. The second-order terms contain
+contributions from intermediate states in the $^3D_1$ partial wave
+which connects only through the tensor force of the NN interaction. The
+$^3S_1$-$^3D_1$ matrix elements account for the largest
+second-order contribution.
+Since various potentials yield essentially the same on-shell $T$-matrix,
+contributions to the $^3S_1$ partial wave may be obtained from
+rather different first and second- or higher-order terms to the $T$-matrix.
+As an example, the tensor force contribution from the $^3D_1$ intermediate
+state shown in fig.\ \ref{fig:chap33s1} may be rather weak as compared
+to the first contribution arising from the central part of the potential.
+The converse may also be the case, but the outcome may still yield
+the same on-shell $T$-matrix.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig8.eps}}
+\end{picture}
+\caption{Contributions through second order in the interaction $V$
+to the $T$-matrix for the $^3S_1$ partial wave. }
+\label{fig:chap33s1}
+\end{figure}
+In other words, the bulk of the $T$-matrix can be expressed as
+\begin{equation}
+T\approx V_C + V_T \frac{1}{\omega -H_0}V_T,
+\end{equation}
+ where $V_C$ is the central part of the NN interaction while $V_T$ is the
+tensor force. Moreover, $\omega$ is the energy of the incoming
+nucleons and $H_0$ is the unperturbed hamiltonian representing
+the intermediate scattering states.
+Thus, if the tensor force is weak (strong), a stronger
+(weaker) central force is needed to arrive at the same on-shell
+$T$-matrix. A similar mechanism is present when we evaluate
+the $G$-matrix for either nuclear matter or finite  nuclei,
+though,
+in these cases we must also account for medium effects
+such as the modification of the energy denominator and the
+inclusion of the Pauli principle.
+
+
+
+These remarks about the off-shell properties of the NN potential play
+in turn, as we will discuss below, an important role in explaining
+properties of nuclear systems, such as the binding energy of nuclear
+matter. Actually,
+among the above potential models, the recent versions
+of the Bonn group \cite{mac89} have been rather successful in
+reproducing properties of nuclear many-body systems.
+The success of these potential models have by several investigators
+been ascribed
+to the strength of the much debated tensor force, examplified
+in fig.\ \ref{fig:chap33s1} by the $^3S_1$-$^3D_1$ contribution to the
+$^3S_1$ partial wave. Akin to the Bonn
+potentials is a rather weak tensor force compared to older and commonly
+employed potential models like the semi-phenomenological
+Paris potential \cite{paris80} or the purely
+phenomenological Reid-soft-core \cite{reid68} potential.
+
+The strength of the tensor force in meson-exchange models
+is mainly dominated by the partial cancellation of the tensor components
+from the pseudoscalar $\pi$-meson and the vector $\rho$-meson. The larger
+(smaller) the tensor-coupling constant of the $\rho$-meson, the weaker
+(stronger) the tensor force of the NN potential.
+A measure of the strength of the tensor force is given by
+the $D$-state probability
+of the deuteron. Typical values for the Bonn potentials of table A.2 range from
+$P_{D}=4.47$ for the Bonn A potential, $P_{D}=5.10$ for the Bonn B potential and
+to $P_{D}=5.53$ for the Bonn C potential \cite{mac89}, whereas the
+Paris and the Reid potential cited above have $P_{D}=5.8$ and
+$P_{D}=6.5$, respectively. 
+In conclusion, one should note that although
+the potentials discussed hitherto exhibit different tensor forces,
+all potentials are fit essentially to the same set of scattering data,
+which in turn implies that a potential with a weak (strong) tensor force
+needs a stronger (weaker) central and/or spin-orbit part to arrive at
+the same on-shell scattering matrix for free nucleons \cite{mac89}.
+The behaviors of these potentials in the nuclear medium will be discussed
+in sections 5-8.
+
+The reader should be aware of the fact that the tensor force
+is not a directly measurable quantity. Information on the
+strength of the tensor force can be obtained through
+the determination of  the mixing parameter $\epsilon_1$. The recent reanalysis
+of the NN scattering data below $160$ MeV by Henneck \cite{hen93} seems
+to favor a strong tensor force in the NN interaction. This conclusion,
+as will
+be shown throughout this work, is at askance with
+most present compilations of
+nuclear matter and finite nuclei. Also, a recent comment by Brown
+and Machleidt \cite{bm94} shows that the ratio of tensor to vector coupling
+constant
+\[
+     \frac{g_{\rho NN}^t}{g_{\rho NN}^v},
+\]
+has to be strong, in order to reproduce the phase shifts at higher
+scattering energies as well. This is shown in fig.\ \ref{fig:mach1}
+for the $^3S_1$-$^3D_1$ mixing parameter $\epsilon_1$. A strong
+tensor to vector coupling constant can also be inferred from the
+$\pi\pi -N\bar{N}$ analysis of H\"{o}hler and Pietarinen \cite{hp75}.
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,180)
+   \end{picture}
+   \caption{The $\epsilon_1$ mixing parameter at low and intermediate
+energies. Taken from ref.\ [37]. Predictions by the Bonn B potential of table A.2
+(solid line), the Paris [13] (solid line) and the Reid potential [14] (dashed line)
+are shown. The phase shift analysis by Henneck [36] is represented by the
+diamonds, while those of Arndt [39] (solid triangles), Bugg and Bryan [40]
+(solid dots), and the Nijmegen group [41] (solid squares) are also shown.}
+\label{fig:mach1}
+\end{figure}
+Similarly, the Bonn B potential of table A.2 gives a very good reproduction
+of the $^3P_0$ and $^3P_2$ phase shifts for proton-proton scattering, see
+figs.\ \ref{fig:mach2} and \ref{fig:mach3}.
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,180)
+   \end{picture}
+   \caption{The  $^3P_0$ phase shifts
+    for proton-proton scattering.
+    The solid line gives the prediction by a meson model that includes a
+    weak tensor force (strong $\rho$), while the
+    dashed line employs a strong tensor force. The solid dots are the
+    Nijmegen [41] proton-proton phase shift analysis. Taken from ref.\ [37].}
+\label{fig:mach2}
+\end{figure}
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,180)
+   \end{picture}
+   \caption{The $^3P_2$ phase shifts
+    for proton-proton scattering.
+    The solid line gives the prediction by a meson model that includes a
+    weak tensor force (strong $\rho$), while the
+    dashed line employs a strong tensor force. The solid dots are the
+    Nijmegen [41] proton-proton phase shift analysis. Taken from ref.\ [37].}
+\label{fig:mach3}
+\end{figure}
+
+Finally, the many few-body calculations with the various Bonn potentials,
+see e.g.\ Song and Machleidt \cite{sm94} and Sammarucca, Xu  and Machleidt
+\cite{sxm92},
+lend strong support to a potential which has a weak tensor force.
+The fact that the tensor force should be weak, is
+also confirmed in the present work for heavier
+nuclei, see the discussions in sections 5-8.
+
+

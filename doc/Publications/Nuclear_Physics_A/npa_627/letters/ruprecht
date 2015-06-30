@@ -1,0 +1,127 @@
+From m.h.jensen@fys.uio.no Thu Jan 23 02:03:00 1997
+Received: from pat.uio.no by norsci0.nordita.dk (4.1/SMI-4.1)
+	id AA00309; Thu, 23 Jan 97 02:02:58 +0100
+Resent-Message-Id: <9701230102.AA00309@norsci0.nordita.dk>
+Received: from ulrik.uio.no by pat.uio.no id <02149-0@pat.uio.no>;
+          Thu, 23 Jan 1997 02:02:42 +0100
+Return-Path: <machleid@phys.uidaho.edu>
+Old-Received: from 129.101.65.111 by pat.uio.no with SMTP (PP) id 
+              <02087-0@pat.uio.no>; Thu, 23 Jan 1997 02:02:08 +0100
+Old-Received: by tamaluit.phys.uidaho.edu (5.61/UW-NDC Revision: 2.21 ) id 
+              AA28575; Wed, 22 Jan 97 17:01:34 -0800
+Date: Wed, 22 Jan 97 17:01:34 -0800
+From: Ruprecht Machleidt <machleid@phys.uidaho.edu>
+Message-Id: <9701230101.AA28575@tamaluit.phys.uidaho.edu>
+To: m.h.jensen@fys.uio.no
+Cc: artur@dirac.ecm.ub.es, herbert.muether@uni-tuebingen.de,
+        lars.engvik@fys.uio.no
+Resent-Date: Thu, 23 Jan 1997 02:02:42 +0100
+Resent-From: m.h.jensen@fys.uio.no
+Resent-To: mjensen@nordita.dk
+Status: R
+
+    machleid
+
+Dear Morten,
+
+I like the draft of the paper "Non-local and local ..."
+very much and have only a few, essentially technical,
+comments.
+
+I suggest to modify the title to: "Non-local vs. local ..."
+
+Page 3, beginning of last paragraph:
+(I should note here that I printed out the paper WITHOUT
+the multicolmn option; this may mix-up page and paragraph #'s.)
+"The Nijm-I has a weaker tensor force compared to Nijm-II
+potential." This is not true. Nijm-I has P_D=5.66% and
+Nijm-II has P_D=5.64.
+My observation is that the larger attraction of Nijm-I as compared
+to Nijm-II comes from the 1S0, where Nijm-I is more attractive
+than Nijm-II. The reason for this is that in 1S0 the nonlocality
+in the central force shows up. Nijm-I is nonlocal in the central
+force, while Nijm-II is local everywhere.
+CD-Bonn is nonlocal everywhere, in particular, nonlocal in the
+central force and in the tensor force.
+Therefore, Nijm-I and CD-Bonn agree in 1S0 (which is the reason
+for their agreement in Fig. 3, but differ from Nijm-II),
+but disagree in 3S1 where also the nonlocality of the
+tensor force comes in (which the Nijm-I doesn't have).
+
+The URCA process, if it occurs: Is it supposed to occur at
+a particular density?  Or can it even occur at densities
+around 1 fm^{-3}?
+If so, then the CD-Bonn can give rise to URCA,
+since it can easily reach a \chi_p greater
+than 0.11 around 1 fm^{-3}.
+What this means is that with just a realistic non-local 2N potential
+(and without 3N forces and/or relativity) URCA can happen.
+Therefore, I suggest to make this statement on page 4, 3. paragraph
+from top, NOT SO STRONG. You are saying there that 
+"for none of the above potentials will the proton fraction 
+reach the critical value needed for the direct URCA process."
+I believe, it's one important point of this paper that
+with realistic non-local ones you can reach it, or at leasts
+can come terribly close to it, while for local ones
+it's totally hopeless.
+True is that the potentials are fit up to Tlab=350 MeV, but you 
+can "stretch" them to about 500 MeV, because there is no substantial
+inelasticity below 500 MeV. In my estimate, Tlab=500 MeV is
+equivalent to a (Fermi) momentum of 2.46 fm^{-1} which
+is equivalent to a density of 1 fm^{-3}.
+
+Second paragraph of CONCLUSIONS:
+I think one should not cast so much doubt on where the nonlocal terms
+come from. The nonlocal terms are not doubtful and do not have
+an obscure source.  They come from exactly the same source the local
+terms come from: from meson exchange, in terms of a straightforward
+calculation in which nothing is skipped. 
+If some people find nonlocal terms doubtful, then I find their
+local terms equally doubtful.
+The fact that you cannot directly constrain them by experiment,
+does not make them obscure. Local and nonlocal potential
+terms are constrained by
+experiment equally indirectly.
+Notice that none is equal to the on-shell T-matrix which is the only
+thing constrained by experiment.
+Let's not run here into the traps of people who put
+them out because their theory is so poor and, therefore,
+like to put the scale of values up-side-down.
+THE CONSISTENT THEORY RESULTS IN A NONLOCAL POTENTIAL
+AND IS THEREFORE THE BETTER ONE.
+
+
+Some technicallities:
+
+1. The first time you mention it, you might say
+   " ... the new, charge-dependent Bonn potential (CD-Bonn) ..."
+   and then, I suggest, just call it alway CD-Bonn. This is better, because
+   besides being charge-dependent, an equally important point
+   is that it has a better fit. CD-Bonn is then just a label
+   for everything it contains.
+
+2. Ref. 5: The authors are correct, but the ref. for the Nijm. POTS. is
+   Phys. Rev. C 49, 2950 (1994).
+   (The other ref. is the one for the Nijmegen ANALYSIS.)
+
+3. Typos that occured to me:
+   First sentence of manuscript: "... has been inteNsively
+   studied FOR MANY YEARS."
+   Third sentence: "...  to derive the EOS exiSt in the ..."
+   Last sentence of this paragraph: "... difficult to
+   disentaNgle the origin ..."
+
+   Page 2, last paragraph, end of first sentence:
+   "... NN potentials, without THE NEED to invoke ..."
+
+   Below Eq. (6): "... kinetic energy anD the ..."
+
+   Page 3, middle of last paragraph:
+   "For partial waves with $L \geq 1$ ..."
+   (I suggest here to use L instead of J.)
+
+
+With best regards,
+
+Ruprecht.
+

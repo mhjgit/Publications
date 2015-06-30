@@ -1,0 +1,437 @@
+
+\documentstyle[a4wide,12pt,epsf]{article}
+
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+\section{Introduction}
+\clearpage
+\section{Perturbative many-body methods}
+{\Large
+\[
+        P=\sum_{i=1}^{D} \left|\Phi_i\right\rangle
+        \left\langle\Phi_i\right |
+\]\vspace{1cm}
+
+\[
+        Q=\sum_{i=D+1}^{\infty} \left|\Phi_i\right\rangle
+        \left\langle\Phi_i\right |
+\]\vspace{1cm}
+\[
+                H\left|\Psi_{\alpha}\right\rangle= 
+                E_{\alpha}\left|\Psi_{\alpha}\right\rangle
+\]\vspace{1cm}
+\[
+               PH_{\mathrm{eff}}P\left|\Psi_{\alpha}\right\rangle=
+               E_{\alpha}P\left|\Psi_{\alpha}\right\rangle=
+              E_{\alpha}\left|\Phi_{\alpha}\right\rangle
+\]\vspace{1cm}
+\[
+               PH_{\mathrm{eff}}P=PH_1P +PH_1\frac{Q}{e}H_1 P+
+               PH_1\frac{Q}{e}H_1 \frac{Q}{e}H_1 P+\dots
+               \label{eq:effint}
+\]\vspace{1cm}
+\[
+                \left|\Psi_{\alpha}\right\rangle=
+                \left|\Phi_{\alpha}\right\rangle+
+                \frac{Q}{e}H_1\left|\Phi_{\alpha}\right\rangle
+                +\frac{Q}{e}H_1\frac{Q}{e}H_1\left|\Phi_{\alpha}\right\rangle
+                +\dots
+                \label{eq:wavef}
+\]
+\clearpage
+\[
+              \Omega = 1 +\chi,
+\]\vspace{1cm}
+\[
+               P\chi P = 0, \hspace{1cm} Q\Omega P = 
+              Q\chi P =\chi P. \label{eq:chi1}
+\]\vspace{1cm}
+\[
+                   \chi = Q\chi P. \label{eq:chi2}
+\]\vspace{1cm}
+
+\[
+              \Omega = 1 +\Omega^{(1)} + \Omega^{(2)}+\dots 
+\]\vspace{1cm}
+\begin{eqnarray}
+         \Omega\left|\Phi_i\right\rangle=
+         &{\displaystyle\left|\Phi_i\right\rangle
+         +\sum_{\alpha}\frac{\left|\alpha\right\rangle
+         \left\langle\alpha\right|
+          V\left|\Phi_i\right\rangle}{\varepsilon_i -\varepsilon_{\alpha}}
+         +\sum_{\alpha\beta}\frac{\left|\alpha\right\rangle
+        \left\langle\alpha\right| V
+         \left|\beta\right\rangle\left\langle\beta\right| V
+         \left|\Phi_i\right\rangle }
+         {(\varepsilon_i-\varepsilon_{\alpha})
+       (\varepsilon_i-\varepsilon_{\beta})} }\nonumber\\
+&       {\displaystyle  -\sum_{\alpha j}\frac{\left|\alpha\right\rangle
+       \left\langle\alpha\right|
+         V\left|\Phi_j\right\rangle
+        \left\langle\Phi_j\right| V\left|\Phi_i\right\rangle}
+       {(\varepsilon_i-\varepsilon_{\alpha})
+      (\varepsilon_i-\varepsilon_{j})} }
+       +\dots \nonumber
+\end{eqnarray}
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=14cm \epsfbox{vertex.eps}}
+      \end{picture}
+      \caption{The various vertices to first order in the interaction
+               $V$ which contribute to the wave operator
+               $\Omega =1+\chi$. Hartree-Fock
+               terms are not included. Possible hermitian conjugate 
+                diagrams are also not shown. Indicated are also possible
+               angular momentum coupling orders.}
+\end{figure}
+\clearpage
+
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=10cm \epsfbox{recouple.eps}}
+      \end{picture}
+      \caption{Coupling order for the $[12]$ (a), $[13]$ (b) and
+               $[14]$ (c) channels.}
+      \label{fig:channelsdef}
+\end{figure}
+\[
+       V_{1234J}^{[12]}
+       =\left\langle (12)J\right | V
+       \left | (34)J\right\rangle
+       \label{eq:12channel}
+\] 
+
+\[
+      V_{1234J}^{[13]}=
+      {\displaystyle \sum_{J'}}(-)^{j_1+j_4+J+J'}\hat{J'}^2
+      \left\{
+      \begin{array}{ccc}
+       j_3&j_1&J\\j_2&j_4&J'
+      \end{array}
+       \right\}V_{1234J}^{[12]}
+       \label{eq:13channel}
+\]
+
+\[
+       V_{1234J}^{[14]}=
+      {\displaystyle \sum_{J'}}(-)^{j_1+j_4+J+2j_3}\hat{J'}^2
+      \left\{
+      \begin{array}{ccc}
+       j_4&j_1&J\\j_2&j_3&J'
+      \end{array}
+       \right\}
+       V_{1234J}^{[12]}
+       \label{eq:14channel}
+\]
+\[
+       V_{1234J}^{[14]}=
+      {\displaystyle \sum_{J'}}(-)^{2j_1+2j_2+2j_3}\hat{J'}^2
+      \left\{
+      \begin{array}{ccc}
+       j_4&j_1&J\\j_3&j_2&J'
+      \end{array}
+       \right\}
+       V_{1234J}^{[13]}
+       \label{eq:1413channel}
+\]
+\clearpage
+
+\section{Summation of diagrams in the $[12]$ channel}
+
+
+
+
+\[
+     \Gamma^{[12]}_{1234J}=\Gamma^{[12]}_{2143J}=-\Gamma^{[12]}_{2134J}=
+     \Gamma^{[12]}_{1243J}
+     \label{eq:symproperties}
+\]\vspace{1cm}
+\[
+    s=\varepsilon_1+\varepsilon_2=\varepsilon_3+\varepsilon_4
+    \label{eq:energy12}
+\]\vspace{1cm}
+\[
+     \Gamma^{[12]}=V^{[12]}+V^{[12]}(gg)\Gamma^{[12]}
+     \label{eq:schematic12}
+\]\vspace{1cm}
+
+
+
+\[
+    \hat{{\cal G}}^{[12]}=
+    \frac{Q^{[12]}_{\mathrm{pp}}}{s-\varepsilon_5-\varepsilon_6+\imath \eta}-
+    \frac{Q^{[12]}_{\mathrm{hh}}}{s-\varepsilon_5-\varepsilon_6-\imath \eta}
+    \label{eq:paulioperator12}
+\]
+\clearpage
+\[
+      \Gamma^{[12]}_{1234J}(s) = 
+      V^{[12]}_{1234J}+\frac{1}{2}
+      \sum_{56}
+      V^{[12]}_{1256J}\hat{{\cal G}}^{[12]}
+      \Gamma^{[12]}_{5634J}(s)
+      \label{eq:first12}
+\]
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=10cm \epsfbox{sigmagamma.eps}}
+      \end{picture}
+      \caption{(a) represents the two-body vertex $\Gamma$ function while (b)  
+               represents the self-energy $\Sigma$.}
+      \label{fig:selfcons12}
+\end{figure}
+
+
+\clearpage
+
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=10cm \epsfbox{channel12.eps}}
+      \end{picture}
+      \caption{Diagrams (a)-(d) give examples of 
+               diagrams which are summed up by  
+               pp-hh equations.
+               Diagrams (e) and (f) are examples of core-polarization
+               terms which are not generated by the $[12]$ channel.}
+      \label{fig:gamma12}
+\end{figure}
+\[
+      (a)=\frac{1}{2}\sum_{pq}V^{[12]}_{12pq J}
+      \frac{1}{s-\varepsilon_p-
+                \varepsilon_q} V^{[12]}_{pq34 J}
+      \label{eq:secondg}
+\]
+
+\[
+      (b)=\frac{1}{2}\sum_{\alpha\beta}V^{[12]}_{12\alpha\beta J}
+      \frac{1}{-s+\varepsilon_{\alpha}+
+                \varepsilon_{\beta}} V^{[12]}_{\alpha\beta 34 J}
+\]
+\[
+      (c)=\frac{1}{4}\sum_{pqrw}V^{[12]}_{12pq J}
+      \frac{1}{s-\varepsilon_p-
+                \varepsilon_q} 
+      V^{[12]}_{pqrw J}
+      \frac{1}{s-\varepsilon_r-
+                \varepsilon_w} 
+       V^{[12]}_{rw34 J}
+      \label{eq:thirdg}
+\]
+\[
+      (d)=\frac{1}{4}\sum_{\alpha\beta pq}V^{[12]}_{12pq J}
+      \frac{1}{s-\varepsilon_p-
+                \varepsilon_q+\varepsilon_{\alpha}+
+                \varepsilon_{\beta}} 
+      V^{[12]}_{pq\alpha\beta J}
+      \frac{1}{s-\varepsilon_p-
+                \varepsilon_q} 
+       V^{[12]}_{\alpha\beta 34 J}
+      \label{eq:thirdg2h}
+\]
+\clearpage
+\section{Screening corrections and vertex renormalization, the equations
+for the $[13]$ and  $[14]$ channels}
+\label{sec:sec4}
+
+
+\[
+     \Gamma^{[13]}=V^{[13]}+V^{[13]}(gg)\Gamma^{[13]}
+\]\vspace{1cm}
+\[
+     \Gamma^{[14]}=V^{[14]}+V^{[14]}(gg)\Gamma^{[14]}
+\]\vspace{1cm}
+
+\[ 
+     t=\varepsilon_3-\varepsilon_1=\varepsilon_2-\varepsilon_4
+\]  \vspace{1cm}  
+\[
+     u=\varepsilon_1-\varepsilon_4=\varepsilon_3-\varepsilon_2
+\]\vspace{1cm}
+
+\[
+    \hat{{\cal G}}^{[13]}=
+    \frac{Q^{[13]}_{\mathrm{ph}}}{t-\varepsilon_p+\varepsilon_h+\imath \eta}
+    -\frac{Q^{[13]}_{\mathrm{hp}}}{t+\varepsilon_p-\varepsilon_h-\imath \eta}
+    \label{eq:paulioperator13}
+\]\vspace{1cm}
+
+\[
+    \hat{{\cal G}}^{[14]}=
+    \frac{Q^{[14]}_{\mathrm{ph}}}{u-\varepsilon_p+\varepsilon_h+\imath \eta}
+    -\frac{Q^{[14]}_{\mathrm{hp}}}{u+\varepsilon_p-\varepsilon_h-\imath \eta}
+    \label{eq:paulioperator14}
+\]
+
+\clearpage
+\[
+      \Gamma^{[13]}_{1234J}(t) = 
+      V^{[13]}_{1234J}+
+      \sum_{ph}
+      V^{[13]}_{12phJ}\hat{{\cal G}}^{[13]}
+      \Gamma^{[13]}_{ph34J}(t)
+      \label{eq:first13}
+\]
+
+\[
+      \Gamma^{[14]}_{1234J}(u) = 
+      V^{[14]}_{1234J}-
+      \sum_{ph}
+      V^{[14]}_{12phJ}\hat{{\cal G}}^{[14]}
+      \Gamma^{[14]}_{ph34J}(u)
+      \label{eq:first14}
+\]
+
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=10cm \epsfbox{ch1314.eps}}
+      \end{picture}
+      \caption{(a) shows the structure of the integral equation for 
+               the interaction vertex in the $[13]$ channel. (b) represents
+               the integral channel for the $[14]$ channel.
+               The coupling order is displayed as well.}
+      \label{fig:figs1314}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=14cm \epsfbox{secph.eps}}
+      \end{picture}
+      \caption{Second-order perturbation theory corrections to the ph
+               interaction vertex.}
+      \label{fig:phvertex}
+\end{figure}
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=14cm \epsfbox{thirdph.eps}}
+      \end{picture}
+      \caption{Corrections beyond second order in the interaction $V$ 
+               to the ph
+               interaction vertex. (a) is in the $[14]$ channel and (b) is in
+               $[13]$ channel.}
+      \label{fig:phhigher}
+\end{figure}
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=14cm \epsfbox{ph22.eps}}
+      \end{picture}
+       \caption{Corrections to second order in $V$ of the 2p2h
+               vertex.}
+       \label{fig:pphhvertex}
+\end{figure}
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=14cm \epsfbox{ph21.eps}}
+      \end{picture}
+       \caption{The corrections to second order in $V$ of the 2p1h
+               vertex.}
+       \label{fig:2p1hvertex}
+\end{figure}
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,100)
+      \put(25,0){\epsfxsize=14cm \epsfbox{kirson.eps}}
+      \end{picture}
+       \caption{Examples of diagrams which can arise from the [13] and [14]
+                self-consistent equations.}
+       \label{fig:kirsoniterate}
+\end{figure}
+
+\clearpage 
+\section{Effective interactions for finite nuclei 
+         from Parquet diagrams}
+\label{sec:sec5} 
+
+
+
+\[ 
+      \Gamma= \Gamma^{[ij]}+\Gamma^{[ij]}\hat{{\cal G}}^{[ij]}\Gamma,
+      \label{eq:generalchannel}
+\]\vspace{1cm}
+
+\[
+    L=\Gamma^{[12]}-G_F
+\]\vspace{1cm}
+
+\[
+    L=\Delta G =G-G_F
+\]\vspace{1cm}
+
+\[
+    L=G_F\hat{{\cal G}}^{[12]}G_F+G_F\hat{{\cal G}}^{[12]}L
+    \label{eq:ladder}
+\]\vspace{1cm}
+
+\[
+    R^{[13]}=\Gamma^{[13]}-G_F
+\]\vspace{1cm}
+and 
+\[
+    R^{[14]}=\Gamma^{[14]}-G_F
+\]\vspace{1cm}
+
+\[
+    R^{[ij]}=G_F\hat{{\cal G}}^{[ij]}G_F+G_F\hat{{\cal G}}^{[ij]}R^{[ij]}
+    \label{eq:ring}
+\]\vspace{1cm}
+
+\[
+    \Gamma=G_F+L+R^{[13]}+R^{[14]}
+     \label{eq:gammap}
+\]\vspace{1cm}
+
+\[
+    L=\left(G_F+R^{[13]}+R^{[14]}\right)\hat{{\cal G}}^{[12]}\left(G_F+R^{[13]}+R^{[14]}\right)\]\vspace{1cm}
+\[
+      +\left(G_F+R^{[13]}+R^{[14]}\right)\hat{{\cal G}}^{[12]}L
+    \label{eq:laddernext}
+\]\vspace{1cm}
+
+\[
+    R^{[13]}=\left(G_F+L+R^{[14]}\right)\hat{{\cal G}}^{[13]}
+             \left(G_F+L+R^{[14]}\right) + \]\vspace{1cm}
+\[
+             \left(G_F+L+R^{[14]}\right)\hat{{\cal G}}^{[13]}R^{[14]}
+    \label{eq:ring13next}
+\]\vspace{1cm}
+and
+\[
+    R^{[14]}=\left(G_F+L+R^{[13]}\right)\hat{{\cal G}}^{[14]}
+             \left(G_F+L+R^{[13]}\right) + \]\vspace{1cm}
+\[
+             \left(G_F+L+R^{[13]}\right)\hat{{\cal G}}^{[14]}R^{[14]}
+    \label{eq:ring14next}
+\]\vspace{1cm}
+
+}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+

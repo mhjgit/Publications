@@ -1,0 +1,10 @@
+           implicit real*8(a-h,o-z)
+           parameter (e=-15.8, s=30., gamma=0.5)
+           parameter (delta=0.2, rho0=0.16)
+           erg(x)=e*x*(x-2.-delta)/(1.+delta*x)
+           do i=1,100
+              rho=0.01*i
+              u=rho/rho0
+              WRITE(6,'(2E12.6)') rho, erg(u)
+           enddo
+           end

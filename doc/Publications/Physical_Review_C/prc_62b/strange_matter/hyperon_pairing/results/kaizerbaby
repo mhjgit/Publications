@@ -1,0 +1,45 @@
+From isaac.vidania@fys.uio.no Wed Nov 10 09:11:01 1999
+Return-Path: <isaac.vidania@fys.uio.no>
+Delivery-Date: Wed, 10 Nov 1999 09:11:01 +0100
+Received: from mons.uio.no (actually mons.uio.no [129.240.130.14]) by mons.uio.no with SMTP (PP); Wed, 10 Nov 1999 09:10:40 +0100
+Received: from tid.uio.no ([129.240.84.18] helo=tid) by mons.uio.no with esmtp (Exim 2.12 #6) id 11lSpz-0007KT-00 
+          for m.h.jensen@fys.uio.no; Wed, 10 Nov 1999 09:10:39 +0100
+Received: from kvark.uio.no ([129.240.84.54]) by tid with smtp (Exim 2.12 #6) id 11lSpz-0006Yt-00 for m.h.jensen@fys.uio.no;
+          Wed, 10 Nov 1999 09:10:39 +0100
+Date: Wed, 10 Nov 1999 08:10:39 +0000 ( )
+From: Isaac Vidania <isaac.vidania@fys.uio.no>
+X-Sender: isaacv@kvark.uio.no
+To: Morten Hjort Jensen <m.h.jensen@fys.uio.no>
+Subject: Re: About the Gap of the Sigma (fwd)
+Message-ID: <Pine.LNX.3.95.991110081020.9130A-100000@kvark.uio.no>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+
+
+
+---------- Forwarded message ----------
+Date: Tue, 9 Nov 1999 21:34:44 +0100 (CET)
+From: Hans-Josef Schulze <schulze@ecm.ub.es>
+To: Isaac Vidania <isaac.vidania@fys.uio.no>
+Subject: Re: About the Gap of the Sigma
+
+hola isaac,
+
+the off-diagonal potential elements you gave me are for
+what k_1=fixed?  0.0 or 1.0 fm**-1 ??
+i get the same if i assume 0.0.
+but i also confirm my results for the gap.
+did you actually calculate also the neutron gap with the
+nijmegen e potential? 
+also, i assume you used the sigma mass in the kinetic 
+energy spectrum. in any case that can not make such a big 
+difference. 
+finally, what is the maximum momentum in the discretization
+of the gap equation?
+for the moment i have no other idea.
+hasta manana,
+            hans-josef
+
+
+

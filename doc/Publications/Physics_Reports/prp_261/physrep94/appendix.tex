@@ -1,0 +1,1462 @@
+
+\appendix
+
+
+\section{Evaluation of Feynman-Goldstone diagrams }
+
+
+In this appendix we review first the rules for calculating Feynman-Goldstone
+diagrams in an uncoupled
+representation. Thereafter, we show by way of selected examples how to
+calculate these diagrams in a coupled representation,
+e.g.\ two particles coupled to a final angular momentum $J$.
+Finally,
+we list the one-body and two-body diagrams
+included in our evaluation of the \qbox.
+
+
+
+\subsection{Diagram rules}
+
+A matrix element of an operator ${\cal O}$ 
+in time-dependent perturbation theory may have the
+form
+\begin{equation}
+{\cal O}_{fi} =\bra{C}A_f {\cal O}(0) U(0,-\infty)A_i^{\dagger}\ket{C},
+\end{equation}
+where the time evolution operator $U$ discussed in section 4 is
+\begin{eqnarray}
+   U(t,t')&=\lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+   {\displaystyle\sum_{n=0}^{\infty}\frac{(-i)^n}{n!}
+   \int_{t'}^{t}dt_1  \int_{t'}^{t}dt_2\dots  \int_{t'}^{t}dt_n}
+		\\ \nonumber
+	     &  \times T\left[H_1(t_1)H_1(t_2)\dots H_1(t_n)\right],
+\end{eqnarray}
+In this work we have mainly dealt with a valence-linked expansion, which
+means that an $n$-body valence space wave function is defined through 
+\begin{equation}
+A^{\dagger}\ket{C}=a_1^{\dagger}a_2^{\dagger}\dots a_n^{\dagger}\ket{C},
+\end{equation}
+where $\ket{C}$ refers to e.g.\ a closed $^{16}$O core wave function.
+
+
+The diagrams rules in the uncoupled scheme are rather simple to obtain through
+use of Wicks theorem and the symmetry properties of the interaction
+$V$ or $G$. These rules are rather well-known, see \cite{ko90}, and we will
+simply state them in the following.
+\begin{itemize}
+\item Draw all topological distinct diagrams and for
+each interaction there is an antisymmetrized and normalized matrix element
+\[
+\bra{ab}V\ket{cd}_{AS}=\bra{ab}V\ket{cd}-\bra{ab}V\ket{dc},
+\]
+or in terms of the $G$-matrix
+\[
+\bra{ab}G\ket{cd}_{AS}=\bra{ab}G\ket{cd}-\bra{ab}G\ket{dc}.
+\]
+If not stated differently, througout this work we will always employ
+anti-symmetrized matrix elements, and thence skip the label $AS$.
+
+\item 
+From the time integrations in the time evolution operator we 
+obtain  an energy denominator
+\begin{equation}
+\frac{1}{\omega -(\sum\varepsilon_p -\sum\varepsilon_h )},
+\end{equation}
+between successive interactions. Here $\omega$ is the unperturbed energy
+of the valence particles, or
+the starting energy, and $\sum\varepsilon_p$
+and $\sum\varepsilon_h$ represent the sum over intermediate particle
+and hole sp unperturbed energies between two interactions.
+\item
+By applying Wicks theorem we obtain for each diagram an overall factor
+\begin{equation}
+\frac{\left(-1\right)^{n_h+n_l+n_c+n_{exh}}}{2^{n_{ep}}},
+\label{eq:ovfactor}
+\end{equation}
+where $n_h$ is the number of hole lines in a diagram, $n_l$ is the number 
+of closed loops, $n_c$ is the numbers of crossings of different
+external lines as they trace through the diagram and $n_{exh}$ is the
+number of external hole lines which continuously trace through a diagram.
+Finally, $n_{ep}$ is the number of pairs of lines which start at the same
+interaction and end at the same interaction.
+\end{itemize}
+As an example we list the expressions for the diagrams shown in fig.\
+\ref{fig:uncoupex}.
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,90)
+    \put(25,10){\epsfxsize=12cm \epsfbox{a1fig.eps}}
+   \end{picture}
+\caption{Examples of diagrams which contribute to the
+effective interaction.}
+\label{fig:uncoupex}
+\end{figure}
+Diagram (a), which is the 2p1h diagram, reads
+\begin{equation}
+{\displaystyle
+\frac{1}{2}\sum_{p_1p_2h}\frac{\bra{\alpha h}G
+\ket{p_1p_2}\bra{p_1p_2}G\ket{\beta h}}
+{\varepsilon_{\beta}+\varepsilon_h -\varepsilon_{p_1}-\varepsilon_{p_2}}},
+\label{eq:un2p1h}
+\end{equation}
+where we have $n_h=1$, $n_l=1$, $n_{exh}=0$ and $n_c=0$ giving rise to a factor
+$+1$. Finally, we have two intermediate particle lines which start and end at the
+same interaction, yielding $n_{ep}=1$.
+
+Similarly, diagram (b), the 3p2h diagram, reads
+\begin{equation}
+{\displaystyle
+-\frac{1}{2}\sum_{h_1h_2p}\frac{\bra{\alpha p}G
+\ket{h_1h_2}\bra{h_1h_2}G\ket{\beta p}}
+{\varepsilon_{h_1} +\varepsilon_{h_2}-\varepsilon_{\alpha}-\varepsilon_{p}}},
+\label{eq:un3p2h}
+\end{equation}
+where we have $n_h=2$, $n_l=1$, $n_{exh}=0$ and $n_c=0$ giving rise to a factor
+$-1$. Moreover, we have two intermediate hole lines which start and end at the
+same interaction, yielding $n_{ep}=1$.
+
+For both expressions, we sum freely over the quantum numbers of the intermediate
+states, expressed through the labels $p_{1,2}h$ and $h_{1,2}p$.
+
+For diagram (c), which is the third-order TDA diagram, we have
+\begin{equation}
+{\displaystyle\sum_{p_{1}p_{2}}\sum_{h_{1}h_{2}}}
+\frac{\bra{\alpha p_2}G\ket{\gamma h_2}\bra{h_2p_1}G\ket{p_2h_1}
+\bra{h_1\beta}G\ket{p_1\delta}}
+{(\varepsilon_{\gamma}+\varepsilon_{h_{2}}-\varepsilon_{p_{2}}-\varepsilon_{\alpha})
+(\varepsilon_{\gamma}+\varepsilon_{h_{1}}-
+  \varepsilon_{p_{1}}-\varepsilon_{\alpha})},
+\end{equation}
+where we have $n_h=2$, $n_l=2$ and $n_{ep}=n_{exh}=n_c=0$.
+
+Diagram (d) is a third-order contribution to the hole-hole or
+particle-hole effective interaction and has an external hole which 
+traces through the diagram, i.e.\ $n_{exh}=1$. Moreover, we have
+$n_h=3$, $n_l=2$, $n_c=0$ and $n_{ep}=0$. The final expression in an
+uncoupled scheme is then
+\begin{equation}
+{\displaystyle\sum_{hh_{1}h_{2}}}
+{\displaystyle\sum_{p_{1}p_{2}}}
+\frac{\bra{hh_2}G\ket{\beta p_2}\bra{p_2h_1}G\ket{h_2p_1}
+\bra{\alpha p_1}G\ket{hh_2}}
+{(\varepsilon_{h}+\varepsilon_{h_{1}}-
+\varepsilon_{p_{1}}-\varepsilon_{\alpha})(\varepsilon_{h}+
+\varepsilon_{h_{2}}-\varepsilon_{\alpha}-
+\varepsilon_{p_{2}})}.
+\end{equation}
+
+
+
+The analytical expressions in an angular momentum representation
+for many of the diagrams employed in our definition
+of the \qbox and the effective operator can be
+found in the works of Barrett and Kirson \cite{bk70} and
+Kassis \cite{kassis}, 
+though, here we have used a method
+described by Kuo {\em et al.} \cite{kstop81}. By the use of this method,
+the analytical expressions are in general simpler compared to
+those obtained in the $m-$scheme, and moreover, they are less
+time-consuming from a computational point of view. 
+Since this method is extensively detailed in \cite{kstop81},
+we will not give all details
+in connection with the calculations of the various diagrams of fig.\
+\ref{fig:uncoupex}, though certain basic steps will be presented.
+
+Before we proceed we need to define so-called 
+cross-coupled matrix elements (not normalized) which 
+are defined as\newline
+\begin{eqnarray}
+\bra{(\alpha\rightarrow \gamma)JT}G
+\ket{(\beta\rightarrow \delta)JT}=&(-)^{j_{\beta}+j_{\delta}+J+T}
+\sqrt{(1+\delta_{j_{\alpha}j_{\beta}})(1+\delta_{j_{\gamma}j_{\delta}})}
+\hat{J}\hat{T}\nonumber\\&
+\times
+{\displaystyle \sum_{J',T'}}
+\left\{
+\begin{array}{ccc}
+       j_{\alpha}&j_{\gamma}&J\\j_{\delta}&j_{\beta}&J'
+\end{array}
+\right\}
+\left\{
+\begin{array}{ccc}
+       \frac{1}{2}&\frac{1}{2}&T\\ \frac{1}{2}&\frac{1}{2}&T'
+\end{array}
+\right\}\nonumber\\& \times
+(2J'+1)(2T'+1)
+\bra{(\alpha\beta)J'T'}G\ket{(\delta\gamma)J'T'}
+\label{eq:cross}
+\end{eqnarray}
+
+The normalized two-body wave function $\ket{(\alpha\beta)J}$ (omitting isospin)
+in the above equation is given as
+\begin{equation}
+  \ket{(\alpha\beta)J}=\ket{(\alpha\beta)JM}=
+  \frac{1}{\sqrt{1+\delta_{j_{\alpha}j_{\beta}}}}
+  {\displaystyle \sum_{m_{\alpha} m_{\beta}}
+  {\cal C}_{m_{\alpha}m_{\beta}M}^{j_{\alpha} j_{\beta} J}
+  \ket{(j_{\alpha}m_{\alpha})(j_{\beta}m_{\beta})}},
+  \label{eq:twobodywf}
+\end{equation}
+where $j_{\alpha ,\beta}$ and $m_{\alpha ,\beta}$
+are the quantum numbers defining  a sp state and
+${\cal C}$
+is a standard Clebsch-Gordan coefficient defined according to the
+Condon-Shortley phase convention. Both the two-body wave function and the
+sp wave function transform under rotations as a spherical tensor.
+In fig.\ \ref{fig:crosscouple} we show in terms of diagrams the meaning of
+the coupling orders
+$\bra{(\alpha\rightarrow \gamma)JT}G\ket{(\beta\rightarrow \delta)JT}$ and
+$\bra{(\alpha\beta )JT}G\ket{(\gamma\delta )JT}$.
+Eq.\ (\ref{eq:cross}) is just an example of one possible recoupling, another
+possible recoupling
+is
+\newline
+\begin{eqnarray}
+\bra{(\alpha\rightarrow \delta)JT}G
+\ket{(\beta\rightarrow \gamma)JT}=&(-)^{j_{\beta}+j_{\delta}+J+T}
+\sqrt{(1+\delta_{j_{\alpha}j_{\beta}})(1+\delta_{j_{\gamma}j_{\delta}})}
+\hat{J}\hat{T}\nonumber\\&
+\times
+{\displaystyle \sum_{J',T'}}
+\left\{
+\begin{array}{ccc}
+       j_{\alpha}&j_{\delta}&J\\j_{\gamma}&j_{\beta}&J'
+\end{array}
+\right\}
+\left\{
+\begin{array}{ccc}
+       \frac{1}{2}&\frac{1}{2}&T\\ \frac{1}{2}&\frac{1}{2}&T'
+\end{array}
+\right\}\nonumber\\& \times
+(2J'+1)(2T'+1)(-)^{J'+T'}
+\bra{(\alpha\beta)J'T'}G\ket{(\delta\gamma)J'T'}
+\label{eq:cross2}
+\end{eqnarray}
+
+\begin{figure}[hbtp]
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(80,80)
+   \put(25,10){\epsfxsize=8cm \epsfbox{recouple.eps}}
+   \end{picture}
+\caption{The two-body matrix element coupled
+according to $\bra{(\alpha\rightarrow \gamma )JT}G
+\ket{(\beta\rightarrow \delta )JT}$
+is shown in (a) while (b)
+represents the matrix element
+$\bra{(\alpha\beta )JT}G\ket{(\gamma\delta )JT}$.}
+\label{fig:crosscouple}
+\end{figure}
+To illustrate the advantages of this method we present the
+analytical expressions for the diagrams of fig.\ \ref{fig:uncoupex}.
+
+In brief, the essence of the method of ref.\ 
+\cite{kstop81},
+for evaluating Goldstone diagrams 
+in a coupled basis, is to rewrite  a diagram (or parts of a
+diagram) into ladder forms, by opening selected internal lines. An internal line
+consists of two pieces, an incoming and an outgoing one, which are coupled to 
+a scalar. This coupling can be broken by a suitable recoupling transformation, and
+the technique is to cut the ``correct'' internal line in order to factorize the
+diagram into the form of a ladder diagram. To illustrate this, consider first the 
+2p1h diagram of fig.\ \ref{fig:uncoupex}, diagram (a). 
+First we couple the external lines
+to a scalar, as shown in step (a) of fig.\ \ref{fig:2p1hex}. Note that the external
+lines are coupled to zero total momentum. 
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,90)
+     \put(25,10){\epsfxsize=12cm \epsfbox{a3fig.eps}}
+    \end{picture}
+\caption{Various recouplings for the 2p1h diagram.}
+\label{fig:2p1hex}
+\end{figure}
+This gives rise to a factor
+$\frac{1}{\hat{j}_{\alpha}}$ for angular momentum 
+and $\frac{1}{\sqrt{2}}$ for isospin. In our angular momentum
+conventions, see eq.\  (\ref{eq:cross}) and fig.\ \ref{fig:crosscouple}, we let 
+angular momentum couplings run from an outgoing line to an ingoing line, opposite to what
+is done in ref.\ \cite{kstop81}. Next we cut open the internal hole line labeled $h$, as shown
+in (b) of fig.\ \ref{fig:2p1hex}. For the internal lines we obtain a factor
+$\hat{j}_h$ for angular momentum 
+and $\sqrt{2}$ for isospin, see eq.\ (45) of ref.\  
+\cite{kstop81}. Finally, we recouple this diagram as shown in
+(c) of fig.\ \ref{fig:2p1hex}. The latter is clearly in a ladder form and its 
+angular momentum part reads (omitting isospin) 
+\begin{equation}
+(a)= \frac{1}{\hat{j}_{\alpha}}\hat{j}_h\sum_{J}\hat{J}^2
+\left\{
+\begin{array}{ccc}
+      j_{\alpha}&j_{\alpha}&0\\j_h&j_h&0\\J&J&0
+\end{array}
+\right\}
+\bra{(\alpha h)J}G
+\ket{(p_1p_2)J}\bra{(p_1p_2)J}G\ket{(\beta h)J},
+\end{equation}
+which reduces to,
+using the properties of the Wigner $9j$ symbols,
+\begin{equation}
+(a)= \frac{1}{\hat{j}_{\alpha}^2}\sum_{J}\hat{J}^2
+\bra{(\alpha h)J}G
+\ket{(p_1p_2)J}\bra{(p_1p_2)J}G\ket{(\beta h)J}.
+\end{equation}
+We can then write out the final expression for the 
+2p1h diagram (including isospin) as
+\begin{equation}
+     (a)= \frac{1}{4\hat{j}_{\alpha}^2}\sum_{JT}\hat{J}^2\hat{T}^2
+     \frac{\bra{(\alpha h)JT}G(\omega_1)
+     \ket{(p_1p_2)JT}\bra{(p_1p_2)JT}G(\omega_2)\ket{(\beta h)JT}}
+     {\varepsilon_{\beta} +\varepsilon_h -\varepsilon_{p_1}-\varepsilon_{p_2}}.
+\end{equation}
+In this equation we have also introduced the energy dependent $G$-matrix
+(recall the discussion in section 5), through the variables $\omega_1$ 
+and $\omega_2$. This is due to the fact that the various interactions
+have starting energies which need not coincide with those of the model
+space states. In the above, $\omega_1= \varepsilon_{\beta}+\varepsilon_h$
+and $\omega_2= \varepsilon_{\beta}+\varepsilon_h$, which, unless
+$\varepsilon_h=0$ differs from the model space energies
+$\varepsilon_{\alpha ,\beta}$. As the $G$-matrix becomes weaker for more
+negative starting energies, the energy dependence of the $G$-matrix serves
+to reduce the magnitude of higher order contributions.
+
+The expression for the 3p2h diagram in fig.\ \ref{fig:uncoupex} can be obtained
+in a similar manner as the 2p1h diagram. Here we cut open the internal particle
+line and obtain
+\begin{equation}
+    (b)= -\frac{1}{4\hat{j}_{\alpha}^2}\sum_{JT}\hat{J}^2\hat{T}^2
+    \frac{\bra{(\alpha p)JT}G(\omega_1)
+    \ket{(h_1h_2)JT}\bra{(h_1h_2)JT}G(\omega_2)\ket{(\beta p)JT}}
+    {\varepsilon_{h_1} +\varepsilon_{h_2} -\varepsilon_p-\varepsilon_{\alpha}}.
+\end{equation}
+Here we have $\omega_1= \varepsilon_{h_1}+\varepsilon_{h_2}$
+and $\omega_2= \varepsilon_{h_1}+\varepsilon_{h_2}
++\varepsilon_{\beta}-\varepsilon_{\alpha}$.
+
+
+
+Diagram (c) of fig.\ \ref{fig:uncoupex}, the third-order TDA diagram, 
+can be recoupled
+to give the diagram (b) in fig.\ \ref{fig:tdadiag}. 
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+     \begin{picture}(140,90)
+      \put(25,10){\epsfxsize=12cm \epsfbox{tda.eps}}
+     \end{picture}
+\caption{The TDA diagram (a) can be recoupled  as shown in (b).}
+\label{fig:tdadiag}
+\end{figure}
+This recoupling gives rise to the following angular momentum relation
+(omitting isospin) \newline
+\begin{equation}
+\bra{(\alpha\beta)J}TDA\ket{(\gamma\delta)J}=
+(2J+1)\sum_{J'}(2J'+1)
+\left\{
+\begin{array}{ccc}
+      j_{\alpha}&j_{\beta}&J\\j_{\gamma}&j_{\delta}&J\\J'&J'&0
+\end{array}
+\right\}
+\bra{(\alpha\rightarrow \gamma)J'}TDA
+\ket{(\beta\rightarrow \delta)J'}.
+\end{equation}
+TDA in the above expressions stands for all three interactions.
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,120)
+     \put(25,10){\epsfxsize=12cm \epsfbox{a5fig.eps}}
+     \end{picture}
+\caption{Various recouplings for the third-order TDA diagram. See text for further
+details.}
+\label{fig:tdaex}
+\end{figure}
+The next step is to cut open the internal particle-hole pairs, as shown
+in (a) of fig.\ \ref{fig:tdaex}. This gives an additional factor $(-)^{2j_h}$ for every 
+internal particle-hole pair which is cut open \cite{kstop81}, though this factor
+reduces to $+1$ when we introduce isospin. We are then left with three
+crosscoupled matrix elements defined according to eq.\ (\ref{eq:cross}) and shown 
+in (b) of fig.\ \ref{fig:tdaex}.
+The final expression for the TDA diagram (including isospin)
+is then given by
+\begin{eqnarray}
+&{\displaystyle \frac{1}
+{\sqrt{(1+\delta_{j_{\alpha}j_{\beta}})(1+\delta_{j_{\gamma}j_{\delta}})}}}
+{\displaystyle\sum_{p_{1},p_{2},h_{1},h_{2}}^{}}
+{\displaystyle\sum_{J',T'}^{}}
+\left\{
+\begin{array}{ccc}
+      j_{\alpha}&j_{\beta}&J\\j_{\delta}&j_{\gamma}&J'
+\end{array}
+\right\}
+\left\{
+\begin{array}{ccc}
+\frac{1}{2}&\frac{1}{2}&T\\\frac{1}{2}&\frac{1}{2}&T'
+\end{array}
+\right\}\nonumber\\
+&\nonumber\\&\times{\displaystyle
+\frac{(-)^{j_{\beta}+j_{\gamma}+1+J+J'+T+T'}}
+{\hat{J}'\hat{T}'}}
+\left\{(\omega+\varepsilon_{h_{2}}-\varepsilon_{p_{2}}-\varepsilon_{\delta})
+(\omega+\varepsilon_{h_{1}}-
+  \varepsilon_{p_{1}}-\varepsilon_{\delta})\right\}^{-1}
+\nonumber\\&\nonumber
+\\
+&\times\bra{(\alpha\rightarrow \gamma)J'T'}G(\omega_{1})
+ \ket{(p_2\rightarrow h_2)J'T'}
+ \bra{(h_2\leftarrow p_2)J'T'}G(\omega_{2})
+ \ket{(p_1\rightarrow h_1)J'T'} \nonumber\\&\nonumber \\
+&\times\bra{(h_1\leftarrow p_1)J'T'}G(\omega_{3})
+\ket{(\beta\rightarrow \delta)J'T'}
+\label{eq:tda}
+\end{eqnarray}
+where $\omega=\varepsilon_{\gamma}+\varepsilon_{\delta}$
+and the energy variables are
+$\omega_{1}=\omega+\varepsilon_{h_{2}}-\varepsilon_{\delta}$,
+ $\omega_{2}=\omega+\varepsilon_{h_{1}}+
+\varepsilon_{h_{2}}-\varepsilon_{\alpha}-\varepsilon_{\delta}$ and
+$\omega_{3}=\omega+\varepsilon_{h_{1}}-\varepsilon_{\delta}$.
+We finally note that, compared to the
+expression presented by Barrett and Kirson
+\cite{bk70}, diagram 15 in their appendix, the number of
+summations is reduced by a factor of two, and the
+number of $6j$ coefficients are reduced from eight to
+two in eq.\ (\ref{eq:tda}).
+Furthermore, the cross-coupled matrix elements can be calculated
+once and for all.
+
+To calculate diagram (d) of fig.\ \ref{fig:uncoupex}, we proceed in 
+a similar way as for the 2p1h diagram. 
+We first recouple the external lines 
+to a scalar, thereafter we recouple the
+external lines to the internal hole line labelled $h$. The next step
+is to cut open the internal particle-hole pairs, and finally 
+we are left with three cross-coupled matrix elements of the type defined in 
+eq.\ (\ref{eq:cross}). 
+The final expression for diagram (d) is then
+\begin{equation}
+\begin{array}{ll}
+(a)=&{\displaystyle\sum_{JT}}
+{\displaystyle\sum_{hh_{1}h_{2}}}
+{\displaystyle\sum_{p_{1}p_{2}}}
+\frac{1}{\hat{J}\hat{T}2\hat{j}_{\beta}^2}
+\left((\varepsilon_{h}+\varepsilon_{h_{1}}-
+\varepsilon_{p_{1}}-\varepsilon_{\alpha})(\varepsilon_{h}+
+\varepsilon_{h_{2}}-\varepsilon_{\alpha}-
+\varepsilon_{p_{2}})\right)^{-1}\\
+&\\
+&\times\bra{(\alpha\rightarrow h)JT}G(\omega_{1})
+       \ket{(p_1\rightarrow h_1)JT}
+       \bra{(p_{2}\rightarrow h_{2})JT}G(\omega_{2})
+       \ket{(h_{1}\leftarrow p_{1})JT} \\
+&\\
+&\times
+       \bra{(h\leftarrow \beta)JT}G(\omega_{3})
+       \ket{(h_2\leftarrow p_{2})JT},\\
+&\\
+\end{array}
+\end{equation}
+with the starting energies given by
+\[
+\begin{array}{ll}
+\omega_{1}=&\varepsilon_{h_{1}}+\varepsilon_{h}\\
+\omega_{2}=&\varepsilon_{h_{1}}+\varepsilon_{h}+
+\varepsilon_{h_{2}}-\varepsilon_{\alpha}\\
+\omega_{3}=&\varepsilon_{h_{2}}+\varepsilon_{h}+
+\varepsilon_{\beta}-\varepsilon_{\alpha},
+\end{array}
+\]
+
+
+
+
+\subsection{List of Goldstone diagrams}
+
+The one-body and two-body linked-valence diagrams through third
+order included in the evaluation of
+the $\hat{Q}$-box are shown in
+figs.\ \ref{fig:onebody} and \ref{fig:twobody}, respectively.
+Each topology is a sum of one to four diagrams, the one given in
+figs.\ \ref{fig:onebody}  and  \ref{fig:twobody}
+plus all those that can be obtained through the
+exchange of the external pairs of lines. 
+We omit
+diagrams involving Hartree-Fock contributions.
+
+Many of the third-order two-body diagrams give rise to
+non-hermitian contributions
+to the effective interaction. However, these diagrams are
+generally followed by similar diagrams, and the sum of the first
+diagram and its "companion" results in a hermitian contribution.
+The first of these diagrams is then labeled with an (A) and the
+second with a (B) in figure \ref{fig:twobody}.
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+    \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{onebd1.eps}}
+    \end{picture}
+\caption{One-body Goldstone diagrams without a spectator valence line
+included in the evaluation of the \qbox .}
+\label{fig:onebody}
+\end{figure}
+
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{onebd2.eps}}
+     \end{picture}
+\begin{center}{Fig.\ \ref{fig:onebody} - continued}\end{center}
+\end{figure}
+
+
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{onebd3.eps}}
+     \end{picture}
+\begin{center}{Fig.\ \ref{fig:onebody} - continued}\end{center}
+\end{figure}
+
+
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{twobd1.eps}}
+   \end{picture}
+\caption{Two-body Goldstone diagrams
+included in the evaluation of the \qbox .}
+\label{fig:twobody}
+\end{figure}
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{twobd2.eps}}
+   \end{picture}
+\begin{center}{Fig.\ \ref{fig:twobody} - continued}\end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{twobd3.eps}}
+   \end{picture}
+\begin{center}{Fig.\ \ref{fig:twobody} - continued}\end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{twobd4.eps}}
+   \end{picture}
+\begin{center}{Fig.\ \ref{fig:twobody} - continued}\end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{twobd5.eps}}
+   \end{picture}
+\begin{center}{Fig.\ \ref{fig:twobody} - continued}\end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(140,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{twobd6.eps}}
+   \end{picture}
+\begin{center}{Fig.\ \ref{fig:twobody} - continued}\end{center}
+\end{figure}
+
+
+\clearpage
+
+
+\section{Numerical evaluation of the $T$-matrix and the $G$-matrix}
+
+In this section we outline how to calculate the $G$-matrix for nuclear
+matter, the $G_F$-matrix used in the evaluation of the $G$-matrix
+for finite nuclei and the $T$-matrix through matrix inversion.
+
+Let us first consider uncoupled channels, e.g.\ the $^1S_0$ partial wave.
+The one-dimensional equation for either the $G$-matrix or the $T$-matrix
+can be written as 
+\begin{equation}
+     G(kk'K) = V(kk'K)- \int_0 ^{\infty} F(kqK)G(qk'K)dq,
+\end{equation}
+where
+\begin{equation}
+    F(kqK) =\frac{2}{\pi} q^2\frac{V(kqK)Q(qK)}{q^2 - \omega -K^2}.
+\end{equation}
+For nuclear matter we have that the Pauli operator $Q$ is given by the
+angle-average BHF operator discussed in subsection 5.3. For finite nuclei
+we set $Q=1$, since we are only interested in the so-called free $G$-matrix
+$G_F$. The equation for $G_F$ differs however from that of the $T$-matrix,
+which also employs $Q=1$, in the choice of starting energy. For $G_F$ the
+starting energy is negative, whereas for $T$ it is positive. The above is 
+an integral equation in the relative momentum $k$, and the $G$- or $T$-matrices
+are defined for a given center-of-mass momentum $K$. Below we will skip 
+this variable. We assume also that $G$, $V$ and $Q$ are continuous in $k$
+and that their derivatives are also continuous. Further, we expect high-lying
+momenta to play a negligible role due to the denominator in $F$, and 
+replace then the infinity limit with a finite value of $q$. In this way we
+can solve our problem numerically and rewrite the equation for $G$ as  
+\begin{equation} 
+\label{eq:numintegral}
+   G(k_i,k_j)  =  V(k_i,k_j)- \sum _{n=1} ^N F(k_i,k_n)G(k_n,k_j)w_n.
+\end{equation}  
+The numerical integration is done by using Gaussian points $k_i$ and weights
+$w_i$ 
+\begin{eqnarray}  
+\label{eq:gaussavb}
+k_i & = C \tan(\frac{(1+x_i)\pi }{4}) \\
+w_i & = C v_i\frac{\pi}{4} \cos^{-2} (\frac{(1+x_i)\pi }{4}),  \nonumber
+\end{eqnarray}                                          
+where $-1\leq x \leq 1$ and $C$ is a constant chosen so as to optimize
+the numerical grid. It is convenient to define $G$, $F$ and $V$ as $N\times N$
+matrices in $k$-space ($N$ is the number of mesh points)
+$F_{ij}=F(k_i,k_j)w_j$, $V_{ij}=V(k_i,k_j)$ and
+$G_{ij}=G(k_i,k_j)$. This allows us to rewrite the equation for $G$ as a
+matrix equation 
+\begin{eqnarray}
+\left( \begin{array}{cccc}
+G_{11} & G_{12} &  \cdots &  G_{1N} \\
+G_{21} & G_{22} &  \cdots &  G_{2N} \\
+\vdots & \vdots &         & \vdots  \\
+G_{N1} & G_{N2} &  \cdots &   G_{NN}   
+\end{array} \right )
+& = &  
+\left( \begin{array}{cccc}
+V_{11} & V_{12} & \cdots  &  V_{1N} \\
+V_{21} & V_{22} & \cdots   &  V_{2N} \\
+\vdots & \vdots &         & \vdots  \\
+V_{N1} & V_{N2} & \cdots  &  V_{NN}   
+\end{array} \right ) \nonumber  
+\\ 
+& - &
+\left( \begin{array}{cccc}
+F_{11} & F_{12} & \cdots  & F_{1N} \\
+F_{21} & F_{22} & \cdots  & F_{2N} \\
+\vdots & \vdots &         & \vdots \\
+F_{N1} & F_{N2} & \cdots  & F_{NN}   
+\end{array} \right )
+\left( \begin{array}{cccc}
+G_{11} & G_{12} &  \cdots &  G_{1N} \\
+G_{21} & G_{22} &  \cdots &  G_{2N} \\
+\vdots & \vdots &         & \vdots  \\
+G_{N1} & G_{N2} &  \cdots &   G_{NN}   
+\end{array} \right ).
+\end{eqnarray}
+or in a more compact form
+\begin{eqnarray}
+ {\bf G}  & = & {\bf V} - {\bf F}{\bf G}  \nonumber \\
+({\bf \hat{1}} +{\bf F}) {\bf G}& = & {\bf V} \nonumber \\
+{\bf G} & = & ({\bf \hat{1} +F})^{-1} {\bf V }.
+\end{eqnarray}                                                                        
+The $G$-matrix can now be obtained for a given starting energy
+and relative momenta by inverting a matrix 
+$({\bf \hat{1} +F})$ with the following matrix elements
+\[
+\delta _{ij} + \frac{2}{\pi}V_{ij}\frac{Q_j}{ k_j ^2-\omega }  k_j ^2 w_j.
+\] 
+Hitherto we have only considered uncoupled partial waves, though the extension
+to coupled channels is easily accomplished by defining a $2N\times 2N$ matrix
+$G_{ll'}$ (this matrix represents   
+$G^{\alpha}_{ll'}(k_ik_jK\omega)$) 
+The couplings between various angular momenta are then accounted through the
+solution of 
+\begin{equation}
+\label{eq:matrlign}           
+\left( \begin{array}{lr}
+G_{ll}  & G_{ll'} \\
+G_{l'l} & G_{l'l'} 
+\end{array} \right)
+=
+\left( \begin{array}{lr}
+V_{ll}   & V_{ll'} \\
+V_{l'l}  & V_{l'l'} 
+\end{array} \right)
+-
+\left( \begin{array}{lr}
+F_{ll}  & F_{ll'} \\
+F_{l'l} & F_{l'l'} 
+\end{array} \right)
+\left( \begin{array}{lr}
+G_{ll}  & G_{ll'} \\
+G_{l'l} & G_{l'l'} 
+\end{array} \right),
+\end{equation}
+which means that we need to invert a $(2N\times 2N)$-matrix.
+As an example, consider the $^3S_1$-$^3D_1$ channel. There we have four
+different $G$-matrices, given by the partial wave combinations
+$^3S_1$-$^3S_1$, $^3S_1$-$^3D_1$, $^3D_1$-$^3S_1$ and $^3D_1$-$^3D_1$.
+
+A numerical stable and accurate (to 5--6 leading digits)
+result for both $G$ in nuclear matter and $G_F$ for finite
+nuclei is obtained using $40-50$ mesh points.
+The above method is rather  simple and efficient to implement 
+numerically, and is used in our computation of $G$.
+
+\clearpage
+
+\section{List of two-body matrix elements}
+We list here the matrix elements for the various mass areas
+discussed in the text. These matrix elements have been obtained
+with the Bonn A, B and C potentials of table A.1 of ref.\
+\cite{mac89}. The folded-diagram method with a 
+third-order \qbox has been used. For the tin isotopes we list only the $T=1$
+results obtained with the Bonn A potential.
+In tables \ref{tab:sdveff} and \ref{tab:fpveff} we list also the
+empirically derived matrix elements of Brown and co-workers
+\cite{brown88,richt91}. Although our matrix elements and those
+of refs.\ \cite{brown88,richt91} are not directly 
+comparable (this is due to the fact that the empirical 
+matrix elements may contain intruder state components since 
+a fit was made to the available data), we see from these tables that the
+differences are rather small, especially in the
+$fp$-shell where they are on the order of some few keV only. For the
+$fp$-shell, we find, without accounting for differences
+in sp energies, an average difference between the matrix elements
+with the Bonn C potential and the matrix elements of Richter
+{\em et al.} of $125$ keV.
+For the $fp$-shell, we choose to compare with the
+interaction labelled $FPMI3$.
+
+The reader should note that the authors of refs.\ \cite{brown88,richt91}
+use slightly different sp energies. These are
+$\varepsilon_{0d_{5/2}}=-3.9478$ MeV,
+$\varepsilon_{1s_{1/2}}=-3.1635$ MeV,
+$\varepsilon_{0d_{3/2}}=1.6466$ MeV for the $sd$-shell \cite{brown88},
+and 
+$\varepsilon_{0f_{7/2}}=-8.3637$ MeV,
+$\varepsilon_{0f_{5/2}}=-2.1539$ MeV,
+$\varepsilon_{1p_{3/2}}=-6.3325$ MeV,
+$\varepsilon_{1p_{1/2}}=-4.4068$ MeV for the
+$fp$-shell \cite{richt91}.
+These should be compared to those used in this work 
+$\varepsilon_{0d_{5/2}}=-4.14$ MeV,
+$\varepsilon_{1s_{1/2}}=-3.27$ MeV,
+$\varepsilon_{0d_{3/2}}=0.94$ MeV for the $sd$-shell,
+and 
+$\varepsilon_{0f_{7/2}}=-8.36$ MeV,
+$\varepsilon_{0f_{5/2}}=-1.86$ MeV,
+$\varepsilon_{1p_{3/2}}=-6.26$ MeV,
+$\varepsilon_{1p_{1/2}}=-4.46$ MeV for the
+$fp$-shell. 
+
+Finally, in table \ref{tab:tins}, we list the effective $T=1$
+interactions
+for the light tin isotopes discussed in section 6.5\footnote{For
+all mass areas except the $sd$-shell, there are more than
+hundred matrix elements. A more convenient listing of the various
+effective interactions can be obtained through electronic
+post to one of us (MHJ) at mhjensen@fys.uio.no (internet).}.
+
+\begin{table}[hbtp]
+\caption{The $sd$-shell two-body effective interactions with $^{16}$O as core.
+The labels A, B and C refer to the results with the Bonn A, B and
+C potentials. Emp are the matrix elements of Brown {\em et al.},
+see ref.\ [73]. 
+All entries in MeV.}
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}\\\hline
+  5& 5& 5& 5& 0& 2& -1.4315& -1.1773& -1.0001&-1.6321\\
+  5& 5& 5& 3& 0& 2&  3.1790&  3.0167&  2.8543&2.5435\\
+  5& 5& 3& 3& 0& 2&  1.7666&  1.6503&  1.5547&.7221\\
+  5& 5& 3& 1& 0& 2&   .3628&   .3187&   .2922&1.1026\\
+  5& 5& 1& 1& 0& 2&  -.8749&  -.8103&  -.7593&-1.1756\\
+  5& 3& 5& 3& 0& 2& -6.5104& -6.1933& -5.8803&-6.5058\\
+  5& 3& 3& 3& 0& 2&  -.0200&   .0811&   .1523&.5647\\
+  5& 3& 3& 1& 0& 2&  1.7250&  1.7993&  1.8374&1.7080\\
+  5& 3& 1& 1& 0& 2&  1.8887&  1.8113&  1.7418&2.1042\\
+  3& 3& 3& 3& 0& 2& -1.3404& -1.1359&  -.9805&-1.4151\\
+  3& 3& 3& 1& 0& 2&  -.8402&  -.8319&  -.8360&-.3983\\
+  3& 3& 1& 1& 0& 2&   .0405&   .0048&  -.0171&.0275\\
+  3& 1& 3& 1& 0& 2& -3.3056& -3.2149& -3.1355&-4.2930\\
+  3& 1& 1& 1& 0& 2&  -.2441&  -.3513&  -.4181&-1.2501\\
+  1& 1& 1& 1& 0& 2& -3.3313& -3.1451& -2.9803&-3.2628\\
+  5& 3& 5& 3& 0& 4& -4.5004& -4.3628& -4.2156&-3.8253\\
+  5& 3& 5& 1& 0& 4& -1.2555& -1.1941& -1.1508&-.0968\\
+  5& 3& 3& 1& 0& 4& -1.4793& -1.4065& -1.3542&-.2832\\
+  5& 1& 5& 1& 0& 4&  -.4109&  -.3142&  -.2632&-1.4474\\
+  5& 1& 3& 1& 0& 4& -2.7050& -2.6508& -2.5870&-2.0664\\
+  3& 1& 3& 1& 0& 4& -1.3883& -1.2959& -1.2283&-1.8194\\
+  5& 5& 5& 5& 0& 6&  -.8478&  -.7239&  -.6200&-1.5012\\
+  5& 5& 5& 3& 0& 6&  2.1769&  2.0897&  1.9916&2.2216\\
+  5& 5& 5& 1& 0& 6& -1.4992& -1.4574& -1.4132&-1.2420\\
+  5& 5& 3& 3& 0& 6&   .8466&   .7837&   .7291&1.8949\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:sdveff}
+\end{table}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}\\\hline
+  5& 3& 5& 3& 0& 6& -1.0712&  -.9881&  -.9042&-.5377\\
+  5& 3& 5& 1& 0& 6&  1.0367&  1.0201&   .9982&1.2032\\
+  5& 3& 3& 3& 0& 6&  2.1625&  2.1363&  2.0980&2.0337\\
+  5& 1& 5& 1& 0& 6& -3.6000& -3.4532& -3.2943&-3.8598\\
+  5& 1& 3& 3& 0& 6&   .1668&   .1476&   .1331&.1887\\
+  3& 3& 3& 3& 0& 6& -2.9026& -2.7918& -2.6684&-2.8842\\
+  5& 3& 5& 3& 0& 8& -4.4330& -4.2504& -4.0678&-4.5062\\
+  5& 5& 5& 5& 0&10& -3.6858& -3.5261& -3.3532&-4.2256\\
+  5& 5& 5& 5& 2& 0& -2.5418& -2.4640& -2.4660&-2.8197\\
+  5& 5& 3& 3& 2& 0& -2.9807& -2.9531& -2.9448&-3.1856\\
+  5& 5& 1& 1& 2& 0& -1.0885& -1.0542& -1.0407&-1.3247\\
+  3& 3& 3& 3& 2& 0& -1.1624& -1.1046& -1.1095&-2.1845\\
+  3& 3& 1& 1& 2& 0&  -.7911&  -.7734&  -.7684&-1.0835\\
+  1& 1& 1& 1& 2& 0& -2.0617& -1.9866& -1.9592&-2.1246\\
+  5& 3& 5& 3& 2& 2&  -.4249&  -.3983&  -.4008&1.0334\\
+  5& 3& 3& 1& 2& 2&  -.0304&  -.0148&  -.0079&-.1874\\
+  3& 1& 3& 1& 2& 2&   .3994&   .3767&   .3343&.6066\\
+  5& 5& 5& 5& 2& 4&  -.9932&  -.9857&  -.9906&-1.0020\\
+  5& 5& 5& 3& 2& 4&  -.1394&  -.1530&  -.1706&-.2828\\
+  5& 5& 5& 1& 2& 4&  -.7957&  -.7790&  -.7635&-.8616\\
+  5& 5& 3& 3& 2& 4&  -.9399&  -.9271&  -.9122&-1.6221\\
+  5& 5& 3& 1& 2& 4&   .8477&   .8240&   .8025&.6198\\
+  5& 3& 5& 3& 2& 4&  -.4043&  -.3996&  -.4092&-.3248\\
+  5& 3& 5& 1& 2& 4&  -.2469&  -.2297&  -.2263&-.4770\\
+  5& 3& 3& 3& 2& 4&  -.9871&  -.9573&  -.9317&-.6149\\
+  5& 3& 3& 1& 2& 4&   .6449&   .6358&   .6235&.5247\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:sdveff} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}\\\hline
+  5& 1& 5& 1& 2& 4& -1.2335& -1.2159& -1.2084&-.8183\\
+  5& 1& 3& 3& 2& 4&  -.6317&  -.6087&  -.5940&-.4041\\
+  5& 1& 3& 1& 2& 4&  1.4633&  1.4327&  1.3981&1.9410\\
+  3& 3& 3& 3& 2& 4&   .1427&   .1041&   .0663&-0.0665\\
+  3& 3& 3& 1& 2& 4&   .1787&   .1753&   .1761&.5154\\
+  3& 1& 3& 1& 2& 4&  -.2767&  -.2791&  -.2955&-.4064\\
+  5& 3& 5& 3& 2& 6&   .5050&   .4364&   .3750&.5898\\
+  5& 3& 5& 1& 2& 6&  -.1021&  -.1046&  -.0974&-.6741\\
+  5& 1& 5& 1& 2& 6&   .2781&   .2565&   .2223&.7626\\
+  5& 5& 5& 5& 2& 8&   .0356&   .0026&  -.0290&-.1641\\
+  5& 5& 5& 3& 2& 8& -1.4942& -1.4410& -1.3867&-1.2363\\
+  5& 3& 5& 3& 2& 8& -1.6941& -1.6455& -1.6074&-1.4497\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:sdveff} - continued}\end{center}
+
+\clearpage
+
+
+
+\begin{table}[hbtp]
+\caption{The $fp$-shell two-body effective interactions 
+with $^{40}$Ca as core.
+The labels A, B and C refer to the results with the Bonn A, B and
+C potentials. Emp are the matrix elements of Richter {\em et al.},
+see ref.\ [84].
+All entries in MeV.}
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}
+\\\hline
+  7& 7& 7& 7& 0& 2& -1.3648& -1.1529&  -.9966&  -.7676\\
+  7& 7& 7& 5& 0& 2&  2.0982&  1.9577&  1.8225&  1.8940\\
+  7& 7& 5& 5& 0& 2&  1.0393&   .9626&   .9023&  1.0710\\
+  7& 7& 5& 3& 0& 2&   .1409&   .1143&   .1006&   .2270\\
+  7& 7& 3& 3& 0& 2&  -.6701&  -.6089&  -.5563&  -.4268\\
+  7& 7& 3& 1& 0& 2&   .5128&   .4685&   .4280&   .3920\\
+  7& 7& 1& 1& 0& 2&   .1302&   .1042&   .0877&   .1840\\
+  7& 5& 7& 5& 0& 2& -5.3926& -5.0793& -4.7837& -3.7062\\
+  7& 5& 5& 5& 0& 2&  -.5502&  -.4528&  -.3718&  -.4160\\
+  7& 5& 5& 3& 0& 2&  1.3780&  1.4309&  1.4515&   .9530\\
+  7& 5& 3& 3& 0& 2&   .9914&   .9209&   .8550&   .8710\\
+  7& 5& 3& 1& 0& 2& -1.8391& -1.7577& -1.6710& -1.4490\\
+  7& 5& 1& 1& 0& 2&   .1946&   .2316&   .2549&   .1680\\
+  5& 5& 5& 5& 0& 2& -1.0273&  -.8585&  -.7368&  -.0120\\
+  5& 5& 5& 3& 0& 2&  -.3557&  -.3481&  -.3505&  -.2920\\
+  5& 5& 3& 3& 0& 2&   .0568&   .0287&   .0101&   .0400\\
+  5& 5& 3& 1& 0& 2&  -.1239&  -.0882&  -.0614&  -.1590\\
+  5& 5& 1& 1& 0& 2&  -.2665&  -.2411&  -.2266&  -.0840\\
+  5& 3& 5& 3& 0& 2& -2.6432& -2.5716& -2.5208& -2.1727\\
+  5& 3& 3& 3& 0& 2&  -.1029&  -.1470&  -.1642&  -.0730\\
+  5& 3& 3& 1& 0& 2&   .8006&   .8691&   .9089&   .6200\\
+  5& 3& 1& 1& 0& 2&  -.5586&  -.5602&  -.5748&  -.3930\\
+  3& 3& 3& 3& 0& 2&  -.8391&  -.6673&  -.5677&  -.6655\\
+  3& 3& 3& 1& 0& 2&  1.9727&  1.8707&  1.7732&  1.5540\\
+  3& 3& 1& 1& 0& 2&  1.0701&   .9961&   .9285&   .7090\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:fpveff}
+\end{table}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}
+\\\hline
+  3& 1& 3& 1& 0& 2& -2.8963& -2.7302& -2.5939& -2.2910\\
+  3& 1& 1& 1& 0& 2&   .7883&   .8340&   .8519&   .6860\\
+  1& 1& 1& 1& 0& 2& -1.4512& -1.3347& -1.2501& -1.0740\\
+  7& 5& 7& 5& 0& 4& -3.4362& -3.3226& -3.2065& -2.7595\\
+  7& 5& 7& 3& 0& 4&  -.7384&  -.7051&  -.6834&  -.7350\\
+  7& 5& 5& 3& 0& 4&  -.7482&  -.6958&  -.6583&  -.7050\\
+  7& 5& 5& 1& 0& 4&   .5841&   .5677&   .5547&   .4270\\
+  7& 5& 3& 1& 0& 4&  -.7963&  -.7604&  -.7291&  -.6590\\
+  7& 3& 7& 3& 0& 4&  -.6715&  -.5777&  -.5189&  -.3564\\
+  7& 3& 5& 3& 0& 4& -1.3050& -1.2687& -1.2335& -1.1230\\
+  7& 3& 5& 1& 0& 4&  1.0777&  1.0424&  1.0051&   .8380\\
+  7& 3& 3& 1& 0& 4&  -.6269&  -.6127&  -.6049&  -.4810\\
+  5& 3& 5& 3& 0& 4& -1.4871& -1.4338& -1.3844& -1.2448\\
+  5& 3& 5& 1& 0& 4&   .4170&   .3824&   .3627&   .2550\\
+  5& 3& 3& 1& 0& 4&  -.3428&  -.3114&  -.2995&  -.0710\\
+  5& 1& 5& 1& 0& 4&  -.4739&  -.4059&  -.3552&  -.0810\\
+  5& 1& 3& 1& 0& 4&   .5322&   .5406&   .5453&   .2410\\
+  3& 1& 3& 1& 0& 4& -2.4943& -2.3287& -2.1921& -1.8970\\
+  7& 7& 7& 7& 0& 6&  -.3909&  -.3069&  -.2404&  -.4498\\
+  7& 7& 7& 5& 0& 6&  1.2049&  1.1408&  1.0768&  1.0050\\
+  7& 7& 7& 3& 0& 6&  -.6178&  -.5939&  -.5680&  -.8315\\
+  7& 7& 7& 1& 0& 6&   .5610&   .5471&   .5322&   .8315\\
+  7& 7& 5& 5& 0& 6&   .7076&   .6631&   .6218&   .5170\\
+  7& 7& 5& 3& 0& 6&  -.0494&  -.0549&  -.0578&  -.0870\\
+  7& 7& 5& 1& 0& 6&   .0047&  -.0003&  -.0020&  -.0330\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:fpveff} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}\\\hline
+  7& 7& 3& 3& 0& 6&  -.3727&  -.3490&  -.3276&  -.5049\\
+  7& 5& 7& 5& 0& 6& -1.3805& -1.2872& -1.1969& -1.0140\\
+  7& 5& 7& 3& 0& 6&   .3140&   .3109&   .3033&   .3280\\
+  7& 5& 7& 1& 0& 6&  -.6050&  -.5806&  -.5587&  -.4400\\
+  7& 5& 5& 5& 0& 6&   .6526&   .6508&   .6431&   .6750\\
+  7& 5& 5& 3& 0& 6&   .7027&   .7018&   .6936&   .6280\\
+  7& 5& 5& 1& 0& 6&   .5797&   .5793&   .5767&   .5380\\
+  7& 5& 3& 3& 0& 6&   .5515&   .5327&   .5128&   .5380\\
+  7& 3& 7& 3& 0& 6&  -.6121&  -.5555&  -.5070&  -.7433\\
+  7& 3& 7& 1& 0& 6&  1.4540&  1.3932&  1.3339&  1.2950\\
+  7& 3& 5& 5& 0& 6&   .1533&   .1462&   .1415&   .1580\\
+  7& 3& 5& 3& 0& 6&  -.7063&  -.6706&  -.6356&  -.4080\\
+  7& 3& 5& 1& 0& 6&   .7707&   .7277&   .6871&   .5180\\
+  7& 3& 3& 3& 0& 6&  -.6286&  -.6185&  -.6076&  -.6812\\
+  7& 1& 7& 1& 0& 6& -1.7374& -1.6619& -1.5826& -1.4840\\
+  7& 1& 5& 5& 0& 6&  -.1966&  -.1955&  -.1931&  -.2700\\
+  7& 1& 5& 3& 0& 6&   .1269&   .1203&   .1188&   .1400\\
+  7& 1& 5& 1& 0& 6&   .4884&   .4802&   .4721&   .4000\\
+  7& 1& 3& 3& 0& 6&   .6161&   .5940&   .5733&   .4610\\
+  5& 5& 5& 5& 0& 6&  -.5724&  -.5141&  -.4557&  -.1960\\
+  5& 5& 5& 3& 0& 6&  -.2678&  -.2759&  -.2827&  -.3270\\
+  5& 5& 5& 1& 0& 6&  -.5582&  -.5422&  -.5325&  -.3910\\
+  5& 5& 3& 3& 0& 6&  -.0842&  -.0946&  -.1011&  -.1820\\
+  5& 3& 5& 3& 0& 6&  -.5947&  -.5617&  -.5283&  -.4640\\
+  5& 3& 5& 1& 0& 6& -1.1232& -1.0922& -1.0644&  -.9880\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:fpveff} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}\\
+\hline
+  5& 3& 3& 3& 0& 6&  -.3664&  -.3860&  -.3955&  -.3400\\
+  5& 1& 5& 1& 0& 6& -1.5476& -1.4911& -1.4342& -1.2340\\
+  5& 1& 3& 3& 0& 6&  -.0443&  -.0539&  -.0576&  -.0840\\
+  3& 3& 3& 3& 0& 6& -2.2762& -2.1266& -1.9908& -1.8885\\
+  7& 5& 7& 5& 0& 8& -1.9959& -1.9249& -1.8418& -1.9080\\
+  7& 5& 7& 3& 0& 8&  -.0697&  -.0514&  -.0400&  -.0390\\
+  7& 5& 7& 1& 0& 8&  -.6415&  -.6270&  -.6184&  -.6740\\
+  7& 5& 5& 3& 0& 8&  -.6705&  -.6396&  -.6162&  -.5440\\
+  7& 3& 7& 3& 0& 8&  -.2790&  -.2378&  -.1975&  -.1742\\
+  7& 3& 7& 1& 0& 8&   .1239&   .1267&   .1177&   .1080\\
+  7& 3& 5& 3& 0& 8&  -.8228&  -.8018&  -.7770&  -.6140\\
+  7& 1& 7& 1& 0& 8&  -.9010&  -.8288&  -.7664&  -.7460\\
+  7& 1& 5& 3& 0& 8& -1.5802& -1.5329& -1.4818& -1.1880\\
+  5& 3& 5& 3& 0& 8&  -.9084&  -.8557&  -.8091&  -.7336\\
+  7& 7& 7& 7& 0&10&  -.5074&  -.4574&  -.4065&  -.4830\\
+  7& 7& 7& 5& 0&10&  1.0521&  1.0092&   .9614&   .9010\\
+  7& 7& 7& 3& 0&10&  -.8523&  -.8286&  -.8043& -1.0085\\
+  7& 7& 5& 5& 0&10&   .3078&   .2754&   .2483&   .1700\\
+  7& 5& 7& 5& 0&10&  -.0647&  -.0448&  -.0211&  -.1265\\
+  7& 5& 7& 3& 0&10&   .4811&   .4732&   .4624&   .4050\\
+  7& 5& 5& 5& 0&10&  1.2317&  1.1961&  1.1617&  1.1380\\
+  7& 3& 7& 3& 0&10& -2.4203& -2.3146& -2.2033& -2.3544\\
+  7& 3& 5& 5& 0&10&   .0869&   .0821&   .0784&   .0480\\
+  5& 5& 5& 5& 0&10& -2.0419& -1.9610& -1.8756& -1.6899\\
+  7& 5& 7& 5& 0&12& -2.6701& -2.5567& -2.4425& -2.2650\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:fpveff} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}
+\\\hline
+  7& 7& 7& 7& 0&14& -2.4664& -2.3571& -2.2416& -2.6034\\
+  7& 7& 7& 7& 2& 0& -2.1644& -2.0713& -2.0452& -2.1900\\
+  7& 7& 5& 5& 2& 0& -1.9841& -1.9764& -1.9875& -2.7800\\
+  7& 7& 3& 3& 2& 0&  -.9018&  -.8712&  -.8588& -1.1133\\
+  7& 7& 1& 1& 2& 0&  -.5294&  -.5245&  -.5292&  -.7140\\
+  5& 5& 5& 5& 2& 0& -1.4539& -1.3709& -1.3481&  -.8837\\
+  5& 5& 3& 3& 2& 0&  -.5436&  -.5382&  -.5457&  -.7770\\
+  5& 5& 1& 1& 2& 0&  -.4792&  -.4568&  -.4499&  -.3920\\
+  3& 3& 3& 3& 2& 0& -1.3933& -1.3007& -1.2769& -1.2613\\
+  3& 3& 1& 1& 2& 0& -1.4725& -1.4278& -1.3929& -1.4650\\
+  1& 1& 1& 1& 2& 0&  -.3584&  -.3086&  -.3083&  -.2490\\
+  7& 5& 7& 5& 2& 2&  -.6502&  -.6031&  -.5827&  -.2890\\
+  7& 5& 5& 3& 2& 2&   .0264&   .0368&   .0407&   .0350\\
+  7& 5& 3& 1& 2& 2&  -.2387&  -.2209&  -.2060&  -.3420\\
+  5& 3& 5& 3& 2& 2&  -.0898&  -.0838&  -.0947&  -.0279\\
+  5& 3& 3& 1& 2& 2&  -.0143&  -.0037&   .0008&   .0580\\
+  3& 1& 3& 1& 2& 2&   .1363&   .1458&   .1269&   .1520\\
+  7& 7& 7& 7& 2& 4&  -.8700&  -.8481&  -.8419&  -.8690\\
+  7& 7& 7& 5& 2& 4&   .2250&   .2016&   .1760&   .0000\\
+  7& 7& 7& 3& 2& 4&  -.5229&  -.5112&  -.4999&  -.8826\\
+  7& 7& 5& 5& 2& 4&  -.6214&  -.6181&  -.6151&  -.6380\\
+  7& 7& 5& 3& 2& 4&   .3338&   .3224&   .3109&   .2850\\
+  7& 7& 5& 1& 2& 4&  -.3824&  -.3791&  -.3756&  -.4700\\
+  7& 7& 3& 3& 2& 4&  -.3616&  -.3476&  -.3351&  -.4233\\
+  7& 7& 3& 1& 2& 4&  -.1950&  -.1940&  -.1950&  -.2500\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:fpveff} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}
+\\\hline
+  7& 5& 7& 5& 2& 4&  -.4688&  -.4423&  -.4301&  -.1061\\
+  7& 5& 7& 3& 2& 4&  -.0548&  -.0447&  -.0438&  -.0140\\
+  7& 5& 5& 5& 2& 4&  -.6304&  -.6057&  -.5869&  -.6310\\
+  7& 5& 5& 3& 2& 4&   .3208&   .3172&   .3094&   .2950\\
+  7& 5& 5& 1& 2& 4&  -.1404&  -.1473&  -.1517&  -.3420\\
+  7& 5& 3& 3& 2& 4&   .0910&   .0840&   .0751&   .0180\\
+  7& 5& 3& 1& 2& 4&  -.2218&  -.2113&  -.2044&  -.0790\\
+  7& 3& 7& 3& 2& 4& -1.0055&  -.9716&  -.9546&  -.9036\\
+  7& 3& 5& 5& 2& 4&  -.3035&  -.2963&  -.2959&  -.4460\\
+  7& 3& 5& 3& 2& 4&   .2962&   .3001&   .3011&   .4020\\
+  7& 3& 5& 1& 2& 4& -1.0051&  -.9810&  -.9572&  -.9660\\
+  7& 3& 3& 3& 2& 4&  -.3675&  -.3610&  -.3518&  -.4503\\
+  7& 3& 3& 1& 2& 4&  -.4814&  -.4649&  -.4506&  -.3190\\
+  5& 5& 5& 5& 2& 4&  -.2880&  -.2943&  -.3060&  -.2180\\
+  5& 5& 5& 3& 2& 4&  -.0404&  -.0369&  -.0326&   .0230\\
+  5& 5& 5& 1& 2& 4&  -.3153&  -.3011&  -.2921&  -.1860\\
+  5& 5& 3& 3& 2& 4&  -.0758&  -.0787&  -.0821&  -.1280\\
+  5& 5& 3& 1& 2& 4&  -.2607&  -.2527&  -.2479&  -.1590\\
+  5& 3& 5& 3& 2& 4&   .2122&   .1970&   .1754&   .2156\\
+  5& 3& 5& 1& 2& 4&   .5653&   .5287&   .5045&   .3890\\
+  5& 3& 3& 3& 2& 4&   .0774&   .0732&   .0715&  -.0680\\
+  5& 3& 3& 1& 2& 4&   .2180&   .2165&   .2122&   .1590\\
+  5& 1& 5& 1& 2& 4&  -.1450&  -.1568&  -.1738&  -.1061\\
+  5& 1& 3& 3& 2& 4&  -.1504&  -.1409&  -.1362&  -.0470\\
+  5& 1& 3& 1& 2& 4&  -.2866&  -.2817&  -.2758&  -.2410\\
+  3& 3& 3& 3& 2& 4&  -.4912&  -.4587&  -.4498&  -.3755\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:fpveff} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}
+\\\hline
+  3& 3& 3& 1& 2& 4&  -.7773&  -.7506&  -.7270&  -.6010\\
+  3& 1& 3& 1& 2& 4&  -.9044&  -.8531&  -.8291&  -.6880\\
+  7& 5& 7& 5& 2& 6&   .2248&   .1871&   .1527&   .0191\\
+  7& 5& 7& 3& 2& 6&  -.1372&  -.1349&  -.1298&  -.1180\\
+  7& 5& 7& 1& 2& 6&  -.0318&  -.0259&  -.0259&  -.0120\\
+  7& 5& 5& 3& 2& 6&  -.1862&  -.1724&  -.1612&  -.1320\\
+  7& 5& 5& 1& 2& 6&   .0889&   .0890&   .0881&   .0800\\
+  7& 3& 7& 3& 2& 6&  -.0411&  -.0506&  -.0612&   .2396\\
+  7& 3& 7& 1& 2& 6&   .1984&   .1770&   .1638&   .0780\\
+  7& 3& 5& 3& 2& 6&   .1004&   .0949&   .0899&   .0260\\
+  7& 3& 5& 1& 2& 6&  -.0674&  -.0738&  -.0755&  -.0590\\
+  7& 1& 7& 1& 2& 6&   .0094&   .0020&  -.0099&   .0290\\
+  7& 1& 5& 3& 2& 6&   .2649&   .2499&   .2358&   .1400\\
+  7& 1& 5& 1& 2& 6&  -.1171&  -.1090&  -.1026&  -.0780\\
+  5& 3& 5& 3& 2& 6&   .2897&   .2502&   .2176&   .1290\\
+  5& 3& 5& 1& 2& 6&  -.0107&  -.0033&  -.0020&   .0070\\
+  5& 1& 5& 1& 2& 6&   .2517&   .2294&   .2066&   .1290\\
+  7& 7& 7& 7& 2& 8&  -.0540&  -.0745&  -.0946&  -.0868\\
+  7& 7& 7& 5& 2& 8&  -.3530&  -.3462&  -.3399&  -.3860\\
+  7& 7& 7& 3& 2& 8&  -.4584&  -.4397&  -.4203&  -.4527\\
+  7& 7& 7& 1& 2& 8&  -.2219&  -.2209&  -.2189&  -.2930\\
+  7& 7& 5& 5& 2& 8&  -.4473&  -.4395&  -.4285&  -.4000\\
+  7& 7& 5& 3& 2& 8&   .3754&   .3629&   .3502&   .3050\\
+  7& 5& 7& 5& 2& 8&   .0459&   .0268&   .0068&   .0085\\
+  7& 5& 7& 3& 2& 8&  -.0365&  -.0359&  -.0386&  -.1140\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:fpveff} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}&
+\multicolumn{1}{c}{Emp}
+\\\hline
+  7& 5& 7& 1& 2& 8&  -.1887&  -.1740&  -.1669&  -.0930\\
+  7& 5& 5& 5& 2& 8&  -.4483&  -.4321&  -.4186&  -.4680\\
+  7& 5& 5& 3& 2& 8&   .5002&   .4886&   .4753&   .4930\\
+  7& 3& 7& 3& 2& 8&  -.0421&  -.0596&  -.0727&   .1891\\
+  7& 3& 7& 1& 2& 8&  -.6690&  -.6352&  -.6073&  -.5020\\
+  7& 3& 5& 5& 2& 8&  -.1546&  -.1484&  -.1446&  -.1560\\
+  7& 3& 5& 3& 2& 8&   .7554&   .7268&   .6989&   .6190\\
+  7& 1& 7& 1& 2& 8&  -.3554&  -.3529&  -.3523&  -.2740\\
+  7& 1& 5& 5& 2& 8&  -.2396&  -.2305&  -.2238&  -.2520\\
+  7& 1& 5& 3& 2& 8&   .7068&   .6794&   .6519&   .5310\\
+  5& 5& 5& 5& 2& 8&   .2506&   .2158&   .1920&   .2949\\
+  5& 5& 5& 3& 2& 8&   .1398&   .1356&   .1328&   .1020\\
+  5& 3& 5& 3& 2& 8&  -.3310&  -.3263&  -.3260&  -.2570\\
+  7& 5& 7& 5& 2&10&   .4665&   .4069&   .3584&   .1523\\
+  7& 5& 7& 3& 2&10&  -.0614&  -.0592&  -.0530&  -.0100\\
+  7& 3& 7& 3& 2&10&   .1900&   .1748&   .1533&   .5781\\
+  7& 7& 7& 7& 2&12&   .2374&   .2044&   .1773&   .1519\\
+  7& 7& 7& 5& 2&12&  -.9213&  -.8796&  -.8398&  -.7160\\
+  7& 5& 7& 5& 2&12& -1.2375& -1.1886& -1.1484&  -.9971\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:fpveff} - continued}\end{center}
+\clearpage
+
+\begin{table}[hbtp]
+\caption{The $T=1$ two-body effective interactions for light 
+tin isotopes with $^{100}$Sn as core.
+The labels A, B and C refer to the results with the Bonn A, B and
+C potentials.
+All entries in MeV.}
+\small
+\begin{center}
+\begin{tabular}{llllllrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}
+\\\hline
+  7& 7& 7& 7& 2& 0& -1.5157& -1.3143& -1.3745\\
+  7& 7& 5& 5& 2& 0&  -.5107&  -.5101&  -.5067\\
+  7& 7& 3& 3& 2& 0&  -.5502&  -.5024&  -.5184\\
+  7& 7& 1& 1& 2& 0&  -.2501&  -.2411&  -.2429\\
+  7& 7&11&11& 2& 0&  1.5688&  1.5586&  1.5382\\
+  5& 5& 5& 5& 2& 0&  -.8643&  -.8032&  -.8167\\
+  5& 5& 3& 3& 2& 0&  -.8803&  -.8802&  -.8585\\
+  5& 5& 1& 1& 2& 0&  -.4022&  -.3788&  -.3838\\
+  5& 5&11&11& 2& 0&   .4465&   .4308&   .4397\\
+  3& 3& 3& 3& 2& 0&  -.4309&  -.3842&  -.4016\\
+  3& 3& 1& 1& 2& 0&  -.3027&  -.2892&  -.2924\\
+  3& 3&11&11& 2& 0&   .4964&   .5023&   .4955\\
+  1& 1& 1& 1& 2& 0&  -.7807&  -.7451&  -.7325\\
+  1& 1&11&11& 2& 0&   .2210&   .2197&   .2204\\
+ 11&11&11&11& 2& 0& -1.0621&  -.9339&  -.9662\\
+  7& 5& 7& 5& 2& 2&  -.2045&  -.1889&  -.1887\\
+  7& 5& 5& 3& 2& 2&  -.0350&  -.0329&  -.0253\\
+  7& 5& 3& 1& 2& 2&  -.0849&  -.0747&  -.0787\\
+  5& 3& 5& 3& 2& 2&  -.0708&  -.0588&  -.0572\\
+  5& 3& 3& 1& 2& 2&  -.0287&  -.0259&  -.0206\\
+  3& 1& 3& 1& 2& 2&   .0038&   .0061&   .0111\\
+  7&11& 7&11& 2& 4&  -.9097&  -.8081&  -.8181\\
+  7& 7& 7& 7& 2& 4&  -.4814&  -.4462&  -.4551\\
+  7& 7& 7& 5& 2& 4&  -.0763&  -.0648&  -.0669\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:tins}
+\end{table}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}
+\\\hline
+  7& 7& 7& 3& 2& 4&  -.2844&  -.2560&  -.2640\\
+  7& 7& 5& 5& 2& 4&  -.0628&  -.0678&  -.0677\\
+  7& 7& 5& 3& 2& 4&  -.1541&  -.1483&  -.1462\\
+  7& 7& 5& 1& 2& 4&  -.1525&  -.1523&  -.1482\\
+  7& 7& 3& 3& 2& 4&  -.1930&  -.1745&  -.1786\\
+  7& 7& 3& 1& 2& 4&   .0908&   .0850&   .0869\\
+  7& 7&11&11& 2& 4&   .3476&   .3388&   .3425\\
+  7& 5& 7& 5& 2& 4&  -.0114&  -.0031&  -.0128\\
+  7& 5& 7& 3& 2& 4&   .2714&   .2451&   .2476\\
+  7& 5& 5& 5& 2& 4&   .0681&   .0623&   .0637\\
+  7& 5& 5& 3& 2& 4&   .0670&   .0695&   .0704\\
+  7& 5& 5& 1& 2& 4&   .0629&   .0675&   .0634\\
+  7& 5& 3& 3& 2& 4&   .0167&   .0183&   .0161\\
+  7& 5& 3& 1& 2& 4&  -.0725&  -.0626&  -.0681\\
+  7& 5&11&11& 2& 4&  -.2141&  -.2073&  -.2034\\
+  7& 3& 7& 3& 2& 4&  -.3595&  -.3414&  -.3463\\
+  7& 3& 5& 5& 2& 4&  -.1562&  -.1470&  -.1468\\
+  7& 3& 5& 3& 2& 4&  -.1249&  -.1257&  -.1221\\
+  7& 3& 5& 1& 2& 4&  -.1817&  -.1773&  -.1774\\
+  7& 3& 3& 3& 2& 4&  -.1362&  -.1337&  -.1333\\
+  7& 3& 3& 1& 2& 4&   .1908&   .1823&   .1831\\
+  7& 3&11&11& 2& 4&   .3925&   .3874&   .3826\\
+  5& 5& 5& 5& 2& 4&  -.3147&  -.3001&  -.2968\\
+  5& 5& 5& 3& 2& 4&  -.1201&  -.1209&  -.1200\\
+  5& 5& 5& 1& 2& 4&  -.2726&  -.2628&  -.2611\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:tins} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}
+\\\hline
+  5& 5& 3& 3& 2& 4&  -.2255&  -.2199&  -.2202\\
+  5& 5& 3& 1& 2& 4&   .2314&   .2209&   .2199\\
+  5& 5&11&11& 2& 4&   .2164&   .2090&   .2077\\
+  5& 3& 5& 3& 2& 4&  -.1240&  -.1113&  -.1128\\
+  5& 3& 5& 1& 2& 4&  -.1318&  -.1205&  -.1219\\
+  5& 3& 3& 3& 2& 4&  -.2367&  -.2300&  -.2245\\
+  5& 3& 3& 1& 2& 4&   .1911&   .1924&   .1868\\
+  5& 3&11&11& 2& 4&   .0337&   .0347&   .0362\\
+  5& 1& 5& 1& 2& 4&  -.4939&  -.4651&  -.4647\\
+  5& 1& 3& 3& 2& 4&  -.2093&  -.2047&  -.1980\\
+  5& 1& 3& 1& 2& 4&   .4537&   .4454&   .4366\\
+  5& 1&11&11& 2& 4&   .1270&   .1245&   .1258\\
+  3& 3& 3& 3& 2& 4&  -.0623&  -.0596&  -.0613\\
+  3& 3& 3& 1& 2& 4&   .1031&   .0960&   .0985\\
+  3& 3&11&11& 2& 4&   .0912&   .0919&   .0918\\
+  3& 1& 3& 1& 2& 4&  -.2515&  -.2308&  -.2313\\
+  3& 1&11&11& 2& 4&  -.1577&  -.1564&  -.1547\\
+ 11&11&11&11& 2& 4&  -.8137&  -.7522&  -.7551\\
+  7&11& 7&11& 2& 6&  -.4237&  -.3774&  -.3864\\
+  7&11& 5&11& 2& 6&   .1761&   .1570&   .1605\\
+  5&11& 5&11& 2& 6&  -.5454&  -.5284&  -.5306\\
+  7& 5& 7& 5& 2& 6&   .1055&   .0740&   .0813\\
+  7& 5& 7& 3& 2& 6&   .1423&   .1256&   .1291\\
+  7& 5& 7& 1& 2& 6&  -.1235&  -.1100&  -.1105\\
+  7& 5& 5& 3& 2& 6&  -.0406&  -.0363&  -.0361\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:tins} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}
+\\\hline
+  7& 5& 5& 1& 2& 6&  -.0186&  -.0183&  -.0191\\
+  7& 3& 7& 3& 2& 6&   .0937&   .0670&   .0717\\
+  7& 3& 7& 1& 2& 6&  -.1289&  -.1096&  -.1137\\
+  7& 3& 5& 3& 2& 6&   .0109&   .0066&   .0098\\
+  7& 3& 5& 1& 2& 6&   .0138&   .0075&   .0098\\
+  7& 1& 7& 1& 2& 6&   .1639&   .1366&   .1411\\
+  7& 1& 5& 3& 2& 6&  -.0169&  -.0158&  -.0141\\
+  7& 1& 5& 1& 2& 6&   .0244&   .0242&   .0205\\
+  5& 3& 5& 3& 2& 6&   .0507&   .0375&   .0459\\
+  5& 3& 5& 1& 2& 6&  -.0257&  -.0270&  -.0247\\
+  5& 1& 5& 1& 2& 6&  -.0307&  -.0282&  -.0218\\
+  7&11& 7&11& 2& 8&  -.1305&  -.1305&  -.1326\\
+  7&11& 5&11& 2& 8&   .0604&   .0584&   .0572\\
+  7&11& 3&11& 2& 8&  -.1903&  -.1656&  -.1699\\
+  5&11& 5&11& 2& 8&  -.0600&  -.0720&  -.0711\\
+  5&11& 3&11& 2& 8&  -.1409&  -.1244&  -.1264\\
+  3&11& 3&11& 2& 8&  -.1439&  -.1390&  -.1430\\
+  7& 7& 7& 7& 2& 8&  -.0053&  -.0315&  -.0327\\
+  7& 7& 7& 5& 2& 8&   .0443&   .0434&   .0432\\
+  7& 7& 7& 3& 2& 8&  -.2020&  -.1771&  -.1845\\
+  7& 7& 7& 1& 2& 8&   .0650&   .0578&   .0601\\
+  7& 7& 5& 5& 2& 8&  -.0473&  -.0475&  -.0479\\
+  7& 7& 5& 3& 2& 8&  -.1529&  -.1463&  -.1445\\
+  7& 7&11&11& 2& 8&   .2351&   .2260&   .2279\\
+  7& 5& 7& 5& 2& 8&   .1179&   .0928&   .0937\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:tins} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}
+\\\hline
+  7& 5& 7& 3& 2& 8&   .1932&   .1818&   .1800\\
+  7& 5& 7& 1& 2& 8&  -.2456&  -.2218&  -.2231\\
+  7& 5& 5& 5& 2& 8&   .0565&   .0515&   .0519\\
+  7& 5& 5& 3& 2& 8&   .1381&   .1319&   .1337\\
+  7& 5&11&11& 2& 8&  -.1480&  -.1441&  -.1427\\
+  7& 3& 7& 3& 2& 8&   .0758&   .0520&   .0526\\
+  7& 3& 7& 1& 2& 8&   .1564&   .1444&   .1457\\
+  7& 3& 5& 5& 2& 8&  -.0494&  -.0460&  -.0458\\
+  7& 3& 5& 3& 2& 8&  -.1335&  -.1261&  -.1265\\
+  7& 3&11&11& 2& 8&   .1492&   .1468&   .1462\\
+  7& 1& 7& 1& 2& 8&  -.1091&  -.1147&  -.1138\\
+  7& 1& 5& 5& 2& 8&   .1037&   .0973&   .0964\\
+  7& 1& 5& 3& 2& 8&   .1740&   .1653&   .1644\\
+  7& 1&11&11& 2& 8&  -.1516&  -.1474&  -.1466\\
+  5& 5& 5& 5& 2& 8&  -.0813&  -.0796&  -.0773\\
+  5& 5& 5& 3& 2& 8&  -.3620&  -.3477&  -.3435\\
+  5& 5&11&11& 2& 8&   .1027&   .0987&   .0984\\
+  5& 3& 5& 3& 2& 8&  -.5678&  -.5470&  -.5350\\
+  5& 3&11&11& 2& 8&   .1447&   .1427&   .1419\\
+ 11&11&11&11& 2& 8&  -.3057&  -.2881&  -.2899\\
+  7&11& 7&11& 2&10&  -.0921&  -.0994&  -.1007\\
+  7&11& 5&11& 2&10&   .0471&   .0499&   .0480\\
+  7&11& 3&11& 2&10&  -.1986&  -.1745&  -.1795\\
+  7&11& 1&11& 2&10&   .0913&   .0823&   .0840\\
+  5&11& 5&11& 2&10&  -.0276&  -.0498&  -.0475\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:tins} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}
+\\\hline
+  5&11& 3&11& 2&10&   .1481&   .1444&   .1431\\
+  5&11& 1&11& 2&10&  -.2678&  -.2512&  -.2517\\
+  3&11& 3&11& 2&10&   .0597&   .0354&   .0358\\
+  3&11& 1&11& 2&10&   .2156&   .2020&   .2023\\
+  1&11& 1&11& 2&10&  -.1313&  -.1463&  -.1444\\
+  7& 5& 7& 5& 2&10&   .1193&   .0839&   .0912\\
+  7& 5& 7& 3& 2&10&   .0281&   .0238&   .0277\\
+  7& 3& 7& 3& 2&10&   .1535&   .1277&   .1327\\
+  7&11& 7&11& 2&12&   .0258&  -.0006&   .0005\\
+  7&11& 5&11& 2&12&   .0122&   .0136&   .0123\\
+  7&11& 3&11& 2&12&  -.1375&  -.1217&  -.1245\\
+  7&11& 1&11& 2&12&  -.0338&  -.0286&  -.0301\\
+  5&11& 5&11& 2&12&   .1528&   .1207&   .1226\\
+  5&11& 3&11& 2&12&   .0257&   .0240&   .0239\\
+  5&11& 1&11& 2&12&  -.1828&  -.1624&  -.1662\\
+  3&11& 3&11& 2&12&   .1290&   .0996&   .1004\\
+  3&11& 1&11& 2&12&  -.1196&  -.1057&  -.1084\\
+  1&11& 1&11& 2&12&   .1336&   .1081&   .1083\\
+  7& 7& 7& 7& 2&12&   .1973&   .1517&   .1513\\
+  7& 7& 7& 5& 2&12&   .1173&   .1026&   .1073\\
+  7& 7&11&11& 2&12&   .1635&   .1561&   .1567\\
+  7& 5& 7& 5& 2&12&  -.3418&  -.3297&  -.3240\\
+  7& 5&11&11& 2&12&  -.2128&  -.2047&  -.2038\\
+ 11&11&11&11& 2&12&  -.0873&  -.0913&  -.0924\\
+  7&11& 7&11& 2&14&  -.1154&  -.1382&  -.1331\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:tins} - continued}\end{center}
+\clearpage
+\small
+\begin{center}
+\begin{tabular}{llllllrrr}
+\hline
+$2j_{a}$&$2j_{b}$&$2j_{c}$&$2j_{d}$&$2T$&$2J$&
+\multicolumn{1}{c}{A}&
+\multicolumn{1}{c}{B}&
+\multicolumn{1}{c}{C}
+\\\hline
+  7&11& 5&11& 2&14&   .0718&   .0753&   .0712\\
+  7&11& 3&11& 2&14&  -.2879&  -.2662&  -.2663\\
+  5&11& 5&11& 2&14&   .1101&   .0805&   .0827\\
+  5&11& 3&11& 2&14&   .2972&   .2802&   .2784\\
+  3&11& 3&11& 2&14&  -.2772&  -.2853&  -.2803\\
+  7&11& 7&11& 2&16&   .0852&   .0508&   .0532\\
+  7&11& 5&11& 2&16&  -.0570&  -.0508&  -.0526\\
+  5&11& 5&11& 2&16&   .0712&   .0520&   .0509\\
+ 11&11&11&11& 2&16&   .0139&   .0004&  -.0004\\
+  7&11& 7&11& 2&18&  -.2321&  -.1901&  -.1923\\
+ 11&11&11&11& 2&20&   .1343&   .1171&   .1161\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}{Table \ref{tab:tins} - continued}\end{center}
+
+
+
+
+

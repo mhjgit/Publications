@@ -1,0 +1,203 @@
+
+\* The number of particle j-orbits: 5
+	     <n  l  2*j   min_part  max_part energy:>
+\* Orbit:     0  4   7       0         8      0.08
+\* Orbit:     1  2   3       0         4      1.66
+\* Orbit:     0  5   11       0        12      3.55
+\* Orbit:     1  2   5       0         6      0.0000
+\* Orbit:     2  0   1       0         2      1.55
+
+
+
+\* Shell model calculation of identical particle system -- title: Sn^104
+
+
+The ground state energy =   -4.7526
+
+E(0)=    0.0000  <J**2> = -0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.168  1.709  1.757  0.257  0.109
+
+E(1)=    1.3434  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.092  1.670  1.767  0.283  0.188
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           8.350229
+
+
+\* Shell model calculation of identical particle system -- title: Sn^106
+
+Final Eigenvalues
+The total parity is positive
+
+
+The ground state energy =   -6.7034
+
+E(0)=    0.0000  <J**2> = -0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.266  2.341  2.774  0.421  0.198
+
+E(1)=    1.2309  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.179  2.334  2.713  0.481  0.293
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           12.082761
+
+
+
+\* Shell model calculation of identical particle system -- title: Sn^108
+
+Final Eigenvalues
+The total parity is positive
+
+
+The ground state energy =   -8.2403
+
+E(0)=    0.0000  <J**2> = -0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.393  3.016  3.663  0.606  0.322
+
+E(1)=    1.2434  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.302  3.124  3.425  0.716  0.433
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           14.867880
+
+
+
+\* Shell model calculation of identical particle system -- title: Sn^110
+
+Final Eigenvalues
+The total parity is positive
+
+
+The ground state energy =   -9.3015
+
+E(0)=    0.0000  <J**2> =  0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.571  3.713  4.372  0.843  0.500
+
+E(1)=    1.2592  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.475  3.683  4.214  1.003  0.625
+
+     
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           16.553842
+
+
+\* Shell model calculation of identical particle system -- title: Sn^112
+
+
+
+The ground state energy =   -9.8519
+
+E(0)=    0.0000  <J**2> =  0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.853  4.381  4.798  1.191  0.776
+
+E(1)=    1.2361  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          0.766  4.290  4.727  1.403  0.815
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           1.72793044E+01
+
+
+\* Shell model calculation of identical particle system -- title: Sn^114
+
+
+The ground state energy =   -9.9170
+
+E(0)=    0.0000  <J**2> =  0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          1.290  4.985  5.069  1.562  1.094
+
+E(1)=    1.2083  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          1.340  4.861  5.004  1.759  1.036
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           1.75120150E+01
+     
+
+\* Shell model calculation of identical particle system -- title: Sn^116
+
+
+The ground state energy =   -9.5528
+
+E(0)=    0.0000  <J**2> =  0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          1.943  5.507  5.248  1.971  1.331
+
+E(1)=    1.1352  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          2.169  5.330  5.190  2.097  1.214
+
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           1.74186449E+01
+     
+
+\* Shell model calculation of identical particle system -- title: Sn^118
+
+
+The ground state energy =   -8.8144
+
+E(0)=    0.0000  <J**2> =  0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          2.780  5.981  5.387  2.351  1.501
+
+E(1)=    1.0682  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          2.984  5.867  5.375  2.371  1.403
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           1.70831906E+01
+     
+
+\* Shell model calculation of identical particle system -- title: Sn^120
+
+
+
+The ground state energy =   -7.7452
+
+E(0)=    0.0000  <J**2> =  0.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          3.777  6.413  5.498  2.686  1.626
+
+E(1)=    1.0438  <J**2> =  6.0000  11/2    7/2    5/2    3/2    1/2 
+                    N(j):          3.948  6.369  5.509  2.631  1.543
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           1.62790468E+01
+
+
+
+Sn 124
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           12.376995
+
+Sn 126
+
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           9.302833
+
+Sn 128
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           6.146681
+
+
+Sn 130
+
+           E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           3.255650

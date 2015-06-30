@@ -1,0 +1,301 @@
+From teemu.siiskonen@snafu.phys.jyu.fi Mon Oct 19 07:01:53 1998
+Return-Path: <teemu.siiskonen@snafu.phys.jyu.fi>
+Delivery-Date: Mon, 19 Oct 1998 07:01:53 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Mon, 19 Oct 1998 07:01:37 +0200
+Received: from cc.jyu.fi (root@cc.jyu.fi [130.234.1.3]) by pat.uio.no ; Mon, 19 Oct 1998 07:01:36 +0200 (MET DST)
+Received: from snafu.phys.jyu.fi (root@snafu.phys.jyu.fi [130.234.98.10]) 
+          by cc.jyu.fi (8.8.8/8.8.8/NO UCE/antispam-2 [postmaster@cc.jyu.fi]) with ESMTP id IAA08025;
+          Mon, 19 Oct 1998 08:01:36 +0300 (EET DST)
+Received: from phys.jyu.fi (phys117.phys.jyu.fi [130.234.97.117]) by snafu.phys.jyu.fi (8.8.7/8.8.7) with ESMTP id IAA02205;
+          Mon, 19 Oct 1998 08:01:35 +0300
+Message-ID: <362AD55B.6C210D1C@phys.jyu.fi>
+Date: Mon, 19 Oct 1998 07:59:55 +0200
+From: Teemu Siiskonen <teemu.siiskonen@snafu.phys.jyu.fi>
+Reply-To: teemu.siiskonen@snafu.phys.jyu.fi
+Organization: JYFL
+X-Mailer: Mozilla 4.05 [en] (Win95; I)
+MIME-Version: 1.0
+To: Morten Hjorth-Jensen <m.h.jensen@fys.uio.no>, jouni.suhonen@snafu.phys.jyu.fi
+Subject: [Fwd: lt6729]
+Content-Type: multipart/mixed; boundary="------------0E4EE6EED350CA3E5547A25E"
+Content-Length: 12768
+
+This is a multi-part message in MIME format.
+--------------0E4EE6EED350CA3E5547A25E
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+
+--------------0E4EE6EED350CA3E5547A25E
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Return-Path: <prl@aps.org>
+Received: from hq.aps.org (hq.aps.org [149.28.112.5])
+	by snafu.phys.jyu.fi (8.8.7/8.8.7) with SMTP id VAA22484
+	for <teemu.siiskonen@snafu.phys.jyu.fi>; Fri, 16 Oct 1998 21:43:33 +0300
+Received: from seq2.aps.org by hq.aps.org (8.6.12/1.35)
+	id SAA10420; Fri, 16 Oct 1998 18:40:42 GMT
+Received: (from prl@localhost)
+	by seq2.aps.org (8.8.5/8.8.5) id OAA14520;
+	Fri, 16 Oct 1998 14:52:05 -0400 (EDT)
+Date: Fri, 16 Oct 1998 14:52:05 -0400 (EDT)
+From: PR/L-email <prl@aps.org>
+Message-Id: <199810161852.OAA14520@seq2.aps.org>
+To: teemu.siiskonen@phys.jyu.fi
+Subject: lt6729
+Cc: prl@aps.org
+
+
+LT6729
+Towards the solution of the $C sub P_/$C sub A_ anomaly in shell-model calcula
+Siiskonen,T./Suhonen,J./Hjorth-Jensen,M./
+
+
+
+
+        Dear Dr. Siiskonen:
+
+              The above manuscript has been reviewed by our
+        referee(s). A critique drawn from the report(s) is
+        enclosed. On this basis, we judge that while the work
+        probably warrants publication in some form, it does not
+        meet the special criteria of importance and broad interest
+        required for Physical Review Letters. In accordance with
+        our standard practice (see enclosed memo), this concludes
+        our review of your manuscript.
+
+              The paper, with revision as appropriate, might be
+        suitable for publication in Physical Review (BELL). If you
+        submit the paper to Physical Review, the editors of that
+        journal will make the decision on publication of the
+        paper, and may seek further review; however, our complete
+        file will be available.
+
+              If you submit this manuscript or a revision of it to
+        Physical Review (BELL), be sure to respond to all referee
+        comments and cite the code number assigned to the paper to
+        facilitate transfer of the records.
+
+                                   Sincerely yours,
+
+                                   Christopher Wesselborg
+                                   Assistant Editor
+                                   Physical Review Letters
+
+............................................................................
+
+Second Report of Referee A
+
+
+"Several useful comments" resulted in the use of a very different
+hamiltonian and the discovery of an error in the effective operator
+calculations. At the very least it is quite difficult in such
+cases to keep the refereeing comments to two rounds.
+
+1) I agree that the use of the Zuker monopole corrections should result
+in improved wave functions. However, relative to the many comparisons in
+the literature which have been made with the USD interaction, one is in
+the dark as to exactly how good the monopole corrected Bonn interaction
+is, except for a few rather contradictory comments made in the paper. At
+the very least one would like to see the 1+ spectrum and its comparison
+to pp' and ee' data (a comparison of which indicates the configuration
+mixing dependence on the spin and orbital parts). If the authors wish to
+use the monopole corrected Bonn, I suggest expanding the paper to a
+regular PRC article and showing more of the relevant results.
+
+2) The USD ground state of 28Si has only about 20% (d5/2)**12.
+
+3) The empirical GT type matrix element is reduce by 25% from its bare
+value. As Towner and Arima have shown, this comes about by tensor
+correlations going up to 10 hw in the excitation energy of intermediate
+states. Delta admixtures may also be important. So I am not convinced
+that a calculation which only gives a 10% reduction for this reduction
+is adequate. One would have to argue that corrections for the other
+matrix elements needed to get x are not as sensitive as the GT type.
+
+4) Unfortunately I don't understand the arguments given as to why
+x is reduced and is "more reliable".
+
+5) At the end the conclusion that the effective transition operators
+give a Cp/Ca range 3.4 to 4.7 which is in better agreement with PCAC
+value of 6.8 is not very strong.
+
+............................................................................
+
+Second Report of Referee B
+
+
+Manuscript Number:  LT6729
+Author:  Siiskonen, Suhonen, and Hjorth-Jensen
+Title:  Towards the solution of the CP/CA anomaly in shell-model ...
+
+                   Referee's Report
+
+A couple of minor comments:
+
+  1.  In their conclusions on page 8, the authors write "The renormalized
+result is 3.4 lte CP/CA lte 4.7, close to the PCAC value and the results of
+the calculations reviewed in [12] and [10]."
+      While the renormalized result is certainly closer than the bare result
+to PCAC, I would not go so far as to say the range 3.4 to 4.7 is close to
+the PCAC value of 6.8.
+      Further I see no merit in concluding than the present result is close
+to the results in ref. [10] and [12].  The latter two references use very
+crude wavefunctions indeed, not complete sd-shell wavefunctions, which
+are a minimum requirement for a realistic calculation these days.
+
+  2.  On page 6, the symbol CV/CA is used twice incorrectly; it should
+read CA/CV.
+
+............................................................................
+
+Referee C
+
+
+Report on "Towards the solution of the Cp/Ca anomaly..." by Siiskonen,
+Suhonen and Hjorth-Jensen (LT6729)
+
+The authors aim at explaining the wellknown Cp/Ca anomaly by
+renormalization of the transition operators. As a tool they use the
+interacting shell model. In order to demonstrate their claims they
+calculate a certain transition in muon capture on 28Si, employing interactions
+whose quality are yet undemonstrated. Thus the obtained results might
+just been accidental.
+
+The suggestions (and the criticism) worded by referee A sounds very
+reasonable to me. The authors should enlarge the paper by including
+spectra and other transitions calculated with their interactions. Then
+the reader might have a fair chance to estimate the value of the current
+study. As I do not think that the paper is of the necessary urgency or
+"interest to the general audience", as required for PRL, the authors
+might want to submit a longer version for publication in PRC.
+
+Two minor comments.
+On page 6 the authors state: "using the renormalized
+axial vector coupling may lead to double counting". Is this not
+something to worry about? What are the results if the bare value for the
+coupling constant is used?
+
+On page 7 the authors discuss that the  1_3 state in
+28Al has a different structure for the two interactions. This suggests
+that there might be other differences in the spectra calculated for the
+two interactions. Therefore it is indispensable that the authors enlarge
+the paper and provide more informations before the manuscript is suited
+for publication.
+
+
+
+                                                               pr_or_prl.asc
+                                                                        8/94
+
+                PHYSICAL REVIEW LETTERS OR PHYSICAL REVIEW?
+
+     The  Physical  Review publishes Articles, Rapid  Communications,  Brief
+Reports,  and  Comments.  Except for Articles, these are limited in  length.
+Each  paper  must have an abstract.  Announcements of planned  research  and
+progress reports are not suitable for publication.  A series of short papers
+by  the same authors on a particular subject is discouraged; a comprehensive
+single regular article is preferred.
+
+     If  a  paper is more suitable (see below) for the Physical Review  than
+for  Physical Review Letters, it is in the author's interest to transfer the
+paper  as  soon as possible.  Since many of the reasons for not accepting  a
+submission   for  a  Letter  may  also   apply  to  acceptance  as  a  Rapid
+Communication,  authors  should give careful consideration to submission  to
+Physical Review as an Article or as a Brief Report.
+
+     We  encourage authors to follow a Rapid Communication or a Letter  with
+the  subsequent  submission  of  a  longer version of  the  same  work,  but
+significant  additional  material  must be included.  Neither  Articles  nor
+Brief Reports should be followed by such expanded articles.
+
+                                  ARTICLES
+
+     Articles  in  the  Physical Review may be short; there  is  no  minimum
+length limit.
+
+                            RAPID COMMUNICATIONS
+
+     Rapid  Communications  are  intended for important  new  results  which
+deserve  accelerated  publication,  and  are  therefore  given  priority  in
+editorial processing and production to minimize the time between receipt and
+publication.   Authors  submitting  papers as  Rapid  Communications  should
+explain  in  a cover letter why the work justifies this priority  treatment.
+Rapid  Communications  are similar to Letters; the principal  difference  is
+that  Letters are of broad interest and are accessible to a general audience
+of  physicists  and  allied  scientists,   while  Rapid  Communications  are
+primarily for a more specialized audience, the usual readers of a particular
+Physical Review journal (A, B, C, D, or E).
+
+                               BRIEF REPORTS
+
+     Brief  Reports are accounts of completed research which do not  warrant
+regular  Articles  or the priority handling given to  Rapid  Communications;
+however,  the  same  standards of scientific quality  apply.   (Addenda  are
+included in Brief Reports.)
+
+                    PHYSICAL REVIEW RECEIVED DATE POLICY
+
+     Papers  transferred  from  Physical Review Letters  or  other  Physical
+Review  journals  which  are  accepted without further review  (and  if  the
+authors  have  not  caused undue delays) will retain the  original  received
+date.   In  all  other  cases  a new received date, which  is  the  date  of
+transfer, will be given.  However, the authors may request that the original
+received date be retained.
+
+
+
+                                                    resub_policy_prl.asc
+                                                            REVISED 6/95
+
+                 Physical Review Letters Resubmittal Policy
+
+        It is the intent of the resubmittal policy to reduce, insofar
+as possible, the time between initial submittal and a final editorial
+decision; iterative improvement of a manuscript through extended
+anonymous review is felt to be inappropriate.  Thus, we make every
+effort to conclude the anonymous review process with a firm editorial
+decision no later than at the end of the second round of anonymous
+referee evaluation.  This decision can be to publish the paper in its
+current form, publish after the authors have considered some optional
+referee suggestions, or to publish provided specific changes are made;
+otherwise, the decision is to reject the manuscript.
+
+        The following is a scenario of a manuscript receiving negative
+decisions, as affected by our policy.  We do not discuss here favorable
+decisions or special cases.
+
+        If the author responds to the first round of referee reports,
+further referee evaluation may take place.  The editor will inform the
+authors of a decision against publication as soon as possible.  If at
+this point the author feels there is sufficient cause for an extra
+degree of consideration and resubmits the manuscript, this is considered
+to be a formal appeal.  The editor will consult a Divisional Associate
+Editor (DAE), that is, a member of the PRL Editorial Board.
+
+        The appeal process differs from the anonymous referee process.
+The DAE recommendation is based upon the complete editorial file (all
+editorial decisions including referee identity and qualifications) as
+well as the scientific content of the manuscript.  The DAE may act as
+``super'' referee and evaluate the manuscript as a specialist or may seek
+further anonymous referee evaluation.  In most cases, there already will
+be sufficient material in the file for the DAE to offer an informed
+recommendation.
+
+        The author of a paper which has been rejected subsequent to an
+appeal to a DAE may appeal to the Editor-in-Chief of the American
+Physical Society.  This request should be addressed to the Chair of
+Divisional Associate Editors, who will forward the entire file to the
+Editor-in-Chief.  Such an appeal must be based on the fairness of the
+procedures followed, and must not be a request for another scientific
+review.  The question to be answered in this review is:  Did the paper
+receive a fair hearing?  The decision of the Editor-in-Chief concludes
+the consideration of the manuscript by the American Physical Society.
+
+
+--------------0E4EE6EED350CA3E5547A25E--
+
+

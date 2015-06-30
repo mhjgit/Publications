@@ -1,0 +1,567 @@
+
+%\documentstyle[epsfig,aps,twocolumn,amssymb,floats,tighten]{revtex}
+\documentclass[aps,prc,twocolumn,amssymb,showpacs]{revtex4}
+\usepackage{epsfig,subfigure}
+
+\def\Journal#1#2#3#4{{#1} {\bf #2}, #3 (#4)}
+\def\NIMR{Nucl. Instr. and Meth. in Phys. Res. A}
+\def\NIMB{Nucl. Instr. and Meth. in Phys. B}
+\def\ADNDT{Atomic Data and Nuclear Data Tables}
+\def\NPA{Nucl. Phys. A}
+\def\CPC{Computer Physics Communications}
+\def\PLB{Phys. Lett.  B}
+\def\PRL{Phys. Rev. Lett.}
+\def\PRep{Phys. Rep.}
+\def\PRC{Phys. Rev. C}
+\def\PRD{Phys. Rev. D}
+\def\PR{Phys. Rep.}
+\def\ZPA{Z. Phys. A}
+\def\EPJA{Eur. J. Phys. A}
+\def\MPL{Mod. Phys. Lett. A}
+\def\ARNPS{Ann. Rev. Nucl. Part. Sc.}
+\def\RPP{Rep. on Progr. in Phys.}
+\def\Prep{Phys. Rep.}
+\def\MFMDVS{Mat. Fys. Medd. Dan. Vid. Selsk.}
+\def\Acta{Acta Phys.}
+
+\begin{document}
+
+\title{Study of $^{108}$Sn by intermediate-energy Coulomb
+excitation}
+
+\author{A.~Banu$^{1,2}$, J.~Gerl$^{1}$, C.~Fahlander$^{3}$,
+M.~G\'{o}rska$^{1}$, H.~Grawe$^{1}$, T.R.~Saito$^{1}$,
+H.-J.~Wollersheim$^{1}$, A.~Gniady$^{4}$, M.~Hjorth-Jensen$^{5}$,
+T.~Beck$^{1}$, F.~Becker$^{1}$, P.~Bednarczyk$^{1,6}$,
+M.A.~Bentley$^{7}$, A.~B\"{u}rger$^{8}$, E.~Caurier$^{4}$,
+F.~Cristancho$^{3}$, G.~de Angelis$^{9}$, Zs.~Dombradi$^{10}$,
+P.~Doornenbal$^{1,13}$, T.~Engeland$^{5}$, H.~Geissel$^{1}$,
+J.~Gr\c{e}bosz$^{1,6}$, G.~Hammond$^{7}$,
+M.~Hellstr\"{o}m$^{1,\footnote{Present address: Department of
+Physics, University of Lund, Sweden}}$, I.~Kojouharov$^{1}$,
+N.~Kurz$^{1}$, R.~Lozeva$^{1,\footnote{Pressent address: Faculty
+of Physics, University of Sofia, Sofia, Bulgaria}}$,
+S.~Mandal$^{1,\footnote{Present address: University of Delhi, New
+Delhi, India}}$, N.~M\u{a}rginean$^{9}$, S.~Muralithar$^{11}$,
+F.~Nowacki$^{4}$, J.~Nyberg$^{12}$, J.~Pochodzalla$^{2}$,
+W.~Prokopowicz$^{1,6}$, P.~Reiter$^{13}$, D.~Rudolph$^{3}$,
+C.~Rusu$^{9}$, N.~Saito$^{1}$, H.~Schaffner$^{1}$,
+D.~Sohler$^{10}$, H.~Weick$^{1}$,
+C.~Wheldon$^{1,\footnote{Pressent address: Hahn-Meitner-Institut
+Berlin, Berlin, Germany}}$, M.~Winkler$^{1}$}
+
+\affiliation{
+$^{1}$ Gesellschaft f\"ur Schwerionenforschung (GSI), Darmstadt, Germany\\
+$^{2}$ Institut f\"ur Kernphysik, Universit\"at Mainz, Mainz, Germany\\
+$^{3}$ Department of Physics, University of Lund, Sweden\\
+$^{4}$ IReS, Strasbourg, Cedex 2, France\\
+$^{5}$ Department of Physics and Center of Mathematics for Applications, University of Oslo, Oslo, Norway\\
+$^{6}$ The Henryk Niewodnicza\'{n}ski Institute of Nuclear Physics, Krakow, Poland\\
+$^{7}$ Department of Physics, University of York, UK\\
+$^{8}$ Helmholtz-Institut f\"{u}r Strahlen- und Kernphysik, Universit\"{a}t Bonn\\
+$^{9}$ INFN Laboratori Nazionali di Legnaro, Legnaro, Italy\\
+$^{10}$ Institute for Nuclear Research, Debrecen, Hungary\\
+$^{11}$ Nuclear Science Center, New Delhi, India\\
+$^{12}$ Department of Radiation Sciences, University of Uppsala,
+Sweden\\
+$^{13}$ Institut f\"{u}r Kernphysik, Universit\"{a}t zu
+K\"oln\\
+}
+
+
+
+\date{\today}
+
+\begin{abstract}
+The unstable neutron-deficient $^{108}$Sn isotope has been studied
+by intermediate-energy Coulomb excitation in inverse kinematics,
+using the newly developed RISING/FRS experimental set-up at
+GSI-Darmstadt heavy ion research laboratory. This is the highest-Z
+nucleus studied to date with this method and its reduced
+transition probability
+B(E2;0$_{\text{g.s.}}^{+}$$\rightarrow$2$_{1}^{+})$ has been
+measured for the first time. The extracted B(E2) value of 0.230
+(50) e$^2$b$^2$ has been determined relative to the known value in
+the stable isotope $^{112}$Sn. The result is in good agreement
+with recent large scale shell model calculations performed with
+realistic effective interactions, and can be understood
+phenomenologically within a generalized seniority scheme  model.
+\end{abstract}
+
+%\pacs{}
+\maketitle
+
+The structure of nuclei far from $\beta$-stability is currently a
+key topic of research both experimentally and theoretically with
+emphasis on phenomena such as shell evolution, proton-neutron
+interaction and change of collective properties. One of the
+burning questions in nuclear structure physics is whether the
+shell closures known close to stability are preserved towards the
+limits of nuclear existence. Due to the soft neutron potential and
+decoupling of neutrons from protons, topics like shell quenching,
+new shell closures and new collective modes are of main interest
+\cite{dob94,naz95} towards the neutron drip line. On the other
+hand, towards the proton drip line due to the confinement of
+protons by the Coulomb barrier and the vicinity of the N=Z line
+changes in shell structure and collectivity are expected to be
+driven exclusively by monopole migration \cite{ots01,gra04} and
+proton-neutron interaction in identical shell model orbitals
+\cite{naz95}. Therefore, at the N=Z and proton drip line, core
+polarization as studied in spin (M1, Gamow-Teller) and shape (E2)
+response, proton-neutron pairing and isospin symmetry are key
+topics of nuclear structure investigations. In this respect, the
+heaviest isospin symmetric doubly-magic nucleus,$^{100}$Sn, which
+is proton bound, is an important test ground. Information on E2
+polarization and shape response of the magic core could be
+inferred from the energy of its first excited 2$^+$ state and its
+E2 transition rate to the ground state. Experimentally, the
+nuclear properties of this nucleus are only indirectly known,
+although its existence has already been confirmed
+\cite{lew94,sch94}. To gain insight into its structure, the nuclei
+in its vicinity are being studied.\\
+%In the past, in a series of heavy-ion fusion reaction experiments,
+%delayed $\gamma$-rays following the de-excitation of high spin
+%isomers were measured. Lifetime measurements of the isomeric 6$^+$
+%state in the even tin isotopes \cite{lip98,gor98}, and of the
+%isomeric 8$^+$ state in $^{98}$Cd \cite{gor97,bla04} provided
+%B(E2) values of the 6$^+$$\rightarrow$4$^+$ and
+%8$^+$$\rightarrow$6$^+$ transitions, respectively. Core excited
+%states have been identified in $^{98}$Cd and the $^{100}$Sn shell
+%gap was inferred \cite{bla04}.
+The tin isotopes between the N = 50 and 82 shell closures provide
+the longest chain of semi-magic nuclei accessible to nuclear
+structure studies both in the neutron valence space of a full
+major shell and with emphasis of excitations of the Z = 50 proton core.\\
+The B(E2) values yield neutron and proton effective charges, which
+are measures of the polarization effects on the core induced by
+the valence nucleons. The reduced transition probabilities most
+sensitive to the detail of the shell structure and quadrupole
+collective effects are the
+B(E2;0$^+_{\text{g.s.}}$$\rightarrow$2$^+_1$), since they probe E2
+correlations related to core polarization better. Until recently
+only the B(E2;0$^+_{\text{g.s.}}$$\rightarrow$2$^+_1$) values of
+the stable $^{112-124}$Sn nuclei were measured \cite{ram01}. The
+existence of higher lying isomeric states hampers a direct
+measurement of the lifetime of these states by standard Doppler
+methods (DSAM, RDM), and their very short lifetimes also make it
+difficult to apply electronic timing methods. Therefore, a Coulomb
+excitation measurement is the only way to obtain this important
+piece of nuclear structure information.\\
+In the following, we report on the first intermediate-energy
+Coulomb excitation experiment performed on the $^{108,112}$Sn
+isotopes with the RISING/FRS set-up \cite{wol05}. A primary beam
+of $^{124}$Xe$^{47+}$ with an energy of 700 A$\cdot$MeV and an
+average intensity of 6 $\times$ 10$^7$ s$^{-1}$ was delivered by
+the SIS heavy ion synchrotron at GSI-Darmstadt. The light tin
+isotopes of interest were produced via projectile fragmentation
+reactions of the primary beam on a 4 g/cm$^2$ $^9$Be primary
+target located at the entrance of the fragment separator (FRS).
+Secondary beams were separated by FRS and identified on an
+event-by-event basis by coincidence measurements of energy loss in
+an ionization chamber (MUSIC), magnetic rigidity analysis
+($B\rho-\Delta E-B\rho\ technique$), and time-of-flight with the
+help of two scintillator detectors (SCI1, SCI2), as illustrated in
+Fig.~\ref{fig:RISING}. Projectile fragment trajectories were
+tracked event-by-event with two multiwire proportional chambers
+(MW1, MW2). An achromatic $^{27}$Al wedge degrader with variable
+thicknesses of 4.83 g/cm$^2$ and 4.59 g/cm$^2$ corresponding to
+the two fragment settings $^{112}$Sn respectively $^{108}$Sn, was
+placed at the middle focal plane of FRS to obtain an optimized
+selection of the fragment beams of interest amounting in both
+cases to $\simeq 60 \%$ of the incoming fragment beams. A
+secondary $^{197}$Au target with a thickness of 386 mg/cm$^2$ was
+located at the final focal plane of the fragment separator. The
+projectile fragments $^{112,108}$Sn at energies before the
+reaction target of 147 A$\cdot$MeV and 142 A$\cdot$MeV,
+respectively were excited by means of electromagnetic interaction
+with the gold target. Gamma rays of the reaction products were
+detected by the RISING Germanium cluster detectors in coincidence
+with projectile fragments. The position sensitive detector array
+CATE \cite{loz05} consisting of 3 $\times$ 3 Si-CsI(Tl) modular
+$\Delta$E-E telescopes, and covering a solid angle of 58 mrad was
+used at 1426 mm behind the secondary target for the reaction
+channel selection as well as for measuring the scattering angle of
+the projectile fragments. A schematic layout of the RISING/FRS
+set-up is shown in Fig.~\ref{fig:RISING}.\\
+\begin{figure*}[ht]
+\centering\mbox{\epsfig{file=NIM_FRS_setup.eps,width=0.6\textwidth}}
+\caption{\small Schematic layout of the RISING/FRS set-up. The
+beam spectrometer consists of two multiwire proportional chambers
+(MW1, MW2), an ionization chamber (MUSIC), and two plastic
+scintillation detectors (SCI1, SCI2). The $\gamma$ rays are
+measured with an array of Ge-Cluster detectors. The fragments
+scattered off the Coulex target are identified by the calorimeter
+telescope CATE.} \label{fig:RISING}
+\end{figure*}
+At intermediate energy Coulomb excitation is an experimental
+challenge caused by intense atomic background radiation and
+relativistic effects such as Doppler broadening that have to be
+accounted for. To date the method has been applied to nuclei with
+Z $\leq$ 30 only. Therefore the Z = 50 Sn isotopes, having large
+transition energies and short halflives, with respect to these
+challenges provide a new methodological bench mark. The RISING 15
+Ge-cluster detectors used in the experiment were part of the
+former EUROBALL spectrometer \cite{sim97}. Due to relativistic
+projectile fragment beams, the Ge detectors were positioned at
+forward angles with a small opening angle of 3$^{\circ}$ in order
+to maximize the effective solid angle affected by the Lorentz
+boost, and to minimize the Doppler broadening. The detector
+cluster geometry allows to achieve a good energy resolution of 2
+$\%$, and moreover, to apply the add-back procedure for the
+Compton scattered gamma events. Each Ge-cluster detector was
+surrounded on the side by a lead sheet of 2 mm thickness, and was
+shielded in front by a combination of Pb, Sn and Al absorbers of 5
+mm thickness, in order to suppress $\gamma$ rays with energies
+below 500 keV in the laboratory frame. In the off-line analysis an
+event-by-event Doppler-shift correction was performed. The top
+panel in Fig.~\ref{fig:Sn_peaks} shows the Doppler corrected
+energy spectrum of the Coulomb excitation $\gamma$-ray line in
+$^{112}$Sn at 1257 keV. The bottom panel shows the corresponding
+spectrum for $^{108}$Sn with the Coulomb excitation
+$\gamma$-ray line at 1206 keV.\\
+The conditions applied in the data analysis to obtain the spectra
+in Fig.~\ref{fig:Sn_peaks} are the following:
+\begin{itemize}
+\item fragment selection before the target by the FRS; \item
+fragment selection after the target by CATE; \item scattering
+angle cut between 1$^{\circ}$--2$^{\circ}$; \item prompt gamma
+time condition; \item $\text{M}_{\gamma}(\text{E}_{\gamma}\ \ge\
+500\ \text{keV}) = 1$.
+\end{itemize}
+The requested scattering angle range between 1$^{\circ}$ -
+2$^{\circ}$ corresponds in the case of $^{112}$Sn to impact
+parameters between 10.61 fm (below which nuclear reactions start
+to play a role) and 21.22 fm (above which the elastic channel
+dominates, and so the atomic background by chance coincidences).
+In the case of $^{108}$Sn, the above mentioned scattering angle
+range translates to an impact parameter range between 11.37 fm and
+22.74 fm.\\
+\begin{figure}[!h]%
+\centering
+\subfigure{%
+\resizebox{0.42\textwidth}{!}{%
+%\includegraphics{dummy.eps}}
+\includegraphics{112Sn_coulex.eps}}}\\
+\vspace{-5pt}
+\subfigure{%
+\resizebox{0.42\textwidth}{!}{%
+%\includegraphics{dummy.eps}}
+\includegraphics{108Sn_coulex.eps}}}%
+\vspace{5pt} \caption[Coulomb excitations $\gamma$-ray lines
+observed in $^{112,108}$Sn]{\small Coulomb excitation $\gamma$-ray
+lines corresponding to the $0^+ \rightarrow 2^+_1$ transition
+clearly observed in $^{112,108}$Sn isotopes, respectively. The
+insets illustrate the error-wise distribution of the two Coulomb excitation peaks.}%
+\label{fig:Sn_peaks}%
+\end{figure}The intermediate-energy Coulomb excitation reaction is a
+\textit{one-step process} which implies a gamma hit multiplicity
+equal to one. However, there is a large probability that the
+Coulomb de-excitation event is by chance accompanied by a gamma
+event originating from atomic processes. Therefore, for an
+appropriate Coulomb excitation event selection, it was required in
+the data analysis that the condition of single gamma hit
+multiplicity is satisfied only for those prompt $\gamma$ rays at
+energies larger than 500 keV (in the laboratory frame), which was
+the threshold for the atomic background radiation fulfilled by the
+RISING experimental set-up.\\
+The observation of the Doppler corrected $\gamma$ line
+corresponding to the 0$^+_{\text{g.s.}}$$\rightarrow$2$^+_1$
+transition in the $^{108}$Sn isotope allows for a measurement of
+the Coulomb excitation cross section, which is directly
+proportional to the reduced transition probability B(E2)
+connecting the two levels. However, in order to avoid possible
+systematic errors, such as excitations of higher-lying 2$^+$
+states (feeding contributions) or unknown gamma angular
+distribution effects, the
+B(E2;0$^+_{\text{g.s.}}$$\rightarrow$2$^+_1$) value in $^{108}$Sn
+was measured relative to the B(E2) value in $^{112}$Sn of 0.240
+(14) e$^2$b$^2$ \cite{ram01} known from previous work measured in
+Coulomb excitation below the barrier. The Coulomb excitation
+measurement performed on the stable $^{112}$Sn isotope was used as
+calibration point. Experimentally, the Coulomb excitation cross
+section $\sigma_{E2}^{exp}$ is determined as follows:
+\begin{displaymath}
+\sigma_{E2}^{exp} = \frac{N_{E2}}{N_p \times N_t} =
+\frac{N_{\gamma}/\epsilon_{\gamma}^{abs}}{N_p \times N_t}
+\end{displaymath}
+where N$_p$, N$_t$, and N$_{\gamma}$ represent, respectively the
+number of incoming beam particles interacting with target, the
+number of target atoms per unit area, and  the total number of
+photons detected with an absolute efficiency,
+$\epsilon_{\gamma}^{abs}$. Taking into account the direct
+proportionality relationship between the Coulomb excitation cross
+section and the reduced transition probability (see ref.
+\cite{win79}), the following expression is deduced for the
+relative determination of the B(E2) value in $^{108}$Sn:
+\begin{displaymath}
+\scriptsize [B(E2;0^+_{\text{g.s.}} \rightarrow
+2^+_1)]_{\textbf{108}} = [B(E2;0^+_{\text{g.s.}} \rightarrow
+2^+_1)]_{\textbf{112}}\times\frac{\sigma^{\textbf{108}}_{E2}}{\sigma^{\textbf{112}}_{E2}}
+\times\frac{f(b^{\textbf{112}}_{\text{min}})}{f(b^{\textbf{108}}_{\text{min}})},
+\end{displaymath}
+where the proportionality factor
+f(b$^{\text{projectile}}_{\text{min}})$ depends on the projectile
+minimum impact parameter \cite{win79}. The ratio of the
+proportionality factors has been determined with the code DWEIKO
+\cite{ber03}, a computer program applicable to nuclear scattering
+at intermediate and high energies (E$_{\text{lab}}$ $\geqslant$ 50
+MeV/nucleon), amounting to a value of 0.88. In Table~\ref{tab-1}
+the experimental values of the variables needed to calculate the
+B(E2) value in $^{108}$Sn are listed. \vspace{-10pt}
+\begin{table}[!h]
+\caption{The photon yield N$_{\gamma}$ and incoming particle flux
+N$_{p}$ for $^{112,108}$Sn isotopes.}\label{tab-1}
+\begin{tabular}[t]{cccc}
+\hline \hline
+           &               &              &  ~~~ \\
+Isotope ~~~& $^{112}$Sn ~~~& $^{108}$Sn   &  ~~~ \\
+           &               &              &  ~~~ \\
+\hline \hline
+           &               &              &  ~~~ \\
+N$_{\gamma}$\footnote{\vspace{5pt}The photon yield was determined with the particle$\otimes$$\gamma$ trigger.} ~~~& 106 (20) ~~~ & 174 (26) &  ~~~ \\
+           &               &              &  ~~~ \\
+N$_{p}$\footnote{The incoming particle flux was determined with a down-scaled particle-singles trigger.}~~~& 101217280  ~~~ & 153377312  &  ~~~ \\
+           &               &              &  ~~~ \\
+\hline \hline \vspace{1pt}
+\end{tabular}
+\end{table}\\
+Since the 2$^+_1$ excited states in the $^{112,108}$Sn isotopes
+lie close in energy, the gamma detection efficiencies are similar.
+Moreover, the number of atoms per unit area of the target can be
+considered to be equal in the two cases. Hence, the reduced
+transition probability
+B(E2;0$^+_{\text{g.s.}}$$\rightarrow$2$^+_1$) is finally
+determined as:
+\begin{displaymath}
+\scriptsize
+[B(E2;0^+_{\text{g.s.}}\rightarrow2^+_1)]_{\textbf{108}} =
+[B(E2;0^+_{\text{g.s.}}\rightarrow2^+_1)]_{\textbf{112}}\times\frac{N^{\textbf{108}}_{\gamma}}{N^{\textbf{112}}_{\gamma}}
+\times\frac{N^{\textbf{112}}_p}{N^{\textbf{108}}_p}\times0.88,
+\end{displaymath}
+yielding
+\begin{displaymath}
+[B(E2;0^+_{\text{g.s.}}\rightarrow2^+_1)]_{\textbf{108}} = 0.230\
+(50)\ e^2b^2.
+\end{displaymath}The measured B(E2)$\uparrow$ value in
+$^{108}$Sn isotope is compared to the results of two independent
+large scale shell model calculations. The systematics for the full
+isotopic chain are discussed within a generalized seniority scheme.\\
+
+The first set of large-scale shell model calculations was performed by the
+Oslo group for all tin isotopes $^{102-130}$Sn, following the prescription outlined 
+in Ref.~\cite{hjo95} and using the CD-Bonn potential for 
+the bare nucleon-nucleon interaction
+\cite{mac96}. Three sets of closed shell core were chosen, 
+$^{88}$Sr,
+$^{100}$Sn and $^{132}$Sn. The model space for neutrons comprises in all cases
+of the 1d$_{5/2}$, 0g$_{7/2}$, 1d$_{3/2}$,
+2s$_{1/2}$, and 0h$_{11/2}$ neutron orbitals. 
+In the discussion here we focus on the results obtained with $^{100}$Sn as closed shell
+core. 
+A harmonic-oscillator basis was chosen for the single-particle wave
+functions, with an oscillator energy $\hbar\Omega$ given by
+$\hbar\Omega = 45A^{-1/3} -25A^{-2/3}$ = 8.5 MeV, A = 100 being
+the mass number. The single-particle energies of the chosen model
+space orbits are set, relative to the 1d$_{5/2}$ orbital
+($\epsilon_{1d_{5/2}}$ = 0.0 MeV), as follows:
+$\epsilon_{0g_{7/2}}$ = 0.08 MeV, $\epsilon_{1d_{3/2}}$ = 1.66
+MeV, $\epsilon_{2s_{1/2}}$ = 1.55 MeV, $\epsilon_{0h_{11/2}}$ =
+3.55 MeV. The results of the calculations for the energies of the
+2$^+_1$ excited states and
+B(E2;0$^+_{\text{g.s.}}$$\rightarrow$2$^+_1$) values for light Sn isotopes are presented
+in Table~\ref{tab-2}. The neutron effective charge used in the
+calculations was set to  1.0 e.\\
+In the following, a different approach in the large scale shell
+model calculations is described, which enables to include proton
+core excitations. The starting point is the realistic interaction
+(CD-Bonn potential) of the Oslo group, phenomenologically adjusted
+to the spectroscopy of Sn isotopes and N = 82 isotones
+\cite{gni05}. The differences consist in choosing $^{80}$Zr as a
+closed shell core, and consequently a different model space for
+protons, namely 0g$_{9/2}$, 0g$_{7/2}$, 1d$_{5/2}$, 1d$_{3/2}$ and
+2s$_{1/2}$, and for the neutrons the same gds-shell plus the
+0h$_{11/2}$ orbital. The calculations allow only up to 3p-3h core
+excitations, and the effective charges are set to 1.55 $e$ and
+0.72 $e$ for protons and neutrons, respectively. Since the chosen
+model space is rather large, the coupled scheme code NATHAN is
+used \cite{cau02}. In addition, a seniority truncation is applied.
+The results with a better convergence are obtained for seniority
+equal to 8, for which a B(E2)$\uparrow$ value of 0.176 e$^2$b$^2$
+is deduced for $^{108}$Sn, which is in excellent agreement with
+the results of the Oslo group (see Table~\ref{tab-2}). These kind
+of calculations stress the importance of the core excitations for
+E2 transitions as origin of the increased effective charge in pure
+neutron valence
+space calculations.  These conclusions are strengthened by two additional
+sets of shell-model calculations, where we use 
+$^{88}$Sr and $^{132}$Sn as closed shell cores. In both cases we use the same 
+nucleon-nucleon interaction as in the two previous calculations.
+For the chain of Sn isotopes with $^{132}$Sn and neutron holes, the experimental 
+ B(E2;0$^+_{\text{g.s.}}$$\rightarrow$2$^+_1$) transitions 
+were reproduced with effective charges between $0.7-0.8 e$ for all 
+isotopes from  $^{116}$Sn to $^{130}$Sn, 
+a result which agrees with previous calculations 
+but employing older models for the nucleon-nucleon interaction, 
+see Ref.~\cite{hol98} for further details.
+For $^{108,112, 114}$Sn one needs however effective charge of the order
+of $1.0$ e in order to reproduce the experimental values starting with 
+$^{132}$Sn as closed shell core. For  $^{88}$Sr as closed shell core 
+we obtain similar results as for $^{100}$Sn as closed shell core. 
+This indicates clearly that two sets of effective charges may be needed for the chain
+of tin isotopes if one does not allow for core excitations.  However, the reader should 
+note that for the calculations using $^{100}$Sn as closed the core, the single-particle
+energy of the h_{11/2}$ plays a non-negligible role for heavier nuclei like 
+$^{110}$Sn and $^{112}$Sn. If the single-particle spacing 
+$\epsilon_{0h_{11/2}}$ is reduced by 1 MeV to 2.55 MeV, the transition probability for 
+$^{112}$Sn increases to $0.248$ e$^2$b$^2$, with an effective charge of $1.0$ e, while 
+the energy of the $2_1^+$ state barely changes.
+
+
+
+The almost constant energy spacing between the 0$^+_{\text{g.s.}}$
+and the 2$^{+}_{1}$ excited state, which is so characteristic for
+the Sn isotopes, is well reproduced by the calculations. Also the
+B(E2)$\uparrow$ value calculated for the $^{108}$Sn case is in
+good agreement with the measured value. However, for a conclusive
+interpretation of the results more information is needed. In
+Fig.~\ref{fig:systematics} the systematics of the B(E2)$\uparrow$
+values in the Sn isotopes ranging from mass number A = 100 to A =
+132 is shown. Here the neutrons are filling the subshells between
+the magic numbers 50 and 82 offering thus a unique opportunity for
+examining how well the Z = 50 proton-shell closure is holding up
+as valence neutrons are being added. The data used in the
+systematics in Fig.~\ref{fig:systematics} are from the calculations using
+$^{100}$Sn as closed shell core and effective charges of $1.0$ e. 
+For comparison the experimental data measured recently for the
+unstable heavy $^{126,128,130}$Sn isotopes \cite{rad04} and the
+adopted values for the stable Sn isotopes $^{112, 114, 116, 118,
+120, 124}$Sn \cite{ram01} are shown. The parabola-like trend of
+the B(E2) systematics in Fig.~\ref{fig:systematics} resembles the
+typical behavior of a one-body even tensor operator across a shell
+in the seniority scheme, which for a seniority changing transition
+($\Delta v = 2$) at first increases, then flattens out, peaking at
+the midshell, and falling off thereafter. In a non-unique j shell
+with many interacting orbitals this can be generalized to
+B(E2,Sn$_N$;0$^{+}_{\text{g.s.}}$$\rightarrow$2$^{+}_{1}$)
+$\approx$ f(1-f) with f=(N-50)/32 being the filling factor of the
+shell.
+A closer inspection of the light isotopes part of the
+systematics seems to indicate that 
+a two-parabola fit assuming a
+subshell closure around N=64 might be more appropriate
+also supported by the shell model trends. This can be described
+microscopically in a pairing approach \cite{bes60}. 
+If we use  $^{132}$Sn as closed the core, see for example Ref.~\cite{hol98},
+two sets of effective charges may be needed, $e_{\mathrm{eff}}\approx 0.7-0.8$ e
+for $^{116}$Sn to $^{130}$Sn and $e_{\mathrm{eff}}\approx 1.0$ e
+for $^{108}$Sn and $^{112}$Sn, indicating in this case that
+
+The overall
+agreement between the experimental and theoretical B(E2) values
+across the N = 50 - 82 neutron shell underlines the success of a
+generalized seniority scheme in describing the properties of the
+even Sn nuclei. The tendency of larger B(E2) values in the lighter
+isotopes can be traced back to two effects, \textbf{(i)} enhanced
+core excitation towards N=Z as supported by the shell model
+calculation of ref. \cite{gni05} and/or \textbf{(ii)} the blocking
+of 1p1h neutron excitations from the g, d, s, orbits to the
+odd-parity h$_{11/2}$ orbit for N $\gtrsim$ 64, which can not
+contribute to the E2 transition. The trend is exhibited more
+clearly in the Ni isotopes one major shell lower \cite{sor02},
+which show a distinct minimum in the B(E2) at N = 40. %This is
+%further evidence for the quenched N = 70 (as persisting in the
+%proton shell of the N = 82 isotones) respective N = 64 harmonic
+%oscillator shell in the Sn isotopes.
+
+\begin{table}[!h]
+\caption{Lowest-lying excited states and E2 transitions for
+$^{104-112}$Sn}\label{tab-2}
+\begin{tabular}[t]{lcccc}
+\hline \hline
+\vspace{5pt}
+Isotope~~~~~~~~~& & E$_{2^{+}_{1}}$ [keV] & ~~~~~~~& B(E2)$\uparrow$ [e$^2$b$^2$]   \\
+%~~~~~~~~          &                       &\\
+%\vspace{5pt}
+\end{tabular}
+\begin{tabular}{ccccc}
+           & Exp.$^a$ & SM$^b$ & Exp. & SM$^b$   \\
+\hline \hline
+%           &                       &   \\
+$^{104}$Sn & 1260.1~ (3) & 1343.4 & & 0.093   \\
+%           &                       &   \\
+$^{106}$Sn & 1207.7~ (5) & 1230.9 & & 0.137   \\
+%           &                       &   \\
+$^{108}$Sn & 1206.07 (10) & 1243.4 & 0.230 (50)$^c$ & 0.171   \\
+%           &                       &   \\
+$^{110}$Sn & 1211.89 (15) & 1252.9 & & 0.192  \\
+%           &                       &   \\
+$^{112}$Sn & 1256.85 (97) & 1236.1 & 0.240 (14)$^a$ & 0.203   \\
+%           &                       &   \\
+\hline \hline
+\end{tabular}
+\end{table} $^a$ from ref.\cite{ram01},$\ $
+ $^b$ ref.\cite{hjo05},$\ $
+ $^c$ this work
+\vspace{-5pt}
+\begin{figure}[hhh]\hspace{-0.5cm}
+\centering\mbox{\epsfig{file=sys.eps,width=.5\textwidth}}
+\caption{\small Systematics of the
+B(E2;0$^{+}_{\text{g.s.}}$$\rightarrow$2$^{+}_{1}$) in the Sn
+isotopes, ranging from mass number A = 100 to A = 132. The lines
+through the theoretical points are only intended to guide the
+eye.}\label{fig:systematics}
+\end{figure}
+
+In conclusion we have measured for the first time the
+B(E2;0$^+_{\text{g.s.}}$$\rightarrow$2$^{+}_1$) value in the
+unstable $^{108}$Sn isotope by intermediate-energy Coulomb
+excitation, see \cite{ban05} for details. This is the highest-Z
+nucleus studied by this method to date. The comparison with two
+different but complementary large scale shell model calculations
+shows a good agreement and proves that a combination of core
+excitation and valence particles is substantial for a correct
+description of the lowest 2$^+$ collective state. The successful
+B(E2) measurement in $^{108}$Sn at GSI-Darmstadt opens the
+research line via the experimental technique of
+intermediate-energy Coulomb excitation towards perhaps the most
+interesting nucleus ever experimentally synthesized, the heaviest
+N=Z doubly-magic proton drip line nucleus $^{100}$Sn.
+
+\begin{acknowledgments}
+We thank the GSI accelerator staff for their efforts to produce
+good intensity primary $^{124}$Xe beams, the DVEE division at GSI
+for their support in data acquisition and Go4 software, and the
+technical staff for experiment preparation. A.B. is greatly 
+indebted to A.~Gniady for communicating the
+results of their shell-model calculations prior to publication.
+Discussions with H.~Grawe are gratefully acknowledged.
+\end{acknowledgments}
+
+\begin{thebibliography}{100}
+\bibitem{dob94} J.~Dobaczewski et al., \Journal{\PRL}{72}{981}{1994}
+\bibitem{naz95} W.~Nazarewicz et al.,\Journal{Physica Scripta T}{56}(1995)
+\bibitem{ots01} T.~Otsuka et al., \Journal{\PRL}{87}{082502}{2001}
+\bibitem{gra04} H.~Grawe, \Journal{Springer Lect. Notes Phys.}{LNP 651}{33}(2004)
+\bibitem{lew94} M. Lewitowicz et al., \Journal{\PLB}{332}{20}{1994}
+\bibitem{sch94} R Schneider et al., \Journal{\ZPA}{348}{241}{1994}
+%\bibitem{lip98} M. Lipoglav\v{s}ek et al., \Journal{\PLB}{440}{246}{1998}
+%\bibitem{gor98} M. G\'orska et al., \Journal{\PRC}{58}{108}{1998}
+%\bibitem{gor97} M. G\'orska et al., \Journal{\PRL}{79}{2415}{1997}
+%\bibitem{bla04} A.~Blazhev et al., \Journal{\PRC}{69}{64304}{2004}
+\bibitem{ram01} S. Raman et al., \Journal{\ADNDT}{78}{42}{2001}
+\bibitem{wol05} H.J. Wollersheim et al., \Journal{\NIMR}{537}{637}{2005}
+\bibitem{loz05} R. Lozeva et al., \Journal{\Acta} {B36}{1245}{2005}
+\bibitem{sim97} J. Simpson et al., \Journal{\ZPA}{358}{139}{1997}
+\bibitem{win79} A. Winther and K. Alder, \Journal{\NPA}{319}{518}{1979}
+\bibitem{ber03} C.A. Bertulani et al., \Journal{\CPC}{152}{317}{2003}
+\bibitem{hjo95} M. Hjorth-Jensen et al., \Journal{\Prep}{261}{125}{1995}
+\bibitem{mac96} R. Machleidt et al., \Journal{\PRC}{53}{1483}{1996}
+\bibitem{gni05} A. Gniady, private communication
+\bibitem{cau02} E. Caurier et al., \Journal{\NPA}{704}{60c}{2002}
+\bibitem{hol98} A. Holt et al., \Journal{\NPA}{634}{41}{1998}
+\bibitem{rad04} D.C. Radford et al., \Journal{\NPA}{746}{83c}{2004}
+\bibitem{bes60} R.A. Sorensen and D.R. Bes, \Journal{\MFMDVS}{9}{32}{1960}
+\bibitem{sor02} O. Sorlin et al., \Journal{\PRL}{88}{092501}{2002}
+\bibitem{ban05} A. Banu, thesis, University of Mainz
+\end{thebibliography}
+\end{document}

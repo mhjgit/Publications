@@ -1,0 +1,7 @@
+set terminal pslatex
+set output "sec2fig15.tex"
+set xrange [1.0:2.0]
+set xlabel "$k_F$ (fm$^{-1}$)"
+set ylabel "${\cal E}$ (MeV)"
+plot "bubu.dat" title "BUBU" w l 1, "bub.dat" title "BUB" w l 2, "ring.dat" title "RING" w l 3, "high.dat" title "HIGH" w l 4, "total.dat" title "TOTAL" w l 5
+

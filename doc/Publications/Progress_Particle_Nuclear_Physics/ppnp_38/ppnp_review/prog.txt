@@ -1,0 +1,198 @@
+From amand.faessler@uni-tuebingen.de Thu Mar 11 23:13:14 2004
+Date: Wed, 10 Mar 2004 18:32:41 +0100
+From: Amand Faessler <amand.faessler@uni-tuebingen.de>
+To: "Hjorth-Jensen, Morten" <morten.hjorth-jensen@fys.uio.no>
+Subject: Fw: Fw: Referee report for the Review article of Dean et al.
+
+Dear Morten,
+
+This is now finally the second referee report to your review article for
+"Prog. Part. Nucl. Phys.2 of Dean et al.. I look forward to get the final
+manusscript of your article.
+
+With best regards
+Amand.
+
+*****************************************************
+Prof. Dr. Dr. h.c. mult. Amand Faessler
+Director of the Institute for Theoretical Physics
+Auf der Morgenstelle 14
+D-72076 TUEBINGEN / GERMANY
+----------------------------------------------------------
+e.mail: amand.faessler@uni-tuebingen.de
+Tel. 0049/7071/29-76370 or -76375
+Fax 0049/7071/29-5388
+www.tphys.physik.uni-tuebingen.de/faessler/
+Speaker of the European Graduate
+School Basel-Tuebingen:
+http://eurograd.physik.uni-tuebingen.de
+Editor of Prog. Particle and Nuclear Physics:
+www.elsevier.nl/locate/ppartnuclphys
+Organizer ERICE School on Nucl. Phys.
+www.uni-tuebingen.de/erice/
+*****************************************************
+> =======================================================================
+
+
+Report of the second Referee for the Review paper of Dean et al.
+>
+>  The review is very interesting, self-contained, with the right portion of
+formal
+> many-body theory and discussion of experimental results. It gives a good
+overview
+>  of the present status of the subject and defines the state of the art for
+the
+> microscopic construction of effective interactions to be used in the
+nuclear shell-model.
+>
+> Only one suggestion that the authors may consider useful for the paper, is
+to add
+> a comment on how to match or complement the shell-model description with
+the fact that
+> the single particle states are not fully occupied and that the strength of
+the states,
+> i.e. the single particle spectral functions are very spread in energy.
+The reference
+> to two recent publications  on this point in this same Journal can help to
+> complete this bridge:
+> "Self-consistent Green's function method for nuclei and nuclear matter" by
+>  W.H. Dickhoff & C.  Barbieri, nuclth/0402034 to be published in Prog.
+Part. Nucl. Phys.
+> and " Two-body correlations in nuclear systems " by H. Muether and A.
+Polls  in
+> Prog. Part. Nucl. Phys. 45 (2000)243.
+>
+>
+> Now some small things very easy to fix :
+>
+> 1) P^2 = p ==> P^2 =P   (after eq. (2))
+>
+> 2) Dyson eq. (31) should be with plus or minus sign ?
+>
+> 3) It can be useful for the reader to have a comment on why the factor
+> 1/2 in eq. (29)
+> is not need in eq. (34)
+>
+> 4) at the end of Pag. 14
+>  need be explained ===> need to be explained
+>
+> 5) pag 22 before eq (66)
+>
+> from n folds the following ===> from n folds by the following ...
+>
+> 6) pag 24 last paragraph
+>
+>  fulfull ===> fulfil
+>
+> 7) In sect. (3.4) there is a mixing between omega and Omega ....
+>
+> 8) Pag 67, in the prespectives
+>
+>  nuclear systems Such   ===> nuclear systems. Such
+>
+>
+>
+
+
+
+From amand.faessler@uni-tuebingen.de Thu Mar 11 23:14:35 2004
+Date: Thu, 4 Mar 2004 18:32:59 +0100
+From: Amand Faessler <amand.faessler@uni-tuebingen.de>
+To: "Hjorth-Jensen, Morten" <morten.hjorth-jensen@fys.uio.no>
+Subject: Referee report for the Review article of Dean et al.
+
+Dear Morten,
+
+The second referee has me just informed, that he will finish the report for
+your review article for "Prog. Part. Nucl. Phys." til Mach 8th. He writes:
+
+"This time you did not give me so much time for the referee. I will try to
+      have it ready on Monday 8th March. Sorry for the delay."
+
+With best regards
+Amand.
+
+*****************************************************
+Prof. Dr. Dr. h.c. mult. Amand Faessler
+Director of the Institute for Theoretical Physics
+Auf der Morgenstelle 14
+D-72076 TUEBINGEN / GERMANY
+----------------------------------------------------------
+e.mail: amand.faessler@uni-tuebingen.de
+Tel. 0049/7071/29-76370 or -76375
+Fax 0049/7071/29-5388
+www.tphys.physik.uni-tuebingen.de/faessler/
+Speaker of the European Graduate
+School Basel-Tuebingen:
+http://eurograd.physik.uni-tuebingen.de
+Editor of Prog. Particle and Nuclear Physics:
+www.elsevier.nl/locate/ppartnuclphys
+Organizer ERICE School on Nucl. Phys.
+www.uni-tuebingen.de/erice/
+*****************************************************
+
+
+
+From amand.faessler@uni-tuebingen.de Thu Mar 11 23:14:46 2004
+Date: Thu, 4 Mar 2004 17:26:07 +0100
+From: Amand Faessler <amand.faessler@uni-tuebingen.de>
+To: "Hjorth-Jensen, Morten" <morten.hjorth-jensen@fys.uio.no>
+Subject: Fw: Referee report for the review article of Dean et al.
+
+Dear Morten,
+
+Please, find below the report of the first referee. I hope to send you soon
+the report of the second one.
+
+With best regards
+
+Amand.
+
+*****************************************************
+Prof. Dr. Dr. h.c. mult. Amand Faessler
+Director of the Institute for Theoretical Physics
+Auf der Morgenstelle 14
+D-72076 TUEBINGEN / GERMANY
+----------------------------------------------------------
+e.mail: amand.faessler@uni-tuebingen.de
+Tel. 0049/7071/29-76370 or -76375
+Fax 0049/7071/29-5388
+www.tphys.physik.uni-tuebingen.de/faessler/
+Speaker of the European Graduate
+School Basel-Tuebingen:
+http://eurograd.physik.uni-tuebingen.de
+Editor of Prog. Particle and Nuclear Physics:
+www.elsevier.nl/locate/ppartnuclphys
+Organizer ERICE School on Nucl. Phys.
+www.uni-tuebingen.de/erice/
+*****************************************************
+>   ----------------------------------------------------------
+>   Comments on effective interactions and nuclear shell model
+>   by Dean et. al
+>   ----------------------------------------------------------
+>
+>    This paper contains an extensive review of microscopic shell model
+>   calculations. For light nuclei such as those in the p-shell, one can
+>   do Monte-Carlo Green's Function calculations or the so-called
+>   no-core shell model calculations. But these methods are not capable
+>   at all to treat heavy nuclei such as the tin isotopes. This paper
+>   reports very impressive microscopic shell model calculations
+>   for the tin isotopes. A non-saturation problem was discussed.
+>   A Q-box folded diagram framework was used, with G-matrix
+>   calculated from realistic NN potentials. It has a nice review of
+>   the folded diagram method and the matrix inversion method for
+calculating
+>   the G-matrix with plane-wave intermediate states.
+>
+>     The parquet diagrams for the Q-box are discussed. It seems the authors
+>   have not reported any figures or tables illustrating the importance
+>   of parquet diagrams.  It may be nice to include some of these results.
+>   For example, a comparison of results with Q-box
+>   calculated with 1st+2nd, +3rd and +parquet diagrams.
+>   It is not clear if the parquet diagrams are included for the
+>   tin results reported. Application of coupled cluster methods to nuclear
+>   structure is also discussed, rather briefly.  It may be perhaps
+>   better to discuss this approach with a little more detail.
+
+
+

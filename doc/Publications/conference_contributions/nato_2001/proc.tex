@@ -1,0 +1,344 @@
+% The CRCKAPB.STY should be in your LaTeX directory.
+
+% Begin your text file with:
+
+\documentstyle[editedvolume,numreferences,psfig,epsf]{crckapb} 
+
+% Alternatives:
+%    \documentstyle[proceedings]{crckapb} 
+%    \documentstyle[monograph]{crckapb} 
+%    \documentstyle[nato]{crckapb} 
+
+\newcommand{\stt}{\small\tt}
+
+% This document needs the CRCKAPB.STY file to create a 
+% document with font size 12pts. 
+% The title, subtitle, author's name(s) and institute(s) 
+% are handled by the `opening' environment.
+
+\begin{opening}
+\title{Effective interactions for finite nuclei}
+
+% You can split the title and subtitle by putting 
+% two backslashes at the appropriate place. 
+
+\author{M.~Hjorth-Jensen}
+\institute{Department of Physics, University of Oslo, Oslo, Norway}
+% If there are more authors at one institute, you should first
+% use \author{...} for each author followed by \institute{...}.
+
+\end{opening}
+
+\runningtitle{Effective interactions for finite nuclei}
+
+\begin{document}
+
+% The \begin{document} command comes after the \end{opening}
+% command.
+
+\section{Introduction}
+Large-scale shell-model calculations employing realistic effective 
+interactions obtained from many-body theory have been rather successful 
+in describing nuclear structure data both near and somewhat away from 
+closed shells. In recent years such model calculations have been put 
+to crucial test particularly in the Sn region, where experimental 
+advances have provided us with a wealth of new data for nuclei 
+with unusual proton and neutron numbers. In  fact, level spectra 
+are now available for essentially all the Sn isotopes from 
+nucleon number $A = 100$ to $A = 132$, obtained by filling valence 
+neutrons into the $N = 4$ major shell. This range of nuclei thus provides a 
+testing ground for shell-model calculations in which one may study 
+the transition from single-particle degrees of freedom to 
+more collective ones away from closed shells, as well 
+as the origin of possible underlying symmetries such as 
+generalized seniority. Similarly, the N = 82 isotones beyond $^{132}$Sn 
+provide us with the analogous valence proton spectra. 
+
+Furthermore, 
+doubly-magic nuclei and their nearby neighbors are of great experimental
+and theoretical interest. Being the heaviest particle-stable
+self-conjugate nucleus,
+$^{100}$Sn occupies a unique place among them.
+An important property of $^{100}$Sn is the degree of rigidity
+of its spherical equilibrium shape. This is directly related to
+the excitation energy and transition rates of the lowest 2$^+$
+state. The main wave function component of this state in a
+microscopic description is an isoscalar mixture of proton and
+neutron excitations 2d$_{5/2}$1g$_{9/2}^{-1}$ across the $N=Z=50$
+shell closures. This state is not experimentally known and
+intense radioactive ion beams will most likely be needed for
+its identification.
+
+The outline of this paper is as follows. In Sect. 2 we briefly 
+review our theoretical framework, including the shell model 
+and the effective interaction. In Sect. 3 we present selected 
+results for  nuclei around  $^{100}$Sn while Sect. 4 deals 
+with selected results for Sb isotopes.
+A brief summary is presented in Sect. 5.
+
+\section{Theoretical framework}
+\subsection{The nuclear shell model}
+We shall take the nuclear shell model as the microscopic 
+model of nuclear structure. The shell model describes the 
+properties of nuclei in terms effective interactions 
+among constituent nucleons filling the valence shell  
+beyond the a closed-shell core. In the present case of the Sn 
+isotopes, we assume that the valence particles are filling 
+the $N = 4$ major shell consisting of the single-particle orbitals 
+$2s_{1/2}$, $1d_{5/2}$, $1 d_{3/2}$, $0g_{7/2}$ along with the intruding 
+orbital $0h_{11/2}$ from the $N = 5$ shell. These orbitals may accomodate 
+as many as 32 valence nucleons, in which case the next closed-shell 
+nucleus $^{132}$Sn is obtained. The maximum dimensionality of the 
+shell-model eigenvalue problem is obtained at half filling of 
+the $N = 4$ shell, namely for 16 valence nucleons giving rise to $^{116}$Sn.
+Another alternative is to use 
+$^{88}$Sr as closed shell core.
+With this core, valence neutrons are again in the
+single-particle orbits $2s_{1/2}$, $1d_{5/2}$, $1d_{3/2}$,
+$0g_{7/2}$ and $0h_{11/2}$ while  valence protons are in the single-particle
+orbits $0g_{9/2}$ and $1p_{1/2}$.
+To represent a given shell-model state, we
+work in the $m$-scheme basis.
+This allows us to represent 
+each basis Slater determinant with a 32-bits computer word, in which 
+an occupied stated is represented by 1 and an empty state by 0. 
+Thus, operating on these states with fermion creation and 
+annihilation operators appearing in the nuclear Hamiltonian amount 
+simply to moving 1's and 0's around. Starting from the original basis 
+vectors, we construct, as described elsewhere, new basis vectors 
+using the Lanzocs algorithm. This procedure is repeated until the 
+Hamiltonian matrix is obtained on tridiagonal form and can be 
+diagonalized by conventional methods. Various precautions may be 
+taken to speed up convergence when the dimensionality gets big. 
+Although the basis vectors are constructed in $m$-schene, 
+the final eigenvectors will have good angular momentum.
+
+\subsection{The effective interaction}
+Although the shell-model space employed is large, it is 
+nevertheless severely truncated and it is necessary to use an 
+effective interaction to account for the degrees of freedom 
+which are ignored. It is our aim to calculate this as rigourously 
+as possible using many-body perturbation theory and then use it 
+without further adjustment in the shell model. Acknowledging 
+that it is not yet possible to obtain a realistic 
+nucleon-nucleon interaction directly from QCD, we have chosen 
+to start from modern one-boson-exchange potentials such as the 
+Bonn potentials, see Ref. \cite{cdbonn}. These potentials are too large at small distances 
+to be applied directly to perturbative calculations. Thus, they have 
+to be regularized at short distance by integrating out the 
+high-momentum states to yield a well-behaved Bethe-Brueckner-Goldstone 
+reaction matrix denoted as $G$-matrix. Then, the long-range 
+correlations may be taken into account using perturbative methods. 
+This is done by first evaluating the non-folded diagrams 
+(Q-box interaction) to third order and then by folding these 
+onto themselves to arbitrary order. For further details we 
+refer to extensive reviews on the topic, see e.g.,  Ref. \cite{hko95}
+and references therein.
+
+\section{Application to Sn isotopes}
+The effective interaction obtained from many-body theory 
+contains one-body, two-body, three-body etc. terms, up to as 
+many valence particles as one considers. It is customary to add 
+the one-body term to the unperturbed Hamiltonian and take the 
+eigenvalues of this effective one-body Hamiltonian from the 
+experimental single-particle energies. Further, one ignores the 
+third- and higher-body terms, so that the only piece to calculate 
+is the two-body effective interaction (which, of course, is hard enough). 
+In order to start from a $^{100}$Sn core, one needs the 
+$^{101}$Sn single-particle 
+energies which unfortunately are not known. Thus, one has had to rely 
+on a combination of mean-field calculations and on relevant data 
+from other nuclei in the vicinity. An alternative is to start from $^{132}$Sn 
+as a core and add holes in the $N = 4$ valence shell. This has the 
+advantage that the single-hole energies are better, although not 
+entirely known. In this case, one has to use an effective 
+interaction which is calculated with respect to the $^{132}$Sn core. 
+
+However, if we wish to study nuclei like e.g., $^{99}$Cd or 
+$^{101}$In 
+a better closed shell core is probably $^{88}$Sr.  
+
+The calculation denoted with SMH in Fig.~\ref{fig:cd99}
+uses $^{88}$Sr as closed shell core with an effective
+interaction based on the CD-Bonn nucleon-nucleon interaction \cite{cdbonn},
+using the model space discussed in the previous section.
+The single-particle energies
+for the $^{88}$Sr core were taken from Ref.~\cite{anne}.
+In the above model space $^{99}$Cd has 1 valence neutron and 10
+valence protons.
+The calculation favors a J$^{\pi}$=5/2$^+$ assignment for
+the ground state, in
+agreement with the systematics of odd-A N=51 isotones.
+The wave functions of the
+states with J$^{\pi}$=5/2$^+$,9/2$^+$,13/2$^+$,17/2$^+$,19/2$^+_2$
+and 21/2$^+_1$ all have main configurations with the valence
+neutron in the d$_{5/2}$ orbit, while for the
+7/2$^+$,11/2$^+$,15/2$^+$,19/2$^+_1$,21/2$^+_2$
+and 23/2$^+$ states the neutron occupies mainly the g$_{7/2}$ orbit.
+The two proton holes always remain in the g$_{9/2}$ orbit.
+The single-particle energy of the $\nu$g$_{7/2}$ orbit relative
+to the $^{88}$Sr core was raised from 2.63 to 2.9 MeV in order to
+reproduce the
+experimental excitation energy of the 7/2$^+$ state. This
+yielded excellent agreement between calculation and
+experiment up to the J$^{\pi}$=23/2$^+$ state, which is the level
+wuth highest spin and positive parity that can be obtained
+with 1 neutron and 10 protons outside the $^{88}$Sr core
+(or 1 neutron and 2 proton holes in the $^{100}$Sn core) and
+the model space used in the calculation. Another shell model calculation
+was therefore performed to study higher spin states.
+\begin{figure}
+   \setlength{\unitlength}{1mm}
+   \begin{picture}(100,100)
+   \put(0,0){\epsfxsize 14cm \epsfbox{cd99.ps}}
+   \end{picture}
+\caption{Experimental (EXP) and calculated (SMH, SMG) level
+schemes of $^{99}$Cd. The widths of the arrows are proportional
+to the intensity of a $\gamma$ ray observed in the experiment.\label{fig:cd99}}
+\end{figure}
+The
+calculation denoted with SMG in Fig.~\ref{fig:cd99} used $^{78}$Sr as closed
+shell core. The same model space as in the above calculation was
+used except for the $\nu$h$_{11/2}$ orbit was replaced by the
+$\nu$g$_{9/2}$ orbit. 
+Single-particle energies with respect to the $^{78}$Sr core are
+not known and were kept the same as in Ref.~\cite{anne} for the
+$^{88}$Sr core. The energy of the g$_{9/2}$ orbit was put at
+5.0 MeV below the d$_{5/2}$ orbit. The excitation energies of the
+states with J$^\pi$$\geq$25/5$^+$ are very sensitive to the position
+of the g$_{9/2}$ orbit. By fitting this single particle energy we,
+therefore, indirectly deduced the size of the $N=50$ shell gap.
+The wave functions of the states below the 25/2$^+$ level are very
+similar to the wave functions of the SMH calculation described
+earlier. For these states the $\nu$g$_{9/2}$ orbit is completely filled.
+The 25/2$^+$ level and the higher lying states have 9 neutrons in the
+g$_{9/2}$ orbit while the remaining neutron pair is almost
+evenly distributed over the d$_{5/2}$ and g$_{7/2}$ orbits.
+Calculations with the same model spaces as for $^{99}$Cd were
+also done for $^{101}$In with a similar agreement, see Ref.~\cite{matej}
+for further references.
+The interaction from the SMH and SMG calculations
+was used in shell model calculations of lowest lying
+levels in $^{101}$Sn.
+Both SMH and SMG calculations favor J$^{\pi}$=5/2$^+$ for the gound state,
+while the 7/2$^+$ state lies only $\sim$100 keV above. This is in excellent
+agreement with the extrapolation from odd-A Sn isotopes down to
+$^{103}$Sn.
+
+\section{Shell model studies of the proton drip line nuclei 
+$^{105,106,107}$Sb}
+
+
+We present recent results for $^{105}$Sb, $^{106}$Sb and $^{107}$Sb in
+Table \ref{tab:tab1}. The calculations use $^{100}$Sn as
+closed shell core with an effective 
+interaction for the four, five or six valence neutrons and one valence proton
+based on the CD-Bonn nucleon-nucleon interaction \cite{cdbonn}.
+
+The high spin level scheme of $^{105}$Sb resembles the level scheme of
+$^{107}$Sb up to $J=19/2$ \cite{sb107}. 
+When compared to $^{107}$Sb the $^{105}$Sb
+level scheme shows similar trends as when going from $^{106}$Sn to
+$^{104}$Sn. That means that coupling a $d_{5/2}$ proton to a 
+$^{104}$Sn core is appropriate to describe the observed states.
+The calculation favors $J^{\pi}$=5/2$^+$ for the ground state in
+agreement with the suggestion from proton decay data.
+In this state the valence proton is mainly in the $d_{5/2}$
+orbit and the two neutron pairs are almost evenly distributed
+over the $d_{5/2}$ and $g_{7/2}$ neutron orbits. The situation
+is very similar in the 9/2$^+$ and 13/2$^+$ states, while 
+the $\nu$$g_{5/2}^3$$g_{7/2}^1$ configuration exhausts the
+largest parts of the wave functions of the 15/2$^+$ and 17/2$^+$ 
+states. The neutron part of the wave function of the 19/2$^+$
+state is almost identical to the 17/2$^+$ state. However,
+since 17/2$^+$ is the maximum spin for the 
+$\pi$$g_{5/2}^1$$\nu$$g_{5/2}^1$$g_{7/2}^1$ configuration,
+the odd proton resides almost exclusively in the $g_{7/2}$
+orbit in the 19/2$^+$ state. 
+For proton degrees of freedom
+the $s_{1/2}$, $d_{3/2}$ and $h_{11/2}$ single-particle 
+orbits give essentially negligible
+contributions to the wave functions and the energies of the excited
+states, as expected. For neutrons, although
+the single-particle distribution for a given state is also negligible,
+these orbits are important for a good describtion of the energy spectrum,
+as also demonstrated in large-scale shell-model calculations of
+tin isotopes \cite{ehho98}.
+Similar picturer applies to $^{106}$Sb and $^{107}$Sb as well, 
+see Refs.~\cite{sb106,sb107}.
+The wave functions for the various states are to a large extent
+dominated by the $g_{7/2}$ and $d_{5/2}$ single-particle orbits
+for neutrons ($\nu$)
+and the $d_{5/2}$ single-particle
+orbit for protons ($\pi$). 
+The $\nu g_{7/2}$ and $\nu d_{5/2}$ single-particle orbits represent
+in general more than $\sim 90\%$ of the total neutron single-particle
+occupancy, while the  $\pi d_{5/2}$ single-particle orbits stands for 
+$\sim 80-90\%$ of the proton single-particle occupancy. 
+The other single-particle
+orbits play  an almost negligible role in the structure of the wave functions.
+\begin{table}[hbt]
+\begin{center}
+\caption{ Low-lying states of $^{105,106,107}$Sb, theory and experiment.
+Energies in MeV. \label{tab:tab1}}\footnotesize
+\begin{tabular}{ccc|ccc|ccc}
+\hline
+\multicolumn{3}{c|}{ $^{105}$Sb} & \multicolumn{3}{c|}{ $^{106}$Sb}& \multicolumn{3}{c}{ $^{107}$Sb} \\ 
+{$J^{\pi}_i$} & {Exp} & {Theory} & 
+{$J^{\pi}_i$} & {Exp} & {Theory} & 
+{$J^{\pi}_i$} & {Exp} & {Theory} \\
+\hline 
+$5/2^{+}$ & 0 & 0 & $2^{+}$ & 0 & 0 & $5/2^{+}$ & 0 & 0 \\
+$9/2^{+}$ & 1.22 & 1.22 & $4^{+}$ & 0.10 & 0.25 & $7/2^{+}$ & 0.77 & 0.69 \\
+$13/2^{+}$ & 1.84 & 1.94 & $5^{+}$ & 0.32 & 0.54 & $9/2^{+}$ & 1.06 & 1.08  \\
+$15/2^{+}$ & 2.21 & 2.10 & $6^{+}$ & 0.44 & 0.66 & $11/2^{+}$ & 1.79 & 1.80 \\
+$17/2^{+}$ & 2.50 & 2.41 & $7^{+}$ & 0.89 & 1.34 & $13/2^{+}$ & 1.90 & 1.94  \\
+$19/2^{+}$ & 2.99 & 2.94 & $8^{+}$ & 1.53 & 1.78 &  $15/2^{+}$ & 2.24 & 2.38\\
+$23/2^{+}$ & 3.73 & 4.09 & $10^{+}$ & 2.26 & 2.57 & $17/2^{+}$ & 2.75 & 2.83  \\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Summary and outlook}
+The aim of the present work has been to test realistic 
+microscopic calculations of the effective interaction 
+in large-scale shell-model calculations with many valence nucleons. 
+In general we obtain a  nice agreement with the experimental data
+for the excited states. The main problem is still however a proper
+reproduction of the binding energy, indicating the need of including
+realistic three-body forces as well.
+ 
+We are much indebted to Cyrus Baktash, David Dean, Hubert Grawe
+and Matej Lipoglav\v{s}ek
+for many discussions on properties of nuclei near $A\sim 100$.
+
+\begin{thebibliography}{200}
+\bibitem{cdbonn} R.\ Machleidt, F.\ Sammarruca and Y.\ Song,
+Phys.\ Rev.\ C 53 (1996).
+\bibitem{hko95}  M.\ Hjorth-Jensen, T.\ T.\ S.\ Kuo and
+E.\ Osnes, Phys.\ Reports 261 (1995) 125.
+\bibitem{anne} A.~Holt, T.~Engeland, M.~Hjorth-Jensen, and E.~Osnes,
+                 Phys.~Rev.~C61 (2000) 064318.
+\bibitem{ehho98} A.~Holt, T.~Engeland, M.~Hjorth-Jensen, and E.~Osnes,
+                 Nucl.~Phys.~A634 (1998) 41.
+\bibitem{sb107} D.~R.~LaFosse et al., Phys.~Rev.~C62 (2000) 014305.  
+\bibitem{sb106} D.~Sohler {\em et al.}, Phys.~Rev.~C59 (1999) 1324; for a
+shell-model analysis see e.g., 
+T.~Engeland, M.~Hjorth-Jensen and E.~Osnes, 
+Phys.~Rev.~C {\bf 61} (2000) 021302(R).
+
+\bibitem{matej}M.~Lipoglav\v{s}ek {\em et al.}, Phys.\ Rev.\ Lett., submitted.
+
+\end{thebibliography}
+
+
+
+\end{document}
+
+
+
+
+
+
+  
+

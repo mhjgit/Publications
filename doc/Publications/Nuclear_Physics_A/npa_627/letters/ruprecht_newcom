@@ -1,0 +1,78 @@
+From m.h.jensen@fys.uio.no Wed Feb 19 20:15:58 1997
+Received: from pat.uio.no by norsci0.nordita.dk (4.1/SMI-4.1)
+	id AA21905; Wed, 19 Feb 97 20:15:57 +0100
+Resent-Message-Id: <9702191915.AA21905@norsci0.nordita.dk>
+Received: from ulrik.uio.no by pat.uio.no id <06054-0@pat.uio.no>;
+          Wed, 19 Feb 1997 20:15:42 +0100
+Return-Path: <machleid@phys.uidaho.edu>
+Old-Received: from 129.101.65.111 by pat.uio.no with SMTP (PP) id 
+              <05981-0@pat.uio.no>; Wed, 19 Feb 1997 20:15:18 +0100
+Old-Received: by tamaluit.phys.uidaho.edu (5.61/UW-NDC Revision: 2.21 ) id 
+              AA21507; Wed, 19 Feb 97 11:10:41 -0800
+Date: Wed, 19 Feb 97 11:10:41 -0800
+From: Ruprecht Machleidt <machleid@phys.uidaho.edu>
+Message-Id: <9702191910.AA21507@tamaluit.phys.uidaho.edu>
+To: m.h.jensen@fys.uio.no
+Cc: artur@dirac.ecm.ub.es, herbert.muether@uni-tuebingen.de,
+        lars.engvik@fys.uio.no
+Resent-Date: Wed, 19 Feb 1997 20:15:42 +0100
+Resent-From: m.h.jensen@fys.uio.no
+Resent-To: mjensen@nordita.dk
+Status: R
+
+    machleid
+
+Dear Gang-of-Four,
+
+the mail battle is raging, and that's fun!
+Ultimately we will all learn something we didn't know,
+even though we all thought, we knew everything.
+
+In this message, I will be short and, essentially,
+technical; give me until next week concerning some details
+(short of time, in the moment).
+
+Concerning IDPAR in the Nijmegen code:
+Believe it or not, but the Nijmegen people
+do not understand their own code.
+IDPAR=0 is Nijm93,
+IDPAR=1 is Nijm-I,
+IDPAR=2 is Nijm-II,
+this is what is correct;
+and what the Nijmegen people say in their own code is wrong.
+I have checked this very thoroughly, reproduced
+all the phase shifts and deuteron properties EXACTLY
+with the above assignments.
+(Based upon this, one can only hope, that the Nijmegen people
+know otherwise what they are doing.)
+
+The important and outstanding thing about these new, high-precision
+NN potentials (i.e., CD-Bonn, Nijm-I, Nijm-II, Reid93) is that
+their \chi^2/datum is ONE. Thus differences in the reuslts
+cannot be attributed anymore to fit differences and, thus, one is
+finally in the unique position to pin down off-shell differences.
+This is the purpose of our paper (as I understand it).
+
+The Nijm93 and the Ruhrpot potentials do NOT have this
+chi^2/datum of one; Nijm93 has 1.9 and Ruhrpot has 1.7.
+This is more like the old potentials (Reid68, Paris, V_{14}, etc).
+Thus, there may be large on-shell diffrences which obscure
+the investigation (like those in Fig. 1).
+For this reason, I like to suggest to exclude Nijm93 and Ruhrpot.
+
+Plotting the potentials in momentum space is more
+revealing. I have done that, but give me time until next
+week to reprot on this in detail.
+
+The reason why Nijm-II behaves so "odd" in Fig. 5 is the
+1P1 contribution (which is absent in Fig. 7): Nijm-II has
+an unusually large (repulsive) 1P1 contribution.
+The reason for this, I do not know yet; it has to be
+off-shell, because on-shell the 1P1 phase shift is not
+more repulsive than that of the other potentials
+(cf. for this always Table V of PRC 49, 2950 (1994)).
+
+With best regards,
+
+Ruprecht.
+

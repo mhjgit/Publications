@@ -1,0 +1,94 @@
+Hi Franz-Joseph,
+it seems that a kinda a convergence may be achieved,
+to summarize,
+1) we merge the figs on the potential values (old figs 2-4)
+   into one.
+2) regarding whether to merge several of the gap figs into one single fig,
+   we are still in doubt, chiefly due to the fact that we feel it will
+   hamper the readability of the ms, since the flow in the discussion
+   (or you may say the more pedagogical side of the ms) rests on 
+   a sequential discussion of the results. We feel it more pleasant
+   to the eye to pause on one fig at the time as the disc proceeds rather
+   than making a huge (and thereby often confusing ) collective fig.
+   You also have to bear in mind that if we submit it to PRC, there will
+   most likely be a sizable reduction from the printer's side of such a figure.
+   Obviously however, it is a matter of taste. We think also as you say
+   that the figures on various sp energies are superfluous , it suffices
+   to state something about the properties of the sp energies in the text.
+
+   Regarding your comment about the old pots v.s. the new ones and the gap
+   results, you will see that there are differences at momenta up to
+   2.0 fm^-1 even between the paris and bonn B  and the new potentials.
+   The new potentials give much more similar results for the gap than do
+   the old ones. Just look at the following values for the gap at 1.8 fm^-1
+   cd-bonn 0.44
+   nim I   0.46
+   nim II  0.44
+
+   v14     0.76
+   paris   0.52
+   bonnb   0.49
+
+   And the diffs become even larger at higher densities, i.e. around 2.0.
+
+   What we feel is important is that the discrepancies between various
+   pots up to the reliable value of 2.0 ( roughly 350 MeV in lab energy)
+   are much smaller now than compared with previous pots.
+   This means that although the new pots have differing mathematical
+   structures, they yield essentially the same gaps and phase shifts,
+   sicne obviously they are fitted to the same data sets. Not so is the
+   case with the old pots, and you can see already the scatter in the above 
+   results. It is crucial to keep these results aside since the old pots
+   are fitted to different data sets, the paris from the mid 70s,
+   and the v14 early 80s and bonn b late 80s. In this sense, 
+   it is like comparing apples with bananas.
+
+   However, what we propose, instead of a fig with all gaps in one
+   (7 data lines are too many, one should at most have some 5 data lines,
+    have in mind also that the fig will be reduced, and then totally illegible
+    with 7 lines) is to have a table with the gaps for all pots. At least
+    those with a free sp spectrum. Then the reader can really assess
+   the differences.
+  
+   The important point with the ms, is that, in contrast to the 1S0 wave,
+   there is a big ambiguity in the value of the gap for densities
+   corresponding to lab energies > 350 MeV. people have  not thought of that
+   before, and what we show is that up to 2.0 the new pots give 
+   essentially the same results for the gap (in contrast to the old ones) .
+   Given this ambiguity above 350 MeV, the need for better pots is imperative,
+   especially if one thinks of the importanca this will have for cooling calcs.
+   We actually have a point there, and this can motivate the pots constructors
+   to do a better job in the future.
+
+   We feel also that to have the old pots phase shifts is redundant since they
+    are published and discussed in depth in the literature. One should also
+   emphasize the new stuff as it is this which everybody is using one, and 
+   that can motivate for new fits above 350 MeV.  Therefore, in order not
+   to distract the attention of the reader with the old stuff, we prefer
+   to focus in the text on the gaps with the new pots, although there is
+   no claim that they are perfect, but at least they agree in  a
+   much better up to the points where the pots are fitted. 
+
+   We propose also to have a fig with the new pots for the 3F2 wave. 
+
+
+   So, instead of giant fig with all gaps in one, we propose the old 
+   setting but in addition a table with all gaps. Then you don't need
+   to prepare your fig (we should also keep same fig style in the ms,
+   it never looks fine when different plotting progs have been used to
+   prepare figs). We will however send you the cd-bonn results, see below.
+
+   In addition, old fig 8 gets added a fig with the 3f2 stuff as well,
+   but only the new pots. That already is five data lines with Arndt's
+   data points. 
+  
+
+3) The v18 results with the bhf option are a puzzle to us. How many partial
+   waves did you include? We use J up to 10. but is is strange since 
+   our common bhf results with v14 seem to agree nicely. 
+
+
+
+
+
+************  cd-bonn results

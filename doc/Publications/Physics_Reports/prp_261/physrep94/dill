@@ -1,0 +1,98 @@
+sec1.tex:\item First, one needs a nucleon-nucleon (NN) interaction $V$ which is
+sec1.tex:The nucleon-nucleon interaction is then described in terms of the
+sec1.tex:where $\omega$ is the unperturbed energy of the interacting nucleons in
+sec1.tex:operator which prevents the interacting nucleons from scattering into
+sec1.tex:states occupied by other nucleons.
+sec1.tex:interactions applied to several nuclei with two or more valence nucleons.
+sec2.tex:matter calculations using realistic nucleon-nucleon (NN) interactions.
+sec2.tex:the nucleon-nucleon
+sec2.tex:nuclear-matter binding energy per nucleon is commonly denoted
+sec2.tex:represents the interaction potential $V$ between two nucleons, where
+sec2.tex:${\bf r}$ is the internucleon distance.
+sec3.tex:in terms of hadrons like nucleons, isobars and various mesons,
+sec3.tex:Thereafter, we briefly review the general properties of the nucleon-nucleon
+sec3.tex:constrained by e.g. the nucleon-nucleon scattering data.
+sec3.tex:As mentioned above, we limit the attention in this work to nucleons only
+sec3.tex:masses are always represented with a capital $M$, with the nucleon mass
+sec3.tex:the nucleon-nucleon interaction, which
+sec3.tex:\subsection{The nucleon-nucleon potential}\label{subsec:sec312}
+sec3.tex:line represents a nucleon, the double line is an isobar $\Delta$, while
+sec3.tex:exchanges. At shorter internucleonic distances, this model gives however
+sec3.tex:is not conserved and the nucleons are off their energy shell. It is this
+sec3.tex:nucleons and $H_0$ is the unperturbed hamiltonian representing
+sec3.tex:the same on-shell scattering matrix for free nucleons \cite{mac89}.
+sec4.tex:nucleon-nucleon (NN) interaction\footnote{In this section we will
+sec4.tex:two valence nucleons are represented by four-particle two-hole
+sec4.tex:the spectra of nuclei with few valence nucleons.  We demonstrate this 
+sec4.tex: with one nucleon in addition to closed shells and the ground state of
+sec5.tex:face the problem that any realistic nucleon-nucleon (NN) potential $V$
+sec5.tex:effects of two-nucleon correlations.
+sec5.tex:diverges at small internucleon distances. Fig.\ \ref{fig:bonna1s0}
+sec5.tex:\caption{Schematic plot of the nucleon-nucleon
+sec5.tex:a schematic plot of the nucleon-nucleon potential
+sec5.tex:partial wave. The internucleon distance is $r$. As indicated
+sec5.tex:means that the probability of finding other nucleons at such momenta
+sec5.tex:$k^2/M_N + K^2/4M_N$, with $M_N$ being the mass of the nucleon.
+sec5.tex:internucleon distance $r$ only, we can write the wave functions
+sec5.tex:where $M_{N}^{*}$ is the effective mass of the nucleon and $M_{N}$ is the
+sec5.tex:bare nucleon mass. For particle states above the Fermi sea we choose
+sec6.tex:consisting of a closed $^{16}$O core with two nucleons
+sec6.tex:the spectra for nuclei with more than two valence nucleons.
+sec6.tex:of nuclei with more than two valence nucleons. 
+sec6.tex:particle states with a nucleon in $0s$ or $0p$ states or both
+sec6.tex:nucleons in the $1s-0d$ or $1p-0f$ shell, or in terms of the
+sec6.tex:In order for two nucleons to interact via the $G$-matrix, they must be
+sec6.tex:fairly close to each other. Thus two valence nucleons on opposite sites
+sec6.tex:nucleons only, in our case $^{18}$O and $^{18}$F. The effective
+sec6.tex:valence nucleons, here the nuclei $^{19}$F,
+sec6.tex:valence nucleons. This is done in order to be consistent with
+sec6.tex:two valence nucleons and to other mass areas as well.
+sec6.tex:\subsubsection{Results for nuclei with more than two valence nucleons}
+sec6.tex:two valence nucleons. The FD results with a \qbox of third order in the
+sec6.tex:is small for systems with three valence nucleons only, though
+sec6.tex:nuclei with more than two valence nucleons, here
+sec6.tex:Another possibility is to look at the nucleon-nucleon
+sec6.tex:parameters which define the NN potential, such as the meson and nucleon
+sec6.tex:valence nucleons in the mass region of $^{100}$Sn}
+sec6.tex:valence nucleons, as done here, in refs.\ \cite{ehho93,holt94,physcripta94}
+sec6.tex:nucleon in any of the
+sec6.tex:or with two nucleons in the $sdg$ ($0g_{9/2}$ excluded) or the $pfh$
+sec6.tex:We note also that with an increasing number of valence nucleons,
+sec6.tex:interaction for nuclei other than those with two valence nucleons
+sec7.tex:simultaneous reproduction of both the binding energy per nucleon
+sec7.tex:Results obtained with a variety of methods and nucleon-nucleon (NN)
+sec7.tex:phenomenological Dirac approach in nucleon-nucleus scattering
+sec7.tex:nucleon.
+sec7.tex:saturation per nucleon changes
+sec8.tex:to describe the nucleon self-energy.
+sec8.tex:this self-energy. Due to the scalar field, the nucleon mass is reduced
+sec8.tex:language, the reduction of the nucleon mass means that e.g.\
+sec8.tex:define the nucleon self-energy. In this sense we also differ
+sec8.tex:nucleon can be formally written as
+sec8.tex:transformation between the two-nucleon center of mass system
+sec8.tex:is responsible for the scalar term $U_S$ in the relativistic nucleon mass. 
+sec8.tex:coupling to virtual nucleon-antinucleon pairs. In nuclear matter,
+sec8.tex:Secondly, the nucleon-nucleon spin-orbit interaction from the 
+sec8.tex:nucleon self-energy. Higher-order effects like ring diagrams, are
+sec8.tex:are valence nucleons, and most non-relativistic many-body
+sec8.tex:the medium dependent nucleon-nucleon interaction. 
+sec8.tex:tensor force component of the nucleon-nucleon potential provides
+sec9.tex:free nucleon-nucleon (NN) interaction and the many-body theory
+sec9.tex:connection between the tensor force of the nucleon-nucleon interaction
+sec9.tex:nuclei with more than two valence nucleons. The agreement with the
+sec9.tex:models for the nucleon-nucleon (NN)
+sec9.tex:like $^{42}$Ca with two valence nucleons outside the closed
+sec9.tex:meson masses and the nucleon mass in the NN potential, following
+sec9.tex:the nucleon and the mesons involved, in order to obtain
+sec9.tex:a medium. Even the calculation of the self-energy for the nucleon (see the
+sec9.tex:degrees of freedom of selected valence nucleons. The density of these
+sec9.tex:valence nucleons is rather small, and relativistic effects negligible,
+sec9.tex:and in the calculation of spectra for nuclei with several valence nucleons,
+sec9.tex:sp wave function for the description of nucleons in nuclei)
+sec9.tex:Clearly, if one wishes to evaluate the self-energy of the nucleon in
+sec9.tex:of elastic  nucleon-nucleus scattering experiments. This large
+sec9.tex:direct calculation of the self-energy for the nucleon in terms
+sec9.tex:hand second order configuration mixing of the nucleon states and
+sec9.tex:axial charge $g_A^C$, which equals $g_A^{GT}$ for free nucleons, is
+sec9.tex:effective isoscalar axial current density of a nucleon in a nucleus differ
+sec9.tex:appreciably from the corresponding free nucleon values.

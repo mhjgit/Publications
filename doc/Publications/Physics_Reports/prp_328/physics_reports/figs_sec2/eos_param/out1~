@@ -1,0 +1,12 @@
+           9           3
+  Quality of energy fit:
+  Number of terms in polynomial expansion:           3
+           1  -7.31643746394557     
+           2  -15.4728997031333     
+           3   7.79055420955820     
+CHISQ =      8.21441
+ chi-square tolerance too high, try with more terms
+ Density in [fm^-3]
+ Energy and pressure in [MeVfm^-3]
+ Incompressibility in [MeV]
+ Density, e-fitted, original e, fitted-p, incompressibility, speed of sound/c

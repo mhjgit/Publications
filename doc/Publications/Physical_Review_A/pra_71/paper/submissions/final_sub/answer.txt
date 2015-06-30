@@ -1,0 +1,59 @@
+
+
+----------------------------------------------------------------------
+Answer to the  Referee -- AZ8966/Nilsen
+----------------------------------------------------------------------
+
+First of all we would like to use this opportunity to thank the 
+referee for her/his kind remarks on our manuscript. Thanks also for spotting  
+various typos. We have corrected these, in addition to some other ones as well. 
+
+Moreover, in connection with the remark below
+---------------
+>I think, however, that some further comments should be put in the text
+>regarding the accuracy of the Monte Carlo  calculations. Description
+>like "27000 configurations,  grouped in 90 blocks of 300 movements"
+>sounds very technical  and is understood only by those who are familiar
+>with the  Metropolis algorithm. But the average reader would like to 
+>know how good accuracy of the calculation of integral of  very high
+>dimension (formula (11) in the text) does this  scheme support. I would
+>like to see, for example, the  comparison of the results of this scheme
+>(i.e., 27000  configurations, grouped in 90 blocks of 300 movements)
+>with  the outcome from GP equation for very low gas parameter  where GP
+>equation works well.
+---------------
+we have performed additional calculations in the low-density region, where
+GP works well. These results are for the ground state only 
+and we use a scattering length 
+for 87Rb, employed by Stringari and Dalfovo in 
+(PRA53(1996)2477) which in units of the oscillator parameter 
+perpendicular to the z-axis  reads 4.33e-3. The calculations reported below are for
+N=500 particles. Only the energy is included in the revised discussion.
+
+The GP results are
+Energy = 3.3032151
+
+
+The corresponding  MGP results are:
+Energy = 3.3080392
+
+
+The VMC results are for an optimum variational parameter alpha= 0.475
+and yield an energy 
+Eenergy = 3.3241881(10)
+
+Taking into account
+that the two-body correlation has been kept fixed, and that the
+only variational parameter is alpha, this result indicates that
+the wave function is not so bad! Actually, the discrepancy is
+of the same relative order as for the cases reported in our manuscript for 
+larger densities, roughly 0.5%.
+
+We have included these results, adding a small paragraph before Eq. (20). 
+
+We hope these changes abide to the referee's original intentions and that the 
+included paragraph yields a clarification of the computational approach and the 
+reliabilty of our results.
+
+Yours sincerely,
+the authors.

@@ -1,0 +1,532 @@
+\documentclass[a4paper]{jpconf}
+\usepackage{graphicx,amsmath}
+\newcommand\Heff{H_{\mathrm{eff}}}
+\newcommand\heff{h_{\mathrm{eff}}}
+\newcommand\Veff{V_{\mathrm{eff}}}
+\newcommand\Vlowk{V_{\mathrm{low}k}}
+\newcommand\Vsrg{V_{\mathrm{SRG}}}
+\def\Nu#1#2#3{{}^{#1}_{#3}\mathrm{#2}}
+
+\def\bra#1{\langle #1 \rvert}
+\def\ket#1{\lvert #1 \rangle}
+\def\braket#1#2{\langle #1\lvert#2\rangle}
+\def\~#1{\tilde{#1}}
+\def\1by2#1#2{
+  \left(
+  \begin{array}{c}
+    #1  \\
+    #2  \\
+  \end{array}
+  \right)
+}
+\def\2by2#1#2#3#4{
+  \left(
+  \begin{array}{cc}
+    #1  & #2  \\
+    #3  & #4  \\
+  \end{array}
+  \right)
+}
+\def\3j#1#2#3#4#5#6{
+  \left(
+  \begin{array}{ccc}
+    #1  & #2  & #3 \\
+    #4  & #5  & #6 \\
+  \end{array}
+  \right)
+}
+\def\W#1#2#3#4#5#6{
+  \left\{
+  \begin{array}{ccc}
+    #1  & #2  & #3 \\
+    #4  & #5  & #6 \\
+  \end{array}
+  \right\}
+}
+\def\9j#1#2#3#4#5#6#7#8#9{
+  \left\{
+  \begin{array}{ccc}
+    #1  & #2  & #3 \\
+    #4  & #5  & #6 \\
+    #7  & #8  & #9 \\
+  \end{array}
+  \right\}
+}
+\def\trb#1#2#3#4#5#6#7#8#9{
+  \left[
+  \begin{array}{ccc}
+    #1  & #2  & #3 \\
+    #4  & #5  & #6 \\
+    #7  & #8  & #9 \\
+  \end{array}
+  \right]
+}
+\newcommand\fmi{\mathrm{fm}^{-1}}
+\newcommand\TSO{{}^3S_1}
+\newcommand\TDO{{}^3D_1}
+\newcommand\TE{{}^3 E}
+\newcommand\TO{{}^3 O}
+\newcommand\SE{{}^1 E}
+\newcommand\SO{{}^1 O}
+
+\begin{document}
+\title{Tensor force in effective interaction of nuclear force}
+
+\author{Naofumi Tsunoda, Takaharu Otsuka, Koshiroh Tsukiyama}
+
+\address{Department of physics, the University of Tokyo, 7-3-1 Hongo,
+Bunkyo-ku, Tokyo, Japan}
+
+\author{Morten Hjorth-Jensen}
+\address{Department of Physics and Center of Mathematics for Applications, University of Oslo, N-0316 Oslo, Norway}
+\ead{tsunoda@nt.phys.s.u-tokyo.ac.jp}
+
+\begin{abstract}
+The tensor force in effective interaction is discussed.
+We show that the tensor force in low-momentum effective interactions
+ $\Vlowk$ and effective interactions for shell model studies are almost identical
+ to that of the bare nucleon-nucleon interaction.
+We use realistic nuclear forces and microscopic theories of effective interactions.
+We calculate $\Vlowk$ by the technique of similarity transformation. The
+ effective interaction for the nuclear shell model is calculated by folded
+ diagram theory.
+The monopole contribution from the tensor-force is analyzed by a spin-tensor decomposition.
+\end{abstract}
+
+ \section{Introduction}
+
+ Radioactive beam accelerator facilities  make it possible to perform experiments 
+that test the limits of nuclear stability by studying exotic nuclei.
+The  nuclear shell model, which was proposed by Mayer and Jensen, 
+ has been one of the most successful models for describing nuclei.
+ However, recent studies of neutron rich nuclei indicate that the so-called nuclear magic
+ numbers may only be  valid close to stable nuclei.
+ Otsuka et al. showed that the tensor force varies the spin-orbit splitting in exotic
+ nuclei, where the  proton number and the neutron number are very different.
+ The effective single particle energy of protons change as follows
+  \begin{align}
+   \label{eq:ESPE}
+   \Delta \epsilon_p(j)=\frac{1}{2}
+   \left(V_{jj'}^{T=0}+V_{jj'}^{T=1}\right)
+   n_n(j'),
+  \end{align}
+  where $\Delta \epsilon_p(j)$ represents the  change in the  effective single
+  particle energy and $n_n(j')$ is the occupation number of neutrons in orbit
+  $j'$.
+ Here $V_{jj'}$ represents the 
+ monopole part of the Hamiltonian which is defined as 
+ \begin{eqnarray}
+  V_{a,b}^T=\frac{\sum_{J}(2J+1) \bra{ab} V \ket{ab}_{JT}}{\sum_{J} (2J+1)}.
+ \end{eqnarray}
+ This is nothing but the angular averaged interaction between two orbits
+ $j$ and $j'$.
+The  tensor force monopole has opposite sign between
+  a pair of spin-orbit partners. For example, $V_{j_{>}j'}$ and
+  $V_{j_{<}j'}$ have opposite sign, where $j_{>}=l + 1/2$ and $j_{<} = l
+  -1/2$.
+  This effect breaks the conventional magic numbers believed to be
+  universal during the last  50 years \cite{PhysRevLett.95.232502}.
+  
+  In Ref.~\cite{PhysRevLett.95.232502}, the tensor force in effective interactions for the nuclear shell model
+  is taken as the exchange of $\pi+\rho$ mesons for simplicity. This is qualitatively the
+  same as the tensor force in the bare realistic nuclear force. The tensor force of realistic interactions is fitted to
+  reproduce  phase shifts of NN scattering data and ground state properties of the deuteron.
+  However, the effective interaction for the shell model is normally different
+  from the bare nuclear force.
+  First,the  bare nuclear force has strong coupling between low-momentum and
+  high-momentum space generated from short range details of the interaction.
+  For example, the Argonne interaction is defined by using a local operator
+  form in coordinate space and has a strong short range repulsion.
+  Furthermore, the effective interaction for the shell model is defined in
+  a restricted configuration space, normally called the model space.
+  For that reason, effective interactions for the shell model should include
+  the effect of restriction to the model space.
+  Therefore, the assumption of extracting the tensor force from an effective
+  interaction for the shell model is far from trivial.
+  To understand the  validity of this assumption, theoretical studies based on
+  realistic nuclear forces and the microscopic
+  theory of effective interactions are needed.
+  
+  In this work, we construct an effective interaction for the shell model
+  starting from realistic nuclear forces and using microscopic theory of
+  effective interaction. Then, we analyze the tensor component to see of the 
+  monopole term from tensor-force survives under the renormalization.
+  
+ \section{How to construct an effective interaction from nuclear
+ forces~\cite{HjorthJensen1995125}} 
+ \label{sec:effective}
+
+  The original eigenvalue problem is
+  \begin{align}
+   \label{eq:eigen}
+   H \ket{\Psi_i}= E_i \ket{\Psi_i}.
+  \end{align}
+  Here $\ket{\Psi_i}$ and $E_i$ are ith eigenvector and eigenvalue, respectively.
+  We divide the Hilbert space into a model space, the so-called $P$-space and an excluded space, the  $Q$-space for short.
+  Here, $\hat{P}$ and $\hat{Q}$ are projection operators onto the $P$-space and the $Q$-space,
+  respectively, i.e. $\hat{P}^2=\hat{P},\,\hat{Q}^2=\hat{Q},\, \hat{P}+\hat{Q}={\bf 1}$.
+  The basic problem is to find an effective interaction $\tilde{H}$ that
+  reproduces some of the 
+  eigenvalues of the original eigenvalue problem (\ref{eq:eigen})
+  \begin{align}
+   \label{eq:eigenP}
+   \hat{P}\tilde{H}\hat{P} \ket{\phi_i} = E_i \ket{\phi_i}
+  \end{align}
+   where $\ket{\phi_i}=\hat{P} \ket{\Psi_i}$.
+  This can be accomplished by the following similarity transformation,
+  \begin{align}
+   {\label{eq:transformation}}
+   \tilde{H} = e^{- \omega} H  e^{\omega} \,\,\,\,\,\,\,\,\,\,\,\,\,
+   \hat{Q}\omega \hat{P} = \omega.
+  \end{align}
+  Then it follows immediately $\omega^2=\omega^3=0$ and $e^{\omega} = 1+\omega$.
+  If $\hat{P}\tilde{H}\hat{P}$ is an effective interaction, the decoupling condition
+  $\hat{Q}\tilde{H}\hat{P}=0$ must be fulfilled.
+  
+  Therefore, the central problem is now reduced to 
+  how to obtain $\omega$ which
+  fulfills the decoupling condition.
+  The physical meaning of $\omega$ can be understood as a mapping from the $P$-space
+  wavefunction to the corresponding $Q$-space component.
+  In general, there is no unique solution of the decoupling equation and
+  $\omega$ depends on the set of original eigenfunctions which are
+  selected to reproduce the corresponding eigenvalues. In this sense, the effective
+  interaction is said to be state dependent.
+
+  If one chooses a given set $d$ of eigenfunctions,
+  the decoupling equation has 
+ the  following formal solution
+  \begin{align}
+   {\label{eq:formal}}
+   \omega =\sum_{i=1}^d \hat{Q} \ket{\Psi _i}\bra{\tilde{\phi_i}} \hat{P}\,\,\, ,
+  \end{align}
+  where $\bra{\tilde{\phi_i}}$ refers to the bi-orthogonal state of
+  $\ket{\phi_i}$, which is defined to be
+  $\braket{\tilde{\phi_i}}{\phi_j}=\delta_{ij}$. The original eigenfunction
+  $\ket{\Psi}$ is orthogonal
+  because of the hermiticity of the Hamiltonian. However, its projection onto
+  the $P$-space $\ket{\phi}=\hat{P}\ket{\Psi}$ is not orthogonal in general.
+  
+  If we take the $P$-space as the low-momentum space and the $Q$-space as the high-momentum
+  space and choose $d$ low-energy eigenstates,
+  we will obtain a low-momentum interaction by the above procedure.
+  We call this potential $\Vlowk$ and the cutoff parameter $\Lambda$ is
+  defined as the boundary between the $P$-space and the $Q$-space~\cite{Bogner20031}.
+  Using $\Vlowk$ can be interpreted as rewriting our problem from
+  $H=T-T_{\mathrm{CM}}+\sum V_{\mathrm{bare}}$ to
+  $H=T-T_{\mathrm{CM}}+\sum \Vlowk$.
+  This means that we change our resolution of the problem and solve the
+  problem not seeing high-momentum details. The problem becomes much easier
+  to solve. In this work, we will neglect induced many-body force.
+
+  Nevertheless, if we need to solve a many-body problem, it is still
+  difficult to solve the Schrodinger equation directly even if we use
+  $\Vlowk$.
+  For example, if one wants to obtain the energy levels of $\Nu{18}{O}{}$ with 18 interacting particles,
+  solving the whole 18-body problem is too large a calculation to perform
+  and we need to calculate a two-body effective interaction defined for say a smaller space. A typical example is the $sd$-shell.
+  However, to determine of $\omega$ by Eq.(\ref{eq:formal}) one needs
+  the complete knowledge of the $d$ true eigenfunctions $\ket{\Psi_i}$,
+  which we do not know.
+  Hence,
+  what we
+  want to do is to obtain the eigenvalues of the original problem
+  without solving the original problem.
+  In this case,
+  one cannot know $\omega$ from Eq.(\ref{eq:formal}) and have to
+  obtain it by an alternative procedure.
+  An efficient way to do this is the so-called $\hat{Q}$-box expansion.
+  
+  If the unperturbed Hamiltonian is degenerate in the model space
+  \footnote{This assumption is natural when we consider the nuclear
+  many-body problem, where valence particles are naturally considered to
+  be a member of a set of harmonic oscillator eigenfunctions with same
+  single particle energy.}
+  , that is,$H_0 \ket{\phi_i} = E_0 \ket{\phi_i}$,
+  the effective interaction defined in $P$-space can be calculated by the
+  following iterative formula
+  \if0
+  then the decoupling equation (\ref{eq:decoupling}) can be written as
+  \begin{align}
+   \omega = \frac{1}{E_0 - QHQ} QH_1 P - \frac{1}{E_0 - QHQ} \omega
+    (PH_1 P+ PH_1 Q\omega P).
+  \end{align}
+  Therefore, from Eq.(\ref{eq:effective}) the decoupling equation reads,
+  \begin{align}
+   {\label{eq:w-interation.orig}}
+   \omega = \frac{1}{E_0 - QHQ}QH_1 P - \frac{1}{E_0 - QHQ}Q\omega P
+   \Veff .
+  \end{align}
+  Multiplying with $PH_1$ and adding $PH_1 P$ we obtain
+  \begin{align}
+   {\label{eq:Q-box}}
+   &\Veff = \hat{Q}(E_0) - PH_1 \frac{1}{E_0 -QHQ} \omega \Veff
+   \intertext{where $\hat{Q}(E_0)$ is defined as,}
+   &\hat{Q}(E_0) \equiv  PH_1 P + PH_1 \frac{1}{E_0 - QHQ}QH_1 P.
+  \end{align}
+  here $\hat{Q}(E_0)$ is the so-called $Q$-box.\\
+  Note that $Q$-box is defined as an operator acting in $P$-space only.
+  The first term is simply the $P$-space component of the interaction.
+  The second term represents processes that link model space states with states outside the model space.
+The effective interaction in the $P$-space should contain all these
+  processes to infinite order.
+  Thus it should be written as a sum of $Q$-boxex and repetition of it.
+  We can obtain such an expression by the following iterative procedure.
+  From Eq.(\ref{eq:w-interation.orig}) and Eq.(\ref{eq:Q-box}),
+  we can construct the following set of iterative
+  equations. This iterative scheme is not unique.
+  \begin{align}
+   {\label{eq:iteration}}
+   &\Veff^{(n)} = \hat{Q}(E_0) - 
+    PH_1 \frac{1}{E_0 - QHQ} \omega _n \Veff^{(n-1)}  \notag \\
+   &\omega _n = \frac{1}{E_0 - QHQ} QH_1 P 
+   - \frac{1}{E_0 -QHQ } \omega _n \Veff ^{(n-1)}
+  \end{align}
+We obtain finally
+  \begin{align}
+   \label{eq:formal_iterative_solution}
+   \Veff^{(n)} 
+   &= 
+   \hat{Q}(E_0) - PH_1  \left( \frac{1}{E_0 - QHQ} \right)^2 QH_1 P \Veff ^{(n-1)}
+   + PH_1 \left( \frac{1}{E_0 -QHQ}\right)^2 \omega _n
+   \{\Veff^{(n-1)}\}^2                          \notag \\
+   &=
+   \hat{Q}(E_0) + \hat{Q}_1(E_0) \Veff^{(n-1)} + \cdots \notag\\
+   &=
+   \hat{Q}(E_0) + \sum _m \hat{Q}_m(E_0) \{ \Veff^{(n-1)}\}^{m}
+   \intertext{where,}
+   &\hat{Q}_m(E_0) = \frac{1}{m!}\frac{d^m \hat{Q}(E_0)}{d E_0^m}
+  \end{align}
+  \fi
+  \begin{align}
+   \label{eq:formal_iterative_solution}
+   \Veff^{(n)} 
+   &= 
+   \hat{Q}(E_0) + \sum _m \hat{Q}_m(E_0) \{ \Veff^{(n-1)}\}^{m}
+   \intertext{where,}
+   &\hat{Q}(E_0) \equiv  PH_1 P + PH_1 \frac{1}{E_0 - QHQ}QH_1 P\\
+   &\hat{Q}_m(E_0) = \frac{1}{m!}\frac{d^m \hat{Q}(E_0)}{d E_0^m}.
+  \end{align}
+  where the derivatives correspond to folded diagrams.
+  If we set $n \rightarrow \infty$, this is equivalent to Brandow's formal
+  solution~\cite{RevModPhys.39.771}.
+  By this prescription, we can obtain effective interaction for the shell
+  model, which gives equivalent results to the original eigenvalue problem
+  within the range of approximation. Again, induced many-body forces are
+  neglected.
+  
+  \subsection{Tensor force in low-momentum interaction $\Vlowk$}
+  As  mentioned above, the tensor force in the 
+  bare realistic nuclear force mainly comes from $\pi
+  +\rho$ meson exchange.
+  In this section, we discuss whether how the  tensor force 
+  renormalization of the short range part of the interaction is incorporated in an effective interaction.
+  For this purpose, we have performed a spin-tensor decomposition of the  $\Vlowk$  interaction
+  with various values of cutoff $\Lambda$.
+
+  \begin{figure}[h]
+   \includegraphics[width=14pc]{Vlowk_tensor.eps}\hspace{2pc}%
+    \begin{minipage}[b]{14pc}\caption{\label{fig:vlowk_ten}Tensor-force
+     monopole of low-momentum interaction $\Vlowk$. Cutoff parameter
+     $\Lambda$ of $\Vlowk$
+     is taken as from 1.0 $\fmi$ to 5.0 $\fmi$}
+    \end{minipage}
+  \end{figure}
+
+  Figure \ref{fig:vlowk_ten} shows the tensor-force monopole part of $\Vlowk$
+  derived using the  Argonne V8'(AV8') potential.
+  Except for very low cutoff values like $\Lambda = 1.0 \fmi$, the tensor-force monopole part of $\Vlowk$ has
+  almost no cutoff dependence. A low value $\Lambda = 1.0 \fmi$ in momentum space
+  corresponds to a distance in coordinate space of approximately  $1.0 \mathrm{fm}$.
+  Since the Compton length of a pion is approximately $0.7 \mathrm{fm}$, such
+  a low cutoff $\Lambda = 1.0 \fmi$ can be interpreted as too low. With
+  such a cutoff, the renormalization induces
+  much higher-body force, which makes the problem much more complicated. 
+  Therefore, this value is not appropriate for our purpose.
+ 
+ In conclusion, the tensor force survives in a low-momentum interaction
+ $\Vlowk$ with usual cutoff values,
+ at least for its  monopole part. 
+ 
+   \subsubsection{Effect of renormalization of short-range tensor force}
+   
+    In this subsection, we will focus on the effect of the renormalization procedure on the
+    tensor force.
+    In our calculation of low-momentum interaction $\Vlowk$, we are
+    considering a two-nucleon system.
+    The tensor force plays a crucial role in the case of the deuteron.
+    The deuteron has isospin $T=0$ and a non-negligible ${}^3S_1-{}^3D_1$ mixing. There is no experimental 
+data which indicates an existence
+    of excited states or any other bound state of two nucleons.
+    The mixing of ${}^3S_1-{}^3D_1$ is due to tensor force.
+    
+    The Schr\"odinger equation for the  deuteron can be written as the following coupled set of equations,
+    \begin{align}
+     \label{eq:deuteron}
+     &-\frac{\hbar^2}{M}\frac{d^2u(r)}{dr^2}+V_Cu(r)+\sqrt{8}V_T w(r)=E_d u(r)
+     \notag \\
+     &-\frac{\hbar^2}{M}\frac{d^2w(r)}{dr^2}+\left(\frac{6\hbar^2}{Mr^2} +
+     V_C - 2V_T -3V_{LS}\right)w(r)+\sqrt{8}V_T u(r)=E_d w(r),
+    \end{align}
+    where $u(r)$ and $w(r)$ are the radial wave functions of the $S$-wave and the $D$-wave, respectively
+    Knowing the solution of Eq.~(\ref{eq:deuteron}) 
+    , we integrate out the $D$-wave degrees of freedom
+    to the  obtain following effective central force
+    \begin{align}
+     {\label{eq:Veff_central}}
+     \Veff(r;\TSO) = V_C(r;\TSO) + \Delta \Veff(r;\TSO) \notag \\
+     \Delta \Veff(r;\TSO) \equiv \sqrt{8}V_T(r)\frac{w(r)}{u(r)}.
+    \end{align} Here
+    $\Delta \Veff$ is comparable to $V_C$ in strength.
+    This effective central force makes the deuteron bound.
+    In this sense, the tensor force plays a crucial role in making the  deuteron
+    bound.
+    This effect is at least a second order effect in terms of the tensor force,
+    since both the initial and the final state have
+    orbital angular momentum $0$.
+    To see how the tensor force is renormalized into a central force, we derive
+    $\Vlowk$ starting from the full Argonne V8' potential(AV8' full) and tensor
+    subtracted Argonne V8'(AV8' TS) potential.
+    \begin{figure}[h]
+     \includegraphics[width=14pc]{Av8_with_and_without_tensor.eps}\hspace{2pc}%
+     \begin{minipage}[b]{14pc}\caption{\label{fig:ren_ten}Effect of
+      renormalization of short-range tensor force.}
+     \end{minipage}
+    \end{figure}
+     In Fig.\ref{fig:ren_ten}, the red line and the blue line
+ represent the monopole part of $\Vlowk$ from AV8' full and AV8' TS,
+ respectively, and the black line represents the  bare AV8' potential.
+ %The difference indicates of these two potentials shows the effect of
+ %renormalization of tensor force. 
+ The difference between $\Vlowk$ from AV8'full and $\Vlowk$ from AV8'TS
+ shows the effect of renormalization of short-range tensor force.
+ The effect is strongly attractive in the $T=0$ channel,
+ which is consistent with the considerations from
+ Eq.(\ref{eq:Veff_central}).
+
+ To understand this, consider the 
+ Schr\"odinger written as 
+ \begin{align}
+  \2by2{PHP}{PHQ}{QHP}{QHQ} \1by2{P\ket{\Psi}}{Q\ket{\Psi}}
+  = E \1by2{P\ket{\Psi}}{Q\ket{\Psi}}.
+ \end{align}
+
+ By integrating out the $Q$-space degrees of freedom, 
+ we obtain
+ \begin{align}
+  PHP \ket{\Psi}+ PHQ\frac{1}{E-QHQ}QHP\ket{\Psi} = E\ket{\Psi}.
+ \end{align}
+ From this equation, we can consider an effective interaction defined in
+ the $P$-space as
+ \begin{align}
+  {\label{eq:Feshbach}}
+  \Heff = PHP + PHQ\frac{1}{E-QHQ}QHP.
+ \end{align}
+ 
+ Eq.(\ref{eq:Feshbach}) is so general that we can choose any definition
+ of the $P$-space and the $Q$-space.
+ If we choose the $P$-space and the $Q$-space as $\TSO$ and $\TDO$
+ respectively, the resulting
+ $\Heff$ is exactly $\Veff(r;\TSO)$ of Eq.(\ref{eq:Veff_central}),
+ that is the effective
+ central force in the $\TSO$ channel.
+ On the other hand, if we choose $P$-space and $Q$-space as
+ low-momentum and high-momentum space, we obtain the low-momentum
+ interaction $\Vlowk$.
+  
+
+
+  \subsection{Tensor force in effective interaction for the shell model}
+ 
+ In this section we discuss the tensor force derived from the 
+ effective interaction for the shell model.
+ We have calculated shell model effective interactions for the $sd$ shell
+ and the $pf$ shell, by considering the Q-box to 2nd and 3rd order, with folded
+ diagram correction as explained in
+ Section {\ref{sec:effective}},
+ starting from $\Vlowk$ obtained in the previous section.
+ 
+ The Q-box is calculated by considering valence-linked and connected
+ diagrams with unperturbed single particle energy of the harmonic oscillator.
+ Folded diagrams are obtained by numerical derivatives of the Q-box with
+ respect to the starting energy, the sum of single particle energies of two
+ valence particles, as given in Eq.(\ref{eq:formal_iterative_solution}).
+ 
+  Since the $Q$-space is defined as the complement of the $P$-space, intermediate state
+ should be taken up to infinitely high oscillator shells. As an
+ approximation, we define a  sufficiently large $Q$-space in the evaluation of
+ the Q-box.
+ Here the Q-box is calculated by 
+ $\Vlowk$ with cutoff $\Lambda = 2.1\, \fmi$.
+  
+   \begin{figure}[h]
+    \includegraphics[width=14pc]{Qbox_tensor.eps}\hspace{2pc}%
+    \begin{minipage}[b]{14pc}\caption{\label{fig:Qbox_ten}
+     Tensor-force monopole part of the effective interaction for the shell model
+     calculated with the Q-box expansion.}
+    \end{minipage}
+   \end{figure}
+
+
+ Figure \ref{fig:Qbox_ten} shows the tensor-force monopole part of the effective
+ interaction for the $sd$ shell and the $pf$ shell. We label this
+ effective interaction as $\Veff$.
+ One can see again that the tensor-force monopole part of $\Veff$ is fairly similar to that of
+ the bare realistic nuclear force both for the $sd$ shell and for the $pf$ shell.
+ These results are not trivial again, because they mean that the effects
+ of the renormalization of the medium contributions and the truncation of the
+ model space are not predominantly affecting the tensor force.
+ The first order Q-box is exactly the $\Vlowk$, whose tensor force is
+ almost equal to that of the bare nuclear force.
+ Therefore, the results mean that the tensor-force monopole is dominated by
+ the first order Q-box term and the contributions from the other terms are
+ comparatively small.
+
+ \section{conclusion}
+ We can conclude that the tensor force survives from both two steps of 
+ renormalization, that is the renormalization of the high-momentum component of
+ realistic nuclear forces and  the 
+ renormalization of the medium effects into the effective interaction of 
+ two valence particles.
+ %This fact is assumed in several works, and 
+% This work is
+% the first quantitative justification of the modeling of taking the
+% tensor force as that of the bare realistic nuclear force in the shell
+% model.
+
+  \subsection{Acknowledgments}
+
+  We are very grateful to Professors R.~Okamoto and H.~Feldmeier
+  for valuable discussions.
+  This work is supported in part by Grant-in-Aid for Scientific
+  Research (A) 20244022 and also by Grant-in-Aid for 
+  JSPS Fellows (No.~228635), and by the JSPS Core to Core 
+  program ``International Research Network for Exotic Femto Systems''
+  (EFES).
+
+\section*{References}
+\begin{thebibliography}{99}
+\addcontentsline{toc}{chapter}{Reference}
+
+ \bibitem{PhysRevLett.95.232502}
+T.~Otsuka et al., Phys. Rev. Lett. \textbf{95}, 232502 (2005).
+ \bibitem{HjorthJensen1995125}
+M.~Hjorth-Jensen, T.~T.~S.~Kuo and E.~Osnes, Phys.
+Repts. \textbf{261}, 125 (1995).
+
+\bibitem{Bogner20031}
+S.K. Bogner, T.T.S. Kuo, and A. Schwenk, Phys. Rep.
+\textbf{386}, 1 (2003).
+
+ \bibitem{RevModPhys.39.771}
+B.H.~Brandow, Rev. Mod. Phys. \textbf{39}, 771-828 (1967).
+
+ \bibitem{Brown1988191}
+B.A. Brown and B.H. Wildenthal, Ann. Rev. Nucl. Part.
+Sci. \textbf{38}, 29 (1988).
+
+
+\end{thebibliography}
+\end{document}
+
+

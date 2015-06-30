@@ -1,0 +1,16 @@
+      program read_files
+      implicit none
+      integer i
+      real*8 a(100), b(100), c(100), d(100) 
+      open(unit=5,file='bonn_s')
+      open(unit=7,file='nim1_s')
+      do i=1,19
+         read(5,*) a(i), b(i)
+         read(7,*) c(i), d(i)
+         if(a(i) .ne. c(i) ) write(*,*) 'error in density'
+         write(6,1000) a(i), dabs(b(i)-d(i))
+      enddo
+ 1000 format(2e12.6)
+      end
+      
+

@@ -1,0 +1,107 @@
+
+Dear Editors,
+
+Please find enclosed our response to the referee
+(lt6729cr/siiskonen).
+
+Yours Sincerely,
+The authors
+
+Reply to the Referee:
+
+We have made one further correction to the CD-Bonn interaction:
+the experimental single-particle energies have now
+been replaced by the ones obtained from the Zuker scheme. This
+improves the spectrocopy (see the updated figures).
+
+The only way by which we can show that the CD-bonn interaction
+(or any other effective interaction derived from many-body techniques)
+might be a reasonable interaction for the RENORMALIZATION
+is to study transition densities and transition matrix
+elements in the valence space and compare these with
+those the USD interaction. This comparison has been done below
+for the E2, M1 and GT(+) operators using unrenormalized
+values for the one-body transition operators.
+We have to stress that for the renormalization we
+always need the transition matrix elements leading
+outside the valence space and to test that is very
+hard and cannot be done against the USD interaction
+since the latter is an effective interaction determined
+for the $sd$-shell only and fitted so to reproduce the expt spectra.
+Based on this, we agree with you in the point that it is hard to
+demonstrate the universality of our procedure.
+However, our results, and the results listed below as well, support
+the conclusion that the various interactions yield similar
+transition densities and matrix elements.
+For the CD-bonn, Nijemegen and USD interactions we obtain very similar
+results for gp/ga either with unrenormalized or normalized effective
+operators. This makes us feel that the quality
+and the trend of the wave functions
+is similar for all interactions and thereby that the
+effect of the renormalization should be similar for the
+three interactions involved. At present, since one cannot calculate
+the renormalized effective operators for the USD interaction in the same
+fashion as is done for the Nijmegen or CD-Bonn interaction,
+we believe that the final result for gp/ga lends support
+to our conclusions. The results, although with unrenormalized
+effective operators, for M1, E2 and GT transitions discussed below
+support, in our opinion, such a conclusion.
+
+In summary,
+we can only say that it seems that consistently the
+renormalization with CD-Bonn or with the Nijmegen
+nucleon-nucleon interactions  leads
+to a bigger value of x than without the
+renormalization and that the trend with the USD interaction is
+the same. In other words, the same happens when we
+consider the pairs 1) CD-Bonn renormalized with CD-Bonn,
+2) Nijmegen renormalized with Nijmegen, 3) USD renormalized
+with CD-Bonn, 4) USD renormalized with Nijmegen.
+
+We have added a paragraph in the manuscript which states
+this. ************** Not yet added ******************
+
+Here we examine in addition the goodness of the CD-Bonn matrix
+elements in terms of the reduced M1, E2 and
+Gamow-Teller matrix elements and one-body
+transition densities (OBTD). We show below the
+comparison between the USD and CD-Bonn
+calculations. OBTDs are for 28Si(g.s.) ->
+28Al(1+_3) transition and the other numbers are
+M1, E2 transitions for 1+_(1,2,3) -> 2+_1 in 28Al
+and GT transitions for 28Si(0+gs) -> 28Al[1+_(1,2,3)].
+
+OBTD
+----------------------
+USD        CD-Bonn
+
+-0.0360    -0.1071
+ 0.2409     0.2756
+ 0.1737     0.2584
+ 0.1255     0.1976
+ 0.2335     0.2059
+-0.1286    -0.0859
+-0.0929     0.0009
+----------------------
+
+M1                E2              
+--------------------------------
+USD    CD-Bonn    USD    CD-Bonn
+
+0.071  0.067      12.41  19.34   
+0.020  0.051      30.81  44.16 
+0.001  0.031      3.651  0.425  
+--------------------------------
+
+GT+
+-----------------
+USD      CD-Bonn
+
+1.058    0.073
+0.108    0.165
+1.164    1.585
+-----------------
+
+Sincerely yours
+the authors
+

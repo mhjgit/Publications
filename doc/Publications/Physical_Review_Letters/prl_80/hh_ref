@@ -1,0 +1,157 @@
+From hh@nordita.dk Fri Mar 20 14:03:10 1998
+Return-Path: <hh@nordita.dk>
+Delivery-Date: Fri, 20 Mar 1998 14:03:10 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Fri, 20 Mar 1998 14:02:56 +0100
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Fri, 20 Mar 1998 14:02:56 +0100 (MET)
+Received: (from hh@localhost) by norserv.nordita.dk (8.8.5/8.8.5) id OAA06991 
+          for mjensen; Fri, 20 Mar 1998 14:01:53 +0100 (MET)
+Date: Fri, 20 Mar 1998 14:01:53 +0100 (MET)
+From: Henning Heiselberg <hh@nordita.dk>
+Message-Id: <199803201301.OAA06991@norserv.nordita.dk>
+To: mjensen@nordita.dk
+Status: R
+Content-Length: 7463
+
+ Dear Editors of PRL,
+
+ Concerning: LN6600
+    "Phase transitions in rotating neutron stars"
+    by Heiselberg,Henning/Hjorth-Jensen,Morten/,
+we thank for the referee reports which contains many insightful
+comments which has lead to the improved version of our manuscript
+which will be resubmitted separately.
+
+ Below we respond to the questions raised and list a number of
+modifications to the manuscript. We hope that it is then acceptable
+for publication in PRL.
+
+
+Response to Referee A:
+
+ We thank for the comments that "The paper is sound and represents
+an interesting advance in the ongoing studies of dense matter physics."
+We argue below that observation is very possible and implore you to
+consider the important consequences such an observation of a first
+order phase transition would have for dense matter and astrophysics!
+
+a) The timescale of the transients ($t_0$) is implicit in Eq. (13) 
+and an example is mentioned in
+the following paragraph for the Crab, namely a timescale of a decade.
+The timescale for the interesting square root turnover in $\dot{\Omega}$
+or singularity in $n(\Omega)$ is somewhat less than that - say about a year.
+We now explicitly mention that in the manuscript in the same paragraph:
+
+ ", i.e., $t_0\sim 10 $years for the Crab. Generally,
+$t_0\propto\Omega_0^{1-n}$ and the timescale for the transients in
+$\dot{\Omega}$ as given by Eq. (13) may be months or centuries. In any
+case it would not require continuous monitoring which would help
+a dedicated observational program."
+
+b) The referee is correct that the low values of $\dot{P}$ for
+observed pulsars does make the transient signal smaller and the range
+of P or $\Omega$ values that is covered in a given time interval will
+also be smaller.  Yet, the range in P for each pulsar grow with time
+as does also the number of observed pulsars. The impressive accuracy
+of pulsar period measurements perhaps combined with a dedicated search
+does provide hope for discovery of the characteristic
+transients. Concerning the millisecond pulsar, note that if the almost
+constant period in millisecond pulsars is due to accretion balancing
+radiation loss, the accretion will increase central pressures just as
+slowing down does and one would observe a similar signal.  The best
+candidates for observing the transients would of course be a rapidly
+rotating pulsar in a new supernova explosion slowing down at a rapid
+rate.  We can expect supernovae several times every century in our
+Galaxy and the Magellian Clouds but we cannot estimate how frequent a
+pulsar is observed herein. The Crab in 1056 is sofar the most recent
+one. The SN1987A kHz signal was unfortunately false. We hope our
+work may stimulate a dedicated search which will improve the chances
+for discovery. Some of these arguments are mentioned in the summary.
+Furthermore we add:
+ "We encourage a dedicated search for the characteristic transients
+discussed above."
+
+c) Latent heat generated in the phase transition can be ignored.  We
+have added the following paragraph to elucidate this point: "If latent
+heat is generated in the phase transition, neutrino cooling will
+be faster than in supernova explosins. Thus temperatures will drop 
+below $\sim 1$MeV in seconds. Such temperatures are
+negligible compared to typical Fermi energies of nucleons or quarks
+and the timescales are also much smaller than $t_0$."
+
+d) The qualitative behavior of our transients is independent of
+the model assumed for the pulsar slow down. There will always appear
+a square root behavior in $\dot{\Omega}$ and $n(\Omega)$. The power
+law assumption of Eq. (12) is just to connect to standard assumptions
+and give concrete examples for the behavior as in Eqs. (13-14).
+If the n=3 assumption of (12) disagrees with measurements of the Crab and
+Vela pulsars it may disprove the dipole radiation model but it does not
+affect our prediction for the square root behavior of transients when
+first order phase transitions occur. We have added a sentence mentioning this:
+"Although the results in Eqs. (13) and (14) were derived 
+for the pulsar slow down assumed in Eq. (12) both
+$\dot{\Omega}$ and $(n(\Omega)$ will generally 
+display the $\sqrt{t-t_0}$ behavior for $t\ga t_0$ as long as the slow
+down is a smooth function of $\Omega$."
+
+We follow the referees suggestion and mention after Eq. (14):
+"The  {\it observational} braking index $n(\Omega)$ should be distinguished
+from the {\it theoretical} exponent $n$ appearing in Eq. (12)."
+
+
+e) The generalization of Hartle's equations to include phase
+transitions definitely deserves to be worked out, written down and
+solved numerically in full detail. This is no simple task and (to our
+surprise) most of it is unnecessary for a qualitative and for a 80-90%
+quantitative understanding. Of Hartle's six coupled differential
+eqs. only the monopole one is important. The others describe
+deformations and are small corrections to the moment of inertia.
+Similarly, effects of GR as frame dragging, etc., only affects the
+moment of inertia by minor quantitative amounts for small and medium
+mass neutron stars.  Thus the reduced problem of the simple Eq. (10)
+is sufficient to calculate all the important properties of rotating
+neutron stars with phase transitions. It allows direct extraction of
+the analytic behavior and all the important consequences.
+ This is why we believe this short paper is perfect for PRL.
+
+ Fred Lamb (Urbana) has contacted us concerning solving the full GR
+problem of rapidly rotating neutron stars. Their many years of
+expertise and elaborate codes may make it possible to include full GR,
+rapid rotations, accretion, etc., - perhaps in the near future.
+
+
+Response to Referee B:
+
+1) The example we consider is approximately a millisecond pulsar for
+which the slow rotation assumption may not be fully justified. This
+may cause some quantitative corrections but not any qualitative. All
+of our results in equations are, however, given in terms of $\Omega_0$
+and are thus correct for all slower than millisecond pulsars. The
+reason we chose a millisecond pulsar in Fig. 1 was just to have a
+relatively large $\omega_0$ so that the critical behavior was more
+clearly seen in Fig. 1.
+
+2) We thank the referee for noticing this typo. We correct to a
+"...mantle of nuclear matter..."
+
+3) The charge density difference between the two phases with an
+constant background density of electron to insure average charge
+neutrality, is exactly the structure of the mixed phase implicit in
+Glendenning's work [2] and discussed in [3]. However, as shown in [3]
+the additional surface and Coulomb energies associated with these
+structures are important and will change the second order mixed phase
+transitions to one or several first order ones. This is discussed at
+length in the next to last paragraph. There may also be other phase
+transitions involving neutral particles as, e.g., $\pi^0$ condensation
+- resulting in an uncomplicated first order phase
+transitions. However, the objective of this work is to point out the
+important physical consequences of a first order phase transition.
+We find it sufficient just to mention possible first order
+phase transitions in dense matter. Lacking the EoS for dense matter the
+interiors of neutron stars are unknown. This work provides an elegant
+method to actually observe possible phase transitions 
+thereby obtaining information on the EoS of dense matter.
+
+4) Latent heat does not play any role as discussed above (point c).
+

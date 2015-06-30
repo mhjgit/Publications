@@ -1,0 +1,182 @@
+From prl@aps.org Mon Aug  9 19:38:02 1999
+Return-Path: <prl@aps.org>
+Delivery-Date: Mon, 9 Aug 1999 19:38:02 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Mon, 9 Aug 1999 19:37:44 +0200
+Received: from hq.aps.org ([149.28.112.5]) by pat.uio.no with esmtp (Exim 2.12 #6) id 11DtMk-0001YR-00 for m.h.jensen@fys.uio.no;
+          Mon, 9 Aug 1999 19:37:43 +0200
+Received: from seq2.aps.org (seq2.aps.org [149.28.2.17]) by hq.aps.org (8.8.5/8.8.5) with ESMTP id NAA03918 
+          for <m.h.jensen@fys.uio.no>; Mon, 9 Aug 1999 13:08:11 -0400 (EDT)
+Received: (from prl@localhost) by seq2.aps.org (8.8.5/8.8.5) id NAA06123; Mon, 9 Aug 1999 13:36:30 -0400 (EDT)
+Date: Mon, 9 Aug 1999 13:36:30 -0400 (EDT)
+From: PR/L-email <prl@aps.org>
+Message-Id: <199908091736.NAA06123@seq2.aps.org>
+To: m.h.jensen@fys.uio.no
+Subject: Re: LF7368
+Cc: prl@aps.org
+Content-Length: 8409
+
+
+LF7368
+Structure of $beta_-stable neutron star matter with hyperons 
+Vida$roman n tilde_a,I./Polls,A./Ramos,A./Engvik,L./Hjorth-Jensen,M./
+
+
+
+
+
+        Dear Dr. Hjorth-Jensen:
+
+              The above manuscript has been reviewed by our
+        referee(s).
+
+              On the basis of the resulting report(s), it is our
+        judgment that the paper is unsuitable for publication in
+        Physical Review Letters. We enclose comments from the
+        criticism that led to our decision.
+
+                                   Sincerely yours,
+
+                                   Christopher Wesselborg
+                                   Assistant Editor
+                                   Physical Review Letters
+
+.PA
+
+Referee A
+
+The authors study beta-stable hadronic matter including hyperons a well
+studied topic during the last decades. The authors try to convince the reader that
+they have a novel approach compared to previous studies that it should
+warrant a  publication in PRL. I have several points which I think argue
+strongly against this attitude which I am going to outline in the following.
+
+- There are numerous many-body calculations including hyperons in beta-stable
+hadronic matter, even ones including hyperon-hyperon interactions. The authors
+are well aware of these works and cite them properly. So what is new? The
+authors claim it is the first 'ab initio many-body calculation of hyperon
+degrees of freedom for beta-stable neutron star matter'. What it means is that
+they use a model which describes the two-body interactions of the
+nucleon-nucleon and nucleon-hyperon forces using a recent model of the
+Nijmegen group. The model has been published, the methods used are known too.
+'Realistic' Hyperon-Nucleon interactions have been studied in [7], so only the
+'Realistic' Hyperon-Hyperon interactions have been added to it (which are not
+known in principle).
+I do not think that this is a major advancement of the subject.
+
+- When the authors write 'realistic' interactions they mean interactions
+fitted to scattering data. Is this really the 'realistic' interactions
+encountered in such dense matter as a neutron star? Definitely not. The
+authors try to give the impression that previous attempts are not
+realistic. Actually, the opposite is true. How can one think to describe
+neutron star matter if one is not able to get the saturation properties of
+nuclear matter correctly? Or describe the properties of nuclei? The Nijmegen
+model used  is not able to fulfill these crucial tasks which is known (see
+ref. 8). The extrapolation from two-body interactions to interactions at
+normal nuclear density fails. How can one then blindly extrapolate to even higher
+densities - the result can not be physical.
+
+- I think the authors are aware of
+the problematic outlined above (without stating it explicitly in the paper) as
+they use a hybrid model
+in addition by using a different nucleon-nucleon interaction. They keep the
+other interactions though so that the model loses its self consistency (like
+the SU(6) symmetry employed by the Nijmegen group). Are they sure they still
+can describe hypernuclei in that approach? It does not say it in the text.
+
+- The model of ref. [8] is not checked for consistency with Sigma-atoms, Xi
+hypernuclei and double lambda hypernuclei. Before extrapolating wildly, it is
+a crucial thing to check that the model is working at normal nuclear density.
+This is not obvious. On the contrary, e.g. the nucleon-nucleon interaction fails
+this important test. How can one trust then the nucleon-hyperon and the
+hyperon-hyperon interactions at normal nuclear density or even at higher density?
+
+- It is strange that there is no significant difference between the various
+parameterizations. In ref. [8] the binding energies of the hyperonic bound
+states vary by orders of magnitude. It is quite surprising that this does not
+show up in the calculations.
+
+- I am missing a critical discussion about the applicability of the BHF
+approach at very high density.
+
+- The authors are using the method of ref. [10] for calculating beta-stable
+matter. Unfortunately, this method is thermodynamically inconsistent.
+All Fermi energies are related to each other by
+E(i) = charge(i) * mue + baryonnumber(i) * muB
+where the two conserved charges are electrical charge and baryon number.
+(Actually, this is basic thermodynamics and does not need to be outlined that detailed in
+the paper on page 5). Now, thermodynamics demands that one has to find the
+*absolute* minimum of  the thermodynamic potential, i.e. the absolute maximum
+of the pressure for given chemical potential. mue is fixed by global charge
+neutrality. The hyperon fractions are then automatically given and can *not*
+be imposed by hand! It is the other way around, the hyperon fractions (all of
+them) are varied until the pressure is maximized. Practically, one uses the
+above constraint equation to relate the particle fractions to each other
+which is demanded by thermodynamics. I guess that is the reason why the
+authors get an unphysical soft EoS: the pressure is not maximized.
+
+- The final EoS is too soft and gives a too low maximum mass. How can one make then
+strong statements like 'only Sigma- and Lambdas appear in neutron stars' on
+the basis of this (unphysical) EoS?
+
+- Xis should appear as the XiSigma interaction is highly attractive in the
+Nijmegen model. Why is the corresponding chemical potential for Xis not
+plotted in fig. 4?
+
+- mue changes its sign in fig. 4 (bottom). Then positrons should appear. Did
+the authors allow for this possibility? Judging by the figures, they did not.
+
+- QPO only give an upper limit on the neutron star mass, everything else is
+model dependent. An innermost stable orbit has not been seen yet
+(see paper by F. K. Lamb et al. in Proc. of Hirschegg Conf. on Nuclear Astrophysics,
+p. 114, 1998 and other papers by Lamb).
+
+- Many statements given in the last part of the paper are taken from previous
+work like hyperons softening the
+EoS and maximum mass of neutron stars and consequences for the EoS (page 7).
+Statements like 'that other degree of freedom than pure nucleonic ones must
+occur ...' is not supported by an actual calculation of the authors.
+
+- page 8: nobody knows the hyperon-hyperon interaction at eight times normal
+nuclear density. It can be attractive at rho0 (hypernuclei) and highly
+repulsive at 8rho0. In fact, it must be repulsive at large rho to get a stable
+EoS (see e.g. ref. [4]).
+
+In summary, the authors present calculations for neutron star matter which is
+partly not able to describe nuclear matter or they do not check if the model
+is compatible with hypernuclear data. Extrapolation to even higher density can
+not be justified on these grounds. Moreover, the method used is
+thermodynamically wrong and leads to unphysical results (like the very soft
+EoS which is incompatible with neutron star data). The authors are making
+statements either based on an EoS which fails to describe neutron star data or
+not supported by an actual calculation by the authors.
+Therefore, as the work is not scientifically sound, I
+have to reject the paper in its present form.
+
+.PA
+
+Referee B
+
+The authors investigate beta-equilibrated neutron star matter
+properties including hyperons in a nonrelativistic many body calculation
+in the framework of Brueckner Hartree-Fock theory.
+\vspace{.2cm}
+
+Recently, such a many body calculation including hyperons for neutron stars
+has been done by Baldo, Burgio and Schulze [PRC 58, 3688 (1998)] where
+the threshold density for the appearance of the hyperons was determined.
+In this letter, the authors performed a many body calculation using
+baryon-baryon interaction of Stoks and Rijken in one case and the
+nucleon-nucleon interaction of Akmal, Pandharipande and Ravenhall in the
+other case. I should say that the calculation in this letter is merely an
+extension of the calculation of PRC58, 3688 (1998) to density regimes higher
+than the threshold density of hyperons in neutron stars. This work does not
+report any substantial advance of the work already existing in the literature
+in the field of dense matter relevant to neutron stars.
+Moreover, the results are not reliable since a nonrelativstic approach
+has been applied to such high densities in the neutron star interior.
+\vspace{.2cm}
+
+Therefore, I believe that this manuscript is not suitable for publication
+in Physical Review Letters.
+
+

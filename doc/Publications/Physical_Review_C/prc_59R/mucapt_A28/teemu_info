@@ -1,0 +1,86 @@
+From teemu.siiskonen@snafu.phys.jyu.fi Wed Dec  9 12:21:45 1998
+Return-Path: <teemu.siiskonen@snafu.phys.jyu.fi>
+Delivery-Date: Wed, 9 Dec 1998 12:21:45 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Wed, 9 Dec 1998 12:21:15 +0100
+Received: from cc.jyu.fi (root@cc.jyu.fi [130.234.1.3]) by pat.uio.no ; Wed, 9 Dec 1998 12:21:14 +0100 (MET)
+Received: from snafu.phys.jyu.fi (root@snafu.phys.jyu.fi [130.234.98.10]) 
+          by cc.jyu.fi (8.8.8/8.8.8/NO UCE/antispam-2 [postmaster@cc.jyu.fi]) with ESMTP id NAA23276 for <m.h.jensen@fys.uio.no>;
+          Wed, 9 Dec 1998 13:21:13 +0200 (EET)
+Received: from phys.jyu.fi (phys117.phys.jyu.fi [130.234.97.117]) by snafu.phys.jyu.fi (8.8.7/8.8.7) with ESMTP id OAA21069 
+          for <m.h.jensen@fys.uio.no>; Wed, 9 Dec 1998 14:11:56 +0200
+Message-ID: <366E5C9E.8A08A215@phys.jyu.fi>
+Date: Wed, 09 Dec 1998 13:18:55 +0200
+From: Teemu Siiskonen <teemu.siiskonen@snafu.phys.jyu.fi>
+Reply-To: teemu.siiskonen@snafu.phys.jyu.fi
+Organization: JYFL
+X-Mailer: Mozilla 4.05 [en] (Win95; I)
+MIME-Version: 1.0
+To: m.h.jensen@fys.uio.no
+Subject: M1
+References: <199812080711.IAA00354@kvark.uio.no>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: R
+
+Morten,
+here are the M1's, hope you can read them. The L column and B(L) columns
+are the relevant ones. NI is the initial state number. As you can see,
+the B(M1) are very similar to the first two 1+ states, but for the one we
+are interested in, 1+_3, they are off by an order of magnitude... Anyway,
+I think this shows, that CDBonn works rather well.
+
+I have one question: how important it is to get a good spectroscopy in
+the sd-shell? What I'm trying to say, is that is the renorm sensitive to
+the sd-shell m.e.'s, because I guess that there are hundreds of other
+m.e.'s in the play. Of course it is good to have OK spectroscopy, but is
+it necessary?
+
+Teemu
+********************************************
+
+EM transitions in 28Al (Caper), sd model space, isospin formalism.
+Bare charges and g-factors. M1 and E2 transitions: 1+(1,2,3) to 2+ g.s.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+ INTERACTION FILE NAME = cdbonn
+
+  NI   NAME  EX(MEV)   JI   TI     NF   NAME  EX(MEV)   JF   TF    L    HBW    TZ       MOMENT        B(L)      B(GT+)      B(GT-)
+
+   1 b220ct  -51.976   1+    1       1 b420ct  -51.768   2+    1    1  12.11  -1.0   0.0000E+00  0.6727E-01  0.3595E-01  0.0000E+00
+
+   1 b220ct  -51.976   1+    1       1 b420ct  -51.768   2+    1    2  12.11  -1.0   0.0000E+00  0.1934E+02  0.0000E+00  0.0000E+00
+
+   2 b220ct  -51.080   1+    1       1 b420ct  -51.768   2+    1    1  12.11  -1.0   0.0000E+00  0.5115E-01  0.6526E-01  0.0000E+00
+
+   2 b220ct  -51.080   1+    1       1 b420ct  -51.768   2+    1    2  12.11  -1.0   0.0000E+00  0.4416E+02  0.0000E+00  0.0000E+00
+
+   3 b220ct  -49.893   1+    1       1 b420ct  -51.768   2+    1    1  12.11  -1.0   0.0000E+00  0.3076E-01  0.1573E-02  0.0000E+00
+
+   3 b220ct  -49.893   1+    1       1 b420ct  -51.768   2+    1    2  12.11  -1.0   0.0000E+00  0.4245E+00  0.0000E+00  0.0000E+00
+
+ TZi,SUM B(GT+),B(GT-)       =   -1.0  0.1028E+00  0.0000E+00
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+ INTERACTION FILE NAME = w
+
+  NI   NAME  EX(MEV)   JI   TI     NF   NAME  EX(MEV)   JF   TF    L    HBW    TZ       MOMENT        B(L)      B(GT+)      B(GT-)
+
+   1 b220cw -125.128   1+    1       1 b420cw -126.492   2+    1    1  12.11  -1.0   0.0000E+00  0.7085E-01  0.9928E-01  0.0000E+00
+
+   1 b220cw -125.128   1+    1       1 b420cw -126.492   2+    1    2  12.11  -1.0   0.0000E+00  0.1241E+02  0.0000E+00  0.0000E+00
+
+   2 b220cw -124.746   1+    1       1 b420cw -126.492   2+    1    1  12.11  -1.0   0.0000E+00  0.1977E-01  0.3579E-01  0.0000E+00
+
+   2 b220cw -124.746   1+    1       1 b420cw -126.492   2+    1    2  12.11  -1.0   0.0000E+00  0.3081E+02  0.0000E+00  0.0000E+00
+
+   3 b220cw -124.419   1+    1       1 b420cw -126.492   2+    1    1  12.11  -1.0   0.0000E+00  0.1003E-02  0.1797E-02  0.0000E+00
+
+   3 b220cw -124.419   1+    1       1 b420cw -126.492   2+    1    2  12.11  -1.0   0.0000E+00  0.3651E+01  0.0000E+00  0.0000E+00
+
+ TZi,SUM B(GT+),B(GT-)       =   -1.0  0.1369E+00  0.0000E+00
+
+
+
+

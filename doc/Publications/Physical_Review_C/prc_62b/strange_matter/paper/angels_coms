@@ -1,0 +1,86 @@
+From ramos@ecm.ub.es Thu May 27 11:38:41 1999
+Return-Path: <ramos@ecm.ub.es>
+Delivery-Date: Thu, 27 May 1999 11:38:40 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Thu, 27 May 1999 11:38:20 +0200
+Received: from server.ecm.ub.es ([161.116.81.109]) by pat.uio.no with esmtp (Exim 2.12 #6) id 10mwcD-0005wL-00 
+          for m.h.jensen@fys.uio.no; Thu, 27 May 1999 11:38:17 +0200
+Received: from ns.ecm.ub.es (grunyon.ecm.ub.es [161.116.81.151]) by server.ecm.ub.es (8.9.1/8.9.1) with ESMTP id LAA66130 
+          for <m.h.jensen@fys.uio.no>; Thu, 27 May 1999 11:22:22 +0200
+Received: from fermi.ecm.ub.es (fermi.ecm.ub.es [161.116.81.110]) by ns.ecm.ub.es (8.9.3/8.9.1) with SMTP id KAA10251 
+          for <m.h.jensen@fys.uio.no>; Thu, 27 May 1999 10:11:19 +0200
+Received: from localhost by fermi.ecm.ub.es (AIX 3.2/UCB 5.64/4.03) id AA18188; Thu, 27 May 1999 09:53:08 +0100
+Date: Thu, 27 May 1999 09:53:08 +0100 (BST)
+From: Angels Ramos <ramos@ecm.ub.es>
+Reply-To: Angels Ramos <ramos@ecm.ub.es>
+To: Morten Hjorth-Jensen <m.h.jensen@fys.uio.no>
+Cc: Isaac Vidanya <isaac@ecm.ub.es>, Artur Polls <artur@ecm.ub.es>
+Subject: comments
+Message-Id: <Pine.A32.3.96.990526194428.12919A-100000@fermi.ecm.ub.es>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+
+Dear Morten,
+The paper looks great and very clear and straightforward to read.
+Congratulations. Here are a few comments:
+1) In the abstract, the sentence "The hyperonn-hyperon interaction allows
+for ..." might not be strictly true, because the presence of hyperons is
+dictated not only by the YY interaction but also by tht YN and NN ones.
+I would change this sentence and the sentence before to something like:
+"It is found that the only strange baryons emerging in beta-stable matter 
+up to total baryonic densities of 1.2 fm**{-3} are the Sigma^- and the
+Lambda hyperons."
+2) At the end of page 2, third line from the last, I would change:
+ "...converse process happen,...." by "...inverse process happen."
+(throwing away the rest of the sentence, since it is explained in the next
+one)
+3) Page 4, line 3: The sentence starting "The interactions
+for the S=-2,-3..." can be omitted (I'm thinking of reducing the text a
+little)
+4) 5 lines after eq. (4): Replace:
+"The G-matrix is solved in the relative and center-of-mass frame," by
+"The G-matrix is solved using relative and center-of-mass coordinates,"
+(The point is that the G-matrix is in fact solved in the Laboratory frame)
+5) In eq. (6), the Real part "Re" appears funny
+6) Page 5, line 5, I would change it to:
+"to solve Eqs. (5) and (6) to obtain the single-particle energy of the
+particles involved at the corresponding Fermi momentum."
+7) In the same paragraph, 2 lines after:
+Insert a comma before and after the piece "for every nucleon and hyperon
+fraction"
+8) First line of page 7. The sentence starting "From the bottom..." has a
+question mark before From. This is a typical problem that appears when
+sending the file my e-mail. It can be solved by adding, in the text file,
+the symbols {} in front of the word From:
+{}From
+9) Page 8, line 4. I would join the sentence "This would .." with the
+previous one:
+"...and hyperon-hyperon interactions, which would then contradict..."
+10) The last sentence contains two times the need to make the EoS stiffer.
+I would cut the sentence at the end of the word "needed".
+11) I guess that you already changed the label on the y-axis of fig.2 to
+"densities" insetad of "fraction"
+12) caption of figure 4: change "neutrons" to "neutron". Would it be
+better to put "as functions of the total baryonic density n" just after
+"neutron star matter"? 
+
+Thanks again for your efforts. We are working on the other paper. The
+introduction, formalism and part of the results has been written, up to
+the infinite corrections that still will need to be made! 
+You will hear from us soon (hopefully).
+Ciao,
+
+Angels
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Angels Ramos                                                          *
+* Dept. Estructura i Constituents de la Materia                         *
+* Facultat de Fisica                            e-mail: ramos@ecm.ub.es *
+* Diagonal 647                                  Tel: 34-93-4021185      *
+* E-08028 Barcelona (SPAIN)                     FaX: 34-93-4021198      *
+*                                                                       *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+

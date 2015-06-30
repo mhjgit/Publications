@@ -1,0 +1,14 @@
+*** Begin of history file: 04/02/93 - 09.43.40
+EXEC k100
+edit k100
+EXEC k100
+edit k100
+EXEC k100
+edit k100
+EXEC k100
+fortran/file 66 k100.ps
+metafile 66 -111
+pict/plot
+close 66
+*** End   of history file: 04/02/93 - 09.43.40
+

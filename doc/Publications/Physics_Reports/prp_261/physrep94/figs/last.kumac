@@ -1,0 +1,8 @@
+*** Begin of history file: 20/06/94 - 14.59.32
+EXEC ring
+fortran/file 66 ring.eps
+metafile 66 -111
+pict/plot
+close 66
+*** End   of history file: 20/06/94 - 14.59.32
+

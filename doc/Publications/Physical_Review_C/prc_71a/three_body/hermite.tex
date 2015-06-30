@@ -1,0 +1,647 @@
+
+
+
+
+In this work we will primarily be interested in valence-linked
+perturbative expansions for selected operators. Such expansions
+can be conveniently expressed within the framework of time-dependent
+perturbation theory. In this section we will review some of the
+properties of the time-development operator $U(t,t')$ and its
+connection to the decomposition theorem, which yields a
+valence-linked expression for the actual operator. However, some
+of the divergencies which occur can only be handled by the
+introduction of the so-called folded diagrams, to be
+discussed below. The folded diagrams
+arise due to the removal of the dependence on the exact
+energy of the perturbative expansion. This is the price one has
+to pay when introducing the Rayleigh-Schr\"{o}dinger expansion.
+In this section we derive valence-linked expressions for both
+the effective interaction and the effective transition operator.
+
+The time-development operator $U$ has the
+properties that 
+\begin{equation}
+	       U^{\dagger}(t,t')U(t,t')=U(t,t')U^{\dagger}(t,t')=1,
+\end{equation}
+which implies that $U$ is unitary
+\begin{equation}
+	       U^{\dagger}(t,t')=U^{-1}(t,t').
+\end{equation}
+Further,
+\begin{equation}
+	      U(t,t')U(t't'')=U(t,t'')
+\end{equation}
+and
+\begin{equation}
+	      U(t,t')U(t',t)=1,
+\end{equation}
+which leads to
+\begin{equation}
+	      U(t,t')=U^{\dagger}(t',t).
+\end{equation}
+We can then construct the true eigenvectors $\Psi_{i,f}$, where $i$ and
+$f$ indicate the initial and final states, respectively, in
+terms of the unperturbed wave functions $\Phi_{i,f}$  through the
+action of the time-development operator $U$.
+In the present discussion of the time-dependent theory we will make
+use of the so-called complex-time approach to describe the time
+evolution operator $U$ \cite{ko90}
+\footnote{The time-development operator used here is determined by use
+of the interaction picture. The suffix $I$, which is commonly
+used in the literature to distinguish $U_I$ in the interaction
+picture from $U$ in the
+Schr\"{o}dinger or Heisenberg pictures, has been omitted.}.
+This means that we
+allow the time $t$ to be rotated by a small angle $\epsilon$
+relative to the real time axis. The complex time $t$ is then
+related to the real time $\tilde{t}$ by
+\begin{equation}
+	t=\tilde{t}(1-i\epsilon ).
+\end{equation}
+Let us first study the true eigenvector $\Psi_{i}$ which evolves
+from the unperturbed eigenvectors $\Phi_{i}$ through the action of the
+time development operator
+\begin{eqnarray}
+	       U(t,t')&=\lim_{\epsilon \rightarrow 0}
+	      \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+	      {\displaystyle\sum_{n=0}^{\infty}\frac{(-i)^n}{n!}
+	      \int_{t'}^{t}dt_1  \int_{t'}^{t}dt_2
+	      \dots  \int_{t'}^{t}dt_n}
+		\\ \nonumber
+	     &  \times T\left[H_1(t_1)H_1(t_2)\dots H_1(t_n)\right],
+	     \label{eq:timeu}
+\end{eqnarray}
+where $T$ stands for the correct time-ordering \cite{no88,fw71}.
+
+In time-dependent
+perturbation theory we let $\Psi_i$ develop from $\Phi_i$ in the
+remote past to a given time $t$
+\begin{equation}
+	      \frac{\ket{\Psi_i}}
+	      {\left\langle\Phi_i | \Psi_i \right\rangle}=
+	      \lim_{\epsilon \rightarrow 0}
+	      \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+	      \frac{U(t,t' )\ket{\Phi_i} }
+	      {\bra{\Phi_i} U(t,t' )\ket{\Phi_i} },
+	      \label{eq:psii}
+\end{equation}
+and similarly, we let
+$\Psi_f$ develop from $\Phi_f$ in the remote future
+\begin{equation}
+	       \frac{\bra{\Psi_f}}{\left\langle
+	       \Phi_f | \Psi_f \right\rangle}=
+	       \lim_{\epsilon \rightarrow 0}
+	       \lim_{t'\rightarrow \infty (1-i\epsilon )}
+	       \frac{\bra{\Phi_f}U(t' ,t) }
+	      {\bra{\Phi_f} U(t' ,t)\ket{\Phi_f} }.
+	      \label{eq:psif}
+\end{equation}
+
+Here we are interested in the expectation value of a given
+operator ${\cal O}$ acting at a time $t=0$. This can be achieved
+from eqs.\ (\ref{eq:psii}) and (\ref{eq:psif}) defining
+\begin{equation}
+       \ket{\Psi_{f,i}'}=
+       \frac{\ket{\Psi_{f,i}}}{\left\langle
+       \Phi_{f,i} | \Psi_{f,i} \right\rangle},
+\end{equation}
+we obtain
+\begin{equation}
+	       {\displaystyle  \frac{
+	       \bra{\Psi_{\lambda}'}H\ket{\Psi_{\lambda}'} }
+	       {\left\langle\Psi_{\lambda}' |
+	       \Psi_{\lambda}' \right\rangle} }
+	       \label{eq:hexpect}.
+\end{equation}
+
+At this stage, {\em it is important to observe} that our
+expression for the expectation value of a given operator $H$
+{\em is hermitian} insofar H^{\dagger}=H$. This is readily
+demonstrated. Eq.\ (\ref{eq:expect}) is of the general form
+\begin{equation}
+U(t,t_0)HU(t_0,-t),
+\end{equation}
+and noting that
+\begin{equation}
+U^{\dagger}(t,t_0)=
+\left({\displaystyle e^{iH_0t}e^{-iH(t-t_0)}e^{-iH_0t}}\right)^{\dagger}
+=U(t_0,-t),
+\end{equation}
+since $H^{\dagger}=H$ and $H_0^{\dagger}=H_0$, we have that
+\begin{equation}
+    \left(U(t,t_0)HU(t_0,-t)\right)^{\dagger}
+    =U(t,t_0)HU(t_0,-t).
+\end{equation}
+This property of eq.\ (\ref{eq:expect})  explains the
+reason why we are interested to express e.g.\ the expectation value of
+$H$ as in eq.\ (\ref{eq:hexpect}).
+In this form, the expression for the effective interaction differs
+from that given by either the folded-diagram  method of eq.\ (\ref{eq:fd})
+or the
+Lee-Suzuki method eq.\ (\ref{eq:ls}). To define these perturbation
+expansions we employed the similarity transformation eq.\
+(\ref{eq:htrans})
+\begin{equation}
+     \Omega^{-1}H\Omega = e^{-\chi}He^{\chi},
+\end{equation}
+where
+\begin{equation}
+     \Omega =1+\chi = 1+Q\chi P = e^{\chi}.
+\end{equation}
+The important point to note here is that $e^{\chi}$ does not in general
+fulfill the condition $\chi^{\dagger}=-\chi$, which in turn leads to
+non-hermitian expansions for the effective interaction defined by
+the folded-diagram method or the Lee-Suzuki expansion. {\em
+This non-hermiticity
+is sought to be removed in this work by using
+eq.\ (\ref{eq:hexpect})}.
+
+Eq.\ (\ref{eq:hexpect}) is our basic matrix element for
+$H$, though in its present form it is not suitable
+for computation, since both the numerator and denominator contain
+divergencies. These divergencies have to be removed in order to
+obtain a meaningful expression for $H$. The final expression
+we are seeking, will be a valence-linked expansion were
+every term in the expansion for $H$ is finite.
+In order to discuss the removal of
+these divergencies, we will use the
+definition of the time-development operator in eq.\
+(\ref{eq:timeu}), such that the numerator and the
+denominators can be expressed as collections
+of time-ordered Goldstone diagrams.  The aim of the development here is
+to factorize
+\begin{equation}
+\lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+\frac{U(t,t' )\ket{\Phi_i} }
+{ \bra{\Phi_i} U(t,t' )\ket{\Phi_i} },
+\end{equation}
+as a whole. To achieve this, we will make use of the decomposition
+theorem.
+
+
+\begin{equation}
+	       U(0,-\infty )\ket{\Phi_i} =
+	       U_Q(0,-\infty )\ket{\tilde{c}}
+	       \bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}
+	       {\displaystyle \sum_{j=1}^{d}
+	       U_{VQ}(0,-\infty )\ket{\Phi_j}
+	       \bra{\Phi_j}U_V(0,-\infty )\ket{\Phi_i}}
+	       \label{eq:decomp}
+\end{equation}
+
+The decomposition theorem applies equally well to eq.\ (\ref{eq:psif}).
+
+
+Starting with the decomposition theorem as given by
+eq.\ (\ref{eq:decomp}), we will in the next subsubsection
+detail the derivation of a valence-linked expression
+for the effective interaction appropriate for finite nuclei. Subsequently,
+the techniques used to derive an effective interaction, are applied
+to effective transition operators as well.
+
+
+Let us for illustrative purposes
+assume that the operator ${\cal O}$ corresponds to the
+familiar two-body hamiltonian $H=H_0 +H_1$. The unperturbed
+part $H_0$ is
+\begin{equation}
+H_0(t) ={\displaystyle \sum_{\alpha\beta}\bra{\alpha}(t+u)\ket{\beta}
+                       a_{\alpha}^{\dagger}(t)a_{\beta}(t)},
+    \label{eq:unpert}
+\end{equation}
+with $t$ and $u$ the sp kinetic energy and auxiliary potential, 
+respectively. The eigenfunctions of $H_0$ are the unperturbed 
+wave 
+functions given by eq.\ (\ref{eq:twowf}).
+The eigenvalues
+correspond to the sum of the unperturbed sp energies. The interaction
+$H_1$ is given by a two-body term
+\begin{equation}
+H_1(t) = {\displaystyle \frac{1}{2}
+           \sum_{\alpha\beta\gamma\delta}\bra{\alpha\beta}H_1
+	   \ket{\gamma\delta}a_{\alpha}^{\dagger}(t)
+	   a_{\beta}^{\dagger}(t)
+	   a_{\delta}(t)a_{\gamma}(t)}.
+     \label{eq:inter}
+\end{equation}
+Here we let the indices $\alpha\beta\gamma\delta$ run over both valence-
+and $Q$-space sp states. 
+
+The effective interaction we will derive should have the following
+properties:
+\begin{itemize}
+\item The original eigenvalue problem given by eq.\ (\ref{eq:schro})
+ reduces to a model-space eigenvalue problem
+\begin{equation}
+    PH_{\mathrm{eff}}P\Psi_i = E_i P\Psi_i.
+    \label{eq:mspacee1}
+\end{equation}
+ The main purpose is to derive an effective interaction from the 
+  original hamiltonian. Moreover, we wish our final model-space
+  eigenvalue problem to reproduce the empirical shell-model
+  secular equation. More explicitely, we expect that eq.\ (\ref{eq:mspacee1})
+  can be separated into a valence-space part and a core contribution
+\begin{equation}
+    PH_{\mathrm{eff}}'P\Psi_i = \left( E_i -E_C\right) P\Psi_i,
+    \label{eq:mspacee}
+\end{equation}
+  where $E_C$ is the true energy of the core. If one considers a nucleus
+ like $^{18}$O, $E_C$ corresponds then to the energy of $^{16}$O.
+ In the empirical shell model we have
+\begin{equation}
+  PH_{\mathrm{eff}}'P = PH_0'P + PH_1'P,
+\end{equation}
+ where the sp energies of $H_0'$ in eq.\ (\ref{eq:unpert}) are taken
+ to be the binding difference between a state in the appropriate nucleus
+ with one nucleon in addition to closed shells and the ground state of
+the corresponding closed-shell nucleus. Following this prescription,
+ $PH_1'P$ should contain two-body interactions only. Note well that 
+ $H_1'$ is different from $H_1$ since the latter includes both one-
+and two-body terms. Similarly, $H_0'$ is normally approximated with the
+experimental sp energies.
+\item
+  The model-space eq.\ (\ref{eq:mspacee}) is supposed to give
+  $D$ solutions, $D$ being the dimension of the model space. We need therefore
+  a scheme which gives us a one-to-one correspondence between $D$ parent
+states $\ket{\rho_{\lambda}}$ in the model space and the true eigenstates 
+$\ket{\Psi_{\lambda}}$. 
+We define the parent states as the projections of the true eigenvectors
+onto the model space. Further, we assume that they are linearly independent
+and expand them in terms of the model-space basis states $\ket{\Phi_i}$
+\begin{equation}
+\ket{\rho_{\lambda}}=\sum_{i=1}^{D}C_i^{(\lambda)}\ket{\Phi_i},
+\label{eq:parent}
+\end{equation}
+where
+\begin{equation}
+{\left\langle\rho_{\lambda} | P\Psi_{\mu} \right\rangle}=0,
+\end{equation}
+for $\lambda\neq\mu =1,2,\dots ,D$. Recall that the unperturbed
+eigenfunctions $\ket{\Phi_i}$ are the eigenfunctions of $H_0$, with
+corresponding unperturbed eigenvalues $\varepsilon_i$.
+The latter equality holds because we
+have assumed that the parent states are linearly independent.
+The parent states should only be regarded as a mathematical tool in order
+to obtain the effective interaction, since the construction of the parent
+states depends on the projection of the true eigenfunctions onto the model
+space. This projection is not available until one knows the efffective
+interaction. The final expression for eq. (\ref{eq:mspacee}) should
+therefore not depend on the knowledge of $\ket{\rho_{\lambda}}$, as will
+be demonstrated below.
+Thus we wish to have a one-to-one correspondence between
+\begin{equation}
+\lim_{\epsilon \rightarrow 0}
+   \lim_{t'\rightarrow -\infty (1-i\epsilon )}
+\frac{U(0,t' )\ket{\rho_{\lambda}} }
+{ \bra{\rho_{\lambda}} U(0,t' )\ket{\rho_{\lambda}} }=
+\frac{\ket{\Psi_{\lambda}}}
+{\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle},
+\end{equation}
+such that 
+\begin{equation}
+H\frac{U(0,-\infty )\ket{\rho_{\lambda}} }
+{ \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }=
+E_{\lambda}\frac{U(0,-\infty )\ket{\rho_{\lambda}} }
+{ \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} },
+\label{eq:truee}
+\end{equation}
+This equation states that the parent states $\rho_{\lambda}$ 
+should give the true eigenvalues $E_{\lambda}$. In eq.\ (\ref{eq:truee})
+we have suppressed the complex time-limit. Such a one-to-one correspondence
+can only be proven in the complex-time approach, as demonstrated in ref.\ 
+\cite{ko90}\footnote{We will not repeat the proof leading to the above statement.
+For the details, we refer the reader to ref.\ \cite{ko90}, pp.\ 40.}. 
+According to the complex-time approach, the eigenvalues
+reproduced by eq.\ (\ref{eq:mspacee})
+are the lowest $D$ eigenvalues with eigenvectors $\ket{\Psi_{\lambda}}$,
+$\lambda =1,2,\dots ,D$, with non-zero projection $P\ket{\Psi_{\lambda}}$ onto
+the model space. In actual calculations however, we may not obtain the 
+lowest $D$ eigenstates of $H$ with non-zero model-space overlaps since we are
+are not able to compute the effective interaction exactly. In the present
+work we will approximate the effective hamiltonian with certain classes of 
+diagrams, thus only qualitative arguments about e.g.\ the convergence
+property of the effective interaction can be made. 
+\end{itemize}
+
+We wish now to derive an expression for the model-space effective 
+interaction which has the structure of eq.\ (\ref{eq:mspacee}). 
+Employing the definition of the parent state in eq.\ (\ref{eq:parent}),
+we can rewrite eq.\ (\ref{eq:truee}) as
+\begin{equation}
+{\displaystyle \sum_{i=1}^{D}C_i^{(\lambda )}
+H\frac{U(0,-\infty )\ket{\Phi_i} }
+{ \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }=
+\sum_{j=1}^{D}C_j^{(\lambda )}E_{\lambda}\frac{U(0,-\infty )\ket{\Phi_j} }
+{ \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }},
+\label{eq:truee1}
+\end{equation}
+which, through use of the decomposition 
+theorem in eq.\ (\ref{eq:decomp}) reads
+\begin{equation}
+{\displaystyle \sum_{k=1}^{D}b_k^{(\lambda )}
+HU_Q(0,-\infty )\ket{\tilde{c}}U_{VQ}(0,-\infty )\ket{\Phi_k}=
+\sum_{l=1}^{D}b_l^{(\lambda )}E_{\lambda}
+U_Q(0,-\infty )\ket{\tilde{c}}U_{VQ}(0,-\infty )\ket{\Phi_l}},
+\label{eq:truee2}
+\end{equation}
+where we have defined 
+\begin{equation}
+b_k^{(\lambda )}=
+{\displaystyle \sum_{i=1}^{D}C_i^{(\lambda )}
+\frac{\bra{\Phi_k}U_V(0,-\infty )\ket{\Phi_i} 
+\bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}}
+{ \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }}.
+\label{eq:bk}
+\end{equation}
+Note that both the terms $\bra{\Phi_k}U_V(0,-\infty )\ket{\Phi_i} $ and
+$\bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}$ contain
+divergencies, these are however cancelled by corresponding terms in the
+denominator of eq.\ (\ref{eq:bk}). The quantity $b_k$ is in turn proportional
+to the projection of the true eigenstate onto the model space, a property
+which follows by multiplying 
+\begin{equation}
+\frac{\ket{\Psi_{\lambda}}}
+{\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle},
+\end{equation}
+with the model-space basis state $\bra{\Phi_k}$
+\begin{equation}
+\frac{\left\langle\Phi_k | \Psi_{\lambda} \right\rangle }
+{\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle}=
+{\displaystyle \sum_{i=1}^{D}C_i^{(\lambda )}
+\frac{\bra{\Phi_k}U_V(0,-\infty )\ket{\Phi_i} 
+\bra{\tilde{c}}U(0,-\infty )\ket{\tilde{c}}}
+{ \bra{\rho_{\lambda}} U(0,-\infty )\ket{\rho_{\lambda}} }}=
+b_k^{(\lambda )}.
+\label{eq:bk1}
+\end{equation}
+Thus, the only dependence of the model-space eigenvalue problem
+on the parent state $\ket{\rho_{\lambda}}$ is through the
+coefficient $b_k^{(\lambda )}$, and, as we will 
+demonstrate below, we may solve the model-space eigenvalue
+problem for $b_k^{(\lambda )}$ only. For a known $b_k^{(\lambda )}$, 
+eq.\ (\ref{eq:bk1}) serves to establish that the parent state 
+really can be constructed as the projection of the true eigenstate. We can
+then construct a model-space eigenstate $\ket{b_{\lambda}}$ as
+\begin{equation}
+\ket{b_{\lambda}}=\sum_{i=1}^{D}b_i^{(\lambda )}\ket{\Phi_i}=
+\frac{P\ket{\Psi_{\lambda}}}
+{\left\langle\rho_{\lambda} | \Psi_{\lambda} \right\rangle}.
+\label{wfb}
+\end{equation}
+Before we construct the final expression 
+for $H_{\mathrm{eff}}$ we observe that in general
+\begin{equation}
+{\left\langle b_{\lambda} | b_{\lambda} \right\rangle}\neq 1,
+\end{equation}
+since the projections of the true orthogonal eigenvectors onto the 
+model space, do not in general preserve 
+orthogonality. This deficiency, which
+may lead to a non-hermitian $H_{\mathrm{eff}}$ 
+can be overcome by introducing the 
+biorthogonal wave function
+\begin{equation}
+\ket{\overline{b}_{\lambda}}=\sum_{i=1}^{D}\overline{b}_i^{(\lambda )}
+\ket{\overline{\Phi}_i},
+\label{wfbi}
+\end{equation}
+such that 
+\begin{equation}
+{\left\langle \overline{b}_{\lambda} | b_{\mu} \right\rangle}=
+\delta_{\lambda\mu}.
+\end{equation}
+
+With these preliminaries we are now able to write a model-space equation
+for the effective interaction of the form given by eq.\
+(\ref{eq:expect}). Since we wish the final expression to be hermitian,
+it may useful first to reproduce the 
+folded-diagram effective interaction of Kuo and co-workers, which 
+yields a non-hermitian expansion for $H_{\mathrm{eff}}$. 
+Let us first introduce the shorthands
+\begin{equation}
+\ket{\Psi_{\tilde{c}}}=U_Q(t,t' )\ket{\tilde{c}}
+\end{equation}
+and 
+\begin{equation}
+U_L(t,t')\ket{\Phi_n}=U_{VQ}(t,t' )\ket{\Phi_n}
+\end{equation}
+which can be written as, employing the folding operation,
+\begin{equation}
+U_L(t,t')\ket{\Phi_n}=\ket{\Phi_n}+\left( {\displaystyle W-W\int\hat{Q} 
++W\int\hat{Q}\int\hat{Q} -\dots}\right)\ket{\Phi_n}
+=\ket{\Phi_n} +\tilde{W}(t,t')\ket{\Phi_n},
+\label{eq:wavefold}
+\end{equation}
+where the $\int$ signs represent the folding operation and the structure
+of the wave function operator $\tilde{W}$
+is shown in fig.\ \ref{fig:waveopfig}.
+Observe also that 
+\begin{equation}
+U_L^{\dagger}(0,-\infty)=U_L(\infty ,0).
+\end{equation}
+The first term in eq.\ (\ref{eq:wavefold}) is just the free propagation 
+of a state. The remaining terms include at least one nuclear interaction
+and end always in a passive state. The folding operation $\int$ 
+means that the states
+connecting the $\hat{Q}$-box and the wave operator $W$  must be active states.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,60)
+     %\put(25,10){\epsfxsize=12cm \epsfbox{fig1.eps}}
+      \end{picture}
+\caption{{\em The structure of the wave operator $\tilde{W}$. Note that it
+always ends in a $Q$-space state.}}
+\label{fig:waveopfig}
+\end{figure}
+
+Multiplying eq.\ (\ref{eq:truee2}) from the 
+left with $\bra{\Phi_k}$ we obtain
+\begin{equation}
+{\displaystyle
+\sum_{l=1}^{D}b_l^{(\lambda )}\bra{\Phi_k}
+HU_L(0,-\infty )\ket{\Phi_l}\ket{\Psi_{\tilde{c}}} } =
+E_{\lambda}b_k^{(\lambda )},
+\label{eq:truee3}
+\end{equation}
+or
+\begin{equation}
+PH_{\mathrm{eff}}\ket{P\Psi_{\lambda}}=
+E_{\lambda}\ket{P\Psi_{\lambda}},
+\label{eq:truee4}
+\end{equation}
+where
+\begin{equation}
+H_{\mathrm{eff}}=
+\bra{\Phi_k}
+HU_L(0,-\infty )\ket{\Phi_l}\ket{\Psi_{\tilde{c}}}
+\label{eq:heff1}
+\end{equation}
+Eqs.\ (\ref{eq:truee3}) and (\ref{eq:truee4}) have indeed the form of a
+model space effective interaction equation. 
+
+
+The hamiltonian $H$ is written as the sum of an unperturbed part $H_0$ and an
+interaction term $H_1$.
+In order to understand the structure of eq.\
+(\ref{eq:heff1}) and obtain a secular model-space equation which resembles
+that of the empirical shell model, we study first the contributions from
+$H_0$ to eq.\ (\ref{eq:heff1}). This contribution can written as
+\begin{equation}
+\bra{\Phi_k}
+H_0U_L(0,-\infty )\ket{\Phi_l}\ket{\Psi_{\tilde{c}}} =
+\bra{\Phi}_kH_0\ket{\Phi_l}
+\end{equation}
+The term on the rhs.\ of the
+latter equation comes through due to the fact that the only $P$-space
+component in the wave operator $U_L$ is the unperturbed
+wave function $\Phi$. This term represents therefore nothing but the
+unperturbed energies and is conventionally \cite{ko90}
+split into a valence
+component and a core contribution
+\begin{equation}
+ \bra{\Phi_k}H_0\ket{\Phi_l}=\delta_{mk}\left(
+\varepsilon_V + \varepsilon_C \right),
+\end{equation}
+where $\varepsilon_V$ is the eigenvalue of the valence part while 
+$\varepsilon_C$ is the core contribution. In our example 
+$^{18}$O, $\varepsilon_V$ is the unperturbed energy of the valence
+particles while $\varepsilon_C$ is the unperturbed energy of the
+$^{16}$O core.  The effective interaction can then 
+conveniently be expressed in terms of eq.\ (\ref{eq:fd}).
+
+In a similar way, we can decompose the interaction term $H_1$
+into a valence part $H_1(V)$ and 
+into a part $H_1(C)$ where $H_1$ at the time $t=0$ is not linked to any valence
+line. The latter contributions give rise to contributions to the true core
+energy $E_C$. Examples of such terms are exhibited in the upper part
+of fig.\ \ref{fig:heff12}. Typical contributions to $H_1(V)$ are shown
+in the lower part of fig.\ \ref{fig:heff12}. Thus, summarizing, we may write
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,60)
+     %\put(25,10){\epsfxsize=12cm \epsfbox{fig1.eps}}
+      \end{picture}
+\caption{{\em Examples of terms which contribute to $H_1(C)$,
+upper part, and $H_1(V)$, lower part.}}
+\label{fig:heff12}
+\end{figure}
+\begin{equation}
+\bra{\Phi_k}
+HU_L(0,-\infty )\ket{\Phi_l}\ket{\Psi_{\tilde{c}}} =
+\delta_{mk}\left(
+\varepsilon_V + \varepsilon_C \right)+
+\bra{\Phi_k}
+\left(H_1(V)+H_1(C)\right) U_L(0,-\infty )\ket{\Phi_l}\ket{\Psi_{\tilde{c}}},
+\end{equation}
+which finally yields
+\begin{equation}
+{\displaystyle
+\sum_{l=1}^{D}b_l^{(\lambda )}\bra{\Phi_k}
+\left(H_0(V)+H_1(V)\right) U_L(0,-\infty )\ket{\Phi_l}\ket{\Psi_{\tilde{c}}} } =
+\left(E_{\lambda}-E_C\right) b_k^{(\lambda )},
+\label{eq:truee5}
+\end{equation}
+with $E_C=\varepsilon_C +H_1(C)$. Clearly, eq.\ (\ref{eq:truee5}) has the 
+form of the empirical shell-model secular eq.\ (\ref{eq:mspacee}). 
+Due to the inclusion of folded-diagrams, eq.\ (\ref{eq:truee3}) is 
+in general non-hermitian. 
+The non-hermiticity of the folded-diagram method
+is not unphyscal since we deal with projection of the true 
+eigenvector to the left of $H_1$ and the unperturbed wave function
+$\Phi$ to the left. This asymmetry is reflected in the fact that there
+is no anologue in the FD method of fig.\ \ref{fig:nonhermit} , where
+the folded block is attached to the final valence lines 
+instead  of the initial ones. The effective interaction depends therefore 
+on which states are the final and initial ones. The resulting effective 
+interaction is therefore non-hermitian.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,60)
+     %\put(25,10){\epsfxsize=12cm \epsfbox{fig1.eps}}
+      \end{picture}
+\caption{{\em Examples of folded diagrams which contritbute to the
+folded-diagrams effective interaction.}}
+\label{fig:nonhermit}
+\end{figure}
+
+
+
+\begin{thebibliography}{200}
+%\addcontentsline{toc}{section}{References}
+% references to chap 1 & 2
+\bibitem{lindgren91} I.\ Lindgren, J.\ Phys.\ B: At.\ Mol.\ Opt.\ Phys.
+{\bf 24} (1991) 1143
+\bibitem{suzuki93} K.\ Suzuki, R.\ Okamoto, P.J.\ Ellis, J.\ Hao, Z.\ Li 
+and T.T.S.\ Kuo,
+Phys.\ Lett.\ {\bf B308} (1993) 1; Nucl.\ Phys.\ {\bf A560} (1993)
+\bibitem{kuo93} P.\ Navratil, H.B.\ Geyer and T.T.S.\ Kuo, Phys.\ Lett.\ 
+{\bf B315} (1993) 1
+\bibitem{eo77} P.J.\ Ellis and E.\ Osnes, Rev. Mod. Phys. {\bf 49} (1977) 777
+\bibitem{lm85} I.\ Lindgren and J.\ Morrison, Atomic Many-Body Theory,
+(Springer, Berlin, 1985)
+\bibitem{bran67} B.H.\ Brandow, Rev.\ Mod.\ Phys.\ {\bf 39} (1967) 771
+
+\bibitem{ko90} T.T.S.\ Kuo and E.\ Osnes, Folded-Diagram Theory
+of the Effective Interaction in Atomic Nuclei, Springer Lecture
+Notes in Physics, (Springer, Berlin, 1990) Vol. 364
+
+\bibitem{kuo81} T.T.S.\ Kuo, Lecture Notes in
+Physics; Topics in Nuclear Physics, ed. T. T. S. Kuo and S. S.
+M. Wong, (Springer, Berlin, 1981) Vol. 144, p. 248
+\bibitem{hom92} M.\ Hjorth-Jensen, E.\ Osnes and H.\ M\"{u}ther,
+Ann. of Phys.  {\bf 213} (1992) 102
+\bibitem{no88} J.W.\ Negele and H.\ Orland, Quantum Many-Particle
+Systems, (Addison-Wesley, Redwood City, 1988)
+
+\bibitem{mhe87} R.\ Machleidt, K.\ Holinde and C.\ Elster, Phys.\ Reports
+{\bf 149} (1987) 1
+\bibitem{mac89} R.\ Machleidt, Adv.\ Nucl.\ Phys.\ {\bf 19} (1989) 189
+\bibitem{paris80} M. Lacombe {\em et al.} , Phys. Rev. {\bf C21} (1980)
+861
+\bibitem{reid68} R.V.\ Reid, Ann.\ of Phys.\ {\bf 50} (1968) 411
+\bibitem{ms91} C.\ Mahaux and R.\ Sartor, Adv.\ Nucl.\ Phys.\ {\bf 20}
+(1991) 1
+\bibitem{dm92} W.H. Dickhoff and H. M\"{u}ther, Rep.\ Prog.\ Phys.\
+{\bf 55} (1992) 1947
+\bibitem{pand93} V.J.\ Pandharipande, Nucl.\ Phys.\ {\bf A553} (1993) 191c
+\bibitem{bloch59} C.\ Bloch, Nucl.\ Phys.\ {\bf 6} (1958) 329;
+Nucl.\ Phys.\ {\bf 7} (1958) 451
+\bibitem{klz76} H.\ K\"{u}mmel, K.H.\ L\"{u}hrman and J.G.\
+Zabolitzky, Phys. Reports {\bf 36C} (1978) 1
+\bibitem{ls80} S.Y.\ Lee and K.\ Suzuki, Phys.\ Lett.\ {\bf B91} (1980) 79;
+K.\ Suzuki and S.Y.\ Lee, Prog.\ Theor.\ Phys.\
+{\bf 64} (1980) 2091
+\bibitem{des} J.\ Des Cloizeaux, Nucl.\ Phys.\ {\bf 20} (1960) 321
+\bibitem{sw72} T.H.\ Schucan and H.A.\ Weidenm\"{u}ller, Ann. of Phys.
+{\bf 73} (1972) 108; {\bf 76} (1973) 483
+\bibitem{lk75} J.M.\ Leinaas and T.T.S.\ Kuo, Ann. of Phys.
+{\bf 98} (1975) 177
+\bibitem{lk77} J.M.\ Leinaas and T.T.S.\ Kuo, Ann. of Phys.
+{\bf 111} (1977) 19
+\bibitem{sm90} L.D.\ Skouras and H.\ M\"{u}ther, Nucl. Phys. {\bf A515}
+(1990) 93
+\bibitem{ee70} P.J.\ Ellis and T.\ Engeland, Nucl. Phys. {\bf A144} (1970) 161
+
+
+
+
+\end{thebibliography}
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+

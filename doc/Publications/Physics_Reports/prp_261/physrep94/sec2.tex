@@ -1,0 +1,293 @@
+%  this file, sec2.tex, contains section 2 of physrep.tex
+
+\section{Brueckner theory and the $G$-matrix}
+The Brueckner $G$-matrix is probably the most important ingredient
+in many-body calculations of nuclear systems. In this section, we will
+briefly survey the philosophy behind the $G$-matrix.
+
+Historically, the $G$-matrix was developed in microscopic nuclear
+matter calculations using realistic nucleon-nucleon (NN) interactions.
+It is an ingenuous as well as an interesting method to overcome the
+difficulties caused by the strong, short-range repulsive core contained
+in all modern models for the NN interaction. The $G$-matrix method was
+originally developed by Brueckner \cite{bruck57}, and further
+developed by Goldstone \cite{gold58} and Bethe, Brandow and Petschek
+\cite{bbp63}. In the literature it is generally referred to as the
+Brueckner theory or the Brueckner-Bethe-Goldstone theory.
+
+Suppose we want to calculate the nuclear matter ground-state
+energy $E_0$ using the non-relativistic Schr\"{o}dinger equation
+\begin{equation}
+      H\Psi_0(A)=E_0(A)\Psi_0(A),
+\end{equation}
+with $H=T+V$ where $A$ denotes the number of particles, $T$
+is the kinetic energy and $V$ is
+the nucleon-nucleon
+(NN)  potential. Models for the NN potential will be discussed
+in section 3. The corresponding unperturbed
+problem is
+\begin{equation}
+      H_0\psi_0(A)=W_0(A)\psi_0(A).
+\end{equation}
+Here $H_0$ is just kinetic energy $T$ and $\psi_0$ is a Slater
+determinant representing the Fermi sea, where all orbits through the
+Fermi momentum $k_F$ are filled. We write
+\begin{equation}
+      E_0=W_0+\Delta E_0,
+\end{equation}
+where $\Delta E_0$ is the ground-state energy shift.
+If we know how to calculate $\Delta E_0$, then we know $E_0$, since
+$W_0$ is easily obtained. In the limit $A\rightarrow \infty$,
+the quantities $E_0$ and $\Delta E_0$ themselves are not well
+defined, but the ratios $E_0/A$ and $\Delta E_0/A$ are. The
+nuclear-matter binding energy per nucleon is commonly denoted
+by $BE/A$, which is just $-E_0/A$. In passing, we note that
+the empirical value for symmetric nuclear matter (proton number
+$Z$=neutron number $N$) is $\approx 16$ MeV.
+There exists a formal theory for the calculation of $\Delta E_0$.
+According to the well-known Goldstone linked-diagram theory
+\cite{gold58}, the energy shift $\Delta E_0$ is given exactly by the
+diagrammatic expansion shown in fig.\ \ref{fig:goldstone}. This theory,
+is a linked-cluster perturbation expansion for the ground state
+energy of a many-body system, and applies equally well to both
+nuclear matter and closed-shell nuclei such as the doubly magic
+nucleus $^{40}$Ca. 
+We will not discuss the Goldstone expansion, but rather discuss
+briefly how it is used in calculations.
+For systems with particles outside closed shells,
+a similar theory exists, namely the so-called folded-diagram theory,
+which we will review in section 4.
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{goldstone.eps}}
+      \end{picture}
+      \caption{Diagrams which enter the definition of the ground-state
+      shift energy $\Delta E_0$. Diagram (i) is first order in the 
+      interaction $V$, while diagrams (ii) and (iii) are examples of
+       contributions to second and third order, respectively.}
+      \label{fig:goldstone}
+\end{figure}
+Using the standard diagram rules listed  in appendix A, the various
+diagrams contained in the above figure can be readily calculated, viz.\
+(in an uncoupled scheme) we
+have
+\begin{equation}
+   (i)=\frac{(-)^{n_h+n_l}}{2^{n_{ep}}}\sum_{k_i,k_j\leq k_F}
+       \bra{k_ik_j}\tilde{V}\ket{k_ik_j}_{AS},
+\end{equation}
+with $n_h=n_l=2$ and $n_{ep}=1$. As discussed  in appendix A, $n_h$
+denotes the number of hole lines, $n_l$ the number of closed
+fermion loops and $n_{ep}$ is the number of so-called
+equivalent pairs.
+The factor $1/2^{n_{ep}}$ is needed since we want to count a pair 
+of particles only once. We will carry this factor $1/2$ with us
+in the equations below. 
+The subscript
+$AS$ denotes the antisymmetrized and normalized matrix element
+\begin{equation}
+     \bra{k_ik_j}\tilde{V}\ket{k_ik_j}_{AS}=\bra{k_ik_j}V\ket{k_ik_j}-
+     \bra{k_jk_i}V\ket{k_ik_j}.
+\end{equation}
+Similarly, diagrams (ii) and (iii) read
+\begin{equation}
+   (ii)=\frac{(-)^{2+2}}{2^2}\sum_{k_i,k_j\leq k_F}\sum_{k_mk_n>k_F}
+   \frac{\bra{k_ik_j}\tilde{V}\ket{k_mk_n}_{AS}
+   \bra{k_mk_n}\tilde{V}\ket{k_ik_j}_{AS}}
+   {\varepsilon_i+\varepsilon_j-\varepsilon_m-\varepsilon_n},
+\end{equation}
+and
+\begin{equation}
+   (iii)=\frac{(-)^{2+2}}{2^3}\sum_{k_i,k_j\leq k_F}\sum_{k_mk_n>k_F}
+   \sum_{k_pk_q>k_F}
+   \frac{\bra{k_ik_j}\tilde{V}\ket{k_mk_n}_{AS}
+   \bra{k_mk_n}\tilde{V}\ket{k_pk_q}_{AS}
+   \bra{k_pk_q}\tilde{V}\ket{k_ik_j}_{AS}}
+   {(\varepsilon_i+\varepsilon_j-\varepsilon_m-\varepsilon_n)
+   (\varepsilon_i+\varepsilon_j-\varepsilon_p-\varepsilon_q)}.
+\end{equation}
+In the above, $\varepsilon$ denotes the sp energies defined by
+$H_0$.
+The steps leading to the above expressions for the various
+diagrams are rather straightforward. Though, if we wish to compute the
+matrix elements for the potential $V$, a serious problem
+arises. Typically, the matrix elements will contain a term
+(see the next section for the formal details) $V(|{\bf r}|)$, which
+represents the interaction potential $V$ between two nucleons, where
+${\bf r}$ is the internucleon distance.
+As we shall further detail in the next section, all modern models
+for $V$ have a strong short-range repulsive core. Hence,
+matrix elements involving $V(|{\bf r}|)$, will result in large
+(or infinitely large for a potential with a hard core)
+and repulsive contributions to the ground-state energy. Thus, the
+diagrammatic expansion for the ground-state energy in terms of the
+potential $V(|{\bf r}|)$ becomes meaningless.
+
+The resolution of this problem is provided by the well-known
+Brueckner theory or the Brueckner $G$-matrix, or just the
+$G$-matrix. In fact, the $G$-matrix is an indispensable
+tool in almost every microscopic nuclear structure
+calculation. Its main idea may be paraphrased as follows.
+Suppose we want to calculate the function $f(x)=x/(1+x)$. If
+$x$ is small, we may expand the function $f(x)$ as a power series
+$x+x^2+x^3+\dots$ and it may be adequate to just calculate the first
+few terms. In other words, $f(x)$ may be calculated using a low-order
+perturbation method. But if $x$ is large
+(or infinitely large), the above
+power series is obviously meaningless.
+However, the exact function
+$x/(1+x)$ is still well defined in the limit
+of $x$ becoming very large.
+
+These arguments suggest that one should sum up the diagrams
+(i), (ii), (iii) in fig.\ \ref{fig:goldstone} and the similar ones
+to all orders, instead of computing them one by one. Denoting this
+all-order sum as $1/2\tilde{G}_{ijij}$, where we have
+introduced the shorthand notation
+$\tilde{G}_{ijij}=\bra{k_ik_j}\tilde{G}\ket{k_ik_j}_{AS}$
+(and similarly for $\tilde{V}$),
+we have that
+\begin{eqnarray}
+      \frac{1}{2}\tilde{G}_{ijij}=&{\displaystyle
+      \frac{1}{2}\tilde{V}_{ijij}
+      +\sum_{mn>k_F}\frac{1}{2}\tilde{V}_{ijmn}\frac{1}
+      {\varepsilon_i+\varepsilon_j-\varepsilon_m-\varepsilon_n}}
+      \nonumber \\
+      &{\displaystyle \times\left[\frac{1}{2}\tilde{V}_{mnij}+\sum_{pq>k_F}
+      \frac{1}{2}\tilde{V}_{mnpq}\frac{1}
+      {\varepsilon_i+\varepsilon_j-\varepsilon_p-\varepsilon_q}
+      \frac{1}{2}V_{pqij}+\dots  \right] }.
+\end{eqnarray}
+The factor $1/2$ is the same as that discussed above, namely we want 
+to count a pair of particles only once.
+The quantity inside the brackets is just
+$1/2\tilde{G}_{mnij}$ and the above equation can be
+rewritten as an integral equation
+\begin{equation}
+      \tilde{G}_{ijij}=\tilde{V}_{ijij}
+      +\sum_{mn>k_F}\frac{1}{2}\tilde{V}_{ijmn}\frac{1}
+      {\varepsilon_i+\varepsilon_j-\varepsilon_m-\varepsilon_n}
+      \tilde{G}_{mnij}.
+\end{equation}
+Note that $\tilde{G}$ is the antisymmetrized $G$-matrix since
+the potential $\tilde{V}$ is also antisymmetrized. This means that
+$\tilde{G}$ obeys
+\begin{equation}
+  \tilde{G}_{ijij}=-\tilde{G}_{jiij}=-\tilde{G}_{ijji}.
+\end{equation}
+The $\tilde{G}$-matrix  is defined as
+\begin{equation}
+    \tilde{G}_{ijij}=G_{ijij}-G_{jiij},
+\end{equation}
+and the equation for $G$ is
+\begin{equation}
+      G_{ijij}=V_{ijij}
+      +\sum_{mn>k_F}V_{ijmn}\frac{1}
+      {\varepsilon_i+\varepsilon_j-\varepsilon_m-\varepsilon_n}
+      G_{mnij},
+      \label{eq:ggeneral}
+\end{equation}
+which is the familiar $G$-matrix equation. The above
+matrix is specifically designed to treat a class of diagrams
+contained in $\Delta E_0$, of which typical contributions
+were shown in fig.\ \ref{fig:goldstone}. In fact the sum of the diagrams
+in fig.\ \ref{fig:goldstone} is equal to $1/2(G_{ijij}-G_{jiij})$.
+
+Let us now define a more general $G$-matrix as
+\begin{equation}
+      G_{ijij}=V_{ijij}
+      +\sum_{mn>0}V_{ijmn}\frac{Q(mn)}
+      {\omega -\varepsilon_m-\varepsilon_n}
+      G_{mnij},
+      \label{eq:gwithq}
+\end{equation}
+which is an extension of eq.\ (\ref{eq:ggeneral}). Note that 
+eq.\ (\ref{eq:ggeneral}) has
+$\varepsilon_i+\varepsilon_j$ in the energy denominator, whereas
+in the latter equation we have a general energy variable $\omega$
+in the denominator. Furthermore, in eq.\ (\ref{eq:ggeneral})
+we have a restricted
+sum over $mn$, while in eq.\ (\ref{eq:gwithq})
+we sum over all $mn$ and we have
+introduced a weighting factor $Q(mn)$. In eq.\ (\ref{eq:gwithq}) $Q(mn)$
+corresponds to the choice
+\begin{equation}
+   Q(k_m , k_n ) =
+    \left\{\begin{array}{cc}1,&min(k_m ,k_n ) > k_F\\
+    0,&\mathrm{else}.\end{array}\right. ,
+\end{equation}
+where $Q(mn)$ is usually referred to as the $G$-matrix Pauli
+exclusion operator. The role of $Q$ is to enforce a selection
+of the intermediate states allowed in the $G$-matrix equation. The above
+$Q$ requires that the momenta of the intermediate particles $m$ and $n$
+must be both above the Fermi surface defined by $k_F$. We may enforce
+a different requirement by using a summation over intermediate states
+different from that in eq.\ (\ref{eq:gwithq}).
+An example is the Pauli operator
+for the model-space Brueckner-Hartree-Fock method to be discussed
+in section 7.
+
+
+Before ending this section, let us rewrite the $G$-matrix equation
+in a more compact form.
+The sp energies $\varepsilon$ and wave functions are defined
+by the unperturbed hamiltonian $H_0$ as
+\begin{equation}
+   H_0\ket{\psi_m}=\varepsilon_m\ket{\psi_m},
+\end{equation}
+and similarly
+\begin{equation}
+   H_0\ket{\psi_m\psi_n}=(\varepsilon_m+\varepsilon_n)
+   \ket{\psi_m\psi_n}.
+\end{equation}
+The $G$-matrix equation can then be rewritten in the following
+compact form
+\begin{equation}
+   G(\omega )=V+V\frac{Q}{\omega -H_0}G(\omega ),
+\end{equation}
+with
+${\displaystyle Q=\sum_{mn}\ket{\psi_m\psi_n}Q(mn)\bra{\psi_m\psi_n}}$.
+In terms of diagrams, $G$ corresponds to an all-order sum of the
+"ladder-type" interactions between two particles with the
+intermediate states restricted by $Q$, as schematically
+shown in fig.\ \ref{fig:gschem}.
+\begin{figure}
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig2.eps}}
+    \end{picture}
+    \caption{Schematic representation of the ladder renormalization
+    of the free NN potential. The wavy line may represent either the
+    scattering matrix $T$ or the medium dependent reaction matrix $G$.
+    The latter
+    differs from the scattering matrix since it contains the Pauli
+    exclusion operator $Q$ and medium dependent single-particle energies.
+    The physical interpretation of either $T$ or $G$ is that the particles
+    must interact virtually with each other an arbitrary
+    number of times in order
+    to produce a finite interaction matrix element.}
+\label{fig:gschem}
+\end{figure}
+
+The $G$-matrix equation has a very simple form. But its
+calculation is rather complicated, particularly for finite
+nuclear systems such as the nucleus $^{18}$O. There are a
+number of complexities. To mention a few, the Pauli operator
+$Q$ may not commute with the unperturbed hamiltonian
+$H_0$ and we have to make the replacement
+\[
+\frac{Q}{\omega -H_0}\rightarrow Q\frac{1}{\omega -QH_0Q}Q.
+\]
+The determination of the starting energy $\omega$ is also another
+problem. These and other problems will be dealt with in
+section 5.
+
+
+
+
+
+
+
+
+
+

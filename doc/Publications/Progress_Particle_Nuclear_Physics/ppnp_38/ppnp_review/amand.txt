@@ -1,0 +1,139 @@
+Dear Amand,
+please find enclosed as an attachment our revised version of the Prog. Part. Nucl. Phys article. 
+All figures and the latex file review.tex complying with the
+style-files of the journal are included in the file review.tar.gz.
+A PDF file review.pdf is also included. This is the printable version of the manuscript.
+Below follows also a brief reply to both referees with indication of the changes made.
+
+We thank you again for this very fruitful enterprise and wish you the very best.
+On behalf of all authors,
+Morten
+
+
+***** answers to referees
+
+First of all we would like to use this opportunity to thank both referee for their kind comments about
+our contributions. We've tried as far as possible to include the suggested improvements and do hope that
+the manuscript in its present is deemed publishable.
+Below we describe briefly our changes according to your comments, including where the changes have been made
+in the main text.
+
+
+
+> =======================================================================
+
+*****************************************************
+Report of the first referee
+
+>   ----------------------------------------------------------
+>   Comments on effective interactions and nuclear shell model
+>   by Dean et. al
+>   ----------------------------------------------------------
+>
+>    This paper contains an extensive review of microscopic shell model
+>   calculations. For light nuclei such as those in the p-shell, one can
+>   do Monte-Carlo Green's Function calculations or the so-called
+>   no-core shell model calculations. But these methods are not capable
+>   at all to treat heavy nuclei such as the tin isotopes. This paper
+>   reports very impressive microscopic shell model calculations
+>   for the tin isotopes. A non-saturation problem was discussed.
+>   A Q-box folded diagram framework was used, with G-matrix
+>   calculated from realistic NN potentials. It has a nice review of
+>   the folded diagram method and the matrix inversion method for
+calculating
+>   the G-matrix with plane-wave intermediate states.
+>
+>     The parquet diagrams for the Q-box are discussed. It seems the authors
+>   have not reported any figures or tables illustrating the importance
+>   of parquet diagrams.  It may be nice to include some of these results.
+>   For example, a comparison of results with Q-box
+>   calculated with 1st+2nd, +3rd and +parquet diagrams.
+>   It is not clear if the parquet diagrams are included for the
+>   tin results reported. Application of coupled cluster methods to nuclear
+>   structure is also discussed, rather briefly.  It may be perhaps
+>   better to discuss this approach with a little more detail.
+
+We've extended section 6 on the coupled cluster method including more details 
+and results. Regarding the Parquet calculations we are not yet in a stage where we 
+have derived effective interactions for open shell systems. 
+This applies to the coupled cluster calculations as well and will be addressed by us in future works. 
+We have added a discussion of this in our perspectives as it belongs to our plans for future projects.
+The time window for this is however unfortunately beyond the one for the present review article. 
+We are now in a position where we have computed excited and ground state properties of He4 and O16
+with the coupled cluster method only. Our Parquet analysis is still incomplete for these nuclei.
+We have therefore limited the discussion of the Parquet method to the presentation 
+of formalism in an angular momentum basis (never done before) and presentation of the algorithm. 
+We expect to produce reliable results for the above closed shell nuclei by the end of the year.
+
+--------------------------------------------------------------------
+Report of the second Referee for the Review paper of Dean et al.
+>
+>  The review is very interesting, self-contained, with the right portion of
+formal
+> many-body theory and discussion of experimental results. It gives a good
+overview
+>  of the present status of the subject and defines the state of the art for
+the
+> microscopic construction of effective interactions to be used in the
+nuclear shell-model.
+>
+> Only one suggestion that the authors may consider useful for the paper, is
+to add
+> a comment on how to match or complement the shell-model description with
+the fact that
+> the single particle states are not fully occupied and that the strength of
+the states,
+> i.e. the single particle spectral functions are very spread in energy.
+The reference
+> to two recent publications  on this point in this same Journal can help to
+> complete this bridge:
+> "Self-consistent Green's function method for nuclei and nuclear matter" by
+>  W.H. Dickhoff & C.  Barbieri, nuclth/0402034 to be published in Prog.
+Part. Nucl. Phys.
+> and " Two-body correlations in nuclear systems " by H. Muether and A.
+Polls  in
+> Prog. Part. Nucl. Phys. 45 (2000)243.
+>
+Our changes:
+--> We've included these references and discuss their relevance at 
+the beginning of section 3.
+
+
+>
+> Now some small things very easy to fix :
+>
+> 1) P^2 = p ==> P^2 =P   (after eq. (2))
+--> Done
+>
+> 2) Dyson eq. (31) should be with plus or minus sign ?
+>
+--> Corrected
+> 3) It can be useful for the reader to have a comment on why the factor
+> 1/2 in eq. (29)
+> is not need in eq. (34)
+--> We've added a discussion right after eq 30 and eq. 34.
+>
+> 4) at the end of Pag. 14
+>  need be explained ===> need to be explained
+--> Done
+> 5) pag 22 before eq (66)
+>
+> from n folds the following ===> from n folds by the following ...
+--> done
+> 6) pag 24 last paragraph
+>
+>  fulfull ===> fulfil
+--> done
+> 7) In sect. (3.4) there is a mixing between omega and Omega ....
+--> corrected
+> 8) Pag 67, in the prespectives
+>  nuclear systems Such   ===> nuclear systems. Such
+--> done.
+
+
+
+
+
+
+
+

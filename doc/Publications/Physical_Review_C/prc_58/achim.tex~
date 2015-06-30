@@ -1,0 +1,1174 @@
+% dear oystein and morten,
+%
+% this is the new version of our paper. i hope it is in a state that 
+% can satisfy everybody now.
+% some remarks: 
+%
+% i left it to you to include the table(s) in a suitable manner.
+%
+% concerning the figures 1 and 4 that i made, i don't think there is 
+% any problem with the legibility. they will put them in a column in prc
+% in nearly the same size as in the preprint.
+%
+% it would be nice if you could adapt the linestyles 
+% (for the modern potentials) used in the figures 3,5, and 6, so that 
+% everything is consistent.
+%
+% there is still the problem that the bhf gaps look a bit wiggly, which
+% is not a problem of the interpolation. i can do some smoothing by
+% hand if you don't have new results.
+%
+% can you confirm that the eff masses plotted in fig.5 correspond
+% to the definition eq.11? please complete this plot (nijm I).
+%
+% a technical question: does prc accept figures in the .tex format you
+% use? if not, please send me proper postscript figures.
+% (i would appreciate that in any case.)
+%
+% as i told you, i will take some holidays in two weeks. so, it would 
+% be optimal if you could send me your next version before. if you need
+% more time than that, please send the file directly to marcello who will
+% give the final touches to our paper. then, when i am back here end of june,
+% i hope to be able to submit the paper very soon to prc.
+%
+% hei sa lenge,
+%              hans-josef
+%
+\documentstyle[manuscript,aps,tighten,graphicx]{revtex}
+%\usepackage[dvips]{graphicx}
+\begin{document}
+\draft
+\title{$\bbox{^3P_2}$-$\bbox{^3F_2}$ pairing in neutron matter\\
+       with modern nucleon-nucleon potentials}
+%\title{Modern nucleon-nucleon potentials and 
+%       $\bbox{^3P_2}$--$\bbox{^3F_2}$ pairing in neutron matter}
+\author{M. Baldo$^1$, \O. Elgar\o y$^2$, L. Engvik$^2$, 
+ M. Hjorth-Jensen$^3$, and H.-J. Schulze$^1$}
+\address{$^1$ Sezione INFN, Universit\`{a} di Catania, Corso Italia 57,
+         I-95129 Catania, Italy}
+\address{$^2$Department of Physics, University of Oslo, N-0316 Oslo, Norway}
+\address{$^3$Nordita, Blegdamsvej 17, DK-2100 Copenhagen \O, Denmark}
+\maketitle
+\date{}
+\begin{abstract}
+  We present results for the $^3P_2$-$^3F_2$ pairing gap in 
+  neutron matter with several realistic nucleon-nucleon potentials,
+  in particular with recent, phase-shift equivalent potentials.   
+  We find that their predictions for the gap cannot 
+  be trusted at densities above $\rho\approx 1.7\rho_0$, where 
+  $\rho_0$ is the saturation density for symmetric nuclear matter.      
+  In order to make predictions above that density, potential 
+  models which fit the nucleon-nucleon phase shifts up 
+  to about 1 GeV are required.  
+\end{abstract}
+\pacs{PACS: 26.60.+c,  % Nuclear matter aspects of neutron stars
+            21.30.-x,  % Nuclear forces
+            21.65.+f,  % Nuclear matter
+            97.60.Jd,  % Neutron stars
+            24.10.Cn   % Many-body theory
+     }
+%\widetext
+%\vspace{15mm}
+
+\section{Introduction}
+
+The presence of neutron superfluidity in the crust and the inner part 
+of neutron stars is one of the features that are considered well established 
+in the physics of these compact stellar objects. 
+At low density, and therefore
+in the outer part of a neutron star, the neutron superfluidity should be
+mainly in the $^1S_0$ channel. 
+At higher density, the nuclei in the crust dissolve, and one 
+expects a region consisting of a quantum liquid of neutrons and 
+protons in beta equilibrium. 
+The proton contaminant should be superfluid 
+in the $^1S_0$ channel, while neutron superfluidity is expected to  
+occur mainly in the coupled $^3P_2$-$^3F_2$ two-neutron channel. 
+In the core of the star any superfluid phase should finally disappear.
+ 
+The presence of two different superfluid regimes 
+is suggested by the known trend of the nucleon-nucleon (NN) phase shifts 
+in each scattering channel. 
+In both the $^1S_0$ and $^3P_2$-$^3F_2$ channels the
+phase shifts indicate that the NN interaction is attractive. 
+In particular for the $^1S_0$ channel, the occurrence of 
+the well known virtual state in the neutron-neutron channel
+strongly suggests the possibility of a pairing condensate at low density, 
+while for the $^3P_2$-$^3F_2$ channel the interaction becomes strongly attractive only
+at higher energy, which therefore suggests a possible pairing condensate
+in this channel at higher densities. In recent years the BCS gap equation
+has actually been solved with realistic interactions, and the results confirm
+these expectations. 
+
+The $^1S_0$ neutron superfluid is relevant for phenomena
+that can occur in the inner crust of neutron stars, like the 
+formation of glitches, which seem to be related to vortex pinning  
+of the superfluid phase in the solid crust \cite{glitch}. 
+The results of different groups are in close agreement
+on the $^1S_0$ pairing gap values and on its density dependence, which
+shows a peak value of about 3 MeV at a Fermi momentum close to
+$k_F \approx 0.8\; {\rm fm}^{-1}$ \cite{bcll90,kkc96,eh98,sclbl96}. 
+All these calculations adopt the bare
+NN interaction as the pairing force, and it has been pointed out
+that the screening by the medium of the interaction could strongly reduce
+the pairing strength in this channel \cite{sclbl96,chen86,ains89}. 
+However, the issue of the 
+many-body calculation of the pairing effective interaction is a complex
+one and still far from a satisfactory solution.
+
+The precise knowledge of the $^3P_2$-$^3F_2$ pairing gap is of 
+paramount relevance for, e.g., the cooling of neutron stars, 
+and different values correspond to drastically
+different scenarios for the cooling process \cite{nstar}.
+Unfortunately, only few and partly
+contradictory calculations of this quantity exist in the literature, 
+even at the level of the bare NN interaction 
+\cite{amu85,bcll92,taka93,elga96,khodel97}. 
+However, when comparing the results, one should note that the  
+NN potentials used in these calculations are not phase-shift 
+equivalent, i.e., they do not 
+predict exactly the same NN phase shifts.  
+Furthermore, for the interactions used in 
+Refs.~\cite{amu85,bcll92,taka93,elga96} the predicted 
+phase shifts do not agree accurately with modern phase shift 
+analyses, and the fit of the NN data has typically 
+$\chi^2/{\rm datum}\approx 3$.  During the last years, progress has 
+been made not only in the accuracy and the consistency of the 
+phase-shift analysis, but also in the fit of realistic NN potentials 
+to these data.  As a result, several new NN potentials have 
+been constructed which fit the world data for $pp$ and $np$ scattering 
+below 350 MeV with high precision.  Potentials like the recent 
+Argonne $V_{18}$ \cite{v18}, the CD-Bonn \cite{bon} 
+or the new Nijmegen potentials \cite{nij} yield a 
+$\chi^2/{\rm datum}$ of about 1 and may be called phase-shift 
+equivalent.  
+
+Our aim in this paper is to compare the predictions of 
+the new potentials for the $^3P_2$-$^3F_2$ gap in neutron matter.  
+We will also, for the sake of completeness, include results 
+with some of the ``old'' interactions, namely the Paris \cite{par}, 
+Argonne $V_{14}$ \cite{v14}, and Bonn B \cite{mach89} potentials.  
+The main focus will, however, be on the new, phase-shift  
+equivalent potentials, and whether the improved accuracy in 
+the fits to the NN scattering data leads to better agreement 
+in the predictions for the $^3P_2$-$^3F_2$ energy gap.  
+If differences are found, we try to trace them back to 
+features of the NN potentials.  
+To be able to do so, we will keep the many-body formalism as 
+simple as possible.  First of all, we will use   
+the bare NN interaction as kernel in the gap equations, and 
+thus neglect higher-order contributions from, e.g., medium 
+polarization effects.  The in-medium single-particle energies 
+will be calculated in the Brueckner-Hartree-Fock (BHF) approximation, 
+but we will also use free single-particle energies, because this 
+makes the comparison of the results with the various potentials 
+more transparent, since any differences are then solely due to 
+differences in the $^3P_2$-$^3F_2$ wave of the potentials.  
+We think it is useful to try to understand the results at the 
+simplest level of many-body theory before proceeding to include 
+more complicated effects in the description of $^3P_2$-$^3F_2$ pairing.   
+As we will demonstrate, progress in the construction 
+of NN interactions is necessary before the $^3P_2$-$^3F_2$ energy gap can be 
+calculated reliably from microscopic many-body theory.   
+
+This work falls in six sections. 
+The equations for solving the pairing gap are briefly reviewed 
+in the next section, while in Section \ref{sec:num_methods} 
+we discuss the reliability of various numerical approaches to the 
+solution of the pairing gap. Features of the various nucleon-nucleon
+interaction models employed are presented in Section \ref{sec:nn_pots},
+while our results for the pairing gap with these potentials
+are discussed in Section \ref{sec:results}. Finally, we summarize
+our findings in Section \ref{sec:conclusions}.   
+
+\section{Gap equation for the $\bbox{^3P_2}$-$\bbox{^3F_2}$ channel}
+
+The gap equation for pairing in non-isotropic partial waves is in general
+more complex than in the simplest $s$-wave case, in particular in neutron and 
+nuclear matter, where the tensor interaction can couple two 
+different partial waves \cite{taka93,bls95}. 
+This is indeed the situation for the $^3P_2$-$^3F_2$ neutron channel. 
+In order to achieve a simplified, yet accurate, numerical treatment, 
+we use in this work the angle average approximation 
+explained in this section.
+
+For the sake of a clear presentation, we disregard for the moment the
+spin degrees of freedom and the tensor interaction.
+Then, we start with the Gorkov equations \cite{gorkov}, 
+which involve the propagator
+$G(\bbox{k},\omega)$, the anomalous propagator $F(\bbox{k},\omega)$, and the
+gap function $\Delta(\bbox{k})$: 
+\begin{eqnarray}
+ \left( \begin{array}{rr} \omega-\epsilon(\bbox{k}) & -\Delta(\bbox{k}) \\ 
+  -\Delta^\dagger(\bbox{k}) & \omega+\epsilon(\bbox{k})
+ \end{array} \right)
+ \left(\begin{array}{c} G \\ F^\dagger \end{array}\right)(\bbox{k},\omega) =
+ \left( \begin{array}{c} 1 \\ 0 \end{array} \right) \:,
+\end{eqnarray}
+where $\epsilon(\bbox{k}) = e(\bbox{k}) - \mu$, $\mu$ being the 
+chemical potential and $e(\bbox{k})$ the single-particle spectrum. 
+The quasi-particle energy $E(\bbox{k})$ is the solution of the corresponding
+secular equation and is given by
+\begin{equation}
+  E(\bbox{k})^2 = \epsilon(\bbox{k})^2 + |\Delta(\bbox{k})|^2 \:.
+\end{equation}
+The anisotropic gap function $\Delta(\bbox{k})$ is to be determined from the gap
+equation
+\begin{equation}
+  \Delta(\bbox{k}) = - \sum_{\bbox{k}'} \langle \bbox{k} | V | \bbox{k}' 
+\rangle
+  {\Delta(\bbox{k}')\over 2E(\bbox{k}') } \:.
+\end{equation}
+The angle-dependent energy denominator in this equation prevents 
+a straightforward separation into the different partial wave components
+by expanding the potential,
+\begin{equation}
+  \langle \bbox{k} | V | \bbox{k}' \rangle = 
+  4\pi \sum_l (2l+1) P_l(\bbox{\hat{k}\cdot\hat{k}'}) V_l(k,k') \:,
+\end{equation}
+and the gap function,
+\begin{equation}
+  \Delta(\bbox{k}) = 
+  \sum_{l,m} \sqrt{4\pi\over 2l+1} Y_{lm}(\bbox{\hat{k}}) \Delta_{lm}(k) \:.
+\end{equation}
+However, after performing an angle average approximation for the gap in the
+quasi-particle energy,
+\begin{equation}
+  |\Delta(\bbox{k})|^2 \rightarrow D(k)^2 \equiv 
+  {1\over 4\pi} \int d\bbox{\hat{k}}\, |\Delta(\bbox{k})|^2 =
+  \sum_{l,m} {1\over 2l+1} |\Delta_{lm}(k)|^2 \:,
+\end{equation}
+the kernels of the coupled integral equations become isotropic, and one can 
+see that the different $m$-components become uncoupled and all equal. 
+One obtains the following equations for the 
+partial wave components of the gap function:
+\begin{equation}
+  \Delta_l(k) = - {1\over\pi} \int_0^\infty 
+  {V_l(k,k') \over \sqrt{ \epsilon(k')^2 + 
+  \left[\sum_{l'} \Delta_{l'}(k')^2 \right] }}
+  \Delta_l(k') \:.
+\end{equation}
+Note that there is no dependence on the quantum number $m$ in these 
+equations, however, they still couple the components of the
+gap function with different $l$ 
+($^1S_0$, $^3P_0$, $^3P_1$, $^3P_2$, $^1D_2$, $^3F_2$, etc.~in neutron matter) 
+via the energy denominator.
+Fortunately, in practice the different components $V_l$ of the potential
+act mainly in non-overlapping intervals in density, 
+and therefore also this coupling can usually be disregarded.
+
+The addition of spin degrees of freedom and of the tensor force does not
+change the picture qualitatively, and is explained in detail 
+in Refs.~\cite{taka93,bls95}.
+The only modification is the introduction 
+of an additional $2\times2$ matrix structure due to the tensor coupling
+of the $^3P_2$ and $^3F_2$ channels: 
+\begin{mathletters}
+\begin{eqnarray}
+ \left( \begin{array}{c} \Delta_1 \\ \Delta_3 \end{array} \right)(k) &=&
+ - {1\over\pi} \int_0^\infty dk' k'^2 {1\over E(k')}
+ \left( \begin{array}{rr}
+  V_{11} & -V_{13} \\ -V_{31} & V_{33}
+ \end{array} \right)(k,k')
+ \left(\begin{array}{c} \Delta_1 \\ \Delta_3 \end{array}\right)(k') \:,
+\\
+  E(k)^2 &=& [e(k)-e(k_F)]^2 + D(k)^2 \:,
+\\
+  D(k)^2 &=& \Delta_1(k)^2 + \Delta_3(k)^2 \:.
+\label{e:gap2c}
+\end{eqnarray}
+\label{e:gap2}
+\end{mathletters}
+Here $e(k)=k^2/2m + U(k)$ are the single-particle energies, 
+as obtained from a Brueckner-Hartree-Fock calculation, 
+where $U(k)$ is the single-particle potential, calculated 
+within the ``continuous choice'' scheme \cite{jjm76}.
+The quantities 
+\begin{equation}
+  V_{ll'}(k,k') =  \int_0^\infty dr r^2 j_{l'}(k'r) V_{ll'}(r) j_l(kr)
+\label{e:v}
+\end{equation}
+are the matrix elements of the bare interaction in 
+the different coupled channels 
+$(T=1;\;S=1;\,J=2;\,l,l'=1,3)$. 
+
+It has been shown that the angle average approximation is an 
+excellent approximation to the true solution that involves a gap function 
+with ten components \cite{taka93,khodel97}, as long as one is 
+only interested in the average value of the gap at the Fermi surface, 
+$\Delta_F\equiv D(k_F)$, and not the angular dependence of the gap functions 
+$\Delta_1(\bbox{k})$ and $\Delta_3(\bbox{k})$.  
+
+\section{Numerical solution}
+\label{sec:num_methods} 
+
+The solution of the system of equations (\ref{e:gap2}) is numerically
+not trivial, especially if the gap turns out to be much
+smaller than the Fermi energy. This is because of the well known
+logarithmic singularity of the BCS equation in the limit of zero pairing gap. 
+In order to control more closely the numerical accuracy, we used in fact
+three different methods:
+
+One method is similar to the one described in Ref.~\cite{bcll90}.
+We first obtain a separable form of the interaction. 
+Since we need a high accuracy, we directly diagonalize the interaction
+$V_{ll'}(k,k')$, taken in a discrete grid of momenta $\{k_i\}$, and then
+we choose the first $n$ eigenvalues $\lambda_m$ with the largest
+moduli, and the corresponding eigenvectors $v_m$.
+One can then write
+\begin{equation}
+  V_{ll'}(k_i,k_j) \approx \sum_{m = 1}^n v_m(k_i) \lambda_m v_m(k_j) \:.
+\end{equation}
+The gap function can then also be expanded in the same eigenvectors, and
+the original equations reduce to a set of $2n$ algebraic equations. 
+The latter can be solved for the coefficients of the expansion
+by iteration, following the scheme described in Ref.~\cite{bcll90}.
+The rank $n$ of the separable form is increased
+until a high degree of convergence is reached. One advantage
+of the method is the possibility of using a very fine momentum grid,
+since the algebraic equations are obtained by numerical integrations,
+for which extremely accurate interpolation methods can be used.
+In general, the grid points must be particularly dense in the interval
+around the Fermi momentum, since there the kernel displays
+an extremely narrow peak due to the small value of the pairing gap.
+Furthermore, in general, the convergence in the rank $n$ is fast enough,
+and therefore the number of coupled equations is never very large.
+However, the accuracy in the diagonalization procedure is decreasing
+with the rank of the matrix and it is difficult to have a precise 
+estimate of the error.
+
+In the second method \cite{krotsch} one starts by solving the gap equation
+for the case of a constant pairing gap $\overline{\Delta}$ in the 
+denominator. In a discrete momentum grid, this is equivalent
+to an eigenvalue problem, namely to find the value of $\overline{\Delta}$
+for which the kernel of the gap equation has eigenvalue one. 
+The corresponding eigenvector is a first estimate of the gap function,
+with the normalization $\Delta(k_F) = \overline{\Delta}$.
+It is then inserted in the kernel to solve for the next estimate of 
+$\overline{\Delta}$. 
+In practice this method converges extremely fast (after a few iterations)
+to the final solution.
+The advantage of the method is that the original interaction is
+used, without resorting to a separable form. 
+
+The third method is to solve the coupled $^3P_2$-$^3F_2$ gap 
+equations straightforwardly by iteration, starting from some 
+suitable initial approximation to the functions $\Delta_1(k)$ and 
+$\Delta_3(k)$.  
+Also in this method, the interaction is used in its original form.  
+If the interaction has a strong 
+repulsive core, as is the case in the $^1S_0$ channel, this 
+method can be difficult or even impossible to implement.  
+However, the $^3P_2$-$^3F_2$ interaction is relatively weak, 
+and the iteration scheme works well in this channel,  
+provided that a fine momentum grid is used around the Fermi momentum.      
+Details of the numerical implementation of this method are 
+given in Ref.~\cite{elga96}.  
+
+The comparison of the results obtained with the three methods was
+quite rewarding. The numerical values of the gap functions were
+in excellent agreement and hardly distinguishable
+in all figures presented here. Therefore, in discussing the results we will 
+not specify the method by which they were obtained. We believe that
+the agreement between the three methods gives enough confidence
+in the numerical precision of the results.
+
+\section{The NN interactions}
+\label{sec:nn_pots} 
+
+Before discussing the solutions of the coupled $^3P_2$-$^3F_2$
+gap equations, we give a short description of the models 
+for the NN interaction employed in this paper.  
+
+The older models, Paris, Argonne $V_{14}$, and Bonn B are 
+described in detail in Refs.~\cite{par,v14,mach89}.  
+They all have a $\chi^2/{\rm datum}$ in the range 2-3.  
+The Argonne $V_{14}$ potential is a non-relativistic, purely local potential.  
+The Paris potential incorporates explicit 
+$\pi$-, $2\pi$-, and $\omega$-exchange.  
+For the short-range part a phenomenological approach is used.  
+The final potential is parameterized in terms of local Yukawa functions.  
+The Bonn B potential is a one-boson-exchange (OBE) interaction, 
+defined by the parameters of Table A.1 of Ref.~\cite{mach89}.  
+
+The ``phase-shift equivalent'' potentials we will employ here 
+are the recent models of the Nijmegen group \cite{nij}, 
+the Argonne $V_{18}$ \cite{v18} potential and the charge-dependent Bonn 
+potential (CD-Bonn) \cite{bon}.  
+In 1993, the Nijmegen group presented a phase-shift analysis of all 
+proton-proton and neutron-proton scattering data below 350 MeV with a 
+$\chi^2/{\rm datum}$ of 0.99 for 4301 data entries \cite{nijpwa}.  
+Fitted to this phase-shift analysis, the CD-Bonn potential 
+has a $\chi^2/{\rm datum}$ of 1.03 and the same is true for 
+the Nijm-I and Nijm-II potentials of the Nijmegen group \cite{nij}.  
+The Argonne $V_{18}$ potential has a $\chi^2/{\rm datum}$ of 1.09.  
+
+All these models are charge-dependent.  
+Argonne $V_{18}$ and Nijm-II   
+are non-relativistic potential models defined in terms of local  
+functions, which are attached to various (non-relativistic) 
+operators constructed from the spin, isospin and angular momentum 
+operators of the interacting pair of nucleons.  
+Such approaches to the NN potential have traditionally been quite 
+popular since they are numerically easy to use in configuration space 
+calculations. 
+The Nijm-I model is similar to the Nijm-II model, but it includes 
+also a momentum dependent term, see Eq.~(13) of Ref.~\cite{nij}, which 
+may be interpreted as a non-local contribution to the central force.  
+The CD-Bonn potential is based on the relativistic 
+meson-exchange model of Ref.~\cite{mach89} which is 
+non-local and cannot be described correctly in terms of local 
+potential functions.
+Instead, it is represented most conveniently in terms of partial waves.
+
+Thus, the mathematical structure of the modern potentials is quite different,
+although they all predict almost identical phase shifts
+within their range of validity. 
+This means that even though the potentials by construction 
+give the same results on-shell, their behavior off the 
+energy shell may be quite different.   
+The implications of these differences for the symmetry energy 
+of nuclear matter were discussed in Ref.~\cite{engv97}.   
+
+In order to illustrate the statements made above, 
+and for a better understanding of the forthcoming results 
+for the pairing gaps, 
+we show in Fig.~\ref{fig:phaseshift} the predictions of the 
+various potentials for the phase shifts in the $^3P_2$ ($T=1$) channel.
+They have been calculated by solving the Lippmann-Schwinger 
+equation as explained in Ref.~\cite{mach87}.
+The figure shows predictions up to $E_{\rm lab}=1.1\;{\rm GeV}$,
+but clearly scattering energies above $E_{\rm lab}=350\;{\rm MeV}$ 
+amount to uncontrolled extrapolations beyond the intended range of validity
+of the potential models, that have been fitted to scattering data
+below $350\;{\rm MeV}$ only. 
+The plot displays also a scale of equivalent Fermi momenta 
+according to the relation
+$E_{\rm lab}=(2k_F)^2/2m$ in order to facilitate the comparison
+with the pairing gaps presented later.  The reader can see 
+that a lab energy of 350 MeV corresponds roughly to a Fermi momentum 
+$k_F=2.0\;{\rm fm}^{-1}$.  Therefore, calculations of the 
+$^3P_2$-$^3F_2$ energy gap at densities above $k_F=2.0\;{\rm fm}^{-1}$ 
+will inevitably involve extrapolating the potential models.  
+
+In the same figure we also show the empirical $pp$ phase shifts 
+obtained by Arndt et al.\ in a recent phase shift analysis \cite{arndt97}.  
+Some differences between this phase shifts analysis and 
+the phase shifts calculated with the potentials 
+could be present in the figure, even below 350 MeV, 
+because the potentials are not fitted to the analysis of Arndt et al..
+The modern potentials fits the Nijmegen database \cite{nijpwa}, 
+the older ones fit different analyses made in the 70's and 80's.  
+Nevertheless, the four modern potentials considered 
+here fit also Arndt analysis below 350 MeV with high accuracy,
+while the old potentials (in particular the $V_{14}$)
+overshoot the empirical values already at lower scattering energies,
+due to the fact that they have a higher $\chi^2/{\rm datum}$ than 
+the new models.
+
+In any case, above $E_{\rm lab}=350\;{\rm MeV}$ 
+(corresponding to $k_F\approx 2.0\;{\rm fm}^{-1}$)
+sizeable differences show up in the predictions of all potentials.  
+The Nijm-II potential fits the phase shifts 
+up to about 600 MeV rather well, but after that it severely 
+overestimates them.  
+This in turn means that the high-momentum components of the 
+$^3P_2$ interaction will be too attractive.  
+Nijm-I does fairly well up to about 500 MeV, from 500 to 700 MeV it 
+underpredicts the phase shifts, while at energies above 700 MeV the 
+results are too high.  
+The CD-Bonn potential gives a similar behavior, but falls 
+faster towards zero at high energies than Nijm-I and II.  
+Argonne $V_{18}$ gives $^3P_2$ phase shifts below the empirical ones 
+over the whole range $E_{\rm lab}=400$--$1000\;{\rm MeV}$. 
+The old potentials display similar variations, being generally too repulsive
+with Paris the most repulsive of all potentials, followed by Bonn B and
+Argonne $V_{14}$.
+In this paper we will further on focus on the new, phase-shift 
+equivalent potentials, since they are better fitted to modern scattering
+data.      
+In summary, all potentials give phase shifts which are too attractive 
+above $E_{\rm lab}\approx 700$--$1000\;{\rm MeV}$, 
+and all except Nijm-II are too repulsive between $\approx 350\;{\rm MeV}$ 
+and $\approx 700$--$1000\;{\rm MeV}$.    
+
+\section{Results}
+\label{sec:results} 
+
+Before presenting results for the energy gap, we  
+point out some features of the gap equations which make the 
+trend of the results understandable.  
+In order to make the connection to the NN interaction as transparent 
+as possible, we start by discussing the case where the 
+single-particle energies are given by their values in free space, 
+$e(k)=k^2/2m$. 
+ 
+In Fig.~\ref{fig:int} we show, 
+for the Nijm-I potential and various values of $k_F$, 
+the function $k^2\Delta_1(k)/E(k)$ 
+involved in the $^3P_2$ component of the gap equations, 
+normalized to unity at $k=k_F$.
+The behavior of this function was found to be the same for all potentials.  
+Notice that this function is 
+very strongly peaked around $k=k_F$, implying that 
+the diagonal matrix element of the potential at $k=k_F$ 
+gives the most important contribution to 
+$\Delta_1(k_F)$ and $\Delta_3(k_F)$.  
+Also, this figure makes it clear why some care in choosing 
+momentum mesh points for the numerical integrations is needed.  
+The function $k^2\Delta_3(k)/E(k)$ shows a similar, strongly 
+peaked behavior, and thus the gap is largely determined by 
+the matrix elements $V_{11}(k_F,k_F)$, $V_{13}(k_F,k_F)$ and 
+$V_{33}(k_F,k_F)$.  
+
+We have therefore plotted in Fig.~\ref{fig:pots} 
+these matrix elements as functions of $k_F$ for the various modern 
+potentials used in this work. 
+Up to $k_F\approx 2.0\;{\rm fm}^{-1}$ the matrix elements are very similar,
+but after this point they deviate from each other,  
+in line with the phase shift predicions shown in Fig.~\ref{fig:phaseshift}: 
+In the $^3P_2$ and $^3F_2$ waves, 
+the $V_{18}$ potential is the most repulsive,
+followed by the CD-Bonn and the Nijm-I and Nijm-II potentials in that order, 
+while in the coupled $^3P_2$-$^3F_2$ channel the CD-Bonn is  
+more attractive than the other two.  
+Nijm-I and Nijm-II are rather similar, but Nijm-II is more attractive 
+at higher densities.  
+
+\subsection{Pairing gaps}
+
+Fig.~\ref{fig:gaps} contains a comprehensive collection of our results for
+the pairing gaps with the different potentials. 
+We start with the top part of the figure, that displays the results
+calculated with free single-particle energies.  
+Differences between the results are therefore solely due to differences 
+in the $^3P_2$-$^3F_2$ matrix elements of the potentials.
+The plot shows results obtained with the old as well as with the modern
+potentials.
+The results (with the notable exception of the Argonne $V_{14}$,
+\footnote{
+  In a previous paper \cite{bcll92}
+  one of the authors (M.B.) has claimed much higher values for the
+  gap with the Argonne $V_{14}$.  
+  It has been checked that this was due both to a non accurate
+  separable representation of the NN potential and to a bug in the
+  computer program for this channel.}
+that predicts also substantially different $^3P_2$ phase shifts, 
+see Fig.~\ref{fig:phaseshift})
+are in good agreement at densities below $k_F\approx 2.0\;{\rm fm}^{-1}$, 
+but differ significantly at higher densities.  
+This is in accordance with the fact that 
+the diagonal matrix elements of the potentials are very similar 
+below $k_F\approx 2.0\;{\rm fm}^{-1}$, corresponding  
+to a laboratory energy for free NN scattering 
+of $E_{\rm lab} \approx 350\;{\rm MeV}$.  
+This indicates that
+within this range the good fit of the potentials 
+to scattering data below 350 MeV makes the ambiguities in the 
+results for the energy gap quite small,
+although there is in general no unique relation between phase shifts and gaps.
+
+However, we wish to calculate the gap also at densities above 
+$k_F=2.0\;{\rm fm}^{-1}$.  
+Then we need the various potentials at higher energies, 
+outside of the range where they are fitted to scattering data.  
+Thus there is no guarantee that 
+the results will be independent of the model chosen, and in fact 
+the figure shows that there are considerable differences 
+between their predictions at high densities,
+following precisely the trend observed in the phase shift predictions:
+The Argonne $V_{18}$ is the most repulsive of the modern potentials,
+followed by the CD-Bonn and Nijmegen I and II.
+Most remarkable are the results obtained with Nijm-II: 
+we find that the predicted gap 
+continues to rise unrealistically even at $k_F \approx 3.5\;{\rm fm}^{-1}$, 
+where the purely nucleonic description of matter surely breaks down.
+From Table \ref{tab:tab1}, which contains a compilation of gaps 
+for the various potentias, one sees that the improved fit of the 
+new potentials to scattering data leads to better agreement 
+in their predictions for the gap.   
+Thus, the fact that these potentials have been fit with high precision 
+to the same set of scattering data eliminates some of the 
+ambiguities, and allows one to compare interactions in a way not 
+possible with earlier models.   
+
+Since the potentials fail to reproduce the measured phase shifts 
+beyond $E_{\rm lab}=350\;{\rm MeV}$, the predictions for the $^3P_2$-$^3F_2$ 
+energy gap in neutron matter cannot be trusted above 
+$k_F\approx 2.0\;{\rm fm}^{-1}$.  
+%At higher densities we need 
+%matrix elements of the potential at energies outside of the region 
+%where they are fitted, and thus we are in practice making 
+%an extrapolation.  
+Therefore, the behavior of the $^3P_2$-$^3F_2$ energy gap at high densities 
+should be considered as unknown, and cannot be obtained until potential models 
+which fit the phase shifts in the inelastic region 
+above $E_{\rm lab}=350\;{\rm MeV}$ are constructed.  
+These potential models need the flexibility to 
+include both the flat structure in the phase shifts above 600 MeV, 
+due to the ${\rm NN}\rightarrow{\rm N}\Delta$ channel, as well as the 
+rapid decrease to zero at $E_{\rm lab}\approx 1100\;{\rm MeV}$.  
+ 
+We proceed now to the middle part of Fig.~\ref{fig:gaps}, where
+the results for the energy gap using BHF single-particle energies are shown.  
+For details on the BHF calculations, see, e.g., Ref.~\cite{jjm76}.  
+From this figure, two trends are apparent:  
+First, the reduction of the in-medium nucleon mass leads to a sizeable 
+reduction of the $^3P_2$-$^3F_2$ energy gap, as observed in 
+earlier calculations \cite{amu85,bcll92,taka93,elga96}.  
+Secondly, the new NN interactions give again similar results 
+at low densities, while beyond $k_F\approx 2.0\;{\rm fm}^{-1}$ 
+the gaps differ, as in the case with free single-particle energies.   
+
+The single-particle energies at moderate densities obtained from the 
+new potentials are rather similar, particularly in the 
+important region near $k_F$.  
+This is illustrated by a plot, Fig.~\ref{fig:mstar},
+of the neutron effective mass,
+\begin{equation}
+ {m^*\over m} = \left( 1 + {m\over k_F} 
+ \left.{dU\over dk}\right|_{k_F} \right)^{-1} \:,
+\label{eq:effmass}
+\end{equation}
+as a function of density.
+Up to $k_F \approx 2.0\;{\rm fm}^{-1}$ all results agree very closely,
+but beyond that point the predictions diverge in the same manner as observed
+for the phase shift predictions.
+The differences of the BHF gaps at densities slightly above  
+$k_F\approx 2.0\;{\rm fm}^{-1}$ are therefore mostly 
+due to the differences in the $^3P_2$-$^3F_2$ waves of the potentials,
+but at higher densities the differences between the gap are enhanced 
+by differences in the single-particle potentials.
+An extreme case is again the gap obtained with Nijm-II.  
+It is caused by the very attractive $^3P_2$ matrix elements, 
+amplified by the fact that the effective mass 
+starts to increase at densities above $k_F\approx 2.5\;{\rm fm}^{-1}$ 
+with this potential.  
+
+Finally, in the lower panel of Fig.~\ref{fig:gaps}, we illustrate the
+effect of different approximation schemes with an individual NN potential
+(CD-Bonn), namely we compare the energy gaps obtained 
+with the free single-particle spectrum, the BHF spectrum,
+and an effective mass approximation,
+\begin{equation}
+  e(k) = U_0 + \frac{k^2}{2m^*} \:,
+\label{eq:mstarapp}
+\end{equation}
+where $m^*$ is given in Eq.~(\ref{eq:effmass}).
+In addition, also the gap in the uncoupled $^3P_2$ channel, 
+i.e., neglecting the tensor coupling, is shown.
+
+It becomes clear from the figure that the BHF spectrum forces a 
+reduction of the gap by about a factor 2--3.
+However, an effective mass aproximation should not be used when 
+calculating the gap,  
+because details of the single-particle spectrum around the Fermi 
+momentum are important in order to obtain a correct value.   
+The single-particle energies in the effective mass 
+approximation are too steep near $k_F$.
+We also emphasize that it is important to solve the coupled 
+$^3P_2$-$^3F_2$ gap equations.  
+By turning off the $^3P_2$-$^3F_2$ and $^3F_2$ channels, 
+one obtains a $^3P_2$ gap that is considerably lower than the 
+$^3P_2$-$^3F_2$ one.  
+The reduction varies with the potential,
+due to different strengths of the tensor force.
+For more detailed discussions of the importance of the tensor force, 
+the reader is referred to Refs.~\cite{amu85,taka93,elga96}.
+
+\subsection{Hints from the $\bbox{^3P_2}$ phase shifts}
+
+The first calculation of the $^3P_2$ gap in neutron matter was 
+carried out by Hoffberg et al.~\cite{hoffberg70} in 1970.  
+They used the weak-coupling expression for the energy gap to 
+express it in terms of the $^3P_2$ phase shifts available at 
+that time, and obtained 
+a maximum gap of around 1 MeV at $k_F\approx 2.3\;{\rm fm}^{-1}$.    
+Since all interactions considered in the present paper are 
+fitted in the energy range 0--350 MeV, it would be interesting to 
+use the recent phase shift analysis by Arndt et al.~\cite{arndt97} 
+to get some hints on the behavior of the energy gap at higher densities.  
+The phase shifts determine the interaction only on the energy shell, 
+so to go from these ``experimental'' points to the energy gaps, 
+we must make some rather strong assumptions. 
+  
+First of all, we switch off the interaction in the $^3F_2$ and 
+$^3P_2$-$^3F_2$ channels and consider pure $^3P_2$ pairing.  
+We are then left with only one gap equation to solve, and when we 
+use the angle average approximation it is identical 
+in form to the equation for $^1S_0$ pairing: 
+\begin{equation}
+  \Delta_1(k)=-\frac{1}{\pi}\int_{0}^{\infty}dk'k'^2V_{11}(k,k')
+  \frac{\Delta_1(k')}{E(k')} \:.
+\label{eq:sepeq1}
+\end{equation}
+In a recent paper \cite{eh98} two of the authors derived an 
+expression for the $^1S_0$ gap in neutron and nuclear matter 
+in terms of the phase shifts in this partial wave.  
+This was possible because the interaction in this channel 
+is to a good approximation rank-one separable at low energies 
+due to the $^1S_0$ two-nucleon virtual state \cite{kkc96,carlson97}.  
+No resonance or virtual state exists in the $^3P_2$ channel, but we will 
+nevertheless approximate the interaction in this channel by 
+a rank-one separable form, 
+\begin{equation}
+  V_{11}(k,k') = \lambda v(k)v(k') \:, 
+\label{eq:sepeq2}
+\end{equation}
+where $\lambda$ is a constant.  
+The interaction can then 
+be expressed in terms of the phase shifts as \cite{eh98,jb76} 
+\begin{equation}
+  \lambda v^2(k) = -\frac{\sin\delta(k)}{k}e^{-\alpha(k)} \:, 
+\label{eq:sepeq3}
+\end{equation}
+where $\alpha(k)$ is given by a principle value integral 
+\begin{equation}
+  \alpha(k)=\frac{1}{\pi}{\rm P}\int_{-\infty}^{+\infty}
+  dk'\frac{\delta(k')}{k'-k} \:, 
+\label{eq:sepeq4}
+\end{equation}
+and the phase shifts $\delta(k)$ are extended to negative momenta 
+through $\delta(-k)=-\delta(k)$.  
+This prescription works 
+only for a purely attractive or purely repulsive interaction.  
+The $^3P_2$ phase shifts change sign at $E_{\rm lab}\approx 1100\;{\rm MeV}$, 
+and thus the interaction goes from attractive to repulsive at this energy.  
+We therefore cut the integral in Eq.~(\ref{eq:sepeq4}) 
+at $k\approx 3.6\;{\rm fm}^{-1}$, which corresponds to 
+$E_{\rm lab}\approx 1100\;{\rm MeV}$.  
+For a rank-one separable interaction, 
+the solution of Eq.~(\ref{eq:sepeq1}) is given by 
+$\Delta_F v(k)$, where $\Delta_F$ is the gap at the Fermi momentum 
+found by solving 
+\begin{equation}
+ \frac{1}{\pi}\int_{0}^{\infty}dk'k'^2\frac{\lambda v^2(k')}{E(k')} = -1 \:.
+\label{eq:sepeq5}
+\end{equation}
+
+Using phase shifts from the analysis of Arndt et al.~\cite{arndt97,said98}, 
+we constructed an interaction for the 
+$^3P_2$ channel according to the prescription above, and then 
+proceeded to solve Eq.~(\ref{eq:sepeq5}) for $\Delta_F$.  
+The results are shown in Fig.~\ref{fig:pshiftgap}.
+For comparison we also display the results of the following calculation 
+for the various potentials:  
+we took the phase shifts at energies 
+up to 1100 MeV computed earlier and shown in Fig.~\ref{fig:phaseshift}. 
+From these we constructed a rank-one separable approximation to the 
+$^3P_2$ wave of the various potentials, as described above, and then 
+used this to solve the gap equation.  
+This allows us to see directly the consequences of the potentials 
+failure to fit the high-energy $^3P_2$ phase shifts. 
+When looking at Fig.~\ref{fig:pshiftgap} and reading the 
+following discussion, one should bear in mind that the gap 
+has an exponential dependence on the interaction, so quite 
+small differences in the matrix elements of the interaction 
+can be translated into large differences in the energy gap.  
+But this also makes the gap a good quantity to use when 
+comparing interactions, as any difference is magnified. 
+
+Although the approximation made here should not be taken too seriously, 
+the results indicate some important conclusions about the 
+$^3P_2$ waves of the recent nucleon-nucleon interactions.  
+All seem to have about the right amount of attraction at 
+densities below $k_F\approx 2.0\;{\rm fm}^{-1}$.  
+Between $k_F\approx 2.0\;{\rm fm}^{-1}$ and $k_F\approx 3.0\;{\rm fm}^{-1}$ 
+all interactions except Nijm-II seem to be a bit too repulsive.  
+Above $k_F\approx 3.0$, 
+Argonne $V_{18}$ is probably too repulsive, while Nijm I and II are 
+most certainly too attractive, and the same probably also holds for 
+the CD-Bonn.  If one uses the weak-coupling expression for the gap, 
+\begin{equation}
+  \Delta_F\approx 2 \epsilon_F e^{-V_{11}(k_F,k_F)/N(0)} \:, 
+\label{eq:sepeq6}
+\end{equation}
+where $\epsilon_F$ is the Fermi energy and $N(0)$ the density of 
+states at the Fermi level, one sees that the gap vanishes  
+where the interaction goes to zero.  In our phase-shift approximation, 
+this happens where the phase shifts change sign, at $k_F\approx 
+3.6\;{\rm fm}^{-1}$.  The Argonne $V_{18}$ gap then seems to 
+disappear somewhat too early, while the other potentials give gaps which 
+exist up to what is probably unrealistically high densities.  
+
+\section{Conclusion}
+\label{sec:conclusions}
+ 
+We have presented new calculations of the pairing gap in the 
+$^3P_2$-$^3F_2$ channel for pure neutron matter as a function of density. 
+The calculations are intended to establish on a firm basis the 
+numerical value of
+the gap once the bare nucleon-nucleon interaction is used as the
+pairing interaction, since in this context contradictory results
+were present in the literature. 
+Since we have used three different numerical methods in this paper 
+and all gave the same results, the pairing gaps we have obtained 
+should be reliable from a technical point of view.    
+
+However, our calculations have revealed that the behavior of 
+the $^3P_2$-$^3F_2$ gap at densities above $k_F \approx 2.0\;{\rm fm}^{-1}$, 
+corresponding to $\rho \approx 1.7\rho_0$, where $\rho_0$ 
+is the nuclear matter saturation density, must be considered as 
+largely unknown.  
+Up to this point the gap is increasing
+(the values at $k_F=2.0\;{\rm fm}^{-1}$ 
+are about 0.6 MeV with free single-particle spectrum,
+and about 0.3 MeV with BHF spectrum, independent of the potential),
+but how far in density this increase continues, depends on the individual
+potentials, in line with their extrapolations of the $^3P_2$ phase
+shift predictions.
+Bearing in mind that the Nijm-II potential fitted 
+the empirical $^3P_2$ phase shift rather well up to 
+$E_{\rm lab}\approx 600\;{\rm MeV}$ 
+($k_F\approx 2.7\;{\rm fm}^{-1}$), 
+we can deduce from Fig.~\ref{fig:gaps} that the maximum 
+gap with a free spectrum is probably below $1\;{\rm MeV}$.  
+How high up in density the gap exists must be left as an open question, 
+although the phase shifts indicate that the gap should disappear 
+at around $k_F=3.6\;{\rm fm}^{-1}$, corresponding to $\rho\approx 10\rho_0$.  
+At this point also the purely nucleonic treatment of the dense medium
+is surely inappropriate.
+
+Before a precise calculation of the $^3P_2$-$^3F_2$ pairing gap can be made, 
+one therefore needs a nucleon-nucleon potential that fits 
+the phase shifts up to $E_{\rm lab}\approx 1\;{\rm GeV}$ accurately.  
+To us, the construction of potential models in which the 
+inelasticities above $E_{\rm lab}=350\;{\rm MeV}$ 
+due to the opening of the ${\rm N}\Delta$ channel are taken 
+into account,
+seems to be more urgent than the evaluation of 
+polarization effects on the $^3P_2$-$^3F_2$ gap with the existing potential models.   
+
+\acknowledgements
+
+We would like to thank John Clark and Umberto Lombardo for 
+interesting discussions.   
+Thanks are also due to Ruprecht Machleidt for providing us 
+with useful information about potentials and phase shifts 
+in the $^3P_2$ wave.    
+
+%---------------------------------------------------------------------------
+\begin{references}
+
+\bibitem{glitch} 
+  J. A. Sauls, in {\it Timing Neutron Stars}, 
+  H. \"{O}gelman and E. P. J. van den Heuvel (eds.), 457  
+  (Dordrecht, Kluwer, 1989). 
+\bibitem{bcll90}
+  M. Baldo, J. Cugnon, A. Lejeune, and U. Lombardo,
+  Nucl. Phys. {\bf A515}, 409 (1990).
+\bibitem{kkc96} 
+  V. A. Kodel, V. V. Kodel, and J. W. Clark,
+  Nucl. Phys. {\bf A598}, 390 (1996).
+\bibitem{eh98}
+  \O. Elgar\o y and M. Hjorth-Jensen,
+  Phys. Rev.  {\bf C57}, 1174 (1998) 
+\bibitem{sclbl96} 
+  H.-J. Schulze, J. Cugnon, A. Lejeune, M. Baldo, and U. Lombardo, 
+  Phys. Lett. {\bf B375}, 1 (1996). 
+\bibitem{chen86}
+  J. M. C. Chen, J. W. Clark, E. Krotschek, and R. A. Smith,
+  Nucl. Phys. {\bf A451}, 509 (1986);\\
+  J. M. C. Chen, J. W. Clark, R. D. Dave, and V. V. Khodel,
+  Nucl. Phys. {\bf A555}, 59 (1993).
+\bibitem{ains89}
+  T. L. Ainsworth, J. Wambach, and D. Pines,
+  Phys. Lett. {\bf B222}, 173 (1989);\\
+  J. Wambach, T. L. Ainsworth, and D. Pines,
+  Nucl. Phys. {\bf A555}, 128 (1993).
+\bibitem{nstar}
+  S. Tsuruta,
+  Phys. Rep. {\bf 292}, 1 (1998).
+\bibitem{amu85}
+  L. Amundsen and E. \O stgaard, Nucl. Phys. {\bf A437}, 487 (1985).
+\bibitem{bcll92}
+  M. Baldo, J. Cugnon, A. Lejeune, and U. Lombardo,
+  Nucl. Phys. {\bf A536}, 349 (1992).
+\bibitem{taka93}
+  T. Takatsuka and R. Tamagaki,
+  Prog. Theor. Phys. Suppl. {\bf 112}, 27 (1993).
+\bibitem{elga96}
+  \O. Elgar\o y, L. Engvik, M. Hjorth-Jensen, and E. Osnes,
+  Nucl. Phys. {\bf A607}, 425 (1996).
+\bibitem{khodel97} 
+  V. V. Khodel, Ph.D. thesis (Washington University, St. Louis), unpublished 
+  (1997); 
+  V. A. Khodel, V. V. Khodel, and J. W. Clark, 
+  preprint, submitted to Phys. Rev. Lett. 
+\bibitem{v18}
+  R. B. Wiringa, V. G. J. Stoks, and R. Schiavilla, 
+  Phys. Rev. {\bf C51}, 38 (1995).
+\bibitem{bon}
+  R. Machleidt, F. Sammarruca, and Y. Song, 
+  Phys. Rev. {\bf C53}, 1483 (1996).
+\bibitem{nij}
+  V. G. J. Stoks, R. A. M. Klomp, C. P. F. Terheggen, and J. J. de Swart,
+  Phys. Rev. {\bf C48}, 792 (1993).
+\bibitem{par}
+  M. Lacombe et al., 
+  Phys. Rev. {\bf C21}, 861 (1980).
+\bibitem{v14}
+  R. B. Wiringa, R. A. Smith, and T. L. Ainsworth, 
+  Phys. Rev. {\bf C29}, 1207 (1984).
+\bibitem{mach89}
+  R. Machleidt, Adv. Nucl. Phys. {\bf 19}, 189 (1989).
+%\bibitem{jack82} 
+%  A. D. Jackson, E. Krotscheck, D. E. Meltzer, and R. A. Smith, 
+%  Nucl. Phys. {\bf A386}, 125 (1982). 
+%\bibitem{pethrav91} 
+%  C. J. Pethick and D. G. Ravenhall, {\it Texas/ESO-CERN 
+%  Symposium on Relativistic Astrophysics, Cosmology and Fundamental 
+%  Physics Proceedings} (eds. J. D. Barrow, L. Mestel, and P. A. Thomas), 
+%  Ann. New York Acad. Sci {\bf 647}, 503 (1991).   
+\bibitem{bls95}
+  M. Baldo, U. Lombardo, and P. Schuck,
+  Phys. Rev. {\bf C52}, 975 (1995).
+\bibitem{gorkov}
+  see e.g., J. R. Schrieffer, {\it Theory of Superconductivity}, 
+  (Addison-Wesley, New York, 1964) p.248. 
+\bibitem{jjm76} 
+  J. P. Jeukenne, A. Lejeune, and C. Mahaux, 
+  Phys. Rep. {\bf 25C}, 83 (1976).
+\bibitem{krotsch}
+  E. Krotscheck, Z. Physik {\bf 251}, 135 (1972). 
+\bibitem{nijpwa}
+  V. G. J. Stoks, R. A. M. Klomp, M. C. M. Rentmeester, and J. J. de Swart, 
+  Phys. Rev. {\bf C48}, 792 (1993). 
+\bibitem{engv97}
+  L. Engvik, M. Hjorth-Jensen, R. Machleidt, H. M\"uther, and A. Polls,
+  Nucl. Phys. {\bf A627}, 85 (1997).
+\bibitem{mach87}
+  R. Machleidt, K. Holinde, and Ch. Elster, 
+  Phys. Rep. {\bf 149}, 1 (1987).
+\bibitem{arndt97}
+  R. A. Arndt, C. H. Oh, I. I. Strakovsky, R. L. Workman, and F. Dohrmann, 
+  Phys. Rev. {\bf C56}, 3005 (1997).
+\bibitem{hoffberg70}
+  M. Hoffberg, A. E. Glassgold, R. W. Richardson, and M. Ruderman, 
+  Phys. Rev. Lett. {\bf 24}, 775 (1970). 
+\bibitem{carlson97}
+  B. V. Carlson, T. Frederico, and F. B. Guimar\~{a}es, 
+  Phys. Rev. {\bf C56}, 3097 (1997).  
+\bibitem{jb76}
+  G. E. Brown and A. D. Jackson, {\it The Nucleon-Nucleon Interaction}, 
+  (North-Holland, Amsterdam, 1976).
+\bibitem{said98}
+  R. A. Arndt, ``Interactive Dial-in Program SAID''\\ 
+  (URL http://clsaid.phys.vt.edu/\%7ECAPS/). 
+\end{references}
+
+%---------------------------------------------------------------------------
+
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{llllllll} 
+\multicolumn{1}{c}{$k_F\;({\rm fm}^{-1}$)}&\multicolumn{1}{c}{Bonn B}&
+\multicolumn{1}{c}{Paris}&\multicolumn{1}{c}{$V_{14}$}& 
+\multicolumn{1}{c}{CD-Bonn}&\multicolumn{1}{c}{$V_{18}$}&
+\multicolumn{1}{c}{Nijm I}&\multicolumn{1}{c}{Nijm II} \\ \hline  
+     1.2  & 0.05 & 0.04  & 0.05 & 0.03 & 0.04 & 0.03 & 0.03  \\
+     1.4  & 0.16 & 0.15  & 0.19 & 0.11 & 0.14 & 0.12 & 0.12  \\
+     1.6  & 0.35 & 0.32  & 0.45 & 0.27 & 0.31 & 0.27 & 0.27  \\
+     1.8  & 0.52 & 0.49  & 0.75 & 0.45 & 0.49 & 0.47 & 0.45 \\
+     2.0  & 0.66 & 0.57  & 1.02 & 0.64 & 0.62 & 0.69 & 0.68 \\
+     2.2  & 0.67 & 0.49  & 1.14 & 0.77 & 0.65 & 0.91 & 0.90 \\
+     2.4  & 0.58 & 0.30  & 1.13 & 0.86 & 0.56 & 1.12 & 1.15 \\
+     2.6  & 0.39 & 0.10  & 0.95 & 0.85 & 0.37 & 1.26 & 1.39 \\
+     2.8  & 0.21 & ---  & 0.70 & 0.78 & 0.17 & 1.38 & 1.66 \\
+     3.0  & 0.06 & ---  & --- & 0.61 & 0.02 & 1.37 & 1.90 \\ \hline  
+\end{tabular}
+\caption{Collection of $^3P_2$-$^3F_2$ energy gaps (in MeV) for the 
+various potentials considered in this paper.  
+Free single-particle energies have been used.}
+\label{tab:tab1}
+\end{center}
+\end{table} 
+
+
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{llllllll} 
+\multicolumn{1}{c}{$k_F\;({\rm fm}^{-1})$}&\multicolumn{1}{c}{Bonn B}&
+\multicolumn{1}{c}{Paris}&\multicolumn{1}{c}{$V_{14}$}& 
+\multicolumn{1}{c}{CD-Bonn}&\multicolumn{1}{c}{$V_{18}$}&
+\multicolumn{1}{c}{Nijm I}&\multicolumn{1}{c}{Nijm II} \\ \hline  
+     1.2  & 0.05 & 0.04  & 0.05 & 0.04 & 0.04 (0.02) & 0.04  & 0.04  \\
+     1.4  & 0.16 & 0.11  & 0.18 & 0.10 & 0.10 (0.10) & 0.10  & 0.10  \\
+     1.6  & 0.34 & 0.22  & 0.38 & 0.18 & 0.17 (0.21) & 0.18  & 0.18  \\
+     1.8  & 0.52 & 0.26  & 0.60 & 0.25 & 0.23 (0.27) & 0.26  & 0.26  \\
+     2.0  & 0.64 & 0.22  & 0.74 & 0.29 & 0.22 (0.29) & 0.34  & 0.36  \\
+     2.2  & 0.65 & 0.14  & 0.75 & 0.29 & 0.16 (0.24) & 0.40  & 0.47  \\
+     2.4  & 0.56 & 0.01  & 0.66 & 0.27 & 0.07 (0.11) & 0.46  & 0.67  \\
+     2.6  & 0.37 & ---  & 0.42 & 0.21 & ---        & 0.47  & 0.99  \\
+     2.8  & 0.19 & ---  & 0.23 & 0.17 & ---        & 0.49  & 1.74  \\
+     3.0  & 0.02 & ---  & 0.08 & 0.11 & ---        & 0.43  & 3.14  \\ \hline
+\end{tabular}
+\caption{Collection of $^3P_2$-$^3F_2$ energy gaps (in MeV) for the 
+various potentials considered in this paper.  
+BHF single-particle energies have been used.}
+\label{tab:tab2}
+\end{center}
+\end{table} 
+
+
+
+\begin{figure}
+%\input{phaseshift.tex}
+\includegraphics[totalheight=11.cm,angle=-90,bb=-50 170 350 720]{pgap1.ps}
+\caption{$^3P_2$ phase shift predictions of different potentials 
+         up to $E_{\rm lab}=1.1\;{\rm GeV}$, compared with the 
+         phase shift analysis of Arndt et al.~\protect\cite{arndt97}.
+         The ``old'' potentials are denoted by different symbols; 
+         the ``modern'' potentials by different line styles.}
+\label{fig:phaseshift}
+\end{figure} 
+
+\begin{figure}
+\input{intnijm1.tex}
+\caption{$^3P_2$ part of the integrand in the gap equations for 
+         various densities and with the Nijm-I potential.}
+\label{fig:int}
+\end{figure} 
+
+\begin{figure}
+\input{potsdiag.tex}
+%\includegraphics[totalheight=13.5cm,angle=0,bb=0 60 350 700]{pgap3.ps}
+\caption{{\em Here comes your combined figure!}\\
+         The diagonal part of the neutron-neutron potential in 
+         momentum space [Eq.~(\ref{e:v})], 
+         for the different partial waves, and different potentials...}
+\label{fig:pots}
+\end{figure}
+
+\begin{figure}
+\includegraphics[totalheight=17.5cm,angle=0,bb=0 80 350 730]{pgap4.ps}
+\caption{Top panel: The angle-averaged $^3P_2$-$^3F_2$ gap in neutron matter
+         depending on the Fermi momentum, evaluated with free 
+         single-particle spectrum and different nucleon-nucleon potentials. 
+         Middle panel: The gap evaluated with BHF spectra.
+         Bottom panel: The gap with the CD-Bonn potential in different 
+         approximation schemes.}
+\label{fig:gaps}
+\end{figure}
+
+\begin{figure}
+\input{masses.tex}
+\caption{Effective masses derived from various interactions in 
+         the BHF approach.}
+\label{fig:mstar}
+\end{figure}
+
+\begin{figure}
+\input{pshiftgap.tex}
+\caption{$^3P_2$ gap calculated with separable potentials  
+         constructed directly from the $^3P_2$ phase shifts.}
+\label{fig:pshiftgap}
+\end{figure} 
+
+%---------------------------------------------------------------------------
+\end{document}
+
+\begin{figure}
+    \input{potsdiag.tex}
+    \caption{Diagonal matrix elements in the $^3P_2$ wave of 
+the various potentials. }
+    \label{fig:potsdiag}
+\end{figure} 
+
+\begin{figure}
+    \input{potspf.tex}
+    \caption{Same as Fig. \ref{fig:potsdiag}, but for the 
+$^3P_2-^3F_2$ wave.}
+    \label{fig:potspf}
+\end{figure} 
+
+\begin{figure}
+    \input{potsf.tex}
+    \caption{Same as Fig. \ref{fig:potsdiag}, but for the 
+$^3F_2$ wave. }
+    \label{fig:potsf}
+\end{figure}
+
+\begin{figure}
+    \input{freegapsold.tex}
+    \caption{$^3P_2$-$^3F_2$ energy gaps with the Argonne $V_{14}$ and 
+the Paris potentials.}
+    \label{fig:freegapsold}
+\end{figure} 
+
+\begin{figure}
+    \input{oldgaps.tex}
+    \caption{$^3P_2$-$^3F_2$ energy gaps with BHF single-particle energies 
+for the ``old'' potentials.}
+    \label{fig:oldgaps}
+\end{figure} 
+
+\begin{figure}
+    \input{freegaps.tex}
+    \caption{$^3P_2$-$^3F_2$ energy gaps with the new, 
+phase-shift equivalent potentials.}
+    \label{fig:freegaps}
+\end{figure} 
+
+\begin{figure}
+    \input{newrealgaps.tex}
+    \caption{$^3P_2$-$^3F_2$ gaps with the new potentials and BHF 
+single-particle energies. }
+    \label{fig:realgaps}
+\end{figure} 
+
+\begin{figure}
+    \input{spec126.tex}
+    \caption{Single-particle spectra in neutron matter at 
+$k_F=1.26\;{\rm fm}^{-1}$.}
+    \label{fig:spec126}
+\end{figure} 
+
+\begin{figure}
+    \input{spec2268.tex}
+    \caption{Single-particle spectra in neutron matter at 
+$k_F=2.27\;{\rm fm}^{-1}$.}
+    \label{fig:spec2268}
+\end{figure} 
+
+\begin{figure}
+    \input{failure.tex}
+    \caption{The energy gaps obtained with the full single-particle 
+spectrum and with the effective mass approximation.  Both 
+results are for the CD-Bonn potential.}
+    \label{fig:failure}
+\end{figure} 
+
+\begin{figure}
+    \input{mstarappr.tex}
+    \caption{Comparison of the full spectrum and the effective 
+mass approximation near the Fermi momentum for $k_F=2.27\;{\rm fm}^{-1}$ 
+with the CD-Bonn potential.}
+    \label{fig:mstarappr}
+\end{figure} 
+
+\begin{figure}
+    \input{tensor.tex}
+    \caption{Comparison of the energy gap obtained from the coupled 
+$^3P_2$-$^3F_2$ gap equations with the one found by solving the 
+uncoupled $^3P_2$ gap equations.  Both curves are for the 
+CD-Bonn potential.}
+    \label{fig:tensor}
+\end{figure} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

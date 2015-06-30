@@ -1,0 +1,208 @@
+From andreas.schiller@llnl.gov Wed Apr 24 06:32:40 2002
+Date: Tue, 23 Apr 2002 16:51:30 -0700
+From: Andreas Schiller <andreas.schiller@llnl.gov>
+To: morten.hjorth-jensen@fys.uio.no
+Subject: RMP draft
+
+
+    [ Part 1, Text/PLAIN (charset: ISO-8859-2 "Latin 2 (Eastern Europe)")  ]
+    [ 195 lines. ]
+    [ Unable to print this part. ]
+
+    [ The following text is in the "iso-8859-2" character set. ]
+    [ Your display is set for the "ISO-8859-1" character set.  ]
+    [ Some characters may be displayed incorrectly. ]
+
+Hei Morten,
+
+Gratulerer med flott draft til RMP. Det var fint aa bla gjennom (hadde
+ikke saa mye
+tid ennaa). Men jeg har en del tanker om det du skrev.
+
+1.) Eq. (73). Jeg er blitt mer og mer skeptisk til mu-kanonisk T. Jeg
+hadde en lang
+diskusjon med L. Moretto forleden, og han har overbevist meg at
+mu-kanonisk
+temperatur paa en skala som er mindre enn den karakteristiske energien
+til systemet
+er helt menigsloest. Energiskalaen som er karakteristisk til pairing er
+2*Delta. Bare se
+paa din figur 31. Hvis du hadde beregnet T fra dette (paa en energiskala
+som er mindre
+enn 2*Delta) saa hadde du faatt bare tull. Jeg hadde tatt Eq. (73) med
+stor forbehold
+(og skrevet kanskje en setning om det). Luciano forklarte meg at Eq. (73)
+egentlig
+kommer fra saddle point approximation naar man tar invers Laplace fra
+(stor) kanonisk
+til mu-kanonisk. At (dS/dE)^-1=T er en noedvendig betingelse for at du er
+ved en
+ekstremum, men det er ikke sagt at det er minimum eller maksimum. For aa
+kunne
+gjoere saddle point approximation maa du vaere ved en minimum i imaginaer
+retning
+og ved en maksimum i reell retning. Men av og til, saa fins det ikke noe
+saddle point,
+men bare minimum/maksimum. Ved en saddle point, saa tilsvarer
+(dS/dE)^-1=T(E) den
+mest sansynlige energien for en gitt temperatur T. Naar du ikke har
+saddlepoint, saa
+tilsvarer (dS/dE)^-1=T(E) til den MINST sansynlige energien for en gitt
+T. Da
+karakteriserer du systemet (som har en viss statistisk fordeling) ikke
+ved maksimum i
+fordelingen men ved yttergrensen til fordelingen, dvs. ved noen av de
+MINST (i steden
+for mest) sansynlige tilstander. Systemet du undersoeker der er vanligvis
+ikke i
+termodynamisk likevekt. Klart at det maa gaa galt og derfor blir
+temperaturen
+ikke det man naivt beregner vha (dS/dE)^-1=T men noe helt annet. En bedre
+metode
+blir da aa bestemme T som den T'en som gir global minimum i F ved en
+energie E.
+
+2.) Det er en liten feil i paperet. Vi har kjoert (He,alpha) reaksjon paa
+Sm-149,
+Dy-162,163, Er-167 og Yb-172,173 kjerner. Dette gir oss resultat i
+Sm-148, Dy-161,162, Er-166 og Yb-171,172 kjerner. Kjernene Sm-149 og
+Er-167
+ble undersoekt vha den mindre troverdige reaksjonen (He-3,He-3'). Hvis du
+lurer paa
+hva som gaar daarlig i (He-3,He-3') saa maa du lese (og referere til)
+PRC61(2000)044324.
+Du har rotet med target/residual nucleus og reaksjonene vi brukte 2
+ganger i artikkelen
+(p 44).
+
+3.) Fig 32. Jeg har skjekket figuren en gang til og jeg tror at dere tar
+feil med tolkningen der.
+Hvis du sammenligner med Fig. 6 i min preprint, saa ser du at jeg tror at
+i din panel b+c,
+saa ser man omtrent det samme som i min panel (4 pairs). De to nullene
+dere analyserer,
+tror jeg at den ene (stoerre beta) kommer fra pairing, og den andre
+(mindre beta) kommer
+fra begrenset modellrom. Aa legge en linje mellom de punktene og si at
+gamma>0 tror jeg
+blir galt. Jeg tror at linjene burde bli tegnet heller som jeg har dem i
+min Fig. 6 (panels 4 pairs
+eller 7 pairs). Men din modell er jo forskjellig fra min siden du har
+begrenset antall s.p. nivaaer,
+saa den begrensningen kan gjoere bildet forskjellig fra mitt.
+Siden du tar intro'en fra min preprint kunne du kanskje referere til den.
+
+4.) Jeg skjoenner at Fig. 33 ble publisert foer, og det er lettere aa
+bare kopere enn aa lage en
+ny figur. Men eksp. dataene til fig. 33 er noksaa utdaterte. Dataene ble
+til foer vi skjoente alle
+detaljer med ekstraksjonsmetoden vaar. Poenget er at dataene ikke bare er
+i arb. units (som
+tilsvarer en multiplikasjon med en konstant), men ogsaa at hellningen er
+ubestemt. Det har
+vi skjoent naa, og de siste dataene vaare tar hensyn til det (er normert
+saann at vi har
+absolutt verdi og hellning i orden). Videre, saa er eksp. dataene i Fig
+33 level density, mens
+(saa vidt jeg vet) gir teorien state density =level density multiplisert
+med (2*<J>+1). Det fant
+jeg ikke nevnt i teksten. Det blir da litt som hummer og kanari. Kanskje
+man burde lage en
+reell sammenligning mellom beregning av LEVEL density og riktig
+eksperimentell data. Det
+tror jeg ikke ble gjort ennaa. (Men det er vel en del jobb ogsaa).
+
+5.) Dette gaar litt utover RMP draften: Jeg leste Magnes draft og satt
+meg litt inn i metoden
+til Lee+Kosterlitz. Jeg fant en del ting i draften som jeg ikke likte
+spesielt godt. Lee+Kosterlitz
+bruker en F(L) og undersoeker denne som funksjon av systemets stoerrelse
+L. I Magnes draft
+blir L til A (massetall), men systemer med forskjellig massetall har jo
+forskjellig pairing styrke
+og s.p. level density (Delta=12/SQRT(A), epsilon propto 1/A). Det betyr
+at vekselvirkning er
+ikke konstant naar man forandrer massetall. Videre, saa ligger
+ferminivaaet ved forskjellige
+energier med hensyn til s.p. nivaaene for forskjellige kjerner. Saanne
+effekter gjoer det
+vanskelig (syns jeg) aa interpretere DeltaF(A) (barrieren i F(E) plottet
+som funksjon av
+massetall). Det blir ikke saa 'straightforward' som i Lee+Kosterlitz der
+saanne effekter ikke
+eksisterer (eller som for modellen din, der du kan holde delta=d/G
+konstant). Videre, saa
+finner jeg i Lee+Kosterlitz, at ved en konstant DeltaF som funksjon av L,
+saa har man en
+'critical point' (men ikke noedvendigvis en annen ordens faseovergang).
+Hvis man har
+minkende DeltaF(L), saa har men en 'disordered phase'. Jeg tror at
+metoden deres ikke
+kan anvendes paa en enkel maate til vaart problem fordi:
+a.) Poenget er at vi undersoeker hvordan det foerste paret blir brutt.
+For store systemer,
+saa skulle det ikke spille noen rolle naar det foerste paret blir brutt.
+Det som er viktig der er
+naar makroskopiske egenskaper som supraledning/fluiditet forsvinner, dvs.
+naar det ikke fins
+par lenger. I en supraleder, saa er jo de fleste elektroner faktisk ikke
+i par. uansett Jeg
+forestiller meg det samme i kjernematerie. Til og med i vaare kjerner,
+saa er BCS bra for
+valens-nukleonene, men de innerste er ikke egentlig i par. Aa undersoeke
+hvordan det
+foerste paret bryter opp som funksjon av massetall og saa proeve aa
+ekstrapolere til store
+systemer (dvs. bulk) syns jeg blir galt. I bulk-kjernematerie forventer
+man vel ikke noe
+faseovergang naar ett eneste par blir brutt. Overgang fra det vi
+undersoeker i draften til
+store (makroskopiske) systemer er veldig uklart for meg, og derfor vet
+jeg egentlig ikke
+hvordan DeltaF(A) skulle utvikle seg for stoerre og stoerre A'er.
+b.) Jeg fant ikke noe referanse i Lee+Kosterlitz artikkel om metoden kan
+brukes til 2. eller
+hoyere ordens faseovergang. En DeltaF(L) som er konstant kan tolkes som
+en 'continuous
+transition' (uten at orden ble spesifisert), men saa vidt jeg skjoenner
+artikkelen, saa kan det
+dreie seg like godt om en 'critical point', siden barrieren skulle vokse
+saktere enn L^(d-1)
+ved en critical point. Det burde gjoeres noyaktige undersoekelser av
+DeltaF(A), men som jeg
+tror, saa er avhengighet av massetall ikke noedvendigvis en enkel en.
+Naiv, saa kunne man
+tenke seg at A propto L^3 og d=3 dimensioner, dvs. for en 1. ordens
+faseovergang, saa burde
+man ha DeltaF(A) propto A^(2/3) (som er ganske svak). I tillegg kommer at
+delta=d/G er propto
+A^(-1/2). Hvordan blir da sammenlagt effekt? Kanskje effektene
+kansellerer omtrent ut? Kanskje
+A er feil parameter, og vi skulle egentlig bruke antall tilgjengelige
+valens-nukleoner som
+stoerrelses-parameter til systemet (den hadde vaert omtrent konstant for
+alle kjerner vi
+undersoekte). De fleste nukleoner i kjernen (de som er i core'en) merker
+vel lite av at det ble brutt
+et par i valens-skallet, derfor antar jeg at A egentlig er feil parameter
+for aa karakterisere
+stoerrelsen til systemet.
+Jeg skrev omtrent det samme+litt mer til Magne forrige uke. Jeg hadde
+lyst aa diskutere det foer
+Magne sender inn draft'en sin.
+
+Hilsen Andreas
+ 
+ 
+ 
+
+ -- 
++---------------------------------+-------------------------+
+|       Andreas Schiller          | Lawrence Livermore      |
+| Phone (925) 423-8339            | National Laboratory     |
+| Fax   (925) 422-5940            | L-414, 7000 East Avenue |
+| Email andreas.schiller@llnl.gov | Livermore, CA 94551     |
++---------------------------------+-------------------------+
+|       WWW http://www.fys.uio.no/~andreasc/work.html       |
++-----------------------------------------------------------+
+ 

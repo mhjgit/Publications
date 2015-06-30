@@ -1,0 +1,1029 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%   template.tex for PTPTeX.sty <ver.0.8>  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentstyle[seceq,mbf,wrapft]{ptptex}
+%\documentstyle[seceq,preprint,mbf,wrapft]{ptptex}
+%\documentstyle[seceq,letter]{ptptex}
+%\documentstyle[seceq,supplement]{ptptex}
+%\documentstyle[seceq,addenda]{ptptex}
+%\documentstyle[seceq,errata]{ptptex}
+%%%%% Personal Macros %%%%%%%%%%%%%%%%%%%
+\def\BS{\tt\symbol{"5C}}        %backslash
+\def\PTP{{\sl Progress of Theoretical Physics}}        %backslash
+\def\ttmac#1{{\tt \BS #1}}
+\def\boxmac#1{\fbox{\ttmac{#1}}}
+\def\boxenv#1{\fbox{\tt #1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pubinfo{Vol.~95, No.~4, April 1996}  %Editorial Office use
+%\setcounter{page}{}                 %Editorial Office use
+%------------------------------------------------------------
+%\nofigureboxrule%to eliminate the rule of \figurebox
+%\notypesetlogo  %comment in if to eliminate PTPTeX logo
+%\subfontMBF     %use if you have not enough fonts when using mbf.sty
+%---- When [preprint] you can put preprint number at top right corner.
+\preprintnumber[3cm]{%<-- [..]: optional width of preprint # column.
+KUNS-1325\\PTPTeX ver.0.8\\ August, 1997}
+%-------------------------------------------
+
+\markboth{%     %running head for odd-page (authors' name)
+S.-I.~Tomonaga and H.~Yukawa
+}{%             %running head for even-page (`short' title)
+Instruction for Making \LaTeX\ Compuscripts Using \protect\PTPTeX}
+
+\title{%        %You can use \\ for explicit line-break
+Instruction for Making \LaTeX\ Compuscripts Using \PTPTeX
+}
+%\subtitle{This is a Subtitle}    %use this when you want a subtitle
+
+\author{%       %Use \sc for the family name
+Shin-Ichiro {\sc Tomonaga}\footnote{A friend of Schwinger 
+because of bearing `swing' commonly in their names.} 
+and Hideki {\sc Yukawa}$^{*,}$\footnote{A common friend of Fermi and
+Bose. E-mail address: yukawa@yukawa.kyoto-u.ac.jp}
+}
+
+\inst{%         %Affiliation, neglected when [addenda] or [errata]
+Physics Department, Tokyo Bunrika University, Tokyo 113
+\\
+$^*$Yukawa Institute for Theoretical Physics, 
+Kyoto University, Kyoto 606-01
+}
+
+%\publishedin{%         %Write this ONLY in cases of addenda and errata
+%Prog.~Theor.~Phys.\ {\bf XX} (19YY), page}
+
+\recdate{%      %Editorial Office will fill in this.
+April 2, 1996}
+
+\abst{%         %this abstract is neglected when [addenda] or [errata]
+This is a manual for making \LaTeX\ compuscripts for 
+\PTP\ using the style file \PTPTeX.sty. In particular
+we explain some useful macros and environments which are 
+specially prepared in \PTPTeX.sty. 
+The source file of this manual itself is designed to give a template 
+which can be used for writing your own compuscripts.
+}
+
+\begin{document}
+
+\maketitle
+
+%\tableofcontents
+
+\makeatletter
+\if 0\@prtstyle
+\def\asp{.3em} \def\bsp{.26em}
+\else
+\def\asp{.3em} \def\bsp{.3em}
+\fi \makeatother
+
+\section{Introduction}
+
+We have in part started the printing of \PTP\ (PTP) 
+directly using \LaTeX\cite{rf:1} manuscripts from April, 1996. 
+When you prepare \LaTeX manuscript (compuscript) to submit to PTP, 
+please use our style file \PTPTeX.sty. 
+In \PTPTeX, you can use all the usual \LaTeX\ commands of course, 
+and also some useful macros and environments in addition which are 
+specially prepared. This manual explains about those commands special 
+to \PTPTeX\ from Sect.2 on.
+
+\subsection{Submission}
+
+Use mainly {\bf E-mail} to submit the \LaTeX\ compuscript written by 
+using \PTPTeX\ style file. The address is the Editorial Office of PTP:
+{\vskip \asp
+\begin{verbatim}
+             ptp@yukawa.kyoto-u.ac.jp
+\end{verbatim}\vskip\bsp}
+\noindent
+If the compuscript consists of two or more files, {\it e.g.}, 
+by containing 
+ps/eps figure files other than \LaTeX\ file itself, please first 
+combine and pack them into a single file in either way of the 
+following two and send it to the above address:
+\begin{enumerate}
+\item[1)] Use (P.~Ginsparg's) {\tt uufiles} command on UNIX, or, 
+\newline 
+do `manually' \ {\tt tar+gzip(compress)+uuencode};
+\item[2)] Use \ {\tt lha+ish}.
+\end{enumerate}
+
+Don't forget to write your name, institution and address in the mail.
+Generally when you send E-mail message to PTP Editorial Office, 
+please indicate, in the Subject line of the mail header, 
+Subject: $<$type of message$>$ $<$manuscript Ref.Number$>$ $<$first author's last name$>$; 
+for instance,
+\begin{tabbing}
+WW\={\tt submit PTP Kobayashi} \= : Final manuscript after accepted for publication  \kill   %setting width
+\>{\tt submit PTP Kobayashi} \>: Submission of a new manuscript \\
+\>{\tt final 5Z03L Sato}
+\>: Final manuscript after accepted for publication \\
+\>{\tt status 5X31 Maskawa} \>  : Status query \\
+\>{\tt report 6425 Yamada}\>   : Referee report
+\end{tabbing}
+
+In case E-mail is not available, we also accept floppy disk. 
+In this case, however, do the initial submission by sending 
+two hard copies of the manuscript and a letter by conventional mail 
+as before. Indicate ``\LaTeX\ submission" clearly in your letter. 
+At the stage when the paper is accepted for publication, we ask you 
+to send your final \LaTeX\ compuscript by floppy disk to the PTP 
+office. Use then {\bf 3.5 inch} floppy disk with DOS/V or NEC formatted.
+
+In either case, 
+the communication between Editorial Office and the author such as 
+the information of referee reports or the author's reply to it, 
+is performed via {\it conventional mail} using the {\it hard copy} of 
+the manuscript as before. If the author makes a revised manuscript 
+in this process, send it by {\it conventional mail} together with the 
+old manuscript.
+
+When the paper is accepted for publication, the 
+PTP Editorial Office makes corrections/additions to 
+the {\bf hard copy} of the manuscript and send it back to the author. 
+The author is asked to examine the suggested corrections/additions 
+there and to make necessary corrections to the \LaTeX\ source file. 
+Then send the completed \LaTeX\ file as the final manuscript to 
+the PTP office either by E-mail or by conventional mail (floppy disk).
+
+\subsection{How to get \protect\PTPTeX\ style file}
+
+\PTPTeX\ style file can be obtained by accessing to
+WWW Home Page of Progress of Theoretical Physics: 
+{\vskip \asp \baselineskip 1.1em
+\begin{verbatim}
+       PTP Home Page:  http://www2.yukawa.kyoto-u.ac.jp/~ptpwww/
+\end{verbatim}\vskip\bsp}\noindent
+Please try to get the most recent version since it is revised from
+time to time.
+
+The file {\tt ptptex08.uu} placed there is a 
+`uuencoded-gzipped-tar' file, which is automatically unpacked and yield 
+the following eight files if you simply execute 
+\linebreak {\tt \% csh ptptex.uu} 
+%\vskip -.2em
+%\begin{verbatim}
+%         \% csh ptptex.uu 
+%\end{verbatim}\vskip\bsp
+%\noindent
+on your UNIX machine.
+(In the above directories, you can also find 
+the other forms of packed files, 
+`lha+ish'-ed file {\tt ptptex08.ish} and 
+`gzipped-tar' file {\tt ptptex08.tar.gz}, 
+as well as the un-packed files themselves. Take suitable ones depending 
+on your system environment.)
+\begin{center}
+\let\tabularsize\normalsize
+\begin{tabular}{lp{.7\textwidth}} 
+1. manptp.tex & Source file of this manual.\\
+2. template.tex & Template for making your \PTPTeX\ compuscript.\\
+3. ptptex.sty & Main style file of \PTPTeX.\\
+4. ptp-text.sty & Style file for making PTP text style output.\\
+5. ptp-prep.sty & Style file for making preprint style output.\\
+6. wrapft.sty & Macro for wrapfigure and wraptable environments. \\
+7. mbf.sty & Macro for using math-boldface ({\tt \BS mbf}).\\
+8. epsf.sty & Macro for putting ps/eps figure files in 
+\LaTeX\ manuscript. \\
+\end{tabular}\end{center}
+The macros 6 -- 8 are optional. 
+The last {\tt epsf.sty} is a style file attached to the standard
+\LaTeX\ system. It is, however, put here for reference since there
+seems to exist another different style file bearing the same name.
+
+
+
+\section{Style and preamble}
+
+When you write a compuscript of your paper using \PTPTeX.sty, 
+make use of {\bf template.tex} file which is prepared for the users' 
+convenience as a separate file. By filling in it, 
+you can easily make your compuscript a la \PTPTeX.sty format. 
+
+The default style of \PTPTeX.sty is designed for Regular 
+Articles in {\sl Progress of Theoretical Physics}. 
+You can simply start your \LaTeX\ source file with the line 
+{\vskip \asp \baselineskip 1.1em
+\begin{verbatim}
+        \documentstyle{ptptex}
+\end{verbatim}%\vskip \asp
+or, %\vskip \asp
+\begin{verbatim}
+        \documentstyle[seceq]{ptptex}
+\end{verbatim}\vskip\bsp}
+\noindent
+Generally the argument of \LaTeX\ command put in a square bracket
+{\tt [ ]} is called an optional argument and can be omitted. 
+The optional argument {\tt [seceq]} in the second is a declaration 
+to put the equation numbers with 
+section numbers like (2$\cdot$15).  If you omit the option, then the 
+sequential numbers are put to the equations throughout the paper, like
+(1),\ (2),\ $\cdots$.
+
+In the usual \LaTeX's \verb+article.sty+, this first line is like 
+{\vskip \asp
+\begin{verbatim}
+        \documentstyle[12pt]{article}
+\end{verbatim}\vskip\bsp}
+\noindent
+If you rewrite it as above, then the output automatically becomes of 
+the Article form of {\sl Progress of Theoretical Physics}. 
+Since \PTPTeX.sty is designed to be as compatible with the usual 
+\LaTeX\ \verb+article.sty+ as possible, the source file which is 
+written with \LaTeX\ \verb+article.sty+ can also be compiled with
+\PTPTeX.sty as well.
+
+If you want an output in a preprint form 
+for your private distribution, you should start with the line
+{\vskip \asp
+\begin{verbatim}
+        \documentstyle[seceq,preprint]{ptptex}
+\end{verbatim}\vskip\bsp}
+\noindent
+
+If you want to write Letter article, Supplement article, Addenda or 
+Errata, instead of the regular PTP article, please start with the 
+line, respectively,
+{\vskip \asp \baselineskip 1.1em
+\begin{verbatim}
+        \documentstyle[letter]{ptptex}
+        \documentstyle[seceq,supplement]{ptptex}
+        \documentstyle[seceq,addenda]{ptptex}
+        \documentstyle[seceq,errata]{ptptex}
+\end{verbatim}\vskip\bsp}
+\noindent
+
+The part of the source file from the first \verb+\documentstyle+ line 
+to the declaration line of
+{\vskip \asp
+\begin{verbatim}
+        \begin{document}
+\end{verbatim}\vskip\bsp}
+\noindent
+is called {\it preamble}. One usually put in the preamble 
+the definitions of personal macros and some style specifications. 
+But, since the style specifications are quite unnecessary 
+(and even harmful) in \PTPTeX, please do not write them. 
+In \PTPTeX, you should fill in the following in the preamble:
+{\vskip \asp \baselineskip 1.1em
+\begin{verbatim}
+        \markboth{ }{ }    : Running head
+        \title{ }          : Title of the paper
+        \author{ }         : Author's name
+        \inst{ }           : Institution (address)
+        \abst{ }           : Abstract
+        \recdate{ }        : Received date
+\end{verbatim}\vskip\bsp}
+\noindent
+You can see how to write these if you use {\tt template.tex} 
+where an example is written. 
+(Beware of the fact that the commands from \verb+\author+ to 
+\verb+\recdate+ are macros particular to \PTPTeX.sty. 
+So, if you compile the file 
+with those commands by \LaTeX\ \verb+article.sty+, you will get 
+an error message\  `{\tt ! Undefined control sequence}'.)
+
+
+In the preamble of {\tt template.tex}, the following 
+commands other than these are written (with comment out symbol 
+{\tt \%} in front):
+%\begin{center}
+{\let\tabularsize\normalsize
+\begin{tabular}{lcp{.5\textwidth}} 
+{\tt \BS notypesetlogo}
+&:& Not to print out `{\sf typeset using \PTPTeX.sty}' \\
+{\tt \BS subfontMBF}
+&:& To use subfont for \verb+\mbf+ (explained later)\\
+{\tt \BS publishedin\{ \}}
+&:& Vol/Year/Page of the paper for which Addenda or Errata is written.\\
+{\tt \BS preprintnumber}[{\it width}]{\tt\{ \}}
+&:& To write preprint numbers when [preprint]. [{\it width}] stands
+for the width of the preprint number column. \\
+\end{tabular}}%\end{center}
+\vskip \bsp
+\noindent
+Use these when necessary. The usage will also be clear in 
+the {\tt template.tex}.
+%        \nofigureboxrule  : Cmmand to delete \figurebox's rule
+
+\section{Equations}
+
+Here we explain a few macros and environments 
+which can be used in \PTPTeX\ in addition to the usual ones in \LaTeX.
+
+\subsection{Mathematical italic bold}
+
+A macro \boxmac{mib} is available to obtain 
+math-bold (mathematical italic bold) fonts which are used, 
+for instance, to denote 3-vectors. 
+This macro is a very simple one which is defined as 
+{\vskip \asp
+\begin{verbatim}
+        \def\mib#1{\mbox{\boldmath $#1$}} 
+\end{verbatim}\vskip\bsp}
+\noindent
+If you type, for instances, \ttmac{mib\{\BS alpha\}} and 
+\ttmac{mib\{kx\}} in math-mode, you can obtain math-bold outputs 
+$\mib{\alpha}$,\ $\mib{kx}$. 
+
+This macro has, however, a trouble that it
+does not make the letter in an appropriate size when used in a suffix, 
+and moreover you cannot make it small even writing 
+\ttmac{small} or \ttmac{scriptsize}.
+
+We prepared a new font command \boxmac{mbf} free from this trouble 
+which can be used just like other font commands \ttmac{it}, \ttmac{bf}
+and so on. If you write \ttmac{mbf}, then you enter in the math-bold 
+mode and all the letters following are printed in math-bold fonts. 
+(Therefore you have to specify the region by sandwiching 
+by \verb+{ }+ like \verb+{\mbf \alpha kx}+.) \ 
+The suffices in the math-bold mode automatically becomes 
+small. (Like in the usual boldface mode by {\tt \BS bf}, 
+the symbols {\tt  + - < / > ( ) [ ]} do not become math-bold face. 
+If you want to make them also math-bold, add \boxmac{mbfplus} and 
+write like {\tt \BS mbf\BS mbfplus}.) \ 
+This command \ttmac{mbf} is realized by the \verb+mbf.sty+ file. 
+So you have to include it in the optional argument of the 
+\ttmac{documentstyle} in the first line:
+{\vskip \asp
+\begin{verbatim}
+        \documentstyle[seceq,mbf]{ptptex}
+\end{verbatim}\vskip\bsp}
+\noindent 
+By this you can write equations like
+\begin{equation}
+\phi({\mbf x}) = \sum_{\mbf k}\left[ {\mbf a_k} e^{i{\mbf kx}} + 
+      {\mbf a_k}^\dagger e^{-i{\mbf kx}}\right]
+\label{eq:3.1}
+\end{equation}
+
+This command also has a trouble in fact. 
+%First, {\it \ttmac{mbf} does
+%not work in case of \LaTeX$2\epsilon$}. (An method to write math-bold 
+%letters in the \LaTeX$2\epsilon$ case will be explained in the final 
+%section.) \ Secondly, 
+If you are working on a 
+machine which does not possess many fonts, you will sometimes be 
+warned as \ {\tt No Font: Any of the above.} and cannot do preview 
+nor print. In such a case, write 
+%\boxmac{subfontMBF}
+{\vskip \asp
+\begin{verbatim}
+        \subfontMBF
+\end{verbatim}\vskip\bsp}
+\noindent
+in the preamble. (This command is already written with comment-out 
+symbol {\tt \%} in the template.tex.)  This makes the preview and print 
+possible by substituting the fonts by available ones temporarily. 
+When you submit your \LaTeX\ file to PTP or do preview and print on 
+machines possessing enough fonts, therefore, please comment-out 
+that line with {\tt \%}.
+
+\subsection{Fractions}
+
+By the usual \verb+\frac{numerator}{denominator}+ command, the 
+numerator and the denominator are printed in a smaller font than usual.
+If you want the output in the usual size, you can use 
+\boxmac{dfrac} command. The usage is quite the same as \ttmac{frac},
+and you can write complex fractions such as 
+\[
+   a_0 + \dfrac{b_1}
+  {a_1 + \dfrac{b_2}%{a_2}
+  {a_2 + \dfrac{b_3}{a_3}}} \ .
+\]
+
+\subsection{Subeqnarray and subequations}
+
+When you want to number the equations in the form like (3$\cdot$2a), 
+(3$\cdot$2b), $\cdots$ in a set of arrayed equations, you can use 
+\boxenv{subeqnarray} environment. The usage is quite the same as the
+usual \verb+eqnarray+ environment: you can simply write 
+\verb+\begin{subeqnarray}+ $\cdots$ \verb+\end{subeqnarray}+ in place
+of \verb+\begin{eqnarray}+ $\cdots$ \verb+\end{eqnarray}+.
+
+If you want to do the same thing for some equations apart from 
+one another, 
+you can use the \boxenv{subequations} environments.  The usage will be 
+clear from the following simple example:
+\vskip .5em
+\begin{center}
+\begin{minipage}[t]{6.5cm}
+\centerline{\bf Input}
+\vskip .4em
+\baselineskip 1.1em 
+\begin{verbatim}
+\begin{subequations}
+  \label{eq:1}
+  An example of subequations:
+  \begin{equation}
+    \alpha + 2\beta + \gamma = 2
+    \label{eq:1a}
+  \end{equation}
+  Here come some sentences,
+  which can be of any length.
+  \begin{eqnarray}
+    \gamma &=& \nu (2-\eta) \\
+    \delta &=& \mu (1+\rho)
+  \end{eqnarray}
+\end{subequations}
+\end{verbatim}
+\end{minipage}
+\begin{minipage}[t]{.8cm}
+~\vspace{5.3\baselineskip}
+\begin{tabular}{c}
+$\Longrightarrow$ \\
+gives
+\end{tabular}
+\end{minipage}
+\hspace{.3cm}
+\begin{minipage}[t]{.4\textwidth}
+\centerline{\bf Output}
+\vskip 22pt
+\fbox{
+\begin{minipage}[t]{.95\textwidth}
+\begin{subequations}
+  \label{eq:1}
+  An example of subequations:
+  \begin{equation}
+    \alpha + 2\beta + \gamma = 2
+    \label{eq:1a}
+  \end{equation}
+  Here come some sentences, which can be of any length.
+  \begin{eqnarray}
+    \gamma &=& \nu (2-\eta) \hspace{4em} \\
+    \delta &=& \mu (1+\rho)
+  \end{eqnarray}
+\end{subequations}
+%\vskip 0em%\baselineskip
+\end{minipage}}
+\end{minipage}
+\end{center}
+\vskip 1em
+\noindent
+Here note that the \verb+\label{eq:1}+ just after the 
+\verb+\begin{subequations}+ defines the group equation name 
+so that \verb+(\ref{eq:1})+ gives 
+``(\ref{eq:1})", while \verb+\label{eq:1a}+ refers to the first 
+equation (\ref{eq:1a}). On the other hand, in the previous 
+\verb+subeqnarray+ environment, the \verb+\label+ command refers only 
+to the group equation name wherever it is placed inside the 
+\verb+subeqnarray+ environment. In order to refer to the individual 
+equation there, a command \boxmac{slabel} is available and is used 
+in quite the same way as the usual \verb+\label+ command.
+
+\section{References}
+
+References are cited using \boxmac{cite} command.  All references 
+should be listed continually within curly brackets using commas
+such as \verb+\cite{rf:1,rf:3,rf:4,rf:5}+. 
+(Don't put any space after the commas here. Otherwise \LaTeX\ will 
+regard the reference label as containing the space also.)
+When three or more consecutive reference numbers appear as in this 
+example, the numbers are automatically printed in a compressed 
+way like~\cite{rf:1,rf:3,rf:4,rf:5}. For cases of very long 
+consecutive references, it would be very tedious to type this way. 
+In such cases you can type as 
+\verb+\cite{rf:3}\tocite{rf:5}+; namely, you write the first reference 
+using \ttmac{cite} and succeedingly cite the last reference using 
+\boxmac{tocite} command. 
+Then you obtain an output like this.\cite{rf:3}\tocite{rf:5} \ 
+\boxmac{citen} command can be used to obtain citation numbers: 
+{\it e.g.,} 
+\verb+Ref.~\citen{rf:3}+ gives an output ``Ref.~\citen{rf:3}". 
+
+\def\spacesymb{\raisebox{-1pt}[0pt][0pt]{$\sqcup$}}
+When you use \ttmac{cite} command at the end of sentences, 
+put always the \ttmac{cite} command {\it after period, comma, colon or 
+semicolon}, like \verb+something.\cite{rf:5}+. 
+If you continue the next sentence, type 
+ \spacesymb{\tt \BS}\spacesymb\ (\spacesymb\ is [space] key) to give a 
+suitable space between sentences. For instance, type 
+{\vskip \asp \baselineskip 1.1em
+\begin{verbatim}
+   This is $\cdots$ something.\cite{rf:5} \ Therefore we can $\cdots$ 
+\end{verbatim}\vskip\bsp}\noindent
+then the output becomes 
+
+This is $\cdots$ something.\cite{rf:5} \  Therefore we can $\cdots$ 
+
+\noindent
+
+The references are listed at the end of the file by using the 
+\boxmac{thebibliography} environment and \boxmac{bibitem} command 
+as usual. For example the references at the end of this manual are 
+typed as follows:
+{\vskip \asp \baselineskip 1.1em
+\begin{verbatim}
+ \begin{thebibliography}{99}
+  \bibitem{rf:1} 
+     Leslie Lamport, {\it LaTeX{\rm :} A Document Preparation System} 
+     (Addison-Wesley, New York, 1986).
+  \bibitem{rf:2} 
+     S.~Weinberg, Phys.\ Rev.\ Lett.\ {\bf 19} (1967), 1264.
+  \bibitem{rf:3} 
+     M.~Kobayashi and T.~Maskawa, \JL{Prog.\ Theor.\ Phys.,49,1973,652}.
+  \bibitem{rf:4} 
+     D.~Gross and F.~Wilczek, \PRL{30,1973,1343}.
+    \\
+     H.~D.~Politzer, \PRL{30,1973,1346}.
+  \bibitem{rf:5} 
+     G.~'t~Hooft, \NP{B33,1971,173}; \andvol{B35,1971,167}.
+ \end{thebibliography}
+\end{verbatim}\vskip\bsp}
+\noindent
+Please write your bibitems properly according to these examples 
+in the PTP format. In particular, the volume numbers should be in 
+boldface, the (year) should be followed by a comma `{\tt ,}' and 
+the line should end with a period `{\tt .}'.  Even when you cite 
+two or more references of different authors in an item 
+as in {\tt rf:4}, end with a {\it period} and continue with a 
+line-feed by {\tt \BS\BS}.
+When you cite two or more references with the same author as in 
+{\tt rf:5}, continue with a semicolon `{\tt ;}' without line-feed.
+To make it easy to write the bibitem following this PTP format, 
+we prepared macros \boxmac{JL}\ , \boxmac{andvol}\ , \boxmac{PRL}\ , 
+$\cdots$, as used in {\tt rf:3},\ {\tt rf:4} and {\tt rf:5}: 
+{\vskip \asp
+\begin{verbatim}
+   o for general use
+      \JL : general journals          \andvol : Vol (Year), Page
+   o for individual journal 
+      \PR  : Phys. Rev.               \PRL : Phys. Rev. Lett.
+      \NP  : Nucl. Phys.              \PL  : Phys. Lett.
+      \JMP : J. Math. Phys.           \CMP : Commun. Math. Phys.
+      \PTP : Prog. Theor. Phys.       \JPSJ: J. Phys. Soc. Jpn.
+      \JP  : J. of Phys.              \NC  : Nouvo Cim.
+      \IJMP: Int. J. Mod. Phys.       \ANN : Ann. of Phys.
+\end{verbatim}\vskip\bsp}
+\noindent
+The usage is as follows:
+\vskip .1em
+\begin{tabbing}
+ A \= \verb+\JL{Phys.\ Lett.,A30,1981,56}+ \= $\Rightarrow$ \=
+  \verb+Phys.\ Lett.\ {\bf A30} (1981), 56+ \kill
+\> \verb+\PR{D45,1990,345}+ \> $\Rightarrow$ \>
+  \verb+Phys.\ Rev.\ {\bf D45} (1990), 345+ \\
+\> \verb+\JL{Phys.\ Lett.,A30,1981,56}+ \> $\Rightarrow$ \>
+  \verb+Phys.\ Lett.\ {\bf A30} (1981), 56+ \\
+\> \verb+\andvol{B123,1995,1020}+ \> $\Rightarrow$ \>
+  \verb+{\bf B123} (1995), 1020+
+\end{tabbing}
+\vskip .1em
+Here also you should not put any space after commas separating 
+the volume, year and page numbers in the argument.
+
+\section{Figures}
+
+\subsection{Post-Script (ps/eps) figure files}
+
+It is best fitted to compuscripts to prepare figures in the 
+form of epsf (Encapsulated PostScript Files). 
+To put the epsf figures into the text, you should add {\tt epsf.sty} 
+as an input file by writing in the first line like 
+{\vskip \asp
+\begin{verbatim}
+        \documentstyle[seceq,epsf]{ptptex}
+\end{verbatim}\vskip\bsp}\noindent 
+then write for instance as follows at the place 
+where you want to put the figure:
+{\vskip \asp
+\begin{verbatim}
+        \begin{figure}
+            \epsfxsize = WIDTH cm   %or \epsfysize = HEIGHT cm
+            \centerline{\epsfbox{FILENAME.eps}}
+        \caption{Explanation of the figure.}
+        \label{fig:1}
+        \end{figure}
+\end{verbatim}\vskip\bsp}
+\noindent
+
+Here {\tt \BS epsfxsize = WIDTH cm} \ specifies the horizontal size 
+and the vertical size is automatically calculated by the proportion 
+of height to width of the original epsf figure. (You can conversely 
+specify the height by writing {\tt  \BS epsfysize = HEIGHT cm}, then 
+the width is calculated.) \ 
+{\tt \BS epsfbox\{FILENAME.eps\}} in the next line is the command 
+to place the figure with file name {\tt FILENAME.eps}. 
+There seems to exist a different style file bearing the same name 
+{\tt epsf.sty}. 
+If you cannot get the desired result with these commands, the 
+{\tt epsf.sty} file may be such a different one. 
+Then try to input the attached (world-standard) {\tt epsf.sty} file.
+
+Instead, if you prepare conventional figures drawn by ink,
+then send the original ones to PTP editorial office by conventional 
+mail separately. In that case, 
+to allocate a space for the figure in the \LaTeX\ source file, 
+the width and height of the figure should be given by 
+\boxmac{figurebox} command.  Here is an example:
+{\vskip\asp
+\begin{verbatim}
+        \begin{figure}
+        \figurebox{WIDTH}{HEIGHT}
+        \caption{Here is the caption}
+        \label{fig:1}
+        \end{figure}
+\end{verbatim}\vskip\bsp}
+\noindent
+If you want to delete the frame rule of this {\tt figurebox}, 
+use the \boxmac{nofigureboxrule} command in the preamble written in 
+{\tt template.tex} by eliminating {\tt \%} in front.
+
+
+\subsection{Wrapfigure environment}
+
+\begin{wrapfigure}{r}{6.6cm}
+  \figurebox{60mm}{3cm}
+\caption{A figure given by {\tt wrapfigure} environment.}
+\label{fig:2}
+\end{wrapfigure}
+Narrow figures should be put in the half text-width (7cm). 
+\boxenv{wrapfigure} environment is available for this purpose. 
+We give an example of the \verb+wrapfigure+ in Fig.~\ref{fig:2}. 
+Beware that this \verb+wrapfigure+ environment is {\it not a floating} 
+one but gives the figure exactly at the place specified 
+(irrespectively of whether the space exists enough or not). 
+For instance, 
+the Fig.~\ref{fig:2} on the right hand side is obtained by putting the 
+following commands on the top of this paragraph as shown shortly below.
+Be careful, therefore, that this environment should not be used 
+at the edge of section or subsection or page, since it does not work 
+properly at such boundaries. Because of this ``non-floating'' nature, 
+it is better to put 
+those \verb+wrapfigure+'s at the final stage where no more additions
+will be made to the text. 
+{\vskip\asp
+\begin{verbatim}
+        \begin{wrapfigure}{r}{6.6cm}   % r: RIGHT, 6.6cm: WIDTH  
+          \figurebox{60mm}{3cm}
+          \caption{A figure given by {\tt wrapfigure} environment.}
+          \label{fig:2}
+        \end{wrapfigure}
+        Narrow figures should be put in the half text-width (7cm).... 
+\end{verbatim}\vskip\bsp}
+
+To use this environment, you have to add {\tt wrapft.sty} as an input
+file by writing in the first line like 
+{\vskip \asp
+\begin{verbatim}
+        \documentstyle[seceq,epsf,wrapft]{ptptex}
+\end{verbatim}\vskip\bsp}\noindent
+The basic format of the \verb+wrapfigure+ environment is:
+{\vskip \asp
+\begin{verbatim}
+      \begin{wrapfigure}[number]{position}{width}
+          <figure> etc.                          
+          \caption{ <caption> }                  
+      \end{wrapfigure}                           
+\end{verbatim}\vskip\bsp}
+\noindent
+Here the optional argument {\tt [number]} is to specify the number of
+the narrow text lines wrapping around the figure. Since it is
+automatically calculate well, skip it usually. Write it explicitly
+only when you want to specify the number by force. (For instance, when
+the figure is placed at the bottom of a page, then the text lines at
+the beginning of the next page are sometimes made narrow. You can
+avoid such a thing by explicitly specifying the {\tt [number]}.) \ The
+argument {\tt \{width\}} specifies the width of the space for the
+figure (and of the figure caption). PTP admits only the size of half
+textwidth (7cm) from aesthetic viewpoint. So write {\bf always
+\{6.6cm\}} or {\tt \{\BS halftext\}} as this width by taking a space
+between the text and figure). \boxmac{halftext} is defined to be 0.471
+times {\tt \BS textwidth} and becomes 6.6cm in the case of PTP text
+style. The argument {\tt \{position\}} is {\tt \{r\}} or {\tt \{l\}} 
+when you put the
+figure on the right or left hand side. You can write {\tt \{c\}}
+(center) there when you dislike the floating nature of the usual
+\verb+figure+ environment: if you write
+\verb+\begin{wrapfigure}{c}{width}+ with putting \verb+{c}+, then it
+works just like the \verb+figure+ environment except that it gives the
+figure exactly at that place. The {\tt \{width\}} specifies the
+caption width in this case. In the {\tt <figure>} part can
+come epsf figures like in the above example, {\tt picture} environment
+or anything else.
+
+When you want to put a figure at the beginning of a paragraph 
+like in the above example of Fig.~\ref{fig:2}, place 
+the commands of \verb+wrapfigure+ environment before the 
+first sentence of the paragraph. If you want to put it in the middle of 
+a paragraph, it can be done rather manually; First comment out 
+the \verb+wrapfigure+ environment part from the file and compile it.
+Then, in the preview screen, find and remember the word 
+which comes at the end of the line below which you want to put the 
+figure. Going back to the file, place the \verb+wrapfigure+ environment 
+just after that word. 
+A more detailed usage can be found in the beginning of the 
+{\tt wrapft.sty} file. 
+
+If you do not like any such complications, then put all the figures
+simply by using the usual \verb+figure+ environment alone. 
+The editorial office will remake them in a most appropriate form.
+
+\subsection{Putting figures side by side}
+
+Either in {\tt figure} or {\tt wrapfigure} environment, 
+it is easy to put two or more figures in a column (vertically). 
+Repeat simply the {\tt <figure>} part in the environment. 
+Repeat also the {\tt \BS caption} part if you want 
+caption for each figure.
+
+It is not so trivial to put two figures side by side. There would be 
+many ways to do this. We here cite an example using 
+{\tt \BS parbox} command:
+\begin{verbatim}
+        \begin{figure}[htb]
+            \parbox{\halftext}{%   %\def\halftext{.471\textwidth}
+                \figurebox{6cm}{2cm}
+                \caption{The first figure on the left.}}
+            \hspace{8mm}
+            \parbox{\halftext}{
+                \figurebox{6cm}{2cm}
+                \caption{The second figure on the right.}}
+        \end{figure}
+\end{verbatim}
+This gives the following output:
+\begin{figure}[htb]
+ \parbox{\halftext}{\figurebox{6cm}{2cm}
+                \caption{The first figure on the left.}}
+ \hspace{8mm}
+ \parbox{\halftext}{\figurebox{6cm}{2cm}
+                \caption{The second figure on the right.}}
+\end{figure}
+
+
+\section{Tables}
+
+\begin{wraptable}{l}{\halftext}
+\caption{An example of small table given by 
+        {\tt \BS begin\{wraptable\}\{l\}\{\BS halftext\}}.}
+\label{table:1}
+\begin{center}
+\begin{tabular}{ccc} \hline \hline
+temperature & energy  & specific heat \\ \hline
+0.1     & 0.24  & 2.46\\
+0.2     & 0.80  & 4.62\\
+0.3     & 1.11  & 3.27\\ \hline
+\end{tabular}
+\end{center}
+\end{wraptable}
+The standard \LaTeX\ \verb+table+ environment can of course be used.
+We here give only an example of small table  
+using \boxenv{wraptable} environment in Table~\ref{table:1}. 
+This environment is also supported by the {\tt wrapft.sty} file
+explained above for figures and the usage is quite the same as
+\verb+wrapfigure+ environment. The format for Tables in PTP is, as in
+this example, to put {\bf caption above the table} and to draw {\bf
+double line only for the top line} of the table using {\tt \BS hline\
+\BS hline}. Please follow this way of writing tables. For reference we
+cite the source for the Table~\ref{table:1}: 
+{\vskip.4em\baselineskip 1.1em
+\begin{verbatim}
+      \begin{wraptable}{l}{\halftext}
+        \caption{An example of small table given by 
+                 {\tt \BS begin\{wraptable\}\{l\}\{\BS halftext\}}.}
+        \label{table:1}
+        \begin{center}
+          \begin{tabular}{ccc} \hline \hline
+           temperature & energy  & specific heat \\ \hline
+               0.1     &  0.24   &  2.46  \\
+               0.2     &  0.80   &  4.62  \\
+               0.3     &  1.11   &  3.27  \\ \hline
+          \end{tabular}
+        \end{center}
+      \end{wraptable}
+      The standard \LaTeX\ \verb+table+ environment can ......
+\end{verbatim}\vskip.8em}
+
+
+The original \verb+tabular+ environment is rewritten in \PTPTeX.sty 
+so as to print in the footnotesize fonts suitable for tables. 
+If you want to use it in the usual text, therefore, please add 
+a line of a sentence %\verb+\let\tabularsize\normalsize+ 
+{\vskip \asp
+\begin{verbatim}
+        \let\tabularsize\normalsize
+\end{verbatim}\vskip.15em}
+\noindent 
+to obtain normalsize
+output. But take care that the size change affects only {\it locally}. 
+
+\section{Comments}
+
+An error which sometimes occurs but is difficult to find the cause is
+the case that one cites equations by {\tt \BS ref\{..\}} in the
+captions of Figure and Tables, for instance. This type of error can 
+often be avoided if you put {\tt \BS protect} in front of 
+{\tt \BS ref\{..\}}. The {\tt \BS protect} command is also worth
+trying when you meet some unknown errors about the argument of 
+{\tt \BS section} and {\tt \BS title}.
+
+When you use \PTPTeX, you may find possible bugs in {\tt ptptex.sty}. 
+If you find such bugs, please inform us of them to the address
+{\vskip \asp
+\begin{center}
+        {\tt ptp@yukawa.kyoto-u.ac.jp} \ \ or \ \ 
+        {\tt kugo@gauge.scphys.kyoto-u.ac.jp} 
+\end{center}\vskip\bsp}\noindent
+with writing {\tt ptptex.sty bug} at the Subject column of your mail
+header. 
+
+\vskip3mm
+\noindent
+{\it A comment on} \LaTeX2$\epsilon$
+\vskip2mm
+
+Our math-bold font command {\tt \BS mbf} is now made to work also 
+in \LaTeX2$\epsilon$. 
+In \LaTeX2$\epsilon$ case, however, the standard 
+command \boxmac{boldsymbol} can also be used to obtain the math-bold 
+fonts. The command {\tt \BS boldsymbol} becomes available 
+by adding {\tt amsbsy.sty} as an input style file. 
+Then, an input like 
+\verb+$\boldsymbol{a_k}$+, for instance,  
+would give an output ${\mbf a_k}$.
+
+%does not work and yields an error message. \LaTeX2$\epsilon$ adopts 
+%NFSS (New Font Selection Scheme), and so you can get an output 
+%`This is $\mbf E_C$' by simply typing 
+%\verb+{\boldmath This is  $E_C$}+, for instance. 
+%However, note that this {\tt \BS boldmath} is a font-changing command 
+%which can be used only {\it outside} the math-mode, and it will make 
+%the whole equation math-bold face. Therefore it will be useless if you 
+%want math-bold font only for a part of the equation. Moreover, you
+%will want that the font automatically becomes of suitable size
+%depending where you use it. In such a case, you have a suitable 
+%command \boxmac{boldsymbol}, which becomes available in 
+%\LaTeX$2\epsilon$ by adding {\tt amsbsy.sty} as 
+%an input style file. So, write in the first line like
+%{\vskip \asp
+%\begin{verbatim}
+%        \documentstyle[seceq,amsbsy]{ptptex}
+%\end{verbatim}\vskip\bsp}
+%\noindent 
+%Then, writing in the source file, for instance,
+%\begin{verbatim}
+%       \begin{equation}
+%         \phi(\boldsymbol{x}) = \sum_{\boldsymbol{k}}\left[ 
+%            \boldsymbol{a_k} e^{i\boldsymbol{kx}} + 
+%              \boldsymbol{a_k}^\dagger e^{-i\boldsymbol{kx}} \right]
+%       \end{equation}
+%\end{verbatim}
+%you will get the same output as Eq.~(\ref{eq:3.1}). Note that this
+%\ttmac{boldsymbol}, contrary to \ttmac{mbf}, is a command taking an
+%argument and the argument is made math-bold face.
+ 
+
+\section*{Acknowledgements}
+Acknowledgements can be written using the LaTeX standard command
+ \newline
+\verb+\section*{Acknowledgements}+.
+
+The style files and the guides of JJAP and JPSJ were of much help in
+making \PTPTeX\ style file and writing this manual. 
+We acknowledge the staffs of JJAP and JPSJ making those.
+At the final part of our style file {\tt ptptex.sty}, 
+we have included free-ware
+style files {\tt subeqn.sty} (by Stephen Gildea), 
+{\tt subeqna.sty} (by Johannes Braams), 
+{\tt cite.sty} (by Donald Arseneau) as they stand. And 
+{\tt wrapft.sty} is merely a modified version of 
+Tetsuo Iwakuma's extension {\tt wrapfloat.sty} of the original 
+{\tt wrapfig.sty} by Donald Arseneau. We express sincere thanks to
+those authors.  
+
+
+\appendix
+\section{How to write Appendix}
+The appendices can be written by the standard \LaTeX\ commands as
+{\vskip.4em\baselineskip 1.1em
+\begin{verbatim}
+    \appendix
+    \section{How to write Appendix}
+      ...
+    \section{Second Appendix}
+      ...
+\end{verbatim}\vskip.4em}
+\noindent
+If you write two or more appendices, the appendix numbers automatically
+become {\bf A}, {\bf B}, {\it etc}.  Of course, the equations can be 
+used and look like
+
+\begin{equation}
+S_q^z=\frac{1}{L}\sum_{j=1}^LS_j^ze^{iqj}.
+\end{equation} 
+
+
+\section{Converting PS file to EPS file}
+
+EPSF (Encapsulated PostScript Files) are best suited for the figures
+to be put in the \TeX (\LaTeX) compuscripts. 
+If you have only the usual PS (PostScript) files, you can easily
+convert them into EPSF as follows.
+
+EPS file is merely a PS file which has an additional information on the
+region where the figure is drawn. This specification of the figure
+region is done by the command line
+``\verb+%%BoundingBox: x1 y1 x2 y2+'', which is usually written within 
+ten lines from the top of the EPS file. The four numbers here
+represent two coordinates $(x1, y1)$ and $(x2, y2)$ standing
+respectively for the bottom left and top right corners of the figure
+region. (Even the ordinary PS file has usually this
+command line \verb+%%BoundingBox:+. But, then, the coordinates 
+$(x1,y1)$ and $(x2,y2)$ represent the region of the whole page. If
+such a line is missing, you have to add one to convert it into EPSF.)
+
+To know the correct values for the coordinates $(x1, y1)$ and
+$(x2,y2)$, open the PS figure first using some viewer like ghostview 
+(or GSview). If you move the cursor on the viewer screen, the
+coordinate of the cursor will be shown on the top (left) part of the
+viewer every moment. So you can read the desired coordinates $(x1,
+y1)$ and $(x2,y2)$ by putting your cursor on the bottom left and top
+right corners of the figure region.
+
+Next, open the PS file by your editor software. You will see 
+the top parts written like
+{\vskip.4em\baselineskip 1.1em
+\begin{verbatim}
+        %!PS-Adobe-2.0
+        %%Creator: gnuplot
+        %%DocumentFonts: Helvetica
+        %%BoundingBox: 50 50 410 302
+        %%EndComments
+\end{verbatim}\vskip.4em}
+\noindent
+Now rewrite the four numbers (50 50 410 302 in this example) in the 
+command \verb+%%BoundingBox:+ into the coordinates $(x1,y1)$ and 
+$(x2,y2)$ which you have read above. If they are  
+$(70, 80)$, $(100,120)$, for instance, you will have to rewrite as
+{\vskip.4em\baselineskip 1.1em
+\begin{verbatim}
+        %!PS-Adobe-2.0 EPSF-2.0
+        %%Creator: gnuplot
+        %%DocumentFonts: Helvetica
+        %%BoundingBox: 70 80 100 120
+        %%EndComments
+\end{verbatim}\vskip.4em}
+\noindent
+We have also changed the first line adding \verb+EPSF-2.0+. Although
+this change seems irrelevant to the use in the \TeX\ with the style
+file \verb+epsf.sty+, it will cause a 
+difference when viewing the file by ghostview in showing the whole
+page or the figure region only. It will also be better to change the 
+file name from  \verb+xxx.ps+ to \verb+xxx.eps+. That is all for the 
+change of PS into EPS files.
+
+%\section{Second Appendix}
+%The section number of the second appendix will be {\bf B}.  Thus, the 
+%equation number will be like this:
+%\begin{equation}
+%S_q^z=\sum_{l}|\langle {\rm GS}|S_q^z|l;q\rangle|^2
+%e^{-\tau[(E_{1}(k+q)-E_{\rm g}]},
+%\end{equation} 
+
+\section{ }
+If you want to write an appendix without title like this appendix, 
+simply write as 
+\verb+\section{}+ leaving the argument empty or blank. Even then, the 
+appendix section counter is working and the equation look like
+\begin{equation}
+A=B.
+\end{equation}
+So, the use of appendix without title is not recommended exept for the
+case having a single appendix.
+
+\begin{thebibliography}{99}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some macros are available for the bibliography:
+%   o for general use
+%      \JL : general journals          \andvol : Vol (Year) Page
+%   o for individual journal 
+%      \PR  : Phys. Rev.               \PRL : Phys. Rev. Lett.
+%      \NP  : Nucl. Phys.              \PL  : Phys. Lett.
+%      \JMP : J. Math. Phys.           \CMP : Commun. Math. Phys.
+%      \PTP : Prog. Theor. Phys.       \JPSJ: J. Phys. Soc. Jpn.
+%      \JP  : J. of Phys.              \NC  : Nouvo Cim.
+%      \IJMP: Int. J. Mod. Phys.       \ANN : Ann. of Phys.
+% Usage:
+%   \PR{D45,1990,345}            ==> Phys.~Rev.\ {\bf D45} (1990), 345
+%   \JL{Phys.~Lett.,A30,1981,56} ==> Phys.~Lett.\ {\bf A30} (1981), 56
+%   \andvol{B123,1995,1020}      ==> {\bf B123} (1995), 1020
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{rf:1} 
+    Leslie Lamport, {\it LaTeX{\rm :} A Document Preparation System} 
+    (Addison-Wesley, New York, 1986).
+\bibitem{rf:2} 
+    S.~Weinberg, Phys.\ Rev.\ Lett.\ {\bf 19} (1967), 1264.
+\bibitem{rf:3} 
+    M.~Kobayashi and T.~Maskawa, \JL{Prog.\ Theor.\ Phys.,49,1973,652}.
+\bibitem{rf:4} 
+    D.~Gross and F.~Wilczek, \PRL{30,1973,1343}.
+  \\
+    H.~D.~Politzer, \PRL{30,1973,1346}.
+\bibitem{rf:5} 
+    G.~'t~Hooft, \NP{B33,1971,173}; \andvol{B35,1971,167}.
+\end{thebibliography}
+
+\end{document}
+

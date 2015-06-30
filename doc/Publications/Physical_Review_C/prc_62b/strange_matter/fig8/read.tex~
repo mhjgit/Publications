@@ -1,0 +1,5 @@
+\documentstyle{article}
+\pagestyle{empty}
+\begin{document}
+\input{fig6.tex}
+\end{document}

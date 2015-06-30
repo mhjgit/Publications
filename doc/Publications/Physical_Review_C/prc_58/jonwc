@@ -1,0 +1,75 @@
+From jwc@howdy.wustl.edu Thu Dec 10 08:29:46 1998
+Return-Path: <jwc@howdy.wustl.edu>
+Delivery-Date: Thu, 10 Dec 1998 08:29:46 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Thu, 10 Dec 1998 08:29:41 +0100
+Received: from howdy.wustl.edu (howdy.wustl.edu [128.252.125.54]) by pat.uio.no ; Thu, 10 Dec 1998 08:29:40 +0100 (MET)
+Received: (from jwc@localhost) by howdy.wustl.edu (8.6.10/8.6.10) id BAA13086 for m.h.jensen@fys.uio.no;
+          Thu, 10 Dec 1998 01:29:38 -0600
+Date: Thu, 10 Dec 1998 01:29:38 -0600
+From: "John W. Clark" <jwc@howdy.wustl.edu>
+Message-Id: <199812100729.BAA13086@howdy.wustl.edu>
+To: m.h.jensen@fys.uio.no
+Subject: comparison of gap results
+Status: R
+Content-Length: 2768
+
+
+Dear Marcello & Morten,
+
+In comparing our numerical results for the 3P2-3F2 pairing gap with 
+your recently published results (PRC 58, Oct issue), we have found 
+some disturbing discrepancies that we would like to resolve.  We 
+have concentrated on the Argonne v_14 and v_18 cases so those are 
+the only ones involved.  Our calculation makes use of the separation 
+method extended to the triplet case, as described in my talk at Trento
+last year, in Vladimir's thesis (though that presentation has since 
+been greatly polished), and (partially) in our recent PRL.  
+
+The discrepancies are not huge but they are bothersome.  They affect 
+both the pairing matrix elements and the angle-averaged gaps.  Some 
+of the problem, but not all, is probably due to different conventions 
+(thus stray constant factors like sqrt 2 and 2/pi that we still have 
+to track down to our satisfaction).
+
+First the matrix elements.  All we can compare is the diagonal m.e.s 
+for v_18 (i.e. with your Fig. 3).  As closely as I can tell, the positions 
+of the minima and crossover (around 1.3 and 3.2 inv fm, resp.) agree,
+but the scales are different by a factor of about 1.6 (suspiciously 
+close to pi/2), with our m.e.s being the LARGER ones.  Of course, a 
+discrepancy like that would show up very prominently in the gap, 
+so I believe that most of it must be just a constant factor that is 
+absorbed somewhere else (differing conventions).
+
+Also, the discrepancy in the the gap values works the other way 
+-- our v_14 and v_18 gap values are SMALLER than yours by roughly a 
+factor 1.4 (suspiciously close to sqrt 2).  But as closely as we can 
+tell, it's not just a constant factor, since your gap values falling 
+off more slowly than ours at the high end.  
+
+I am working under the assumption that your results are correct and 
+numerically the more accurate, since you have checked your solution 
+three ways.  It would be very helpful to us in our attempt to trace 
+the discrepancy if you could send us tabulated values, as functions 
+of k_F, for: 
+
+(1) The v_18 matrix elements you used.  (The diagonal 11 case shown
+    in your Fig. 3 should be enough for us to determine if something
+    is wrong at the level of the matrix elements.)
+
+(2) Your angle-averaged gap, for both v_14 and v_18 cases.  (This
+    may help us determine if there is a flaw in our numerics near
+    k_F.)
+
+Would this be possible?
+
+Incidentally, we are puzzled by the presence of the factor pi/2
+in your Eq. (9).  To us, this appears to be at variance with the
+formulas in Takatsuka & Tamagaki and Amundsen & Ostgaard, considering
+the traditional factor 1/pi in Eq. (7).  Of course, removing this
+factor won't help our matrix-element discrepancy; it would just
+make it worse ...
+
+With all best wishes,
+
+John
+

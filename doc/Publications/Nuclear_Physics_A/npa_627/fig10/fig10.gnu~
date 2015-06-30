@@ -1,0 +1,10 @@
+set terminal pslatex
+set output "fig10.tex"
+set xrange [0.1:1.0]
+set yrange [0.:100]
+set xlabel "$n$ (fm$^{-3}$)"
+set ylabel "${\varepsilon}(n)$ (MeVfm$^{-3}$)"
+plot "bonn_enm" title "${\varepsilon}$ with CD-Bonn" w line 1, "nim1_enm" title "${\varepsilon}$ with Nijm I" w line 2, "nim2_enm"  title "${\varepsilon}$ with Nijm II" w line 3, "reid_enm"  title "${\varepsilon}$ with Reid93 " w line 4
+
+
+

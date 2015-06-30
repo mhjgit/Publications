@@ -1,0 +1,12 @@
+set terminal pslatex
+set output "sec2fig10.tex"
+set xrange [0.1:0.7]
+set xlabel "$n$ (fm$^{-3}$)"
+set ylabel "${\cal E}$ (MeV)"
+plot "bonn_neut.dat" title "CD-Bonn LOB" w l 1, "argneut.dat" title "Argonne $V_{18}$ LOB" w l 2, "v18.dat" title "Argonne $V_{18}$ VCS" w l 3, "cdpphh_pnm" title "CD-Bonn PPHH" w l 4
+set xrange [0.1:0.7]
+set xlabel "$n$ (fm$^{-3}$)"
+set ylabel "${\cal E}$ (MeV)"
+plot "bonnsnm.dat" title "CD-Bonn LOB" w l 1, "argsnm.dat" title "Argonne $V_{18}$ LOB" w l 2, "v18snm.dat" title "Argonne $V_{18}$ VCS" w l 3, "cdpphh_snm" title "CD-Bonn PPHH" w l 4
+
+

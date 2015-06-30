@@ -1,0 +1,113 @@
+From machleid@deepthought.phys.uidaho.edu Thu Apr 23 05:38:54 1998
+Return-Path: <machleid@deepthought.phys.uidaho.edu>
+Delivery-Date: Thu, 23 Apr 1998 05:38:53 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Thu, 23 Apr 1998 05:38:49 +0200
+Received: from deepthought.phys.uidaho.edu (machleid@deepthought.phys.uidaho.edu [129.101.65.101]) 
+          by pat.uio.no ; Thu, 23 Apr 1998 05:38:46 +0200 (MET DST)
+Received: (from machleid@localhost) 
+          by deepthought.phys.uidaho.edu (8.8.5/8.8.5) id UAA29642;
+          Wed, 22 Apr 1998 20:38:43 -0700
+Date: Wed, 22 Apr 1998 20:38:43 -0700
+From: Ruprecht Machleidt <machleid@deepthought.phys.uidaho.edu>
+Message-Id: <199804230338.UAA29642@deepthought.phys.uidaho.edu>
+To: m.h.jensen@fys.uio.no
+Subject: phase shifts up to 2500 MeV
+Cc: machleid@deepthought.phys.uidaho.edu
+Status: R
+Content-Length: 6925
+
+>From said@clsaid.phys.vt.edu  Wed Apr 22 13:51:04 1998
+Return-Path: <said@clsaid.phys.vt.edu>
+Received: from harrier.csrv.uidaho.edu (harrier.csrv.uidaho.edu [129.101.119.224])
+	by deepthought.phys.uidaho.edu (8.8.5/8.8.5) with ESMTP id NAA28338
+	for <machleid@deepthought.phys.uidaho.edu>; Wed, 22 Apr 1998 13:51:04 -0700
+Received: from clsaid.phys.vt.edu (clsaid.phys.vt.edu [128.173.176.62])
+	by harrier.csrv.uidaho.edu (8.8.6 (PHNE_12836)/8.8.6) with ESMTP id NAA01579
+	for <machleid@uidaho.edu>; Wed, 22 Apr 1998 13:50:24 -0700 (PDT)
+Received: (from said@localhost)
+	by clsaid.phys.vt.edu (8.8.5/8.8.5) id QAA00148
+	for machleid@uidaho.edu; Wed, 22 Apr 1998 16:50:19 -0400
+Date: Wed, 22 Apr 1998 16:50:19 -0400
+From: said user <said@clsaid.phys.vt.edu>
+Message-Id: <199804222050.QAA00148@clsaid.phys.vt.edu>
+To: machleid@uidaho.edu
+Status: R
+
+                                                                                
+ The experimental data file is                                                  
+ NN982 Nucleon-Nucleon  4/98 Arndt(NIJM)  4/18/98                               
+ RETURN to continue ->  Your solution is                                        
+  SP98 0-2.5 GEV PP=31422/19220 NP=17814/10961 RAA (144) 3/20/98   0            
+ RETURN (or "GON") to continue -> Input*GO7                                     
+ CAUTION!! do NOT use this solution outside its range of                        
+ validity. Extrapolation properties tend to be VERY poor.                       
+ B, H, or S to display Basque, Hoshizaki, or Saclay fits                        
+ X will suppress print (do plots only)                                          
+ D will add pid -> pp P-W cross sections to plots (VPI soln)                    
+ A resonance can be added with the CURSOR by entering                           
+ 0 at the PLOT prompt AFTER the wave has been plotted.                          
+ Enter letter or RETURN to continue -> INPUT*                                   
+ Energy variable? T(Tlab),P(Plab), or W(Wcm) -> INPUT* T                        
+  Enter (min inc max) for TLAB -> INPUT* 0 100 2500                             
+  Enter PP or NP -> INPUT* PP                                                   
+  Name of partial wave? (or ALL, or SIG) -> INPUT* ALL                          
+ Choose a representation (TMTX,VPI,HOSH, or BASQ) -> INPUT*                     
+  Enter J value of waves to be seen -> INPUT* 2                                 
+                                                                                
+                                                                                
+ SP98 0-2.5 GEV PP=31422/19220 NP=17814/10961 RAA (144) 3/20/  4/22/98          
+            PP   VPI  Parameters for J= 2                                       
+  TLAB        1D2         3D2         3P2         E2          3F2               
+    0.1      0.00000     0.00002     0.00015     0.00000     0.00000            
+  100.0      3.51333    18.29571    10.61057    -2.45010     0.87996            
+  200.0      7.15851    25.33947    15.74823    -2.80471     1.32512            
+  300.0      9.49133    25.67367    17.52666    -2.38060     0.95589            
+             1.57200     0.00000     0.31208     0.00000     0.08794            
+  400.0     11.57820    23.65330    17.89916    -1.63971     0.04514            
+             7.03066     0.00000     0.59872     0.00000    -0.07252            
+  500.0     13.28581    20.93076    18.16075    -0.70481    -1.15040            
+            15.11366     0.00000     4.55862     0.00000     0.46031            
+  600.0     10.37360    18.09685    18.89547     0.38804    -2.44267            
+            22.73817     0.00000    13.00189     0.03583     1.85343            
+  700.0      5.18880    15.29547    16.67823     1.00233    -3.81324            
+            23.83142     0.00000    21.06578     0.03717     3.49453            
+  800.0      2.30457    12.49267    12.11640     1.11367    -5.20516            
+            23.99336     0.00000    24.75172     0.00000     4.45582            
+  900.0      0.31390     9.60253     7.51101     1.09101    -6.51701            
+            24.60077     0.00000    27.03786     0.02710     5.10900            
+ 1000.0     -1.25043     6.54386     2.91383     0.96248    -7.72153            
+            25.48418     0.00000    28.96685     0.03914     5.64431            
+ 1100.0     -2.50997     3.26204    -1.74865     0.73366    -8.81000            
+            26.48841     0.00000    30.70153     0.00000     6.09694            
+ 1200.0     -3.52831    -0.26489    -6.43558     0.43151    -9.77829            
+            27.51416     0.00000    32.26113     0.00000     6.47077            
+ 1300.0     -4.37165    -4.02527   -11.04434     0.09601   -10.62430            
+            28.49720     0.00000    33.64796     0.00000     6.76451            
+ 1400.0     -5.12091    -7.98069   -15.45414    -0.23026   -11.34767            
+            29.39814     0.00000    34.86840     0.00000     6.97718            
+ 1500.0     -5.87122   -12.06933   -19.55584    -0.50749   -11.94985            
+            30.19630     0.00000    35.93579     0.03350     7.10926            
+ 1600.0     -6.72288   -16.21730   -23.26930    -0.70398   -12.43436            
+            30.88352     0.00000    36.86979     0.00000     7.16269            
+ 1700.0     -7.77300   -20.34523   -26.54874    -0.79723   -12.80638            
+            31.45657     0.00000    37.69486     0.00000     7.14041            
+ 1800.0     -9.10406   -24.38021   -29.37835    -0.77187   -13.07236            
+            31.90876     0.00000    38.43842     0.03565     7.04530            
+ 1900.0    -10.77236   -28.25926   -31.76370    -0.61694   -13.23871            
+            32.22226     0.00000    39.12944     0.00000     6.87931            
+ 2000.0    -12.79255   -31.93567   -33.72070    -0.32307   -13.31114            
+            32.36265     0.00000    39.79715     0.03122     6.64230            
+ 2100.0    -15.11842   -35.37809   -35.26616     0.12040   -13.29414            
+            32.27786     0.00000    40.47012     0.00000     6.33066            
+ 2200.0    -17.63096   -38.57115   -36.40826     0.72792   -13.19045            
+            31.90465     0.00000    41.17563     0.00000     5.93598            
+ 2300.0    -20.14683   -41.51041   -37.13735     1.52139   -13.00072            
+            31.18389     0.00000    41.93907     0.08296     5.44305            
+ 2400.0    -22.46100   -44.20207   -37.41350     2.53144   -12.72387            
+            30.08264     0.00000    42.78307     0.05704     4.82708            
+ 2500.0    -24.40962   -46.65730   -37.14694     3.80274   -12.35757            
+            28.61398     0.00000    43.72612     0.13292     4.04984            
+  Enter J value of waves to be seen -> INPUT* GO9                               
+
+

@@ -1,0 +1,15 @@
+  Quality of energy fit:
+  Number of terms in polynomial expansion:           3
+    a_0=         -7.31643746394557     
+    a_1=         -15.4728997031333     
+    a_2=          7.79055420955820     
+CHISQ =      8.21441
+
+
+Saa, det du da har er
+
+E/A = a_0 + a_1 *n/n_0  + a_2*(n/n_0)**2
+
+
+morten
+

@@ -1,0 +1,551 @@
+%    this is section 8
+
+\subsection{Introduction}
+
+The properties of compact
+objects like neutron stars depend on the equation of state
+at densities up to an order of magnitude higher than those observed
+in ordinary nuclei. At such densities, relativistic effects
+certainly prevail.
+
+Among relativistic approaches to the nuclear
+many-body problem, the so-called Dirac-Hartree and Dirac-Hartree-Fock
+approaches have received much interest.
+One of the early successes of these
+approaches was the quantitative reproduction of spin observables,
+which are only poorly described by the non-relativistic theory.
+Pertinent to these methods,
+was the introduction of a strongly attractive scalar component
+and a repulsive vector component \cite{sw86}
+to describe the nucleon self-energy.
+The sp motion is described by the Dirac equation which includes
+this self-energy. Due to the scalar field, the nucleon mass is reduced
+enhancing thereby the ratio between the small and large
+components of the Dirac spinors. Moreover, the scalar field decouples
+causing a
+strongly density dependent repulsive effect. In a non-relativistic
+language, the reduction of the nucleon mass means that e.g.\
+the repulsive spin-orbit term in the
+NN potential is enhanced
+at large densities.
+
+Inspired
+by the successes of the Dirac-Hartree-Fock method, a relativistic
+extension of Brueckner theory was proposed by the Brooklyn group
+\cite{brook}, known as the Dirac-Brueckner theory.
+The Dirac-Brueckner approach differs from the Dirac-Hartree-Fock one,
+in the sense that in the former one starts from the free NN potential
+which is only constrained by a fit to the world NN data, whereas the
+Dirac-Hartree-Fock method pursues a line where the parameters of the
+theory are determined so as to reproduce the bulk properties
+of nuclear matter. It ought however to be stressed that the Dirac-Brueckner
+approach \cite{bm90,brook,hm87},
+which starts from NN potentials based on meson-exchange,
+is a non-renormalizable theory, where the short-range part
+of the potential depends on additional parameters like
+vertex cutoffs, clearly minimizing the
+sensitivity of calculated results to short-distance inputs. This
+should be contrasted to the Dirac-Hartree-Fock
+method pioneered by Walecka and Serot \cite{sw86,ser92}.
+Nonetheless, one of the appealing features of the Dirac-Brueckner approach
+is the self-consistent determination of the relativistic sp
+energies and wave functions.
+The description presented here for the Dirac-Brueckner approach, follows
+closely that of Brockmann and Machleidt \cite{bm90}. We will thus
+start from the meson-exchange models of the Bonn group, defined
+in table A.2 of ref.\ \cite{mac89}, and discussed in section 3.
+Thence, including the necessary medium effects like the
+Pauli operators and the starting
+energy, we will rewrite eq.\ (\ref{eq:gnonrel}) using 
+the Thompson equation. Then, in a self-consistent way, we
+determine the above mentioned scalar and vector components  which
+define the nucleon self-energy. In this sense we also differ
+from the non-relativistic approach discussed above, where the
+parameters which are varied at each iterative step are the
+non-relativistic effective mass and the effective sp potential
+$\Delta$.
+
+\subsection{Symmetric nuclear matter}
+
+To account for medium modifications to the free Dirac equation,
+we introduce the notion of the self-energy $\Sigma (p)$.
+As we assume parity to be a good quantum, and assume the self-energy
+to be hermitian, the self-energy of a
+nucleon can be formally written as
+\begin{equation}
+       \Sigma(p) =
+       \Sigma_S(p) -\gamma_0 \Sigma^0(p)
+       +\mbox{\boldmath $\gamma$}{\bf p}\Sigma^V(p).
+\end{equation}
+The momentum dependence of $\Sigma^0$ and $\Sigma_S$ is
+rather weak \cite{sw86}.
+Moreover, $\Sigma^V << 1$, such
+that the features of the Dirac-Brueckner-Hartree-Fock
+procedure can be discussed within the framework of the phenomenological
+ansatz
+\begin{equation}
+\Sigma \approx \Sigma_S -\gamma_0 \Sigma^0 = U_S + U_V
+\end{equation}
+where $U_S$ is an attractive scalar field and $U_V$ the timelike component
+of a repulsive vector field.
+The finite self-energy modifies the
+free Dirac spinors of eq.\ (\ref{eq:freespinor}) as
+\begin{equation}
+   \tilde{u}(p,s)=\sqrt{\frac{\tilde{E}(p)+\tilde{M}_N}{2\tilde{M}_N}}
+	  \left(\begin{array}{c} \chi_s\\ \\
+	  \frac{\mbox{\boldmath $\sigma$}{\bf p}}{\tilde{E}(p)+\tilde{M}_N}\chi_s
+	  \end{array}\right),
+\end{equation}
+where we let the terms with tilde represent the medium modified quantities.
+Here we have defined \cite{bm90,sw86}
+\begin{equation}
+   \tilde{M}_N=M_N+U_S
+\end{equation}
+and
+\begin{equation}
+      \tilde{E}_{\alpha}=
+      \tilde{E}(p_{\alpha})=\sqrt{\tilde{M}_N^2+{\bf p}_{\alpha}^2}
+\end{equation}
+The relativistic analog of eq.\ (\ref{eq:spnrel}) is \cite{bm90}
+\begin{equation}
+  \begin{array}{ccc}
+   \tilde{\varepsilon}_{\alpha}=&\tilde{E}_{\alpha} +U_V,
+   &|{\bf p}_{\alpha}|\leq k_M\\
+   &&\\
+  =&\tilde{E}_{\alpha}, &|{\bf p}_{\alpha}|> k_M \\
+  \end{array}
+\end{equation}
+where $k_M=k_F$ gives the traditional BHF sp spectrum while $k_M=ak_F$
+with $a>1$ results in the MBHF approach.
+The sp potential is given as
+\begin{equation}
+   u_{\alpha} =\sum_{h\leq k_F} \frac{\tilde{M}_N^2}{\tilde{E}_h
+	       \tilde{E}_{\alpha}}
+	\bra{\alpha h}G(\tilde{E}=\tilde{\varepsilon}_{\alpha}
+	+\tilde{\varepsilon}_q)\ket{\alpha h}_{AS},
+	\label{eq:urel}
+\end{equation}
+or if we wish to express it in terms of the constants $U_S$ and
+$U_V$,
+we have
+\begin{equation}
+   u_{\alpha} = \frac{\tilde{M}_N}{\tilde{E}_{\alpha}}U_S +U_V.
+   \label{eq:sppotrel}
+\end{equation}
+In eq.\ (\ref{eq:urel}), we have introduced the relativistic $G$-matrix,
+which in a partial wave representation is given by
+\begin{equation}
+   G_{ll'}^{\alpha}(kk'K\tilde{E})=\tilde{V}_{ll'}^{\alpha}(kk')
+   +\sum_{l''}\int \frac{d^3 q}{(2\pi )^3}\tilde{V}_{ll''}^{\alpha}(kq)
+   \frac{\tilde{M}_N^2}{\tilde{E}_{\frac{1}{2}K+q}^2}
+   \frac{Q(q,K)}{\tilde{E}-H_0}
+   G_{l''l'}^{\alpha}(qk'K\tilde{E}),
+   \label{eq:grel}
+\end{equation}
+where the relativistic starting energy is
+$\tilde{E}=2\tilde{E}_{\frac{1}{2}K+k}$.
+
+
+Equations (\ref{eq:urel})-(\ref{eq:grel}) are solved self-consistently
+in the same fashion as in the non-relativistic case, starting
+with adequate values for the scalar and vector components
+$U_S$ and $U_V$. This iterative scheme is continued until these
+parameters vary little. The calculation is carried out in the
+nuclear matter rest frame, avoiding thereby a cumbersome
+transformation between the two-nucleon center of mass system
+and the nuclear matter rest frame. The additional factors
+$\tilde{M}_N/\tilde{E}$ in the above equations
+arise due to the normalization of the
+nuclear matter spinors $\tilde{w}$, i.e.
+$\tilde{w}^{\dagger}\tilde{w}=1$ \cite{bm90}.
+
+
+Finally, the relativistic version of eq.\ (\ref{eq:enrel}) reads
+\begin{equation}
+   {\cal E}/A =
+   \frac{1}{A}\sum_{h\leq k_F}
+   \frac{\tilde{M}_N M_N+{\bf p}_h^2}{\tilde{E}_h}+
+   \frac{1}{2A}\sum_{hh' \leq k_F}\frac{\tilde{M}_N^2}{\tilde{E}_h\tilde{E}_{h'}}
+   \bra{hh'}G(\tilde{E}=
+   \tilde{\varepsilon}_h +\tilde{\varepsilon}_{h'})\ket{hh'}_{AS} -M_N.
+   \label{eq:erel}
+\end{equation}
+
+The importance of relativistic effects are clearly demonstrated in fig.\
+\ref{fig:chap3bearel}. There we show results obtained with the
+Bonn A potential of table A.2 in \cite{mac89}.
+At small densities the relativistic and 
+non-relativistic results almost coincide, whereas at higher densities
+the relativistic calculations almost reproduce the empirical points.
+\begin{figure}[hbtp]
+\setlength{\unitlength}{1cm}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{dbhf.eps}}
+      \end{picture}
+      \caption{Comparisons of the total binding energy for nuclear
+       matter obtained with the BHF method with both a relativistic 
+      (dashed line) and
+      a non-relativistic (solid line) approach. 
+      The continuous sp choice has been
+      employed for the dashed and the solid line.
+      The results have been
+      obtained with the Bonn A potential and are taken from
+      ref.\ [15]. We also include the relativistic
+      results from a ring-diagram calculation (dotted line) of ref.\ [128].}
+      \label{fig:chap3bearel}
+\end{figure}
+The differences between the relativistic and non-relativistic results
+can be understood from the following two arguments, see e.g.\ 
+ref.\ \cite{bwbs87}.
+Firstly, relativistic 
+effects introduce a strongly density dependent repulsive term in the
+energy per particle, of the order $(n/n_0)^{8/3}$ where $n_0$ is the 
+nuclear matter saturation density in fm$^{-3}$. 
+This contribution\footnote{The relativistic 
+effects can also be understood as a
+special class of many-body forces.}
+is important in order to saturate nuclear matter, and is interpreted by
+the authors of ref.\ \cite{bwbs87}
+as a density dependent correction 
+to the mass of the scalar boson $\sigma$, which
+is responsible for the scalar term $U_S$ in the relativistic nucleon mass. 
+In the 
+vacuum, the $\sigma$-meson has self-energy contributions due to its
+coupling to virtual nucleon-antinucleon pairs. In nuclear matter,
+scattering into states with $k<k_F$ are Pauli blocked, giving in turn
+a repulsive contribution to the energy per particle.  This quenching
+of the $\sigma$ contribution can also be understood from the 
+expression for the one-boson-exchange (OBE) diagram, see eq.\ (28). There,
+due to the normalization of the Dirac spinors in nuclear matter,
+an additional factor $(\tilde{M}_N/\tilde{E})^2$ has to be 
+incorporated in the OBE contribution. This factor decreases
+with increasing density, and yields a repulsive 
+relativistic effect, in addition to the kinetic energy.
+Secondly, the nucleon-nucleon spin-orbit interaction from the 
+$\omega$-meson in $P$-waves is enhanced
+(the spin-orbit force is repulsive), since the 
+relativistic effective mass is changed due to the scalar fields which
+couple to negative energy states. 
+
+In the above figure, we show BHF calculations with the continuous choice 
+for the sp spectrum taken from ref.\ \cite{bm90}, and
+relativistic ring-diagram calculations from ref.\ \cite{jkm93}. The
+latter are obtained from the formalism in section 7.2, the differences
+between the non-relativistic and the relativistic ring-diagram
+scheme being the use of the relativistic $G$-matrix and relativistic
+sp energies. 
+We note that the differences between 
+the relativistic BHF and ring-diagram calculations are small, though the
+effect of the infinite summation of particle-particle and hole-hole
+ring diagrams is to move the minimum of the curve towards smaller densities.
+Moreover, the curvature of the relativistic ring-diagram calculation
+is smaller compared with the DBHF calculation of Brockmann and Machleidt
+\cite{bm90}, yielding a softer equation of state.
+Again, as discussed in 7.2, ring diagrams bring in an additional 
+density-dependent repulsive effect. This feature can be studied in
+table \ref{tab:rings4}, where we display the $z$ dependence of
+the energy shift for the $^3S_1$-$^3D_1$ channel. It is seen that the
+difference in energy shift between $z=0.887$ and $z=0.113$ 
+becomes less attractive with increasing density, which means that we
+have a repulsive effect that increases with density, and therefore shifts
+the saturation point.
+\begin{table}[hbtp]
+\caption{The $z$ dependence of the potential energy
+contribution
+$\Delta E_0^{pp-hh}/A$ in the $^{3}S_1$-$^{3}D_1$ channel
+for a relativistic calculation. All energies in MeV. Taken from
+ref.\ [128].}
+\begin{center}
+\begin{tabular}{rrr}
+\\\hline
+\multicolumn{1}{c}{$k_F$ fm$^{-1}$}&
+\multicolumn{1}{c}{$z=0.113$}&
+\multicolumn{1}{c}{$z=0.887$}
+\\ \hline
+1.2&-11.30&-20.87\\
+1.3&-12.52&-21.32\\
+1.4&-13.41&-21.41\\
+1.5&-13.94&-21.13\\
+1.6&-14.07&-20.20\\
+1.7&-13.66&-18.68\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:rings4}
+\end{table}
+
+Compared with the non-relativistic ring-diagram calculations in 7.2,
+we observe that the difference between a calculation which accounts
+for ring diagrams and the DBHF results, is much smaller
+than in the non-relativistic comparison between BHF calculations
+and ring diagrams. This is in turn connected with the fact that
+in the non-relativistic calculations, the sp energies depend
+quadratically on the momentum, and thereby exhibit an increased
+momentum dependence with increasing densities. In the relativistic
+case, the dependence on $k$ is only linear.
+
+Thus, in summary, for a relativistic calculation, the chief mechanism
+behind the near reproduction of the empirical points for nuclear 
+matter, is mainly due to the quenching of the relativistic 
+nucleon self-energy. Higher-order effects like ring diagrams, are
+much smaller in the relativistic case, as compared with the 
+non-relativistic approach. However, needless to say, relativistic
+calculations are still beset with uncertainties, and, although
+a calculation of first order in the $G$-matrix almost 
+reproduces the empirical nuclear matter data, 
+there are still many-body effects 
+which need to be understood. It is rather questionable if a
+calculation to first order in the interaction should reproduce
+properties of strongly interacting matter. Our conclusions
+in section 6, clearly indicate that more complicated 
+many-body effects need to be accounted for. Another effect
+which also is an open question is the spin-orbit splitting
+in e.g.\ finite nuclei. In the framework of the Walecka model
+or the DBHF approach, one is able to reproduce fairly well
+the spin-orbit splitting between the 
+$0p_{1/2}$ and the $0p_{3/2}$ sp states in $^{16}$O. These are hole
+states and should therefore depend more on the density than
+the $0d_{3/2}$ and the $0d_{5/2}$ states in $^{17}$O. The latter
+are valence nucleons, and most non-relativistic many-body
+calculations reproduce failry well the spin-orbit splitting
+$\varepsilon_{0d_{3/2}}-\varepsilon_{0d_{5/2}}=5.08$ MeV, whereas
+for $\varepsilon_{0p_{3/2}}-\varepsilon_{0p_{1/2}}=6.18$ MeV, most
+non-relativistic calculations yield $4\pm 1$ MeV. Relativistic
+calculations improve this spin-orbit splitting, as demonstrated
+by Brockmann \cite{br78}. An alternative approch is advocated
+by Pandharipande and co-workers \cite{pand93}. There, non-relativistic
+Monte-Carlo calculations with three-body forces yield a
+similar spin-orbit splitting as the relativistic calculations.  
+Therefore, although the relativistic 
+nuclear matter results are appealing,
+we believe that there still are many effects which call for further
+studies. The reader should also note that in our calculation
+of the relativistic $G$-matrix, a constant effective mass is used 
+in the integral over all momenta. This approach is obviously
+questionable. Rather, a density dependent relativistic
+effective mass should have been used. Whether the saturation
+mechanisms seen in the relativistic calculations persist
+with a density dependent effective mass, 
+remains to see. Moreover, one should not only solve self-consistently
+the Dirac equation, but also the Klein-Gordon equation for the various
+mesons, in order to obtain effective masses for these particles as 
+well. The obtained effective masses, should then be introduced in e.g.\
+the medium dependent nucleon-nucleon interaction. 
+
+
+
+\subsection{Neutron stars and asymmetric nuclear matter}
+
+We end this section with applications of the Dirac-Brueckner-Hartree-Fock
+theory to the calculation of the equation of state for neutron
+stars.
+The physics of compact objects like neutron stars
+offers
+an intriguing interplay between nuclear processes  and
+astrophysical observables \cite{chris92a,wg91}.
+Neutron stars exhibit conditions far from those encountered on earth;
+typically, expected densities of a neutron star interior are of the
+order $10^3$ or more than the density at neutron drip, $10^{11}$ gcm$^{-3}$.
+Thus, central to calculations of neutron star properties, is the
+determination of an equation of state for dense matter. This determines
+the mass range as well as the mass-radius relantionship for these stars.
+It is also an important ingredient to the determination of the
+composition of dense matter and to how
+thick the crust of a neutron star is.
+The latter influences neutrino generating processes and the cooling
+of neutron stars \cite{chris92b}.
+The properties of neutron stars depend on the equation of state (EOS)
+at densities up to an order of magnitude higher than those observed
+in ordinary nuclei.
+Data on the EOS can be obtained from many sources, such as studies of
+the monopole resonance in finite nuclei, high-energy
+nuclear collisions, supernovae and neutron  stars.
+Supernova simulations seem to require  an EOS which is too soft to
+support some observed masses of neutrons stars, whereas analyses of
+high-energy nuclear collisions indicate a rather stiff EOS, predicting
+in turn neutron star masses which are too large.
+Thus, no definite statements can be made
+about the equation of state EOS at high densities, except that the
+equation of state should probably be moderately stiff in order to
+support maximum neutron star masses in the range
+from approximately $1.4 M_{\odot}$ to $1.9 M_{\odot}$ \cite{thorsett93}.
+
+However, although quantitative calculations of the EOS for dense
+nuclear matter are still beset with many problems, there have recently
+been important changes in the qualitative picture. Several mechanisms
+have been studied, mechanisms which
+result in an EOS which is soft enough to support
+neutron stars with maximum masses in the range of the observed data.
+Amongst such processes
+we have exotic states of nuclear matter, such as
+kaon 
+\cite{kn87,brown93} or pion condesation.
+Another scenario which gives neutron star masses 
+within the experimental 
+values, has been presented by Pethick and co-workers
+\cite{lrp93,hps93}. These authors study
+properties of various phase transitions
+from spherical nuclei to uniform nuclear matter, and the coexistence
+of quark matter and nuclear matter over a finite fraction of the
+neutron star volume. 
+
+
+Here  we derive the EOS
+for pure neutron matter
+and asymmetric nuclear
+matter, using the relativistic DBHF approach discussed above.
+For the NN potential, we choose again the Bonn A potential
+in table A.2 of \cite{mac89}.
+For these calculations we restrict the attention to
+the continuous choice for the sp spectra, but we will treat the 
+Pauli operator for various proton asymmetries ``exactly'', following 
+the expressions given by the authors of ref.\ \cite{swk92}.
+Asymmetric nuclear matter is important in e.g.\ studies of neutron
+star cooling, as demonstrated recently by Lattimer {\em et al.}
+\cite{lpph91} who showed that ordinary nuclear matter
+with a small asymmetry parameter can cool by the so-called
+direct URCA process, even more rapidly than matter in an exotic state.
+In addition, at high densities, degrees of freedom represented by
+isobars and hyperons may also result in a rapid cooling of neutron stars
+\cite{pplp92}.
+
+
+With these preliminaries, we show here the results of Engvik {\em et al.} 
+from ref.\ 
+\cite{lhobo94} for the
+energy per particle with various proton fractions 
+in fig.\ \ref{fig:eos}.
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,160)
+      \put(25,10){\epsfxsize=12cm \epsfbox{eos.eps}}
+      \end{picture}
+\caption{The energy per particle for asymmetric nuclear matter
+as function of the particle density with
+different proton fractions. Taken from ref.\ [140].}
+\label{fig:eos}
+\end{figure}
+From this figure we note that all proton fractions yield
+an energy per
+particle which exhibits much the same curvature as the curve for pure neutron 
+matter at high densities, although the energy per particle is less repulsive
+at high densities. 
+At low densities, the situation is rather 
+different.
+This is due to the contributions from various isospin $T=0$ partial waves,
+especially the contribution from the $^3S_1$-$^3D_1$ channel, where the 
+tensor force component of the nucleon-nucleon potential provides
+additional binding. With a proton fraction of $0.15$, the energy per particle
+starts to become attractive at low densities (in the region $0.07$ fm$^{-3}$
+to $0.3$ fm$^{-3}$),  and with increasing proton fractions, additional
+attraction in the energy 
+per particle is introduced.
+
+
+
+The next step in the calculations is thus to evaluate the EOS and the total mass
+and radius of a neutron star from the above energies per particle with
+the proton fractions shown in fig.\ \ref{fig:eos}, in order
+to see how different proton fractions influence the mass and radius of 
+neutron stars.
+Here we
+assume that the neutron stars we study exhibit an isotropic
+mass distribution. Hence, from the general theory of relativity,
+the structure of a neutron star is determined through the
+Tolman-Oppenheimer-Volkov equation, i.e.\
+\begin{equation}
+   \frac{dP}{dr}=
+    - \frac{\left\{\rho (r)+P(r) \right\}
+    \left\{M(r)+4\pi r^3 P(r)\right\}}{r^2- 2rM(r)},
+   \label{eq:tov}
+\end{equation}
+where $P(r)$ is the pressure and $M(r)$ is
+the gravitional mass inside a radius $r$.
+To obtain 
+observables like the mass and radius of a neutron star, Engvik {\em et al.}
+\cite{lhobo94}
+combine
+eq.\ (\ref{eq:tov}) with the equation of state (EOS), which is defined as
+$P(n)=n^2 \left(\partial \epsilon/\partial n\right)$,
+where $\epsilon ={\cal E}/A$ is
+the energy per particle and $n$ is the particle
+density.
+The EOS is valid in a limited density range from $0.1$ fm$^{-3}$
+to $0.8$ fm$^{-3}$. It is therefore coupled to other equations
+of state at higher and lower densities as outlined in ref.\ 
+\cite{behoo94}. Total masses and radii are calculated and parametrized
+as functions of the central density $n_c$. The results from
+ref.\ \cite{lhobo94} are redisplayed  in
+figs.\ \ref{fig:mass} and \ref{fig:radius}.
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{nmass.eps}}
+      \end{picture}
+\caption{$M/M_{\odot}$ for various proton fractions
+as function of the central density $n_c$. Taken from ref.\ [140].}
+\label{fig:mass}
+\end{figure}
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{nrad.eps}}
+      \end{picture}
+\caption{The total radius  $R$ for different
+proton fractions as function of the central density $n_c$.
+Taken from ref.\ [140].}
+\label{fig:radius}
+\end{figure}
+The neutron star equation of state should probably be only 
+moderately stiff to support maximum neutron star masses of
+only $1.9 M_{\odot}$ \cite{thorsett93}. From figs.\ \ref{fig:mass}
+and \ref{fig:radius} we see that the relativistic EOS for pure neutron
+matter seems to be too stiff, since it gives a predicted 
+maximum mass of $M_{\mathrm{max}}\approx 2.4 M_{\odot}$ with
+a corresponding radius of $R=12$ km. However, the EOS for neutron star
+matter could be softened considerably due to pion or kaon
+condensation because of the lower symmetry energy of nuclear matter,
+and maximum masses are then reduced correspondingly
+from the cases with no condensates. We note from figs.\ \ref{fig:mass}
+and \ref{fig:radius} that for the EOS the calculated maximum mass
+can be reduced to $M_{\mathrm{max}}\approx 2.0 M_{\odot}$
+with a corresponding radius of $R\approx 10$ km. Pions may be likely
+to condense in neutron star matter because neutrons at the top of
+the Fermi sea could decay to protons plus electrons,
+and kaon condensation is also believed to be a possible mechanism
+which could be energetically favorable in the interior of neutron
+stars \cite{brown93,thorson93,brown93b}. Both pion and kaon
+condensation would then increase the proton abundance in the matter,
+possibly up to more than $40\%$ protons, i.e.\ close to symmetric
+nuclear matter, and produce a softer EOS and smaller maximum mass.
+The results from Engvik {\em et al.}
+\cite{lhobo94} discussed here show this, if one assumes that e.g.\ 
+kaon condensation is
+a likely mechanism, an increased proton fraction results in smaller
+masses. The EOS, even with a proton fraction close to
+symmetric nuclear matter, results in maximum masses which are slightly
+above the experimental values \cite{thorsett93}. However, following the
+the relativistic ring-diagram results above, 
+we would
+expect that higher order many-body contributions to
+soften the EOS further.  Moreover, we have not discussed the energy gain
+due to kaon condesation, an energy gain which will soften further
+the above EOS at high densities, as demonstrated in ref.\ \cite{thorson93}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

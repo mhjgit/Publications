@@ -1,0 +1,381 @@
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 1999.10.13)  12 AUG 2002 16:23
+**pair_rmp
+(pair_rmp.tex
+LaTeX2e <1998/06/01>
+Babel <v3.6h> and hyphenation patterns for english, ukenglish, norsk, german, l
+oaded.
+(/local/TEX/lib/inputs/latex2e/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count81
+\output=\toks14
+\@protection@box=\box27
+\@topmark@saved=\toks15
+\footins@saved=\box28
+\pagesofar=\box29
+\footbox=\box30
+\pagegrid@col=\count82
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/local/TEX/lib/inputs/latex2e/misc/url.sty
+Package: url 1996/10/19  ver 1.2  Verb mode for urls, email addresses, and file
+ names
+)
+\c@affil=\count83
+\absbox=\box31
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count90
+\c@table=\count91
+
+(/local/TEX/lib/inputs/latex2e/misc/natbib.sty
+Package: natbib 1998/07/14 6.8c (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 467.
+\c@NAT@ctr=\count92
+)
+
+LaTeX Warning: You have requested, on input line 5426, version
+               `1999/05/28 7.0' of package natbib,
+               but only version
+               `1998/07/14 6.8c (PWD)'
+               is available.
+
+\widetext@top=\box32
+\widetext@bot=\box33
+(/local/TEX/lib/inputs/latex2e/revtex4/revsymb.sty
+Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(/local/TEX/lib/inputs/latex2e/revtex4/aps.rtx
+File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+
+(/local/TEX/lib/inputs/latex2e/revtex4/rmp.rtx
+File: rmp.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+))
+(/local/TEX/lib/inputs/latex2e/revtex4/12pt.rtx
+File: 12pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/local/TEX/lib/inputs/latex2e/graphics/graphicx.sty
+Package: graphicx 1997/06/09 v1.0d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/local/TEX/lib/inputs/latex2e/graphics/keyval.sty
+Package: keyval 1998/06/05 v1.11 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/local/TEX/lib/inputs/latex2e/graphics/graphics.sty
+Package: graphics 1998/05/27 v1.0h Standard LaTeX Graphics (DPC,SPQR)
+
+(/local/TEX/lib/inputs/latex2e/graphics/trig.sty
+Package: trig 1994/10/16 v1.08 sin cos tan (DPC)
+)
+(/local/TEX/lib/inputs/uio/graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 85.
+
+(/local/TEX/lib/inputs/latex2e/graphics/dvips.def
+File: dvips.def 1998/05/03 v3.0f Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/local/TEX/lib/inputs/latex2e/graphics/epsfig.sty
+Package: epsfig 1996/10/04 v1.7 (e)psfig emulation (SPQR)
+\epsfxsize=\dimen104
+\epsfysize=\dimen105
+)
+(/local/TEX/lib/inputs/plain/pstricks/pst-plot.sty
+Package: pst-plot 1997/03/25: package wrapper for PSTricks pst-plot.tex
+
+(/local/TEX/lib/inputs/plain/pstricks/pst-plot.tex
+ v93a/b-97-patch 1, 1997/04/28
+(/local/TEX/lib/inputs/plain/pstricks/pstricks.tex
+`PSTricks' v93a/b-97 patch 7  <1997/10/27> (tvz)
+\pst@dima=\dimen106
+\pst@dimb=\dimen107
+\pst@dimc=\dimen108
+\pst@dimd=\dimen109
+\pst@dimg=\dimen110
+\pst@dimh=\dimen111
+\pst@hbox=\box34
+\pst@boxg=\box35
+\pst@cnta=\count93
+\pst@cntb=\count94
+\pst@cntc=\count95
+\pst@cntd=\count96
+\pst@cntg=\count97
+\pst@cnth=\count98
+\pst@toks=\toks17
+(/local/TEX/lib/inputs/plain/pstricks/pstricks.con)
+\psunit=\dimen112
+\psxunit=\dimen113
+\psyunit=\dimen114
+\pslinewidth=\dimen115
+\pst@customdefs=\toks18
+\pslinearc=\dimen116
+\everypsbox=\toks19
+\psframesep=\dimen117
+\pslabelsep=\dimen118
+\theoverlaybox=\box36
+)
+(/local/TEX/lib/inputs/plain/pstricks/multido.tex  v1.4, 93/01/14 <tvz>
+\multido@count=\count99
+\multidocount=\count100
+\multido@stuff=\toks20
+)))
+(/local/TEX/lib/inputs/latex209/misc/psfig.sty)
+(/local/TEX/lib/inputs/latex2e/misc/bm.sty
+Package: bm 1997/11/22 v1.0e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 129.
+LaTeX Info: Redefining \bm on input line 183.
+) (pair_rmp.aux)
+\openout1 = `pair_rmp.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+Class revtex4 Info: Unrecognized LaTeX tabular. Please update this document cla
+ss! (Proceeding with fingers crossed.) on input line 10.
+Class revtex4 Info: cite was not loaded (OK!) on input line 10.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 10.
+
+Underfull \hbox (badness 2735) in paragraph at lines 40--40
+ []\OT1/cmr/m/it/12 Physics Di-vi-sion, Oak Ridge Na-tional Lab-o-ra-tory 
+ []
+
+[1] (pair_rmp.toc
+Overfull \hbox (5.00003pt too wide) detected at line 9
+ \OT1/cmr/m/n/10 11
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 10
+ \OT1/cmr/m/n/10 13
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 11
+ \OT1/cmr/m/n/10 14
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 12
+ \OT1/cmr/m/n/10 17
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 13
+ \OT1/cmr/m/n/10 21
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 14
+ \OT1/cmr/m/n/10 21
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 15
+ \OT1/cmr/m/n/10 24
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 16
+ \OT1/cmr/m/n/10 27
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 17
+ \OT1/cmr/m/n/10 27
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 18
+ \OT1/cmr/m/n/10 35
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 19
+ \OT1/cmr/m/n/10 38
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 20
+ \OT1/cmr/m/n/10 41
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 21
+ \OT1/cmr/m/n/10 41
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 22
+ \OT1/cmr/m/n/10 43
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 23
+ \OT1/cmr/m/n/10 48
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 24
+ \OT1/cmr/m/n/10 52
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 25.
+
+Overfull \hbox (5.00003pt too wide) detected at line 25
+ \OT1/cmr/m/n/10 54
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 26
+ \OT1/cmr/m/n/10 58
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 27
+ \OT1/cmr/m/n/10 59
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 28
+ \OT1/cmr/m/n/10 65
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 29
+ \OT1/cmr/m/n/10 65
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 30
+ \OT1/cmr/m/n/10 70
+ []
+
+[2]
+Overfull \hbox (5.00003pt too wide) detected at line 31
+ \OT1/cmr/m/n/10 72
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 32
+ \OT1/cmr/m/n/10 73
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 33
+ \OT1/cmr/m/n/10 75
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 34
+ \OT1/cmr/m/n/10 77
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 35
+ \OT1/cmr/m/n/10 79
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 36
+ \OT1/cmr/m/n/10 81
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 37
+ \OT1/cmr/m/n/10 84
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 38
+ \OT1/cmr/m/n/10 85
+ []
+
+)
+\tf@toc=\write3
+\openout3 = `pair_rmp.toc'.
+
+ [3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 67.
+ [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
+Overfull \hbox (68.0573pt too wide) detected at line 639
+\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 r\OT1/cmr/m/n/12 ) = [] []\
+OML/cmm/m/it/12 ;[]
+ []
+
+[14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28]
+[29] [30] [31]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1708
+.
+ (/local/TEX/lib/inputs/latex2e/base/omscmr.fd
+File: omscmr.fd 1998/03/27 v2.5g Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1708.
+
+ [32] [33]
+[34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
+[49] [50] [51] [52] [53]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2980.
+ [54] [55] [56] [57] [58] [59] [60] [61] [62] [63]
+[64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] (pair_rmp.bbl [85] [86] [87] [88] [89] [90]
+[91] [92] [93] [94] [95]) [96] [97] [98] [99] [100] [101] [102] (pair_rmp.aux) 
+) 
+Here is how much of TeX's memory you used:
+ 3503 strings out of 10928
+ 40472 string characters out of 448243
+ 138416 words of memory out of 263001
+ 6414 multiletter control sequences out of 10000+0
+ 15942 words of font info for 54 fonts, out of 200000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 36i,13n,26p,1137b,919s stack positions out of 300i,100n,500p,30000b,4000s
+
+Output written on pair_rmp.dvi (102 pages, 339460 bytes).

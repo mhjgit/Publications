@@ -1,0 +1,88 @@
+From machleid@deepthought.phys.uidaho.edu Tue Mar 24 01:17:35 1998
+Return-Path: <machleid@deepthought.phys.uidaho.edu>
+Delivery-Date: Tue, 24 Mar 1998 01:17:35 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Tue, 24 Mar 1998 01:17:29 +0100
+Received: from deepthought.phys.uidaho.edu (machleid@deepthought.phys.uidaho.edu [129.101.65.101]) 
+          by pat.uio.no ; Tue, 24 Mar 1998 01:17:25 +0100 (MET)
+Received: (from machleid@localhost) 
+          by deepthought.phys.uidaho.edu (8.8.5/8.8.5) id QAA13837;
+          Mon, 23 Mar 1998 16:16:58 -0800
+Date: Mon, 23 Mar 1998 16:16:58 -0800
+From: Ruprecht Machleidt <machleid@deepthought.phys.uidaho.edu>
+Message-Id: <199803240016.QAA13837@deepthought.phys.uidaho.edu>
+To: herbert.muether@uni-tuebingen.de
+Subject: deuteron
+Cc: artur@dirac.ecm.ub.es, m.h.jensen@fys.uio.no, 
+    machleid@deepthought.phys.uidaho.edu
+Status: R
+Content-Length: 2415
+
+Dear deuteron gang,
+
+these are my comments to the comments of the referees of our paper 
+"Phaseshift equivalent ..." (nucl-th/9712055).
+
+Referee A (=first referee in the package):
+(I follow his numbering scheme.)
+0) He is in prinsipal right: the 4 high-precision potentials are
+strictly speaking not phase equivalent; however they fit THE SAME
+NN DATA SET (namely, the Nijmegen 1993 NN data set) with 
+the same chi^2 per datum. However, even this leaves some room for
+variations of phase shifts; and if you look into the phase shift
+tables of the Argonne paper and the Nijm paper, you will notice it.
+However, I believe that these small differences do in no
+way affect what we investigate.
+
+1) Herbert: I can calculate the D/S state ratio for all potentials
+in Table I. For CD-Bonn, V_18, Nijm-I, NIjm-II, Bonn A B C, and
+Reid'68, I have D/S already.
+To calculate this for Argonne V_14, Urbana, pi Bonn, pi local,
+and pi Argonne, I need from Herbert the momnetum space deuteron
+waves (the way the come out of my deuteron code, if you used it;
+it then fits smooth into the my follow-up codes; numerical Fourier
+transform into r-space is necessary (which I can do); I do not
+know of any "direct" method).
+
+2) A figure analogous to Fig. 1 for D-wave is a good idea;
+let's include it.
+
+3) We may add in the caption of Fig. 2: 
+For V_SD, local OPEP = local OPE - delta, because
+the tensor potential has no delta function
+(the referees are obviously not too smart).
+
+4) pure coincidence.
+
+5) agreed.
+
+6) agreed.
+
+7) agreed; it's always good to have consistent notation.
+
+8) fine.
+
+
+
+Referee B:
+Concerning paragraph two of his report:
+One-pion-exchange is a Feynman diagram. The correct result for
+this Feynman diagram is what the correct (i.e., non-approximated)
+evaluation of this diagram according to the (quantum field
+theoretic) Feynman rules yield. This yields the relativistic OPE.
+If someone uses something else, he
+makes approximations to this correct result, e.g. the local
+approximation. If an approximation is justified or not is, in general,
+in physics investigated by comparing the exact result with
+the approximation. If there are large differences, we usually have
+doubts if the approximation is good or justified. Fig. 2 reveals that the
+differences are large.
+
+We may not explain this as stubbornly as I just did; but I guess
+this is our point of view here.
+
+
+With best regards to all of you,
+
+Ruprecht.
+

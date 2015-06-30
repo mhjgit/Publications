@@ -1,0 +1,38 @@
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{2}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}INTRODUCTION}{4}{}
+\contentsline {subsection}{\numberline {A}Theory of pairing in nuclear physics}{5}{}
+\contentsline {subsection}{\numberline {B}Outline}{7}{}
+\contentsline {subsubsection}{\numberline {1}Pairing in neutron stars}{7}{}
+\contentsline {subsubsection}{\numberline {2}Pairing phenomena in nuclei}{9}{}
+\contentsline {subsubsection}{\numberline {3}Thermodynamic properties of nuclei and level densities}{11}{}
+\contentsline {section}{\numberline {II}PAIRING IN INFINITE MATTER AND THE NUCLEON-NUCLEON INTERACTION}{13}{}
+\contentsline {subsection}{\numberline {A}Selected features of the nucleon-nucleon interaction}{14}{}
+\contentsline {subsection}{\numberline {B}Pairing gap equations}{17}{}
+\contentsline {subsection}{\numberline {C}Simple relations between the interaction and the pairing gap for identical particles}{21}{}
+\contentsline {subsubsection}{\numberline {1}The low density limit}{21}{}
+\contentsline {subsubsection}{\numberline {2}Relation to phase shifts}{24}{}
+\contentsline {subsection}{\numberline {D}Superfluidity in neutron star matter and nuclear matter}{28}{}
+\contentsline {subsubsection}{\numberline {1}Superfluidity in neutron star matter}{28}{}
+\contentsline {subsubsection}{\numberline {2}Proton-neutron pairing in symmetric nuclear matter}{36}{}
+\contentsline {subsection}{\numberline {E}Conclusions and open problems beyond BCS}{39}{}
+\contentsline {section}{\numberline {III}PAIRING CORRELATIONS IN FINITE NUCLEI}{41}{}
+\contentsline {subsection}{\numberline {A}Introduction to the nuclear shell model}{41}{}
+\contentsline {subsection}{\numberline {B}Tin isotopes, seniority, and the nucleon-nucleon interaction}{44}{}
+\contentsline {subsection}{\numberline {C}Isoscalar and isovector pair correlations}{48}{}
+\contentsline {subsection}{\numberline {D}Proton-neutron pairing and the Wigner energy}{53}{}
+\contentsline {subsection}{\numberline {E}Thermal properties of $pf$-shell nuclei}{55}{}
+\contentsline {subsection}{\numberline {F}Pair correlations and thermal response}{58}{}
+\contentsline {section}{\numberline {IV}RANDOM INTERACTIONS AND PAIRING}{60}{}
+\contentsline {section}{\numberline {V}THERMODYNAMIC PROPERTIES AND PAIRING CORRELATIONS IN NUCLEI}{65}{}
+\contentsline {subsection}{\numberline {A}Introduction}{65}{}
+\contentsline {subsection}{\numberline {B}Level densities from experiment and thermal properties}{70}{}
+\contentsline {subsection}{\numberline {C}Thermodynamics of a simple pairing model}{72}{}
+\contentsline {subsubsection}{\numberline {1}Entropy}{73}{}
+\contentsline {subsubsection}{\numberline {2}The free energy}{75}{}
+\contentsline {subsubsection}{\numberline {3}Distribution of zeros of the partition function}{77}{}
+\contentsline {subsection}{\numberline {D}Level densities from shell-model Monte Carlo calculations}{79}{}
+\contentsline {section}{\numberline {VI}CONCLUSIONS AND OUTLOOK}{81}{}
+\contentsline {section}{\numberline {}Acknowledgments}{84}{}
+\contentsline {section}{\numberline {}References}{85}{}

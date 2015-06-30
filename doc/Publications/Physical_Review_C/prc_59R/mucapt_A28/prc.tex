@@ -1,0 +1,556 @@
+
+\documentstyle[aps,multicol]{revtex}
+\draft
+
+\begin{document}
+
+\title{Towards the solution of the $C_{\rm P}/C_{\rm A}$ anomaly in
+shell-model calculations of muon capture}
+
+\author{T.\ Siiskonen, J.\ Suhonen}
+
+\address{Department of Physics, University of Jyv\"{a}skyl\"{a},
+     P.O.Box 35, FIN-40351 Jyv\"{a}skyl\"{a}, Finland}
+
+\author{M.\ Hjorth-Jensen}
+
+\address{Nordita, Blegdamsvej 17, DK-2100 Copenhagen \O, Denmark}
+
+\maketitle
+
+\begin{abstract}
+Recently many authors have performed shell-model calculations of
+nuclear matrix elements
+determining the rates of the ordinary muon
+capture in light nuclei.
+These calculations have employed well-tested
+effective interactions
+in large scale shell-model studies.
+For one of the nuclei of interest, namely
+$^{28}$Si, there exists recent experimental data which can be used to
+deduce the value of the ratio $C_{\rm P}/C_{\rm A}$ by using the calculated
+matrix elements. Surprisingly enough, all the shell-model results
+suggest a very small value ($\simeq 0$) for $C_{\rm P}/C_{\rm A}$, quite
+far from the PCAC prediction and recent data on muon capture in
+hydrogen. We show that this rather
+disturbing anomaly is solved by employing
+effective transition operators. This finding
+is also very important for realistic muon-capture calculations
+where one explores the strength of the scalar coupling in the weak
+charged current of leptons and hadrons.
+\end{abstract}
+
+\pacs{PACS numbers: 23.40.Bw, 23.40.Hc, 21.60.Cs}
+
+\begin{multicols}{2}
+
+The calculation of the nuclear matrix elements involved in the
+ordinary (non-radiative) capture of stopped negative muons by atomic nuclei has
+been of considerable interest because they enable to access the
+structure of the effective weak baryonic current. Due to the large mass
+of the captured muon the process involves a large energy release
+(roughly 100 MeV) and thus surveys the baryonic current deeper than the
+ordinary beta decay or the electron capture.
+In particular, the role of the induced pseudoscalar coupling $C_{\mathrm P}$
+becomes prominent. Furthermore, the same nuclear matrix elements can be
+used in the context of studies of the fundamental structure of the weak
+charged current of leptons and hadrons, in particular concerning
+contributions coming from the yet undetected scalar coupling of the current.
+
+In the past there have been many calculations of nuclear matrix
+elements involved in the muon-capture processes. These calculations
+have been either very schematic ones \cite{mor,GIL65,PAR78} or more
+realistic ones using various truncations of the nuclear shell model
+\cite{GIL65,PAR78,ERI64}. Ultimately, all these
+calculations have aimed at predicting the ratio $C_{\rm P}/C_{\rm A}$
+of the induced pseudoscalar and axial-vector
+coupling strengths of the weak baryonic current by exploiting the
+scarce experimental information
+on muon-capture rates in light nuclei.
+These calculations seem to suggest wide ranges of values as can be seen from
+Table \ref{values}.
+For reference, we also give the nuclear-model independent Goldberger-Treiman
+value $C_{\rm P}/C_{\rm A}=6.8$,
+which is obtained using the partially conserved axial current hypothesis
+(PCAC). It should be
+reasonable to assume that this relation between the induced pseudoscalar
+and axial-vector coupling constants will survive in finite nuclei
+although corrections may occur e.g., due to mesonic corrections in the weak
+vertices. In particular, this result should be roughly recovered using
+nuclear-structure calculations assuming the impulse approximation.
+Renormalizations within the impulse approximation have been extensively
+discussed for the $C_{\rm A}$ coefficient in the context of beta decay
+and electron capture.
+
+Recently, also the nuclear shell model has been used to
+calculate the needed nuclear matrix elements for muon capture
+\cite{GMI90,KUZ94,JOH96,MOF97,sii}.
+In \cite{GMI90} and \cite{KUZ94} no definitive conclusions about
+the $C_{\rm P}/C_{\rm A}$ ratio could be reached
+on the basis of their computed matrix elements.
+In \cite{JOH96} and \cite{sii} the $C_{\rm P}/C_{\rm A}$ ranges shown in
+Table \ref{values}
+were extracted from the available experimental muon capture rates.
+
+Very recently two important measurements of correlation coefficients of
+$\gamma$-radiation anisotropy in the capture of a polarized negative muon
+have been reported \cite{MOF97,bru}. For the allowed muon capture the
+angular correlation between the emitted $\gamma$-radiation and the neutrino
+is scaled by the coefficient $\alpha$ \cite{PAR78,MOF97} which is related
+to the coefficient
+        \begin{equation}
+       x\equiv M_1(2)/M_1(-1)
+       \label{xdef}
+        \end{equation}
+of \cite{bru} by
+        \begin{equation}
+          \alpha = {\sqrt{2}x - x^2/2 \over 1+x^2}\ .
+          \label{alphax}
+        \end{equation}
+Here the quantities $M_1(2)$ and $M_1(-1)$ are given by
+        \begin{eqnarray}
+        M_1(-1)&=&\sqrt{2\over3}\left\{\left({1\over3}G_{\rm P}-G_{\rm A}
+                \right)[101]+G_{\rm P}{\sqrt2\over3}[121]\right.\cr
+                &-& \left.{C_{\rm A}
+                \over M}[011p]+{C_{\rm V}\over M}\sqrt{2\over3}[111p]\right\},\\
+        M_1(2)&=&\sqrt{2\over3}\left\{\left(G_{\rm A}-{2\over3}G_{\rm P}\right)
+                [121]-G_{\rm P}{\sqrt2\over3}[101]\right.\cr &+&
+                \left.{C_{\rm A}\over M}\sqrt2
+                [011p]+{C_{\rm V}\over M}\sqrt{2\over3}[111p]\right\},
+        \end{eqnarray}
+where $M$ is the nucleon mass. The definitions of the involved reduced nuclear
+matrix elements are given in Table \ref{operators}. The constants $G_{\rm P}$
+and $G_{\rm A}$ are defined as (with $C_{\rm T}=0$)
+        \begin{eqnarray}
+        G_{\rm P}&=&(C_{\rm P}-C_{\rm A}-C_{\rm V}-C_{\rm M}){E_\nu\over2M},\\
+        G_{\rm A}&=&C_{\rm A}-(C_{\rm V}+C_{\rm M}){E_\nu\over2M}.
+        \end{eqnarray}
+
+Using the
+expressions of $M_1(2)$ and $M_1(-1)$ with Eqs.\ (\ref{xdef}) and (\ref{alphax})
+leads to rather contradictory results
+between different realistic nuclear models. In \cite{bru} the following values
+of $C_{\rm P}/C_{\rm A}$ were extracted using the different realistic
+nuclear models: $C_{\rm P}/C_{\rm A} = 3.4\pm 1.0$ and
+$C_{\rm P}/C_{\rm A} = 2.0\pm 1.6$ for the matrix elements of \cite{CIE76}
+and \cite{PAR81}, respectively. In the measurement of \cite{MOF97}
+the corresponding values are $C_{\rm P}/C_{\rm A} = 5.3\pm 2.0$ \cite{CIE76}
+and $C_{\rm P}/C_{\rm A} = 4.2\pm 2.5$ \cite{PAR81}. These results would
+indicate a small quenching of the $C_{\rm P}/C_{\rm A}$ ratio with respect
+to the PCAC value. However, using the more realistic nuclear matrix elements
+obtained from the full $1s0d$ shell-model calculation using
+the $sd$-shell effective interaction (USD)
+of Wildenthal {\em et al.} \cite{wil}, would lead to the
+very contradictory result of $C_{\rm P}/C_{\rm A} = 0.0\pm 3.2$ \cite{MOF97}
+by using the computed matrix elements of Junker et {\it al.} \cite{JUN95}.
+The same situation occurs for the calculation of \cite{sii} verifying
+thereby  the
+calculation of \cite{JUN95}. This result is the more surprising considering
+the fact that the USD interaction is found to be very succesful
+for the $1s0d$ nuclei in reproducing various spectroscopic quantities like
+energy spectra, Gamow--Teller decay properties, electromagnetic moments and
+transitions (see e.g., \cite{car,bro}) as well as strength functions of
+charge-exchange reactions \cite{JOH96}.
+
+The above anomaly in the $C_{\rm P}/C_{\rm A}$ predictions from
+state-of-the-art shell-model calculations is rather disturbing when
+contrasted with the experimental data. To give a deeper insight, we investigate
+in the present Letter the capture reaction
+${}^{28}_{14}{\mathrm Si}(0^+_{\mathrm gs})+\mu^-
+\rightarrow{}^{28}_{13}{\mathrm Al}(1^+_3)+\nu_\mu$ within
+the full shell-model framework and try to evaluate
+the ratio $C_{\rm P}/C_{\rm A}$ through the quantity $x$ and its measured
+values reviewed above. The needed muon-capture formalism is developed
+in \cite{mor} and reviewed in the case
+of shell-model calculations in \cite{KUZ94,sii}. The two-body interaction
+matrix elements used in the shell-model calculation are given by the
+USD interaction \cite{wil} and a microscopic effective
+interaction based on the recent charge dependent nucleon-nucleon
+interaction of Machleidt and co-workers,
+the CD-Bonn interaction \cite{mac96}. This is a meson-exchange
+potential model. Based on this nucleon-nucleon
+interaction, we derive a $G$-matrix appropriate for
+the $1s0d$ shell. This $G$-matrix is in turn used in a
+perturbative summation of higher-order terms using the
+so-called $\hat{Q}$-box approach described in e.g., Ref.\ \cite{hko95}.
+All diagrams through third-order in perturbation
+theory were used to define the $\hat{Q}$-box, while folded
+diagrams were summed to infinite order, see Ref.\  \cite{hko95}
+for further details. Below we will label results obtained with this
+effective interaction by CD-Bonn. We have also performed similar
+calculations with the Nijmegen I \cite{nim94}
+potential. The results were very close to those obtained with the CD-Bonn
+potential and hence skipped in the discussion below.
+These effective interactions
+are defined within the
+$1s0d$ shell, using $^{16}$O as closed shell core,
+and we perform a full shell-model calculation
+using the code OXBASH \cite{oxb}.
+
+It is important to keep in mind that the USD
+interaction is fitted to reproduce several properties of
+$1s0d$ shell nuclei, whereas the effective interaction based on the
+CD-Bonn meson-exchange potential model starts from the
+bare nucleon-nucleon interaction. The effects of the
+nuclear medium are then introduced through various terms
+in the many-body expansion. However, microscopic effective interactions
+like the above derived from the CD-Bonn and Nijmegen I interactions
+typically fail in reproducing properties of nuclei like $^{28}$Si
+or e.g., shell-closure in $^{48}$Ca \cite{hko95}.
+Therefore, Zuker and co-workers \cite{zuk94,zuk98} have adopted a slightly
+different scheme where the effective interaction is
+rewritten in terms of a multipole expansion \cite{zuk94}.
+The monopole part, which is proportional to the energy centroids,
+can then, see e.g., Ref.\
+\cite{zuk98}, be extracted from the spectra of particle
+and hole states of doubly magic cores. We have thus employed this
+prescription to our CD-Bonn and Nijmegen I effective interactions
+correcting thereby our diagonal terms with the phenomenological
+ones derived by Duflo and Zuker \cite{zuk98}. As discussed below, this
+improves considerably the spectroscopy of $^{28}$Si and $^{28}$Al
+compared with the unmodified interaction.
+
+The single-particle
+matrix elements were evaluated in the harmonic-oscillator basis
+by numerical integration of the radial
+part containing overlap of the initial and final harmonic-oscillator
+wave functions and the muonic $s$-state wave function.
+A harmonic oscillator basis was also employed in our calculation
+of the $G$-matrix which enters the computation of the effective
+interaction using an oscillator parameter of $1.72$ fm.
+
+In addition to using the
+traditional bare transition operators in the evaluation of the nuclear
+matrix elements for muon capture we will also employ
+effective transition operators. Such a calculation
+will be referred to as the renormalized one in the discussion
+below. To obtain effective one-body
+transition operators for muon capture, we evaluate all
+effective operator diagrams through second-order in the
+$G$-matrix obtained with  the CD-Bonn and Nijmegen I interactions,
+including folded diagrams. Such diagrams
+are discussed in the reviews by Towner \cite{towner87}
+and Ellis and Osnes \cite{eo77}. The abovementioned $G$-matrix
+obtained with the two potentials has been used in the evaluation
+of the various diagrams.
+Terms arising from meson-exchange currents have
+been neglected, similarly, also the possibility
+of having Isobars $\Delta$ as intermediate states are omitted
+since the focus here is  on nucleonic degrees
+of freedom only. Moreover, the nucleon-nucleon potentials
+we are employing do already contain such intermediate states.
+Including $\Delta$ degrees freedom may thus lead to a possible
+double-counting.
+Intermediate state excitations in each diagram
+up to $6\hbar\omega$ in oscillator energy were included
+in order to achieve a converged result. This is also in line
+with studies of effective interactions with weak tensor
+forces \cite{sommerman},
+such as the CD-Bonn potential employed here.
+
+As such, the determination of both the microscopic
+shell-model effective interaction and the effective
+one-body operators are calculated at the same level of many-body
+approach. Further details will be presented elsewhere \cite{ssh98}.
+In general, higher order terms introduce a correction of the
+order of $30\%$ compared with the bare transition operator.
+Since the USD interaction is an effective one acting
+within the $1s0d$ shell only, it is not possible to calculate
+a corresponding effective operator employing perturbative
+many-body methods. We will therefore employ the effective operators obtained
+from the CD-Bonn interaction for the USD calculation as well.
+
+Our results are summarized in Figs.\ \ref{nme}, and \ref{x} with
+$C_{\mathrm A}/C_{\mathrm V}=-1.251$. The coefficient $x$ is not sensitive
+to changes in the ratio $C_{\rm A}/C_{\rm V}$. Using the renormalized value
+$-1.0$ for $C_{\mathrm A}/C_{\mathrm V}$ changes $x$ only by a few percent for
+$C_{\rm P}/C_{\rm A}=7$. In fact, using the renormalized axial vector coupling
+may lead to double counting as the renormalization effects are already included
+in the renormalized single-particle matrix elements.
+
+Inspection of the nuclear matrix elements for muon
+capture of Fig.\ \ref{nme} shows
+that the USD and the CD-Bonn predictions are very similar to each other. The
+same is true also for the Gamow--Teller matrix elements $B({\rm GT})$, which are
+within 15\% from each other for the $1^+_3$ final state in ${}^{28}$Al.
+The effects of renormalization are some 10\% for the Gamow--Teller type
+matrix element $[101]$ and roughly 30\% for $[011p]$,  $[111p]$ and $[121]$
+matrix elements. In all cases the magnitude of the matrix element reduces
+when compared to the bare interaction.
+The differences are reflected also in the capture
+rates where we also get reduction.
+However, in the capture rate formula \cite{mor} we have products of the reduced nuclear
+matrix elements and thus the capture rate is very sensitive to changes in the
+magnitudes of the involved matrix elements. In the expression for $x$ (see
+Eq.\ (\ref{xdef})) we have only ratios of them: dividing
+$M_1(-1)$ and $M_1(2)$ by $[101]$,
+we get ratios of the matrix elements, where the renormalization effects
+give roughly a 30\% reduction for all of them.
+Thus $x$ might be less sensitive to systematical errors of the involved matrix
+elements than the capture rate.
+% where the renormalized USD calculation ($C_{\rm P}/C_{\rm A}=7$) shows much
+% better agreement with experiment ($(48.4\pm3.8)\times10^3$ 1/s) than the bare
+% one ($32.3\times10^3$ 1/s for the
+% bare USD vs.\ $42.6\times10^3$ 1/s for the renormalized USD). This applies to
+% the CD-Bonn calculation as well ($25.1\times10^3$ 1/s for the bare and
+% $36.9\times10^3$ 1/s for the renormalized CD-Bonn).
+
+%The USD interaction favours the extreme single-particle limit for the
+%ground state of ${}^{28}$Si, where all the valence
+%nucleons lie in the $d_{5/2}$ orbit. The CD-Bonn occupancies are more evenly
+%distributed over the various orbits, the largest one being $(d_{5/2})^8\,
+%(s_{1/2})^2\,(d_{3/2})^2$. Also the final
+%state in ${}^{28}$Al has slightly different structure: the USD
+%calculation indicates
+%that the partition $(d_{5/2})^{10}(s_{1/2})^1(d_{3/2})^1$ should be the most
+%important part in the $1^+_3$ wave function whereas the CD-Bonn interaction
+%predicts the state to be mostly of the $(d_{5/2})^8(s_{1/2})^2(d_{3/2})^2$
+%configuration. In general, CD-Bonn calculations favour the configurations which
+%have several particles lifted up from the extreme single-particle shell-model
+%limit which is, on the contrary, favoured by the USD interaction. However,
+%with both interactions the involved states have extensive configuration mixing
+%and thus this simple examination is only a rough test for the wave functions.
+%%%%%%%%%%%
+The leading configurations of the involved states in $^{28}$Si and $^{28}$Al
+are given in Table \ref{occ}.
+The calculated spectrum of $^{28}$Si is in good agreement with experiment for
+both interactions. The spectrum of $^{28}$Al is well reproduced by the USD,
+whereas the CD-Bonn shifts the doublet $(2_1,3_1)^+$ and the state $3^+_2$ up
+in energy (see Fig.\ \ref{spec}). Otherwise the agreement with experiment is
+reasonable, in particular the relative energies of the $1^+$ states are roughly
+correct.
+In spite of the different structures of the initial and final states of muon
+capture, emerging from the use of the two interactions, the renormalization
+of the muon capture matrix elements changes the value of $x$ to the same
+direction in both cases. Thus the renormalization effects upon the value of
+$x$ seem to be rather interaction independent.
+
+To extract an estimate for the ratio $C_{\rm P}/C_{\rm A}$, we have
+plotted $x$ of Eq.\ (\ref{xdef}) as a function of $C_{\rm P}/C_{\rm A}$. The
+experimental value $x=0.315\pm0.08$ was taken
+from \cite{MOF97}. With this choice  we obtain from Fig.\thinspace \ref{x}
+the range $0.4\le C_{\rm P}/C_{\rm A}\le 2.3$
+for the bare USD and CD-Bonn calculations
+in agreement with the USD result of \cite{JUN95} cited in \cite{MOF97}. Thus,
+for both of the adopted interactions the bare result is almost the
+same in spite of the basic difference in the origin
+of the used interactions, hinting to a strong
+suppression of the $C_{\rm P}/C_{\rm A}$ ratio for the studied
+muon-capture transition in the framework of the nuclear shell-model.
+As discussed before, this contradicts the
+shell-model calculation of the partial capture rates in
+$^{23}$Na (with a fitted $C_{\rm P}/C_{\rm A}$ ratio)
+as well as experimental data on hydrogen.
+
+Also the USD and CD-Bonn calculations with renormalized transition
+probabilities agree almost exactly and both yield a very different value for
+$C_{\rm P}/C_{\rm A}$ than the calculation using bare operators.
+Dividing $M_1(-1)$ and $M_1(2)$ by $[101]$, the ratios of the reduced matrix
+elements change roughly
+by the same amount, so the most important factors are the ones in front of
+the matrix element $[101]$.
+The renormalized result is $3.4\le C_{\rm P}/C_{\rm A}\le 4.8$,
+closer to the PCAC value.
+This result
+encourages us to believe that the anomaly in the $C_{\rm P}/C_{\rm A}$ ratio,
+inherent in the sophisticated shell-model calculations, has been lifted
+by introducing effective renormalized transitions operators acting in
+the muon-capture process. In this way the renormalized shell-model
+calculations yield a value for $C_{\rm P}/C_{\rm A}$ in $^{28}$Si
+compatible with data and expectations coming from other theoretical
+approaches.
+
+In conclusion, it is found that the renormalization of the transition
+operators is essential in the ordinary muon capture
+even in the case of an empirical effective interaction, which otherwise
+reproduces the spectroscopy of the involved nuclei extremely well. This is
+confirmed by the anisotropy data
+through the quantity $x=M_1(2)/M_1(-1)$. The effects of the renormalization
+seem to be rather interaction independent. Thus the renormalization has helped
+to reduce the $C_{\rm P}/C_{\rm A}$ anomaly inherent in the shell-model
+calculations leading to $C_{\rm P}/C_{\rm A}$ ratios closer to data coming
+from measurements of muon capture in hydrogen.
+Further analysis of this observation is in progress for other light
+nuclei in terms of the capture rates since anisotropy data is only
+available for $^{28}$Si. For other nuclei of interest the
+theoretical situation is more complicated than is the case in
+$^{28}$Si since they are either situated at the interface of the $0p$ and
+$1s0d$ shells or $1s0d$ and $1p0f$ shells, complicating thereby the evaluation
+of an effective interaction and increasing the dimensionality
+of the shell-model calculation. Research along such lines is
+in progress \cite{ssh98}.\newline
+
+We are much indebted to Prof.\
+A.\ P.\ Zuker for explaining the use of a recently derived
+correction scheme for effective interactions.
+J.\ S.\ thanks the Academy of
+Finland for financial support.
+This research has also been supported by
+the Nordic Academy of Advanced Studies (NorFA).
+
+\begin{thebibliography}{100}
+\bibitem{mor} M.\ Morita and A.\ Fujii, Phys.\ Rev.\ {\bf 118}, 606 (1960).
+\bibitem{GIL65} V.\ Gillet and D.\ Jenkins, Phys.\ Rev.\ {\bf 140}, B32 (1965).
+\bibitem{PAR78} R.\ Parthasarathy and V.\ N.\ Sridhar, Phys.\ Rev.\
+        C {\bf 18}, 1796 (1978).
+\bibitem{ERI64} T.\ Ericson, J.\ C.\ Sens, and H.\ P.\ C.\ Rood,
+        Nuovo Cim. {\bf 24}, 51 (1964).
+\bibitem{bar} G.\ Bardin {\it et al.}, Phys.\ Lett.\ B {\bf 104}, 320 (1981).
+\bibitem{jon} G.\ Jonkmans {\it et al.}, Phys.\ Rev.\ Lett.\ {\bf 77}, 4512
+        (1996).
+\bibitem{GMI90} M.\ Gmitro {\it et al.}, Nucl. Phys.\ {\bf A507}, 707 (1990).
+\bibitem{KUZ94} V.\ A.\ Kuz'min, A.\ A.\ Ovchinnikova and T.\ V.\ Tetereva,
+        Physics of Atomic Nuclei {\bf 57}, 1881 (1994).
+\bibitem{JOH96} B.\ L.\ Johnson {\it et al.}, Phys.\ Rev.\ C {\bf 54},
+        2714 (1996).
+\bibitem{MOF97} B.\ A.\ Moftah {\it et al.}, Phys.\ Lett.\ B {\bf 395},
+        157 (1997).
+\bibitem{sii} T.\ Siiskonen, J.\ Suhonen, V.\ A.\ Kuz'min, and T.\ V.\ Tetereva,
+        Nucl.\ Phys.\ {\bf A635}, 446 (1998).
+\bibitem{bru} V.\ Brudanin {\it et al.}, Nucl.\ Phys.\ {\bf A587}, 577 (1995).
+\bibitem{FUJ59} A.\ Fujii and H.\ Primakoff, Nuovo Cim.\ {\bf 12}, 327 (1959).
+\bibitem{CIE76} S.\ Ciechanowicz, Nucl. Phys.\ {\bf A267}, 472 (1976).
+\bibitem{PAR81} R.\ Parthasarathy and V.\ N.\ Sridhar, Phys.\ Rev.\
+        C {\bf 23}, 861 (1981).
+\bibitem{wil} B.\ H.\ Wildenthal, Prog.\ Part.\ Nucl.\ Phys.\ {\bf 11}, 5 (1984).
+\bibitem{JUN95} K.\ Junker {\it et al.}, Proc.\ IV Int.\ Symp.\ on Weak and
+        Electromagnetic Interactions in Nuclei (WEIN'95), Osaka, Japan, 1995,
+        eds. H.\ Ejiri, T.\ Kishimoto, and T.\ Sato (World Scientific, Singapore, 1996)
+        p. 394.
+\bibitem{car} M.\ Carchidi, B.\ H.\ Wildenthal, and B.\ A.\ Brown, Phys.\ Rev.\
+        C {\bf 34}, 2280 (1986).
+\bibitem{bro} B.\ A.\ Brown and B.\ H.\ Wildenthal, Nucl.\ Phys.\ {\bf A474}, 290
+        (1987).
+\bibitem{mac96} R.\ Machleidt, F.\ Sammarruca, and Y.\ Song,
+        Phys.\ Rev.\ C {\bf 53}, R1483 (1996).
+\bibitem{hko95} M.\ Hjorth-Jensen, T.\ T.\ S.\ Kuo, and E.\ Osnes,
+        Phys.\ Rep.\ {\bf 261}, 125 (1995).
+\bibitem{nim94} V.\ G.\ J.\ Stoks, R.\ A.\ M.\ Klomp,
+        C.\ P.\ F.\ Terheggen, and J.\ J.\
+        de Swart, Phys.\ Rev.\ C {\bf 49},   2950 (1994).
+\bibitem{oxb} B.\ A.\ Brown, A.\ Etchegoyen, and W.\ D.\ M.\ Rae,
+        The computer code OXBASH, MSU-NSCL report 524 (1988).
+\bibitem{zuk94} A.\ P.\ Zuker, Nucl.\ Phys.\ {\bf A576}, 65 (1994).
+\bibitem{zuk98} J.\ Duflo and A.\ P.\ Zuker, submitted to Phys.\ Rev.\ Lett.
+\bibitem{towner87} I.\ S.\ Towner, Phys.\ Rep.\ {\bf 155}, 263 (1987); B.\ Castel
+        and I.\ S.\ Towner, {\em Modern Theories
+        of Nuclear Moments}, (Clarendon Press, Oxford, 1990) pp.\ 55.
+\bibitem{eo77} P.\ J.\ Ellis and E.\ Osnes, Rev.\ Mod.\ Phys.\
+        {\bf 49}, 777 (1977).
+\bibitem{sommerman}H.\ M.\ Sommerman, H.\ M\"uther, K.\ C.\
+Tam, T.\ T.\ S.\ Kuo, and A.\ Faessler, Phys.\ Rev.\
+C {\bf 23}, 1765 (1981).
+\bibitem{ssh98} T.\ Siiskonen, J.\ Suhonen, and M.\ Hjorth-Jensen,
+        (unpublished).
+\bibitem{lede} C.\ Lederer and V.\ S.\ Shirley (Editors) {\em Table of Isotopes},
+        7th edition (Wiley, New York, 1978).
+\end{thebibliography}
+
+\end{multicols}
+
+\begin{figure}
+        \caption{The values of all the relevant
+         reduced nuclear matrix
+        elements for muon capture computed using the USD and CD-Bonn
+        interactions with and
+        without renormalization of the involved transition operators.
+        The recoil matrix elements $[\dots p]$ are
+        in units of fm$^{-1}$.}
+        \label{nme}
+\end{figure}
+
+\begin{figure}
+        \caption{The ratio $x=M(2)/M(-1)$ as a function of the ratio
+        $C_{\mathrm P}/C_{\mathrm A}$. The experimental
+        value \protect\cite{MOF97} with the error
+        limits is indicated by the horizontal lines.}
+        \label{x}
+\end{figure}
+
+\begin{figure}
+        \caption{Calculated and experimental \cite{lede} spectrum of
+        $^{28}$Al.}
+        \label{spec}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+\caption{Experimental data and earlier estimates exploiting the measured
+        muon-capture rates for the ratio $C_{\mathrm P}/C_{\mathrm A}$.}
+\begin{tabular}{lll}
+        Ref.\ & Value & Type of extraction \\
+        \hline
+        \cite{mor} & $4\le C_{\mathrm P}/C_{\mathrm A}\le 39$ & Schematic \\
+        \cite{GIL65,PAR78} & $3\le C_{\mathrm P}/C_{\mathrm A}\le 20$ &
+                Schematic, realistic \\
+        \cite{ERI64} & $13\le C_{\mathrm P}/C_{\mathrm A}$ & Realistic \\
+        \cite{bar} & $6.8\le C_{\mathrm P}/C_{\mathrm A}\le 10.6$ & Exp. \\
+        \cite{jon} & $8.8\le C_{\mathrm P}/C_{\mathrm A}\le 10.8$ & Exp. \\
+        \cite{JOH96} & $4.1\le C_{\mathrm P}/C_{\mathrm A}\le8.9$ & Shell-model \\
+        \cite{sii} & $-3.0\le C_{\mathrm P}/C_{\mathrm A}\le2.5$ & Shell-model \\
+         & $6.8$ & Goldberger--Treiman relation \\
+\end{tabular}
+\label{values}
+\end{table}
+
+\begin{table}
+\caption{Definition of the reduced nuclear matrix elements
+$\int U_{J_fM_f}^\dagger\sum_{s=1}^A{\rm e}^{-\alpha Zm_\mu'r_s}\Psi_s
+\tau_-^sU_{J_iM_i}d{\bf r}_1\cdots d{\bf r}_A={\cal M}[k\,w\,u\,(
+{\pm\atop p})](J_i\,M_i\,u\,M_f-M_i|J_f\,M_f)$. Functions $\cal Y$ are given by
+        ${\cal Y}^{\mu'-\mu}_{0\nu u}(\Omega)={1\over\sqrt{4\pi}}Y_{\nu,
+        \mu'-\mu}(\Omega)$, ${\cal Y}^{\mu'-\mu}_{1\nu u}(\Omega,\sigma)=
+        \sum_m(1\ -m\ \nu\ m-\mu+\mu'|u\ \mu'-\mu)Y_{\nu,m+\mu'-\mu}(\Omega)
+        {\cal Y}_{1,-m}(\sigma)$,
+where ${\cal Y}_{1m}(\sigma)=\sqrt{3\over4\pi}\sigma_m$.
+The functions $Y$ are the spherical harmonics, and $j_w(qr_s)$
+are spherical Bessel functions.}
+\begin{tabular}{ll}
+        Matrix element & $\Psi_s$\cr
+        \hline
+        $[0wu]$ & $j_w(qr_s){\cal Y}_{0wu}^{M_f-M_i}(\hat r_s)\delta_{wu}$\cr
+        $[1wu]$ & $j_w(qr_s){\cal Y}_{1wu}^{M_f-M_i}(\hat r_s,\sigma_s)$\cr
+        $[0wu\pm]$ & $\left[j_w(qr_s)\pm\alpha Z(m_\mu'/p_\nu
+           )j_{w\mp1}(qr_s)\right]{\cal Y}_{0wu}^{M_f-M_i}
+           (\hat r_s)\delta_{wu}$\cr
+        $[1wu\pm]$ & $\left[j_w(qr_s)\pm\alpha Z(m_\mu'/p_\nu
+           )j_{w\mp1}(qr_s)\right]{\cal Y}_{1wu}^{M_f-M_i}
+           (\hat r_s,\sigma_s)$\cr
+        $[0wup]$ & $ij_w(qr_s){\cal Y}_{0wu}^{M_f-M_i}(\hat
+           r_s)\sigma_s\cdot{\bf p}_s\delta_{wu}$\cr
+        $[1wup]$ & $ij_w(qr_s){\cal Y}_{1wu}^{M_f-M_i}(\hat r_s,{\bf p}_s)$\cr
+\end{tabular}
+\label{operators}
+\end{table}
+
+\begin{table}
+\caption{The five largest configurations of the indicated states. The partitions
+are given by $[n_1({\rm d}_{5/2})\ n_2({\rm s}_{1/2})\ n_3({\rm d}_{3/2})]$,
+where $n_1+n_2+n_3=12$.}
+\begin{tabular}{crcr}
+\multicolumn{4}{c}{$^{28}$Si ($0^+_{\rm g.s.}$)} \\
+\hline
+\multicolumn{2}{c}{USD} & \multicolumn{2}{c}{CD-Bonn} \\
+Partition & Amount (\%) & Partition & Amount (\%)\\
+\hline
+12 0 0 & 19.7 & 6 4 2 & 10.5 \\
+10 2 0 & 13.0 & 7 3 2 & 10.0 \\
+10 0 2 & 12.7 & 8 2 2 & 9.3 \\
+8 2 2  & 9.8 & 6 3 3 & 8.9 \\
+10 1 1 & 6.3 & 7 2 3 & 8.9 \\
+\hline
+\multicolumn{4}{c}{$^{28}$Al ($1^+_3$)} \\
+\hline
+10 1 1 & 17.4 & 8 2 2 & 16.2 \\
+9 2 1 & 10.9 & 7 2 3 & 13.6 \\
+8 2 2 & 9.2 & 7 3 2 & 8.5 \\
+8 3 1 & 8.0 & 6 3 3 & 7.5 \\
+10 2 0 & 7.5 & 6 2 4 & 6.3 \\
+\hline
+\end{tabular}
+\label{occ}
+\end{table}
+
+\end{document}
+

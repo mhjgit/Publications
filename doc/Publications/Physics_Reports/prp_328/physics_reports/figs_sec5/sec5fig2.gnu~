@@ -1,0 +1,10 @@
+set terminal pslatex
+set output "sec5fig2.tex"
+set xrange [9.:18.]
+set yrange [0.5:2.5]
+set xlabel "$R$ km"
+set ylabel "$M/M_{\odot}$"
+plot "rm013.dat"  title "$\delta=0.13$" w l 1 , "rm02.dat" title "$\delta=0.2$"  w l 2, "rm03.dat" title "$\delta=0.3$"  w l 3, "rm04.dat" title "$\delta=0.4$"  w l 4
+
+
+

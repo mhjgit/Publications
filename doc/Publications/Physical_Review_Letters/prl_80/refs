@@ -1,0 +1,440 @@
+
+From hh@nordita.dk Sat Mar 14 13:05:18 1998
+Return-Path: <hh@nordita.dk>
+Delivery-Date: Sat, 14 Mar 1998 13:05:18 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Sat, 14 Mar 1998 13:05:09 +0100
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Sat, 14 Mar 1998 13:05:09 +0100 (MET)
+Received: (from hh@localhost) by norserv.nordita.dk (8.8.5/8.8.5) id NAA19365 
+          for mjensen; Sat, 14 Mar 1998 13:04:10 +0100 (MET)
+Date: Sat, 14 Mar 1998 13:04:10 +0100 (MET)
+From: Henning Heiselberg <hh@nordita.dk>
+Message-Id: <199803141204.NAA19365@norserv.nordita.dk>
+Subject: ln6600
+To: mjensen@nordita.dk
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Content-MD5: snMPnUs+Qd+bf4zdujL34g==
+Status: RO
+Content-Length: 11354
+
+------------- Begin Forwarded Message -------------
+
+>From prl@aps.org Fri Mar 13 19:24:52 1998
+Date: Fri, 13 Mar 1998 13:24:26 -0500 (EST)
+From: prl@aps.org (PR/L-email)
+To: hh@nordita.dk
+Subject: ln6600
+Cc: prl@aps.org
+
+
+LN6600
+Phase transitions in rotating neutron stars 
+Heiselberg,Henning/Hjorth-Jensen,Morten/
+
+
+        Dear Dr. Heiselberg:
+
+              The above manuscript has been reviewed by our
+        referee(s).
+
+              The resulting reports include a critique which we
+        feel is serious enough that it must be answered before we
+        can reach a decision on the disposition of the paper. We
+        enclose pertinent comments.
+
+              You may choose to resubmit the manuscript with
+        revisions you find appropriate.  Please accompany any
+        resubmittal by a summary of the changes made, and a brief
+        response to all recommendations and criticisms.
+
+                                   Sincerely yours,
+
+                                   Stanley G. Brown
+                                   Editor
+                                   Physical Review Letters
+----------------------------------------------------------
+Referee A
+
+Referee's Report on LN6600 "Phase transitions..." by Heiselberg and
+Hjorth-Jensen
+
+This paper presents a calculation of physical features of a rotating
+neutron star near a critical velocity for the generic case of
+braking-induced phase transitions. The paper is sound and represents
+an interesting advance in the ongoing studies of dense matter physics.
+However, I do not believe that the reported results should warrant
+publication in PRL. This opinion is basically based on the unlikely
+observational confirmation of the calculated signatures for
+such an event and the
+impression that it would not stimulate a specially intense activity
+in the field. I feel that the paper, possibly after some expansion,
+is more appropiate for a regular article in PRD. A detailed list of
+objections and suggestions for improving the manuscript follows:
+
+a) The timescale for the transient is not given and would constitute
+a primary need for a dedicated observational program. Too short a
+timescale (say hours-days) would need a continuous monitoring of the
+possible sources, which is well beyond the capabilities in the
+foreseeable future.
+
+b) The value of $\omega^{2} \, \sim \, 10^{-7} \, P^{-2}$ is around
+$10^{-4}$ for the Crab pulsar today, there are no candidates in the
+$ms$ range (such that $\omega^{2} \, \sim \, 10^{-1}$) spinning
+down substantially. The subset of $ms$ pulsars, as is well-known,
+present extremely low values of $\dot{P}$ and no signal of
+"normal" glitches. The widely accepted scenario that they have been
+recycled does not leave room for rotationally-induced phase
+transitions either, since all them should have occurred during the
+matter-transfer phase.
+
+c) Since the observed $\Omega$ and derivatives are a property of the
+crust, a readjustment (energy release ?)
+should occur in the case of a first-order
+phase transition. The authors may wish to comment on the issue.
+
+d) In the presented models the observed braking index grows towards
+3. The only available cases of young pulsars (Crab and Vela) seem
+to indicate that $\dot{n_{obs}} \, \leq \, 0$ since their discovery.
+This may simply reflect that all phase transitions have already
+happened inside them, but it may be useful for the authors. By the
+way, it would be useful to distinguish the {\it observational}
+quantity $n(\Omega)$ from the {\it theoretical} $n$ exponent that
+appears in the power-law in eq.(14).
+
+e) Finally, it would be important to discuss in more detail the
+theoretical issue of the simplified eq.(10) vs. the full Hartle's
+equations. The lack of space limitation in PRD allows such an
+expansion for the benefit of the interested colleagues.
+-----------------------------------------------------------
+Referee B
+
+Refree's report on LN6600
+Phase transitions in rotating neutron stars
+By: Heiselberg and Hjorth-Jensen
+
+This letter reports studies of the interesting behavior a pulsar can
+have if a first order phase transition occurs in the steller matter
+as the pulsar slows down to a critical angular velocity.  The letter
+is well written, however, the authors should comment on the following
+conscerns.
+
+1. On page 2, second para, they make the standard approximation of
+   slow rotation valid when the period is larger than a few milli-
+   seconds.  However, their critical period is just one millisecond.
+   Is the approximation valid for the critical period ?
+
+2. Page 7, last line : mantle of quark ( or nucleon ) matter ?
+
+3. It appears that the interesting effects are proportional to the
+   change in density, rho_2 - rho_1.  Now if rho_2 - rho_1 is large,
+   it is likely that these phases have different charge densities
+   without leptons.  One then will necessarily have mixed phase
+   regions reducing or eliminating the interesting stucture at
+   critical velocity, even for liquid-solid transitions ?
+
+4. The presented study assumes that the latent heat of the phase
+   transition has no effect on the dynamics and uses zero temperature
+   equation of state.  Is this obvious ?
+
+
+
+                                                               elec_sub.asc
+                                                               revised 7/97
+
+                 USE ELECTRONIC MODES TO SUBMIT AND RESUBMIT
+                      TO THE PR/PRL COMPUSCRIPT PROGRAM
+
+Manuscripts intended for the production compuscript-conversion program should 
+be submitted and resubmitted in electronic, not paper, form.  Upload via the 
+APS Web-submission site at the URL: http://publish.aps.org/ESUB/, send 
+electronic mail to prXtex@aps.org (where X=a, b, c, d, e, or l for Physical 
+Review A, B, C, D, E or Letters), or mail a DOS-formatted diskette.  All of 
+the textual material of the paper (including tables, captions, etc.) should 
+be in electronic form, as a single file. For the initial electronic-mail 
+submission, use as the subject ``submit'' followed by the three-letter 
+abbreviation for the name of the journal (pra, prb, prc, prd, pre, or prl) 
+and the last name of the first author (for example, ``submit pra jones'' or 
+``submit PRA Jones''); the first part of the message should consist of a 
+filled-out submission form (the blank form is available at the above URL) or 
+a submittal letter, giving the postal address of the corresponding author, 
+the journal section intended, and other information.
+
+Figures for an electronic submission must be received in at least 
+review-quality form before editorial processing can begin.  Web upload or 
+electronic-mail transmission (one figure per file) of PostScript-formatted 
+figures will normally meet this need.  For color or continuous-tone
+PostScript figures, hard-copy originals are also required.  The originals
+are needed to ensure that the reproductions created from the electronic
+figure files are satisfactory.  (For email transmission, use a subject 
+line similar to that for the text file with the addition of the figure 
+number, e.g., ``submit pra jones fig1''.)  Alternatively, you could send 
+scanner-reproducible journal-quality ``originals'' immediately by overnight 
+mail.  A third possibility is to send review-quality figures by fax 
+(516-591-4141), while the ``originals'' are sent by conventional or overnight 
+mail as soon as possible; please mark the fax transmission as being part of
+an electronic-mail submission.  On resubmission, it is only necessary to 
+resend your figures if the originals in our file are no longer valid.  
+
+Paper copies of the manuscript text should not be sent as a followup unless 
+the electronic-mail transmission has been unsuccessful.  
+
+A diskette submission should be accompanied by a single paper copy of the 
+manuscript, and by scanner-reproducible ``original'' figures.
+
+Include the copyright transfer form with the original figures or forward it 
+alone by conventional mail.  An electronic version of the form is available 
+at the URL http://publish.aps.org/ or via ftp to aps.org in the /pub/jrnls 
+directory, as the files copytrnsfr.asc, etc. (but do not return it 
+electronically, as we need a handwritten signature).
+
+It is important to confirm the accuracy of bibliographic information in 
+references.  This has become more important now that the journal is online.  
+Hyperlinks will be programmed to enable readers to ``click'' on references 
+and jump directly to the material cited.  If your reference citations are 
+incorrect or incomplete (e.g., missing author name, or an incorrect volume 
+number or page), the associated hyperlinks may fail, and the usefulness of 
+your paper in the online environment may be diminished.
+
+Resubmission must be in electronic form if the paper is to remain eligible 
+for the production compuscript-conversion program.  Also, macros and other 
+technical problems with the file which have been pointed out by our 
+compuscript staff must be eliminated by this stage if the paper is to remain 
+eligible.  Resubmission forms are available at http://publish.aps.org/ESUB.  
+For an email resubmission, include the filled-out form as the first part of 
+the message which contains the modified manuscript; alternatively, provide 
+as the first part of the message a summary of changes made and a brief 
+response to all recommendations and criticisms, and also state whether or 
+not the figures have been modified, and update any other relevant 
+information.  Use as the subject of the message ``resub'' followed by the 
+manuscript code number and the last name of the first author; for example, 
+``resub AB1234 Smith'' or ``resub ab1234 smith''.
+
+For further information about procedures for electronic submission, see the 
+General Information for Contributors published in the first issue of each 
+volume of the journal, and material available on APS' ftp and World Wide Web 
+servers.  In particular consult the document at the URL 
+ftp://aps.org/pub/jrnls/esubinform.asc or visit the Web-submission page 
+http://publish.aps.org/ESUB.
+
+  
+
+
+CHECK LIST for electronic submission and resubmission of PR/PRL compuscripts:
+
+
+[] Submit or resubmit electronically:
+
+   * Web upload
+   * Electronic mail
+
+       submission: SUBJECT: submit pra jones
+       resubmission: SUBJECT: resubmit ab1234 jones
+
+   * Internet: no hard copy
+   * DOS-formatted disk: one hard copy
+
+[] For electronic mail, send submission form (or cover letter) and 
+   compuscript as one file.
+
+[] Submit figures as separate PostScript files (one per file), by fax, 
+   or by overnight mail (send originals of fax figures by conventional 
+   mail as soon as possible).  Color figures are accepted.
+
+[] Confirm the accuracy of bibliographic information in references.
+
+[] Compose compuscript in REVTeX, without custom low-level-formatting 
+   macros, or private style files.  Keystroke-saving macros (via 
+   \def and \newcommand) may be used.
+
+[] Addresses:
+
+   * Web upload: http://publish.aps.org/ESUB/
+   * Compuscripts, PostScript files: pratex@aps.org, prbtex@aps.org, ... , 
+       prltex@aps.org
+   * Fax figures:  (USA) 516-591-4141
+   * For other correspondence: pra@aps.org, prb@aps.org, ... , prl@aps.org
+   * For other information: 
+       APS Research Journals home page http://publish.aps.org/
+
+
+
+
+
+
+------------- End Forwarded Message -------------
+
+
+From stothart@jet.es Mon Mar 16 14:08:02 1998
+Return-Path: <stothart@jet.es>
+Delivery-Date: Mon, 16 Mar 1998 14:08:02 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Mon, 16 Mar 1998 14:07:41 +0100
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Mon, 16 Mar 1998 14:07:27 +0100 (MET)
+Received: from proxy.jet.es (proxy.jet.es [194.179.100.4]) 
+          by norserv.nordita.dk (8.8.5/8.8.5) with ESMTP id OAA24521 
+          for <mjensen@nordita.dk>; Mon, 16 Mar 1998 14:06:26 +0100 (MET)
+Received: from [195.55.159.71] (infon752.jet.es [195.55.158.240]) 
+          by proxy.jet.es (8.8.5/8.8.5) with SMTP id NAA04674;
+          Mon, 16 Mar 1998 13:07:44 -0100 (GMT)
+X-Sender: stothart@jet.es (Unverified)
+Message-Id: <v01540b05b132d30eae4f@[195.55.159.71]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Mon, 16 Mar 1998 14:05:54 +0100
+To: eganc@shadow.dbapic.com.au, crisdos@anatomy.su.oz.au, 
+    106447.530@compuserve.com, amrep@camtech.net.au, amrep@camtech.net.au, 
+    Janet Nash <verona@netspace.net.au>, fhoff@s054.aone.net.au, JWL@udlst.dk, 
+    "J.R.Harris" <RobinHarris@bigpond.com>, 
+    Meredith Jones <jones_meredith@hotmail.com>, mjensen@nordita.dk, 
+    Nick.dosRemedios@uts.edu.au, annalise@mpx.com.au, pduffy@interplanet.es, 
+    pellep5@frode.ruc.dk, Peter Pitt <101761.1743@compuserve.com>, 
+    Fromform2@aol.com, "Terrence M. Ryan" <tmrco9@idt.net>, 
+    masarch <masarch@enternet.com.au>, toni@loom.net.au
+From: stothart@jet.es (Stothart)
+Subject: New e-mail address
+Status: RO
+Content-Length: 136
+
+Hello there,
+
+We now have a new e-mail address: stothart@jet.es
+So update your address book!
+
+Until the next mail,
+love the Stotharts
+
+
+
+From Niels.Walet@umist.ac.uk Thu Mar 12 16:01:21 1998
+Return-Path: <Niels.Walet@umist.ac.uk>
+Delivery-Date: Thu, 12 Mar 1998 16:01:20 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Thu, 12 Mar 1998 16:01:00 +0100
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Thu, 12 Mar 1998 16:00:55 +0100 (MET)
+Received: from walet.phy.umist.ac.uk (root@walet.phy.umist.ac.uk [130.88.128.41]) 
+          by norserv.nordita.dk (8.8.5/8.8.5) with ESMTP id PAA14474 
+          for <mjensen@nordita.dk>; Thu, 12 Mar 1998 15:59:57 +0100 (MET)
+Received: from umist.ac.uk (localhost [127.0.0.1]) 
+          by walet.phy.umist.ac.uk (8.8.4/8.8.4) with ESMTP id PAA09447;
+          Thu, 12 Mar 1998 15:02:10 GMT
+Sender: mccsnrw@walet.phy.umist.ac.uk
+Message-ID: <3507F8F1.AA395446@umist.ac.uk>
+Date: Thu, 12 Mar 1998 15:02:10 +0000
+From: "Niels R. Walet" <Niels.Walet@umist.ac.uk>
+Organization: UMIST
+X-Mailer: Mozilla 4.03 [en] (X11; I; Linux 2.0.27 i586)
+MIME-Version: 1.0
+To: mjensen@nordita.dk
+CC: Ray Bishop <R.F.Bishop@umist.ac.uk>, Niels Walet <Niels.Walet@umist.ac.uk>
+Subject: workshop
+Content-Type: multipart/alternative; 
+              boundary="------------69743B150F192A293D3649C4"
+Status: RO
+Content-Length: 2210
+
+
+--------------69743B150F192A293D3649C4
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Morten,
+
+The micro-mini-Workshop here at UMIST is going to take place in the week
+beginning  7 June.  We plan to start on monday morning, and intend to
+continue until friday. We may wish to use saturday as well, if most of
+the participants stay around (or plan an excursion...)
+
+At the moment we know that Morten Hjorth-Jensen, Kalman Varga, Ryoji
+Okamoto and Kenji Suzuki will attend. We are working on extending the
+list, and shall let you know what happens as soon as we have more
+information.
+
+I hope this is still OK with you. Please let me know a.s.a.p. when your
+plans have become more definite.
+Niels
+
+--
+Dr Niels R. Walet  http://www.phy.umist.ac.uk/Theory/people/walet.html
+Dept. of Physics,  UMIST,   P.O. Box 88,    Manchester,  M60 1QD,  U.K.
+Phone: +44(0)161-2003693 Fax: +44(0)161-2004303 Niels.Walet@umist.ac.uk
+
+
+
+--------------69743B150F192A293D3649C4
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<HTML>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#FF0000" ALINK="#000088">
+Morten,
+
+<P>The micro-mini-Workshop here at UMIST is going to take place in the
+week beginning&nbsp; 7 June.&nbsp; We plan to start on monday morning,
+and intend to continue until friday. We may wish to use saturday as well,
+if most of the participants stay around (or plan an excursion...)&nbsp;
+
+<P>At the moment we know that Morten Hjorth-Jensen, Kalman Varga, Ryoji
+Okamoto and Kenji Suzuki will attend. We are working on extending the list,
+and shall let you know what happens as soon as we have more information.
+
+<P>I hope this is still OK&nbsp;with you. Please let me know a.s.a.p. when
+your plans have become more definite.
+<BR>Niels
+<PRE>--&nbsp;
+Dr Niels R. Walet&nbsp; <A HREF="http://www.phy.umist.ac.uk/Theory/people/walet.html">http://www.phy.umist.ac.uk/Theory/people/walet.html</A>
+Dept. of Physics,&nbsp; UMIST,&nbsp;&nbsp; P.O. Box 88,&nbsp;&nbsp;&nbsp; Manchester,&nbsp; M60 1QD,&nbsp; U.K.
+Phone: +44(0)161-2003693 Fax: +44(0)161-2004303 Niels.Walet@umist.ac.uk</PRE>
+&nbsp;
+</BODY>
+</HTML>
+
+--------------69743B150F192A293D3649C4--
+
+
+From S.Vincent@surrey.ac.uk Fri Mar 13 15:37:07 1998
+Return-Path: <S.Vincent@surrey.ac.uk>
+Delivery-Date: Fri, 13 Mar 1998 15:37:07 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Fri, 13 Mar 1998 15:36:39 +0100
+Received: from maile.surrey.ac.uk (maile.surrey.ac.uk [131.227.102.10]) 
+          by pat.uio.no ; Fri, 13 Mar 1998 15:36:38 +0100 (MET)
+Received: from marie.ph.surrey.ac.uk by maile.surrey.ac.uk with SMTP-local (PP) 
+          with ESMTP; Fri, 13 Mar 1998 14:36:09 +0000
+Received: from slarty.ph.surrey.ac.uk (slarty.ph.surrey.ac.uk [131.227.22.24]) 
+          by marie.ph.surrey.ac.uk (8.8.7/8.8.7) with ESMTP id OAA16120 
+          for <m.h.jensen@fys.uio.no>; Fri, 13 Mar 1998 14:36:24 GMT
+Received: (from php1sv@localhost) by slarty.ph.surrey.ac.uk (8.8.7/8.8.7) 
+          id OAA14249; Fri, 13 Mar 1998 14:36:22 GMT
+Date: Fri, 13 Mar 1998 14:36:22 GMT
+From: Mr Stuart M Vincent <S.Vincent@surrey.ac.uk>
+Message-Id: <199803131436.OAA14249@slarty.ph.surrey.ac.uk>
+To: m.h.jensen@fys.uio.no
+Subject: Shell model calcs. in A=60 region
+Cc: S.Vincent@surrey.ac.uk
+X-Sun-Charset: US-ASCII
+Status: RO
+Content-Length: 587
+
+
+
+Hi Morton, 
+
+ My name is Stuart Vincent From the University of Surrey, and my 
+boss Paddy Regan has forwarded your name to me regarding shell 
+model calcualtions in nuclei around the N=Z=28 shell gap. 
+ I am coming to the end of my thesis and I have produced decay 
+schemes of yrast states up to about spin 10 hbar in 61Zn, 61Cu 
+and 58Ni, with spin assignments made from an angular distribution 
+analysis. I wonder if you would be able to help me with shell model 
+calcualtions for these nuclei with a view to a joint publication.
+Thankyou for your interest,
+
+all the best
+
+  Stuart.
+

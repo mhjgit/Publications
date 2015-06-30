@@ -1,0 +1,205 @@
+From prc@aps.org Thu May  4 21:40:42 2000
+Date: Thu, 4 May 2000 14:22:30 -0400 (EDT)
+From: PR/C-email <prc@aps.org>
+To: morten.hjorth-jensen@fys.uio.no
+Cc: prc@aps.org
+Subject: cm7113
+
+
+CM7113
+Entropy in hot $"" sup 161,162_Dy and $"" sup 171,172_Yb nuclei 
+Guttormsen,M./Bjerve,A./Hjorth-Jensen,M./Melby,E./Rekstad,J./Schiller,A.
+
+        Dear Dr. Hjorth-Jensen:
+
+              The above manuscript has been reviewed by one of our
+        referees.  Comments from the report are enclosed for your
+        consideration.
+
+
+              When you resubmit your manuscript, please include a
+        summary of the changes made, and a brief response to all
+        recommendations and criticisms.
+
+        Sincerely,
+
+        Debbie Brodbar
+        Senior Assistant to the Editor
+        Physical Review C
+
+-------------------------------------------------------------------------------
+.PA
+2nd Report of the Referee:
+
+Referee report on the paper
+
+"Entropy in hot 161,162 Dy and 171,172 Yb nuclei" (revised version)
+
+by M. Guttormsen et. al.
+
+The revision has now clarified the discussion.
+Below, I suggest two minor changes.
+
+(I) Having understood the point by the authors concerning the scaling
+of the entropy, I think that the discussion on page 12 is somewhat misleading.
+Below, I first presents my arguments on this point, for the authors to
+consider, and then I suggest a small correction.
+
+The odd systems are here smaller than the even systems, and eventually
+at higher temperature the larger size of the even system will result in a
+higher entropy, as well. Displaying the entropy as function of energy
+obscures this somehow, but allows one to compare data and model without
+use of the extrapolation of the level density. I feel that the particle
+number differences displayed on figures 6 and 11 are more a property of the
+pairing gap, related to the back-shift energy of the level density, than
+it is related to the question whether the entropy is an extensive quantity.
+In my view, figure 11 is more informative, together with figure 5, since
+they display the transition from a quasiparticle picture, with the odd
+system carrying more entropy, towards a picture with true extensive behavior,
+for which the difference in the level density parameters "a" should scale with
+the full nucleon number. This may be in accordance with the discussion on
+page 12, where the topic of extensive behavior is introduced: The pairing
+force is an effective interaction, which stretches over the whole volume,
+whereas the independent particle motion associated with the underlying
+levels will scale in an extensive way for a saturating system.
+
+I suggest on page 12 to replace the sentence :
+"However, if we assume that the entropy is an extensive quantity, i.e.
+that it goes like $S=nS_1$ ..."
+
+by
+
+"However, it may be fruitful to investigate whether the entropy is
+an extensive quantity with respect to the number of quasiparticles,
+in which case it goes like $S=nS_1$ ..."
+
+(II) As a minor point, I think that the words "since" and "however" should
+be taken out of the sentence beginning on line 4 of page 17, and that
+"in Fig 11." should be replaced by "Fig. 11" in the following
+sentence.
+__________________________________________________________________
+
+
+
+                                                               elec_sub.asc
+                                                               revised 7/97
+
+                 USE ELECTRONIC MODES TO SUBMIT AND RESUBMIT
+                      TO THE PR/PRL COMPUSCRIPT PROGRAM
+
+Manuscripts intended for the production compuscript-conversion program should 
+be submitted and resubmitted in electronic, not paper, form.  Upload via the 
+APS Web-submission site at the URL: http://publish.aps.org/ESUB/, send 
+electronic mail to prXtex@aps.org (where X=a, b, c, d, e, or l for Physical 
+Review A, B, C, D, E or Letters), or mail a DOS-formatted diskette.  All of 
+the textual material of the paper (including tables, captions, etc.) should 
+be in electronic form, as a single file. For the initial electronic-mail 
+submission, use as the subject ``submit'' followed by the three-letter 
+abbreviation for the name of the journal (pra, prb, prc, prd, pre, or prl) 
+and the last name of the first author (for example, ``submit pra jones'' or 
+``submit PRA Jones''); the first part of the message should consist of a 
+filled-out submission form (the blank form is available at the above URL) or 
+a submittal letter, giving the postal address of the corresponding author, 
+the journal section intended, and other information.
+
+Figures for an electronic submission must be received in at least 
+review-quality form before editorial processing can begin.  Web upload or 
+electronic-mail transmission (one figure per file) of PostScript-formatted 
+figures will normally meet this need.  For color or continuous-tone
+PostScript figures, hard-copy originals are also required.  The originals
+are needed to ensure that the reproductions created from the electronic
+figure files are satisfactory.  (For email transmission, use a subject 
+line similar to that for the text file with the addition of the figure 
+number, e.g., ``submit pra jones fig1''.)  Alternatively, you could send 
+scanner-reproducible journal-quality ``originals'' immediately by overnight 
+mail.  A third possibility is to send review-quality figures by fax 
+(516-591-4141), while the ``originals'' are sent by conventional or overnight 
+mail as soon as possible; please mark the fax transmission as being part of
+an electronic-mail submission.  On resubmission, it is only necessary to 
+resend your figures if the originals in our file are no longer valid.  
+
+Paper copies of the manuscript text should not be sent as a followup unless 
+the electronic-mail transmission has been unsuccessful.  
+
+A diskette submission should be accompanied by a single paper copy of the 
+manuscript, and by scanner-reproducible ``original'' figures.
+
+Include the copyright transfer form with the original figures or forward it 
+alone by conventional mail.  An electronic version of the form is available 
+at the URL http://publish.aps.org/ or via ftp to aps.org in the /pub/jrnls 
+directory, as the files copytrnsfr.asc, etc. (but do not return it 
+electronically, as we need a handwritten signature).
+
+It is important to confirm the accuracy of bibliographic information in 
+references.  This has become more important now that the journal is online.  
+Hyperlinks will be programmed to enable readers to ``click'' on references 
+and jump directly to the material cited.  If your reference citations are 
+incorrect or incomplete (e.g., missing author name, or an incorrect volume 
+number or page), the associated hyperlinks may fail, and the usefulness of 
+your paper in the online environment may be diminished.
+
+Resubmission must be in electronic form if the paper is to remain eligible 
+for the production compuscript-conversion program.  Also, macros and other 
+technical problems with the file which have been pointed out by our 
+compuscript staff must be eliminated by this stage if the paper is to remain 
+eligible.  Resubmission forms are available at http://publish.aps.org/ESUB.  
+For an email resubmission, include the filled-out form as the first part of 
+the message which contains the modified manuscript; alternatively, provide 
+as the first part of the message a summary of changes made and a brief 
+response to all recommendations and criticisms, and also state whether or 
+not the figures have been modified, and update any other relevant 
+information.  Use as the subject of the message ``resub'' followed by the 
+manuscript code number and the last name of the first author; for example, 
+``resub AB1234 Smith'' or ``resub ab1234 smith''.
+
+For further information about procedures for electronic submission, see the 
+General Information for Contributors published in the first issue of each 
+volume of the journal, and material available on APS' ftp and World Wide Web 
+servers.  In particular consult the document at the URL 
+ftp://aps.org/pub/jrnls/esubinform.asc or visit the Web-submission page 
+http://publish.aps.org/ESUB.
+
+  
+
+
+CHECK LIST for electronic submission and resubmission of PR/PRL compuscripts:
+
+
+[] Submit or resubmit electronically:
+
+   * Web upload
+   * Electronic mail
+
+       submission: SUBJECT: submit pra jones
+       resubmission: SUBJECT: resubmit ab1234 jones
+
+   * Internet: no hard copy
+   * DOS-formatted disk: one hard copy
+
+[] For electronic mail, send submission form (or cover letter) and 
+   compuscript as one file.
+
+[] Submit figures as separate PostScript files (one per file), by fax, 
+   or by overnight mail (send originals of fax figures by conventional 
+   mail as soon as possible).  Color figures are accepted.
+
+[] Confirm the accuracy of bibliographic information in references.
+
+[] Compose compuscript in REVTeX, without custom low-level-formatting 
+   macros, or private style files.  Keystroke-saving macros (via 
+   \def and \newcommand) may be used.
+
+[] Addresses:
+
+   * Web upload: http://publish.aps.org/ESUB/
+   * Compuscripts, PostScript files: pratex@aps.org, prbtex@aps.org, ... , 
+       prltex@aps.org
+   * Fax figures:  (USA) 516-591-4141
+   * For other correspondence: pra@aps.org, prb@aps.org, ... , prl@aps.org
+   * For other information: 
+       APS Research Journals home page http://publish.aps.org/
+
+
+
+
+

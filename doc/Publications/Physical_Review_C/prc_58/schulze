@@ -1,0 +1,97 @@
+From oystein.elgaroy@fys.uio.no Thu May 21 12:42:28 1998
+Return-Path: <oystein.elgaroy@fys.uio.no>
+Delivery-Date: Thu, 21 May 1998 12:42:28 +0200
+Received: from tid.uio.no (actually tid.uio.no [129.240.84.18]) by pat.uio.no 
+          with SMTP (PP); Thu, 21 May 1998 12:42:02 +0200
+Received: from localhost (oelgaroy@localhost) by tid.uio.no ;
+          Thu, 21 May 1998 12:42:01 +0200 (MET DST)
+Date: Thu, 21 May 1998 12:42:01 +0200 (MET DST)
+From: "\\ystein Elgar|y" <oystein.elgaroy@fys.uio.no>
+X-Sender: oelgaroy@tid
+To: morten hjorth-jensen <m.h.jensen@fys.uio.no>
+Subject: RE: Reply to reply to reply to etc.... (fwd)
+Message-ID: <Pine.GSO.3.96.980521124103.25488A-100000@tid>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+Content-Length: 3119
+
+
+Hei, Morten!
+
+Her er en ny mail fra Hans-Josef.  
+Vi er i ferd med aa drive ham til vanvidd ... 
+
+Oeystein
+
+
+---------- Forwarded message ----------
+Date: Thu, 21 May 1998 12:32:10 +0200
+From: "Hansjoseph.Schulze" <Hansjoseph.Schulze@CT.INFN.IT>
+To: oystein.elgaroy@fys.uio.no
+Subject: RE: Reply to reply to reply to etc....
+
+dear oystein,
+
+come va oggi? is the norwegian sun burning on your head mercilessly?
+it is nice that we both agree now that you are quite stubborn!
+concerning the remaining disagreements, i will propose you a compromise:
+
+i think we agree now on the figures, excepts the arrangement of the gap results.
+wether we arrange them in one plot, or individually, can be decided later.
+i will send you the kind of plot i propose.
+concerning the contents, i propose the following: in the plot with the free
+spectrum we include results with the old potentials, using a particular
+linestyle, for instance.
+then one can see at first glance, wether there is a qualitative difference
+or not. (if you would have done that, you would have noticed, that the 
+paris and bonn-b agree with the new potentials up to kf=2.0, contrary
+to what is stated in the text so far. the notable exception is the v14.)
+this kind of plot can actually be used in you favour, allowing to explain
+again, why the old (v14) give qualitatively different results.
+for this purpose i still propose to include in fig.8 also the old phase
+shift predictions, just to convince the reader that they ARE different.
+in fact i still don't understand why you object this point so strongly,
+since it would allow you to advance your own argument!?
+otherwise i agree that results with old potentials need not be presented.
+in this way we can save at least the two separate plots of the gaps with the
+old potentials.
+
+to summarize: you guys prepare (a) the combined plot of the matrix elements,
+              (b) an improved plot of the phase shifts, pleeease including
+              the old potentials. 
+              i prepare a combined plot of the gaps in the style i propose.
+              we can still convert it in your format, if you like it better.
+
+i am afraid there are still some numbers you need to send me across europe
+for this purpose, namely the gaps for
+1) the bonn-b with free spectrum
+2) the complete set with the cd-bonn, namely: free, BHF, eff. mass approx.,
+   3p2 only.
+
+also, i noted that the ploted gaps in figs.9 and 13 do not extend up to the
+closure of the gap. you do not have the missing numbers for large kf?
+
+there is another technical reason that i propose to leave out the
+comparison of the old and new results with bhf spectrum, namely
+in the meantime i also performed bhf calculations with the v18, 
+and my results are quite different from yours. i get:
+kf   Delta
+1.2  0.019
+1.4  0.097
+1.6  0.214
+1.8  0.266
+2.0  0.287
+2.2  0.235 
+2.4  0.113 
+these values are larger than yours
+due to larger effective masses i obtain in the bhf.
+so, we cannot directly compare results obtained with my and with your bhf
+spectra. 
+
+so, let me know wether you agree to the compromise i propose!
+
+ciao ciao,
+          hans-josef
+
+

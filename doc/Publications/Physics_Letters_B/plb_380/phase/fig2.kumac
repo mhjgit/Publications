@@ -1,0 +1,35 @@
+ macro one        
+ zone 1 1
+ opt NBOX
+ opt zfl1
+ opt tic
+ set gfon -1042
+ set vfon -42
+ set lfon -1042
+ set bwid 3.
+ set fwid 1.
+ set ylab 1.3
+ set xsiz 12.0
+ set ysiz 12.0
+ set vsiz 0.35
+ set asiz 0.40
+ set gsiz 0.40
+ vector/create vx0(40) r 
+ vector/create vr0(40) r  
+ ve/cr vm0(40) r 
+ do i =1,21
+ vector/read vx0,vr0,vm0, 'cdm_star.dat'  
+ enddo
+ null 0.2 2.1  0.0  1.9
+ igset txfp -20
+ igset chhe 0.30
+ igset txal 10
+ graph 21 vx0 vm0 c
+ atitle 'Central density "M#fm^-3!"N#' ' Mass/solar mass'
+ set dmod 1
+ fortran/file 66 fig2.ps
+ metafile 66 -111
+ pict/plot
+ close 66
+return
+

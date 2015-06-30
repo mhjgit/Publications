@@ -1,0 +1,200 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2003.8.1)  5 MAR 2005 15:38
+**sn132-new.tex
+(./sn132-new.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(/local/TEX/share/texmf/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count81
+\output=\toks14
+\@protection@box=\box27
+\@topmark@saved=\toks15
+\footins@saved=\box28
+\pagesofar=\box29
+\footbox=\box30
+\pagegrid@col=\count82
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/local/TEX/share/texmf/tex/latex/misc/url.sty
+\Urlmuskip=\muskip10
+Package: url 1999/03/28  ver 1.5x  Verb mode for urls, etc.
+)
+\c@affil=\count83
+\absbox=\box31
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count90
+\c@table=\count91
+
+(/local/TEX/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2000/07/24 7.0a (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 508.
+\c@NAT@ctr=\count92
+)
+\widetext@top=\box32
+\widetext@bot=\box33
+
+(/local/TEX/share/texmf/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(/local/TEX/share/texmf/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(/local/TEX/share/texmf/tex/latex/revtex4/10pt.rtx
+File: 10pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/local/TEX/share/texmf/tex/generic/misc/psfig.sty
+\@unused=\write3
+\ps@stream=\read1
+\p@intvaluex=\dimen102
+\p@intvaluey=\dimen103
+
+psfig/tex 1.10-dvips
+) (/local/TEX/share/texmf/tex/latex/tools/longtable.sty
+Package: longtable 2000/10/22 v4.10 Multi-page Table package (DPC)
+\LTleft=\skip45
+\LTright=\skip46
+\LTpre=\skip47
+\LTpost=\skip48
+\LTchunksize=\count93
+\LTcapwidth=\dimen104
+\LT@head=\box34
+\LT@firsthead=\box35
+\LT@foot=\box36
+\LT@lastfoot=\box37
+\LT@cols=\count94
+\LT@rows=\count95
+\c@LT@tables=\count96
+\c@LT@chunks=\count97
+\LT@p@ftn=\toks16
+) (./sn132-new.aux)
+\openout1 = `sn132-new.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+Class revtex4 Info: Patching LaTeX tabular. on input line 7.
+Class revtex4 Info: Patching unrecognized longtable package. (Proceeding with f
+ingers crossed) on input line 7.
+Class revtex4 Info: cite was not loaded (OK!) on input line 7.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 41.
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--126
+[]\OT1/cmr/m/n/10 The wave func-tions for $\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10 
+^^T \OT1/cmr/m/n/10 82$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--126
+\OT1/cmr/m/n/10 were ob-tained in the model space of
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 96--126
+\OT1/cmr/m/n/10 ($0\OML/cmm/m/it/10 g[]; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 d[];
+ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 d[]; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 s[]; 
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 h[]\OT1/cmr/m/n/10 )[]$ for pro-ton par-
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 96--126
+\OT1/cmr/m/n/10 ti-cles and ($0\OML/cmm/m/it/10 g[]; \OT1/cmr/m/n/10 1\OML/cmm/
+m/it/10 d[]; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 d[]; \OT1/cmr/m/n/10 2\OML/cmm/m
+/it/10 s[]; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 h[]\OT1/cmr/m/n/10 )[]$ for
+ []
+
+[1] [2]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 304.
+
+[3] [4] [5]
+Underfull \hbox (badness 1484) in paragraph at lines 728--731
+ \OT1/cmr/m/n/9 bery, A. Pakou, P. Maier-Komor, A. Mac-chi-avelli,
+ []
+
+[6]
+Underfull \hbox (badness 1603) in paragraph at lines 773--775
+ \OT1/cmr/m/n/9 J. P. Omtvedt, K. I. Erochina and V. I. Isakov,
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 778--780
+ []\OT1/cmr/m/n/9 C. A.  Stone, S. H. Faller, and W. B. Wal-ters,
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 811--814
+ \OT1/cmr/m/n/9 berg, L. Ja-cob-s-son, I. S. Towner and K. Heyde,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--826
+ []\OT1/cmr/m/n/9 Average value from N. K. B. Shu et al.,
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 822--826
+ \OT1/cmr/m/n/9 Phys. Rev. C \OT1/cmr/bx/n/9 24\OT1/cmr/m/n/9 , 954 (1981); A. 
+P. Grin-berg et
+ []
+
+[7] (./sn132-new.aux) ) 
+Here is how much of TeX's memory you used:
+ 2029 strings out of 95847
+ 23899 string characters out of 1195583
+ 110345 words of memory out of 1000001
+ 5002 multiletter control sequences out of 10000+50000
+ 10182 words of font info for 35 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 29i,9n,22p,437b,365s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on sn132-new.dvi (7 pages, 49436 bytes).

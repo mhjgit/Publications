@@ -1,0 +1,283 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.5.22)  27 AUG 2010 14:56
+entering extended mode
+ %&-line parsing enabled.
+**converge.tex
+(./converge.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, farsi, croatian, ukrainian, russian, bulgarian, czech, slov
+ak, danish, dutch, finnish, basque, french, german, ngerman, ibycus, greek, mon
+ogreek, ancientgreek, hungarian, italian, latin, mongolian, norsk, icelandic, i
+nterlingua, turkish, coptic, romanian, welsh, serbian, slovenian, estonian, esp
+eranto, uppersorbian, indonesian, polish, portuguese, spanish, catalan, galicia
+n, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/latex209.def
+File: latex209.def 1998/05/13 v0.52 Standard LaTeX file
+
+
+          Entering LaTeX 2.09 COMPATIBILITY MODE
+ *************************************************************
+    !!WARNING!!    !!WARNING!!    !!WARNING!!    !!WARNING!!   
+ 
+ This mode attempts to provide an emulation of the LaTeX 2.09
+ author environment so that OLD documents can be successfully
+ processed. It should NOT be used for NEW documents!
+ 
+ New documents should use Standard LaTeX conventions and start
+ with the \documentclass command.
+ 
+ Compatibility mode is UNLIKELY TO WORK with LaTeX 2.09 style
+ files that change any internal macros, especially not with
+ those that change the FONT SELECTION or OUTPUT ROUTINES.
+ 
+ Therefore such style files MUST BE UPDATED to use
+          Current Standard LaTeX: LaTeX2e.
+ If you suspect that you may be using such a style file, which
+ is probably very, very old by now, then you should attempt to
+ get it updated by sending a copy of this error message to the
+ author of that file.
+ *************************************************************
+
+\footheight=\dimen102
+\@maxsep=\dimen103
+\@dblmaxsep=\dimen104
+\@cla=\count79
+\@clb=\count80
+\mscount=\count81
+(/usr/share/texmf-texlive/tex/latex/base/tracefnt.sty
+Package: tracefnt 1997/05/29 v3.0j Standard LaTeX package (font tracing)
+\tracingfonts=\count82
+LaTeX Info: Redefining \selectfont on input line 101.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 293.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 294.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 295.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 301.
+LaTeX Info: Redefining \em on input line 311.
+
+(/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 375.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 377.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 379.
+)
+(/usr/share/texmf-texlive/tex/latex/elsevier/elsart.cls
+Document Class: elsart 2006/05/01, 2.19: Elsevier
+\@frontmatterwidth=\dimen105
+\@bls=\dimen106
+\eqntopsep=\skip41
+\eqnarraycolsep=\dimen107
+\labelwidthi=\dimen108
+\labelwidthii=\dimen109
+\labelwidthiii=\dimen110
+\labelwidthiv=\dimen111
+\@maxlistdepth=\count83
+\eqnbaselineskip=\skip42
+\eqnlineskip=\skip43
+\mathindent=\dimen112
+\rulepreskip=\dimen113
+\rulepostskip=\dimen114
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+Compatibility mode: definition of \rm ignored.
+Compatibility mode: definition of \sf ignored.
+Compatibility mode: definition of \tt ignored.
+Compatibility mode: definition of \bf ignored.
+Compatibility mode: definition of \it ignored.
+Compatibility mode: definition of \sl ignored.
+Compatibility mode: definition of \sc ignored.
+LaTeX Info: Redefining \cal on input line 480.
+LaTeX Info: Redefining \mit on input line 481.
+\c@thm=\count89
+\c@alg=\count90
+\c@algorithm=\count91
+\c@note=\count92
+\c@summ=\count93
+\c@case=\count94
+\@tempcntc=\count95
+\c@figure=\count96
+\c@table=\count97
+\t@glob@notes=\toks14
+\t@loc@notes=\toks15
+\note@cnt=\count98
+\corauth@text=\toks16
+\email@text=\toks17
+\url@text=\toks18
+\c@corauth=\count99
+\c@author=\count100
+\n@author=\count101
+\c@collab=\count102
+\n@collab=\count103
+\c@address=\count104
+\sv@mathsurround=\dimen115
+\sv@hyphenpenalty=\count105
+\prev@elem=\count106
+\cur@elem=\count107
+\fm@box=\box26
+\fm@size=\dimen116
+\t@abstract=\box27
+\t@keyword=\box28
+\t@xtheight=\dimen117
+\@logoheight=\dimen118
+\@pubyear=\count108
+\c@firstpage=\count109
+\c@lastpage=\count110
+\slashbox=\box29
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 1404.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 1404.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 1404.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 1404.
+
+(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+\Slashbox=\box30
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 1405.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1405.
+)
+(/usr/share/texmf-texlive/tex/latex/base/fleqn.sty
+Compatibility mode: inputting `fleqn.clo' instead of obsolete `fleqn.sty'.
+
+(/usr/share/texmf-texlive/tex/latex/base/fleqn.clo
+File: fleqn.clo 1998/08/17 v1.1c Standard LaTeX option (flush left equations)
+\mathindent=\dimen119
+))
+(/usr/share/texmf-texlive/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.3 <23 July 2005>
+\epsffilein=\read1
+\epsfframemargin=\dimen120
+\epsfframethickness=\dimen121
+\epsfrsize=\dimen122
+\epsftmp=\dimen123
+\epsftsize=\dimen124
+\epsfxsize=\dimen125
+\epsfysize=\dimen126
+\pspoints=\dimen127
+) (./converge.aux)
+\openout1 = `converge.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 21.
+\c@sv@footnote=\count111
+ [1]
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [2]
+[3]
+Underfull \vbox (badness 7814) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (56.17546pt too wide) detected at line 297
+$ \OML/cmm/m/it/12 E \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^O[] \OT1/cmr/m/n/12 +
+ \OML/cmm/m/it/12 zX[] \OT1/cmr/m/n/12 + [] + [] + [] \OMS/cmsy/m/n/12 ^^@ [] \
+OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ;[]$ []
+ []
+
+
+Underfull \vbox (badness 4036) has occurred while \output is active []
+
+ [5]
+[6] [7]
+Overfull \hbox (18.51886pt too wide) detected at line 523
+$ []$ 
+ []
+
+(model.eps
+! Could not open file model.eps, ignoring it.
+\epsfgetbb ...Could not open file #1, ignoring it}
+                                                  \else {\chardef \other = 1...
+l.552 ...,10){\epsfxsize=12cm \epsfbox{model.eps}}
+                                                  
+? s
+OK, entering \scrollmode...
+)
+
+Overfull \hbox (2.33649pt too wide) in paragraph at lines 553--565
+[][] 
+ []
+
+[8] [9] [10]
+Overfull \hbox (7.40314pt too wide) detected at line 673
+$ \OML/cmm/m/it/12 P[]P \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 PH[]P \OT1/cmr/m/n/1
+2 + \OML/cmm/m/it/12 P [] P:$ []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+(qbox.eps
+! Could not open file qbox.eps, ignoring it.
+\epsfgetbb ...Could not open file #1, ignoring it}
+                                                  \else {\chardef \other = 1...
+l.719 ...5,10){\epsfxsize=12cm \epsfbox{qbox.eps}}
+                                                  
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+)
+
+Overfull \hbox (2.33649pt too wide) in paragraph at lines 720--722
+[][] 
+ []
+
+[12]
+(ox18.eps
+! Could not open file ox18.eps, ignoring it.
+\epsfgetbb ...Could not open file #1, ignoring it}
+                                                  \else {\chardef \other = 1...
+l.792 ...5,10){\epsfxsize=12cm \epsfbox{ox18.eps}}
+                                                  
+(That was another \errmessage.)
+
+)
+
+Overfull \hbox (2.33649pt too wide) in paragraph at lines 793--795
+[][] 
+ []
+
+[13] [14] [15] [16] (./converge.aux) ) 
+Here is how much of TeX's memory you used:
+ 1017 strings out of 94075
+ 11149 string characters out of 1165176
+ 61452 words of memory out of 1500000
+ 4333 multiletter control sequences out of 10000+50000
+ 24221 words of font info for 88 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 25i,9n,19p,689b,256s stack positions out of 5000i,500n,6000p,200000b,5000s
+
+Output written on converge.dvi (16 pages, 54724 bytes).

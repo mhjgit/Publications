@@ -1,0 +1,1455 @@
+
+\subsection{Introduction}
+As we discussed in sections 2 and 3,
+in nuclear structure and nuclear matter calculations one has to
+face the problem that any realistic nucleon-nucleon (NN) potential $V$
+exhibits a strong short-range repulsion, which in turn makes
+a perturbative treatment of the nuclear many-body problem
+prohibitive. If the potential has a so-called hard core,
+the matrix elements of such a potential $\bra{\psi}V\ket{\psi}$
+evaluated
+for an uncorrelated two-body wave function $\psi (r)$ diverge,
+since the uncorrelated wave function is different from zero also for
+relative distances $r$ smaller than the hard-core radius. Similarly,
+even if one uses potentials with softer cores, the matrix elements of the
+potential become very large at short distances.
+The above problem was however overcome by
+introducing the reaction matrix $G$ (displayed by  the summation
+of ladder type of diagrams in fig.\ \ref{fig:gschem})
+which accounts for the
+effects of two-nucleon correlations.
+
+The matrix elements of the
+potential $V$ then become
+\begin{equation}
+\bra{\psi}G\ket{\psi} =\bra{\psi}V\ket{\Psi}
+\end{equation}
+where $\Psi$ is now the correlated wave function. By accounting for the
+correlations in the two-body wave functon $\Psi$, the matrix elements of
+the potential become finite, even for a hard-core potential $V$. Moreover,
+as will be discussed below, compared with the uncorrelated
+wave function, the correlated wave function enhances the
+matrix elements of $V$ at distances for which the interaction is
+attractive.
+The $G$-matrix applies to bound states, while  for scattering of free particles, 
+the 
+$G$-matrix is replaced by the $T$-matrix. The difference between the matrices
+resides in the medium dependence provided by the Pauli operator and 
+the energy $\omega$ of the interacting particles.
+Recalling the discussion at the end of section 2, we defined the
+$G$-matrix by either
+\begin{equation}
+   G(\omega )=V+V\frac{Q}{\omega -H_0}G(\omega ),
+   \label{eq:g1}
+\end{equation}
+or
+\begin{equation}
+   G(\omega )=V+VQ\frac{1}{\omega -QH_0Q}QG(\omega ).
+      \label{eq:g2}
+\end{equation}
+The former equation applies if the Pauli operator $Q$  commutes
+with the unperturbed hamiltonian $H_0$, whereas the latter is
+needed if $[H_0,Q]\neq 0$.
+Similarly, the correlated wave function $\Psi$
+is given as
+\begin{equation}
+    \ket{\Psi}=\ket{\psi}+\frac{Q}{\omega - H_0}G\ket{\psi},
+    \label{eq:wave}
+\end{equation}
+or
+\begin{equation}
+   \ket{\Psi}=\ket{\psi}+Q\frac{1}{\omega - QH_0Q}QG\ket{\psi}.
+\end{equation}
+
+These equations look rather simple, but their actual calculation
+is in fact rather complicated and difficult. Approximate
+methods were devised in the "early days", amongst these methods were
+the famous separation and reference spectrum methods. These
+methods present a physically intuitive picture of the
+$G$-matrix, and it is one of the scopes of this 
+section to briefly review those methods  here. This is done
+in subsection 5.2. Further, we will
+also discuss how to calculate the $G$-matrix for both nuclear
+matter and finite nuclei in subsecs.\ 5.3 and 5.4, respectively.
+ 
+\subsection{The separation and reference-spectrum methods for
+calculating the $G$-matrix}
+
+In section 3 we discussed the fact that the NN potential
+diverges at small internucleon distances. Fig.\ \ref{fig:bonna1s0}
+displays
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(120,100)
+      \put(25,10){\epsfxsize=12cm \epsfbox{ones0.eps}}
+      \end{picture}
+\caption{Schematic plot of the nucleon-nucleon
+potential for the $^1S_0$ partial wave. See text
+for further details.}
+\label{fig:bonna1s0}
+\end{figure}
+a schematic plot of the nucleon-nucleon potential
+for the $^1S_0$
+partial wave. The internucleon distance is $r$. As indicated
+in the figure, we divide the potential into two parts, the
+short-range part $V_S$ and the long range part $V_L$. Formally,
+this may written as
+\begin{equation}
+  V(r)\approx V_S(r)\Theta (d-r)+V_L(r)\Theta (r-d),
+  \label{eq:vsep}
+\end{equation}
+where $\Theta$ is the familiar step function, and $d$ is
+known as the separation distance. The separation distance
+is chosen so that the attractive part of
+$V_S$ balances that of the repulsive core.
+A remarkable result
+is then to a good approximation
+\begin{equation}
+   G \propto V_L(r),
+\end{equation}
+based on the separation method.
+This is quite an appealing result. The whole potential $V(r)$
+is "singular" in the sense that it has a very strong repulsive
+core. In contrast, $V_L(r)$ is obviously no longer singular and
+hence the $G$-matrix is also no longer singular.
+We have not yet shown how to obtain this result, nor have we
+discussed what $d$ is and how to determine $d$\footnote{$d$ is
+typically about 1 fm.}.
+
+We will now derive the above result and also try to motivate
+for the physics behind the separation and reference-spectrum 
+methods.
+First we define a useful identity following Bethe, Brandow and
+Petschek \cite{bbp63}. Suppose we have two
+different $G$-matrices, defined by
+\begin{equation}
+    G_1=V_1+V_1\frac{Q_1}{e_1}G_1,
+\end{equation}
+and
+\begin{equation}
+    G_2=V_2+V_2\frac{Q_2}{e_2}G_2,
+\end{equation}
+where $Q_1/e_1$ and $Q_2/e_2$ are the propagators of
+either eq.\ (\ref{eq:g1}) or eq.\ (\ref{eq:g2}). $G_1$ and $G_2$
+are two different $G$-matrices having two different interactions
+and/or different propagators. We aim at an identity
+which will enable us to calculate $G_1$ in terms of $G_2$,
+or vice versa.
+Defining the wave operators
+\begin{equation}
+    \Omega_1=1+\frac{Q_1}{e_1}G_1,
+\end{equation}
+and
+\begin{equation}
+    \Omega_2=1+\frac{Q_2}{e_2}G_2,
+\end{equation}
+we can rewrite the above $G$-matrices as
+\begin{equation}
+    G_1=V_1\Omega_1,
+    \label{eq:omega1}
+\end{equation}
+and
+\begin{equation}
+    G_2=V_2\Omega_2.
+    \label{eq:omega2}
+\end{equation}
+Using these relations, we rewrite $G_1$ as
+\begin{eqnarray}
+   G_1=&G_1 -{\displaystyle 
+         G_2^{\dagger}\left(\Omega_1-1-\frac{Q_1}{e_1}G_1\right)
+        +\left(\Omega_2^{\dagger}-1-G_2^{\dagger}\frac{Q_2}{e_2}\right)G_1} 
+         \nonumber \\
+       =&{\displaystyle G_2^{\dagger} +G_2^{\dagger}\left(\frac{Q_1}{e_1}-
+        \frac{Q_2}{e_2}\right)G_1
+        +\Omega_2^{\dagger}G_1 -G_2^{\dagger}\Omega_1},
+\end{eqnarray}
+and using eqs.\ (\ref{eq:omega1}) and (\ref{eq:omega2}) we obtain
+the identity
+\begin{equation}
+        G_1=G_2^{\dagger} +G_2^{\dagger}
+        \left(\frac{Q_1}{e_1}-\frac{Q_2}{e_2}\right)G_1
+        +\Omega_2^{\dagger}(V_1-V_2)\Omega_1.
+        \label{eq:gidentity}
+\end{equation}
+The second term on the rhs.\ is called the propagator-correction term;
+it vanishes if $G_1$ and $G_2$ have the same propagators. The third term
+is often referred to as the potential-correction term, and it disappears
+if $G_1$ and $G_2$  have the same potentials.
+
+The reader may now ask what is the advantage of the above identity. If
+we assume that by some physical reasoning we are able to calculate
+$G_2$ (we will see examples of this below both for nuclear matter and for
+finite nuclei), and that the expression for $G_2$ can be calculated
+easily, and further that $G_2$ is a good approximation
+to the original $G$-matrix, then we can use the above identity to
+perform a perturbative calculation of $G_1$ in terms of $G_2$.
+Below we will use eq.\ (\ref{eq:gidentity}) to discuss
+the separation and
+the reference-spectrum methods.
+
+\subsubsection{The separation method}
+
+This method was first introduced by Moszkowski and Scott for
+evaluating the $G$-matrix in nuclear matter \cite{ms61,ms62}.
+In eq.\ (\ref{eq:vsep}) we separated the NN potential into two parts,
+$V_S$ and $V_L$. Let us define the $G$-matrices
+\begin{equation}
+    G_1=G=V+V\frac{Q}{e}G,
+\end{equation}
+and
+\begin{equation}
+    G_2=G_S=V_S+V_S\frac{Q_2}{e_2}G_S,
+    \label{eq:gs}
+\end{equation}
+where $V$ is the NN potential. Eq.\ (\ref{eq:gidentity}) gives
+\begin{equation}
+        G=G_S^{\dagger} +G_S^{\dagger}
+        \left(\frac{Q}{e}-\frac{Q_2}{e_2}\right)G
+        +\Omega_S^{\dagger}V_L\Omega.
+        \label{eq:gidsep}
+\end{equation}
+The idea is that we can make $G_S\approx 0$, which in turn yields the
+advertised relation
+\[
+   G\approx V_L.
+\]
+We emphasize that the above result is an approximation, but the hope
+is that this approximation is a physically reasonable one.
+To proceed, let us define the correlated wave function $\Psi_a$  
+\begin{equation}
+   G\ket{\psi_a}=V\ket{\Psi_a},
+\end{equation}
+where $\psi_a$ is the 
+unperturbed wave function. 
+Using the definition of the correlated wave function in eq.\
+(\ref{eq:wave}) we have
+\begin{equation}
+    \ket{\Psi_a}=\ket{\psi_a}+\frac{Q}{\omega - H_0}G\ket{\psi_a}=
+    \ket{\psi_a}+\frac{Q}{\omega - H_0}V\ket{\Psi_a}.
+    \label{eq:wavesep}
+\end{equation}
+Note that we have assumed that the Pauli operator $Q$ and the unperturbed
+hamiltonian $H_0$ commute. If we are able to obtain the correlated 
+wave function, we get the $G$-matrix by
+\begin{equation}
+   \bra{\psi_a}G\ket{\psi_b}=\bra{\psi_a}V\ket{\Psi_b}.
+\end{equation}
+We will try to obtain $G_S$ through this scheme. $G_S$ was defined
+according to eq.\ (\ref{eq:gs}) with the propagator $Q_2/e_2$.
+We have not yet specified how to obtain $Q_2$ and $e_2$, though
+the identity
+in eq.\ (\ref{eq:gidsep}) is valid  for any choice of $Q_2$ and $e_2$. 
+The potential which defines $G_S$ is $V_S$, which is a short-range 
+repulsive potential. Using the uncertainty principle, the intermediate
+states included by $V_S$ should be predominantly those at high momenta.
+For such scattering states there is hardly any Pauli blocking, which 
+means that the probability of finding other nucleons at such momenta
+is practically equal to zero. This physically intuitive reasoning
+leads us to choose $Q_2=1$. With this choice we obtain
+\begin{equation}
+    G_S=V_S+V_S\frac{1}{\omega -H_0}G_S,
+\end{equation}
+and the corresponding correlated wave function
+\begin{equation}
+    \ket{\Psi_a^S}=
+    \ket{\psi_a}+\frac{1}{\omega - H_0}V_S\ket{\Psi_a^S}.
+\end{equation}
+As mentioned earlier we are free to make whatever choice for $e_2$
+in the operator $\omega -H_0$ of $G_S$. Let us employ a specific
+on-shell choice, i.e.\ $\omega =\varepsilon_a$, and $H_0\ket{\psi_a}
+=\varepsilon_a\ket{\psi_a}$. In this case we have
+$(\omega -H_0)\ket{\psi_a}=0$. Using the above definition
+for the correlated wave function we obtain for the diagonal
+matrix element
+\begin{equation}
+     \bra{\psi_a}G_S\ket{\psi_a}=\bra{\psi_a}V_S\ket{\Psi_a^S}
+     =\bra{\psi_a}(\varepsilon_a -H_0)\ket{\Psi_a^S},
+     \label{eq:eq22}
+\end{equation}
+with $H_0$ acting on $\Psi_a^S$.
+We will also assume that $\psi_a$ is a plane-wave two-particle
+state which can be written as
+\begin{equation}
+    \psi_a=\frac{1}{\Omega}e^{i{\bf kr}}e^{i{\bf KR}}
+    = \frac{1}{\sqrt{\Omega}}\psi ({\bf r})e^{i{\bf KR}},
+\end{equation}
+where ${\bf k}$ and ${\bf K}$ denote respectively the relative and
+center-of-mass
+momenta. The term $\Omega$ in the denominators
+serves to normalize the wave function and is the volume of the system.
+We approximate $H_0$ with the two-particle kinetic energy, denoted
+by the operators $T_r$ and $T_R$ for the relative and center-of-mass
+systems, respectively. The energy $\varepsilon_a$ is then just
+$k^2/M_N + K^2/4M_N$, with $M_N$ being the mass of the nucleon.
+Since the potential $V_S$ is a function of $r$ only, it has no effect
+on the center-of-mass wave function. Another possibility is to use
+harmonic oscillator (h.o.) wave functions, as detailed by Kuo and
+Brown \cite{kb66}.
+The correlated wave function takes
+the form
+\begin{equation}
+    \Psi_a^S
+    = \frac{1}{\sqrt{\Omega}}\Psi_a^S (r)e^{i{\bf KR}}.
+\end{equation}
+Since $V_S(r)=0$ for $r>d$, the matrix of eq.\ (\ref{eq:eq22}) is
+given by, using Greens theorem,
+\begin{equation}
+  \bra{\psi}G_S\ket{\psi}=\frac{1}{\Omega M_N}\oint_{r=d}
+   \left[\Psi^S{\bf \nabla}\psi^*-\psi^*{\bf \nabla}\Psi^S\right] dS,
+\end{equation}
+where the integral is a surface integral over a sphere with
+radius equal $d$.
+
+The separation distance is still not yet specified. The main
+idea of the separation
+method is to choose $d$ such that the above surface
+integral vanishes. This is possible for the relative
+$l=0$ partial wave. In this case we write the integrand as
+\[
+   \Psi^S{\bf \nabla}\psi^*-\psi^*{\bf \nabla}\Psi^S
+   =\Psi^S\frac{\partial \psi^*}{\partial r}-
+   \psi^*\frac{\partial \Psi^S}{\partial r}
+\]
+and the above integral vanishes if the wave function obeys
+the logarithmic boundary condition
+\begin{equation}
+      \frac{1}{\psi}\frac{\partial \psi}{\partial r}
+      = \frac{1}{\Psi^S}\frac{\partial \Psi^S}{\partial r}
+      \hspace{0.5cm} \mathrm{at}\hspace{0.5cm} r=d.
+\end{equation}
+Here we assume that the potential has a hard core and hence the correlated
+wave function is identically equal to zero inside the core radius $r_c$. 
+Note that the unperturbed wave function $\psi$ is not vanishing
+for $r<r_c$. The correlated wave function $\Psi_S$ is pushed out by the
+core, but once outside $r_c$ it is pulled in by the exterior attraction.
+The separation distance is chosen such that there is just enough 
+exterior attraction to balance the core repulsion so that the correlated 
+wave function heals at $r=d$. By healing we mean the logarithmic 
+condition in the above equation. This condition means that $V_S$
+results in a zero phase shift. Hence an equivalent definition of
+$d$ is that the short-range potential $V_S$ produces zero phase shifts.
+Note that this is not always possible, as we will discuss in the next
+subsection. In this case the separation distance does not exist.
+Hitherto we have only exposed the basic ideas on which the
+separation method is founded. We refer the reader to the literature
+for numerical results, see e.g.\ \cite{kb66}.
+
+Our original purpose is the calculation of the full $G$-matrix, not only
+that of $G_S$. In fact, $G_S$ is merely an auxiliary potential,
+introduced as an intermediate step in the calculation of $G$. Recall also
+that we only calculated the diagonal matrix element of $G_S$, and that
+these vanish. The hope is however that the full $G_S$ is small enough so
+that $G$ may be calculated by a low-order perturbation expansion
+in terms of $G_S$.
+Using eq.\ (\ref{eq:gidsep}) we may write $G$ as
+\begin{equation}
+        G\approx G_S^{\dagger} +
+        G_S^{\dagger}\left(\frac{Q}{e}-\frac{Q_2}{e_2}\right)G_S
+        +\left(1+G_S^{\dagger}\frac{1}{e_2}\right)V_L
+        \left(1+\frac{1}{e_2}G_S\right).
+        \label{eq:gseploworder}
+\end{equation}
+The second term on the rhs.\ may be written as
+\[
+    G_S^{\dagger}\frac{Q-1}{e}G_S+
+    G_S^{\dagger}\left(\frac{1}{e}-\frac{1}{e_2}\right)G_S,
+\]
+where the first term has commonly been denoted the Pauli correction term,
+while the second is referred to as the dispersion correction term.
+
+Here we note that one of the appealing features of the
+separation method is the physically intuitive picture provided by it,
+namely that the long-range part $V_L$ is the leading term of $G$.
+Nevertheless, there is the lingering question about the accuracy
+of this method. How accurate is $G$ given by, for example, the low-order
+expansion of eq.\ (\ref{eq:gseploworder})?
+Higher-order correction terms are progressively
+more difficult to calculate, and in most actual cases, the numerics
+sets a limit to how far we can go 
+in this direction. It will indeed be very
+desirable if one could formulate a different approach, where
+one has the possibility of calculating $G$ almost exactly. We will see
+how to obtain such a scheme in our calculations of the
+$G$-matrix for finite nuclei and nuclear matter. Below, we will however
+briefly revisit the so-called reference-spectrum method introduced
+by Bethe, Brandow and Petschek \cite{bbp63}, an excellent
+presentation of this method
+can be found in the review article of Day \cite{day67}, which in spite of
+its age still reads well.
+
+
+\subsubsection{The reference-spectrum method}
+
+This method is also based on the identity of eq.\ (\ref{eq:gidentity}).
+Here we choose an auxiliary $G$-matrix $G_R$, the reference-spectrum
+$G$-matrix, defined by
+\begin{equation}
+     G_R=V+V\frac{1}{e_R}G_R.
+     \label{eq:grefs}
+\end{equation}
+Using eq.\ (\ref{eq:gidentity}), the $G$-matrix can be written as
+\begin{equation}
+  G=G_R^{\dagger}+G_R^{\dagger}\left(\frac{Q}{e}-\frac{1}{e_R}\right)G.
+  \label{eq:grefsp}
+\end{equation}
+Unlike the separation method, we note that we have the whole potential
+$V$ in the definition of $G_R$. Moreover, for some partial-wave channels,
+the potential is repulsive for all $r$ and we have no exterior attraction. 
+In this case the separation method we discussed in the previous subsection,
+can not be used, as there is no exterior attraction to heal the wave 
+function. It is mainly this difficulty which motivated the introduction
+of the reference-spectrum method. In this method, one first evaluates the
+defect wave function $\chi$ and thereafter one calculates $G_R$ in terms
+of $\chi$.
+The correlated wave function $\Psi^R$ is defined by
+\begin{equation}
+     G_R\ket{\psi_a}=V\ket{\Psi_a^R}
+\end{equation}
+where $\psi_a$ is the unperturbed wave function. From eq.\ (\ref{eq:grefs}),
+we have
+\begin{equation}
+      \ket{\Psi_a^R}=\ket{\psi_a}+\frac{1}{e_R}V\ket{\Psi_a^R}.
+      \label{eq:correlrefs}
+\end{equation}
+The defect wave function is defined as the difference
+\begin{equation}
+     \chi_a=\psi_a-\Psi_a^R.
+\end{equation}
+In other words, the correlated wave function is equal to the
+unperturbed wave function minus the defect wave function (we will see 
+examples of various defect wave functions in the next subsection, where
+we discuss nuclear matter results).
+Eq.\ (\ref{eq:correlrefs}) then leads to the result
+\begin{equation}
+   (e_R-V)\ket{\chi}=-V\ket{\psi},
+   \label{eq:refspeq}
+\end{equation}
+where we for convenience have dropped the subscript $a$. The $G_R$-matrix
+is just an auxiliary $G$-matrix, which we need in our determination of the
+full $G$-matrix defined in eq.\ (\ref{eq:grefsp}). We need however to
+define the energy denominator $e_R$. In principle $G$ is
+independent of $e_R$, though in practice we hope that $G_R$ alone
+should provide a good approximation to $G$. Suppose we define
+\begin{equation}
+   e_R=\omega -T_r -T_R,
+\end{equation}
+where $T_r$ and $T_R$ denote respectively the relative and center-of-mass kinetic
+energies of the two interacting particles. Since $V$ depends on the
+internucleon distance $r$ only, we can write the wave functions
+\begin{equation}
+    \psi ({\bf r}_1{\bf r}_2)=
+    \frac{1}{\sqrt{\Omega}}\psi ({\bf r})e^{i{\bf KR}},
+\end{equation}
+and
+\begin{equation}
+    \chi ({\bf r}_1{\bf r}_2)=
+    \frac{1}{\sqrt{\Omega}}\chi ({\bf r})e^{i{\bf KR}},
+\end{equation}
+as was done in connection with the separation method. Eq.\
+(\ref{eq:refspeq}) takes then the form (in partial waves)
+\begin{equation}
+  \left(\omega -\frac{K^2}{4M_N}+\frac{1}{M_N}\frac{d^2}{dr^2}
+  -\frac{l(l+1)}{r^2}-V\right)\chi_l(r)=-V\psi_l(r).
+    \label{eq:resppartial}
+\end{equation}
+The asymptotic behaviors of the defect wave function $\chi$ can now
+be readily seen. We let $V$ be a hard-core potential with core
+radius $r_c$. For $r=r_c$, $V$ is infinite and we must therefore have
+$\chi_l(r)=\psi_l(r)$ inside $r_c$. Now comes an important point.
+If $(\omega -K^2/4M_N)$ is negative, we can define
+\begin{equation}
+     -\frac{\gamma^2}{M_N}=\omega -\frac{K^2}{4M_N},
+\end{equation}
+with $\gamma > 0$.
+Eq.\ (\ref{eq:resppartial}) gives then
+\begin{equation}
+    \chi_l(r)\propto e^{-\gamma r}
+    \hspace{0.5cm} \mathrm{as} \hspace{0.5cm}
+     r\rightarrow \infty
+\end{equation}
+Since $\Psi^R=\psi -\chi$, we see that the correlated wave function $\Psi$
+heals to $\psi$ at large $r$ values. A typical behavior of the defect
+wave function for the $l=0$ channel is illustrated in fig.\
+\ref{fig:correlwave}.
+\begin{figure}
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(100,80)
+      \put(25,10){\epsfxsize=10cm \epsfbox{defex.eps}}
+      \end{picture}
+\caption{A typical defect wave function $\chi$ for a hard-core potential
+with core radius $r_c$.}
+\label{fig:correlwave}
+\end{figure}
+We see that the correlated wave function $\Psi^R$ is totally pushed out
+from the hard core and is zero inside $r_c$. At large $r$-values it is bound to
+heal to $\psi$. At some indermediate values of $r$, $\Psi^R$ overshoots
+$\psi$ in order to accomodate the wave function displaced by the core.
+With $\chi (r)$ obtained by solving the differential equation
+indicated by eq.\ (\ref{eq:resppartial}), we can calculate the
+matrix element
+\begin{equation}
+    \bra{\psi_a}G_R\ket{\psi_b}=\bra{\psi_a}V\ket{\psi_b-\chi_b},
+\end{equation}
+where the radial integral is now well-defined, even for a hard-core
+potential. For a hard-core potential $\bra{\psi}V\ket{\psi}$ is not
+well-defined, but $\bra{\psi}V\ket{\psi -\chi}$ is since $\psi -\chi=0$
+inside the hard core.
+
+A computational advantage of the reference-spectrum method is that it
+provides a convenient scheme, as outlined above, to obtain the
+reference $G$-matrix $G_R$. However, our goal is not only to obtain
+$G_R$ but the full $G$-matrix $G$. The hope is that $G_R$ is already
+a good approximation to $G$, and that $G$ may be accurately calculated
+by way of a low-order perturbation expansion in terms of $G_R$. For example,
+we may approximate eq.\ (\ref{eq:grefsp}) by
+\begin{eqnarray}
+  G&\approx {\displaystyle G_R^{\dagger}+
+           G_R^{\dagger}\left(\frac{Q}{e}-\frac{1}{e_R}\right)
+           G_R^{\dagger}}\nonumber \\
+    &={\displaystyle G_R^{\dagger}+G_R^{\dagger}
+           \left(\frac{Q}{e}-\frac{1}{e})G_R^{\dagger}+
+           G_R^{\dagger}(\frac{1}{e}-\frac{1}{e_R}\right)G_R^{\dagger}}.
+\end{eqnarray}
+Here the second and third terms are usually referred to as the Pauli- and
+the dispersion-correction terms, respectively.
+However, in spite of the nice features of the reference-spectrum method,
+we are still left with the problem of how to obtain a reliable
+estimate of higher-order terms of the full $G$-matrix in terms
+of $G_R$.
+In the next subsection we demonstrate how one can obtain
+(within the framework of the angle-average approximation) an ``exact''
+solution of the $G$-matrix equation for nuclear matter.
+
+
+\subsection{The G-matrix for nuclear matter}
+
+In
+a medium such as nuclear 
+matter\footnote{We will postpone a thorougher discussion of
+nuclear matter to sections 7 and 8. This subsection serves to
+illustrate how one can calculate the $G$-matrix
+"exactly" through matrix inversion techniques.} ,
+we must account
+for the fact that certain states are not available as intermediate
+states in the calculation of the $G$-matrix.
+Following the discussion
+in the previous two subsections,
+this is achieved by introducing the medium
+dependent Pauli operator $Q$ in
+eq.\ (\ref{eq:bspartial}). Further, the
+energy $\omega$ of the incoming particles, given by a pure kinetic
+term in eq.\ (\ref{eq:bspartial}), must be modified so as to allow
+for medium corrections.
+How to evaluate the Pauli operator for
+e.g.\ nuclear matter is, however, not straightforward.
+Before discussing how to evaluate the Pauli operator for nuclear matter,
+we note that the $G$-matrix
+is conventionally given in terms of partial waves and
+the coordinates of the relative and center-of-mass motion, as
+in eq.\ (\ref{eq:bspartial}).
+If we assume that the $G$-matrix is diagonal in $\alpha$ ($\alpha$ is a shorthand
+notation for $J$, $S$, $L$ and $T$),
+eq.\ (\ref{eq:gmat}) can then be recast in the form of a
+coupled-channels equation in the relative and center-of-mass system
+\cite{ht70}
+\begin{equation}
+   G_{ll'}^{\alpha}(kk'K\omega )=V_{ll'}^{\alpha}(kk')
+   +\sum_{l''}\int \frac{d^3 q}{(2\pi )^3}V_{ll''}^{\alpha}(kq)
+   \frac{Q(q,K)}{\omega -H_0}
+   G_{l''l'}^{\alpha}(qk'K\omega).
+   \label{eq:gnonrel}
+\end{equation}
+This equation is similar in structure to the scattering
+equations discussed in section 3, except that we now have
+introduced the Pauli operator $Q$ and a medium dependent two-particle
+energy $\omega$. The notations in this equation follow those of
+subsection 3.3, where we discuss the solution of the scattering
+matrix $T$.
+The numerical details on how to solve the above $G$-matrix
+equation through matrix inversion techniques are discussed in appendix B.
+Note however that the $G$-matrix may not be diagonal in $\alpha$.
+This is due to the fact that the
+Pauli operator $Q$ is not diagonal
+in the above representation in the relative and center-of-mass
+system. The Pauli operator depends on the
+angle between the relative momentum and the center of mass momentum.
+This angle dependence causes $Q$ to couple states with different
+relative angular
+momentum ${\cal J}$. A partial wave decomposition of eq.\ (\ref{eq:gmat})
+becomes therefore rather difficult.
+The angle dependence of the Pauli operator
+can be eliminated by introducing the angle-average
+Pauli operator, where one replaces the exact Pauli operator $Q$
+by its average $\bar{Q}$ over all angles for fixed relative and center-of-mass
+momenta.
+The choice of Pauli operator is decisive to the determination of the
+sp
+spectrum. Basically, to first order in the reaction matrix $G$,
+there are three commonly used sp spectra, all
+defined by the solution of the following equations
+\begin{equation}
+   \varepsilon_{m} = \varepsilon (k_{m})
+   = t_{m} + u_{m}=\frac{k_{m}^2}{2M_N}
+   +u_{m},
+   \label{eq:spnrel}
+\end{equation}
+and
+\begin{equation}
+   \begin{array}{ccc}\\
+   u_{m} =& {\displaystyle \sum_{h \leq k_F}}
+   \left\langle m h \right| G(\omega = \varepsilon_{m} + \varepsilon_h )
+   \left| m h \right\rangle_{AS} & \hspace{3mm}k_m \leq k_M,  \\ \\
+   u_m=&0,& k_m > k_M. \end{array}
+   \label{eq:selfcon}
+\end{equation}
+For notational economy, we set $|{\bf k}_m|=k_m$.
+Here we employ antisymmetrized matrix elements (AS), and $k_M$ is a cutoff
+on the momentum. Further, $t_m$ is the sp kinetic
+energy and similarly $u_m$
+is the
+sp potential.
+The choice of cutoff $k_M$ is actually what determines the three
+commonly used sp spectra.
+In the conventional BHF approach one employs $k_M = k_F$,
+which leads
+to a Pauli operator $Q_{\mathrm{BHF}}$ (in the laboratory system) given by
+\begin{equation}
+   Q_{\mathrm{BHF}}(k_m , k_n ) =
+    \left\{\begin{array}{cc}1,&min(k_m ,k_n ) > k_F\\
+    0,&\mathrm{else}.\end{array}\right.
+    \label{eq:bhf},
+\end{equation}
+or, since we will define an
+angle-average Pauli operator in the relative and center-of-mass
+system, we have
+\begin{equation}
+     \bar{Q}_{\mathrm{BHF}}(k,K)=\left\{\begin{array}{cc}
+         0,&k\leq \sqrt{k_{F}^{2}-K^2/4}\\
+         1,&k\geq k_F + K/2\\
+	\frac{K^2/4+k^2 -k_{F}^2}{kK}&\mathrm{else},\end{array}\right.
+    \label{eq:qbhf}
+\end{equation}
+with $k_F$ the momentum at the Fermi surface.
+The difference between the Pauli operators in the lab and the
+relative and center-of-mass systems
+is shown in fig.\ \ref{fig:pauliops} (a) and (b),
+respectively. 
+See e.g.\  \cite{ht70} for further details.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,90)
+      \put(25,10){\epsfxsize=12cm \epsfbox{pauli.eps}}
+      \end{picture}
+\caption{In (a) we show the Pauli operator for standard BHF theory
+in the lab frame, while (b) is the corresponding diagrammatic
+representation in the relative and center-of-mass system.
+Note that ${\bf K}={\bf k}_n+{\bf k_m}$ and ${\bf k}=
+\frac{1}{2}({\bf k}_n-{\bf k_m})$.}
+\label{fig:pauliops}
+\end{figure}
+The BHF choice sets $u_k = 0$ for $k > k_F$, which leads
+to an unphysical, large gap at the Fermi surface, typically
+of the order of $50-60$ MeV. 
+To overcome the gap
+problem, Mahaux and collaborators \cite{mah85}
+introduced a continuous sp spectrum
+for all values of $k$. The divergencies
+which then may occur in eq.\ (\ref{eq:gnonrel}) are taken care of by
+introducing
+a principal value integration in eq.\ (\ref{eq:gnonrel}),
+to retain only the
+real part contribution to the $G$-matrix.
+
+Finally,
+the model-space BHF approach which we also will
+employ (to be discussed in section 7), adopts a cutoff $k_M =  ak_F$,
+where $a$ is a constant. Thus, the cutoff $k_M$ is given
+as a multiple
+of the Fermi momentum. A frequently used value \cite{km83}
+is $a= 2$.
+This means that we extend
+the BHF spectrum
+to go beyond $k_F$. Here we
+limit the attention to the standard BHF calculations. A more detailed
+comparison with the BHF and the MBHF methods will be given in
+section 7.
+To define the energy denominators we will also make use of the
+angle-average approximation.
+The angle dependence is handled by the
+so-called effective mass approximation. The single-particle energies
+in nuclear matter are assumed to have the simple quadratic form
+\begin{equation}
+   \begin{array}{ccc}
+   \varepsilon (k_m)=&
+   {\displaystyle\frac{\hbar^{2}k_m^2}
+   {2M_{N}^{*}}}+\Delta ,&\hspace{3mm}k_m\leq k_F\\
+   &&\\
+   =&{\displaystyle\frac{\hbar^{2}
+   k_m^2}{2M_{N}}},&\hspace{3mm}k_m> k_F ,\\
+   \end{array}
+   \label{eq:spen}
+\end{equation}
+where $M_{N}^{*}$ is the effective mass of the nucleon and $M_{N}$ is the
+bare nucleon mass. For particle states above the Fermi sea we choose
+a pure kinetic energy term, whereas for hole states,
+the terms $M_{N}^{*}$ and $\Delta$, the latter being 
+an effective single-particle
+potential related to the $G$-matrix, are obtained through the
+self-consistent Brueckner-Hartree-Fock procedure.
+The sp potential is obtained through the same angle-average approximation
+\cite{ht70}
+\begin{eqnarray}
+  \label{eq:Uav}
+   U(k_m) & = & \sum_{l\alpha} (2T+1)(2J+1)
+   \left \{ \frac{8}{\pi}\int_{0}^{(k_F-k_m)/2}
+   k^2dk G_{ll}^{\alpha}(k,\bar{K}_1) \right.  \\
+   &  &  \left.
+    + \frac{1}{\pi k_m}\int_{(k_F-k_m)/2}^{(k_F+k_m)/2}
+   kdk (k_F ^2-(k_m-2k)^2)
+   G_{ll}^{\alpha}(k,\bar{K}_2)  \right \}  \nonumber,
+\end{eqnarray}
+where we have defined
+\begin{equation}
+    \bar{K}_1^2=4(k_m^2+k^2),
+\end{equation}
+and
+\begin{equation}
+    \bar{K}_2^2=4(k_m^2+k^2)-(2k+k_m-k_F)(2k+k_1+k_F).
+\end{equation}
+This
+self-consistency scheme consists in choosing adequate initial values of the
+effective mass and $\Delta$. The obtained $G$-matrix is in turn used to
+obtain new values for $M_{N}^{*}$ and $\Delta$. This procedure
+continues until these parameters vary little.
+
+
+Having discussed how to evaluate the $G$-matrix for nuclear matter,
+we will in the remainder of this subsection study how the much debated
+tensor
+force of the NN potential influences observables like the binding
+energy per particle in nuclear matter. To examplify the role of the
+tensor force, we will show results for the potential energy per particle
+ and the defect wave function for the $^3S_1$  partial wave in nuclear
+matter. This discussion is closely
+connected to that in the next subsection, the $G$-matrix for
+finite nuclei, and the discussion on the $T$-matrix in subsection
+3.3.
+
+It has been argued that the increased attraction provided
+by modern meson-exchange potentials like those of the Bonn group
+\cite{mhe87,mac89}, could be ascribed to the fairly weak tensor force
+exhibited by these interactions. In order to quantitatively
+explain this increased binding we show in this subsection examples
+using the Bonn potentials defined
+in table A.2 of ref.\ \cite{mac89}, where version A exhibits the weakest
+tensor force.
+The nuclear matter results for the
+average potential energy for the partial wave $^{3}S_1$
+obtained with potentials A, B and C are displayed
+in fig.\ \ref{fig:bhfnm}
+for the BHF calculation discussed above considering various values of
+the Fermi
+momentum $k_F$ (improvements of these results are given
+to section 7).
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig24.eps}}
+      \end{picture}
+\caption{Contributions to the binding energy per particle
+from the $^3S_1$ partial wave from the Bonn A, B and C
+potentials discussed in the text. Taken from ref.\ [59].}
+\label{fig:bhfnm}
+\end{figure}
+
+The bulk of the $G$-matrix in the $^3S_1$ wave 
+behaves similarly to the scattering matrix $T$, i.e.\,
+\begin{equation}
+    G\approx V_C + V_T \frac{\tilde{Q}}
+    {\omega - \tilde{Q}T\tilde{Q}}V_T.\label{eq:gappro}
+\end{equation}
+The latter equation differs however from the equation for the
+$T$-matrix (see subsection 3.3) due to the
+Pauli operator and the fact that the starting energy is given for particles
+in a medium. The second term in eq.\ (\ref{eq:gappro}) is then quenched
+by the combined effect of the Pauli operator and the attractive energy
+denominator. Thus, since all potentials are fit to the same set of data,
+a potential with a weak (strong) tensor force needs a larger (weaker)
+central force to arrive at the same on-shell scattering matrix. In the
+nuclear medium, the quenching of the second term will then be the more
+important the larger the tensor force. This is clearly reflected in fig.
+\ref{fig:bhfnm}. At small values for the relative monentum $k$, the
+potentials differ negligibly, which reflects the fact that all potentials
+yield the same on-shell  $T$-matrix. At higher densities, the
+quenching mechanisms due to the Pauli operator and the energy denominator
+account for the differences in binding exhibited by the three potentials,
+with the potential exhibiting the weakest tensor force (A) being the most
+attractive.
+
+In connection with the tensor force,
+it is also instructive to consider the behavior of different potentials
+in a nuclear medium, by analyzing the
+renormalized wave functions arising from these potentials.
+We see from the eq.\ (\ref{eq:wave})
+that the second term contains the Pauli
+operator $Q$, such that the difference between the uncorrelated
+and the correlated wave functions, 
+the defect wave function $\chi$ discussed in the two previous
+subsections, contains only contributions compatible
+with the Pauli principle.
+In configuration space, for a given value of $k$, we can write the
+wave function $\Psi$ as
+\begin{equation}
+   \Psi_{ll'}^{\alpha}(r,k)=j_l(kr)\delta_{ll'}+
+   \frac{2}{\pi}\int_{0}^{\infty}\frac{dqq^2 j_{l'}(qr)
+   Q(q,K)G_{ll'}^{\alpha}(qkK\omega)}
+   {\omega -H_{0}(q,K)},
+\label{eq:waver}
+\end{equation}
+with the starting energy $\omega$ defined above.
+To calculate the wave function $\Psi$ we employ here the Bonn A potential defined
+by the parameters of table A.2 in ref.\ \cite{mac89}. Further, rather than using 
+the Bonn B and C potentials, we plot results for the Paris
+potential \cite{paris80} and the Reid-soft-core potential \cite{reid68}, potentials
+which have been widely used in both nuclear matter and finite nuclei calculations.
+The tensor force of the Paris potential is similar to that of the
+Bonn C potential.
+The BHF self-consistent results
+with $k_F =1.4$ fm$^{-1}$ have been used.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig25.eps}}
+      \end{picture}
+\caption{Contributions to the defect wave function
+for the $^3S_1$ partial wave from the Bonn A, Paris and Reid-soft-core
+potentials discussed in the text for $k=0.8$ fm$^{-1}$.}
+\label{fig:chap3def}
+\end{figure}
+In fig.\ \ref{fig:chap3def} we show the defect wave function, i.e.~
+the second term on the right hand side of eq.\ (\ref{eq:waver}), in coordinate
+space for the above three potentials
+for the $^{3}S_1$ channel. We also include the defect wave function
+obtained with
+the short-range parametrization
+$j_0 (kr)\left(1-j_0 (qr)\right)$ with
+$q=800$ MeV (roughly the mass of the heaviest mesons
+in OBE models for the NN potential). The latter parametrization has been
+a much favored choice in the literature \cite{town87,town92},
+and it is amusing to
+see how well these Bessel functions agree with the defect function of 
+the Reid potential.
+However, it is important to note that 
+fig.\ \ref{fig:chap3def} reflects the fact that potentials with
+a weaker tensor force exhibit the smallest defect function at
+short distances and at distances were the potential is attractive. This
+leads in turn to larger $G$-matrix elements and explains why potentials
+like the Bonn A result in more binding energy for nuclear matter
+and finite nuclei.
+Finally, it is also worth noting that all potentials
+result in similar defect wave functions at larger $r$ values, where
+one-pion exchange dominates.
+
+
+
+
+\subsection{Double-partitioned scheme for calculations of the $G$-matrix
+for finite nuclei}
+
+Before we proceed in detailing the calculation of the $G$-matrix
+appropriate for finite nuclei, certain approximations need be explained.
+
+As discussed in section 4, the philosophy behind perturbation theory is
+to reduce the intractable full Hilbert space problem to one which
+can be solved within a physically motivated model space, defined by the
+operator $P$. The excluded degrees of freedom are represented by the
+projection operator $Q$. The definition of these operators is connected
+to the nuclear system and to the perturbative expansions defined
+in section 4. Consider the evaluation of the effective interaction
+needed in calculations of the low-lying states of $^{18}$O. From
+experimental data and theoretical calculations the belief is that
+several properties of this nucleus can be described by a model
+space consisting of a closed $^{16}$O core (consisting of the filled
+$0s$- and $0p$-shells) and two valence neutrons
+in the $1s0d$-shell. In fig.\ \ref{fig:orbits} we exhibit this division
+in terms of h.o.~sp orbits.
+\begin{figure}[hbtp]
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(140,130)
+      \put(25,10){\epsfxsize=14cm \epsfbox{ho.eps}}
+    \end{picture}
+\caption{Classification of harmonic oscillator single-particle
+orbits.}
+\label{fig:orbits}
+\end{figure}
+The active sp states in the $1s0d$-shell are then given by the  $0d_{5/2}$, 
+$0d_{3/2}$ and $1s_{1/2}$ orbits, labels $4-6$ in fig.\ \ref{fig:orbits}.
+The remaining states enter the definition of
+$Q$. Once we have defined $P$ and $Q$ we proceed in constructing the $G$-matrix
+and the corresponding perturbative expansion in terms of the $G$-matrix. 
+There are however several ways of choosing $Q$. A common procedure is to
+specify the boundaries of $Q$ by three numbers, $n_1$, $n_2$ and $n_3$, explained
+in fig.\ \ref{fig:qoperat}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(110,110)
+      \put(25,10){\epsfxsize=11cm \epsfbox{paulifin.eps}}
+      \end{picture}
+\caption{Definition of the $P$ (shaded area) and $Q$ operators
+appropriate for the definition of the $G$-matrix and the effective
+interaction. Outside the shaded area limited by the boundaries $n_1$,
+$n_2$ and $n_3$ $P=0$ and $Q=1$.}
+\label{fig:qoperat}
+\end{figure}
+For $^{18}$O we would choose $(n_1=3,n_2=6,n_3=\infty)$. 
+Our choice of 
+$P$-space implies that the passive single-particle states start from the
+$1p0f$-shell (numbers 7--10 in fig.\ \ref{fig:orbits}), and orbits 1, 2
+and 3 are passive hole states. Stated differently, this means that $Q$
+is constructed so as to prevent scattering into intermediate 
+two-particle states 
+with one particle in the $0s$- or $0p$-shells or both particles
+in the $1s0d$-shell. This definition of the $Q$-space influences the determination
+of the \qbox discussed in section 4. Consider the diagrams displayed
+in fig.\ \ref{fig:qboxexam1}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{qdiags.eps}}
+      \end{picture}
+\caption{Examples of diagrams which may define the \qbox. Greek
+letters are active sp states while orbits which define $Q$ are given by
+latin letters, with $p_i$ and $h_i$ representing particle and hole
+state $i$, respectively.
+An upgoing arrow represents a particle state (both
+active and passive) while a downgoing arrow is a hole state.}
+\label{fig:qboxexam1}
+\end{figure}
+Diagram (a) of this figure is just the $G$-matrix and is allowed in the definition
+of the \qbox. With our choice $(n_1=3,n_2=6,n_3=\infty)$, diagram (b) is not
+allowed since the intermediate state consists of passive particle
+states  and is already included in the evaluation of the $G$-matrix. Similarly,
+diagram (c) is also not allowed whereas diagram (d) is allowed. Now an important
+subtlety arises. If we evaluate the $G$-matrix with the boundaries
+$(n_1=3,n_2=10,n_3=\infty)$, and define the $P$-space of {\em 
+the effective interaction}
+by including orbits 4 to 6 only, then diagrams (b) and (c)
+are allowed if $7\leq p_1 , p_2 \leq 10$\footnote{A word on notations:
+In referring to model-space diagrams, greek letters will always
+represent the sp orbits which define the model space, whereas latin letters
+represent the remaining orbits. Notice however that, particle or hole 
+labels may run over model-space orbits as well. In this case, the total
+two-body wave function does not belong to the chosen model space.}.
+In this way we allow for 
+intermediate two-particle states as well with orbits outside the 
+model-space of the effective interaction. The reader should notice the above
+differences, i.e.\ that the $Q$-space defining the $G$-matrix and 
+$H_{\mathrm{eff}}$
+may differ. Throughout the rest of this work we will apply such  
+different $Q$-spaces, and label the $Q$-operator of the $G$-matrix
+by $\tilde{Q}$. Several arguments 
+for choosing $(n_1=3,n_2=10,n_3=\infty)$ in calculations
+of the $G$-matrix appropriate for $^{18}$O can be found in refs.\
+\cite{tk72,kkko76}. Here we limit the attention to the removal
+of the dependence on the auxiliary potential $U$ in the definition of 
+$G$. Since the interaction term $H_1=V-U$ is used to define the \qbox, there
+certainly are diagrams with $U$ vertices in the \qbox . Certain of these
+diagrams can be removed by adding ladder type diagrams with $U$ insertions
+to the intermediate states of the $G$-matrix. Such terms are shown in fig.\
+\ref{fig:uinsert}. 
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,80)
+      \put(25,10){\epsfxsize=12cm \epsfbox{bhfladder.eps}}
+      \end{picture}
+\caption{
+Examples of ladder diagrams with $U$ and BHF insertions to the
+intermediate particle states.}
+\label{fig:uinsert}
+\end{figure}
+By adding such diagrams ( this amounts to summing a geometric series in $U$)
+we obtain a new $G$-matrix $\tilde{G}$
+\begin{equation}
+  \tilde{G}=V+V\frac{\tilde{Q}}{\omega -\tilde{Q}T\tilde{Q}}\tilde{G},
+\label{eq:gfinite}
+\end{equation}
+defined as the sum of all ladder diagrams with $U$ insertions to the intermediate
+states as well. The question now arises, which $G$-matrix should one choose,
+$G$ or $\tilde{G}$? Here we recast some of the arguments given by the authors of
+ref.\ \cite{kkko76}.
+First, since the hamiltonian $H$ does not depend on $U$ one should seek to minimize
+the dependence of $G$ on $U$. This is actually accounted for in our definition
+of $\tilde{G}$. Secondly, the BHF self-energy insertions for high-lying states
+in diagram (b) of fig.\ \ref{fig:uinsert} may not cancel the corresponding
+$U$ insertion diagram in (a), since the BHF insertions to a particle line
+are off the energy shell. For low-lying particle states the off-shell character
+of the BHF insertions is in general rather weak \cite{kkko76}, and the cancellation
+between diagrams (a) and (b) is approximately exact. For high-lying states
+it is not clear whether this cancellation may take place. Thus a 
+$G$-matrix defined in eq.\ (\ref{eq:gfinite}) is to be preferred since
+the $G$-matrix of eq.\ (\ref{eq:gmat}) presupposes that $U$ and BHF 
+insertions to intermediate particle states cancel exactly. 
+There are also considerations which favor $\tilde{G}$ from studies of three-body
+clusters in nuclear matter \cite{kkko76}. In those studies, certain
+three-body clusters nearly cancel diagrams with BHF insertions to the
+intermediate particle states, leaving only terms with $U$ insertions
+included in $\tilde{G}$. 
+
+The above remarks made the authors of ref.\ \cite{kkko76} suggest a 
+two-step approach to the calculation of the $G$-matrix for finite nuclei.
+The intermediate states are divided into two parts, high-lying and low-lying
+ones.
+For the low-lying states one ignores all self-energy insertions, due to the
+above nuclear matter arguments. Thus one should use $\tilde{G}$ for
+high-lying intermediate states only. For the low-lying states, one assumes
+that the $U$ and BHF insertions cancel approximately, leading to the
+$G$-matrix of eq.\ (\ref{eq:gmat}) with $V$ replaced by $\tilde{G}$ and
+$\tilde{Q}$ restricted to low-lying intermediate particle states. 
+This explains also our choice of boundaries for $\tilde{P}$ and
+$\tilde{Q}$, given by $(n_1=3,n_2=10,n_3=\infty)$ for $^{18}$O.
+
+Let us be more specific and detail this double-partitioned procedure.
+We have defined $\tilde{G}$ in terms of plane wave intermediate states,
+while $G$ has harmonic oscillator intermediate states (this is one
+possible choice for $U$). We divide the exclusion operator
+into two parts, one which represents the low-lying states $Q_l$ and
+one which accounts for high-lying states $Q_h$, viz.\
+\[
+    Q=Q_l+Q_h=Q_l+\tilde{Q}.
+\]
+If we consider $^{18}$O as our pilot nucleus, we may define $Q_l$ to consist
+of the sp orbits of the $1p0f$-shell, orbits $7-10$ in fig.\ \ref{fig:orbits},
+described by h.o.\ states. $Q_h$ represents then the remaining orthogonalized
+intermediate states.
+Using the identity of Bethe, Brandow and Petschek \cite{bbp63} of
+eq.\ (\ref{eq:gidentity}) we can express $G$ in terms of $\tilde{G}$ as
+\begin{equation}
+        G=\tilde{G} +\tilde{G}
+        \left(\frac{Q_l}{\omega -H_0}\right)G,
+        \label{eq:gidfinite}
+\end{equation}
+where
+\[
+  \tilde{G}=V+V\frac{Q_h}{\omega -T}\tilde{G},
+\]
+and we have assumed that $\tilde{G}$ is hermitian and that $[Q_l,H_0]=0$.
+We see again that the philosophy behind both the separation and
+reference-spectrum methods is employed here as well. We first calculate
+a ``reference'' $G$-matrix ($\tilde{G}$ in our case), and then insert this
+in the expression for the full $G$-matrix. The novelty here is that
+we are able to calculate $\tilde{G}$ exactly through operator relations
+to be discussed below. In passing we note that $G$ depends significantly 
+on the choice of $H_0$, though the low-lying intermediate states
+are believed to be fairly well represented by h.o.\ states. 
+Also, the authors of ref.\ \cite{kkko76} demonstrate that low-lying
+intermediate states are not so important in $G$-matrix calculations,
+being consistent with the short-range nature of the NN potential.
+Since we let $Q_l$ to be defined by the orbits of the $1p0f$-shell,
+and the energy difference between two particles in the 
+$sd$-shell and $pf$ shell is of the order $-14$ MeV, we can treat 
+$G$ as a perturbation expansion in $\tilde{G}$.
+Eq.\ (\ref{eq:gidfinite}) can then be written as 
+\begin{equation}
+        G=\tilde{G} +\tilde{G}
+        \left(\frac{Q_l}{\omega -H_0}\right)\tilde{G}
+        +\tilde{G}
+        \left(\frac{Q_l}{\omega -H_0}\right)\tilde{G}
+        \left(\frac{Q_l}{\omega -H_0}\right)\tilde{G} +\dots
+\end{equation}
+The only intermediate states are those defined by the $1p0f$-shell.
+The second term on the rhs.\ is nothing but the second-order 
+particle-particle ladder. The third term is then the third-order ladder
+diagram in terms of
+$\tilde{G}$. As shown by the authors of ref.\ \cite{kkko76}, the inclusion
+of the second-order particle-particle diagram in the evaluation
+of the \qbox, represents a good approximation (in our work we will
+include all diagrams through third order).
+However,
+the still unsettled problem is how to define
+the boundary between 
+$Q_l$ and $Q_h$. 
+
+
+
+Now we will discuss how to compute $\tilde{G}$. The quenching
+of the tensor force  
+due to the dependence of the starting
+energy and the Pauli operator are also discussed. Finally, the reader
+has probably noted that in the above examples we have set 
+$n_3=\infty$. This is however not feasible in actual calculations, which
+in turn dictates an approximation to $n_3$. We discuss such approximations as
+well.
+
+In this work we solve the equation for the $G$-matrix
+for finite nuclei by employing
+a formally
+exact technique for handling $\tilde{Q}$, originally presented by
+Tsai and Kuo \cite{tk72} and discussed in ref.\ \cite{kkko76}.
+Tsai and Kuo employed the matrix identity
+\begin{equation}
+  \tilde{Q}\frac{1}{\tilde{Q}A\tilde{Q}}
+  \tilde{Q}=\frac{1}{A}-
+   \frac{1}{A}\tilde{P}\frac{1}{\tilde{P}A^{-1}\tilde{P}}\tilde{P}\frac{1}{A},
+\end{equation}
+with $A=\omega -T$, to rewrite eq.\ (\ref{eq:gfinite}) as\footnote{We will omit the
+label $\tilde{G}$ for the $G$-matrix for finite nuclei, however it is
+understood that the $G$-matrix for finite nuclei is calculated according
+to eq.\ (\ref{eq:gfinite}) This means that we have to 
+include the particle-particle ladder diagrams in the 
+\qbox. The labels $\tilde{Q}$ and $\tilde{P}$
+remain in order to distinguish these from those employed in the
+definition of the effective interaction.}
+\begin{equation}
+   G = G_{F} +\Delta G,\label{eq:gmod}
+\end{equation}
+where $G_{F}$ is the free $G$-matrix defined as
+\begin{equation}
+   G_{F}=V+V\frac{1}{\omega - T}G_{F}. \label{eq:freeg}
+\end{equation}
+The term $\Delta G$ is a correction term defined entirely within the
+model space $\tilde{P}$ and given by
+\begin{equation}
+   \Delta G =-V\frac{1}{A}\tilde{P}
+   \frac{1}{\tilde{P}A^{-1}\tilde{P}}\tilde{P}\frac{1}{A}V.
+\end{equation}
+Employing the definition for the free $G$-matrix of eq.\ (\ref{eq:freeg}),
+one can rewrite the latter equation as
+\begin{equation}
+  \Delta G =-G_{F}\frac{1}{e}\tilde{P}
+  \frac{1}{\tilde{P}(e^{-1}+e^{-1}G_{F}e^{-1})
+  \tilde{P}}\tilde{P}\frac{1}{e}G_F,
+\end{equation}
+with $e=\omega -T$.
+We see then that the $G$-matrix for finite nuclei
+is expressed as the sum of two
+terms; the first term is the free $G$-matrix with no Pauli corrections
+included, while the second term accounts for medium modifications
+due to the Pauli principle. The second term can easily
+be obtained by some simple matrix operations involving
+the model-space matrix $\tilde{P}$ only.
+
+To calculate $G_F$ one needs only to solve eq.\ (\ref{eq:freeg})
+via e.g.\ momentum space inversion techniques \cite{ht70}.
+The equation for the free matrix $G_F$ is solved in momentum space and we
+obtain
+\begin{equation}
+    \bra{kKlL{\cal J}ST}G_F\ket{k'Kl'L{\cal J}S'T}.\label{eq:freeg2}
+\end{equation}
+Transformations from the relative and center-of-mass motion
+system to the lab system will be discussed
+below.
+
+To obtain a $G$-matrix in a h.o.~basis, eq.\ (\ref{eq:freeg2})
+is transformed into
+\begin{equation}
+     \bra{nNlL{\cal J}ST}G_F\ket{n'N'l'L'{\cal J}S'T},
+\end{equation}
+with $n$ and $N$ the principal quantum numbers of the relative and
+center-of-mass motion, respectively.
+Moreover, the wave function $\ket{nlNL{\cal J}ST}$, with $nNlL$ the
+oscillator quantum numbers of the relative motion and center-of-mass,
+is related
+to $\ket{klKL{\cal J}ST}$ by \cite{bon89}
+\begin{equation}
+   \ket{nlNL{\cal J}ST}= \int k^{2}K^{2}dkdKR_{nl}(\sqrt{2}\alpha k)
+R_{NL}(\sqrt{1/2}\alpha K)
+\ket{klKL{\cal J}ST},
+\end{equation}
+with $\alpha$ being the oscillator length and $R_{nl}$ and $R_{NL}$ the HO
+functions in momentum space.
+
+Depending on the choice of single-particle basis, the $G$-matrix elements
+needed in the evaluation of the above expressions take different forms.
+The most commonly employed sp basis is the harmonic oscillator, which
+in turn means that
+a two-particle wave function with total angular momentum $J$
+and isospin $T$
+can be expressed as \cite{law80}
+\begin{equation}
+\begin{array}{ll}
+\ket{(n_{a}l_{a}j_{a})(n_{b}l_{b}j_{b})JT}=&
+{\displaystyle
+\frac{1}{\sqrt{(1+\delta_{12})}}
+\sum_{\lambda S{\cal J}}\sum_{nNlL}}
+F\times \langle ab|\lambda SJ \rangle\\
+&\times (-1)^{\lambda +{\cal J}-L-S}\hat{\lambda}
+\left\{\begin{array}{ccc}L&l&\lambda\\S&J&{\cal J}
+\end{array}\right\}\\
+&\times \left\langle nlNL| n_al_an_bl_b\right\rangle
+\ket{nlNL{\cal J}ST},\end{array}\label{eq:hoho}
+\end{equation}
+where the term
+$\left\langle nlNL| n_al_an_bl_b\right\rangle$
+is the familiar Moshinsky bracket, see e.g. ref.\ \cite{law80}.
+The term $\langle ab|LSJ \rangle $ is a shorthand
+for the $LS-jj$ transformation coefficient,
+\begin{equation}
+     \langle ab|\lambda SJ \rangle = \hat{j_{a}}\hat{j_{b}}
+     \hat{\lambda}\hat{S}
+     \left\{
+    \begin{array}{ccc}
+       l_{a}&s_a&j_{a}\\
+       l_{b}&s_b&j_{b}\\
+       \lambda    &S          &J
+    \end{array}
+    \right\}.\label{eq:lstrans}
+\end{equation}
+Here
+we use $\hat{x} = \sqrt{2x +1}$.
+The factor $F$ is defined as $F=\frac{1-(-1)^{l+S+T}}{\sqrt{2}}$ if
+$s_a = s_b$.
+
+The $G$-matrix in terms of harmonic oscillator wave functions reads
+\begin{equation}
+   \begin{array}{ll}
+  \bra{(ab)JT}G\ket{(cd)JT}=&
+  {\displaystyle \sum_{\lambda \lambda ' SS' {\cal J}}\sum_{nln'l'NL}
+  \frac{1}{\sqrt{(1+\delta_{ab})
+  (1+\delta_{cd})}}\left(1-(-1)^{l+S+T}\right)}
+  \\
+  &\times\langle ab|\lambda SJ\rangle \langle cd|\lambda 'S'J\rangle
+  \left\langle nlNL| n_{a}l_{a}n_{b}l_{b}\lambda\right\rangle
+  \left\langle n'l'NL| n_{c}l_{c}n_{d}l_{d}\lambda ' \right\rangle
+  \\
+  &\times \hat{{\cal J}}(-1)^{\lambda + \lambda ' +l +l'}
+  \left\{\begin{array}{ccc}L&l&\lambda\\S&J&{\cal J}
+  \end{array}\right\}
+  \left\{\begin{array}{ccc}L&l'&\lambda '\\S&J&{\cal J}
+  \end{array}\right\}
+  \\
+  &\times\bra{nNlL{\cal J}ST}G\ket{n'N'l'L'{\cal J}S'T},
+  \end{array} \label{eq:gmat2}
+\end{equation}
+where $G$ is the given by the sum $G = G_{F} +\Delta G$.
+The label $a$ represents here all the single particle quantum numbers
+$n_{a}l_{a}j_{a}$.
+
+The only approximation needed in the calculation of the $G$-matrix 
+is the choice of the boundary variable $n_3$. In table \ref{tab:n3converge}
+we display matrix elements of the $sd$-shell for $J=0,1$ and $T=0,1$ using
+different approximations to $n_3$\footnote{Hereafter we abbreviate
+$(n_1=3,n_2=10,n_3=x)$ to $(3,10,x)$.}. The results have been obtained
+with the Bonn A potential of table A.1 of ref.\ \cite{mac89}.
+An oscillator energy of $14$ MeV was used. 
+The starting energy is $-10$ MeV.
+The most significant contribution stems from values of $n_3\leq 21$, whereas
+greater $n_3$ values give only small contributions. For the
+above matrix elements this can be understood from simple considerations
+on conservation of the center-of-mass momentum. The matrix elements are
+given for valence space states, and the valence particles have momentum 
+around $k_F$. This means that an intermediate particle state in the 
+calculation of the $G$-matrix can at most achieve a momemtum  $\sim 3k_F$,
+when the boundaries are defined as $(3,10,x)$, since the hole momentum
+can at most be equal $k_F$.  
+\begin{table}[hbtp]
+\caption{Dependence of the $G$-matrix on the choice of $n_3$ for
+matrix elements in the $sd$-shell for $J=0,1$ and $T=0,1$.}
+\begin{center}
+\begin{tabular}{lllllrrrrr}
+\\\hline
+$JT$&$j_{a}$&$j_{b}$&$j_{c}$&$j_{d}$&
+\multicolumn{1}{c}{(3,10,45)}&
+\multicolumn{1}{c}{(3,10,66)}&
+\multicolumn{1}{c}{(3,10,78)}&
+\multicolumn{1}{c}{(3,10,91)}&
+\multicolumn{1}{c}{(3,10,120)}
+\\\hline
+01&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$&$d_{5/2}$
+&-1.713&-1.712&-1.712&-1.712&-1.712\\
+10&&&&&-0.552&-0.549&-0.548&-0.548&-0.548\\
+01&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$&$d_{3/2}$
+&-0.324&-0.323&-0.323&-0.323&-0.323\\
+10&&&&&-0.339&-0.336&-0.335&-0.335&-0.335\\
+01&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$&$s_{1/2}$
+&-2.418&-2.417&-2.417&-2.417&-2.417\\
+10&&&&&-3.762&-3.718&-3.700&-3.691&-3.690
+\\ \hline
+\end{tabular}
+\end{center}
+\label{tab:n3converge}
+\end{table}
+It is worth noting however that the $T=0$ matrix elements show a much
+weaker convergence compared with the $T=1$ elements. The latter can
+be approximated with the choice $(3,10,45)$, whereas the $T=0$
+matrix elements show differences of the order $0.1\%$-$0.7\%$ 
+when going from
+$n_3=66$ to $n_3=91$. For $n_3=91$ and higher values 
+the difference is negligible\footnote{For $n_3=66$, this means that the
+we include sp orbits up to the last orbit in the $5s4d3g2i1k0m$-shell,
+$n_3=78$ means the last orbit in the $5p4f3h2j1l0n$-shell and so
+forth.}.
+Could this poorer convergence in the $T=0$ channel be retraced to the
+tensor force? To better understand this let us single out the
+matrix elements
+\begin{equation}
+     \bra{(0s_{1/2})^{2}JT=10}G\ket{(0s_{1/2})^{2}JT=10},
+\end{equation}
+and
+\begin{equation}
+    \bra{(0s_{1/2})^{2}JT=01}G\ket{(0s_{1/2})^{2}JT=01}.
+\end{equation}
+The first matrix element receives contributions from 
+the $^{3}S_1$ partial wave only. The $^{3}D_1$ partial wave comes
+in as an intermediate state contribution in the evaluation of the
+$G$-matrix and serves to quench the second- and higher-order
+contributions. Thus, the first matrix element allows us to study
+directly the dependence on the tensor force. Also, the partial
+waves $^{3}S_1$ and $^{3}D_1$ are the most important ones in
+the analysis of the tensor force (recall the nuclear and neutron matter
+discussion). The second matrix element receives contributions from
+the $^{1}S_0$ partial wave only.
+
+In order to test the dependence upon the tensor force we display
+in table \ref{tab:tensorss} the results for the above two 
+matrix elements obtained with both the Bonn A and C potentials of
+table A.1 of ref.\ \cite{mac89}, with
+the C potential exhibiting the stronger tensor force.
+\begin{table}[hbtp]
+\caption{Dependence of
+the $\bra{(0s_{1/2})^{2}}G\ket{(0s_{1/2})^{2}}$
+matrix element
+on the choice of $n_3$ for the Bonn A (first row in each entry)
+and the Bonn C potential (second row) for a starting energy
+$-5$ MeV.}
+\begin{center}
+\begin{tabular}{lllllrrrrr}
+\\ \hline
+$JT$&\multicolumn{4}{c}{$\bra{(0s_{1/2})^{2}}G\ket{(0s_{1/2})^{2}}$} &
+\multicolumn{1}{c}{(3,10,45)}&
+\multicolumn{1}{c}{(3,10,66)}&
+\multicolumn{1}{c}{(3,10,78)}&
+\multicolumn{1}{c}{(3,10,91)}&
+\multicolumn{1}{c}{(3,10,120)}
+\\  \hline
+10&&&&&-9.341&-9.331&-9.328&-9.328&-9.327\\
+  &&&&&-9.100&-9.088&-9.084&-9.083&-9.082\\
+01&&&&&-6.783&-6.783&-6.783&-6.783&-6.783\\
+  &&&&&-6.793&-6.793&-6.793&-6.793&-6.793
+\\ \hline
+\end{tabular}
+\end{center}
+\label{tab:tensorss}
+\end{table}
+We see from this table that the $JT=01$ matrix elements converge
+rapidly, irrespective of potential. The differences between the two potentials
+is also neglible, reflecting the fact that the $^{1}S_0$ partial wave
+does not receive contributions from the tensor force.
+The
+$JT=10$ matrix elements stabilize first around $n_3 \sim 66-91$. However,
+we see that the convergence of the Bonn A potential is slightly faster than
+the Bonn C potential.
+The difference between (3,10,45) and (3,10,78) is $0.14\%$ for the 
+Bonn A potential whereas
+for the Bonn C potential we have $0.18\%$. Although these differences
+are small, they reflect that potentials with a weak tensor force
+experience a larger quenching of $G_F$ 
+in the $T=0$ channel. 
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig31.eps}}
+      \end{picture}
+\caption{The free $G$-matrix ($G_F$) and the $G$-matrix ($G$) for
+$\bra{(0s_{1/2})^{2}JT=01}G\ket{(0s_{1/2})^{2}JT=01}$ obtained
+with the Bonn A (solid lines) and C
+(dashed lines) potentials described in the text as a function
+of the starting energy.}
+\label{fig:quench1s0}
+\end{figure}
+We demonstrate  this in figs.\ \ref{fig:quench1s0} and 
+\ref{fig:quench3s1} where we plot
+both the total $G$-matrix and $G_F$ as functions of the starting
+energy for both potentials with a Pauli operator
+defined as (3,10,66). Fig. \ref{fig:quench1s0} shows the results
+for the $JT=01$ channel, whereas fig.\ \ref{fig:quench3s1} shows the
+$JT=10$ matrix elements.
+
+The $JT=01$ matrix elements obtained with the Bonn A and C potentials
+show only negligible differences, both for $G_F$ and $G$. This explains 
+why the convergence in the above table is rather
+similar for the two potentials. Moreover, the difference between 
+$G_F$ and $G$ is not so large in the $JT=01$ channel.
+For the $JT=10$ matrix elements at small starting energies, the
+difference between $G_F$ and $G$ is much more dramatic, as shown in fig.\
+\ref{fig:quench3s1}.
+\begin{figure}[hbtp]
+      \setlength{\unitlength}{1mm}
+      \begin{picture}(140,150)
+      \put(25,10){\epsfxsize=12cm \epsfbox{fig30.eps}}
+      \end{picture}
+      \vspace{1cm}
+\caption{The free $G$-matrix ($G_F$) and the $G$-matrix ($G$) for
+$\bra{(0s_{1/2})^{2}JT=10}G\ket{(0s_{1/2})^{2}JT=10}$ obtained
+with the Bonn A (solid lines) and C (dashed lines)
+potentials described in the text as a function
+of the
+starting energy.}
+\label{fig:quench3s1}
+\end{figure}
+The $G_F$-matrix 
+for the two potentials differs already at small energies, by 
+roughly $2$ MeV. This may explain why potential A
+converges faster in table \ref{tab:tensorss}.
+The quenching of $G_F$ as a function of the starting
+energy for the two potentials is not
+so different however, though the quenching of $G_F$ for the Bonn C
+potential is slightly larger.
+$G_F$ for the Bonn A potential is quenched $63\%$ when
+going from a starting energy of $-5$ MeV to $-140$ MeV. The corresponding
+number for the Bonn C potential is $67\%$. For
+the final $G$-matrix, which now takes into account {\em both the Pauli
+operator and the starting energy} through $\Delta G$,
+the quenching is  much stronger than that for $G_F$. The $G$-matrix 
+of the Bonn A potential
+is quenched $17\%$ when going from $-5$ to $-140$ MeV in starting energy,
+whereas the corresponding number for the C potential is $26\%$.
+It is also worth noting that the effect of the Pauli operator is more
+important in the $T=0$ channel at small starting energies.
+
+The quenching due to the Pauli operator and the starting energy, 
+explains why a potential
+with a weak tensor force results in $G$-matrix
+elements which in general are more attractive
+compared to a potential with a stronger tensor force.
+We will see examples of this in sections  6-8. For the 
+applications of the $G$-matrix to calculations of the effective 
+interaction in chapter four, we will approximate $n_3=66$. For $sd$-shell
+nuclei we then have the boundaries (3,10,66). For nuclei in the mass
+region of calcium, the sp states in the $1p0f$ shell are used to determine
+the model space appropriate for the effective interaction. The boundaries
+$n_1$, $n_2$ and $n_3$ become then (6,15,66), see fig.\ \ref{fig:orbits}
+for the number assignements. For nuclei in the mass region of tin, we 
+choose the $2s1d0g$ shell (except the $0g_{9/2}$ orbit) as our model
+space and the $G$-matrix is calculated with the boundaries (11,21,66).
+
+Finally, instead of a h.o.\ basis we could employ a
+representation for the two-particle wave function where both particles
+are represented by plane waves. In this case we have
+\cite{bon89,kkr79,wc72}
+\begin{equation}
+\begin{array}{ll}
+\ket{(k_{a}l_{a}j_{a})(k_{b}l_{b}j_{b})JT}=&
+{\displaystyle \sum_{lL\lambda S{\cal J}}\int k^{2}dk\int K^{2}dK}
+F\times\langle ab|\lambda SJ \rangle
+\\
+&\times (-1)^{\lambda +{\cal J}-L-S}
+\hat{\lambda}
+\left\{\begin{array}{ccc}L&l&\lambda\\S&J&{\cal J}
+\end{array}\right\}
+\\
+&\times \left\langle klKL| k_{a}l_{a}k_{b}l_{b}\right\rangle
+\ket{klKL{\cal J}ST},\end{array}\label{eq:kk}
+\end{equation}
+where the term $\left\langle klKL| k_{a}l_{a}k_{b}l_{b}\right\rangle$
+is the vector bracket defined in refs.\ \cite{kkr79,wc72}. We could
+correspondingly define a $G$-matrix in terms of plane waves only, or 
+in a mixed representation by noting that
+the two-particle wave functions with
+$\ket{(n_{a}l_{a}j_{a})(k_{b}l_{b}j_{b})JT}$,
+can be obtained from the latter equation through
+\begin{equation}
+\ket{(n_{a}l_{a}j_{a})(k_{b}l_{b}j_{b})JT}=
+\int k_{a}^{2}dk_{a}R_{n_{a}l_{a}}(\alpha k_{a})
+\ket{(k_{a}l_{a}j_{a})(k_{b}l_{b}j_{b})JT}.    \label{eq:kho}
+\end{equation}
+

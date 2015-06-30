@@ -1,0 +1,189 @@
+From flocard@csnsm.in2p3.fr Tue May 21 14:34:37 2002
+Date: Tue, 21 May 2002 14:11:49 +0200
+From: Hubert Flocard <flocard@csnsm.in2p3.fr>
+To: morten.hjorth-jensen@fys.uio.no, dean@ornl.gov,
+     Georges Bertsch <bertsch@phys.washington.edu>,
+     Karie Friedman <rmp@phys.washington.edu>
+Subject: RMP
+
+Orsay May 21st
+			Morten, David,
+	Attached to this mail, you will find the first report on your review
+article. It contains what I believe are useful suggestions to improve
+your work and in particular increase its effectiveness as a review on
+the subject.
+	I have contacted the second referee to inform him how important it is
+for us to have his opinion as quickly as possible.
+	Best regards
+	Hubert
+cc : Bertsch, Friedman
+    [ Part 2: "Attached Text" ]
+
+    Report on review by Dean and Hjorth-Jensen.
+
+   Pairing in nuclear systems is a fascinating phenomenon which
+   spreads over the objects differing by orders of magnitude
+   in their spatial dimensions with observable consequences.
+   It's common background can be traced back to the attractiveness
+   of nucleon-nucleon [n-n] interaction at the Fermi energy.
+   The feature of attractiveness of n-n interaction is in fact
+   a key property which allowed to unify treatment of nuclear
+   pairing with original concepts of BCS theory of
+   superconductivity. Due to recent development of single-electron
+   spectroscopy in ultrasmall metallic grains unity of these
+   treatments can now be tested directly on mesoscopic
+   level with all consequences of finite size effects.
+
+   Pairing has its roots in BCS [or HFB] i.e in mean-field
+   formulation and many concepts of pairing related phenomena
+   were born out of mean-field based research. To be clear, neither
+   I want to question that nuclear shell-model is considered
+   to be much more fundamental than mean-field nor
+   want the authors to change a "philosophy" of this overview.
+   However, in my opinion one cannot loose sight of
+   historical developments/achievements while writing a review of
+   pairing related phenomena particularly in finite nuclei.
+   Loosely speaking some of the issues discussed in the paper
+   are, in my opinion, at least not properly referenced. To be
+   more specific let me give just few examples:
+
+   1) Pair-transfer enhancement due to pairing [sect. I2] was discussed
+   already in the early 60's by Yoshida. Pair rotational/vibrational
+   spectra [also in Sn nuclei what is relevant for sect. IIIB] were
+   discussed by Bes, Broglia and cooworkers.
+
+   2) Back-bending phenomenon in high spin spectra was discovered
+   by A. Johnson and cooworkers and explained as pair breaking
+   phenomenon by Stephens and Simon and credit
+   to these works seems to be even more appropriate than to (65;66).
+
+   3) Extensions of BCS/HFB including number projection particularly
+   within Lipkin-Nogami approximation are now considered to be almost
+   a routine particularly in high-spin applications. None of these
+   rather recent developments was even mentioned in the introduction.
+
+   4) It is worth to point out close analogy between quasiparticle
+   [single-electron-tunneling] spectra in metallic grains [section IB3]
+   and nuclear high spin spectra. The analogy is particularly well
+   seen from the perspective of cranking model since Coriolis
+   force exerts identical force on nucleonic pair as a magnetic field
+   does on Cooper pair in superconductor [\omega <---> H].
+
+   5) I understand that it was not an intention of the authors but
+   particularly non-experts reading section IIIB can easily built
+   up an impression that importance of 1S0 type pairing in ground
+   states of even nuclei is a discovery of late 90's.
+
+   6) Possible connection between Wigner [IIID] energy and isoscalar
+   pairing was again first pointed out at the mean-field level, see
+   references quoted in (180).
+
+   Since I have jumped over directly to section III -finite nuclei -
+   let me continue with this section and eventually
+   come back to section II. A preselection of subjects discussed
+   here seems to be quite interesting. An attention
+   is paid to issues like pn-pairing, random interactions
+   or thermal properties which indeed attracted recently a lot of
+   attention. Most of these issues are particularly well
+   suited for SMMC technique. Generally, I consider this section
+   to be well and clearly written. Nevertheless few points need to
+   be clarified:
+
+   a) First of all I do not see any argument pointing out towards
+   particular importance of 3P2 partial wave [rather strongly
+   underlined issue] pairing in finite nuclei.
+   Results presented in e.g. table I are not convincing at all.
+
+   b) There is "inflection point" in U(T) curve coming from SMMC
+   calculations of 54Fe [page 35]. This leads to a peak in C at
+   T\sim 1MeV. However, such a peak is hardly seen for 54Fe in
+   Liu-Alhassid calculations. Can it be therefore related to
+   thermal pairing collapse [fig 22] or maybe finite-space effects
+   are in fact seen earlier, at lower T? Somewhat it is hard to
+   believe that details of interactions used in both sets of
+   calculations will substantially influence <\Delta^+ \Delta>
+   curve of Fig. 22.
+
+   c) Is there any simple-minded argument explaining survival
+   of isoscalar pairing versus T [Fig. 22]? It is difficult
+   to understand why temperature effects should depend upon
+   spin or isospin coupling? This result seems to be also in
+   contradiction to other calculations
+   see e.g. R\"opke et al. Phys. Rev C61 024306 where strong
+   suppression of isoscalar gap with increasing T was reported.
+
+   d) I am not sure but I have certain doubts concerning
+   calculations presented in Fig. 25 [pages 40-42]. As far as
+   I understand calculations are done for N-Z=4, N-Z=2 and N-Z=0
+   i.e. for 20O; 22Ne and 24Mg [and not for 20Ne, 22Ne, 24Mg
+   - page 40 last paragraph]. Therefore transfers (71) are
+   computed for: <24Mg|P^+|22Mg>; <22Ne|P^+|20Ne> and
+   <20O|P^+|18O> respectively. If I am right first two cases
+   describe transfers from/to N=Z systems and should be very similar
+   what indeed seems to be the case [fig 25, upper panel, left and middle
+   pictures]. Can we therefore conclude anything sensible about
+   role of T=0 pairing from these two figures?
+
+      Let me now come back to sect. II. It is a nice attempt to
+   summarize recent calculations
+   of pair gaps in neutron/nuclear matter. It is clearly shown
+   that in spite of huge effort thus far
+   consensus has been reached essentially only for 1S0 gap
+   in case of free-spectrum calculations since in such  case
+   gaps are directly related to phase shifts and the phase shifts
+   in this partial wave are positive up to E(lab)=250MeV i.e.
+   are in the energy range of validity of modern nucleon-nucleon
+   potentials. Similar free-spectrum calculations of triplet gaps
+   invoking different nn-potentials diverge at higher densities
+   since phase shifts are positive over much larger energy range.
+
+   Real theoretical problems starts when one attempts to include
+   medium mediated corrections to the spectra both within and
+   beyond the BCS limit. Various many-body schemes are used to
+   achieve the goal. All of them seem to lead to substantial
+   quenching of both triplet as well as singlet pairing but
+   the details are strongly model dependent as it is
+   nicely illustrated in the paper. Clearly, the authors
+   try to avoid details and/or critical comparative analysis
+   of these advanced many-body theories. This strategy would
+   probably be rather disappointing for advanced readers but
+   makes the paper human-readable. However, any human
+   [nuclear physicist] who deals with gaps of the order
+   of 1MeV and who wants to learn about possible impact
+   of 3P2 neutron gap [150keV in relativistic calculations, Fig. 9]
+   on thermal dynamics of neutron stars will also stay
+   disappointed. Whether or not recent astrophysical observations
+   and/or theoretical models set limits for pairing gaps is
+   not at all discussed. Instead, there are attempts to link
+   these gaps to finite nuclei which is rather risky.
+   Indeed, non-relativistic calculations give reasonable value
+   for 1S0 pairing but some 5MeV(!) for 3S1-3D1 (isoscalar) while
+   relativistic models give essentially no gaps at the
+   saturation density.
+
+   Finally let me point out few technical mistakes:
+
+   1) Equation (16) subscript N is missing
+   2) Caption to Fig. 11 suggests 3 curves.
+   3) Caption to Fig. 12: dotted line is not used; right
+      bracket after 37 is misplaced
+   4) Page 25; first statement of Sect. IIIA:  "nuclei" is omitted
+   5) Eq. (51): bracket ) and argument r_2 are missing
+   6) Eq. (52): Greek letters should be used consistently
+   7) Table II. It is not clear which row/numbers refer to v=0 and v=2
+                overlaps respectively
+   8) Section IIIE and IIIF - something went wrong with numbering
+      of quoted equations
+   9) Caption to Fig. 25; should be "From left to right ...
+      N-Z=0,2,4."
+  10) Eq. (79): undefined function \sigma(E_\gamma ) is used.
+  11) Page 40: is "....J^2 commutes with {\cal T} isospin operator...";
+      should be: time-reversal operator?
+  12) Page 41: is "...Z=0 case..."
+  13) Page 40: is "The three systems 24Mg, 22Ne and 20Ne..." ???
+  14) References: spoiled Norwegian(!) names consisting {\o};
+                  Ref. [258] should be Dobaczewski
+
+  Generally I have very positive impression concerning this work
+  and believe that suggested revisions are rather cosmetic and
+  not very time-consuming.

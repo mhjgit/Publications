@@ -1,0 +1,53 @@
+From SCHULZE@ALP1CT.CT.INFN.IT Mon May 25 11:51:43 1998
+Return-Path: <SCHULZE@ALP1CT.CT.INFN.IT>
+Delivery-Date: Mon, 25 May 1998 11:51:43 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Mon, 25 May 1998 11:50:32 +0200
+Received: from ALP1CT.CT.INFN.IT (alp4ct.ct.infn.it [192.84.150.104]) 
+          by pat.uio.no ; Mon, 25 May 1998 11:50:23 +0200 (MET DST)
+Received: from ALP1CT.CT.INFN.IT by ALP4CT with TCP/IP SMTP;
+          Mon, 25 MAY 98 11:50 CET
+Date: Mon, 25 May 1998 11:50:25 +0200
+To: m.h.jensen@fys.uio.no
+Message-Id: <980525115025.302079ea@ct.infn.it>
+From: "Hansjoseph.Schulze" <Hansjoseph.Schulze@CT.INFN.IT>
+Subject: RE: pairing paper and discussion
+Status: R
+Content-Length: 1838
+
+dear oslo mafia,
+
+how nice to have your united opinion! in fact i think we can agree now on the 
+paper, because you propose exactly what i had in mind, namely to 
+COMPARE the results in a fair and objective manner:
+you put ALL the results in ONE table which allows an immediate comparison;
+i proposed to put ALL the results in ONE figure (concerning the esthetical aspect
+wait until you receive my proposal), and not in two separate
+figures with different x and y scales!!
+this second point was so heavily defended by oystein from the start!
+in the same manner i insist, as you do, to put ALL the phaseshifts in ONE
+figure, because it will allow from the start to recognize and discuss 
+the benefits of the new potentials.
+to put a table is also fine with me, but please in that case you should
+perform all the bhf calculation (also paris and v14) in your manner,
+because there seem to be some discrepancies between your and my calculations,
+which could easily magnify and disturb the comparison.
+concerning the numerical accuracy, i don't know wether you believe in the
+3 digits you specify; i do not even believe the second one in some cases.
+surely a comparison of the relative magnitudes goes allright, but the 
+absolute numbers should be taken with a grain of salt.
+
+so, please tell me wether you have still substantial objections,
+i will send you the new version of the paper before the end of the week.
+later today i will send you the phaseshifts for the paris and v14 to include in 
+the figure.
+finally, a purely technical point:
+
+if you plot the bhf gaps on a reasonable scale they look not very smooth.
+i suppose this is problem of numerics? you do not have more accurate results?
+at least, could you send me results up to the gap closure (or 3.8 fm**-1)
+for the cdbonn and nijmegen pots?
+
+hei sa lenge,
+             hans-josef
+

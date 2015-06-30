@@ -1,0 +1,770 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%   template.tex for PTPTeX.sty <ver.1.0>  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentstyle[seceq,epsf,wrapft]{ptptex}
+%\documentstyle[seceq,preprint]{ptptex}
+%\documentstyle[seceq,letter]{ptptex}
+%\documentstyle[seceq,supplement]{ptptex}
+%\documentstyle[seceq,addenda]{ptptex}
+%\documentstyle[seceq,errata]{ptptex}
+
+%%%%% Personal Macros %%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pubinfo{Vol. 101, No. 4, Aril 1999}  %Editorial Office use
+%\setcounter{page}{}                   %Editorial Office use
+%------------------------------------------------------------
+%\nofigureboxrule%to eliminate the rule of \figurebox
+%\notypesetlogo  %comment in if to eliminate PTPTeX logo
+%\subfontMBF     %use if you have not enough fonts when using mbf.sty
+%---- When [preprint] you can put preprint number at top right corner.
+%\preprintnumber[3cm]{%<-- [..]: optional width of preprint # column.
+%KUNS-1325\\ HE(TH)~97/04\\ hep-th/9702083}
+%-------------------------------------------
+
+\markboth{%     %running head for odd-page (authors' name)
+M.~Hjorth-Jensen
+}{%             %running head for even-page (`short' title)
+Pairing correlations in nuclear systems, from neutron stars to finite nuclei
+}
+
+
+\title{%        %You can use \\ for explicit line-break
+Pairing correlations in nuclear systems, from neutron stars to finite nuclei
+}
+%\subtitle{This is a Subtitle}    %use this when you want a subtitle
+
+\author{%       %Use \sc for the family name
+Morten {\sc Hjorth-Jensen}\footnote{E-mail address: morten.hjorth-jensen@fys.uio.no}
+}
+
+\inst{%         %Affiliation, neglected when [addenda] or [errata]
+Department of Physics, University of Oslo, N-0316 Oslo, Norway}
+
+%\publishedin{%      %Write this ONLY in cases of addenda and errata
+%Prog.~Theor.~Phys.\ {\bf XX} (19YY), page}
+
+\recdate{%      %Editorial Office will fill in this.
+%\today
+}
+
+\abst{%       %this abstract is neglected when [addenda] or [errata]
+In this contribution we attempt at giving an overview
+of pairing correlations in nuclear systems with an emphasis
+on 
+\begin{itemize} 
+\item Superfluidity and superconductivity in neutron stars
+and the relation to the underlying nucleon-nucleon interaction.
+\item Extraction and interpretations 
+of pairing correlations in finite nuclei through
+large-scale shell model studies of nuclei with mass $A\sim 100-132$.
+Effective interactions based on recent nucleon-nucleon interactions
+are utilized in the shell-model studies. The partial
+waves which lead to superfluid properties in infinite matter are also
+crucial for pairing correlations in finite nuclei. 
+\item  Discussion of recent experimental and theoretical studies 
+of thermodynamical properties of finite nuclei
+and their interpretation in terms  of eventual pairing transitions 
+in finite nuclei. 
+\end{itemize}
+
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Pairing correlations are expected
+to play an essential role in nuclear systems, ranging
+from the binding energy, excitation spectrum and odd-even effects
+in finite nuclei to superfluidity in the interior of neutron stars,
+A neutron star is perhaps the largest object in the universe
+which exhibits superfluidity in its interior.
+An eventual superfluid phase in a neutron star will condition
+the neutrino emission and thereby the cooling history of such a
+star, in addition to inducing mechanisms such as 
+sudden spin ups in the rotational
+period of the star.
+For an infinite system, such as a neutron star, the nature
+of the pairing phase transition is well established as second order.
+
+For finite nuclei there are several interesting manifestations
+of pairing correlations.
+In e.g., recent theoretical and experimental studies 
+of thermodynamical properties of finite nuclei, the heat capacity
+has been found to exhibit a non-vanishing bump at temperatures proportional to
+half the pairing gap. These bumps have been interpreted as  signs of the
+quenching of pair correlations, representing in turn features
+of the pairing transition for an infinitely large system.              
+Furthermore,
+finite nuclei such as those found in the chain of even tin isotopes 
+from $^{102}$Sn to $^{130}$Sn,
+exhibit a near constancy of the $2^+_1-0^+_1$ excitation energy, 
+a constancy which can be related
+to strong pairing correlations and the near degeneracy in 
+energy of the relevant single particle
+orbits. Large shell-model calculations for these isotopes 
+reveal that the major contribution to
+pairing correlations in the tin isotopes stems from the $^1S_0$ 
+partial wave in the nucleon-nucleon
+interaction. Omitting this partial wave and the $^3P_2$ wave 
+in the construction of an effective
+interaction, results in a spectrum which has 
+essentially no correspondence with experiment.
+These partial wave are also of importance for infinite 
+neutron matter and nuclear matter and give
+the largest contribution to the pairing interaction and 
+energy gap in neutron star matter. 
+
+This contribution falls in four sections. After the above introductory words, we give a 
+brief review of pairing in infinite neutron matter. Shell-model
+analyses of different approaches to the effective interaction are in turn made in section
+\ref{sec:sec3}. In the same section we discuss 
+recent experimental and theoretical 
+thermodynamical properties of finite nuclei. An
+interpretation in terms  of eventual pairing transitions 
+in finite nuclei is also presented. Concluding remarks 
+are given in section \ref{sec:sec4}.
+
+\section{Pairing in infinite neutron matter}\label{sec:sec2}
+
+The presence of neutron superfluidity in 
+the crust and the inner part 
+of neutron stars 
+are considered well established 
+in the physics of these compact stellar objects. 
+In the low density outer part of a neutron star, 
+the neutron superfluidity is expected 
+mainly in the attractive $^1S_0$ channel. 
+At higher density, the nuclei in the crust dissolve, and one 
+expects a region consisting of a quantum liquid of neutrons and 
+protons in beta equilibrium. 
+The proton contaminant should be superfluid 
+in the $^1S_0$ channel, while neutron superfluidity is expected to  
+occur mainly in the coupled $^3P_2$-$^3F_2$ two-neutron channel. 
+In the core of the star any superfluid 
+phase should finally disappear.
+ 
+The presence of two different superfluid regimes 
+is suggested by the known trend of the 
+nucleon-nucleon (NN) phase shifts 
+in each scattering channel. 
+In both the $^1S_0$ and $^3P_2$-$^3F_2$ channels the
+phase shifts indicate that the NN interaction is attractive. 
+In particular for the $^1S_0$ channel, the occurrence of 
+the well known virtual state in the neutron-neutron channel
+strongly suggests the possibility of a 
+pairing condensate at low density, 
+while for the $^3P_2$-$^3F_2$ channel the 
+interaction becomes strongly attractive only
+at higher energy, which therefore suggests a possible 
+pairing condensate
+in this channel at higher densities. 
+In recent years the BCS gap equation
+has been solved with realistic interactions, 
+and the results confirm
+these expectations. 
+
+The $^1S_0$ neutron superfluid is relevant for phenomena
+that can occur in the inner crust of neutron stars, like the 
+formation of glitches, which may to be related to vortex pinning  
+of the superfluid phase in the solid crust \cite{glitch}. 
+The results of different groups are in close agreement
+on the $^1S_0$ pairing gap values and on 
+its density dependence, which
+shows a peak value of about 3 MeV at a Fermi momentum close to
+$k_F \approx 0.8\; {\rm fm}^{-1}$ \cite{bcll90,kkc96,eh98,sclbl96}. 
+All these calculations adopt the bare
+NN interaction or effective interactions without screening 
+corrections as the pairing force. It has been pointed out
+that the screening by the medium of the interaction 
+could strongly reduce
+the pairing strength in this channel \cite{sclbl96,chen86,ains89}. 
+However, the issue of the 
+many-body calculation of the pairing 
+effective interaction is a complex
+one and still far from a satisfactory solution.
+
+The precise knowledge of the $^3P_2$-$^3F_2$ pairing gap is of 
+paramount relevance for, e.g.,  the cooling of neutron stars, 
+and different values correspond to drastically
+different scenarios for the cooling process.
+Generally, the gap suppresses the cooling by a factor
+$\sim\exp(-\Delta/T)$ (where $\Delta$ is the energy gap)
+which is severe for
+temperatures well below the gap energy.
+Unfortunately, only few and partly
+contradictory calculations of the pairing gap exist in the literature, 
+even at the level of the bare NN interaction 
+\cite{amu85,bcll92,taka93,elga96,khodel97}. 
+However, when comparing the results, one should note that the  
+NN interactions used in these calculations are not phase-shift 
+equivalent, i.e.,  they do not 
+predict exactly the same NN phase shifts.  
+Furthermore, for the interactions used in 
+Refs.~\cite{amu85,bcll92,taka93,elga96} the predicted 
+phase shifts do not agree accurately with modern phase shift 
+analyses, and the fit of the NN data has typically 
+$\chi^2/{\rm datum}\approx 3$.  
+Progress has 
+however been made not only in the accuracy and the consistency of the 
+phase-shift analysis, but also in the fit of realistic NN interactions 
+to these data.  As a result, several new NN interactions have 
+been constructed which fit the world data for $pp$ and $np$ scattering 
+below 350 MeV with high precision.  Potentials like the recent 
+Argonne $V_{18}$ \cite{v18}, the CD-Bonn \cite{cdbonn} 
+or the new Nijmegen potentials \cite{nim} yield a 
+$\chi^2/{\rm datum}$ of about 1 and may be called phase-shift 
+equivalent.  
+In Table \ref{tab:pgaps} we show the recent non-relativistic
+pairing gaps for the $^3P_2$-$^3F_2$ partial waves, where
+effective nucleon masses from the  lowest-order Brueckner-Hartree-Fock
+calculation have been 
+employed, see Ref.\ \cite{beehs98} for more details.
+These results are for pure neutron matter and we observe that
+up to $k_F\sim 2$ fm$^{-1}$, the various potentials
+give more
+or less the same pairing gap. Above this Fermi momentum, which
+corresponds to a lab energy of $\sim 350$ MeV, the results start
+to differ. This is simply due to the fact that the potentials
+are basically fit to reproduce scattering data up to this
+lab energy. Beyond this energy, the potentials predict rather
+different phase shifts for the 
+$^3P_2$-$^3F_2$ partial waves, see e.g.,  Ref.\ \cite{beehs98}.
+\begin{table}[hbtp]
+\begin{center}
+\caption{Collection of $^3P_2$-$^3F_2$ energy gaps (in MeV) for the 
+modern potentials discussed.  
+BHF single-particle energies have been used. In case of no results,
+a vanishing gap was found.\label{tab:pgaps}}
+\begin{tabular}{ccccc}\hline 
+\multicolumn{1}{c}{$k_F\;({\rm fm}^{-1})$}& 
+\multicolumn{1}{c}{CD-Bonn}&\multicolumn{1}{c}{$V_{18}$}&
+\multicolumn{1}{c}{Nijm I}&\multicolumn{1}{c}{Nijm II} \\ \hline  
+     1.2  & 0.04 & 0.04 & 0.04  & 0.04  \\
+     1.4  & 0.10 & 0.10 & 0.10  & 0.10  \\
+     1.6  & 0.18 & 0.17 & 0.18  & 0.18  \\
+     1.8  & 0.25 & 0.23 & 0.26  & 0.26  \\
+     2.0  & 0.29 & 0.22 & 0.34  & 0.36  \\
+     2.2  & 0.29 & 0.16 & 0.40  & 0.47  \\
+     2.4  & 0.27 & 0.07 & 0.46  & 0.67  \\
+     2.6  & 0.21 &      & 0.47  & 0.99  \\
+     2.8  & 0.17 &      & 0.49  & 1.74  \\
+     3.0  & 0.11 &      & 0.43  & 3.14  \\ \hline
+\end{tabular}
+
+\end{center}
+\end{table} 
+Thus, before a precise calculation of $^3P_2$-$^3F_2$ energy gaps
+can be made, one needs NN interactions that fit the scattering
+data up to lab energies of $\sim 1$ GeV. This means 
+in turn that the interaction models have to 
+account for, due to the opening
+of inelasticities above $350$ MeV, the
+$N\Delta$ channel.
+
+
+The reader should however note that the above results are
+for pure neutron matter. We end therefore this section
+with a discussion of the pairing gap for $\beta$-stable
+matter of relevance for the neutron star cooling, see e.g.,
+Ref.\ \cite{report}.
+We will also omit a discussion on neutron pairing gaps in the
+$^1S_0$ channel, since these appear at densities corresponding 
+to the crust of the neutron star. The gap in the crustal material 
+is unlikely
+to have any significant effect on cooling processes \cite{pr95}, 
+though
+it is expected to be important in the explanation 
+of glitch phenomena.
+Therefore, the relevant pairing gaps for neutron star cooling
+should stem from the 
+the proton contaminant 
+in the $^1S_0$ channel, and superfluid neutrons yielding energy gaps 
+in the coupled $^3P_2$-$^3F_2$ two-neutron channel. 
+If in addition one studies closely the phase shifts for
+various higher partial waves of the NN interaction, one notices
+that at the densities which will correspond to the  
+core of the star, any superfluid 
+phase should eventually disappear. This is due to the fact that
+an attractive NN interaction is needed in order to
+obtain a positive energy gap.
+\begin{wrapfigure}{r}{6.6cm}   % r: RIGHT, 6.6cm: WIDTH  
+          {\epsfxsize=10pc \epsfbox{fig1.eps}}
+          \caption{Proton pairing in $\beta$-stable matter for 
+          the $^1S_0$ partial wave.}
+     \label{fig:figgap}
+        \end{wrapfigure}
+\begin{wrapfigure}{r}{6.6cm}   % r: RIGHT, 6.6cm: WIDTH  
+          {\epsfxsize=10pc \epsfbox{fig2.eps}}
+          \caption{Neutron pairing in 
+          $\beta$-stable matter for the $^3P_2$
+          partial wave.}
+     \label{fig:figgap2}
+        \end{wrapfigure}
+Since the relevant total baryonic densities for these types of
+pairing will be higher than the saturation
+density of nuclear matter, we will account for relativistic
+effects as well in the calculation of the pairing gaps.
+As an example, consider the evaluation of the proton
+$^1S_0$ pairing gap using a Dirac-Brueckner-Hartree-Fock  approach.
+In Fig.\ \ref{fig:figgap} we plot as function of the total baryonic 
+density the pairing gap for protons in the $^1S_0$
+state, together with the results from the non-relativistic 
+approach discussed in  Refs.\
+\cite{elga96,eeho96}. 
+These results are all 
+for matter in $\beta$-equilibrium. In Fig.\ \ref{fig:figgap} 
+we plot also the 
+corresponding relativistic 
+results for the neutron energy gap in the $^3P_2$ channel. 
+For the $^3P_0$ and the $^1D_2$ channels we found both 
+the non-relativistic and the relativistic
+energy gaps to vanish. 
+As can be seen from Fig.\ \ref{fig:figgap}, there are only small
+differences (except for higher densities) between the non-relativistic
+and relativistic proton gaps in the $^1S_0$ wave.
+This is expected since the proton fractions (and their respective Fermi
+momenta) are rather small.
+For neutrons however, 
+the Fermi momenta are larger, and we would 
+expect relativistic effects to be important. At Fermi momenta
+which correspond to the
+saturation point of nuclear matter, $k_F=1.36$ fm$^{-1}$,
+the lowest relativistic correction to the kinetic energy per 
+particle is of the order of 2 MeV. 
+At densities higher than the saturation
+point, relativistic effects should be even 
+more important.
+Since we are dealing with
+very small proton fractions, a Fermi momentum
+of $k_F=1.36$ fm$^{-1}$, would correspond to a total baryonic 
+density $\sim 0.09$  fm$^{-3}$. Thus, at larger densities 
+relativistic effects for neutrons should
+be important.
+This is also reflected in Fig.\ \ref{fig:figgap2} for the pairing
+gap in the $^3P_2$ channel.
+The relativistic $^3P_2$ gap is less  than half
+the corresponding non-relativistic one, and the 
+density region is also much smaller, see Ref.\ \cite{eeho96} for further details.
+This discussion  can be summarized as follows.
+The $^1S_0$ proton gap in $\beta$-stable matter
+            is $ \le 1$ MeV, and if polarization
+            effects were taken into account \cite{sclbl96},
+            it could be further reduced by a factor 2-3.
+
+The $^3P_2$ gap is also small, of the order
+            of $\sim 0.1$ MeV in $\beta$-stable matter.
+            If relativistic effects are taken into account,
+            it is almost vanishing. However, there is
+            quite some uncertainty with the value for this
+            pairing gap for densities above $\sim 0.3$
+            fm$^{-3}$ due to the fact that the NN interactions
+            are not fitted for the corresponding lab energies. 
+
+Higher partial waves give essentially vanishing
+            pairing gaps in $\beta$-stable matter.
+
+Thus, the $^1S_0$ and $^3P_2$ partial waves are crucial for our
+understanding of superfluidity in neutron star matter. 
+
+We have not mentioned recent developments beyond the BCS approach,
+nor have we discussed results for proton-neutron pairing in symmetric
+or asymmetric matter. Such topics are addressed in the recent works
+of Lombardo, Schulze and collaborators, see e.g., Refs.\ 
+\cite{ls2000,ls2001} and references therein. 
+
+\section{Pairing in finite nuclei} \label{sec:sec3}
+
+\subsection{Tin isotopes}
+We turn the attention to finite nuclei. Here we focus on the chain of 
+tin isotopes. 
+Of interest in this study is the fact that 
+the chain of even tin isotopes from $^{102}$Sn to $^{130}$Sn 
+exhibits a near constancy of the 
+$2^+_1-0^+_1$ excitation energy, a constancy which can be related
+to strong pairing correlations and the near degeneracy in energy 
+of the relevant single particle orbits. As an example, we show the 
+experimental\footnote{We will limit our discussion to even nuclei
+from  $^{116}$Sn to $^{130}$Sn, since a qualitatively similar picture
+is obtained from $^{102}$Sn to $^{116}$Sn.}
+$2^+_1-0^+_1$ excitation energy 
+from  $^{116}$Sn to $^{130}$Sn in Table \ref{tab:table1}. 
+Our aim is to see whether the partial waves which played such a crucial
+role in neutron star matter, viz., $^1S_0$ and $^3P_2$, are equally
+important in reproducing the near constant spacing in the chain
+of even tin isotopes shown in  Table \ref{tab:table1}. 
+
+To achieve this, we mount a large-scale shell-model calculation in 
+a model space relevant for the description of tin isotopes. 
+In order to test the dependence on the above partial waves in
+the NN interaction, different effective interactions are employed.
+ 
+Our scheme to obtain an effective two-body interaction for 
+the tin isotopes
+starts with a free nucleon-nucleon  interaction $V$ which is
+appropriate for nuclear physics at low and intermediate energies. 
+In this work we will thus choose to work with the charge-dependent
+version of the Bonn potential models, see \mbox{Ref. \cite{cdbonn}}.
+With this interaction, we compute  
+effective two-particle matrix elements based on 
+a $Z = 50, \quad N = 82$ asymmetric core and with the active $P$-space for holes
+based on the $2s_{1/2}$, $1d_{5/2}$, $1d_{3/2}$, $0g_{7/2}$ and $0h_{11/2}$
+hole orbits, see e.g., Refs.~\cite{hko95,ehho97} for details.
+The corresponding single-hole energies are
+$\varepsilon(d_{3/2}^{+}) = 0.00$~MeV, 
+ $\varepsilon(h_{11/2}^{-}) = 0.242$~MeV, $\varepsilon(s_{1/2}^{+}) = 0.332$~MeV,
+$\varepsilon(d_{5/2}^{+}) = 1.655$~MeV and  $\varepsilon(g_{7/2}^{+}) = 2.434$~MeV
+and the shell model calculation amounts to studying
+valence neutron holes outside this core.
+The shell model problem requires the solution of a real symmetric
+$n \times n$ matrix eigenvalue equation
+$\widetilde{H}\left | \Psi_k\right\rangle  = E_k \left | \Psi_k\right\rangle$ .
+where for the present cases the dimension of the $P$-space reaches $n \approx 2 \times 10^{7}$.
+At present our basic approach in finding solutions to shell-model problem
+is the Lanczos algorithm; an iterative method
+which gives the solution of the lowest eigenstates. This method was 
+already applied to nuclear physics problems by Whitehead {\sl et al.} 
+in 1977. The technique is described in detail in Ref.\ \cite{whit77}, 
+see also Ref.\ \cite{ehho95}. 
+
+In order to test whether the $^1S_0$ and $^3P_2$ partial waves are equally
+important in reproducing the near constant spacing in the chain
+of even tin isotopes as they are for the superfluid properties of infinite matter,
+we study four different approximations to the shell-model
+effective interaction, viz.,
+\begin{enumerate}
+  \item Our best approach to the effective interaction, $V_{\mathrm{eff}}$, contains
+        all one-body and two-body diagrams through third order in the $G$-matrix, 
+        see Ref.\ \cite{ehho97}. 
+  \item The effective interaction is given by the $G$-matrix only and inludes
+        all partial waves up to $l=10$.
+  \item We define an effective  interaction based on a $G$-matrix which now includes
+        only the $^1S_0$ partial wave.
+  \item Finally, we use an effective interaction based on a $G$-matrix which does
+        not contain the  $^1S_0$ and $^3P_2$ partial waves, but all other waves
+        up to $l=10$.  
+\end{enumerate}
+In all four cases the same NN interaction is used, viz., 
+the CD-Bonn interaction described in Ref.\ \cite{cdbonn}.
+Table \ref{tab:table1} lists the results obtained for the three first cases.  
+\begin{table}[t]
+\begin{center}
+\caption{ $2^+_1-0^+_1$ excitation energy for the 
+even tin isotopes $^{130-116}$Sn for various approaches
+to the effective interaction. See text for further details. 
+Energies are given in MeV. \label{tab:table1}}
+\begin{tabular}{lcccccccc}\hline
+ & {$^{116}$Sn} & {$^{118}$Sn} & {$^{120}$Sn} &{$^{122}$Sn} & {$^{124}$Sn} & {$^{126}$Sn} & {$^{128}$Sn} & {$^{130}$Sn} \\ \hline
+Expt & 1.29 & 1.23 & 1.17 & 1.14 & 1.13 & 1.14 & 1.17 & 1.23 \\
+$V_{\mathrm{eff}}$ & 1.17 & 1.15 & 1.14 & 1.15 & 1.14 & 1.21 & 1.28 & 1.46 \\
+$G$-matrix &1.14 & 1.12& 1.07 & 0.99 & 0.99 & 0.98 & 0.98 & 0.97  \\
+$^1S_0$ $G$-matrix &1.38 &1.36 &1.34 &1.30 & 1.25& 1.21 &1.19 &1.18 \\\hline
+\end{tabular}
+\end{center}
+
+\end{table}
+
+We note from this Table that the three first cases nearly produce a constant 
+$2^+_1-0^+_1$ excitation energy, with our most optimal effective interaction
+$V_{\mathrm{eff}}$ being closest the experimental data. The bare $G$-matrix
+interaction, with no folded diagrams as well, results in a slightly more compressed
+spacing. This is mainly due to the omission of the core-polarization 
+diagrams which typically render the $J=0$ matrix elements more attractive.
+Such diagrams are included in $V_{\mathrm{eff}}$. 
+Including only the $^1S_0$ partial wave in the construction of the  $G$-matrix
+case 3,
+yields in turn a somewhat larger spacing. This can again be understood from the
+fact that a $G$-matrix constructed with this partial wave  
+only does not receive contributions from any entirely repulsive partial wave.
+It should be noted that our optimal interaction, as demonstrated in Ref.\ \cite{ehho97}, shows a rather good reproduction of the 
+experimental spectra for both even and odd nuclei. Although the approximations
+made in cases 2 and 3 produce an almost constant $2^+_1-0^+_1$ excitation energy,
+they reproduce poorly the properties of odd nuclei and other 
+excited states in the even Sn isotopes. 
+
+However, the fact that the first three  approximations result in a such a good
+reproduction of the  $2^+_1-0^+_1$ spacing may hint to the fact that the 
+$^1S_0$ partial wave is of paramount importance. 
+If we now turn the attention to case 4, i.e., we omit the
+$^1S_0$ and $^3P_2$ partial waves in the construction of the $G$-matrix,
+the results presented  in Table \ref{tab:table2} exhibit  a spectroscopic 
+catastrophe. In this Table we do also not list eigenstates
+with other quantum numbers. For e.g., $^{126}$Sn
+the ground state is no longer a $0^+$ state, rather it carries the quantum numbers
+$4^+$ while for $^{124}$Sn the ground state 
+has $6^+$. The first $0^+$ state for this nucleus is given at an excitation
+energy of $0.1$ MeV with respect to the $6^+$ ground state.
+The general picture for other eigenstates is that of an extremely poor agreement
+with data.  
+\begin{table}[t]
+\begin{center}
+\caption{ $2^+_1-0^+_1$ excitation energy for the 
+even tin isotopes $^{130-124}$Sn obtained with a $G$-matrix
+effective interaction which excludes the important
+pairing waves $^1S_0$ and $^3P_2$. See text for further details. 
+Energies are given in MeV. \label{tab:table2}}
+\begin{tabular}{lcccc}\hline
+& {$^{124}$Sn} & {$^{126}$Sn} & {$^{128}$Sn} & {$^{130}$Sn} \\ \hline
+No $^1S_0$ and $^3P_2$ in $G$-matrix &0.15  &-0.32  &0.02 &-0.21  \\\hline
+\end{tabular}
+\end{center}
+\end{table}
+Since the agreement is so poor, even the qualitative reproduction of the 
+$2^+_1-0^+_1$ spacing, we defer from performing time-consuming shell-model
+calculations for $^{116,118,120,122}$Sn.
+
+\subsection{Thermodynamic properties of rare earth nuclei}
+The thermodynamical properties of nuclei deviate from infinite systems. 
+While the quenching of pairing in superconductors is well described as a 
+function of temperature, the nucleus represents a finite many body system 
+characterized by large fluctuations in the thermodynamic observables. A 
+long-standing problem in experimental nuclear physics has been to observe the 
+transition from strongly paired states, at around $T=0$, to unpaired states at 
+higher temperatures. 
+
+In nuclear theory, the pairing gap parameter $\Delta$ can be studied as 
+function of temperature using the BCS gap equations \cite{SY63,Go81}. From this
+simple model the gap decreases monotonically to zero at a critical temperature 
+of $T_c\sim 0.5\,\Delta$. However, if particle number is projected out 
+\cite{FS76,DK95}, the decrease is significantly delayed. The predicted decrease
+of pair correlations takes place over several MeV of excitation energy 
+\cite{DK95}. Recently \cite{MB99}, structures in the level 
+densities in the 1--7~MeV region were reported, structures which 
+probably are due to the breaking of 
+nucleon pairs and a gradual decrease of pair correlations. 
+
+Experimental data on the quenching of pair correlations are important as a 
+test for nuclear theories. Within finite temperature BCS and RPA models, level 
+density and specific heat are calculated for e.g., $^{58}$Ni \cite{Ng90}; 
+within the shell model Monte Carlo method (SMMC) \cite{LJ93,KD97} one is now 
+able to estimate level densities \cite{Or97} in heavy nuclei \cite{WK98} up to 
+high excitation energies. 
+Here we report on the observation of the gradual 
+transition from strongly paired states to unpaired states in rare earth nuclei 
+at low spin. The canonical heat capacity is used as a thermometer. Since only 
+particles at the Fermi surface contribute to this quantity, it is very 
+sensitive to phase transitions. It has been demonstrated from SMMC calculations
+in the Fe region \cite{RH98,AL99,Al99}, that breaking of only one nucleon pair 
+increases the heat capacity significantly. 
+
+The experiments were carried out with 45~MeV $^3$He projectiles from the MC-35 
+cyclotron at the University of Oslo. In that experiment, one could
+extract level densities and $\gamma$
+strength functions for the $^{161,162}$Dy and $^{171,172}$Yb nuclei. The data 
+for the even nuclei are published recently \cite{MB99,schiller2001}.
+
+The partition function in the canonical ensemble 
+$Z(T)=\sum_{n=0}^\infty\rho(E_n)e^{-E_n/T} $
+is determined by the measured level density of accessible states $\rho(E_n)$ in
+the present nuclear reaction. Strictly, the sum should run from zero to 
+infinity. Here  we calculate $Z$ for temperatures up to $T=1$~MeV. 
+However, the experimental level
+densities only cover the excitation region up 
+close to the neutron binding energy of about 6 and 8~MeV for odd and even mass 
+nuclei, respectively. For higher energies it is reasonable to assume Fermi gas 
+properties, since single particles are excited into the continuum region with 
+high level density. Therefore, due to lack of experimental data, the level 
+density is extrapolated to higher energies by the shifted Fermi gas model 
+expression \cite{GC65}. 
+The extraction of the microcanonical heat capacity $C_V(E)$ gives large 
+fluctuations which are difficult to interpret \cite{MB99}. Therefore, the heat 
+capacity $C_V(T)$ is calculated within the canonical ensemble, where $T$ is a 
+fixed input value in the theory, and a more appropriate parameter,
+see e.g., Schiller {\em et al.} \cite{schiller2001} for further details.
+\begin{wrapfigure}{r}{8cm}
+          {\epsfxsize=14pc \epsfbox{fig3.ps}}
+          \caption{Heat capacity for iron isotopes, see Ref.\ \cite{Al99}, 
+and for $^{161,162}$Dy. See text for further details. \label{fig:heatcapacity}}
+\end{wrapfigure}
+The deduced heat capacities for the $^{161,162}$Dy nuclei 
+are shown in Fig.~\ref{fig:heatcapacity} together with the SMMC
+results of Liu and Alhassid \cite{Al99} for various iron isotopes.
+The results labelled 'model' are discussed further in Refs.\ 
+\cite{magne1,magne2}. We note that both the theoretical and 
+experimental results exhibit 
+S-shaped $C_V(T)$-curves.
+The S-shaped curve is interpreted as a 
+fingerprint of a phase transition in a finite system from a phase with strong 
+pairing correlations to a phase without such correlations. Due to the strong 
+smoothing introduced by the transformation to the canonical ensemble, we do not
+expect to see discrete transitions between the various quasiparticle regimes, 
+but only the transition where all pairing correlations are quenched as a whole.
+It is worth noticing that the S-shape is much less 
+pronounced for the odd system,
+again a possible indication of the importance of pairing correlations. 
+This can also be seen from Fig.\ \ref{fig:entropy}, taken from Ref.\
+\cite{magne3}.
+\begin{wrapfigure}{r}{8cm}
+          {\epsfxsize=14pc \epsfbox{fig4.ps}}
+          \caption{Experimental entropy in the canonical ensemble for $^{161,162}$Dy and
+for $^{171,172}$Yb. \label{fig:entropy}}
+\end{wrapfigure}
+Here we notice that the entropy of the even and odd systems merge
+at a temperature $T\approx 0.5$ MeV, in close agreement with the point where
+the S-shape of the heat capacity of 
+the $^{161,162}$Dy nuclei appears  
+in Fig.~\ref{fig:heatcapacity}. The temperature where 
+the experimental entropies merge,
+could in turn be interpreted as the point where other degrees of freedom
+than pairing take over. A theoretical interpretation
+in terms of the vanishing of pairing correlations is given 
+in Refs.\ \cite{magne3,bdh2001}. 
+\section{Conclusion} \label{sec:sec4}
+
+
+In summary, the $^1S_0$ and $^3P_2$ partial waves are crucial for our
+understanding of superfluidity in neutron star matter. In addition, viewing
+the results of Table \ref{tab:table2}, one sees that 
+pairing correlations, being important for the 
+reproduction of the $2^+_1-0^+_1$ excitation energy of
+the even Sn isotopes, depend strongly on the same  partial waves
+of the NN interaction. Omitting these waves, especially the  $^1S_0$ wave,
+results in a spectrum which has essentially no correspondence with experiment.
+
+Furthermore, we have also discussed 
+recent experimental and theoretical studies 
+of thermodynamical properties of finite nuclei
+and their interpretation in terms  of eventual pairing transitions 
+in finite nuclei. 
+
+
+\section*{Acknowledgements}
+I am much indebted to Alexandar Beli{\'c} (Belgrade), 
+David Dean (ORNL), Torgeir Engeland (Oslo), \O ystein Elgar\o y (Cambridge),
+Magne Guttormsen (Oslo), Eivind Osnes (Oslo)  
+and Andreas Schiller (LLNL) 
+for the many discussion on the topics addressed here.
+
+\begin{thebibliography}{99}
+\bibitem{glitch} 
+J.A.\ Sauls, in: Timing Neutron Stars, 
+eds.\ H. \"{O}gelman, and E.P.J.\ van den Heuvel,   
+(Dordrecht, Kluwer, 1989) p.\ 457. 
+\bibitem{bcll90}
+  M.\ Baldo, J.\ Cugnon, A.\ Lejeune, and U.\ Lombardo,
+  Nucl.\ Phys.\ A {\bf 515}, 409 (1990).
+\bibitem{kkc96} 
+  V.A.\ Khodel, V.V.\ Khodel, and J.W.\ Clark,
+  Nucl. Phys. A {\bf 598}, 390 (1996).
+\bibitem{eh98}
+  \O. Elgar\o y and M. Hjorth-Jensen,
+  Phys. Rev.  C {\bf 57}, 1174 (1998). 
+\bibitem{sclbl96} 
+  H.-J.\ Schulze, J.\ Cugnon, A.\ Lejeune, M.\ Baldo, 
+  and U.\ Lombardo, 
+  Phys.\ Lett.\  { \bf B375}, 1 (1996). 
+\bibitem{chen86}
+  J.M.C.\ Chen, J.W.\ Clark, E.\ Krotschek and R.A.\ Smith,
+  Nucl.\ Phys.\ A {\bf 451}, 509 (1986);
+  J.M.C.\ Chen, J.W.\ Clark, R.D.\ Dave, and V.V.\ Khodel,
+  Nucl.\ Phys.\ A {\bf 555}, 59 (1993).
+\bibitem{ains89}
+  T.L.\ Ainsworth, J.\ Wambach, and D.\ Pines,
+  Phys.\ Lett.\ B {\bf 222}, 173 (1989);
+  J.\ Wambach, T.L.\ Ainsworth, and D.\ Pines,
+  Nucl.\ Phys.\ A {\bf 555}, 128 (1993).
+\bibitem{amu85}
+  L.\ Amundsen and E.\ \O stgaard, 
+  Nucl.\ Phys.\ A {\bf 437}, 487 (1985).
+\bibitem{bcll92}
+  M.\ Baldo, J.\ Cugnon, A.\ Lejeune, and U.\ Lombardo,
+  Nucl.\ Phys.\ A {\bf 536}, 349 (1992).
+\bibitem{taka93}
+  T.\ Takatsuka and R.\ Tamagaki,
+  Prog. Theor. Phys. Suppl. {\bf 112}, 27 (1993).
+\bibitem{elga96}
+  \O.\ Elgar\o y, L.\ Engvik, M.\ Hjorth-Jensen, and E.\ Osnes,
+  Nucl.\ Phys.\ A {\bf 607}, 425 (1996).
+\bibitem{khodel97} 
+  V.V.\ Khodel, PhD.\ Thesis, Washington University, St. Louis, 
+  unpublished (1997); 
+  V.A.\ Khodel, V.V.\ Khodel, and J.W.\ Clark, 
+  Phys.\ Rev.\ Lett.\ {\bf 81}, 3828 (1998); 
+  V.A.\ Khodel, V.V.\ Khodel, and J.W.\ Clark, 
+  Nucl.\ Phys.\ A {\bf  679}, 827 (2001);
+  V.A.\ Khodel, V.V.\ Khodel, and J.W.\ Clark, 
+  Phys.\ Rev.\ Lett.\ {\bf 81}, 3828 (2001).
+
+
+\bibitem{v18} R.B.\ Wiringa, V.G.J.\ Stoks, and R.\ Schiavilla, 
+Phys.\ Rev.\ C {\bf 51}, 38 (1995).
+\bibitem{cdbonn}     R.\ Machleidt, F.\ Sammarruca, and Y.\ Song,
+                     Phys.\ Rev.\ C {\bf 53}, 1483  (1996).
+\bibitem{nim} V.G.J.\ Stoks, R.A.\ M.\ Klomp, C.P.F.\ Terheggen, 
+and J.J.\
+de Swart, Phys.\ Rev.\ C {\bf 49}, 2950  (1994).
+\bibitem{beehs98} M.\ Baldo, \O.\ Elgar\o y, L.\ Engvik, 
+                  M.\ Hjorth-Jensen, and H.-J.\ Schulze,
+                  Phys.\ Rev.\ C {\bf 58}, 1921 (1998).
+\bibitem{report} H.\ Heiselberg and M.\ Hjorth-Jensen, Phys.\ Rep.\ {\bf 328},
+237 (2000).
+                 and nucl-th/9902033.
+\bibitem{pr95} C.J.\ Pethick and D.G.\ Ravenhall, 
+Ann.\ Rev.\ Nucl.\ Part.\ Sci.\ {\bf 45}, 429 (1995).
+
+\bibitem{eeho96} \O.\ Elgar\o y, L.\ Engvik, 
+                  M.\ Hjorth-Jensen, and E.\ Osnes, 
+                  Nucl.\ Phys.\ A {\bf 604}, 466 (1996).
+\bibitem{ls2000} U.\ Lombardo and H.-J.\ Schulze, astro-ph/0012209 and references therein.
+\bibitem{ls2001} U.\ Lombardo, P.\ Nozieres, P.\ Schuck, H.-J.\ Schulze,
+and A.\ Sedrakian, Phys.\ Rev.\ C {\bf 64}, 064314 (2001).
+\bibitem{hko95}  M.\ Hjorth-Jensen, T.\ T.\ S.\ Kuo, and
+E.\ Osnes, Phys.\ Reports {\bf 261}, 125 (1995).
+
+\bibitem{ehho97}     A.\ Holt, T.\ Engeland, M.\ Hjorth-Jensen, and E.\ Osnes,
+                     Nucl.\ Phys.\ A {\bf 634}, 41 (1998) .
+
+
+\bibitem{whit77}     R.\ R.\ Whitehead, A.\ Watt, B.\ J.\ Cole, and I.\
+                     Morrison, 
+                     Adv.\ Nucl.\ Phys.\ {\bf 9}, 123 (1977).
+
+\bibitem{ehho95}     T.\ Engeland, M.\ Hjorth-Jensen, A.\ Holt, and E.\ Osnes,
+                     Phys.\ Scripta {\bf T56}, 58  (1995).
+\bibitem{SY63}M. Sano and S. Yamasaki, Prog.\ Theor.\ Phys.\ \bf 29\rm, 397 
+(1963). 
+\bibitem{Go81}A.L. Goodman, Nucl.\ Phys.\ A \bf 352\rm, 45 (1981) .
+\bibitem{FS76}A. Faessler \sl et al.\rm, Nucl.\ Phys.\ A\bf 256\rm, 106 (1976). 
+\bibitem{DK95}T. D{\o}ssing \sl et al.\rm, Phys.\ Rev.\ Lett.\ \bf 75\rm, 1276
+(1995).  
+\bibitem{MB99}E. Melby \sl et al.\rm, Phys.\ Rev.\ Lett.\ \bf 83\rm, 3150 
+(1999).
+\bibitem{schiller2001}A. Schiller \sl et al.\rm, Phys.\ Rev.\ C \bf 63 \rm, 021306(R) 
+(2001).
+\bibitem{Ng90}Nguyen Dinh Dang, Z. Phys.\ A \bf 335\rm, 253 (1990).
+\bibitem{LJ93}G.H. Lang, C.W. Johnson, S.E. Koonin, and W.E. Ormand, Phys.\ 
+Rev.\ C \bf 48\rm, 1518 (1993).
+\bibitem{KD97}S.E. Koonin, D.J. Dean, and K. Langanke, Phys.\ Rep.\ \bf 278\rm,
+1 (1997). 
+\bibitem{Or97}W.E. Ormand, Phys.\ Rev.\ C \bf 56\rm, R1678 (1997).
+\bibitem{WK98}J.A. White, S.E. Koonin, and D.J. Dean, Phys.\ Rev.\ C \bf 61 \rm, 034303 (2000). 
+\bibitem{RH98}S. Rombouts, K. Heyde, and N. Jachowicz, Phys.\ Rev.\ C \bf 58\rm,
+3295 (1998).
+\bibitem{AL99}Y. Alhassid, S. Liu, and H. Nakada, Phys.\ Rev.\ Lett.\ \bf 
+83\rm, 4265 (1999).
+\bibitem{Al99} S. Liu and Y. Alhassid, Phys.\ Rev.\ Lett.\ \bf 
+87\rm,  022501 (2001).
+\bibitem{Be36}H.A. Bethe, Phys.\ Rev.\ \bf 50\rm, 332 (1936). 
+\bibitem{GC65}A. Gilbert and A.G.W. Cameron, Can.\ J. Phys.\ \bf 43\rm, 1446
+(1965).
+\bibitem{magne1}M. Guttormsen, M. Hjorth-Jensen, E. Melby, J. Rekstad, A. 
+Schiller, and S. Siem, Phys.\ Rev.\ C \bf 63\rm, 044301 (2001).
+\bibitem{magne2}M. Guttormsen, M. Hjorth-Jensen, E. Melby, J. Rekstad, A. 
+Schiller, and S. Siem, Phys.\ Rev.\ C \bf 64\rm, 034319 (2001).
+\bibitem{magne3}M. Guttormsen, A. Bjerve, M. Hjorth-Jensen, E. Melby, J. Rekstad,
+A. Schiller, S. Siem, and A. Beli{\'c}, Phys. Rev. C \bf 62\rm, 024306 (2000).
+\bibitem{bdh2001}A. Beli{\'c}, D. J. Dean, and M. Hjorth-Jensen, preprint 
+cond-mat/0104138.
+
+
+\end{thebibliography}
+
+
+
+\end{document}
+
+

@@ -1,0 +1,86 @@
+From teemu.siiskonen@phys.jyu.fi Tue Jan 12 08:38:56 1999
+Return-Path: <teemu.siiskonen@phys.jyu.fi>
+Delivery-Date: Tue, 12 Jan 1999 08:38:55 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Tue, 12 Jan 1999 08:38:43 +0100
+Received: from snafu.phys.jyu.fi ([130.234.98.10] helo=mail.phys.jyu.fi) by pat.uio.no with esmtp (Exim 2.10 #1) 
+          id 0zzyPS-0001VP-00 for m.h.jensen@fys.uio.no; Tue, 12 Jan 1999 08:38:42 +0100
+Received: from phys.jyu.fi (phys117.phys.jyu.fi [130.234.97.117]) by mail.phys.jyu.fi (8.8.7/8.8.7) with ESMTP id JAA03130 
+          for <m.h.jensen@fys.uio.no>; Tue, 12 Jan 1999 09:38:49 +0200
+Message-ID: <369AFB5F.26E9834A@phys.jyu.fi>
+Date: Tue, 12 Jan 1999 09:36:00 +0200
+From: Teemu Siiskonen <teemu.siiskonen@phys.jyu.fi>
+Reply-To: teemu.siiskonen@phys.jyu.fi
+Organization: JYFL
+X-Mailer: Mozilla 4.05 [en] (Win95; I)
+MIME-Version: 1.0
+To: m.h.jensen@fys.uio.no
+Subject: Some help needed
+References: <199901120709.IAA26466@kvark.uio.no>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: R
+
+Hi Morten,
+
+I recalculated 28Si and Al. But, I'm not sure which version of
+CD-Bonn we used in the latest version of the letter. I now
+calculated the spectra with the one I paste below. Could you check
+which one it is? I guess the SPE are from Zuker. Anyway, the
+spectrum looks rather nice. It seems to me, that we have used a
+different version in the present version of the letter. Could you
+check the interaction, which one it is?
+
+Cheers, Teemu
+
+! Subject: modified interactions
+! Date: Mon, 10 Aug 1998 15:59:36 +0200 (MET DST)
+! From: m.h.jensen@fys.uio.no
+! To: siiskonen@phys.jyu.fi
+! cd-bonn modified: (after Zuker)
+! a b c d J T <ab|V|cd>
+! d3/2 d5/2 s1/2
+  63   6.38076  0.0  1.3365
+  2  2  2  2  1 0      -2.71313
+  2  2  2  1  1 0       3.59720
+  2  2  1  1  1 0       1.75470
+  2  2  1  3  1 0        .34720
+  2  2  3  3  1 0       -.83830
+  2  1  2  1  1 0      -6.74676
+  2  1  1  1  1 0       -.23960
+  2  1  1  3  1 0       1.95270
+  2  1  3  3  1 0       2.11500
+  1  1  1  1  1 0      -2.75582
+  1  1  1  3  1 0       -.91050
+  1  1  3  3  1 0       -.08170
+  1  3  1  3  1 0      -4.46025
+  1  3  3  3  1 0       -.40640
+  3  3  3  3  1 0      -5.08043
+  2  1  2  1  2 0      -4.81926
+  2  1  2  3  2 0      -1.48480
+  2  1  1  3  2 0      -1.63870
+  2  3  2  3  2 0      -1.76268
+  2  3  1  3  2 0      -2.54930
+  1  3  1  3  2 0      -2.81315
+  2  2  2  2  3 0      -2.20713
+  2  2  2  1  3 0       2.04140
+  2  2  2  3  3 0      -1.68770
+etc.
+
+The spectrum of 28Al:
+
+    1 b620ct      3+    1     1*   -52.010     0.000
+    2 b220ct      1+    1     1*   -51.976     0.034
+    3 b420ct      2+    1     1*   -51.768     0.242
+    4 b020ct      0+    1     1*   -51.734     0.276
+    5 b220ct      1+    1     2*   -51.080     0.930
+    6 b420ct      2+    1     2*   -51.003     1.007
+    7 b620ct      3+    1     2*   -50.215     1.795
+    8 b420ct      2+    1     3*   -50.158     1.852
+    9 b220ct      1+    1     3*   -49.893     2.117
+   10 b420ct      2+    1     4*   -49.837     2.172
+   11 b620ct      3+    1     3*   -49.723     2.287
+   12 b820ct      4+    1     1*   -49.712     2.298
+   13 b220ct      1+    1     4*   -49.456     2.554
+
+
+

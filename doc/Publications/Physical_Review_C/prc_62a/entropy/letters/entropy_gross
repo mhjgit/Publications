@@ -1,0 +1,106 @@
+From magne.guttormsen@fys.uio.no Mon Nov 29 12:44:00 1999
+Return-path: <magne.guttormsen@fys.uio.no>
+Envelope-to: m.h.jensen@fys.uio.no
+Delivery-date: Mon, 29 Nov 1999 12:44:00 +0100
+Received: from tid.uio.no ([129.240.84.18] helo=tid)
+	by pat.uio.no with esmtp (Exim 2.12 #7)
+	id 11sPDr-0006t1-00
+	for m.h.jensen@fys.uio.no; Mon, 29 Nov 1999 12:43:59 +0100
+Received: from fysmac-kjerne01.uio.no ([129.240.85.51])
+	by tid with esmtp (Exim 2.12 #7)
+	id 11sPDr-0006RD-00
+	for m.h.jensen@fys.uio.no; Mon, 29 Nov 1999 12:43:59 +0100
+X-Sender: magneg@tid.uio.no
+Message-Id: <v03110700b468177c0efa@[129.240.85.51]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Mon, 29 Nov 1999 12:44:11 +0100
+To: m.h.jensen@fys.uio.no
+From: Magne Guttormsen <magne.guttormsen@fys.uio.no>
+Subject: entropy
+Status: O
+X-Status: 
+Content-Length: 3456
+
+>Envelope-to: MAGNE.GUTTORMSEN@fys.uio.no
+>Date: Mon, 29 Nov 1999 11:35:16 +0100
+>From: Dieter Gross <gross@hmi.de>
+>To: bougault@caelav.in2p3.fr
+>CC: ELIN.MELBY@fys.uio.no, MAGNE.GUTTORMSEN@fys.uio.no,
+>        FINN.INGEBRETSEN@fys.uio.no, J.B.REKSTAD@fys.uio.no,
+>        ANDREAS.SCHILLER@fys.uio.no, SUNNIVA.SIEM@fys.uio.no,
+>        S.W.ODEGARD@fys.uio.no, MICHELA.DAGOSTINO@bo.infn.it, GROSS@hmi.de,
+>        GULMINELLI@caelav.in2p3.fr, LENEINDR@caelav.in2p3.fr,
+>        BORDERIE@ipno.in2p3.fr, RIVET@ipno.in2p3.fr, STECK@in2p3.fr,
+>        CHBIHI@ganil.fr
+>Subject: entropy
+>Reply-to: gross@hmi.de
+>
+>dear Dr Bougault, I read this very interesting discussion about
+>the micro entropy. First comments to the paper PRL 83,p3150 by Melby
+>et al.:
+>I fully agree with you that fig. 2 shows nicely the backbending
+>of T_micro as was proposed since 1982. In my recent paper I discuss
+>its consequences for our fundamental understanding of thermodynamics
+>of "small" systems, on phase transitions and in the Second Law of
+>thermodynamics.
+>->http://arXiv.org/abs/cond-mat/?9911257
+>
+>On my earlier papers on nuclear level density and caloric curves, I
+>was, however, mainly concerned with the higher excitation energies in
+>the region of nuclear fragmentation i.e.  E>3*A MeV. Here the level
+>density is certainly more smooth and the discretenes is not so much a
+>problem. Therefore, I paid little attention to define rigorously the
+>differentiation procedure like 1/T=dS/dE in the case of discrete
+>levels.
+>
+>The paper nucl-exp/9911011 by Guttormsen is a beautiful work that
+>illustrates all the main points. Fig.3 shows the effect of the
+>smoothing. Certainly, the gaps and negative temperatures are
+>important - however, from the thermodynamic point of view -- exotic
+>specialities of the micro entropy. These indicate an instability
+>of this system if it would be imposed to heat bath. But this is
+>anyhow not possible. Experimentally, this is only seen for 162Dy
+>at E*~0.5 MeV. At higher excitation other states than the pure
+>eigen states of the simplfied pairing model wash these regions
+>of negative T out. This paper is exciting and shows clearly the
+>pecularities of small systems thermodynamics. Still, I think,
+>the Second Law is fulfilled in spite of neg.T.
+>
+>You write that in the work with Michaela d'Agostino you see only one
+>region of negative spec.heat (Though certainly pos.T). This is similar
+>to my finding for the fragmentation of large nuclei.  Here are so many
+>decay channels open, that the backbending is not anymore due to a
+>single channel but characterizes more a topological change of several
+>decay modes.
+>
+>
+>
+>Dieter Gross
+>
+>--
+>Best regards, Dieter Gross
+>===============================
+>D.H.E.Gross
+>Hahn Meitner Institute
+>Bereich T/V
+>Glienicker Str.100
+>D14109 BERLIN
+>Germany
+>Tel 49-30-8062-2677
+>Fax 49-30-8062-2098
+>Email:gross@hmi.de
+>
+
++------------------------------------------------------------+
+|                Magne Guttormsen                            |
+|  OO   CC  L    Oslo Cyclotron Laboratory (OCL)             |
+| O  O C    L    Department of Physics, University of Oslo   |
+| O  O C    L    P.O.Box 1048 Blindern, N-0316 Oslo, NORWAY  |
+|  OO   CC  LLL  Tel:+47-22-856460/855076  Fax:+47-22-856422 |
+|                E-mail: magne.guttormsen@fys.uio.no         |
+|                WWW:  http://lynx.uio.no/magne/index.html   |
++------------------------------------------------------------+
+
+
+

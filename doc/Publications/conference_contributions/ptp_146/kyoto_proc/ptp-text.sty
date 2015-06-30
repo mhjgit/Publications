@@ -1,0 +1,187 @@
+%================   PTP-text.sty   =================================
+%
+%                                       ver.0.7     March 25, 1996
+%                                       ver.0.8    August 11, 1997
+%                                       ver.1.0       May 12, 1999
+%
+% based on JJAPBAS.sty for (C) Japanese Journal of Applied Physics
+%             Release 2.1, date : 9 September, '94
+%
+%=================================================================
+
+\typeout{***** PTP Text Style <<PTP-text.sty>> ver.1.0 ****}
+
+% 1in=25.4mm=72.27pt 1mm=2.85pt 1pt=0.35mm  
+%%%%%%%% PTP propers %%%%%%%%%%
+\def\@abstwidth{370pt} % approx= 130mm  1mm=2.85pt 1pt=.351mm
+\def\abstsize{\@setsize\abstsize{10.2pt}\ixpt\@ixpt} %9.6pt
+\def\instsize{\@setsize\instsize{13.34pt}\xipt\@xipt} %\normalsize
+\def\tabularsize{\footnotesize} 
+\def\captionsize{\footnotesize}
+\def\refsize{\abstsize}
+\def\hruleheight{0.4pt} % for \arrayrulewidth and rule for footnote
+\doublerulesep 1.3pt
+%% 
+%\@ifundefined{@supple}{%	                %if not supple
+%\def\@eqnnum{{\rm (\theequation)\hspace{1em}}}}{}%put space after Eq.#
+\def\@eqnnum{{\rm (\theequation)\hspace{1em}}} %put space after Eq.#
+
+\def\@maketitle{\newpage
+\null \vskip -13.45pt
+\def\hang{\par\hangindent=0pt\hangafter=1\noindent}
+\@ifundefined{@addenda}{%
+%%                                      %if not Addenda nor Errata
+\@ifundefined{@supple}{%	                %if not supple
+\centerline{\footnotesize%
+\@ifundefined{@pubinfo}{~~}{%
+\if 2\@prtstyle Prog.~Theor.~Phys. \@pubinfo, Letters% %if letter
+\else Progress of Theoretical Physics, \@pubinfo%      %if text
+\fi \gdef\@pubinfo{}}}
+\par \vskip 12.3pt}%
+{\vskip 18pt}%			        %when supple
+\begin{center}
+{\large\bf \hang \@title}
+\@ifundefined{@subtitle}{}%           %when subtitle exists
+{\par\vskip 5pt {\large\it\hang \rule[.5ex]{1.7em}{\hruleheight}\ %
+\@subtitle\ \rule[.5ex]{1.7em}{\hruleheight}} \gdef\@subtitle{}}
+\par\vskip 12.3pt
+{\hang \@ifundefined{@author}{}{\@author}} \par\vskip 7.47pt
+\@ifundefined{@inst}{}%
+{\instsize\it \hang \@inst \gdef\@inst{}\par \vskip 11pt}
+\end{center}
+\@ifundefined{@recdate}{}%
+{\hang{\footnotesize \begin{center}(Received \@recdate{})\end{center}}
+\gdef\@recdate{}\par \vskip 5.75pt}
+\@ifundefined{@abst}{}%
+{\begingroup
+\begin{center}
+\parbox[t]{\@abstwidth}{\setlength{\parindent}{1.4em}%
+\abstsize \@abst}
+\gdef\@abst{} \par
+\end{center}
+\endgroup
+\vskip20pt}}%
+%% 
+{\centerline{\Large\bf \@addenda}%     %when Addenda or Errata
+\par \vskip 20pt
+\begin{center}
+{\bf \hang \@title}
+\@ifundefined{@subtitle}{}%           %when subtitle exists
+{\par \vskip 2.5pt {\it\hang \rule[.5ex]{1.7em}{\hruleheight}\ %
+\@subtitle\ \rule[.5ex]{1.7em}{\hruleheight}} \gdef\@subtitle{}}
+\par\vskip 10pt
+{\hang \@author} \par\vskip 3pt%11.2pt
+\@ifundefined{@publishedin}%
+{\immediate\write20{>Warning: <publishedin> is NOT defined!!}
+Write ``Prog.~Theor.~Phys.~Vol.~(Year), Page'' in 
+{\tt $\backslash$publishedin}!!}
+{{\hang \@publishedin}\gdef\@publishedin{}}
+\par\vskip 15pt
+\@ifundefined{@recdate}{}
+{{\hang (Received \@recdate{})}
+\gdef\@recdate{}\par \vskip 5pt}
+\end{center}}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lineskip 1pt \normallineskip 1pt
+\def\baselinestretch{1}
+\def\@normalsize{\@setsize\normalsize{13.34pt}\xipt\@xipt
+ \abovedisplayskip 10pt plus2pt minus5pt\belowdisplayskip \abovedisplayskip
+ \abovedisplayshortskip \z@ plus3pt\belowdisplayshortskip 6pt plus3pt minus3pt}
+\def\small{\@setsize\small{12pt}\xpt\@xpt
+ \abovedisplayskip 10pt plus2pt minus5pt\belowdisplayskip \abovedisplayskip
+ \abovedisplayshortskip \z@ plus3pt\belowdisplayshortskip 6pt plus3pt minus3pt
+ \def\@listi{\topsep=0pt plus 2pt %minus 2pt
+ \parsep=0pt %plus 1pt minus 1pt
+ \itemsep=0pt\relax}}
+\def\footn@tesize{\@setsize\footnotesize{11.4pt}\ixpt\@ixpt
+ \abovedisplayskip 6pt plus 2pt minus 4pt\belowdisplayskip \abovedisplayskip
+ \abovedisplayshortskip \z@ plus 1pt\belowdisplayshortskip 3pt plus 1pt minus 2pt
+ \def\@listi{\topsep=0pt plus 1pt %minus 1pt
+ \parsep=0pt %2pt plus 1pt minus 1pt
+ \itemsep=0pt\relax}}
+\def\footnotesize{\footn@tesize}
+\def\scriptsize{\@setsize\scriptsize{10pt}\viiipt\@viiipt}
+\def\tiny{\@setsize\tiny{7.5pt}\vipt\@vipt}
+\def\large{\@setsize\large{14pt}\xiipt\@xiipt}
+\def\Large{\@setsize\Large{18pt}\xivpt\@xivpt}
+\def\LARGE{\@setsize\LARGE{22pt}\xviipt\@xviipt}
+\def\huge{\@setsize\huge{25pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{30pt}\xxvpt\@xxvpt}
+
+\@ifundefined{@addenda}{}{%              %if Addenda or Errata
+\def\@normalsize{\footn@tesize}%{11.4pt}\ixpt\@ixpt
+\def\small{\@setsize\small{10pt}\viiipt\@viiipt}
+\def\footnotesize{\@setsize\footnotesize{10pt}\viiipt\@viiipt}
+\def\scriptsize{\@setsize\scriptsize{7.5pt}\vipt\@vipt}
+\def\large{\@setsize\large{12.35pt}\xpt\@xpt}
+\def\Large{\@setsize\Large{13.34pt}\xipt\@xipt}
+\def\LARGE{\@setsize\LARGE{14pt}\xiipt\@xiipt}
+\def\huge{\@setsize\huge{18pt}\xivpt\@xivpt}
+\def\refsize{\@setsize\refsize{9.5pt}\viiipt\@viiipt}}
+\normalsize
+
+\oddsidemargin 20pt \evensidemargin 20pt
+\marginparwidth .75in \marginparsep .25in
+\topmargin 0in \headheight 12pt \headsep 17pt \footskip 2\baselineskip
+%\textheight 44\baselineskip \advance\textheight\topskip
+%\advance\textheight1pt %
+\textheight 598pt %597.95984pt: normalsize 45 lines texthight
+\textwidth 400pt  %140mm textwidth
+%
+\columnsep 14pt \columnseprule 0pt
+
+\footnotesep 7.7pt
+\skip\footins 9pt plus 4pt minus 2pt
+\floatsep 12pt plus 2pt minus 2pt \textfloatsep 20pt plus 2pt minus 4pt
+\intextsep 12pt plus 2pt minus 2pt \@maxsep 20pt \dblfloatsep 12pt plus 2pt
+minus 2pt \dbltextfloatsep 20pt plus 2pt minus 4pt \@dblmaxsep 20pt 
+\@fptop 0pt plus 1fil \@fpsep 8pt plus 2fil \@fpbot 0pt plus 1fil 
+\@dblfptop 0pt plus 1fil \@dblfpsep 8pt plus 2fil \@dblfpbot 0pt plus 1fil
+\marginparpush 5pt 
+
+\parskip 0pt  \parindent 20pt 
+\topsep 0pt   % %topskip in list-environment
+\partopsep 0pt%
+\itemsep 0pt%   %skip between items
+\@lowpenalty 51 \@medpenalty 151 \@highpenalty 301
+\@beginparpenalty -\@lowpenalty \@endparpenalty -\@lowpenalty 
+\@itempenalty -\@lowpenalty
+
+\def\section{\@startsection{section}{1}{\z@}
+{13.34pt}{13.34pt}{\normalsize\bf}}
+\def\subsection{\@startsection{subsection}{2}{\z@}
+{7pt}{4pt}{\normalsize\it}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}
+{4pt}{2.5pt}{\normalsize\rm}}
+
+%%%%%%%%%%%%%%%%%%%%%
+\setcounter{secnumdepth}{3}
+
+\leftmargini 2.2em
+\leftmarginii 2.2em \leftmarginiii 1.87em \leftmarginiv 1.7em \leftmarginv 1em
+\leftmarginvi 1em
+\leftmargin\leftmargini
+\labelsep .5em
+\labelwidth\leftmargini\advance\labelwidth-\labelsep
+\parsep=0pt 
+\def\@listi{\leftmargin\leftmargini}
+\def\@listii{\leftmargin\leftmarginii
+ \labelwidth\leftmarginii\advance\labelwidth-\labelsep
+ \topsep=4pt 
+ \parsep=0pt 
+ \itemsep=2pt}
+\def\@listiii{\leftmargin\leftmarginiii
+ \labelwidth\leftmarginiii\advance\labelwidth-\labelsep
+ \topsep=0pt
+ \parsep=0pt
+\partopsep=0pt
+ \itemsep=0pt \topsep=0pt}
+\def\@listiv{\leftmargin\leftmarginiv
+ \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
+\def\@listv{\leftmargin\leftmarginv
+ \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
+\def\@listvi{\leftmargin\leftmarginvi
+ \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
+%%%%%%%% End of <<PTP Text Style>> %%%%%%%%%%%%%%%%%%%%%
+

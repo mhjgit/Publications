@@ -1,0 +1,10 @@
+set terminal pslatex
+set output "fig5.tex"
+set xrange [0.2:1.8]
+set yrange [0.5:3.]
+set xlabel "$n_c$ (fm$^{-3}$)"
+set ylabel "$M/M_{\odot}$"
+plot "mass02_nr"  title "pn without $\Delta M_r$" w l 1 , "mass02_r" title "pn with $\Delta M_r$"  w l 2, "mass_allYY_nr" title "YY-interaction without $\Delta M_r$"  w l 3, "mass_allYY_r" title "YY-interaction with $\Delta M_r$"  w l 4,"mass_noYY_nr" title "YN-interaction without $\Delta M_r$"  w l 5, "mass_noYY_r" title "YN-interaction with $\Delta M_r$"  w l 6
+
+
+

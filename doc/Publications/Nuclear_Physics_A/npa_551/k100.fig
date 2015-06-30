@@ -1,0 +1,229 @@
+%! HIGZ/PostScript Metafile
+/d {lineto} def /m {moveto} def /t {translate} def
+/sw {stringwidth} def /r {rotate} def /rl {roll} def
+/rd {rlineto} def /rm {rmoveto} def /gr {grestore} def
+/lw {setlinewidth} def /sd {setdash} def
+/s {stroke} def /rgb {setrgbcolor} def
+/c {closepath} def /sf {scalefont setfont} def
+/oshow {gsave [] 0 sd true charpath stroke gr} def
+/cs {gsave dup sw pop 2 div neg 5 -1 rl 5 -1 rl t 3 -1 rl r 0 m show gr} def
+/mk {0. (.) cs} def
+/rs {gsave dup sw pop neg 5 -1 rl 5 -1 rl t 3 -1 rl r 0 m show gr} def
+/ocs {gsave dup sw pop 2 div neg 5 -1 rl 5 -1 rl t  3 -1 rl r 0 m oshow gr} def
+/ors {gsave dup sw pop neg 5 -1 rl 5 -1 rl t 3 -1  rl r 0 m oshow gr} def
+gsave .25 .25 scale /reencsmalldict 24 dict def /ReEncodeSmall
+{reencsmalldict begin /newcodesandnames exch def /newfontname exch def
+/basefontname exch def /basefontdict basefontname findfont def
+ /newfont basefontdict maxlength dict def basefontdict
+{exch dup /FID ne {dup /Encoding eq {exch dup length array copy
+newfont 3 1 roll put} {exch newfont 3 1 roll put} ifelse}
+{pop pop} ifelse } forall
+newfont /FontName newfontname put newcodesandnames aload pop
+newcodesandnames length 2 idiv {newfont /Encoding get 3 1 roll put} repeat
+newfontname newfont definefont pop end } def /accvec [
+8#260 /agrave 8#265 /Agrave 8#276 /acircumflex 8#300 /Acircumflex
+8#311 /adieresis 8#314 /Adieresis 8#321 /ccedilla 8#322 /Ccedilla
+8#323 /eacute 8#324 /Eacute 8#325 /egrave 8#326 /Egrave
+8#327 /ecircumflex 8#330 /Ecircumflex 8#331 /edieresis 8#332 /Edieresis
+8#333 /icircumflex 8#334 /Icircumflex 8#335 /idieresis 8#336 /Idieresis
+8#337 /ntilde 8#340 /Ntilde 8#342 /ocircumflex 8#344 /Ocircumflex
+8#345 /odieresis 8#346 /Odieresis 8#347 /ucircumflex 8#354 /Ucircumflex
+8#355 /udieresis 8#356 /Udieresis 8#357 /aring 8#362 /Aring
+8#363 /ydieresis 8#364 /Ydieresis 8#366 /aacute 8#367 /Aacute
+8#374 /ugrave 8#375 /Ugrave] def
+/Times-Roman /Times-Roman accvec ReEncodeSmall
+/Times-Italic /Times-Italic accvec ReEncodeSmall
+/Times-Bold /Times-Bold accvec ReEncodeSmall
+/Times-BoldItalic /Times-BoldItalic accvec ReEncodeSmall
+/Helvetica /Helvetica accvec ReEncodeSmall
+/Helvetica-Oblique /Helvetica-Oblique accvec ReEncodeSmall
+/Helvetica-Bold /Helvetica-Bold accvec ReEncodeSmall
+/Helvetica-BoldOblique /Helvetica-BoldOblique  accvec ReEncodeSmall
+/Courier /Courier accvec ReEncodeSmall
+/Courier-Oblique /Courier-Oblique accvec ReEncodeSmall
+/Courier-Bold /Courier-Bold accvec ReEncodeSmall
+/Courier-BoldOblique /Courier-BoldOblique accvec ReEncodeSmall
+ 0.00000 0.00000 0.00000 rgb 100 100 translate
+/chhe  71 def
+/Times-Roman findfont chhe sf
+ 1074.00 2045.97 m   0 r
+currentpoint /wid 0 def (Role of isobar self-energy for W)
+sw pop /wid exch wid add def
+chhe 2 div 0 exch rm
+/chhe  50 def
+/Times-Roman findfont chhe sf
+/Symbol findfont chhe sf
+(\104\104)
+sw pop /wid exch wid add def
+/Times-Roman findfont chhe sf
+/chhe  71 def
+chhe -2 div 0 exch rm
+/Times-Roman findfont chhe sf
+(\(k, k, )
+sw pop /wid exch wid add def
+/Symbol findfont chhe sf
+(\167)
+sw pop /wid exch wid add def
+/Times-Roman findfont chhe sf
+(\))
+sw pop /wid exch wid add def
+/chhe  71 def
+/Times-Roman findfont chhe sf
+wid -2 div 0 rm (Role of isobar self-energy for W)  show
+chhe 2 div 0 exch rm
+/chhe  50 def
+/Times-Roman findfont chhe sf
+/Symbol findfont chhe sf
+(\104\104)
+  show
+/Times-Roman findfont chhe sf
+/chhe  71 def
+chhe -2 div 0 exch rm
+/Times-Roman findfont chhe sf
+(\(k, k, )  show
+/Symbol findfont chhe sf
+(\167)
+  show
+/Times-Roman findfont chhe sf
+(\))  show
+/chhe  71 def
+/Times-Roman findfont chhe sf
+  0 neg r
+/chhe  63 def
+/Times-Roman findfont chhe sf
+ 1933.20   45.11 m   0 r
+currentpoint /wid 0 def (Energy )
+sw pop /wid exch wid add def
+/Symbol findfont chhe sf
+(\167)
+sw pop /wid exch wid add def
+/Times-Roman findfont chhe sf
+( of the incoming nucleon in  )
+sw pop /wid exch wid add def
+/Symbol findfont chhe sf
+(\133)
+sw pop /wid exch wid add def
+/Times-Roman findfont chhe sf
+(MeV)
+sw pop /wid exch wid add def
+/Symbol findfont chhe sf
+(\135)
+sw pop /wid exch wid add def
+/Times-Roman findfont chhe sf
+/chhe  63 def
+/Times-Roman findfont chhe sf
+wid neg 0 rm (Energy )  show
+/Symbol findfont chhe sf
+(\167)
+  show
+/Times-Roman findfont chhe sf
+( of the incoming nucleon in  )  show
+/Symbol findfont chhe sf
+(\133)
+  show
+/Times-Roman findfont chhe sf
+(MeV)  show
+/Symbol findfont chhe sf
+(\135)
+  show
+/Times-Roman findfont chhe sf
+/chhe  63 def
+/Times-Roman findfont chhe sf
+  0 neg r
+/chhe  63 def
+/Times-Roman findfont chhe sf
+   64.44 1933.20 m  90 r
+currentpoint /wid 0 def (Potential )
+sw pop /wid exch wid add def
+/Symbol findfont chhe sf
+(\133)
+sw pop /wid exch wid add def
+/Times-Roman findfont chhe sf
+(MeV)
+sw pop /wid exch wid add def
+/Symbol findfont chhe sf
+(\135)
+sw pop /wid exch wid add def
+/Times-Roman findfont chhe sf
+/chhe  63 def
+/Times-Roman findfont chhe sf
+wid neg 0 rm (Potential )  show
+/Symbol findfont chhe sf
+(\133)
+  show
+/Times-Roman findfont chhe sf
+(MeV)  show
+/Symbol findfont chhe sf
+(\135)
+  show
+/Times-Roman findfont chhe sf
+/chhe  63 def
+/Times-Roman findfont chhe sf
+ 90 neg r
+ [] 0 sd 3 lw 214 214 m 1933 214 d 1933 1933 d 214 1933 d 214 214 d c s 1 lw 214
+ 214 m 214 1933 d s 247 214 m 214 214 d s 230 329 m 214 329 d s 247 443 m 214
+ 443 d s 230 558 m 214 558 d s 247 673 m 214 673 d s 230 787 m 214 787 d s 247
+ 902 m 214 902 d s 230 1016 m 214 1016 d s 247 1131 m 214 1131 d s 230 1245 m
+ 214 1245 d s 247 1360 m 214 1360 d s 230 1474 m 214 1474 d s 247 1589 m 214
+ 1589 d s 230 1704 m 214 1704 d s 247 1818 m 214 1818 d s 247 1818 m 214 1818 d
+ s
+/Helvetica findfont 41 sf 171 199 0.00000
+(0) rs
+ 171 428 0.00000
+(2) rs
+ 171 658 0.00000
+(4) rs
+ 171 887 0.00000
+(6) rs
+ 171 1116 0.00000
+(8) rs
+ 171 1345 0.00000
+(10) rs
+ 171 1574 0.00000
+(12) rs
+ 171 1803 0.00000
+(14) rs 214 214 m 1933 214 d s 214 247 m 214 214 d s 283 230 m 283 214 d s 352
+ 230 m 352 214 d s 421 230 m 421 214 d s 489 230 m 489 214 d s 558 247 m 558 214
+ d s 627 230 m 627 214 d s 695 230 m 695 214 d s 764 230 m 764 214 d s 833 230 m
+ 833 214 d s 902 247 m 902 214 d s 970 230 m 970 214 d s 1039 230 m 1039 214 d s
+ 1108 230 m 1108 214 d s 1177 230 m 1177 214 d s 1245 247 m 1245 214 d s 1314
+ 230 m 1314 214 d s 1383 230 m 1383 214 d s 1452 230 m 1452 214 d s 1520 230 m
+ 1520 214 d s 1589 247 m 1589 214 d s 1658 230 m 1658 214 d s 1726 230 m 1726
+ 214 d s 1795 230 m 1795 214 d s 1864 230 m 1864 214 d s 1933 247 m 1933 214 d s
+ 214 163 0.00000
+(0) cs
+ 558 163 0.00000
+(200) cs
+ 902 163 0.00000
+(400) cs
+ 1245 163 0.00000
+(600) cs
+ 1589 163 0.00000
+(800) cs
+ 1933 163 0.00000
+(1000) cs 231 214 m 386 214 d 558 214 d 730 214 d 902 214 d 902 214 d 1074 214 d
+ 1074 214 d 1234 223 d 1243 243 d 1245 249 d 1255 275 d 1264 305 d 1273 341 d
+ 1282 383 d 1293 434 d 1305 496 d 1319 576 d 1344 728 d 1366 860 d 1379 934 d
+ 1392 997 d 1401 1043 d 1410 1083 d 1417 1111 d 1435 1176 d 1453 1238 d 1471
+ 1295 d 1489 1348 d 1507 1398 d 1526 1443 d 1547 1489 d 1565 1524 d 1583 1557 d
+ 1589 1566 d 1604 1587 d 1620 1605 d 1638 1620 d 1657 1632 d 1675 1640 d 1702
+ 1645 d 1761 1649 d 1787 1648 d 1817 1644 d s 1817 1644 m 1847 1635 d 1877 1621
+ d 1905 1604 d 1933 1583 d s [12 12] 0 sd 231 214 m 386 214 d 558 214 d 730 214
+ d 857 216 d 890 220 d 902 223 d 994 243 d 1020 253 d 1038 264 d 1055 276 d 1074
+ 293 d 1091 313 d 1110 338 d 1131 371 d 1154 409 d 1184 463 d 1245 581 d 1266
+ 623 d 1290 675 d 1331 767 d 1367 850 d 1392 902 d 1411 941 d 1417 952 d 1450
+ 1011 d 1480 1062 d 1510 1107 d 1537 1147 d 1563 1180 d 1589 1212 d 1618 1247 d
+ 1656 1294 d 1676 1316 d 1693 1331 d 1707 1340 d 1721 1346 d 1734 1349 d 1745
+ 1347 d 1756 1343 d 1761 1340 d 1775 1330 d 1789 1316 d 1803 1298 d 1817 1277 d
+ 1832 1253 d 1847 1222 d 1861 1193 d 1875 1158 d 1889 1120 d 1904 1076 d s 1904
+ 1076 m 1918 1034 d 1933 982 d s [4 8] 0 sd 231 214 m 386 214 d 558 214 d 716
+ 215 d 730 216 d 807 225 d 853 234 d 902 248 d 948 259 d 987 268 d 1014 280 d
+ 1034 292 d 1051 307 d 1067 325 d 1074 333 d 1092 361 d 1111 394 d 1132 436 d
+ 1155 486 d 1181 548 d 1217 642 d 1245 718 d 1265 774 d 1288 843 d 1320 948 d
+ 1374 1129 d 1396 1201 d 1417 1264 d 1441 1335 d 1494 1496 d 1515 1557 d 1534
+ 1605 d 1552 1647 d 1566 1676 d 1579 1701 d 1589 1715 d 1620 1755 d 1641 1779 d
+ 1660 1795 d 1675 1804 d 1688 1807 d 1702 1807 d 1714 1802 d 1726 1792 d 1738
+ 1779 d 1749 1763 d 1761 1738 d 1773 1709 d 1785 1675 d 1797 1637 d 1810 1594 d
+ s 1810 1594 m 1822 1545 d 1835 1492 d 1848 1435 d 1861 1369 d 1872 1308 d 1885
+ 1237 d 1897 1162 d 1909 1079 d 1921 1000 d 1933 913 d s
+showpage grestore

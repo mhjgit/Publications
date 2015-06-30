@@ -1,0 +1,5 @@
+\documentstyle{article}
+\begin{document}
+\input{fig1.tex}
+\input{fig2.tex}
+\end{document}

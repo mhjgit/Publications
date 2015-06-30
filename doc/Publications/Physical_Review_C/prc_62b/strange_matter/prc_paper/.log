@@ -1,0 +1,39 @@
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 1999.10.13)  19 FEB 2000 13:52
+**paper
+(/local/TEX/lib/inputs/latex2e/misc/.tex
+! Interruption.
+<to be read again> 
+                   \begingroup 
+l.1 
+    %%
+? z
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? ls
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? q
+OK, entering \batchmode...
+LaTeX2e <1998/06/01>
+Babel <v3.6h> and hyphenation patterns for english, ukenglish, norsk, german, l
+oaded.
+ File ignored)
+! Emergency stop.
+<*> paper
+         
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 4 strings out of 10928
+ 83 string characters out of 448243
+ 43045 words of memory out of 263001
+ 2998 multiletter control sequences out of 10000+0
+ 3640 words of font info for 14 fonts, out of 200000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 5i,0n,1p,79b,7s stack positions out of 300i,100n,500p,30000b,4000s
+No pages of output.

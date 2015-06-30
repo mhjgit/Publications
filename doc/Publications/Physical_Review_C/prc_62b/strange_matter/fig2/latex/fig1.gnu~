@@ -1,0 +1,9 @@
+set terminal pslatex
+set output "fig1.tex"
+set xrange [0.3:1.2]
+set xlabel "$n$ (fm$^{-3}$)"
+set ylabel "$\mu_i$ (MeV)"
+plot "chemf_nn.dat" title "$\mu_n$" w l 1, "chemf_pn.dat" title "$\mu_p$" w l 2, "chemf_smn.dat" title "$\mu_{\Sigma^-}$" w l 3, "chemf_ln.dat" title "$\mu_{\Lambda}$" w l 4
+
+
+

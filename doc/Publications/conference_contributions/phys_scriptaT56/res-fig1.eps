@@ -1,0 +1,39 @@
+
+\Cartesian(0.75cm,1cm)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                              %%
+%%     Figuren med ramme og grid.               %%
+%%		 \psgrid[subgriddiv=2]          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+\pspicture(-1,-1)(17,5)
+%
+\psaxes[Ox=100,Dx=2,dx=1,showorigin=false,linewidth=1pt]{->}(0,0)(15.5,4.5)
+%
+\uput[0](0.0,4.5){MeV}
+%
+\uput[90](15.5,0.2){N}
+%
+\psline[showpoints=true,linestyle=dotted,dotstyle=*,dotscale=1.2,linewidth=1pt]
+(2,1.942)(3,2.019)(4,2.019)(5,2.197)(6,2.247)(7,2.187)(8,2.390)(9,2.280)
+(10,2.194)(11,2.144)(12,2.109)(13,2.050)(14,2.0)(15,1.996)
+%
+%\psline{<-}(2,1.942)(2.2,2.342)
+\uput[90](2.1,1.96){$4^{+}$}
+%
+\psline[showpoints=true,linestyle=dashed,dotstyle=+,dotangle=45,dotscale=1.2,linewidth=1pt]
+(1,1.3)(2,1.259)(3,1.207)(4,1.205)(5,1.212)(6,1.256)(7,1.299)(8,1.293)
+(9,1.229)(10,1.171)(11,1.141)(12,1.132)(13,1.141)(14,1.169)(15,1.227)
+%
+% \psline{<-}(1,1.3)(1.2,1.7)
+%
+\uput[90](1.1,1.4){$2^{+}$}
+%
+\endpspicture
+%
+\caption{Experimental $2^{+}$ and $4^{+}$ states in Sn isotopes.}
+
+
+

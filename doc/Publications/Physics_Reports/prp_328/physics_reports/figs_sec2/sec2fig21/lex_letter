@@ -1,0 +1,85 @@
+From DIEPERINK@kvi.nl Tue Sep 15 14:54:37 1998
+Received: from pat.uio.no (6089@pat.uio.no [129.240.130.16])
+	by norserv.nordita.dk (8.8.5/8.8.5) with SMTP id OAA11218
+	for <mjensen@nordita.dk>; Tue, 15 Sep 1998 14:54:37 +0200 (MET DST)
+Resent-From: m.h.jensen@fys.uio.no
+Resent-Message-Id: <199809151254.OAA11218@norserv.nordita.dk>
+Received: from ulrik.uio.no by pat.uio.no id <16134-0@pat.uio.no>;
+          Tue, 15 Sep 1998 14:55:35 +0200
+Old-Return-Path: <DIEPERINK@KVI.nl>
+Delivery-Date: Tue, 15 Sep 1998 14:55:32 +0200
+Old-Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by 
+              pat.uio.no with SMTP (PP); Tue, 15 Sep 1998 13:54:35 +0200
+Old-Received: from KVIASV.KVI.nl (SYSTEM@KVIASV.KVI.nl [129.125.15.5]) by 
+              pat.uio.no ; Tue, 15 Sep 1998 13:54:32 +0200 (MET DST)
+Old-Received: from KVI.nl by KVI.nl (PMDF V5.1-10 #27437) id 
+              <01J1U6758WM88WWI75@KVI.nl> for m.h.jensen@fys.uio.no; Tue, 15 
+              Sep 1998 13:54:23 MET
+Date: Tue, 15 Sep 1998 13:54:23 +0100 (MET)
+From: "A.DIEPERINK" <DIEPERINK@kvi.nl>
+Subject: Re: hi
+To: m.h.jensen@fys.uio.no
+Message-id: <01J1U675961E8WWI75@KVI.nl>
+X-PS-Qualifiers: /FORM=A4/LEFT_MARGIN=36/TOP_MARGIN=36
+X-VMS-To: IN%"m.h.jensen@fys.uio.no"
+MIME-version: 1.0
+Content-type: text/plain; CHARSET=US-ASCII
+Resent-Date: Tue, 15 Sep 1998 14:55:35 +0200
+Resent-To: mjensen@nordita.dk
+Content-Length: 2082
+Status: R
+
+Hallo Morton,
+
+Sorry for the delay,
+
+
+First I now have more concrete ideas about what we can do on the URCA cooling.
+Armen Sedrakian has arrived here as a postdoc and among other things
+we are working out the (direct URCA) neutrino-antineutrino
+emission both in the quasi-particle approximation (qpa) and
+also with the use of the dressed fermion  propagators in the one-loop diagram.
+Some of the formalism can be found in the Knoll-Voskresensky paper
+(hep-ph/9510417, Ann Phys.)
+
+I suggested to him that we could try to combine with your notes
+on the charge changing direct URCA, which has the extra angle-dependence,
+from last spring, which can probably also be generalised beyond qpa.
+Do you agree with the idea?
+
+The whole thing still requires some work.
+
+I also have some questions about your notes;
+ eg in eq 8 the dimension of the last
+ term does not seem to be right, is there m^2 missing? Same with eq 29.
+
+  Also I am wondering whether relations like 18 should be taken with bar
+  or effective masses.
+
+My question is : are you interested in a joined effort?
+ In case case we could send you our notes on vbar{v} ,
+ Eventually we could meet once we agree on the overall project.
+
+Pairing and modified URCA require more discussion.
+
+The other thing Armen started is the calculation of the Lambda
+and Sigma spectral functions using  the G-matrix from the new
+Nijmegen NY potentials (with some help of Rob for teh NY sector)
+for beta equilibrium and finite T.
+It might have some overlap with work other groups,
+howver it seems that the Catania result is based upon a separable expansion
+of the potential and we are not sure whether that is reliable.
+Are you doing anything in that direction?
+
+
+With best regards,
+Lex
+
+
+*******************************************************************************
+Lex Dieperink					Tel: 31-50-3633600 (Institute)
+Kernfysisch Versneller Instituut		     31-50-3633568 (Office)
+Zernikelaan 25					FAX: 31-50-3634003
+NL-9747 AA Groningen				E-mail: DIEPERINK@KVI.NL
+*******************************************************************************
+

@@ -1,0 +1,75 @@
+M1 transtion for: 116^Sn
+
+The basic shell model data:
+
+Initial proton number: 0
+Initial neutron number: 16
+Initial total angular momentum J is (even, odd): even
+Initial total projection of angular momentum (2*M): 0
+Initial total parity(+, -): +
+
+The number of neutron j-orbits: 5
+	n  l  2*j   energy   (a = active, n = not active):
+        0  4   7    0.08              a
+	1  2   5    0.00              a
+	1  2   3    1.65              a
+	2  0   1    1.55              a
+        0  5  11    3.55              a
+
+The number of proton j-orbits: 1
+	n  l  2*j   energy   (a = active, n = not active):
+        0  0    0      0.000             a
+
+Storage file for initial eigenvectors: Sn^116-eigen-vectors.dat
+
+Final proton number: 0
+Final neutron number: 16
+Final total angular momentum J is (even, odd): even
+Final total projection of angular momentum (2*M): 0
+Final total parity(+, -): +
+
+Storage file for final eigenvectors: Sn^116-eigen-vectors.dat
+
+Type of calculation (e2, e3, m1): e2
+
+E2 Neutron effective charge (unit e): 1.0
+E2 Proton effective charge (unit e):  1.0
+
+M1 Neutron effective gl (unit e): 0.0
+M1 Proton  effective gl (unit e): 1.0
+M1 Neutron effective gs (unit): -3.82
+M1 Proton  effective gs (unit): 5.58
+
+
+Number of transitions: 1
+
+Init(no 2J) Final(no 2J) (ground state no = 0):
+      1  4         0  0
+
+
+Output file for the results: Sn116-e2-result.dat
+
+                   ---    RESULTS   ----
+
+
+       NEUTRON single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  5 -1   11   11   3.55 *    8     1    0  4  1     7    3   0.08
+  1     0    0  5 -1   11    9   3.55 *    9     2    1  2  1     5    3   0.00
+  2     0    0  5 -1   11    7   3.55 *   10     3    1  2  1     3    3   1.65
+  3     1    0  4  1    7    7   0.08 *   11     0    0  5 -1    11    1   3.55
+  4     0    0  5 -1   11    5   3.55 *   12     1    0  4  1     7    1   0.08
+  5     1    0  4  1    7    5   0.08 *   13     2    1  2  1     5    1   0.00
+  6     2    1  2  1    5    5   0.00 *   14     3    1  2  1     3    1   1.65
+  7     0    0  5 -1   11    3   3.55 *   15     4    2  0  1     1    1   1.55
+
+Number of initial asymmetric neutron slater determinants =  7998667
+Number of  initial symmetric neutron slater determinants =    12870
+Total number of initial slater determinants              = 16010204
+
+            E2 transitions:
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1  4         0  0                           1.74186449E+01
+ run time: 0 hour 11 min 5 sec

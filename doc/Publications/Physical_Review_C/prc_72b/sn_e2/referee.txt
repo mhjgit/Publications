@@ -1,0 +1,119 @@
+Received: from lxmta2.gsi.de (lxmta2.gsi.de [140.181.67.43])
+	by rzserv1.gsi.de (AIX4.3/8.9.3p2/8.9.3) with ESMTP id TAA35676
+	for <banu@zpop.gsi.de>; Mon, 29 Aug 2005 19:27:29 +0200
+Received: from localhost (localhost [127.0.0.1])
+	by lxmta2.gsi.de (Postfix) with ESMTP id 172C21926EF
+	for <banu@zpop.gsi.de>; Mon, 29 Aug 2005 19:27:29 +0200 (CEST)
+Received: from newman.ridge.aps.org (newman.ridge.aps.org [149.28.9.26])
+	by lxmta2.gsi.de (Postfix) with ESMTP id 48D711926EB
+	for <a.banu@gsi.de>; Mon, 29 Aug 2005 19:27:23 +0200 (CEST)
+Received: from localhost.localdomain (kempec.aps.org [149.28.9.16])
+	by newman.ridge.aps.org (8.13.1/8.13.1) with ESMTP id j7THRMCJ046268
+	for <a.banu@gsi.de>; Mon, 29 Aug 2005 13:27:23 -0400 (EDT)
+Message-Id: <200508291727.j7THRMCJ046268@newman.ridge.aps.org>
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain
+MIME-Version: 1.0
+X-Mailer: MIME::Lite 3.01 (F2.72; A1.60; B3.05; Q3.03)
+Date: Mon, 29 Aug 2005 17:27:21 UT
+From: Physical Review C <prc@ridge.aps.org>
+To: a.banu@gsi.de
+Subject: Your_manuscript CER1001 Banu
+X-Virus-Scanned: by amavisd-new-2.3.2 (20050629) (Debian) at gsi.de test version
+X-Spam-Status: No, hits=-2.599 tagged_above=-99 required=3
+ tests=[BAYES_00=-2.599]
+X-Spam-Level: 
+
+Re: CER1001
+    $sup 108$Sn studied with intermediate-energy Coulomb excitation
+    by A. Banu, J. Gerl, C. Fahlander, M. Gorska, H. Grawe, et al.
+
+Dr. A. Banu
+Planckstr. 1
+GSI
+D-64291 Darmstadt, GERMANY
+
+Dear Dr. Banu,
+
+The above manuscript has been reviewed by one of our referees.
+Comments from the report are enclosed for your consideration.
+
+When you resubmit your manuscript, please include a summary of the
+changes made, and a brief response to all recommendations and
+criticisms.
+
+Yours sincerely,
+
+Christopher Wesselborg
+Associate Editor
+Physical Review C
+Email: prc@ridge.aps.org
+Fax: 631-591-4141
+http://prc.aps.org/
+
+
+----------------------------------------------------------------------
+Report of the Referee -- CER1001/Banu
+----------------------------------------------------------------------
+
+This paper reports on the relative measurement of the B(E2: 0+ " 2+1) of
+the unstable, neutron deficient nucleus 108Sn using intermediate energy
+Coulomb excitation (relative to that for 112Sn).
+
+The experiment, carried out at GSI using the RISING/FRS setup appears to
+have been well carried out and the analysis seems thorough. The results
+are compared to the results of two large scale shell model calculations
+and, although the error bars are somewhat larger than desirable, seem to
+show that the B(E2: 0+1 " 2+1) value remains relatively high as the
+neutron number decreases towards
+50.
+
+The physics is of shell closures in nuclei far off stability, and of
+very neutron  and/or proton deficient nuclei are great current interest.
+I am happy to recommend publication in Phys. Rev. when the authors have
+considered the following points.
+
+My first comments deal with the experimental part of the paper. As I
+already said, the results are interesting and worth of publication.
+However, if space allows, and since this is one of the early papers to
+deal with this relatively new method of intermediate energy Coulomb
+excitation, I would like to see some additional experimental information
+provided.
+
+1)      For example, what were the efficiencies of the various sorting
+conditions? In particular, having selected the 108Sn nuclei in the FRS
+what fraction of these events was also tagged by CATE?
+2)      In addition, the paper says that there is a ++A1++++A5++large'
+probability for a chance coincidence with bremstralung? Clearly this
+depends on the counting rate in the detectors but this number is not
+presented.
+3)      The spectra in figure 1 still show a very large background at
+energies of 1000 keV, is this background also due to chance
+coincidences? Some clarification would be beneficial.
+4)      What are the limitations on this technique, in terms of counting
+rate (projectiles per second) and B(E2) value (if 108Sn provides a new
+methodological benchmark what is the limit of that method?)
+
+The discussion comparison with the shell model calculations was somewhat
+confusing to me. The discussion on page 7 and 8, refers to calculations
+using a 100Sn core, seems to imply a general seniority scheme
+interpretation for the data. This discussion ends with the somewhat
+tantalizing statement that ++A1++++A5++part of the systematics seems not
+to follow the parabola-like trend'. The authors then appear to claim
+that the data is better reproduced in calculations using a 90Zr core and
+allowing for particle hole proton excitations. However, the calculations
+shown in figure 4 do not seem to me to do a much better job at
+reproducing the data than those in figure 2. for either heavy or light
+Sn nuclei. I mention in passing that the figures in general are too
+small, especially figure 4, and it is very difficult to make out the
+different curves. A small increase in B(E2) value for lighter Sn nuclei
+is indded shown in figure 4 but the calculations are still well below
+the experimental data while overestimating the data for heavier Sn. I
+would recommend that the authors revisit the discussion to try to
+clarify their conclusion that the ++A1++++A5++evolution of the ESPE
+govern the trend asymmetric trend' of the B(E2) values.
+
+If these issues can be address I am happy to recommend publication in
+Phys. Rev.
+

@@ -1,0 +1,6405 @@
+%!PS-Adobe-3.0
+%%Title: (MO3CCAA4950063AC6)
+%%Version: 1 3
+%%Creator: (XPP)
+%%CreationDate: (20020423181738)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%BoundingBox: 0 0 612 792
+%%Pages: 4
+%%DocumentProcessColors: (atend)
+%%DocumentNeededResources: (atend)
+%%DocumentSuppliedResources:
+%%+ procset (Adobe Acrobat - PDF operators) 1.2 0
+%%+ procset (Adobe Acrobat - type operators) 1.2 0
+%%+ procset (Adobe Acrobat - general image support) 1.2 0
+%%+ procset (Adobe Acrobat - monochrome image support) 1.2 0
+%%EndComments
+%%BeginDefaults
+%%EndDefaults
+%%BeginProlog
+%%EndProlog
+%%BeginSetup
+%%BeginResource: l2check
+%%Copyright: Copyright 1993 Adobe Systems Incorporated. All Rights Reserved.
+systemdict /languagelevel known
+{ systemdict /languagelevel get 1 eq }
+{ true }
+ifelse
+{
+initgraphics /Helvetica findfont 18 scalefont setfont
+72 600 moveto (Error: Your printer driver needs to be configured) dup show
+72 580 moveto (for printing to a PostScript Language Level 1 printer.) dup show
+exch = =
+/Helvetica-Bold findfont 16 scalefont setfont
+72 520 moveto (Windows and Unix) show
+/Times-Roman findfont 16 scalefont setfont
+72 500 moveto (Select ªLanguage Level 1º in the PostScript options section) show
+72 480 moveto (of the Acrobat print dialog.) show
+/Helvetica-Bold findfont 16 scalefont setfont
+72 440 moveto (Macintosh) show
+/Times-Roman findfont 16 scalefont setfont
+72 420 moveto (In the Chooser, select your printer driver.) show
+72 400 moveto (Then select your printer and click the Setup button.) show
+72 380 moveto (Follow any on-screen dialogs that may appear.) show
+showpage
+quit
+}
+if
+%%EndResource
+/currentpacking where{pop currentpacking true setpacking}if
+%%BeginResource: procset pdfvars
+%%Copyright: Copyright 1987-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%Version: 4.0 2
+%%Title: definition of dictionary of variables used by PDF & PDFText procsets
+userdict /PDF 160 dict put
+userdict /PDFVars 86 dict dup begin put
+/_save 0 def
+/_cshow 0 def
+/InitAll 0 def
+/TermAll 0 def
+/DocInitAll 0 def
+/DocTermAll 0 def
+/_lp /none def
+/_doClip 0 def
+/sfc 0 def
+/_sfcs 0 def
+/_sfc 0 def
+/ssc 0 def
+/_sscs 0 def
+/_ssc 0 def
+/_fcs 0 def
+/_scs 0 def
+/_fp 0 def
+/_sp 0 def
+/AGM_MAX_CS_COMPONENTS 10 def
+/_fillColors [ 0 1 AGM_MAX_CS_COMPONENTS { array } for ] def
+/_strokeColors [ 0 1 AGM_MAX_CS_COMPONENTS { array } for ] def
+/_fc null def
+/_sc null def
+/DefaultGray [/DeviceGray] def
+/DefaultRGB [/DeviceRGB] def
+/DefaultCMYK [/DeviceCMYK] def
+/_inT false def
+/_tr -1 def
+/_rise 0 def
+/_ax 0 def
+/_cx 0 def
+/_ld 0 def
+/_tm matrix def
+/_ctm matrix def
+/_mtx matrix def
+/_hy (-) def
+/_fScl 0 def
+/_hs 1 def
+/_pdfEncodings 2 array def
+/_baselineadj 0 def
+/_fTzero false def
+/_Tj 0 def
+/_italMtx [1 0 .212557 1 0 0] def
+/_italMtx_WMode1 [1 -.212557 0 1 0 0] def
+/_italMtxType0 [1 0 .1062785 1 0 0] def
+/_italMtx_WMode1Type0 [1 -.1062785 0 1 0 0] def
+/_basefont 0 def
+/_basefonto 0 def
+/_pdf_oldCIDInit null def
+/_pdf_FontDirectory 30 dict def
+/_categories 10 dict def
+/_sa? true def
+/_op? false def
+/_OP? false def
+/_opmode 0 def
+/_ColorSep5044? false def
+/_tmpcolr? [] def
+/_tmpop? {} def
+/_processColors 0 def
+/_defaulttransfer currenttransfer def
+/_defaultflatness currentflat def
+/_defaulthalftone null def
+/_defaultcolortransfer null def
+/_defaultblackgeneration null def
+/_defaultundercolorremoval null def
+/_defaultcolortransfer null def
+end
+%%EndResource
+PDFVars begin PDF begin
+%%BeginResource: procset pdfutil
+%%Copyright: Copyright 1993-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%Version: 4.0 2
+%%Title: Basic utilities used by other PDF procsets
+/bd {bind def} bind def
+/ld {load def} bd
+/bld {
+dup length dict begin
+{ null def } forall
+bind
+end
+def
+} bd
+/dd { PDFVars 3 1 roll put } bd
+/xdd { exch dd } bd
+/Level2?
+systemdict /languagelevel known
+{ systemdict /languagelevel get 2 ge } { false } ifelse
+def
+/Level3?
+systemdict /languagelevel known
+{systemdict /languagelevel get 3 eq } { false } ifelse
+def
+/getifknown {
+2 copy known { get true } { pop pop false } ifelse
+} bd
+/here {
+currentdict exch getifknown
+} bd
+/isdefined? { where { pop true } { false } ifelse } bd
+/StartLoad { dup dup not { /_save save dd } if } bd
+/EndLoad { if not { _save restore } if } bd
+%%EndResource
+%%BeginResource: procset pdf
+%%Version: 4.0 3
+%%Copyright: Copyright 1998-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%Title: General operators for PDF, common to all Language Levels.
+[/b/B/b*/B*/BDC/BI/BMC/BT/BX/c/cm/cs/CS/d/d0/d1/Do/DP/EI/EMC/ET/EX/f/f*/g/G/gs
+/h/i/j/J/k/K/l/m/M/MP/n/q/Q/re/rg/RG/ri/s/S/sc/SC/scn/SCN/sg/Tc/Td/TD/Tf/Tj/TJ
+/TL/Tm/Tr/Ts/Tw/Tz/T*/v/w/W/W*/y/'/"
+/applyInterpFunc/applystitchFunc/domainClip/EF/encodeInput/gsDI/ilp/icl
+/initgs/int/limit/PS/rangeClip/RC/rf/makePat/csfamily 
+/? /! /| /: /+ /GetGlyphDirectory
+] {null def} bind forall
+/v { currentpoint 6 2 roll c } bd
+/y { 2 copy c } bd
+/h/closepath ld
+/d/setdash ld
+/j/setlinejoin ld
+/J/setlinecap ld
+/M/setmiterlimit ld
+/w/setlinewidth ld
+/i {
+dup 0 eq { pop _defaultflatness } if
+setflat
+} bd
+/gsDI {
+begin
+/OP here { /_OP? xdd } if
+/op here { /_op? xdd }
+{ /OP here { /_op? xdd } if }
+ifelse
+/OPM here { /_opmode xdd } if
+/Font here { aload pop Tf } if
+/LW here { w } if
+/LC here { J } if
+/LJ here { j } if
+/ML here { M } if
+/D here { aload pop d } if
+end
+} bd
+/ilp { /_lp /none dd } bd
+/icl { /_doClip 0 dd } bd
+/W { /_doClip 1 dd } bd
+/W* { /_doClip 2 dd } bd
+/n {
+{{} {clip} {eoclip}} _doClip get exec
+icl
+newpath
+} bd
+/s { h S } bd
+/B { q f Q S } bd
+/B* { q f* Q S } bd
+/b { h B } bd
+/b* { h B* } bd
+/q/save ld
+/Q { restore ilp } bd
+/GetCSFamily {
+dup type /arraytype eq {0 get} if
+} bd
+/GetCompsDict
+11 dict begin
+/DeviceGray { pop 1 } bd
+/DeviceRGB { pop 3 } bd
+/DeviceCMYK { pop 4 } bd
+/CIEBasedA { pop 1 } bd
+/CIEBasedABC { pop 3 } bd
+/CIEBasedDEF { pop 3 } bd
+/CIEBasedDEFG { pop 4 } bd
+/DeviceN { 1 get length } bd
+/Separation { pop 1 } bd
+/Indexed { pop 1 } bd
+/Pattern { pop 0 } bd
+currentdict
+end
+def
+/GetComps {
+GetCompsDict
+1 index GetCSFamily
+get exec
+} bd
+/cs
+{
+dup _fcs eq
+{ pop }
+{ dup /_fcs xdd
+GetComps
+_fillColors exch get
+/_fc xdd
+/_fp null dd
+} ifelse
+} bd
+/CS
+{
+dup _scs eq
+{ pop }
+{ dup /_scs xdd GetComps _strokeColors exch get /_sc xdd /_sp null dd }
+ifelse
+} bd
+/sc {
+_fc astore pop
+ilp
+} bd
+/SC {
+_sc astore pop
+ilp
+} bd
+/g { DefaultGray cs sc } bd
+/rg { DefaultRGB cs sc } bd
+/k { DefaultCMYK cs sc } bd
+/G { DefaultGray CS SC } bd
+/RG { DefaultRGB CS SC } bd
+/K { DefaultCMYK CS SC } bd
+/cm { _mtx astore concat } bd
+/re {
+4 2 roll m
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+h
+} bd
+/RC/rectclip ld
+/EF/execform ld
+/PS { cvx exec } bd
+/initgs {
+/DefaultGray [/DeviceGray] dd
+/DefaultRGB [/DeviceRGB] dd
+/DefaultCMYK [/DeviceCMYK] dd
+0 g 0 G
+[] 0 d
+0 j
+0 J
+10 M
+1 w
+true setSA
+/_op? false dd
+/_OP? false dd
+/_opmode 0 dd
+/_defaulttransfer load settransfer
+0 i
+/RelativeColorimetric ri
+newpath
+} bd
+/int {
+dup 2 index sub 3 index 5 index sub div 6 -2 roll sub mul
+exch pop add exch pop
+} bd
+/limit {
+dup 2 index le { exch } if pop
+dup 2 index ge { exch } if pop
+} bd
+/domainClip {
+Domain aload pop 3 2 roll
+limit
+} [/Domain] bld
+/applyInterpFunc {
+0 1 DimOut 1 sub
+{
+dup C0 exch get exch
+dup C1 exch get exch
+3 1 roll
+1 index sub
+3 index
+N exp mul add
+exch
+currentdict /Range_lo known
+{
+dup Range_lo exch get exch
+Range_hi exch get
+3 2 roll limit
+}
+{
+pop
+}
+ifelse
+exch
+} for
+pop
+} [/DimOut /C0 /C1 /N /Range_lo /Range_hi] bld
+/encodeInput {
+NumParts 1 sub
+0 1 2 index
+{
+dup Bounds exch get
+2 index gt
+{ exit }
+{ dup
+3 index eq
+{ exit }
+{ pop } ifelse
+} ifelse
+} for
+3 2 roll pop
+dup Bounds exch get exch
+dup 1 add Bounds exch get exch
+2 mul
+dup Encode exch get exch
+1 add Encode exch get
+int
+} [/NumParts /Bounds /Encode] bld
+/rangeClip {
+exch dup Range_lo exch get
+exch Range_hi exch get
+3 2 roll
+limit
+} [/Range_lo /Range_hi] bld
+/applyStitchFunc {
+Functions exch get exec
+currentdict /Range_lo known {
+0 1 DimOut 1 sub {
+DimOut 1 add -1 roll
+rangeClip
+} for
+} if
+} [/Functions /Range_lo /DimOut] bld
+%%EndResource
+%%BeginResource: procset pdflev2
+%%Version: 4.0 5
+%%Copyright: Copyright 1987-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%LanguageLevel: 2
+%%Title: PDF operators, with code specific for Level 2
+/_defaulthalftone currenthalftone dd
+/_defaultblackgeneration currentblackgeneration dd
+/_defaultundercolorremoval currentundercolorremoval dd
+/_defaultcolortransfer [currentcolortransfer] dd
+/initialize {
+_defaulthalftone sethalftone
+/_defaultblackgeneration load setblackgeneration
+/_defaultundercolorremoval load setundercolorremoval
+_defaultcolortransfer aload pop setcolortransfer
+false setoverprint
+<</MaxFormItem 0>> setuserparams
+} bd
+/terminate { } bd
+/m/moveto ld
+/l/lineto ld
+/c/curveto ld
+/setSA/setstrokeadjust ld
+/defineRes/defineresource ld
+/findRes/findresource ld
+currentglobal
+true systemdict /setglobal get exec
+[/Function /ExtGState /Form /Shading /FunctionDictionary /MadePattern /PatternPrototype /DataSource]
+{ /Generic /Category findresource dup length dict copy /Category defineresource pop }
+forall
+systemdict /setglobal get exec
+/ri
+{
+/findcolorrendering isdefined?
+{
+mark exch
+findcolorrendering
+counttomark 2 eq
+{ type /booleantype eq
+{ dup type /nametype eq
+{ dup /ColorRendering resourcestatus
+{ pop pop
+dup /DefaultColorRendering ne
+{
+/ColorRendering findresource
+setcolorrendering
+} if
+} if
+} if
+} if
+} if
+cleartomark
+}
+{ pop
+} ifelse
+} bd
+/_sfcs {_fcs setcolorspace} bind dd
+/_sscs {_scs setcolorspace} bind dd
+/_sfc
+{
+_fc aload pop
+_fp null eq
+{ setcolor }
+{ _fp setpattern }
+ifelse
+} bind dd
+/_ssc
+{
+_sc aload pop
+_sp null eq { setcolor} { _sp setpattern } ifelse
+} bind dd
+/scn {
+dup type /dicttype eq
+{ dup /_fp xdd
+/PaintType get 1 eq
+{ /_fc _fillColors 0 get dd ilp }
+{ /_fc _fillColors
+_fcs 1 get
+GetComps get dd
+sc
+}
+ifelse
+}
+{ sc }
+ifelse
+} bd
+/SCN {
+dup type /dicttype eq
+{ dup /_sp xdd
+/PaintType get 1 eq
+{ /_sc _strokeColors 0 get dd ilp }
+{ /_sc _strokeColors _scs 1 get GetComps get dd
+SC
+}
+ifelse
+}
+{ SC }
+ifelse
+} bd
+/gs
+{
+begin
+/SA here { setstrokeadjust } if
+/BG here { setblackgeneration } if
+/UCR here { setundercolorremoval } if
+/FL here { i } if
+/RI here { ri } if
+/TR here
+{
+dup xcheck
+{ settransfer }
+{ aload pop setcolortransfer }
+ifelse
+} if
+/sethalftonephase isdefined? { /HTP here { sethalftonephase } if } if
+/HT here { sethalftone } if
+currentdict gsDI
+end
+} bd
+/sfc {
+_op? setoverprint
+_lp /fill ne {
+_sfcs
+_sfc
+/_lp /fill dd
+} if
+} dd
+/ssc {
+_OP? setoverprint
+_lp /stroke ne {
+_sscs
+_ssc
+/_lp /stroke dd
+} if
+} dd
+/f {
+{ { sfc fill }
+{gsave sfc fill grestore clip newpath icl ilp}
+{gsave sfc fill grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/f* {
+{ { sfc eofill }
+{gsave sfc eofill grestore clip newpath icl ilp}
+{gsave sfc eofill grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/S {
+{ { ssc stroke }
+{gsave ssc stroke grestore clip newpath icl ilp}
+{gsave ssc stroke grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/rf {
+{ { sfc rectfill }
+{gsave sfc rectfill grestore clip newpath icl ilp}
+{gsave sfc rectfill grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/knownColorants? {
+pop false
+} bd
+/makePat {
+gsave
+dup /Matrix get concat
+matrix makepattern
+grestore
+/MadePattern defineRes pop
+} bd
+%%EndResource
+%%BeginResource: procset pdftext
+%%Version: 4.0 2
+%%Copyright: Copyright 1987-1998 Adobe Systems Incorporated. All Rights Reserved.
+%%Title: Text operators for PDF
+PDF /PDFText 75 dict dup begin put
+/docinitialize
+{
+/resourcestatus where {
+pop
+/CIDParams /ProcSet resourcestatus {
+pop pop
+false /CIDParams /ProcSet findresource /SetBuildCompatible get exec
+} if
+} if
+PDF begin
+PDFText /_pdfDefineIdentity-H known
+{ PDFText /_pdfDefineIdentity-H get exec}
+if
+end
+} bd
+/initialize {
+PDFText begin
+/_intT false dd
+0 Tr
+} bd
+/terminate { end } bd
+/_safeput
+{
+Level2? not
+{
+2 index load dup dup length exch maxlength ge
+{ dup length 5 add dict copy
+3 index xdd
+}
+{ pop }
+ifelse
+}
+if
+3 -1 roll load 3 1 roll put
+}
+bd
+/pdf_has_composefont? systemdict /composefont known def
+/CopyFont {
+{
+1 index /FID ne 2 index /UniqueID ne and
+{ def } { pop pop } ifelse
+} forall
+} bd
+/Type0CopyFont
+{
+exch
+dup length dict
+begin
+CopyFont
+[
+exch
+FDepVector
+{
+dup /FontType get 0 eq
+{
+1 index Type0CopyFont
+/_pdfType0 exch definefont
+}
+{
+/_pdfBaseFont exch
+2 index exec
+}
+ifelse
+exch
+}
+forall
+pop
+]
+/FDepVector exch def
+currentdict
+end
+} bd
+/cHexEncoding
+[/c00/c01/c02/c03/c04/c05/c06/c07/c08/c09/c0A/c0B/c0C/c0D/c0E/c0F/c10/c11/c12
+/c13/c14/c15/c16/c17/c18/c19/c1A/c1B/c1C/c1D/c1E/c1F/c20/c21/c22/c23/c24/c25
+/c26/c27/c28/c29/c2A/c2B/c2C/c2D/c2E/c2F/c30/c31/c32/c33/c34/c35/c36/c37/c38
+/c39/c3A/c3B/c3C/c3D/c3E/c3F/c40/c41/c42/c43/c44/c45/c46/c47/c48/c49/c4A/c4B
+/c4C/c4D/c4E/c4F/c50/c51/c52/c53/c54/c55/c56/c57/c58/c59/c5A/c5B/c5C/c5D/c5E
+/c5F/c60/c61/c62/c63/c64/c65/c66/c67/c68/c69/c6A/c6B/c6C/c6D/c6E/c6F/c70/c71
+/c72/c73/c74/c75/c76/c77/c78/c79/c7A/c7B/c7C/c7D/c7E/c7F/c80/c81/c82/c83/c84
+/c85/c86/c87/c88/c89/c8A/c8B/c8C/c8D/c8E/c8F/c90/c91/c92/c93/c94/c95/c96/c97
+/c98/c99/c9A/c9B/c9C/c9D/c9E/c9F/cA0/cA1/cA2/cA3/cA4/cA5/cA6/cA7/cA8/cA9/cAA
+/cAB/cAC/cAD/cAE/cAF/cB0/cB1/cB2/cB3/cB4/cB5/cB6/cB7/cB8/cB9/cBA/cBB/cBC/cBD
+/cBE/cBF/cC0/cC1/cC2/cC3/cC4/cC5/cC6/cC7/cC8/cC9/cCA/cCB/cCC/cCD/cCE/cCF/cD0
+/cD1/cD2/cD3/cD4/cD5/cD6/cD7/cD8/cD9/cDA/cDB/cDC/cDD/cDE/cDF/cE0/cE1/cE2/cE3
+/cE4/cE5/cE6/cE7/cE8/cE9/cEA/cEB/cEC/cED/cEE/cEF/cF0/cF1/cF2/cF3/cF4/cF5/cF6
+/cF7/cF8/cF9/cFA/cFB/cFC/cFD/cFE/cFF] def
+/modEnc {
+/_enc xdd
+/_icode 0 dd
+counttomark 1 sub -1 0
+{
+index
+dup type /nametype eq
+{
+_enc _icode 3 -1 roll put
+_icode 1 add
+}
+if
+/_icode xdd
+} for
+cleartomark
+_enc
+} bd
+/trEnc {
+/_enc xdd
+255 -1 0 {
+exch dup -1 eq
+{ pop /.notdef }
+{ Encoding exch get }
+ifelse
+_enc 3 1 roll put
+} for
+pop
+_enc
+} bd
+/TE {
+/_i xdd
+StandardEncoding 256 array copy modEnc
+_pdfEncodings exch _i exch put
+} bd
+/TZ
+{
+/_usePDFEncoding xdd
+findfont
+dup length 6 add dict
+begin
+{
+1 index /FID ne { def } { pop pop } ifelse
+} forall
+/pdf_origFontName FontName def
+/FontName exch def
+_usePDFEncoding 0 ge
+{
+/Encoding _pdfEncodings _usePDFEncoding get def
+pop
+}
+{
+_usePDFEncoding -1 eq
+{
+counttomark 0 eq
+{ pop }
+{
+Encoding 256 array copy
+modEnc /Encoding exch def
+}
+ifelse
+}
+{
+256 array
+trEnc /Encoding exch def
+}
+ifelse
+}
+ifelse
+pdf_EuroProcSet pdf_origFontName known
+{
+pdf_origFontName pdf_AddEuroGlyphProc
+} if
+FontName currentdict
+end
+definefont pop
+}
+bd
+/Level2?
+systemdict /languagelevel known
+{systemdict /languagelevel get 2 ge}
+{false}
+ifelse
+def
+Level2?
+{
+/_pdfFontStatus
+{
+currentglobal exch
+/Font resourcestatus
+{pop pop true}
+{false}
+ifelse
+exch setglobal
+} bd
+}
+{
+/_pdfFontStatusString 50 string def
+_pdfFontStatusString 0 (fonts/) putinterval
+/_pdfFontStatus
+{
+FontDirectory 1 index known
+{ pop true }
+{
+_pdfFontStatusString 6 42 getinterval
+cvs length 6 add
+_pdfFontStatusString exch 0 exch getinterval
+{ status } stopped
+{pop false}
+{
+{ pop pop pop pop true}
+{ false }
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+ifelse
+Level2?
+{
+/_pdfCIDFontStatus
+{
+/CIDFont /Category resourcestatus
+{
+pop pop
+/CIDFont resourcestatus
+{pop pop true}
+{false}
+ifelse
+}
+{ pop false }
+ifelse
+} bd
+}
+if
+/_pdfString100 100 string def
+/_pdfComposeFontName
+{
+dup length 1 eq
+{
+0 get
+1 index
+type /nametype eq
+{
+_pdfString100 cvs
+length dup dup _pdfString100 exch (-) putinterval
+_pdfString100 exch 1 add dup _pdfString100 length exch sub getinterval
+2 index exch cvs length
+add 1 add _pdfString100 exch 0 exch getinterval
+exch pop
+true
+}
+{
+pop pop
+false
+}
+ifelse
+}
+{
+false
+}
+ifelse
+dup {exch cvn exch} if
+} bd
+/_pdfConcatNames
+{
+exch
+_pdfString100 cvs
+length dup dup _pdfString100 exch (-) putinterval
+_pdfString100 exch 1 add dup _pdfString100 length exch sub getinterval
+3 -1 roll exch cvs length
+add 1 add _pdfString100 exch 0 exch getinterval
+cvn
+} bind def
+/_pdfTextTempString 50 string def
+/_pdfRegOrderingArray [(Adobe-Japan1) (Adobe-CNS1) (Adobe-Korea1) (Adobe-GB1)] def
+/_pdf_CheckSupplements
+{
+1 index _pdfTextTempString cvs
+false
+_pdfRegOrderingArray
+{
+2 index exch
+anchorsearch
+{ pop pop pop true exit}
+{ pop }
+ifelse
+}
+forall
+exch pop
+{
+/CIDFont findresource
+/CIDSystemInfo get /Supplement get
+exch /CMap findresource
+/CIDSystemInfo get
+dup type /dicttype eq
+{/Supplement get}
+{pop 0 }
+ifelse
+ge
+}
+{ pop pop true }
+ifelse
+} bind def
+pdf_has_composefont?
+{
+/_pdfComposeFont
+{
+2 copy _pdfComposeFontName not
+{
+2 index
+}
+if
+(pdf) exch _pdfConcatNames
+dup _pdfFontStatus
+{ dup findfont 5 2 roll pop pop pop true}
+{
+4 1 roll
+1 index /CMap resourcestatus
+{
+pop pop
+true
+}
+{false}
+ifelse
+1 index true exch
+{
+_pdfCIDFontStatus not
+{pop false exit}
+if
+}
+forall
+and
+{
+1 index 1 index 0 get _pdf_CheckSupplements
+{
+3 -1 roll pop
+2 index 3 1 roll
+composefont true
+}
+{
+pop pop exch pop false
+}
+ifelse
+}
+{
+_pdfComposeFontName
+{
+dup _pdfFontStatus
+{
+exch pop
+1 index exch
+findfont definefont true
+}
+{
+pop exch pop
+false
+}
+ifelse
+}
+{
+exch pop
+false
+}
+ifelse
+}
+ifelse
+{ true }
+{
+dup _pdfFontStatus
+{ dup findfont true }
+{ pop false }
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+{
+/_pdfComposeFont
+{
+_pdfComposeFontName not
+{
+dup
+}
+if
+dup
+_pdfFontStatus
+{exch pop dup findfont true}
+{
+1 index
+dup type /nametype eq
+{pop}
+{cvn}
+ifelse
+eq
+{pop false}
+{
+dup _pdfFontStatus
+{dup findfont true}
+{pop false}
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+ifelse
+/_pdfStyleDicts 4 dict dup begin
+/Adobe-Japan1 4 dict dup begin
+Level2?
+{
+/Serif
+/HeiseiMin-W3-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiMin-W3}
+{
+/HeiseiMin-W3 _pdfCIDFontStatus
+{/HeiseiMin-W3}
+{/Ryumin-Light}
+ifelse
+}
+ifelse
+def
+/SansSerif
+/HeiseiKakuGo-W5-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiKakuGo-W5}
+{
+/HeiseiKakuGo-W5 _pdfCIDFontStatus
+{/HeiseiKakuGo-W5}
+{/GothicBBB-Medium}
+ifelse
+}
+ifelse
+def
+/HeiseiMaruGo-W4-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiMaruGo-W4}
+{
+/HeiseiMaruGo-W4 _pdfCIDFontStatus
+{/HeiseiMaruGo-W4}
+{
+/Jun101-Light-RKSJ-H _pdfFontStatus
+{ /Jun101-Light }
+{ SansSerif }
+ifelse
+}
+ifelse
+}
+ifelse
+/RoundSansSerif exch def
+/Default Serif def
+}
+{
+/Serif /Ryumin-Light def
+/SansSerif /GothicBBB-Medium def
+{
+(fonts/Jun101-Light-83pv-RKSJ-H) status
+}stopped
+{pop}{
+{ pop pop pop pop /Jun101-Light }
+{ SansSerif }
+ifelse
+/RoundSansSerif exch def
+}ifelse
+/Default Serif def
+}
+ifelse
+end
+def
+/Adobe-Korea1 4 dict dup begin
+/Serif /HYSMyeongJo-Medium def
+/SansSerif /HYGoThic-Medium def
+/RoundSansSerif SansSerif def
+/Default Serif def
+end
+def
+/Adobe-GB1 4 dict dup begin
+/Serif /STSong-Light def
+/SansSerif /STHeiti-Regular def
+/RoundSansSerif SansSerif def
+/Default Serif def
+end
+def
+/Adobe-CNS1 4 dict dup begin
+/Serif /MKai-Medium def
+/SansSerif /MHei-Medium def
+/RoundSansSerif SansSerif def
+/Default Serif def
+end
+def
+end
+def
+/TZzero
+{
+/_fyAdj xdd
+/_wmode xdd
+/_styleArr xdd
+/_regOrdering xdd
+3 copy
+_pdfComposeFont
+{
+5 2 roll pop pop pop
+}
+{
+[
+0 1 _styleArr length 1 sub
+{
+_styleArr exch get
+_pdfStyleDicts _regOrdering 2 copy known
+{
+get
+exch 2 copy known not
+{ pop /Default }
+if
+get
+}
+{
+pop pop pop /Unknown
+}
+ifelse
+}
+for
+]
+exch pop
+2 index 3 1 roll
+_pdfComposeFont
+{3 -1 roll pop}
+{
+findfont dup /FontName get exch
+}
+ifelse
+}
+ifelse
+dup /WMode 2 copy known
+{ get _wmode ne }
+{ pop pop _wmode 1 eq}
+ifelse
+_fyAdj 0 ne or
+{
+exch _wmode _pdfConcatNames _fyAdj _pdfConcatNames
+dup _pdfFontStatus
+{ exch pop dup findfont false}
+{ exch true }
+ifelse
+}
+{
+dup /FontType get 0 ne
+}
+ifelse
+{
+dup /FontType get 3 eq _wmode 1 eq and
+{
+_pdfVerticalRomanT3Font dup length 10 add dict copy
+begin
+/_basefont exch
+dup length 3 add dict
+begin
+{1 index /FID ne {def}{pop pop} ifelse }
+forall
+/Encoding Encoding dup length array copy
+dup 16#27 /quotesingle put
+dup 16#60 /grave put
+_regOrdering /Adobe-Japan1 eq
+{dup 16#5c /yen put dup 16#a5 /yen put dup 16#b4 /yen put}
+if
+def
+FontName
+currentdict
+end
+definefont
+def
+/Encoding _basefont /Encoding get def
+/_fauxfont true def
+}
+{
+dup length 3 add dict
+begin
+{1 index /FID ne {def}{pop pop} ifelse }
+forall
+FontType 0 ne
+{
+/Encoding Encoding dup length array copy
+dup 16#27 /quotesingle put
+dup 16#60 /grave put
+_regOrdering /Adobe-Japan1 eq
+{dup 16#5c /yen put}
+if
+def
+/_fauxfont true def
+} if
+} ifelse
+/WMode _wmode def
+/BaseLineAdj _fyAdj def
+dup dup /FontName exch def
+currentdict
+end
+definefont pop
+}
+{
+pop
+}
+ifelse
+/_pdf_FontDirectory 3 1 roll _safeput
+}
+bd
+/swj {
+dup 4 1 roll
+dup length exch stringwidth
+exch 5 -1 roll 3 index mul add
+4 1 roll 3 1 roll mul add
+6 2 roll /_cnt 0 dd
+{1 index eq {/_cnt _cnt 1 add dd} if} forall pop
+exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+} bd
+/jss {
+4 1 roll
+{
+pop pop
+(0) exch 2 copy 0 exch put
+gsave
+exch false charpath currentpoint
+5 index setmatrix stroke
+3 -1 roll
+32 eq
+{
+moveto
+5 index 5 index rmoveto currentpoint
+}
+if
+grestore
+moveto
+2 copy rmoveto
+} exch cshow
+6 {pop} repeat
+} def
+/jsfTzero {
+{
+pop pop
+(0) exch 2 copy 0 exch put
+exch show
+32 eq
+{
+4 index 4 index rmoveto
+}
+if
+2 copy rmoveto
+} exch cshow
+5 {pop} repeat
+} def
+/jsp
+{
+{
+pop pop
+(0) exch 2 copy 0 exch put
+32 eq
+dup {currentfont /Encoding get dup length 33 ge 
+{32 get /space eq and}{pop}ifelse
+}if
+{ exch 5 index 5 index 5 index 5 -1 roll widthshow }
+{ false charpath }
+ifelse
+2 copy rmoveto
+} exch cshow
+5 {pop} repeat
+} bd
+/trj { _cx 0 fWModeProc 32 _ax 0 fWModeProc 6 5 roll } bd
+/pjsf { trj sfc fawidthshowProc } bd
+/pjss { trj _ctm ssc jss } bd
+/pjsc { trj jsp } bd
+/_Tjdef [
+/pjsf load
+/pjss load
+{
+dup
+currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+} bind
+{
+trj swj rmoveto
+} bind
+{
+dup currentpoint 4 2 roll gsave
+pjsf
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll
+currentpoint gsave newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll gsave
+dup currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+/pjsc load
+] def
+/BT
+{
+/_inT true dd
+_ctm currentmatrix pop matrix _tm copy pop
+0 _rise _baselineadj add translate _hs 1 scale
+0 0 moveto
+} bd
+/ET
+{
+/_inT false dd
+_tr 3 gt {clip} if
+_ctm setmatrix newpath
+} bd
+/Tr {
+_inT { _tr 3 le {currentpoint newpath moveto} if } if
+dup /_tr xdd
+_Tjdef exch get /_Tj xdd
+} bd
+/Tj {
+userdict /$$copystring 2 index put
+_Tj
+} bd
+/iTm { _ctm setmatrix _tm concat 0 _rise _baselineadj add translate _hs 1 scale } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/Td { _mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto } bd
+/TD { dup /_ld xdd Td } bd
+/_nullProc {} bd
+/Tf {
+dup 1000 div /_fScl xdd
+_pdf_FontDirectory 2 index 2 copy known
+{get exch 3 -1 roll pop}
+{pop pop}
+ifelse
+Level2?
+{ selectfont }
+{ exch findfont exch scalefont setfont}
+ifelse
+currentfont dup
+/_nullProc exch
+/WMode known
+{
+1 index /WMode get 1 eq
+{pop /exch}
+if
+}
+if
+load /fWModeProc xdd
+dup
+/FontType get 0 eq dup _cx 0 ne and
+{ /jsfTzero }
+{ /awidthshow }
+ifelse
+load /fawidthshowProc xdd
+/_fTzero xdd
+dup /BaseLineAdj known
+{ dup /BaseLineAdj get _fScl mul }
+{ 0 }
+ifelse
+/_baselineadj xdd
+dup /_pdfT3Font known
+{ 0 }
+{_tr}
+ifelse
+_Tjdef exch get /_Tj xdd
+_intT
+{currentpoint iTm moveto}
+if
+pop
+} bd
+/TL { neg /_ld xdd } bd
+/Tw {
+/_cx xdd
+_cx 0 ne _fTzero and
+{ /jsfTzero }
+{ /awidthshow }
+ifelse
+load /fawidthshowProc xdd
+} bd
+/Tc { /_ax xdd } bd
+/Ts { /_rise xdd currentpoint iTm moveto } bd
+/Tz { 100 div /_hs xdd iTm } bd
+/Tk { exch pop _fScl mul neg 0 fWModeProc rmoveto } bd
+/T* { 0 _ld Td } bd
+/' { T* Tj } bd
+/" { exch Tc exch Tw ' } bd
+/TJ {
+{
+dup type /stringtype eq
+{ Tj }
+{ 0 exch Tk }
+ifelse
+} forall
+} bd
+/T- { _hy Tj } bd
+/d0/setcharwidth ld
+/d1 { setcachedevice /sfc{}dd /ssc{}dd } bd
+/nND {{/.notdef} repeat} bd
+/T3Defs {
+/BuildChar
+{
+1 index /Encoding get exch get
+1 index /BuildGlyph get exec
+}
+def
+/BuildGlyph {
+exch begin
+GlyphProcs exch get exec
+end
+} def
+/_pdfT3Font true def
+} bd
+/_pdfBoldRomanWidthProc
+{
+stringwidth 1 index 0 ne { exch .03 add exch }if setcharwidth
+0 0
+} bd
+/_pdfType0WidthProc
+{
+dup stringwidth 0 0 moveto
+2 index true charpath pathbbox
+0 -1
+7 index 2 div .88
+setcachedevice2
+pop
+0 0
+} bd
+/_pdfType0WMode1WidthProc
+{
+dup stringwidth
+pop 2 div neg -0.88
+2 copy
+moveto
+0 -1
+5 -1 roll true charpath pathbbox
+setcachedevice
+} bd
+/_pdfBoldBaseFont
+11 dict begin
+/FontType 3 def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/Encoding cHexEncoding def
+/_setwidthProc /_pdfBoldRomanWidthProc load def
+/_bcstr1 1 string def
+/BuildChar
+{
+exch begin
+_basefont setfont
+_bcstr1 dup 0 4 -1 roll put
+dup
+_setwidthProc
+3 copy
+moveto
+show
+_basefonto setfont
+moveto
+show
+end
+}bd
+currentdict
+end
+def
+pdf_has_composefont?
+{
+/_pdfBoldBaseCIDFont
+11 dict begin
+/CIDFontType 1 def
+/CIDFontName /_pdfBoldBaseCIDFont def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/_setwidthProc /_pdfType0WidthProc load def
+/_bcstr2 2 string def
+/BuildGlyph
+{
+exch begin
+_basefont setfont
+_bcstr2 1 2 index 256 mod put
+_bcstr2 0 3 -1 roll 256 idiv put
+_bcstr2 dup _setwidthProc
+3 copy
+moveto
+show
+_basefonto setfont
+moveto
+show
+end
+}bd
+currentdict
+end
+def
+/_pdfDefineIdentity-H
+{
+/Identity-H /CMap resourcestatus
+{
+pop pop
+}
+{
+/CIDInit/ProcSet findresource begin 12 dict begin
+begincmap
+/CIDSystemInfo
+3 dict begin
+/Registry (Adobe) def
+/Ordering (Identity) def
+/Supplement 0 def
+currentdict
+end
+def
+/CMapName /Identity-H def
+/CMapVersion 1 def
+/CMapType 1 def
+1 begincodespacerange
+<0000> <ffff>
+endcodespacerange
+1 begincidrange
+<0000> <ffff> 0
+endcidrange
+endcmap
+CMapName currentdict/CMap defineresource pop
+end
+end
+} ifelse
+} def
+} if
+/_pdfVerticalRomanT3Font
+10 dict begin
+/FontType 3 def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/_bcstr1 1 string def
+/BuildChar
+{
+exch begin
+_basefont setfont
+_bcstr1 dup 0 4 -1 roll put
+dup
+_pdfType0WidthProc
+moveto
+show
+end
+}bd
+currentdict
+end
+def
+/MakeBoldFont
+{
+dup /ct_SyntheticBold known
+{
+dup length 3 add dict begin
+CopyFont
+/ct_StrokeWidth .03 0 FontMatrix idtransform pop def
+/ct_SyntheticBold true def
+currentdict
+end
+definefont
+}
+{
+dup dup length 3 add dict
+begin
+CopyFont
+/PaintType 2 def
+/StrokeWidth .03 0 FontMatrix idtransform pop def
+/dummybold currentdict
+end
+definefont
+dup /FontType get dup 9 ge exch 11 le and
+{
+_pdfBoldBaseCIDFont
+dup length 3 add dict copy begin
+dup /CIDSystemInfo get /CIDSystemInfo exch def
+/_Type0Identity /Identity-H 3 -1 roll [ exch ] composefont
+/_basefont exch def
+/_Type0Identity /Identity-H 3 -1 roll [ exch ] composefont
+/_basefonto exch def
+currentdict
+end
+/CIDFont defineresource
+}
+{
+_pdfBoldBaseFont
+dup length 3 add dict copy begin
+/_basefont exch def
+/_basefonto exch def
+currentdict
+end
+definefont
+}
+ifelse
+}
+ifelse
+} bd
+/MakeBold {
+1 index
+_pdf_FontDirectory 2 index 2 copy known
+{get}
+{exch pop}
+ifelse
+findfont
+dup
+/FontType get 0 eq
+{
+dup /WMode known {dup /WMode get 1 eq }{false} ifelse
+version length 4 ge
+and
+{version 0 4 getinterval cvi 2015 ge }
+{true}
+ifelse
+{/_pdfType0WidthProc}
+{/_pdfType0WMode1WidthProc}
+ifelse
+_pdfBoldBaseFont /_setwidthProc 3 -1 roll load put
+{MakeBoldFont} Type0CopyFont definefont
+}
+{
+dup /_fauxfont known not 1 index /SubstMaster known not and
+{
+_pdfBoldBaseFont /_setwidthProc /_pdfBoldRomanWidthProc load put
+MakeBoldFont
+}
+{
+2 index 2 index eq
+{ exch pop }
+{
+dup length dict begin
+CopyFont
+currentdict
+end
+definefont
+}
+ifelse
+}
+ifelse
+}
+ifelse
+pop pop
+dup /dummybold ne
+{/_pdf_FontDirectory exch dup _safeput }
+{ pop }
+ifelse
+}bd
+/MakeItalic {
+_pdf_FontDirectory exch 2 copy known
+{get}
+{exch pop}
+ifelse
+dup findfont
+dup /FontInfo 2 copy known
+{
+get
+/ItalicAngle 2 copy known
+{get 0 eq }
+{ pop pop true}
+ifelse
+}
+{ pop pop true}
+ifelse
+{
+exch pop
+dup /FontType get 0 eq Level2? not and
+{ dup /FMapType get 6 eq }
+{ false }
+ifelse
+{
+dup /WMode 2 copy known
+{
+get 1 eq
+{ _italMtx_WMode1Type0 }
+{ _italMtxType0 }
+ifelse
+}
+{ pop pop _italMtxType0 }
+ifelse
+}
+{
+dup /WMode 2 copy known
+{
+get 1 eq
+{ _italMtx_WMode1 }
+{ _italMtx }
+ifelse
+}
+{ pop pop _italMtx }
+ifelse
+}
+ifelse
+makefont
+dup /FontType get 42 eq Level2? not or
+{
+dup length dict begin
+CopyFont
+currentdict
+end
+}
+if
+1 index exch
+definefont pop
+/_pdf_FontDirectory exch dup _safeput
+}
+{
+pop
+2 copy ne
+{
+/_pdf_FontDirectory 3 1 roll _safeput
+}
+{ pop pop }
+ifelse
+}
+ifelse
+}bd
+/MakeBoldItalic {
+/dummybold exch
+MakeBold
+/dummybold
+MakeItalic
+}bd
+Level2?
+{
+/pdf_CopyDict
+{1 index length add dict copy}
+def
+}
+{
+/pdf_CopyDict
+{
+1 index length add dict
+1 index wcheck
+{ copy }
+{ begin
+{def} forall
+currentdict
+end
+}
+ifelse
+}
+def
+}
+ifelse
+/pdf_AddEuroGlyphProc
+{
+currentdict /CharStrings known
+{
+CharStrings /Euro known not
+{
+dup
+/CharStrings
+CharStrings 1 pdf_CopyDict
+begin
+/Euro pdf_EuroProcSet 4 -1 roll get def
+currentdict
+end
+def
+/pdf_PSBuildGlyph /pdf_PSBuildGlyph load def
+/pdf_PathOps /pdf_PathOps load def
+/Symbol eq
+{
+/Encoding Encoding dup length array copy
+dup 160 /Euro put def
+}
+if
+}
+{ pop
+}
+ifelse
+}
+{ pop
+}
+ifelse
+}
+def
+/pdf_PathOps 4 dict dup begin
+/m {moveto} def
+/l {lineto} def
+/c {curveto} def
+/cp {closepath} def
+end
+def
+/pdf_PSBuildGlyph
+{
+gsave
+8 -1 roll pop
+7 1 roll
+currentdict /PaintType 2 copy known {get 2 eq}{pop pop false} ifelse
+dup 9 1 roll
+{
+currentdict /StrokeWidth 2 copy known
+{
+get 2 div
+5 1 roll
+4 -1 roll 4 index sub
+4 1 roll
+3 -1 roll 4 index sub
+3 1 roll
+exch 4 index add exch
+4 index add
+5 -1 roll pop
+}
+{
+pop pop
+}
+ifelse
+}
+if
+setcachedevice
+pdf_PathOps begin
+exec
+end
+{
+currentdict /StrokeWidth 2 copy known
+{ get }
+{ pop pop 0 }
+ifelse
+setlinewidth stroke
+}
+{
+fill
+}
+ifelse
+grestore
+} def
+/pdf_EuroProcSet 13 dict def
+pdf_EuroProcSet
+begin
+/Courier-Bold
+{
+600 0 6 -12 585 612
+{
+385 274 m
+180 274 l
+179 283 179 293 179 303 c
+179 310 179 316 180 323 c
+398 323 l
+423 404 l
+197 404 l
+219 477 273 520 357 520 c
+409 520 466 490 487 454 c
+487 389 l
+579 389 l
+579 612 l
+487 612 l
+487 560 l
+449 595 394 612 349 612 c
+222 612 130 529 98 404 c
+31 404 l
+6 323 l
+86 323 l
+86 304 l
+86 294 86 284 87 274 c
+31 274 l
+6 193 l
+99 193 l
+129 77 211 -12 359 -12 c
+398 -12 509 8 585 77 c
+529 145 l
+497 123 436 80 356 80 c
+285 80 227 122 198 193 c
+360 193 l
+cp
+600 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Courier-BoldOblique /Courier-Bold load def
+/Courier
+{
+600 0 17 -12 578 584
+{
+17 204 m
+97 204 l
+126 81 214 -12 361 -12 c
+440 -12 517 17 578 62 c
+554 109 l
+501 70 434 43 366 43 c
+266 43 184 101 154 204 c
+380 204 l
+400 259 l
+144 259 l
+144 270 143 281 143 292 c
+143 299 143 307 144 314 c
+418 314 l
+438 369 l
+153 369 l
+177 464 249 529 345 529 c
+415 529 484 503 522 463 c
+522 391 l
+576 391 l
+576 584 l
+522 584 l
+522 531 l
+473 566 420 584 348 584 c
+216 584 122 490 95 369 c
+37 369 l
+17 314 l
+87 314 l
+87 297 l
+87 284 88 272 89 259 c
+37 259 l
+cp
+600 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Courier-Oblique /Courier load def
+/Helvetica
+{
+556 0 24 -19 541 703
+{
+541 628 m
+510 669 442 703 354 703 c
+201 703 117 607 101 444 c
+50 444 l
+25 372 l
+97 372 l
+97 301 l
+49 301 l
+24 229 l
+103 229 l
+124 67 209 -19 350 -19 c
+435 -19 501 25 509 32 c
+509 131 l
+492 105 417 60 343 60 c
+267 60 204 127 197 229 c
+406 229 l
+430 301 l
+191 301 l
+191 372 l
+455 372 l
+479 444 l
+194 444 l
+201 531 245 624 348 624 c
+433 624 484 583 509 534 c
+cp
+556 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Helvetica-Oblique /Helvetica load def
+/Helvetica-Bold
+{
+556 0 12 -19 563 710
+{
+563 621 m
+537 659 463 710 363 710 c
+216 710 125 620 101 462 c
+51 462 l
+12 367 l
+92 367 l
+92 346 l
+92 337 93 328 93 319 c
+52 319 l
+12 224 l
+102 224 l
+131 58 228 -19 363 -19 c
+417 -19 471 -12 517 18 c
+517 146 l
+481 115 426 93 363 93 c
+283 93 254 166 246 224 c
+398 224 l
+438 319 l
+236 319 l
+236 367 l
+457 367 l
+497 462 l
+244 462 l
+259 552 298 598 363 598 c
+425 598 464 570 486 547 c
+507 526 513 517 517 509 c
+cp
+556 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Helvetica-BoldOblique /Helvetica-Bold load def
+/Symbol
+{
+750 0 20 -12 714 685
+{
+714 581 m
+650 645 560 685 465 685 c
+304 685 165 580 128 432 c
+50 432 l
+20 369 l
+116 369 l
+115 356 115 347 115 337 c
+115 328 115 319 116 306 c
+50 306 l
+20 243 l
+128 243 l
+165 97 300 -12 465 -12 c
+560 -12 635 25 685 65 c
+685 155 l
+633 91 551 51 465 51 c
+340 51 238 131 199 243 c
+555 243 l
+585 306 l
+184 306 l
+183 317 182 326 182 336 c
+182 346 183 356 184 369 c
+614 369 l 644 432 l
+199 432 l
+233 540 340 622 465 622 c
+555 622 636 580 685 520 c
+cp
+750 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-Bold
+{
+500 0 16 -14 478 700
+{
+367 308 m
+224 308 l
+224 368 l
+375 368 l
+380 414 l
+225 414 l
+230 589 257 653 315 653 c
+402 653 431 521 444 457 c
+473 457 l
+473 698 l
+444 697 l
+441 679 437 662 418 662 c
+393 662 365 700 310 700 c
+211 700 97 597 73 414 c
+21 414 l
+16 368 l
+69 368 l
+69 359 68 350 68 341 c
+68 330 68 319 69 308 c
+21 308 l
+16 262 l
+73 262 l
+91 119 161 -14 301 -14 c
+380 -14 443 50 478 116 c
+448 136 l
+415 84 382 40 323 40 c
+262 40 231 77 225 262 c
+362 262 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-BoldItalic
+{
+500 0 9 -20 542 686
+{
+542 686 m
+518 686 l
+513 673 507 660 495 660 c
+475 660 457 683 384 683 c
+285 683 170 584 122 430 c
+58 430 l
+34 369 l
+105 369 l
+101 354 92 328 90 312 c
+34 312 l
+9 251 l
+86 251 l
+85 238 84 223 84 207 c
+84 112 117 -14 272 -14 c
+326 -14 349 9 381 9 c
+393 9 393 -10 394 -20 c
+420 -20 l
+461 148 l
+429 148 l
+416 109 362 15 292 15 c
+227 15 197 55 197 128 c
+197 162 204 203 216 251 c
+378 251 l
+402 312 l
+227 312 l
+229 325 236 356 241 369 c
+425 369 l
+450 430 l
+255 430 l
+257 435 264 458 274 488 c
+298 561 337 654 394 654 c
+437 654 484 621 484 530 c
+484 516 l
+516 516 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-Italic
+{
+500 0 23 -10 595 692
+{
+399 317 m
+196 317 l
+199 340 203 363 209 386 c
+429 386 l
+444 424 l
+219 424 l
+246 514 307 648 418 648 c
+448 648 471 638 492 616 c
+529 576 524 529 527 479 c
+549 475 l
+595 687 l
+570 687 l
+562 674 558 664 542 664 c
+518 664 474 692 423 692 c
+275 692 162 551 116 424 c
+67 424 l
+53 386 l
+104 386 l
+98 363 93 340 90 317 c
+37 317 l
+23 279 l
+86 279 l
+85 266 85 253 85 240 c
+85 118 137 -10 277 -10 c
+370 -10 436 58 488 128 c
+466 149 l
+424 101 375 48 307 48 c
+212 48 190 160 190 234 c
+190 249 191 264 192 279 c
+384 279 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-Roman
+{
+500 0 10 -12 484 692
+{
+347 298 m
+171 298 l
+170 310 170 322 170 335 c
+170 362 l
+362 362 l
+374 403 l
+172 403 l
+184 580 244 642 308 642 c
+380 642 434 574 457 457 c
+481 462 l
+474 691 l
+449 691 l
+433 670 429 657 410 657 c
+394 657 360 692 299 692 c
+204 692 94 604 73 403 c
+22 403 l
+10 362 l
+70 362 l
+69 352 69 341 69 330 c
+69 319 69 308 70 298 c
+22 298 l
+10 257 l
+73 257 l
+97 57 216 -12 295 -12 c
+364 -12 427 25 484 123 c
+458 142 l
+425 101 384 37 316 37 c
+256 37 189 84 173 257 c
+335 257 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+end
+currentdict readonly pop end
+%%EndResource
+PDFText begin
+[39/quotesingle 96/grave 128/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis
+/Udieresis/aacute/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute
+/egrave/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde
+/oacute/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex
+/udieresis/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash
+/.notdef/plusminus/.notdef/.notdef/yen/mu/.notdef/.notdef
+/.notdef/.notdef/.notdef/ordfeminine/ordmasculine/.notdef/ae/oslash
+/questiondown/exclamdown/logicalnot/.notdef/florin/.notdef/.notdef
+/guillemotleft/guillemotright/ellipsis/space/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide
+/.notdef/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright
+/fi/fl/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand
+/Acircumflex/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex
+/Idieresis/Igrave/Oacute/Ocircumflex/.notdef/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve/dotaccent/ring/cedilla
+/hungarumlaut/ogonek/caron
+0 TE
+[1/dotlessi/caron 39/quotesingle 96/grave 
+127/bullet/Euro/bullet/quotesinglbase/florin/quotedblbase/ellipsis
+/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE
+/bullet/Zcaron/bullet/bullet/quoteleft/quoteright/quotedblleft
+/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/bullet/zcaron/Ydieresis/space/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine
+/guillemotleft/logicalnot/hyphen/registered/macron/degree/plusminus
+/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla
+/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters
+/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash
+/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde
+/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute
+/ucircumflex/udieresis/yacute/thorn/ydieresis
+1 TE
+end
+%%BeginResource: pdfimage.prc
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFImage 38 dict put
+PDF /PDFIVars 20 dict put
+PDF /PDFImage get begin
+/initialize { PDFImage begin } bd
+/terminate { end } bd
+/nulldict 0 dict def
+/gv { PDFIVars exch get } bd
+/pv { PDFIVars 3 1 roll put } bd
+/BI { save /savelevel exch pv mark } bd
+/EI { /savelevel gv restore } bd
+end
+%%EndResource
+%%BeginResource: pdfimg2.prc
+%%Version: 4.0 4
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFImage get begin
+Level2? StartLoad {
+/ID {
+5 counttomark 2 idiv
+dup 3 1 roll add
+dict begin
+{ def } repeat
+cleartomark
+currentdict
+end
+begin
+/ImageType here { pop } { /ImageType 1 def } ifelse
+/ImageMatrix [ Width 0 0 Height neg 0 Height ] def
+/ImageMask here { not } { true } ifelse
+{ /ImageMask false def } if
+ImageMask not { ColorSpace setcolorspace } if
+/Intent here { ri } if
+SLBApplies?
+{ ApplySLB }
+{
+mark
+/DataSource here { } { currentfile } ifelse
+/Filter here {
+dup type /arraytype eq { length } { pop 1 } ifelse
+1 sub 0 1 3 -1 roll {
+/DecodeParms here {
+dup type /arraytype eq {
+1 index get
+} if
+dup null eq { pop } { exch } ifelse
+} if
+Filter dup type /arraytype eq
+{ exch get } { exch pop } ifelse
+filter
+dup
+} for
+} if
+/DataSource exch def
+currentdict /ImageMask here not {false} if
+{ sfc imagemask } { image } ifelse
+counttomark
+{ dup status
+dup currentfile ne and
+{ dup flushfile closefile }
+{ pop }
+ifelse
+}
+repeat
+pop
+}ifelse
+end
+} [/Width /Height /ImageMask /ColorSpace /Filter] bld
+/SLBApplies?
+{
+{
+languagelevel 3 lt {stop} if
+currentsystemparams /SourceListBypass known not {stop} if
+currentsystemparams /SourceListBypass get not {stop} if
+currentdict /Filter known not {stop} if
+Filter /CCITTFaxDecode ne {stop} if
+currentdict /DecodeParms known not {stop} if
+DecodeParms /K known not {stop} if
+DecodeParms /K get -1 ne {stop} if
+} stopped not
+} [/DecodeParms] bld
+/ApplySLB
+{
+{
+/UncompressedLength
+Width
+DecodeParms /EncodedByteAlign getifknown
+{ { 7 add 3 bitshift } if } if
+Height mul def
+/DataSource dup here { } {currentfile} ifelse
+5 dict begin
+/Filter Filter def
+/DecodeParms DecodeParms def
+/Intent 3 def
+/AsyncRead false def
+/CloseSource false def
+currentdict end /ReusableStreamDecode filter def
+currentdict /ImageMask here not {false} if
+{ sfc imagemask } { image } ifelse
+} exec
+} [/Width /DecodeParms /Height] bld
+currentdict readonly pop
+} EndLoad
+end
+%%EndResource
+%%BeginResource: pdfasc.prc
+%%Version: 4.0 2
+%%Copyright: Copyright 1992-1997 Adobe Systems Incorporated. All Rights Reserved.
+/AS {
+9 dict begin
+/shrink? xdd
+/Pury xdd
+/Purx xdd
+/Plly xdd
+/Pllx xdd
+gsave newpath clippath pathbbox newpath grestore
+/Dury xdd
+/Durx xdd
+/Dlly xdd
+/Dllx xdd
+Durx Dllx sub Dury Dlly sub
+Pury Plly sub div exch Purx Pllx sub div
+2 copy gt { exch } if pop
+Durx Dllx add 2 div Dury Dlly add 2 div translate
+shrink? { dup scale } { pop } ifelse
+Purx Pllx add -2 div Pury Plly add -2 div translate
+end
+} [/shrink? /Pury /Purx /Plly /Pllx /Durx /Dury /Dllx /Dlly]
+bld
+%%EndResource
+currentdict readonly pop
+end end
+/currentpacking where {pop setpacking}if
+PDFVars/DocInitAll{[ PDFText]{/docinitialize get exec}forall }put
+PDFVars/InitAll{[PDF PDFText PDFImage]{/initialize get exec}forall initgs}put
+PDFVars/TermAll{[PDFImage PDFText PDF]{/terminate get exec}forall}put
+PDFVars begin PDF begin
+PDFVars/DocInitAll get exec PDFVars/InitAll get exec
+/N79 <<
+/SA false 
+/OP true 
+>> /ExtGState defineRes pop
+/N78 <<
+/SA false 
+/OP false 
+>> /ExtGState defineRes pop
+%%IncludeResource Times-Italic
+[ 39 /quoteright 96 /quoteleft 127 /mu/Agrave/Aacute/Acircumflex
+/Atilde/Adieresis/Aring/Ccedilla/Egrave/Eacute
+/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde
+/Odieresis/brokenbar/Ugrave/Uacute/Ucircumflex/Udieresis
+/Yacute/Thorn/copyright/registered/trademark/plusminus
+/exclamdown/cent/sterling/fraction/yen/florin
+/section/currency/quotesingle/quotedblleft/guillemotleft/guilsinglleft
+/guilsinglright/fi/fl/agrave/endash/dagger
+/daggerdbl/periodcentered/aacute/paragraph/bullet/quotesinglbase
+/quotedblbase/quotedblright/guillemotright/ellipsis/perthousand/Scaron
+/questiondown/Zcaron/grave/acute/circumflex/tilde
+/macron/breve/dotaccent/dieresis/degree/ring
+/cedilla/scaron/hungarumlaut/ogonek/caron/emdash
+/acircumflex/atilde/adieresis/aring/ccedilla/egrave
+/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex
+/idieresis/ntilde/ograve/eth/AE/oacute
+/ordfeminine/ocircumflex/otilde/odieresis/ugrave/Lslash
+/Oslash/OE/ordmasculine/uacute/ucircumflex/udieresis
+/yacute/ydieresis/ae/onequarter/onehalf/threequarters
+/dotlessi/Ydieresis/divide/lslash/oslash/oe
+/germandbls/thorn/multiply/minus/zcaron
+/N55/Times-Italic -1 TZ
+%%IncludeResource Times-Roman
+[ 39 /quoteright 96 /quoteleft 127 /mu/Agrave/Aacute/Acircumflex
+/Atilde/Adieresis/Aring/Ccedilla/Egrave/Eacute
+/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde
+/Odieresis/brokenbar/Ugrave/Uacute/Ucircumflex/Udieresis
+/Yacute/Thorn/copyright/registered/trademark/plusminus
+/exclamdown/cent/sterling/fraction/yen/florin
+/section/currency/quotesingle/quotedblleft/guillemotleft/guilsinglleft
+/guilsinglright/fi/fl/agrave/endash/dagger
+/daggerdbl/periodcentered/aacute/paragraph/bullet/quotesinglbase
+/quotedblbase/quotedblright/guillemotright/ellipsis/perthousand/Scaron
+/questiondown/Zcaron/grave/acute/circumflex/tilde
+/macron/breve/dotaccent/dieresis/degree/ring
+/cedilla/scaron/hungarumlaut/ogonek/caron/emdash
+/acircumflex/atilde/adieresis/aring/ccedilla/egrave
+/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex
+/idieresis/ntilde/ograve/eth/AE/oacute
+/ordfeminine/ocircumflex/otilde/odieresis/ugrave/Lslash
+/Oslash/OE/ordmasculine/uacute/ucircumflex/udieresis
+/yacute/ydieresis/ae/onequarter/onehalf/threequarters
+/dotlessi/Ydieresis/divide/lslash/oslash/oe
+/germandbls/thorn/multiply/minus/zcaron
+/N51/Times-Roman -1 TZ
+%%IncludeResource Times-Bold
+[ 39 /quoteright 96 /quoteleft 127 /mu/Agrave/Aacute/Acircumflex
+/Atilde/Adieresis/Aring/Ccedilla/Egrave/Eacute
+/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde
+/Odieresis/brokenbar/Ugrave/Uacute/Ucircumflex/Udieresis
+/Yacute/Thorn/copyright/registered/trademark/plusminus
+/exclamdown/cent/sterling/fraction/yen/florin
+/section/currency/quotesingle/quotedblleft/guillemotleft/guilsinglleft
+/guilsinglright/fi/fl/agrave/endash/dagger
+/daggerdbl/periodcentered/aacute/paragraph/bullet/quotesinglbase
+/quotedblbase/quotedblright/guillemotright/ellipsis/perthousand/Scaron
+/questiondown/Zcaron/grave/acute/circumflex/tilde
+/macron/breve/dotaccent/dieresis/degree/ring
+/cedilla/scaron/hungarumlaut/ogonek/caron/emdash
+/acircumflex/atilde/adieresis/aring/ccedilla/egrave
+/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex
+/idieresis/ntilde/ograve/eth/AE/oacute
+/ordfeminine/ocircumflex/otilde/odieresis/ugrave/Lslash
+/Oslash/OE/ordmasculine/uacute/ucircumflex/udieresis
+/yacute/ydieresis/ae/onequarter/onehalf/threequarters
+/dotlessi/Ydieresis/divide/lslash/oslash/oe
+/germandbls/thorn/multiply/minus/zcaron
+/N52/Times-Bold -1 TZ
+%%BeginResource: file Pscript_CFF PSVER
+userdict/ct_CffDict 6 dict put ct_CffDict begin/F0Subr{systemdict/internaldict
+known{1183615869 systemdict/internaldict get exec/FlxProc known{save true}{
+false}ifelse}{userdict/internaldict known not{userdict/internaldict{count 0 eq
+{/internaldict errordict/invalidaccess get exec}if dup type/integertype ne{
+/internaldict errordict/invalidaccess get exec}if dup 1183615869 eq{pop 0}{
+/internaldict errordict/invalidaccess get exec}ifelse}dup 14 get 1 25 dict put
+bind executeonly put}if 1183615869 userdict/internaldict get exec/FlxProc
+known{save true}{false}ifelse}ifelse[systemdict/internaldict known not{100
+dict/begin cvx/mtx matrix/def cvx}if systemdict/currentpacking known{
+currentpacking true setpacking}if{systemdict/internaldict known{1183615869
+systemdict/internaldict get exec dup/$FlxDict known not{dup dup length exch
+maxlength eq{pop userdict dup/$FlxDict known not{100 dict begin/mtx matrix def
+dup/$FlxDict currentdict put end}if}{100 dict begin/mtx matrix def dup
+/$FlxDict currentdict put end}ifelse}if/$FlxDict get begin}if grestore/exdef{
+exch def}def/dmin exch abs 100 div def/epX exdef/epY exdef/c4y2 exdef/c4x2
+exdef/c4y1 exdef/c4x1 exdef/c4y0 exdef/c4x0 exdef/c3y2 exdef/c3x2 exdef/c3y1
+exdef/c3x1 exdef/c3y0 exdef/c3x0 exdef/c1y2 exdef/c1x2 exdef/c2x2 c4x2 def
+/c2y2 c4y2 def/yflag c1y2 c3y2 sub abs c1x2 c3x2 sub abs gt def/PickCoords{{
+c1x0 c1y0 c1x1 c1y1 c1x2 c1y2 c2x0 c2y0 c2x1 c2y1 c2x2 c2y2}{c3x0 c3y0 c3x1
+c3y1 c3x2 c3y2 c4x0 c4y0 c4x1 c4y1 c4x2 c4y2}ifelse/y5 exdef/x5 exdef/y4 exdef
+/x4 exdef/y3 exdef/x3 exdef/y2 exdef/x2 exdef/y1 exdef/x1 exdef/y0 exdef/x0
+exdef}def mtx currentmatrix pop mtx 0 get abs 1e-05 lt mtx 3 get abs 1e-05 lt
+or{/flipXY -1 def}{mtx 1 get abs 1e-05 lt mtx 2 get abs 1e-05 lt or{/flipXY 1
+def}{/flipXY 0 def}ifelse}ifelse/erosion 1 def systemdict/internaldict known{
+1183615869 systemdict/internaldict get exec dup/erosion known{/erosion get
+/erosion exch def}{pop}ifelse}if yflag{flipXY 0 eq c3y2 c4y2 eq or{false
+PickCoords}{/shrink c3y2 c4y2 eq{0}{c1y2 c4y2 sub c3y2 c4y2 sub div abs}ifelse
+def/yshrink{c4y2 sub shrink mul c4y2 add}def/c1y0 c3y0 yshrink def/c1y1 c3y1
+yshrink def/c2y0 c4y0 yshrink def/c2y1 c4y1 yshrink def/c1x0 c3x0 def/c1x1
+c3x1 def/c2x0 c4x0 def/c2x1 c4x1 def/dY 0 c3y2 c1y2 sub round dtransform
+flipXY 1 eq{exch}if pop abs def dY dmin lt PickCoords y2 c1y2 sub abs .001 gt{
+c1x2 c1y2 transform flipXY 1 eq{exch}if/cx exch def/cy exch def/dY 0 y2 c1y2
+sub round dtransform flipXY 1 eq{exch}if pop def dY round dup 0 ne{/dY exdef}{
+pop dY 0 lt{-1}{1}ifelse/dY exdef}ifelse/erode PaintType 2 ne erosion .5 ge
+and def erode{/cy cy .5 sub def}if/ey cy dY add def/ey ey ceiling ey sub ey
+floor add def erode{/ey ey .5 add def}if ey cx flipXY 1 eq{exch}if itransform
+exch pop y2 sub/eShift exch def/y1 y1 eShift add def/y2 y2 eShift add def/y3
+y3 eShift add def}if}ifelse}{flipXY 0 eq c3x2 c4x2 eq or{false PickCoords}{
+/shrink c3x2 c4x2 eq{0}{c1x2 c4x2 sub c3x2 c4x2 sub div abs}ifelse def/xshrink
+{c4x2 sub shrink mul c4x2 add}def/c1x0 c3x0 xshrink def/c1x1 c3x1 xshrink def
+/c2x0 c4x0 xshrink def/c2x1 c4x1 xshrink def/c1y0 c3y0 def/c1y1 c3y1 def/c2y0
+c4y0 def/c2y1 c4y1 def/dX c3x2 c1x2 sub round 0 dtransform flipXY -1 eq{exch}
+if pop abs def dX dmin lt PickCoords x2 c1x2 sub abs .001 gt{c1x2 c1y2
+transform flipXY -1 eq{exch}if/cy exch def/cx exch def/dX x2 c1x2 sub round 0
+dtransform flipXY -1 eq{exch}if pop def dX round dup 0 ne{/dX exdef}{pop dX 0
+lt{-1}{1}ifelse/dX exdef}ifelse/erode PaintType 2 ne erosion .5 ge and def
+erode{/cx cx .5 sub def}if/ex cx dX add def/ex ex ceiling ex sub ex floor add
+def erode{/ex ex .5 add def}if ex cy flipXY -1 eq{exch}if itransform pop x2
+sub/eShift exch def/x1 x1 eShift add def/x2 x2 eShift add def/x3 x3 eShift add
+def}if}ifelse}ifelse x2 x5 eq y2 y5 eq or{x5 y5 lineto}{x0 y0 x1 y1 x2 y2
+curveto x3 y3 x4 y4 x5 y5 curveto}ifelse epY epX}systemdict/currentpacking
+known{exch setpacking}if/exec cvx/end cvx]cvx executeonly exch{pop true exch
+restore}{systemdict/internaldict known not{1183615869 userdict/internaldict
+get exec exch/FlxProc exch put true}{1183615869 systemdict/internaldict get
+exec dup length exch maxlength eq{false}{1183615869 systemdict/internaldict
+get exec exch/FlxProc exch put true}ifelse}ifelse}ifelse{systemdict
+/internaldict known{1183615869 systemdict/internaldict get exec/FlxProc get
+exec}{1183615869 userdict/internaldict get exec/FlxProc get exec}ifelse}if}
+executeonly def/F1Subr{gsave currentpoint newpath moveto}bind def/F2Subr{
+currentpoint grestore gsave currentpoint newpath moveto}bind def/HSSubr{
+systemdict/internaldict known not{pop 3}{1183615869 systemdict/internaldict
+get exec dup/startlock known{/startlock get exec}{dup/strtlck known{/strtlck
+get exec}{pop 3}ifelse}ifelse}ifelse}bind def end
+%%EndResource
+%%BeginResource: font OPEDHE+Universal-GreekwithMathPi
+ct_CffDict begin
+15 dict begin
+/FontInfo 15 dict dup begin
+/Notice (Copyright (c) 1988 Adobe Systems Incorporated.  All Rights Reserved.) def
+/version (001.000) def
+/FullName (Universal Greek w. Math Pi 169) def
+/FamilyName (Universal) def
+/BaseFontName (Universal-GreekwithMathPi) def
+/Weight (Medium) def
+/ItalicAngle 0 def
+/isFixedPitch false  def
+/UnderlinePosition -100 def
+/UnderlineThickness 50 def
+end def
+/FontName /OPEDHE+Universal-GreekwithMathPi def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0 ] def
+/FontBBox { -30 -240 1012 815 } def
+/StrokeWidth 0 def
+currentdict end
+systemdict begin
+dup /Private 26 dict dup begin
+/-|{string currentfile exch readhexstring pop}executeonly def
+/|-{def}executeonly def
+/|{put}executeonly def
+/BlueValues [ -10 0 712 722 425 435 640 650 815 815 ] def
+/OtherBlues [ -240 -240 ] def
+/StdVW [ 90 ] def
+/BlueScale 0.039625 def
+/BlueShift 7 def
+/BlueFuzz 1 def
+/ForceBold false  def
+/ForceBoldThreshold 0 def
+/LanguageGroup 0 def
+/ExpansionFactor 0.06 def
+/initialRandomSeed 0 def
+/lenIV 4 def
+/MinFeature {16 16} def
+/password 5839 def
+/Erode{
+11.25 dup 3 -1 roll 0.1 mul exch 0.5 sub mul cvi sub dup mul
+90 0 dtransform dup mul exch dup mul add
+le{pop pop 1.0 1.0}{pop pop 0.0 1.5}ifelse}def
+/OtherSubrs [
+{ct_CffDict/F0Subr get exec}executeonly{ct_CffDict/F1Subr get exec}executeonly{ct_CffDict/F2Subr get exec}executeonly{ct_CffDict/HSSubr get exec}executeonly] |-
+/Subrs 5  array
+dup 0 15 -| 68CCB9B7733DBF957B5C4F6827AC8A |
+dup 1 9 -| 68CCB9B776ADDED836 |
+dup 2 9 -| 68CCB9B776AC088F04 |
+dup 3 5 -| 68CCB9B7F6 |
+dup 4 13 -| 68CCB9B7733AC657EC3EB6EC2F |
+|-
+2 index /CharStrings 14 dict dup begin
+/.notdef 9 -| 68CCB9B776D64E6B38 |-
+/H20850 65 -| 68CCB9B776D603E1DB0E54CC8A87BE0CAECC809C09458248E61EFEF2CAA46B25822625FF
+EF39F0DD03C449082E07A130882376E6B54787D207654C73ABC89EC473 |-
+/H20852 46 -| 68CCB9B776D603E1DB0E1F34FAE05B57FF33E903BBB599A630394A8956B4B788F8F0FEC9
+D18D5BE3E5F0380245E0 |-
+/H11011 71 -| 68CCB9B776D8AAC7AA3B01F2DB852E1E2686B30861C7CB02B4524014B8C5E9870EDAE828
+2252C020D03A974D69B5DB9C4CA76AB7C2D3BC7E038D4DB065A04BBAEF6758F8
+287753 |-
+/H20851 45 -| 68CCB9B776D603E1DB0E1F34FAE05B57B3C1E0A86BCDE3F61C0B69DEB979808D9F047663
+652B631E7ABB0DEACC |-
+/H9251 190 -| 68CCB9B776D9BA46BC1BE56FFD75A52EEB6B879BA348C9F62E4649732E51060133353E0F
+370FE0CF2CE2B105C4D9096DA665EC59E8C1C001C67C7AE9F9815B4C3958AC5D
+F59FD61B346223A6660DE28761BDAE81AC6615BB1D95EE87AE726FBC609BB145
+B07E219969045ADBB5219DE587A87E2062B87D534194F73CEC73E258EF662D91
+C897B9223C49F5753B778D82BB784520DF16BC2F2EA3E11999B3A6CCAD5899E3
+0B3869A07F5CFE38613FA7FFCB994ABBB9FB3B8714EE78A7E774 |-
+/H9252 176 -| 68CCB9B776D9BA464C99EEBDB89BB3E030090B9531686D78950A3A50E2CA8D62C0240984
+65C73CC560FA7CD6F82E5A32CB2F77A9A4444074B120781D9F0486FCAEC6CDAB
+23B260BD3626FCCA560A4B1AD1CF2528B0EE43D1311AC1A986269B0983984944
+E31C14C4996DB901099651346F06BEDBFDED0229E0ADD40C56D89929AF8729F9
+6835E53B65748CDE02D537CAEF5663CE728C9D85FFBA859D9B1CF6C27D2306C4
+1A0CD4B2345FB182DDFA5A4C |-
+/H9253 133 -| 68CCB9B776D98D0F4A1EF695A9CB8C70C0582A46F215FF06C681B846B78B846C87B3E0D1
+E20BF0B571467F7CBBEFDF376CEB131961A7FCEBADD25460C77A1E99F71B545C
+9877D1C86545DDE078EB1C9A0C8601A98648A303AB35F73CE4728801B56244E8
+81B40F6965DB2C8F0860DF1A5EF70671DEEF88AB8992978336AB25DF3E21224B
+30 |-
+/H9262 137 -| 68CCB9B776D8503AE3FBCA0FC49FBD0FC1A4F01A0CDF8E3AC4083962BFE0A30C20519874
+AAA7D48AFDCDD5F4DA62A55EFCAB024B2FABE4F7C5A25358AAD2288D9E7B756F
+62DA88C3D7AB5A110B407AACC3E8AD5D2E1C6C6A8B4A971058FDDBD0526757AE
+3DCE7A51F36E0F66CF7696658BEA938AF4B08849215D5275CFEA72F9CB0B2D74
+C973203BA9 |-
+/H9263 79 -| 68CCB9B776D9C524E5A7E94E7A99F8B469A41F15B2C5FB598F98697D8CB2DA74E7667A35
+1DFE52F344090382DA81CAE94FD77290C970F2BC7282C90E703E723B638AAD93
+FDF00F480EEDA702775A1A |-
+/H9266 109 -| 68CCB9B776D8503AF487820E5802209D4B93DFC679FBE98149AAAF02BA61280949C10229
+9A8FD7D04ABDDC3CBEC6F8780A57BA240344E84CF01D705A652611218541EBCF
+F677F98CC262DFACE5F7972F02A67D133C153FC792DE5E38881C4142855FA9C8
+B965CE8D2D1A83124F |-
+/H9268 118 -| 68CCB9B776D9BA46BAAF079839688D63148AC1B37760AFAD09051821EA1784C78671DED0
+48179805B2F62F9DEA5BEEFE4E23E671C216809D74F49F1D55920C77F48AF8B4
+DD536618DD77422773DD8297410850890D33706A4F5B8A7EC0119100B2214814
+D6B0A515C29B309FB214C0F12D31677A583C |-
+/H9258 102 -| 68CCB9B776D9C5240A9E8F30D683A5051030865195DB19F85799713BE423B7071772DB96
+C4A7E0D7C0BE662441CEA2729067971DA7FD01D0DE464514248EEDA44E8E6714
+5F1A1BEAAEB041B10920603F3174301A59015A294EEF4791F62DEADD8716CC33
+EAD9 |-
+/H20849 65 -| 68CCB9B776D603E1DB0E54CC8ABC70E5DA5D4E65A85104C25BC819A8DCCF972CE486B6E0
+02C921CCA5948336BC3EB4A1EC050BE48EA8CF56A1CD25231CFD1D8074 |-
+end
+end
+put
+put
+dup/FontName get exch definefont pop
+end
+/OPEDHE+Universal-GreekwithMathPi findfont /Encoding get
+dup 0 /.notdef put
+pop
+end
+/OPEDHE+Universal-GreekwithMathPi findfont /Encoding get
+dup 0 /.notdef put
+dup 33 /H20850 put
+dup 35 /H20852 put
+dup 59 /H11011 put
+dup 64 /H20851 put
+dup 97 /H9251 put
+dup 98 /H9252 put
+dup 103 /H9253 put
+dup 109 /H9262 put
+dup 110 /H9263 put
+dup 112 /H9266 put
+dup 115 /H9268 put
+dup 117 /H9258 put
+dup 126 /H20849 put
+pop
+%%EndResource
+[/N62/OPEDHE+Universal-GreekwithMathPi -1 TZ
+%%BeginResource: font OPEDIJ+MathematicalPi-One
+ct_CffDict begin
+15 dict begin
+/FontInfo 15 dict dup begin
+/Notice (Copyright (c) 1990 Adobe Systems Incorporated.  All Rights Reserved.) def
+/version (001.000) def
+/FullName (Mathematical Pi 1) def
+/FamilyName (Mathematical Pi) def
+/BaseFontName (MathematicalPi-One) def
+/Weight (Medium) def
+/ItalicAngle 0 def
+/isFixedPitch false  def
+/UnderlinePosition -100 def
+/UnderlineThickness 50 def
+end def
+/FontName /OPEDIJ+MathematicalPi-One def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0 ] def
+/FontBBox { -30 -210 1000 779 } def
+/StrokeWidth 0 def
+currentdict end
+systemdict begin
+dup /Private 27 dict dup begin
+/-|{string currentfile exch readhexstring pop}executeonly def
+/|-{def}executeonly def
+/|{put}executeonly def
+/BlueValues [ 0 0 782 782 712 712 ] def
+/OtherBlues [ -210 -210 ] def
+/StdHW [ 30 ] def
+/StdVW [ 46 ] def
+/BlueScale 0.039625 def
+/BlueShift 7 def
+/BlueFuzz 1 def
+/ForceBold false  def
+/ForceBoldThreshold 0 def
+/LanguageGroup 0 def
+/ExpansionFactor 0.06 def
+/initialRandomSeed 0 def
+/lenIV 4 def
+/MinFeature {16 16} def
+/password 5839 def
+/Erode{
+5.75 dup 3 -1 roll 0.1 mul exch 0.5 sub mul cvi sub dup mul
+46 0 dtransform dup mul exch dup mul add
+le{pop pop 1.0 1.0}{pop pop 0.0 1.5}ifelse}def
+/OtherSubrs [
+{ct_CffDict/F0Subr get exec}executeonly{ct_CffDict/F1Subr get exec}executeonly{ct_CffDict/F2Subr get exec}executeonly{ct_CffDict/HSSubr get exec}executeonly] |-
+/Subrs 5  array
+dup 0 15 -| 68CCB9B7733DBF957B5C4F6827AC8A |
+dup 1 9 -| 68CCB9B776ADDED836 |
+dup 2 9 -| 68CCB9B776AC088F04 |
+dup 3 5 -| 68CCB9B7F6 |
+dup 4 13 -| 68CCB9B7733AC657EC3EB6EC2F |
+|-
+2 index /CharStrings 5 dict dup begin
+/.notdef 9 -| 68CCB9B776D66C9B0D |-
+/H11022 43 -| 68CCB9B776D8AAC7F240FBA172FF03886FA35AFCAD66F14C68CF87D51E1E53C3387114B3
+FAA564826B1EBC |-
+/H11001 51 -| 68CCB9B776D8AAC7AA6972CECEF8BEDB8A1208FD9B9790369E79DFD7F343932588C9D2B8
+F681B88BF60E0CB6EC30E3EC76DB28 |-
+/H11002 31 -| 68CCB9B776D8AAC7AA6972CEC167BC52ED5DD9FEFAB5B786AD97EDEFAA27DF |-
+/H11005 48 -| 68CCB9B776D8AAC7AACE850CC8B7D50BC9E0E933F332146C1A44560C83AFD8D6AAC0327F
+2BF50281D6EDB3CAC1BEC320 |-
+end
+end
+put
+put
+dup/FontName get exch definefont pop
+end
+/OPEDIJ+MathematicalPi-One findfont /Encoding get
+dup 0 /.notdef put
+pop
+end
+/OPEDIJ+MathematicalPi-One findfont /Encoding get
+dup 0 /.notdef put
+dup 46 /H11022 put
+dup 49 /H11001 put
+dup 50 /H11002 put
+dup 53 /H11005 put
+pop
+%%EndResource
+[/N68/OPEDIJ+MathematicalPi-One -1 TZ
+%%BeginResource: font OPFMON+CMSY10
+ct_CffDict begin
+15 dict begin
+/FontInfo 15 dict dup begin
+/Notice (Computer Modern fonts were designed by Donald E. Knuth) def
+/version (1.00) def
+/FullName (CMSY10) def
+/FamilyName (Computer Modern) def
+/BaseFontName (CMSY10) def
+/Weight (Medium) def
+/ItalicAngle -14.0350036 def
+/isFixedPitch false  def
+/UnderlinePosition -100 def
+/UnderlineThickness 50 def
+end def
+/FontName /OPFMON+CMSY10 def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0 ] def
+/FontBBox { -29 -960 1116 775 } def
+/StrokeWidth 0 def
+currentdict end
+systemdict begin
+dup /Private 28 dict dup begin
+/-|{string currentfile exch readhexstring pop}executeonly def
+/|-{def}executeonly def
+/|{put}executeonly def
+/BlueValues [ -22 0 683 705 ] def
+/OtherBlues [ -124 -119 ] def
+/StdHW [ 40 ] def
+/StdVW [ 85 ] def
+/StemSnapH [ 40 55 ] def
+/BlueScale 0.0439999 def
+/BlueShift 7 def
+/BlueFuzz 1 def
+/ForceBold false  def
+/ForceBoldThreshold 0 def
+/LanguageGroup 0 def
+/ExpansionFactor 0.06 def
+/initialRandomSeed 0 def
+/lenIV 4 def
+/MinFeature {16 16} def
+/password 5839 def
+/Erode{
+10.625 dup 3 -1 roll 0.1 mul exch 0.5 sub mul cvi sub dup mul
+85 0 dtransform dup mul exch dup mul add
+le{pop pop 1.0 1.0}{pop pop 0.0 1.5}ifelse}def
+/OtherSubrs [
+{ct_CffDict/F0Subr get exec}executeonly{ct_CffDict/F1Subr get exec}executeonly{ct_CffDict/F2Subr get exec}executeonly{ct_CffDict/HSSubr get exec}executeonly] |-
+/Subrs 5  array
+dup 0 15 -| 68CCB9B7733DBF957B5C4F6827AC8A |
+dup 1 9 -| 68CCB9B776ADDED836 |
+dup 2 9 -| 68CCB9B776AC088F04 |
+dup 3 5 -| 68CCB9B7F6 |
+dup 4 13 -| 68CCB9B7733AC657EC3EB6EC2F |
+|-
+2 index /CharStrings 2 dict dup begin
+/.notdef 12 -| 68CCB9B776DB96F6E5583005 |-
+/arrowright 100 -| 68CCB9B776DB9675134A01E14B9883ACA9EE05A19F49F3D9EA2304C049E49CE6FD0282C7
+18D368EF0DD22E7CDBD8A4D53B7784322784EA4F654737CAF18141BC62B2E524
+0708D0E1A35036D6E42111E7D37CF62A4FF1A272BCF8FFFC2BC8BA7782CBF72C
+ |-
+end
+end
+put
+put
+dup/FontName get exch definefont pop
+end
+/OPFMON+CMSY10 findfont /Encoding get
+dup 0 /.notdef put
+pop
+end
+/OPFMON+CMSY10 findfont /Encoding get
+dup 0 /.notdef put
+dup 33 /arrowright put
+pop
+%%EndResource
+[/N13/OPFMON+CMSY10 -1 TZ
+PDFVars/TermAll get exec end end
+
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+0 0 612 792 true PDF begin PDFVars begin AS end end
+%%EndPageSetup
+0 0 612 792 RC
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+
+470.06098 763.18899 151.24198 48.89199 rf
+BT
+/N52 1 Tf
+11.97399 0 0 11.97399 198.00799 724.97499 Tm
+0 Tc
+(Excited)Tj [-332.79998 ]TJ (states)Tj [-332.89999 ]TJ (of)Tj [-332.89999 ]TJ (the)Tj [-332.79998 ]TJ (pr)Tj [18 ]TJ (oton)Tj [-332.79998 ]TJ (emitter)Tj 
+8.23199 0 0 8.23199 388.36599 729.73699 Tm
+(105)Tj 
+11.97399 0 0 11.97399 400.71499 724.97499 Tm
+(Sb)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 78.58499 701.02799 Tm
+(M.)Tj [-332.89999 ]TJ (Lipoglavs)Tj 
+5.11088 0.11109 TD
+0 Tw
+(\317)Tj 
+0.36079 -0.11109 TD
+(ek,)Tj 
+6.98498 0 0 6.98498 145.09399 705.26799 Tm
+0.00009 Tc
+(1,2)Tj 
+9.97799 0 0 9.97799 157.14799 701.02799 Tm
+0 Tc
+(C.)Tj [-332.89999 ]TJ (Baktash,)Tj 
+6.98498 0 0 6.98498 204.26098 705.26799 Tm
+(1)Tj 
+9.97799 0 0 9.97799 211.07598 701.02799 Tm
+(M.)Tj [-332.89999 ]TJ (P)Tj [110.79998 ]TJ (.)Tj [-332.89999 ]TJ (Carpenter)Tj [39.79998 ]TJ (,)Tj 
+6.98498 0 0 6.98498 277.45999 705.26799 Tm
+(3)Tj 
+9.97799 0 0 9.97799 284.27499 701.02799 Tm
+(D.)Tj [-332.89999 ]TJ (J.)Tj [-332.89999 ]TJ (Dean,)Tj 
+6.98498 0 0 6.98498 330.53999 705.26799 Tm
+(1)Tj 
+9.97799 0 0 9.97799 337.35398 701.02799 Tm
+(T)Tj [73.89999 ]TJ (.)Tj [-332.89999 ]TJ (Engeland,)Tj 
+6.98498 0 0 6.98498 388.70899 705.26799 Tm
+(4)Tj 
+9.97799 0 0 9.97799 395.52398 701.02799 Tm
+(C.)Tj [-332.89999 ]TJ (Fahlander)Tj [39.79998 ]TJ (,)Tj 
+6.98498 0 0 6.98498 449.99299 705.26799 Tm
+(5)Tj 
+9.97799 0 0 9.97799 456.80799 701.02799 Tm
+(M.)Tj [-332.89999 ]TJ (Hjorth-Jensen,)Tj 
+6.98498 0 0 6.98498 529.96199 705.26799 Tm
+(4)Tj 
+9.97799 0 0 9.97799 68.66398 689.55299 Tm
+(R.)Tj [-415.29998 ]TJ (V)Tj [129 ]TJ (.)Tj [-433.19999 ]TJ (F)Tj [79.89999 ]TJ (.)Tj [-433.19999 ]TJ (Janssens,)Tj 
+6.98498 0 0 6.98498 143.11599 693.79399 Tm
+(3)Tj 
+9.97799 0 0 9.97799 150.93099 689.55299 Tm
+(A.)Tj [-433.19999 ]TJ (Likar)Tj [39.79998 ]TJ (,)Tj 
+6.98498 0 0 6.98498 188.66099 693.79399 Tm
+(2)Tj 
+9.97799 0 0 9.97799 196.47599 689.55299 Tm
+(J.)Tj [-433.19999 ]TJ (Nyber)Tj [17.89999 ]TJ (g,)Tj 
+6.98498 0 0 6.98498 239.41299 693.79399 Tm
+(6)Tj 
+9.97799 0 0 9.97799 247.22898 689.55299 Tm
+(E.)Tj [-433.19999 ]TJ (Osnes,)Tj 
+6.98498 0 0 6.98498 287.02099 693.79399 Tm
+(4)Tj 
+9.97799 0 0 9.97799 294.83699 689.55299 Tm
+(S.)Tj [-433.19999 ]TJ (D.)Tj [-433.19999 ]TJ (Paul,)Tj 
+6.98498 0 0 6.98498 341.45599 693.79399 Tm
+(1)Tj 
+9.97799 0 0 9.97799 349.27198 689.55299 Tm
+(A.)Tj [-433.19999 ]TJ (Piechaczek,)Tj 
+6.98498 0 0 6.98498 410.66598 693.79399 Tm
+(7)Tj 
+9.97799 0 0 9.97799 418.48098 689.55299 Tm
+(D.)Tj [-433.19999 ]TJ (C.)Tj [-433.19999 ]TJ (Radford,)Tj 
+6.98498 0 0 6.98498 481.16499 693.79399 Tm
+(1)Tj 
+9.97799 0 0 9.97799 488.97999 689.55299 Tm
+(D.)Tj [-433.19999 ]TJ (Rudolph,)Tj 
+6.98498 0 0 6.98498 539.86799 693.79399 Tm
+(5)Tj 
+9.97799 0 0 9.97799 178.08399 678.07798 Tm
+(D.)Tj [-332.89999 ]TJ (Seweryniak,)Tj 
+6.98498 0 0 6.98498 240.70199 682.31898 Tm
+(3)Tj 
+9.97799 0 0 9.97799 247.51699 678.07798 Tm
+(D.)Tj [-332.89999 ]TJ (G.)Tj [-332.89999 ]TJ (Sarantites,)Tj 
+6.98498 0 0 6.98498 315.40199 682.31898 Tm
+(8)Tj 
+9.97799 0 0 9.97799 322.21699 678.07798 Tm
+(M.)Tj [-332.89999 ]TJ (V)Tj [110.79998 ]TJ (encelj,)Tj 
+6.98498 0 0 6.98498 369.32299 682.31898 Tm
+(2)Tj 
+9.97799 0 0 9.97799 376.13699 678.07798 Tm
+(and)Tj [-332.89999 ]TJ (C.)Tj [-332.89999 ]TJ (H.)Tj [-332.89999 ]TJ (Y)Tj [110.79998 ]TJ (u)Tj 
+6.98498 0 0 6.98498 430.44599 682.31898 Tm
+(1)Tj 
+6.48599 0 0 6.48599 156.42999 671.34298 Tm
+(1)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 159.67298 667.60198 Tm
+(Physics)Tj [-332.69999 ]TJ (Division,)Tj [-332.69999 ]TJ (Oak)Tj [-332.69999 ]TJ (Ridge)Tj [-332.69999 ]TJ (National)Tj [-332.69999 ]TJ (Laboratory)Tj [55 ]TJ (,)Tj [-332.69999 ]TJ (O)Tj [0.09999 ]TJ (ak)Tj [-332.69999 ]TJ (Ridge,)Tj [-332.69999 ]TJ (T)Tj [91.89999 ]TJ (ennessee)Tj [-582.69999 ]TJ (37831)Tj 
+/N51 1 Tf
+6.48599 0 0 6.48599 234.18399 659.86898 Tm
+(2)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 237.42698 656.12699 Tm
+(J.)Tj [-332.69999 ]TJ (Stefan)Tj [-332.69999 ]TJ (Institute,)Tj [-332.69999 ]TJ (Ljubljana,)Tj [-332.69999 ]TJ (Slovenia)Tj 
+/N51 1 Tf
+6.48599 0 0 6.48599 203.16198 648.39399 Tm
+(3)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 206.40499 644.65199 Tm
+(Ar)Tj [37 ]TJ (gonne)Tj [-332.69999 ]TJ (National)Tj [-332.69999 ]TJ (Laboratory)Tj [55 ]TJ (,)Tj [-314.69999 ]TJ (A)Tj [0 ]TJ (r)Tj [37 ]TJ (gonne,)Tj [-332.69999 ]TJ (Illinois)Tj [-582.69999 ]TJ (60439)Tj 
+/N51 1 Tf
+6.48599 0 0 6.48599 198.53599 636.91899 Tm
+(4)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 201.77899 633.17799 Tm
+(Department)Tj [-332.69999 ]TJ (of)Tj [-332.69999 ]TJ (Physics,)Tj [-332.69999 ]TJ (University)Tj [-332.69999 ]TJ (of)Tj [-332.69999 ]TJ (Oslo,)Tj [-332.69999 ]TJ (Oslo,)Tj [-332.69999 ]TJ (Norway)Tj 
+/N51 1 Tf
+6.48599 0 0 6.48599 202.76799 625.44499 Tm
+(5)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 206.01098 621.70298 Tm
+(Department)Tj [-332.69999 ]TJ (of)Tj [-332.69999 ]TJ (Physics,)Tj [-332.69999 ]TJ (Lund)Tj [-332.69999 ]TJ (University)Tj [55 ]TJ (,)Tj [-332.69999 ]TJ (Lund,)Tj [-332.69999 ]TJ (Sweden)Tj 
+/N51 1 Tf
+6.48599 0 0 6.48599 171.93299 613.96998 Tm
+(6)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 175.17498 610.22799 Tm
+(Department)Tj [-332.69999 ]TJ (of)Tj [-332.69999 ]TJ (Neutr)Tj [37 ]TJ (on)Tj [-332.69999 ]TJ (Resear)Tj [37 ]TJ (ch,)Tj [-332.69999 ]TJ (Uppsala)Tj [-332.69999 ]TJ (University)Tj [55 ]TJ (,)Tj [-332.69999 ]TJ (U)Tj [0.09999 ]TJ (ppsala,)Tj [-332.69999 ]TJ (Sweden)Tj 
+/N51 1 Tf
+6.48599 0 0 6.48599 195.27299 602.49499 Tm
+(7)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 198.51599 598.75399 Tm
+(Louisiana)Tj [-332.69999 ]TJ (State)Tj [-332.69999 ]TJ (University)Tj [55 ]TJ (,)Tj [-332.69999 ]TJ (Baton)Tj [-332.69999 ]TJ (Rouge,)Tj [-332.69999 ]TJ (Louisiana)Tj [-582.69999 ]TJ (70803)Tj 
+/N51 1 Tf
+6.48599 0 0 6.48599 163.52198 591.02099 Tm
+(8)Tj 
+/N55 1 Tf
+8.97999 0 0 8.97999 166.76499 587.27899 Tm
+(Department)Tj [-332.69999 ]TJ (of)Tj [-332.69999 ]TJ (Chemistry)Tj [55 ]TJ (,)Tj [-332.69999 ]TJ (W)Tj [91.89999 ]TJ (ashington)Tj [-332.69999 ]TJ (University)Tj [55 ]TJ (,)Tj [-332.69999 ]TJ (St.)Tj [-332.69999 ]TJ (Louis,)Tj [-332.69999 ]TJ (Missouri)Tj [-582.69999 ]TJ (63130)Tj 
+/N62 1 Tf
+4.27369 -1.27778 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(Received)Tj [-332.69999 ]TJ (25)Tj [-332.69999 ]TJ (February)Tj [-332.69999 ]TJ (2002;)Tj [-332.69999 ]TJ (published)Tj [-250 ]TJ (25)Tj [-277.69999 ]TJ (April)Tj [-332.69999 ]TJ (2002)Tj 
+/N62 1 Tf
+21.79879 0 TD
+(!)Tj 
+/N51 1 Tf
+-32.23408 -1.94439 TD
+(Excited)Tj [-334.59999 ]TJ (states)Tj [-334.59999 ]TJ (in)Tj [-334.59999 ]TJ (the)Tj [-334.59999 ]TJ (proton)Tj [-334.59999 ]TJ (emitter)Tj 
+6.23599 0 0 6.23599 247.64599 561.91499 Tm
+(105)Tj 
+8.97999 0 0 8.97999 257.00099 558.34298 Tm
+(Sb)Tj [-334.59999 ]TJ (have)Tj [-334.59999 ]TJ (been)Tj [-334.59999 ]TJ (investigated)Tj [-334.59999 ]TJ (for)Tj [-334.59999 ]TJ (the)Tj [-334.59999 ]TJ (\256rst)Tj [-334.59999 ]TJ (time.)Tj [-316.59999 ]TJ (The)Tj [-334.59999 ]TJ (nucleus)Tj [-334.59999 ]TJ (was)Tj [-334.59999 ]TJ (popu-)Tj 
+-16.87699 -1.27778 TD
+(lated)Tj [-346.89999 ]TJ (in)Tj [-346.89999 ]TJ (the)Tj [-346.89999 ]TJ (reaction)Tj 
+6.23599 0 0 6.23599 183.20899 550.43998 Tm
+(50)Tj 
+8.97999 0 0 8.97999 189.44499 546.86799 Tm
+(Cr\()Tj 
+6.23599 0 0 6.23599 202.13198 550.43998 Tm
+(58)Tj 
+8.97999 0 0 8.97999 208.36898 546.86799 Tm
+(Ni,1)Tj 
+/N55 1 Tf
+1.76979 0 TD
+(p)Tj 
+/N51 1 Tf
+0.57978 0 TD
+(2)Tj 
+/N55 1 Tf
+0.57978 0 TD
+(n)Tj 
+/N51 1 Tf
+0.57978 0 TD
+(\))Tj [-79.79998 ]TJ (.)Tj [-328.89999 ]TJ (The)Tj [-346.89999 ]TJ (GAMMASPHERE)Tj [-346.89999 ]TJ (Ge-detector)Tj [-346.89999 ]TJ (array)Tj [-346.89999 ]TJ (was)Tj [-346.89999 ]TJ (used)Tj [-346.89999 ]TJ (together)Tj [-346.89999 ]TJ (with)Tj [-346.89999 ]TJ (Mi-)Tj 
+-14.97068 -1.27778 TD
+(croball)Tj [-285.29998 ]TJ (and)Tj [-285.29998 ]TJ (the)Tj [-285.29998 ]TJ (Neutron)Tj [-285.29998 ]TJ (Shell)Tj [-285.29998 ]TJ (for)Tj [-285.29998 ]TJ (selection)Tj [-285.29998 ]TJ (of)Tj [-285.29998 ]TJ (the)Tj [-285.29998 ]TJ (reaction)Tj [-285.29998 ]TJ (channel.)Tj [-267.29998 ]TJ (The)Tj [-285.29998 ]TJ (experimental)Tj [-285.29998 ]TJ (level)Tj [-285.29998 ]TJ (scheme)Tj [-285.29998 ]TJ (agrees)Tj [-285.29998 ]TJ (well)Tj 
+T*
+(with)Tj [-376.5 ]TJ (results)Tj [-376.5 ]TJ (of)Tj [-376.59999 ]TJ (a)Tj [-376.5 ]TJ (shell)Tj [-376.59999 ]TJ (model)Tj [-376.59999 ]TJ (calculation)Tj [-376.5 ]TJ (that)Tj [-376.59999 ]TJ (uses)Tj [-376.5 ]TJ (realistic)Tj [-376.5 ]TJ (ef)Tj [18 ]TJ (fective)Tj [-376.5 ]TJ (interactions)Tj [-376.5 ]TJ (derived)Tj [-376.5 ]TJ (from)Tj [-376.5 ]TJ (the)Tj [-376.5 ]TJ (CD-Bonn)Tj 
+T*
+(nucleon-nucleon)Tj [-332.69999 ]TJ (interaction)Tj [-332.69999 ]TJ (and)Tj 
+6.23599 0 0 6.23599 226.59298 516.01599 Tm
+(100)Tj 
+8.97999 0 0 8.97999 235.94799 512.44398 Tm
+(Sn)Tj [-332.69999 ]TJ (as)Tj [-332.69999 ]TJ (a)Tj [-332.69999 ]TJ (closed-shell)Tj [-332.69999 ]TJ (core.)Tj 
+-14.53259 -2.16668 TD
+(DOI:)Tj [-332.69999 ]TJ (10.1)Tj [37 ]TJ (103/PhysRevC.65.051307)Tj [-6145.19999 ]TJ (P)Tj [91.89999 ]TJ (A)Tj [0.09999 ]TJ (CS)Tj [-332.69999 ]TJ (number)Tj 
+/N62 1 Tf
+26.54229 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(s)Tj 
+/N62 1 Tf
+0.38899 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(:)Tj [-500 ]TJ (21.10.)Tj 
+/N68 1 Tf
+3.27778 0 TD
+(2)Tj 
+/N51 1 Tf
+0.83288 0 TD
+(k,)Tj [-332.69999 ]TJ (21.60.Cs,)Tj [-332.69999 ]TJ (23.20.Lv)Tj [64.69999 ]TJ (,)Tj [-332.69999 ]TJ (27.60.)Tj 
+/N68 1 Tf
+11.84959 0 TD
+(1)Tj 
+/N51 1 Tf
+0.83288 0 TD
+(j)Tj 
+9.97799 0 0 9.97799 63.53599 460.39498 Tm
+(Nuclei)Tj [-281.79998 ]TJ (far)Tj [-281.79998 ]TJ (from)Tj [-281.79998 ]TJ (the)Tj [-281.79998 ]TJ (line)Tj [-281.79998 ]TJ (of)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 172.94799 460.39498 Tm
+(b)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 182.65599 460.39498 Tm
+(stability)Tj [-281.79998 ]TJ (are)Tj [-281.79998 ]TJ (at)Tj [-281.79998 ]TJ (present)Tj [-281.79998 ]TJ (in)Tj [-281.79998 ]TJ (the)Tj 
+-13.13829 -1.19999 TD
+(focus)Tj [-325 ]TJ (of)Tj [-325 ]TJ (the)Tj [-325 ]TJ (nuclear)Tj [-325 ]TJ (structure)Tj [-325 ]TJ (physics)Tj [-325 ]TJ (community)Tj [64.79998 ]TJ (.)Tj [-325 ]TJ (Consider)Tj [19.89999 ]TJ (-)Tj 
+T*
+(able)Tj [-265.89999 ]TJ (attention)Tj [-265.89999 ]TJ (has)Tj [-265.89999 ]TJ (been)Tj [-265.89999 ]TJ (devoted)Tj [-265.89999 ]TJ (to)Tj [-265.89999 ]TJ (nuclei)Tj [-265.89999 ]TJ (close)Tj [-265.89999 ]TJ (to)Tj [-265.89999 ]TJ (the)Tj [-265.89999 ]TJ (doubly-)Tj 
+0 -1.21649 TD
+(magic)Tj 
+6.98498 0 0 6.98498 81.29299 428.27799 Tm
+0.00009 Tc
+(100)Tj 
+9.97799 0 0 9.97799 91.77099 424.30999 Tm
+0 Tc
+(Sn)Tj [-405.69999 ]TJ (nucleus)Tj [-405.69999 ]TJ (and)Tj [-405.69999 ]TJ (studies)Tj [-405.69999 ]TJ (of)Tj [-405.69999 ]TJ (proton-emitting)Tj [-405.69999 ]TJ (nuclei,)Tj 
+-4.02978 -1.19999 TD
+(e.g.,)Tj [-264.5 ]TJ (of)Tj [-264.5 ]TJ (systems)Tj [-264.5 ]TJ (beyond)Tj [-264.5 ]TJ (the)Tj [-264.5 ]TJ (drip)Tj [-264.5 ]TJ (line,)Tj [-264.5 ]TJ (have)Tj [-264.5 ]TJ (also)Tj [-264.5 ]TJ (started.)Tj [-209.59999 ]TJ (All)Tj [-264.5 ]TJ (of)Tj 
+T*
+(these)Tj [-425.5 ]TJ (aspects)Tj [-425.5 ]TJ (are)Tj [-425.5 ]TJ (combined)Tj [-425.5 ]TJ (in)Tj [-425.5 ]TJ (the)Tj [-425.5 ]TJ (present)Tj [-425.59999 ]TJ (paper)Tj [-425.59999 ]TJ (which)Tj [-425.5 ]TJ (re-)Tj 
+0 -1.21649 TD
+(ports)Tj [-450.79998 ]TJ (on)Tj [-450.79998 ]TJ (the)Tj [-450.79998 ]TJ (\256rst)Tj [-450.79998 ]TJ (observation)Tj [-450.79998 ]TJ (of)Tj [-450.79998 ]TJ (excited)Tj [-450.79998 ]TJ (states)Tj [-450.79998 ]TJ (in)Tj 
+6.98498 0 0 6.98498 264.60998 392.19299 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 275.08799 388.22499 Tm
+0 Tc
+(Sb,)Tj [-450.79998 ]TJ (a)Tj 
+-22.40199 -1.19999 TD
+(nucleus)Tj [-375.79998 ]TJ (which)Tj [-375.79998 ]TJ (has)Tj [-375.79998 ]TJ (four)Tj [-375.79998 ]TJ (neutrons)Tj [-375.79998 ]TJ (and)Tj [-375.79998 ]TJ (one)Tj [-375.79998 ]TJ (proton)Tj [-375.79998 ]TJ (more)Tj [-375.79998 ]TJ (than)Tj 
+6.98498 0 0 6.98498 52.85998 368.08198 Tm
+0.00009 Tc
+(100)Tj 
+9.97799 0 0 9.97799 63.33898 364.11299 Tm
+0 Tc
+(Sn)Tj [-332.89999 ]TJ (and)Tj [-332.89999 ]TJ (has)Tj [-332.89999 ]TJ (been)Tj [-332.89999 ]TJ (reported)Tj [-332.89999 ]TJ (as)Tj [-332.89999 ]TJ (a)Tj [-332.89999 ]TJ (proton)Tj [-332.89999 ]TJ (emitter)Tj 
+/N62 1 Tf
+18.76969 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+-19.91589 -1.21649 TD
+(The)Tj [-865.29998 ]TJ (nucleus)Tj 
+6.98498 0 0 6.98498 128.09899 355.94398 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 138.57699 351.97499 Tm
+0 Tc
+(Sb)Tj [-865.29998 ]TJ (was)Tj [-865.29998 ]TJ (produced)Tj [-865.29998 ]TJ (in)Tj [-865.29998 ]TJ (the)Tj [-865.29998 ]TJ (reaction)Tj 
+6.98498 0 0 6.98498 52.85998 343.80599 Tm
+0.00009 Tc
+(50)Tj 
+9.97799 0 0 9.97799 59.84599 339.83699 Tm
+0 Tc
+(Cr\()Tj 
+6.98498 0 0 6.98498 73.94499 343.80599 Tm
+0.00009 Tc
+(58)Tj 
+9.97799 0 0 9.97799 80.93099 339.83699 Tm
+0 Tc
+(Ni,1)Tj 
+/N55 1 Tf
+1.76979 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(\))Tj [-647.39999 ]TJ (a)Tj [0 ]TJ (t)Tj [-567.29998 ]TJ (a)Tj [-567.29998 ]TJ (beam)Tj [-567.29998 ]TJ (ener)Tj [17.89999 ]TJ (gy)Tj [-567.29998 ]TJ (of)Tj [-567.29998 ]TJ (225)Tj [-567.29998 ]TJ (MeV)Tj [-549.39999 ]TJ (with)Tj [-567.29998 ]TJ (a)Tj 
+-6.45339 -1.21649 TD
+(2.1)Tj [-580.09999 ]TJ (mg/)Tj [-80.09999 ]TJ (cm)Tj 
+6.98498 0 0 6.98498 98.33898 331.66799 Tm
+(2)Tj 
+9.97799 0 0 9.97799 104.94999 327.69898 Tm
+(thick)Tj [-256.5 ]TJ (tar)Tj [17.89999 ]TJ (get,)Tj [-256.5 ]TJ (enriched)Tj [-256.5 ]TJ (to)Tj [-256.5 ]TJ (more)Tj [-256.5 ]TJ (than)Tj [-256.5 ]TJ (99%)Tj [-256.5 ]TJ (in)Tj 
+6.98498 0 0 6.98498 277.56498 331.66799 Tm
+0.00009 Tc
+(50)Tj 
+9.97799 0 0 9.97799 284.55099 327.69898 Tm
+0 Tc
+(Cr.)Tj 
+-23.35029 -1.21649 TD
+(The)Tj [-257.59999 ]TJ (tar)Tj [17.89999 ]TJ (get)Tj [-257.69999 ]TJ (was)Tj [-257.59999 ]TJ (backed)Tj [-257.59999 ]TJ (by)Tj [-257.59999 ]TJ (10)Tj [-580.09999 ]TJ (mg/)Tj [-80.09999 ]TJ (cm)Tj 
+6.98498 0 0 6.98498 200.50299 319.52999 Tm
+(2)Tj 
+9.97799 0 0 9.97799 206.57798 315.56098 Tm
+(Au)Tj [-257.59999 ]TJ (in)Tj [-257.59999 ]TJ (order)Tj [-257.69999 ]TJ (to)Tj [-257.59999 ]TJ (stop)Tj [-257.59999 ]TJ (the)Tj 
+-15.53579 -1.19999 TD
+(residual)Tj [-569.29998 ]TJ (nuclei.)Tj [-551.39999 ]TJ (The)Tj [-569.29998 ]TJ (experiment)Tj [-569.29998 ]TJ (was)Tj [-569.29998 ]TJ (performed)Tj [-569.29998 ]TJ (with)Tj [-569.29998 ]TJ (the)Tj 
+T*
+(GAMMASPHERE)Tj [-396.29998 ]TJ (Ge-detector)Tj [-396.29998 ]TJ (array)Tj 
+/N62 1 Tf
+15.62908 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.72929 0 TD
+(at)Tj [-396.29998 ]TJ (the)Tj [-341.5 ]TJ (A)Tj [110.79998 ]TJ (TLAS)Tj [-396.29998 ]TJ (ac-)Tj 
+-17.19139 -1.19999 TD
+(celerator)Tj [-354 ]TJ (at)Tj [-299.09999 ]TJ (Ar)Tj [17.89999 ]TJ (gonne)Tj [-354 ]TJ (National)Tj [-354 ]TJ (Laboratory)Tj [64.79998 ]TJ (.)Tj [-336.09999 ]TJ (The)Tj [-354 ]TJ (experimental)Tj 
+T*
+(setup)Tj [-606.79998 ]TJ (consisted)Tj [-606.79998 ]TJ (of)Tj [-606.79998 ]TJ (78)Tj [-606.79998 ]TJ (Ge)Tj [-606.79998 ]TJ (detectors,)Tj [-606.79998 ]TJ (95)Tj [-606.79998 ]TJ (CsI)Tj [-606.79998 ]TJ (scintillators)Tj 
+T*
+(known)Tj [-359.29998 ]TJ (as)Tj [-359.39999 ]TJ (Microball)Tj 
+/N62 1 Tf
+8.57669 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(3)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.69239 0 TD
+(for)Tj [-359.39999 ]TJ (light)Tj [-359.39999 ]TJ (char)Tj [17.89999 ]TJ (ged)Tj [-359.39999 ]TJ (particle)Tj [-359.39999 ]TJ (detection,)Tj 
+-10.10198 -1.19999 TD
+(and)Tj [-365.89999 ]TJ (the)Tj [-365.89999 ]TJ (newly)Tj [-365.89999 ]TJ (developed)Tj [-365.89999 ]TJ (Neutron)Tj [-365.89999 ]TJ (Shell.)Tj [-348 ]TJ (The)Tj [-365.89999 ]TJ (Neutron)Tj [-365.89999 ]TJ (Shell)Tj 
+T*
+(consists)Tj [-388 ]TJ (of)Tj [-388.09999 ]TJ (30)Tj [-388 ]TJ (liquid)Tj [-388 ]TJ (scintillator)Tj [-388.09999 ]TJ (detectors)Tj [-388.09999 ]TJ (for)Tj [-388.09999 ]TJ (detection)Tj [-388 ]TJ (and)Tj 
+T*
+(identi\256cation)Tj [-313.89999 ]TJ (of)Tj [-313.89999 ]TJ (neutrons)Tj [-313.89999 ]TJ (produced)Tj [-313.89999 ]TJ (in)Tj [-313.89999 ]TJ (fusion-evaporation)Tj [-313.89999 ]TJ (re-)Tj 
+T*
+(actions.)Tj [-264.5 ]TJ (The)Tj [-282.39999 ]TJ (neutron)Tj [-282.39999 ]TJ (detectors)Tj [-282.39999 ]TJ (covered)Tj [-282.39999 ]TJ (a)Tj [-282.39999 ]TJ (solid)Tj [-282.39999 ]TJ (angle)Tj [-282.39999 ]TJ (of)Tj [-282.39999 ]TJ (about)Tj 
+0 -1.21649 TD
+(1)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 57.34999 195.66099 Tm
+(p)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 69.49598 195.66099 Tm
+(in)Tj [-470.09999 ]TJ (the)Tj [-470.09999 ]TJ (forward)Tj [-470.09999 ]TJ (direction)Tj [-470.09999 ]TJ (from)Tj [-470.09999 ]TJ (the)Tj [-470.09999 ]TJ (tar)Tj [17.89999 ]TJ (get.)Tj [-452.29998 ]TJ (The)Tj [-470.09999 ]TJ (average)Tj 
+-1.79728 -1.16648 TD
+(detection)Tj [-423.29998 ]TJ (and)Tj [-423.29998 ]TJ (identi\256cation)Tj [-423.29998 ]TJ (ef\256ciencies)Tj [-423.29998 ]TJ (for)Tj [-423.29998 ]TJ (protons,)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 270.04699 184.02198 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 281.16598 184.02198 Tm
+(par)Tj [19.89999 ]TJ (-)Tj 
+-23.01109 -1.14999 TD
+(ticles,)Tj [-337.5 ]TJ (and)Tj [-337.5 ]TJ (neutrons)Tj [-337.5 ]TJ (were)Tj [-337.5 ]TJ (78%,)Tj [-337.5 ]TJ (47%,)Tj [-337.5 ]TJ (and)Tj [-337.5 ]TJ (27%,)Tj [-337.5 ]TJ (respectively)Tj [64.79998 ]TJ (.)Tj 
+T*
+(The)Tj [-353.39999 ]TJ (proton)Tj [-353.39999 ]TJ (detection)Tj [-353.39999 ]TJ (ef\256ciency)Tj [-353.39999 ]TJ (was)Tj [-353.39999 ]TJ (found)Tj [-353.39999 ]TJ (to)Tj [-353.39999 ]TJ (depend)Tj [-353.39999 ]TJ (some-)Tj 
+T*
+(what)Tj [-340 ]TJ (on)Tj [-340 ]TJ (the)Tj [-340 ]TJ (proton)Tj [-340 ]TJ (ener)Tj [17.89999 ]TJ (gy)Tj [-340 ]TJ (and)Tj [-340 ]TJ (was)Tj [-340 ]TJ (slightly)Tj [-340 ]TJ (higher)Tj [-340 ]TJ (for)Tj [-340 ]TJ (reac-)Tj 
+T*
+(tion)Tj [-332.39999 ]TJ (channels)Tj [-332.39999 ]TJ (with)Tj [-332.39999 ]TJ (lower)Tj [-332.39999 ]TJ (particle)Tj [-332.39999 ]TJ (multiplicity)Tj [64.79998 ]TJ (.)Tj [-314.5 ]TJ (The)Tj [-332.39999 ]TJ (relatively)Tj 
+0 -1.16648 TD
+(low)Tj [-301.89999 ]TJ (ef\256ciency)Tj [-302 ]TJ (for)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 126.54299 126.48498 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 136.45098 126.48498 Tm
+(particles)Tj [-302 ]TJ (is)Tj [-302 ]TJ (due)Tj [-302 ]TJ (to)Tj [-302 ]TJ (the)Tj [-302 ]TJ (thick)Tj [-302 ]TJ (tar)Tj [17.89999 ]TJ (get)Tj [-302 ]TJ (back-)Tj 
+-8.50769 -1.14999 TD
+(ing,)Tj [-310.5 ]TJ (thick)Tj [-310.5 ]TJ (absorbers)Tj [-310.5 ]TJ (in)Tj [-310.5 ]TJ (front)Tj [-310.5 ]TJ (of)Tj [-310.5 ]TJ (the)Tj [-310.5 ]TJ (detectors,)Tj [-310.5 ]TJ (and)Tj [-310.5 ]TJ (strict)Tj [-310.5 ]TJ (coin-)Tj 
+0 -1.16648 TD
+(cidence)Tj [-314.5 ]TJ (gating)Tj [-314.5 ]TJ (conditions;)Tj [-314.5 ]TJ (i.e.,)Tj [-314.5 ]TJ (no)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 191.67999 103.37098 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 201.71398 103.37098 Tm
+(particles)Tj [-314.5 ]TJ (could)Tj [-314.5 ]TJ (be)Tj [-314.5 ]TJ (iden-)Tj 
+-15.04829 -1.16648 TD
+(ti\256ed)Tj [-273.59999 ]TJ (in)Tj [-273.59999 ]TJ (Microball)Tj [-273.59999 ]TJ (detectors)Tj [-273.59999 ]TJ (placed)Tj [-273.59999 ]TJ (at)Tj [-273.59999 ]TJ (angles)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 233.05299 91.73199 Tm
+(u)Tj 
+/N68 1 Tf
+9.97799 0 0 9.97799 238.84098 91.73199 Tm
+(.)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(111.5\311)Tj [-80.09999 ]TJ (.)Tj [-273.59999 ]TJ (Due)Tj 
+-19.68229 -1.16648 TD
+(to)Tj [-435.79998 ]TJ (the)Tj [-435.79998 ]TJ (overlap)Tj [-435.79998 ]TJ (of)Tj [-435.79998 ]TJ (protons)Tj [-435.79998 ]TJ (and)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 180.17999 80.09298 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 191.42399 80.09298 Tm
+(particles)Tj [-435.79998 ]TJ (in)Tj [-435.79998 ]TJ (the)Tj [-435.79998 ]TJ (backward)Tj 
+-14.01708 -1.16648 TD
+(detectors)Tj [-434.09999 ]TJ (about)Tj [-434.09999 ]TJ (12%)Tj [-434 ]TJ (of)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 153.67599 68.45399 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 164.90299 68.45399 Tm
+(particles)Tj [-434.09999 ]TJ (were)Tj [-434.09999 ]TJ (misinterpreted)Tj [-434.09999 ]TJ (as)Tj 
+-11.35908 -1.16648 TD
+(protons.)Tj [-250.79998 ]TJ (On)Tj [-250.79998 ]TJ (the)Tj [-250.79998 ]TJ (other)Tj [-250.79998 ]TJ (hand,)Tj [-250.79998 ]TJ (very)Tj [-250.79998 ]TJ (few)Tj [64.79998 ]TJ (,)Tj [-250.79998 ]TJ (only)Tj 
+/N62 1 Tf
+17.18818 0 TD
+(;)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(0.2%)Tj [-330.89999 ]TJ (of)Tj [-250.79998 ]TJ (protons)Tj 
+8.29869 40.44718 TD
+(were)Tj [-391.5 ]TJ (misinterpreted)Tj [-391.5 ]TJ (as)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 412.03498 460.39498 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 422.83699 460.39498 Tm
+(particles.)Tj [-373.59999 ]TJ (The)Tj [-391.39999 ]TJ (separation)Tj [-391.5 ]TJ (between)Tj 
+-10.80949 -1.21649 TD
+(neutrons)Tj [-429 ]TJ (and)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 372.30999 448.25698 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 382.93798 448.25698 Tm
+(rays)Tj [-429 ]TJ (detected)Tj [-429 ]TJ (in)Tj [-428.89999 ]TJ (the)Tj [-429 ]TJ (neutron)Tj [-429 ]TJ (detectors)Tj [-429 ]TJ (was)Tj 
+-6.81079 -1.21649 TD
+(also)Tj [-327.79998 ]TJ (very)Tj [-327.79998 ]TJ (good:)Tj [-327.79998 ]TJ (only)Tj [-327.79998 ]TJ (0.7%)Tj [-327.79998 ]TJ (of)Tj [-327.79998 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 453.43699 436.11898 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 463.05499 436.11898 Tm
+(rays)Tj [-327.79998 ]TJ (not)Tj [-327.79998 ]TJ (connected)Tj [-327.79998 ]TJ (with)Tj 
+-14.84019 -1.19999 TD
+(neutron)Tj [-388.29998 ]TJ (emission)Tj [-388.29998 ]TJ (were)Tj [-388.29998 ]TJ (found)Tj [-388.29998 ]TJ (in)Tj [-388.29998 ]TJ (the)Tj [-388.29998 ]TJ (spectra)Tj [-388.29998 ]TJ (gated)Tj [-388.29998 ]TJ (with)Tj [-388.29998 ]TJ (one)Tj 
+T*
+(neutron.)Tj [-237.79998 ]TJ (About)Tj [-292.59999 ]TJ (6%)Tj [-292.59999 ]TJ (of)Tj [-292.59999 ]TJ (the)Tj [-292.59999 ]TJ (neutrons)Tj [-292.59999 ]TJ (scattered)Tj [-292.59999 ]TJ (from)Tj [-292.59999 ]TJ (one)Tj [-292.59999 ]TJ (detec-)Tj 
+T*
+(tor)Tj [-295.69999 ]TJ (into)Tj [-295.69999 ]TJ (another)Tj [-295.69999 ]TJ (and)Tj [-295.69999 ]TJ (this)Tj [-295.69999 ]TJ (could)Tj [-295.69999 ]TJ (cause)Tj [-295.69999 ]TJ (problems)Tj [-295.69999 ]TJ (for)Tj [-295.69999 ]TJ (identi\256ca-)Tj 
+T*
+(tion)Tj [-400.5 ]TJ (of)Tj [-400.59999 ]TJ (residual)Tj [-400.59999 ]TJ (nuclei)Tj [-400.59999 ]TJ (produced)Tj [-400.5 ]TJ (by)Tj [-400.5 ]TJ (the)Tj [-400.5 ]TJ (evaporation)Tj [-400.5 ]TJ (of)Tj [-400.59999 ]TJ (two)Tj 
+0 -1.21649 TD
+(neutrons.)Tj [-338.59999 ]TJ (However)Tj [39.79998 ]TJ (,)Tj [-338.59999 ]TJ (the)Tj [-338.59999 ]TJ (2)Tj 
+/N55 1 Tf
+10.38679 0 TD
+(n)Tj 
+/N51 1 Tf
+0.91868 0 TD
+(reaction)Tj [-338.59999 ]TJ (channels)Tj [-338.59999 ]TJ (could)Tj [-338.59999 ]TJ (be)Tj [-338.59999 ]TJ (iden-)Tj 
+-11.30549 -1.19999 TD
+(ti\256ed)Tj [-351.09999 ]TJ (by)Tj [-351.09999 ]TJ (considering)Tj [-351.09999 ]TJ (only)Tj [-351.09999 ]TJ (events)Tj [-351.09999 ]TJ (in)Tj [-351.09999 ]TJ (which)Tj [-351.09999 ]TJ (the)Tj [-351.09999 ]TJ (two)Tj [-351.09999 ]TJ (neutrons)Tj 
+T*
+(were)Tj [-537.5 ]TJ (not)Tj [-537.5 ]TJ (detected)Tj [-537.5 ]TJ (in)Tj [-537.5 ]TJ (neighboring)Tj [-537.5 ]TJ (neutron)Tj [-537.5 ]TJ (detectors.)Tj [-519.59999 ]TJ (This)Tj 
+T*
+(technique,)Tj [-297.09999 ]TJ (described)Tj [-297.09999 ]TJ (in)Tj [-297.09999 ]TJ (Ref.)Tj 
+/N62 1 Tf
+11.63009 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(4)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(,)Tj [-297.09999 ]TJ (reduced)Tj [-297.09999 ]TJ (the)Tj [-297.09999 ]TJ (neutron)Tj [-297.09999 ]TJ (scatter)Tj [19.89999 ]TJ (-)Tj 
+-12.79598 -1.19999 TD
+(ing)Tj [-294.89999 ]TJ (probability)Tj [-294.89999 ]TJ (to)Tj [-294.89999 ]TJ (3%,)Tj [-294.89999 ]TJ (while)Tj [-294.89999 ]TJ (the)Tj [-294.89999 ]TJ (number)Tj [-294.89999 ]TJ (of)Tj [-294.89999 ]TJ (the)Tj [-294.89999 ]TJ (real)Tj [-294.89999 ]TJ (two)Tj [-294.89999 ]TJ (neu-)Tj 
+T*
+(tron)Tj [-461.29998 ]TJ (events)Tj [-461.29998 ]TJ (decreased)Tj [-461.29998 ]TJ (by)Tj [-461.29998 ]TJ (20%.)Tj [-443.5 ]TJ (This)Tj [-461.29998 ]TJ (enabled)Tj [-461.29998 ]TJ (us)Tj [-461.29998 ]TJ (to)Tj [-461.29998 ]TJ (clearly)Tj 
+0 -1.21649 TD
+(distinguish)Tj [-457.39999 ]TJ (between)Tj [-457.39999 ]TJ (2)Tj 
+/N55 1 Tf
+9.21638 0 TD
+(n)Tj 
+/N51 1 Tf
+1.03749 0 TD
+(and)Tj [-457.39999 ]TJ (1)Tj 
+/N55 1 Tf
+2.48139 0 TD
+(n)Tj 
+/N51 1 Tf
+1.03749 0 TD
+(reaction)Tj [-457.39999 ]TJ (channels.)Tj [-457.39999 ]TJ (Further)Tj 
+-13.77279 -1.19999 TD
+(experimental)Tj [-332.89999 ]TJ (details)Tj [-332.89999 ]TJ (can)Tj [-332.89999 ]TJ (be)Tj [-332.89999 ]TJ (found)Tj [-332.89999 ]TJ (in)Tj [-332.89999 ]TJ (Ref.)Tj 
+/N62 1 Tf
+17.29888 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(5)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+-17.26478 -1.19999 TD
+(In)Tj [-430.89999 ]TJ (the)Tj [-430.89999 ]TJ (analysis,)Tj [-431 ]TJ (the)Tj [-430.89999 ]TJ (data)Tj [-430.89999 ]TJ (were)Tj [-430.89999 ]TJ (sorted)Tj [-430.89999 ]TJ (into)Tj [-430.89999 ]TJ (particle)Tj [-430.89999 ]TJ (gated)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 314.97999 267.99598 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 321.32699 267.99598 Tm
+(-ray)Tj [-471.79998 ]TJ (spectra)Tj [-471.89999 ]TJ (and)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 394.17898 267.99598 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 400.52598 267.99598 Tm
+(-)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 403.84799 267.99598 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 414.90399 267.99598 Tm
+(coincidence)Tj [-471.79998 ]TJ (matrices.)Tj [-454 ]TJ (The)Tj [-471.79998 ]TJ (detector)Tj 
+-10.01438 -1.19999 TD
+(setup)Tj [-292.89999 ]TJ (provided)Tj [-292.89999 ]TJ (very)Tj [-292.89999 ]TJ (good)Tj [-292.89999 ]TJ (reaction)Tj [-292.89999 ]TJ (channel)Tj [-292.89999 ]TJ (selection.)Tj [-292.89999 ]TJ (Indeed,)Tj 
+T*
+(a)Tj [-401.09999 ]TJ (total)Tj [-401.09999 ]TJ (of)Tj [-401.09999 ]TJ (28)Tj [-401.09999 ]TJ (dif)Tj [17.89999 ]TJ (ferent)Tj [-401.09999 ]TJ (residual)Tj [-401.09999 ]TJ (nuclei)Tj [-401.09999 ]TJ (were)Tj [-401.09999 ]TJ (identi\256ed)Tj [-401.09999 ]TJ (in)Tj [-401.09999 ]TJ (30)Tj 
+0 -1.21649 TD
+(reaction)Tj [-303.09999 ]TJ (channels,)Tj [-303.09999 ]TJ (with)Tj [-303.09999 ]TJ (the)Tj [-303.09999 ]TJ (weakest)Tj [-303.09999 ]TJ (being)Tj [-303.09999 ]TJ (the)Tj [-303.09999 ]TJ (2)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 507.91398 231.91099 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 514.80999 231.91099 Tm
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.88319 0 TD
+(channel)Tj 
+-21.49038 -1.21649 TD
+(leading)Tj [-438.89999 ]TJ (to)Tj 
+6.98498 0 0 6.98498 362.17298 223.74099 Tm
+0.00009 Tc
+(98)Tj 
+9.97799 0 0 9.97799 369.15899 219.77299 Tm
+0 Tc
+(Cd.)Tj 
+6.98498 0 0 6.98498 389.77398 223.74099 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 400.25199 219.77299 Tm
+0 Tc
+(Sb)Tj [-438.89999 ]TJ (was)Tj [-438.89999 ]TJ (produced)Tj [-438.89999 ]TJ (as)Tj [-438.89999 ]TJ (a)Tj [-438.89999 ]TJ (1)Tj 
+/N55 1 Tf
+10.40319 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+1.01899 0 TD
+(reaction.)Tj 
+-21.12838 -1.21649 TD
+(However)Tj [39.79998 ]TJ (,)Tj [-292.29998 ]TJ (the)Tj [-292.29998 ]TJ (1)Tj 
+/N55 1 Tf
+6.28158 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.87239 0 TD
+(gated)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 422.46699 207.63499 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 428.81298 207.63499 Tm
+(-ray)Tj [-292.29998 ]TJ (spectrum)Tj [-292.29998 ]TJ (contained)Tj [-292.29998 ]TJ (many)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 554.08399 207.63499 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 314.97999 196.15998 Tm
+(rays)Tj [-395.39999 ]TJ (from)Tj [-395.39999 ]TJ (other)Tj [-395.39999 ]TJ (reaction)Tj [-395.39999 ]TJ (channels)Tj [-395.39999 ]TJ (due)Tj [-395.39999 ]TJ (to)Tj [-395.39999 ]TJ (imperfect)Tj [-395.39999 ]TJ (particle)Tj 
+0 -1.16648 TD
+(detection)Tj [-254.5 ]TJ (and)Tj [-254.5 ]TJ (identi\256cation.)Tj [-199.69999 ]TJ (A)Tj [-199.69999 ]TJ (weak)Tj [-254.5 ]TJ (1219)Tj [-254.5 ]TJ (keV)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 502.45899 184.52099 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 508.80599 184.52099 Tm
+(-ray)Tj [-254.5 ]TJ (line)Tj [-254.5 ]TJ (was)Tj 
+-19.42539 -1.16648 TD
+(observed)Tj [-346 ]TJ (in)Tj [-346 ]TJ (the)Tj [-346 ]TJ (1)Tj 
+/N55 1 Tf
+7.24769 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.92608 0 TD
+(gated)Tj [-346 ]TJ (spectrum.)Tj [-346 ]TJ (It)Tj [-346 ]TJ (was)Tj [-346 ]TJ (not)Tj [-346 ]TJ (present)Tj [-346 ]TJ (in)Tj 
+-9.33399 -1.16648 TD
+(the)Tj [-254.5 ]TJ (corresponding)Tj [-254.5 ]TJ (2)Tj 
+/N55 1 Tf
+8.05169 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.83459 0 TD
+(nor)Tj [-254.5 ]TJ (in)Tj [-254.5 ]TJ (the)Tj [-254.5 ]TJ (1)Tj 
+/N55 1 Tf
+4.69639 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(1)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 473.66099 161.24299 Tm
+(a)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 480.55599 161.24299 Tm
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.83459 0 TD
+(gated)Tj [-254.5 ]TJ (spectra.)Tj [-254.5 ]TJ (In)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 314.97999 149.60398 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 321.32699 149.60398 Tm
+(-)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 324.64898 149.60398 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 335.32499 149.60398 Tm
+(matrices,)Tj [-433.79998 ]TJ (six)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 391.92298 149.60398 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 402.59899 149.60398 Tm
+(rays)Tj [-433.79998 ]TJ (were)Tj [-433.79998 ]TJ (found)Tj [-433.79998 ]TJ (to)Tj [-433.79998 ]TJ (be)Tj [-433.79998 ]TJ (in)Tj [-433.79998 ]TJ (coincidence)Tj 
+-8.78118 -1.16648 TD
+(with)Tj [-319.59999 ]TJ (this)Tj [-319.59999 ]TJ (1219)Tj [-319.59999 ]TJ (keV)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 396.29199 137.96499 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 405.82798 137.96499 Tm
+(ray)Tj [64.79998 ]TJ (.)Tj [-319.59999 ]TJ (Figure)Tj [-319.59999 ]TJ (1)Tj [-319.59999 ]TJ (presents)Tj [-319.59999 ]TJ (the)Tj [-319.59999 ]TJ (1)Tj 
+/N55 1 Tf
+11.26969 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.89968 0 TD
+(gated)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 314.97999 126.32598 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 321.32699 126.32598 Tm
+(-)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 324.64898 126.32598 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 334.23098 126.32598 Tm
+(spectrum,)Tj [-324.09999 ]TJ (and)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 394.17799 126.32598 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 403.75898 126.32598 Tm
+(rays)Tj [-324.09999 ]TJ (with)Tj [-324.09999 ]TJ (ener)Tj [17.89999 ]TJ (gies)Tj [-324.09999 ]TJ (245,)Tj [-324.09999 ]TJ (287,)Tj [-324.09999 ]TJ (370,)Tj [-324.09999 ]TJ (495,)Tj 
+-8.89749 -1.16648 TD
+(621,)Tj [-335.79998 ]TJ (735,)Tj [-335.79998 ]TJ (1079,)Tj [-335.79998 ]TJ (and)Tj [-335.79998 ]TJ (1219)Tj [-335.79998 ]TJ (keV)Tj [-317.89999 ]TJ (assigned)Tj [-335.79998 ]TJ (to)Tj 
+6.98498 0 0 6.98498 493.38398 118.65499 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 503.86199 114.68699 Tm
+0 Tc
+(Sb)Tj [-335.79998 ]TJ (are)Tj [-335.79998 ]TJ (clearly)Tj 
+-18.92988 -1.14999 TD
+(visible.)Tj 
+1.19999 -1.14999 TD
+(Assuming)Tj [-259.09999 ]TJ (that)Tj [-259.09999 ]TJ (the)Tj [-259.09999 ]TJ (particle)Tj [-259.09999 ]TJ (detection)Tj [-259.09999 ]TJ (ef\256ciency)Tj [-259.09999 ]TJ (is)Tj [-259.09999 ]TJ (the)Tj [-259.09999 ]TJ (same)Tj 
+-1.19999 -1.14999 TD
+(for)Tj [-365 ]TJ (reaction)Tj [-365 ]TJ (channels)Tj [-365 ]TJ (of)Tj [-365 ]TJ (similar)Tj [-365 ]TJ (particle)Tj [-365 ]TJ (multiplicity)Tj [64.79998 ]TJ (,)Tj [-365 ]TJ (the)Tj [-365 ]TJ (in-)Tj 
+0 -1.16648 TD
+(tensities)Tj [-288 ]TJ (of)Tj [-288 ]TJ (a)Tj [-288 ]TJ (speci\256c)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 402.40599 68.62399 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 411.62699 68.62399 Tm
+(ray)Tj [-288 ]TJ (in)Tj [-288 ]TJ (dif)Tj [17.89999 ]TJ (ferent)Tj [-288.09999 ]TJ (particle)Tj [-288 ]TJ (gated)Tj [-288 ]TJ (spectra)Tj 
+-9.68598 -1.14999 TD
+(depend)Tj [-360.5 ]TJ (only)Tj [-360.5 ]TJ (on)Tj [-360.5 ]TJ (the)Tj [-360.5 ]TJ (multiplicity)Tj [-360.5 ]TJ (of)Tj [-360.5 ]TJ (each)Tj [-360.5 ]TJ (type)Tj [-360.5 ]TJ (of)Tj [-360.5 ]TJ (particle)Tj [-360.5 ]TJ (ac-)Tj 
+/N52 1 Tf
+7.98199 0 0 7.98199 484.02999 774.16398 Tm
+0 0 0 0 k
+/N78 /ExtGState findRes gsDI
+-0.00009 Tc
+(RAPID)Tj [-332.79998 ]TJ (COMMUNICA)Tj [73.79998 ]TJ (TIONS)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 211.07299 751.21499 Tm
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+0 Tc
+(PHYSICAL)Tj [-295.69999 ]TJ (REVIEW)Tj [-314.59999 ]TJ (C,)Tj [-314.69999 ]TJ (VOLUME)Tj [-332.69999 ]TJ (65,)Tj [-332.69999 ]TJ (051307)Tj 
+/N62 1 Tf
+19.81019 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(R)Tj 
+/N62 1 Tf
+0.66699 0 TD
+(!)Tj 
+/N51 1 Tf
+-38.57279 -80 TD
+(0556-2813/2002/65)Tj 
+/N62 1 Tf
+7.88839 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(5)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(/051307)Tj 
+/N62 1 Tf
+3.27778 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(4)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(/$20.00)Tj [-24241.09999 ]TJ (\2352002)Tj [-314.69999 ]TJ (The)Tj [-277.69999 ]TJ (American)Tj [-332.69999 ]TJ (Physical)Tj [-332.69999 ]TJ (Society)Tj 
+/N52 1 Tf
+12.25259 0 TD
+(65)Tj 
+/N51 1 Tf
+1.33259 0 TD
+(051307-1)Tj 
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 2 2
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+0 0 612 792 true PDF begin PDFVars begin AS end end
+%%EndPageSetup
+0 0 612 792 RC
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+
+470.06098 763.18899 151.24198 48.89199 rf
+BT
+/N51 1 Tf
+9.97799 0 0 9.97799 51.56199 437.90699 Tm
+0 Tc
+(companying)Tj [-326.09999 ]TJ (the)Tj [-326.09999 ]TJ (electromagnetic)Tj [-326.09999 ]TJ (emission.)Tj [-308.19999 ]TJ (Thus,)Tj [-326.09999 ]TJ (a)Tj [-326.09999 ]TJ (compari-)Tj 
+0 -1.16648 TD
+(son)Tj [-267.59999 ]TJ (of)Tj [-267.59999 ]TJ (the)Tj [-267.59999 ]TJ (intensity)Tj [-267.59999 ]TJ (ratios)Tj [-267.59999 ]TJ (for)Tj [-267.59999 ]TJ (a)Tj [-267.59999 ]TJ (speci\256c)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 210.37298 426.26799 Tm
+0 Tw
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 219.38999 426.26799 Tm
+(ray)Tj [-267.59999 ]TJ (in)Tj [-267.59999 ]TJ (two)Tj [-267.59999 ]TJ (dif)Tj [17.89999 ]TJ (ferent)Tj 
+-16.81988 -1.16648 TD
+(particle)Tj [-469 ]TJ (gated)Tj [-469 ]TJ (spectra,)Tj [-469 ]TJ (with)Tj [-469 ]TJ (the)Tj [-469 ]TJ (intensity)Tj [-469 ]TJ (ratios)Tj [-469 ]TJ (for)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 269.39399 414.62899 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 280.42098 414.62899 Tm
+(rays)Tj 
+-22.93638 -1.14999 TD
+(from)Tj [-401.89999 ]TJ (previously)Tj [-402 ]TJ (known)Tj [-402 ]TJ (nuclei)Tj [-402 ]TJ (also)Tj [-402 ]TJ (observed)Tj [-402 ]TJ (in)Tj [-402 ]TJ (the)Tj [-402 ]TJ (experi-)Tj 
+0 -1.16648 TD
+(ment,)Tj [-376.09999 ]TJ (enables)Tj [-376.09999 ]TJ (an)Tj [-376.09999 ]TJ (unambiguous)Tj [-376.09999 ]TJ (assignment)Tj [-376.09999 ]TJ (of)Tj [-376.09999 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 258.79399 391.51599 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 268.89399 391.51599 Tm
+(rays)Tj [-376.09999 ]TJ (to)Tj 
+-21.78118 -1.14999 TD
+(the)Tj [-296.59999 ]TJ (\256nal)Tj [-296.59999 ]TJ (nucleus.)Tj [-296.59999 ]TJ (Results)Tj [-296.59999 ]TJ (of)Tj [-296.59999 ]TJ (such)Tj [-296.59999 ]TJ (a)Tj [-296.59999 ]TJ (comparison)Tj [-296.59999 ]TJ (are)Tj [-296.59999 ]TJ (shown)Tj [-296.59999 ]TJ (in)Tj 
+T*
+(Fig.)Tj [-325 ]TJ (2.)Tj [-325 ]TJ (Figure)Tj [-325 ]TJ (2)Tj 
+/N62 1 Tf
+6.41969 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(a)Tj 
+/N62 1 Tf
+0.44398 0 TD
+(!)Tj 
+/N51 1 Tf
+0.65798 0 TD
+(gives)Tj [-325 ]TJ (the)Tj [-325 ]TJ (intensity)Tj [-325 ]TJ (ratio)Tj [-325 ]TJ (of)Tj [-325 ]TJ (the)Tj [-325 ]TJ (370)Tj [-64.69999 ]TJ (\261)Tj [-64.69999 ]TJ (1219)Tj 
+-7.85459 -1.16648 TD
+(keV)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 73.43399 356.92698 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 79.78099 356.92698 Tm
+(-)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 83.10398 356.92698 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 94.87899 356.92698 Tm
+(coincidence)Tj [-544 ]TJ (line)Tj [-544 ]TJ (as)Tj [-544 ]TJ (deduced)Tj [-544 ]TJ (from)Tj [-544 ]TJ (the)Tj [-544 ]TJ (matrices)Tj 
+-4.34118 -1.14999 TD
+(gated)Tj [-311.29998 ]TJ (with)Tj [-311.29998 ]TJ (two)Tj [-311.29998 ]TJ (and)Tj [-311.29998 ]TJ (one)Tj [-311.29998 ]TJ (neutrons,)Tj [-311.29998 ]TJ (respectively)Tj [64.79998 ]TJ (.)Tj [-311.29998 ]TJ (I)Tj [0 ]TJ (t)Tj [-311.29998 ]TJ (has)Tj [-311.29998 ]TJ (a)Tj [-311.29998 ]TJ (simi-)Tj 
+T*
+(lar)Tj [-343.69999 ]TJ (value)Tj [-343.69999 ]TJ (as)Tj [-343.69999 ]TJ (the)Tj [-343.69999 ]TJ (intensity)Tj [-343.69999 ]TJ (ratios)Tj [-343.69999 ]TJ (of)Tj [-343.69999 ]TJ (known)Tj [-343.69999 ]TJ (lines)Tj [-343.69999 ]TJ (belonging)Tj [-343.69999 ]TJ (to)Tj 
+6.98498 0 0 6.98498 52.85998 326.30699 Tm
+0.00009 Tc
+(104)Tj 
+9.97799 0 0 9.97799 63.33898 322.33898 Tm
+0 Tc
+(Sn)Tj [-468.19999 ]TJ (and)Tj 
+6.98498 0 0 6.98498 98.92298 326.30699 Tm
+0.00009 Tc
+(101)Tj 
+9.97799 0 0 9.97799 109.40199 322.33898 Tm
+0 Tc
+(In)Tj [-468.19999 ]TJ (produced)Tj [-468.19999 ]TJ (in)Tj [-468.19999 ]TJ (reaction)Tj [-468.19999 ]TJ (channels)Tj [-468.19999 ]TJ (where)Tj [-468.19999 ]TJ (two)Tj 
+-5.79669 -1.14999 TD
+(neutrons)Tj [-313.89999 ]TJ (are)Tj [-313.89999 ]TJ (emitted.)Tj [-296 ]TJ (Thus,)Tj [-313.89999 ]TJ (the)Tj [-313.89999 ]TJ (370)Tj [-64.69999 ]TJ (\261)Tj [-64.69999 ]TJ (1219)Tj [-313.89999 ]TJ (keV)Tj [-296 ]TJ (cascade)Tj [-313.89999 ]TJ (does)Tj 
+T*
+(not)Tj [-257.09999 ]TJ (belong)Tj [-257.09999 ]TJ (to)Tj [-257.09999 ]TJ (a)Tj [-257.09999 ]TJ (one)Tj [-257.09999 ]TJ (neutron)Tj [-257.09999 ]TJ (channel)Tj [-257.09999 ]TJ (that)Tj [-257.09999 ]TJ (was)Tj [-257.09999 ]TJ (observed)Tj [-257.09999 ]TJ (in)Tj [-257.09999 ]TJ (two)Tj 
+T*
+(neutron)Tj [-353.69999 ]TJ (gated)Tj [-353.69999 ]TJ (spectra)Tj [-353.69999 ]TJ (due)Tj [-353.69999 ]TJ (to)Tj [-353.69999 ]TJ (neutron)Tj [-353.69999 ]TJ (scattering)Tj [-353.69999 ]TJ (between)Tj [-353.69999 ]TJ (the)Tj 
+T*
+(detectors.)Tj [-360.5 ]TJ (Figure)Tj [-360.5 ]TJ (2)Tj 
+/N62 1 Tf
+7.69158 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(b)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+0.69349 0 TD
+(shows)Tj [-360.5 ]TJ (again)Tj [-360.5 ]TJ (the)Tj [-360.5 ]TJ (intensity)Tj [-360.5 ]TJ (ratio)Tj [-360.5 ]TJ (of)Tj [-360.5 ]TJ (the)Tj 
+-9.21809 -1.16648 TD
+(370)Tj [-64.69999 ]TJ (\261)Tj [-64.69999 ]TJ (1219)Tj [-315.89999 ]TJ (keV)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 115.51298 264.80099 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 121.85899 264.80099 Tm
+(-)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 125.18199 264.80099 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 134.68099 264.80099 Tm
+(coincidence)Tj [-315.89999 ]TJ (line,)Tj [-315.89999 ]TJ (but)Tj [-315.89999 ]TJ (this)Tj [-315.89999 ]TJ (time)Tj [-315.89999 ]TJ (extracted)Tj 
+-8.33018 -1.14999 TD
+(from)Tj [-270.69999 ]TJ (the)Tj [-270.69999 ]TJ (matrices)Tj [-270.69999 ]TJ (gated)Tj [-270.69999 ]TJ (with)Tj [-270.69999 ]TJ (one)Tj [-270.69999 ]TJ (and)Tj [-270.69999 ]TJ (zero)Tj [-270.69999 ]TJ (protons.)Tj [-252.79998 ]TJ (The)Tj [-270.69999 ]TJ (mea-)Tj 
+T*
+(sured)Tj [-311.59999 ]TJ (ratio)Tj [-311.59999 ]TJ (suggests)Tj [-311.59999 ]TJ (that)Tj [-311.59999 ]TJ (the)Tj [-311.59999 ]TJ (370)Tj [-64.69999 ]TJ (\261)Tj [-64.69999 ]TJ (1219)Tj [-311.59999 ]TJ (keV)Tj [-293.69999 ]TJ (cascade)Tj [-311.59999 ]TJ (belongs)Tj 
+0 -1.16648 TD
+0.26188 Tc
+(t)Tj [261.89999 ]TJ (oa1)Tj 
+/N55 1 Tf
+2.34579 0 TD
+0 Tc
+(p)Tj 
+/N51 1 Tf
+0.84199 0 TD
+(channel.)Tj [-244 ]TJ (The)Tj [-261.89999 ]TJ (245,)Tj [-261.89999 ]TJ (287,)Tj [-261.89999 ]TJ (495,)Tj [-261.89999 ]TJ (621,)Tj [-261.89999 ]TJ (and)Tj [-261.89999 ]TJ (735)Tj [-261.89999 ]TJ (keV)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 271.41099 230.21299 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 280.37199 230.21299 Tm
+(rays)Tj 
+-22.93148 -1.16648 TD
+(also)Tj [-426.39999 ]TJ (belong)Tj [-426.39999 ]TJ (to)Tj [-426.39999 ]TJ (the)Tj [-426.39999 ]TJ (1)Tj 
+/N55 1 Tf
+8.63829 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+1.00648 0 TD
+(channel)Tj [-426.39999 ]TJ (since)Tj [-426.39999 ]TJ (they)Tj [-426.39999 ]TJ (are)Tj [-426.39999 ]TJ (in)Tj [-426.39999 ]TJ (coinci-)Tj 
+-10.80499 -1.14999 TD
+(dence)Tj [-483.19999 ]TJ (with)Tj [-483.19999 ]TJ (both)Tj [-483.19999 ]TJ (the)Tj [-483.19999 ]TJ (370)Tj [-483.19999 ]TJ (and)Tj [-483.19999 ]TJ (1219)Tj [-483.19999 ]TJ (keV)Tj [-465.29998 ]TJ (lines.)Tj [-465.29998 ]TJ (The)Tj [-483.19999 ]TJ (above)Tj 
+T*
+(cascade)Tj [-295.69999 ]TJ (could)Tj [-295.69999 ]TJ (conceivably)Tj [-295.69999 ]TJ (also)Tj [-295.69999 ]TJ (be)Tj [-295.69999 ]TJ (due)Tj [-295.69999 ]TJ (to)Tj [-295.69999 ]TJ (reactions)Tj [-295.69999 ]TJ (on)Tj [-295.69999 ]TJ (impu-)Tj 
+T*
+(rities)Tj [-353.69999 ]TJ (in)Tj [-353.69999 ]TJ (the)Tj [-353.69999 ]TJ (tar)Tj [17.89999 ]TJ (get.)Tj [-335.79998 ]TJ (The)Tj [-353.69999 ]TJ (most)Tj [-353.69999 ]TJ (abundant)Tj [-353.69999 ]TJ (of)Tj [-353.69999 ]TJ (these)Tj [-353.69999 ]TJ (was)Tj [-353.69999 ]TJ (a)Tj [-353.69999 ]TJ (small)Tj 
+0 -1.16648 TD
+(amount)Tj [-342 ]TJ (of)Tj 
+6.98498 0 0 6.98498 97.92999 176.47898 Tm
+0.00009 Tc
+(12)Tj 
+9.97799 0 0 9.97799 104.91499 172.51098 Tm
+0 Tc
+(C,)Tj [-342 ]TJ (which)Tj [-342 ]TJ (was)Tj [-342 ]TJ (building)Tj [-342 ]TJ (up)Tj [-342 ]TJ (gradually)Tj [-342 ]TJ (during)Tj [-342 ]TJ (the)Tj 
+-5.34709 -1.16648 TD
+(experiment.)Tj [-459.39999 ]TJ (T)Tj [69.89999 ]TJ (o)Tj [-477.19999 ]TJ (make)Tj [-477.19999 ]TJ (sure)Tj [-477.19999 ]TJ (that)Tj [-477.29998 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 203.11898 160.87199 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 214.22799 160.87199 Tm
+(rays)Tj [-477.29998 ]TJ (are)Tj [-477.19999 ]TJ (not)Tj [-477.29998 ]TJ (due)Tj [-477.29998 ]TJ (to)Tj 
+-16.30249 -1.16648 TD
+(unknown)Tj [-689.69999 ]TJ (transitions)Tj [-689.79998 ]TJ (in)Tj 
+6.98498 0 0 6.98498 159.98199 153.20098 Tm
+0.00009 Tc
+(67)Tj 
+9.97799 0 0 9.97799 166.96798 149.23298 Tm
+0 Tc
+(As)Tj [-689.79998 ]TJ (populated)Tj [-689.69999 ]TJ (in)Tj [-689.69999 ]TJ (the)Tj [-689.69999 ]TJ (reaction)Tj 
+6.98498 0 0 6.98498 52.85998 141.56199 Tm
+0.00009 Tc
+(12)Tj 
+9.97799 0 0 9.97799 59.84599 137.59399 Tm
+0 Tc
+(C\()Tj 
+6.98498 0 0 6.98498 70.62298 141.56199 Tm
+0.00009 Tc
+(58)Tj 
+9.97799 0 0 9.97799 77.60798 137.59399 Tm
+0 Tc
+(Ni,1)Tj 
+/N55 1 Tf
+1.76979 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(\))Tj [-80.09999 ]TJ (,)Tj [-375.79998 ]TJ (we)Tj [-375.79998 ]TJ (compared)Tj [-375.79998 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 197.41598 137.59399 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 203.76199 137.59399 Tm
+(-ray)Tj [-375.79998 ]TJ (intensity)Tj [-375.79998 ]TJ (from)Tj [-375.79998 ]TJ (the)Tj 
+-15.25358 -1.14999 TD
+(beginning)Tj [-344 ]TJ (of)Tj [-344 ]TJ (the)Tj [-344 ]TJ (experiment,)Tj [-344 ]TJ (when)Tj [-344 ]TJ (the)Tj [-344 ]TJ (tar)Tj [17.89999 ]TJ (get)Tj [-344 ]TJ (was)Tj [-344 ]TJ (still)Tj [-344 ]TJ (fresh)Tj 
+T*
+(and)Tj [-290.89999 ]TJ (contained)Tj [-290.89999 ]TJ (little)Tj [-290.89999 ]TJ (carbon,)Tj [-290.89999 ]TJ (to)Tj [-290.89999 ]TJ (the)Tj [-290.89999 ]TJ (total)Tj [-290.89999 ]TJ (intensity)Tj [-290.89999 ]TJ (of)Tj [-290.89999 ]TJ (a)Tj [-290.89999 ]TJ (speci\256c)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 51.56199 103.00498 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 62.45899 103.00498 Tm
+(ray)Tj [64.79998 ]TJ (.)Tj [-438.09999 ]TJ (The)Tj [-455.89999 ]TJ (intensity)Tj [-455.89999 ]TJ (ratio)Tj [-455.89999 ]TJ (was)Tj [-455.89999 ]TJ (0.55)Tj [-455.89999 ]TJ (for)Tj [-455.89999 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 238.24299 103.00498 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 249.13999 103.00498 Tm
+(rays)Tj [-455.89999 ]TJ (due)Tj [-455.89999 ]TJ (to)Tj 
+-19.80139 -1.16648 TD
+(reactions)Tj [-361.29998 ]TJ (on)Tj 
+6.98498 0 0 6.98498 106.06799 95.33499 Tm
+0.00009 Tc
+(50)Tj 
+9.97799 0 0 9.97799 113.05299 91.36599 Tm
+0 Tc
+(Cr)Tj [-361.29998 ]TJ (and)Tj [-361.29998 ]TJ (0.29)Tj 
+/N62 1 Tf
+4.91648 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(7)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+0.69429 0 TD
+(for)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 192.58898 91.36599 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 202.54098 91.36599 Tm
+(rays)Tj [-361.29998 ]TJ (belonging)Tj [-361.29998 ]TJ (to)Tj 
+6.98498 0 0 6.98498 278.95098 95.33499 Tm
+0.00009 Tc
+(68)Tj 
+9.97799 0 0 9.97799 285.93598 91.36599 Tm
+0 Tc
+(As)Tj 
+-23.48919 -1.14999 TD
+(that)Tj [-444 ]TJ (were)Tj [-444 ]TJ (also)Tj [-444 ]TJ (seen)Tj [-444 ]TJ (in)Tj [-444 ]TJ (the)Tj [-444 ]TJ (experiment)Tj [-444 ]TJ (due)Tj [-444 ]TJ (to)Tj [-444 ]TJ (reactions)Tj [-444 ]TJ (on)Tj 
+6.98498 0 0 6.98498 52.85998 72.22099 Tm
+0.00009 Tc
+(12)Tj 
+9.97799 0 0 9.97799 59.84599 68.25299 Tm
+0 Tc
+(C.)Tj [-481 ]TJ (The)Tj [-498.79998 ]TJ (corresponding)Tj [-498.79998 ]TJ (ratio)Tj [-498.79998 ]TJ (for)Tj [-498.79998 ]TJ (the)Tj [-498.79998 ]TJ (370)Tj [-64.69999 ]TJ (\261)Tj [-64.69999 ]TJ (1219)Tj [-498.79998 ]TJ (keV)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 280.99398 68.25299 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 287.34098 68.25299 Tm
+(-)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 290.66299 68.25299 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 51.56199 56.61399 Tm
+(coincidence)Tj [-336.29998 ]TJ (line)Tj [-336.29998 ]TJ (was)Tj [-336.29998 ]TJ (0.57)Tj 
+/N62 1 Tf
+10.58959 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(13)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+0.33628 Tc
+(.N)Tj [336.29998 ]TJ (o)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 195.24598 56.61399 Tm
+0 Tc
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 204.94898 56.61399 Tm
+(rays)Tj [-336.29998 ]TJ (from)Tj [-336.29998 ]TJ (reactions)Tj [-336.29998 ]TJ (on)Tj 
+ET
+/N78 /ExtGState findRes gsDI
+q
+360 0 0 242.87989 51.56219 490.37658 cm
+
+_op? setoverprint
+BI
+/Width 1500
+/Height 1012
+/DecodeParms [null <</K -1 
+/Columns 1500 >>  ]
+/Filter [/ASCII85Decode /CCITTFaxDecode ]
+/BitsPerComponent 1
+/Decode [0 1]
+/ColorSpace DefaultGray 
+ID
+4&l?L2D!9&4GciX;b3/D,s7#Y,"$1=s8W-!s8W-!s8W-!s8W-!s8N[E7Ad^cJ,fQK
+s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8V]*"jISE+FgScLlo7IXnl#sUu/$K
+s/#_0rpgf21LGJ,Ff`i]>6!4N?iATPli![FgANa5^X-B$8,k*9?Ou,nj+mD<rYU->
++5r"M@K%*nL*,@2iVt#"s2Y&H3Vcq)KHGjcI[VoS22G!+fCcoYqu?]^s0(8Y@64*N
+E5MKG=,:Y4s3#Icl1dRD'E25Aq?T%Y2jS/V-jW0A5AsAN:\OHWr&:WurVp66Kg_m$
+Y%d:9.UVO#5+DNjacG?RGZn;G\GbK.I"-r-+?:>>p'?D$+8`q]5P2K.2#mQG5Q?BU
+6rG-,L7JAj$ie2QS,`F7s*psH]tLWJI"21rqDaXVs3q#AqsQKXrH+Y;5OBt*_LK&K
+Yi>[lR&1?[oDY1di<K)bePq<4"qD2\a:'Z4$)#,`I8DU__$1C=k%i1%ZQWZ[*r[,Y
+/cGtSnD<'\s8.<Cs7cQ.s8W)5rI=k/Uo(p*#O-]+gA]gD9D6f@^L5.b6OA4\7=Nak
+fAVFkqcdE[+iYYAr'Z&7s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!
+s7<K@7phh6&.jKo:\j</hs-;Arh'-:s6oaohu!HBs-dkUg4,4MREJd<UAs=pf7,T+
+R3dYmAcH*m;G$obBY/coTS%MI#(fkL?_m^Dli-pds7_Pb?e;MiOC5nSrJHL4nA5Se
+s#Lb)8,KA;Ig<-Yr*&<Rg\4?p\)p=e>5sKgXhPt8s89s"&F<@(s7ek2s3kPc6MI>?
+^GWIofBL1khNud)H[>P_lsQ1KNl3U&gAgZZp[bdg+1.1m&hit/64a$P8J_p9VPl3H
+L(&<7Kco9,n_<a8^RJ^1aOAo:s)76%^]//cs0b/`,p6%%J+VKD^M#J&q^42e.;eiu
+*PZ%GC;'t.c'Rh\ALJ*SnD9U`mHTOgnb+f$5i:PcTD(o(rt#.ircJX!pb0DJp@M)&
+XV9?j]2EQLA$9e#4YL7n#M4]mHsAo*@&_%nife<\n)+*4s7cQ\qpJ\uCZ,iPZMrBs
+p)$@Sp+!?:_B6hub:r\[no3"Gp$uuoV]6fR6/fNTaXreM8aJWE5Gj:l_2$M>TS%Jt
+lJMP((d=Sl]J0Bc8asXts6st&$G!)7%23-B[[$mfm^;rlCGUJ=Y"eQF^Otk1_I(9\
+lrW@b;l-o$Fsj(iKaWM:r[]8K&/WCb:k/;o6O9(j3eflEe_l"q%H,"jdn064Zqhb>
+-*^8?:%uO)ZkM&fs"NKJlRRf6qn:V?#Q>gso!jW$s5.bp7.L;<@4qNjJ,PLHDsH6V
+L+C$BrdtB`o`+2@s8=Q?%,_*("g@sm,2B76*J0#1n,--4O6ce%_(ik&[J]DrAaIJ\
+i8<6q_etqSiR7]Ef%t]u=Jbr5L?eaR*^AV9s4+m^0ZX0r.uH"Rh0fDFe,KUmrf_j2
+(jabss7g$,dKSmMrsUe8^&S!gdgQ)V+:J4%5f"!2S`!;^J(ZiL:'_sAiP,YV&+XV(
+$9`S2'-KNgqV1Y7a4jmTn:Q25DLJ@9s8BWcQH-2igf&WU'#XD=\$08+s8VFP_tX-i
+0XeIj_1K_7^G;P(/!]u?0B[*[5PQp*n:UYA&A0`)VtpqA$hR[gd;JmMDu'qBJdajc
+dLH52r0dTPs%W>#rP/(*+8^QTr'0lsqgUDWrnmG,i5,EI+7K)Vg\Yf9(k8dIi8;E_
+p>=^(0`MSG:Z:3K&+OF??bqN\@b*c)L\:];s#X1es8!jHEaSkDp]'a9S"BW2s5/n7
+H[^-)s)2FYU`O&Tnn*Fb2HTpp&D1+k5=)4Hf9/a25I=2Cq!O50#Q$c=J,&Zn_%GQ(
+pdnid.f]@GrVuhGp]'iY)qY+>4b&/O_uIXSriP&WO8nFR\QHR5Y%Re4RhCFW\,ZL.
+?16oor$DB,@nsK2IAFXXs85dps8Vd/s8GWWITI0Ps8Q*qfDk`r[%2RDo<Trsqd9;O
+mn&6?0Z%2srl,R[R'6Pi@[_*4s4S(Xs84Rcs87BHs8W-!s8:A2s8N?hs8PCbs8"$[
+s8UFgDu]jcDqG$cs8W$Es8W+IJ,fQKs8W-!s8W,ls8Vf@s8Vur4$WcBBmuWQpd?$D
+O8o7[s8TM*s8G7_huE`Vs8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!
+s8W-!s5ud_J,fK]#XA@heNa*6cq'Pms8VqKs8W,!^]4?,=9&=#^]4?6s8W-!s-/$4
+^]153oY:G+pXfHFql9\rs2?Yks8JAbrVd^.s8W!N9J?;B#`ns0s8W-!s8W,jO8o5,
+0E;(P-ia5Hs'Pg(V-j8+s8DusQiI*cpg='lVuQ`j6T>&Es8T;&s8Vk$s8W,]QiI*c
+s8W-!s8W-!s1eU6s7lVbUAt8ns8W-!s8W-!^]4?6ouLOZLKkr$s8U7&JO9D:s8N3l
+ornDqs8Gf'VHdp:s8Vn"cU!'\s8W%IPMcE?s8W-!s8W(3^]4?6s3q#Js8W-!s8W,R
+s8W-!s1eU6s8Vurs8W-!J,fQK.I[:)1i0r,s8W,tJ,fQKs8W-!s8W*@s8W-!s8W-!
+s8W++s8W-!s8W-!s8W-!s8OGU+92B@s8)cqs8W-!s8W-!rr<#us8Vmks8W-!,6.\P
+s8W,tq;))<s-9)Rs1e4+s8W-!s8Vfms8N&us7cQnqu?]rs8W-!s8W-!s8W-!s8W-!
+s8W++s8W-!s6uBTs8W-!q)E'fs8W-!s%EClrr<#uK)bbds6p!fnc/Xhs8W-!s8W-!
+s8W-!s8W-!s8W-!s8OsCs8W-!s8E9gs8W#Bs8W*ps8W++s8V^`"98E$s8W,k#TNe#
+^]4>cs3ATedVo0cs8W-!rh'5js8SU=s8T-Ls7n8Hs8P<5s7H?krVuots8W-!s8W-!
+s8W-!s8W-!s8W-!s8W-!s8W,bs8W-!s5:Zlp6YgZs8W,&s82irs8W-!s8TNnA<Qum
+3a_pes8W*''(>l#s8W-!s7RuCs8W-!s8W+7s8W-!s8W-!"q/O#s8W,u5em@!s2WUg
+s8@H+s8W(BTE"rks8V/007X$%J,f9Cs4@58s8VEbSr"9`s8W,>s5b@&s7f]Go8iqO
+s8W*ps8W%%s8ODFs8W-!s8I$<q?aq:oecVss8W-!s8V_DJ,fBFs8W-!s8W,9Du]k;
+s8U>Fs8RTKrkJL5s8W,&s8W-!rAXcVs8W-!s8W-!rr;u4s8W-!s8W-!s5^3Qs8W-!
+s8W-!s8W,8*.S"gs8W-!s8W-!hk=B^s8W-!s8W-!s8W-!s8W-!s8W-!li7"bs8W-!
+s8W-!Bb`bW^]4?6s8W,s0E;(OqI'X/s8W+E07*Zus8W-!%4+gMs8U]brc.u<s7m9&
+-,9-H(eJ?6s8W-!s8W-!L%PEFs'^LF;ZHdss8W-!s8W,i1+VVhrkp6ql+d8us8W-!
+s8W-!?iS#?[K$:,s8W,j&-)\0s1eTO6i[2ds8W-!s8W-!s8V#nHiO-Gs8W-!rbB4D
+TE"rkj7iTRs8G>ls8W-!s8W-!s'Pg+s8W,u$ig8,s8HOdJ,fNlA2CFhs8W-!s8W-!
+jKncAjRrQP=!S1Pj@\&(s8VX3s8W-!p]'.8ht[las4?ais8W,&s8W-!s8W-!f`Jqg
+k)rO?s8W-!s8W-!p](9is8H(Uqu?]rs8W-!s8W,ns8W,ls8Ke5s8W-!s8W-!s8W-!
+s8U^Ns8W-!s8W-!s8W-!s8W-!s7Q;M^]4?2s8W-!_Z0Z9s6p!fs7(PVr/SDhs8W-!
+s'Pd/EW?(=BmJ>1s8Vce^An65s8W-!s$Qhdp=Iprs7qHMs8W,hqZ$TqkJ.&sr//7H
+qu?]rs8W-!s8W,FJ,b#uYQ+K,s8W-!s8W-!k<K"Ds8OAEs8W+l@=S=Cs8V5bs8W,u
+s8:Jus8JYjj[]@GO8o7[s8Duts5j:\s'Pg+s8VQfs8W-!s8W-!s%i[ps71O:s8W,8
+;ZHdfMuWhWs8W-!s8U1_jF@1Uo9]LWs8W-!s8W-!s8W-!s8Vils7cQns8W,pg/XdF
+s8N9&s83JLs8W-!s0#f0s8W-!s8T6orVuots8!i;s8W-!s8W-!s8W-!jH'?@s8W-!
+s8W-!s8W-!s4@;Ns8URJp`_s&s8W,s5QC^I$ig8,p](9ns8V4M^]4?6rb6l^jGT)f
+s7:I7s8W-!jmW6Ls8V`ks8W-!s8QCIs8W*B8,rVhs8W-!k@+DjPMcE?s8S\*s8W,u
+s8W-!s8W-!s#9u:FSl*us#X=is8W,u@fQK.fDkmNs8W-!s8PmiJ,T@hJ,cGHs8W,b
+s8W,&s8W-!s8W-!s8RS20E9Z(s8VjYs8W)us1s3bs8W-!s8W-!s84?lb6@qGr9U<\
+s8W-!s8W-!s8W-!s8W-!s8P.[s8RTKp](8Cs8U":s8W-!s8NK,s8W-!s7$'cs1eU6
+s8W-!rr<#us8W,os."T=ru_:@s8V/0rsE%]s..U2s8W-!s8W-!s8W,Zs8W-!s8W,u
+0E3l9s8W,s0>mhis8W-!s8W-!s8W-!s8W-!s8N&us8W-!s8W-!s8G7_s8W-!s7lWo
+n5DiGR3Vb3s8W,slm_u7q7lt0s83JLs8W-!s8EE+s8O2@k<IGb^]4:U^]2POs8W*p
+"EFJAs8IfRs8W-!s8W,u^]!nVs7qTQqu?[ls8W,k5QCc`s8NK,s8W*@s8W-!s,m?]
+fDkmKJR=jqs8Ke5s8W-!s7--hs8W+g?iU0+rtk_8s8W,u^]4?6s8VEbs8W-!s8H@)
+rB(nrs"qLjs8Tk6s8W,smluU-s8W,8&c_b.s8W-!rr<#us8W-!s8Tk5+92B@l2Ue`
+s8W-!i4o<iZ2ak(J,fQKs8W-!s8W-!rWqQas80\5s85+]s8NK,rsSl,s8W-!s8W-!
+s8W-!s3UfGs'Pg+^L.$@fD3Jes8W-!s8W-!s8W-!s8W-!s.)CSs8W-!qgp'ms8W,:
+s8W-!s8W-!s8W,iUAt8nr/l9Js3q"#s8W-!s8W-!s8W,Ws8W-!s8W-!s8W-!s8@HI
+s8W-!s8W&rIR!iWhuE`Ns8S\*s8W-!s8U;Ms8W-!p]#aCs8VTgs2+g9+92B@s8W,n
+rt#/0s8W,rL]@DSs8Vj=O8o7Y=8kGQRK*<es8RlSs8W-!s8W-!rI=kIs8W-!s,R?`
+s8W,uEW?(=s8W-!nc/Xa,EMm)c<pVOs8W-!s8S\)*d[E^s8W%Is8W-!s8V-Zs4@;N
+s3UfDO+730s8W-!s8W+KILH2Us8W-!s8W,u$ig8's8W-!J,fQKs8W,>s8W-!s8SJ$
+s8Tk3(]XO8s8W-!s8W-!s84PMK)blNs7fN4*rl9?s8W-!s8W-!s4@;Ns8W-!s8W-!
+q#CBnrsSj\s&f=$bJ4)WnA#!ehuDOLs8F)^s85*us8W)5s8W-!s8W-!s0(C2s82ir
+s7!dcTE"qRoABTJrVuots8W,hs8W-!s8W-!s8W"(s8W-!nF43lTE"p0G[LLNs8W-!
+s8V'Xs8W-!s8VWrh_r7Lci85r&-)[u?bLshs"hFifDkmNs8W-!s8VciO+730s8W,q
+J,ed5YCHTPHN4$Fs6$Tcs8W-!s8W-!s8W-!s8W'_s8W,frr<#us8W-!s8>1Ns7lWo
+s8VRqs8QI+s7cL7s2Y-]s8W+Qqu?]rs763is8Vins8W-!s8W-!s8W-!s7cQnrI=kI
+s8W!.0E;(PJ,f=7s8W-!r#bt=s8O2@s8W-!s8W-!s7--hs8U^N+#s<#s8URJs8W-!
+s8W-!s8W-!r"oD5s8S/[s8W-!pg=($s8W,^YQ+Y&s8W+Ss8RTKs8W-!U&Y/ms8V!V
+s6K^b+UA&IJfk$grI=kI$ig7h^-Y'ai;`iWs82irs8W-!s8Vurs8V$WN0"#=s8W,V
+s6K[!s8GkCru_:@s6K^$ngjb>5PY9Ys8W-!s8W+Ws8W%Is82ir1V`tis8W-!r]gG_
+s8W-!s8Musr"+AXa8c2>s8W-!KoeUuJ,fQKs8V4Gs8U":euR^.s8W-!na)$\n:,EW
+s8W-!r%J$E*m"*T^\LD"i4o%os8Tk6s8R]NW/pu;s8W-!s8W&ts8W-!s8OeQ^]4?3
+a++-MHi8GLQiI*cs8W-!s7lWos8W-!rI=kIs3&UcruVcds8S-Us8W-!ae*nS?iU0+
+s8G7_s5X.Zs8W+[j7WGhruSrT]RTt]rt#'Xs7/8MJ,fQKs8W-!j8]/Zs8W#3raG['
+s82_6s8W,nrYL@is8Ke5s8W-!s8W-!s8W-!s2XI*qZ$Tqs8W,>s8V!Vs8W,\=9&(5
+s8W-!s8W-!s8W,uBE'(R+2J$Y+90EWs8W,rs8W!5j8FK)s8W-!s8W-!s8W-!s8VkD
+"@rLls8W&ls8GJM(]4/UrsSjYJ,fP2s8W-!s8W-!s8W,Zs8W'__Z0Z9s6p!frV,j^
+s8O2?9#(/9s89J:s8W-!s8W-!s8W"Ha8c/Ei/U&!YQ+Y"q1o"Ms7dh"_YsN7s8Vrq
+s8W"Hs8W-!s8W-!s6K^bs8W-!+90CXs8VEbs8Vcls7h*Ds8W-!s8W-!s82iq2u*;%
+Z2ak(s87BH+92B@s8W,sJe.n]s82iraT)0fs6K4na8c/:5QALus7h*DrYP&o+2@@p
+s8W-!s8W,u73DO!s2Q5ZG[LLNs8G7_s5D#upYXqZ$GGYQs8W-!s8W-!p&E&UY^cWO
+s5lQGs8W-!rs/T(s7QEes8W-!s8QI*5QCcXs8W-!]J'2;#QOhFAWQa*s8W,u5QCc`
+s8VQas,-jVs8W-!s8W-!s8W-!$ig8,s0)5fHiO-)s8W-!iICi/s8Vln+92B@rVuot
+s8O2@s58nss8Vc+r]gG_L[Y9C?XLSJrr:mRI)H!Es7lQms8W-!oKW-gs81'ss'Pg(
+J,fQIJ,fQ-p](90s8W-!s8W,[a8c2>s8U!XoR@70s8N&t5QCc`s7QElp$;YXs5W/s
+&-)<Ps!*?5s!8ce^*!C6J,VP0L&_2Qs23mss7mW6s7cBili7""r]#E-s7mc)3;u/B
+s8W,njraX$J,fIss5j:\YQ+Y&s8VRqrI<i%O8o7[s8GC#r."bB#,2(ss8Vhss8W"d
+s8Vloj;9!0A,lT.q1g*.rVuo3#`o!/#M9"UrumX,rVu3`q%<Z+]mp%Z0A$+T`urqt
+j,dMqs7;<OfDYaLr."\fs8W"PO8g>-J,%Xqs87?ia8c1Es/_0-J+*ES^]4?6r^/sN
+jraX'^]4?6s8W-!s2\Sts8W+*s8W-!rr;u<s8U#-s8W,sJ,fQKs83]5r."bE&Kh&P
+5QCc`rYPV7KE(i=+!9,7s8W-!s8W-!s8787J,fQKs8W-!s7QElq$%nH"TMj/s8W-!
+fDjb.^]4?.s7cO8s#C&Ys8V-ZjraWp%TrY)$31%_+8gWgp&G'ls8W-!s!Bu1s2Y0>
+rr8'43=pPX+Ha^rqr>Tos8O7,s8)cps8W-!O<B$[s8:pWs8W-!s8QAcj;<:MO8nu\
+rZ@6^s8W-!YQ+S$s8W-!j=(&os8W-!s7--hs8W-!rUpMWqL>Fd=`OF*s8VmBs8W-!
+s8W,Ns8@HIs8W',J,fQKp&Bti\KUbJYQ+Y&ruVLGqu?-bneoLJrueiOnc/Xhjra-n
+s8U.*O+4q81%G_`s'Pg+s,nK(+92?f5QCGi5QCM-9Rm*Bs8W-!s87EMr=399n,Dp>
+s,-jVs8W-!s8W,u7$%BJs8W-!rk%k'lf%@5s8V&]r."SCs8W-!s8W-!s8W-!s82i"
+s0)J&OU(pds8V$/s8W-!s8W-!nb`@dngNh]s8W,tmuG0_s8VnM?iU0+rn$**s8W-!
+s8W-!L]@DEs8W-!s1UikIp_aGn$W2q?hOHu4U:18s8U0trI=kIo#Le1s8W,Ns"49N
+hu5jTrqQNn"oNr_q#C@9&HDe1s5X.Zs+gXSs8W,u5QCc`huE`VrkJL5s8RfQs8W-!
+s2[M+kJ<5Zs8W-!pZqkBIisCA5@=Hjj8]/N&-)Pls8W-!s4@/Js7h*Ds7m4Us&f<k
+a/groYEBt8s,W=n^Q<,WJ,fQKs8W-!r57juJ,fQKs8W-!s8W-!li%0Ns1eU'^]4:A
+s8W-!a8c2>s8W-!s8Vcls7fIWr+&+ns7lW_s7.!Ki;['"s6tO<s8W-!s8W-!s4PHm
+s6p!fs8QFN+91n!s53>Gs8S/3s76`8s8W)5p&G'lK)baus8W,qs8I$:J,fQKKE(t`
+qu>:<r]gG_+CY<MrI=kIs8W-!rr<#us8W-!rr9V1s4@;>s8W-!s8W-!s8W-!,9At/
+q/?-0s0)9dJ+CY[s4@;Ns8N!^O5o^/s8W-!s6ol;3=p]?s8W-!j2$6FrsK(8s8Vrq
+s8W-!s5ZK:6i[2draGiu%SVBPs8W++s8W-!0`V1=s8W,pYQ+Y&s2e(:s"?J6s8Vc^
+rr<#WPX#3Js7fsos8W-!s7!f's'PRFn,N(\s8W*&s8W,Xs2/4Ds8S/[s7/PWs8W-!
+s8W-!s8)cqhuE`Qj>d2*_uKc9s8S/[s8W-!s8NIVs24m:s8W-!s8W+'s8W-!r0.0\
+s8W+Ks8UaZ4obQ^s8W,ns8W'_s8W-!s8W,gs8U.m5QCc`s8W-!rs*4ert#/0s8W-!
+s8W,tJ,fQ;s8W-!s8Vcls8W-!s!Bu1s2Y0>_uKc:s8W-!s2^t=i4o<l#F>DajJ2bT
+?IrN8s6Y=9s8Vlo"onV;s1s3bs8OX"s8W-!q#CA$s8VVMrsEH=fAdFTH&(s#ru_:@
+s8W-!s8W-!YPu<:s8W-!rkJ<qs8B/$s8U.>nc/Xhs8W-!Jg::HJ,fQKnA##"s8N&u
+s8VEbraGj,O8o7[s8F,?s24m:s8Tes56(Z_s,[3[s7cQns8U;-rX6dHs8W-!s8W-!
+s85+]rZBd"plG=P?iU0+s8VJ9s5oCBs8W-!s8W-!s8W-!s6K^bs8W&t+91C<J,_>)
+jcBG^s8W-!s8W-!s8W-!qZ$TqK)QSds6opts8W,8!rr<#s8W-!s1eU2?iU0+s8LXM
+s8W-!s8W,os5X)Cr]f$7s8W-!s8W-!O8o7[qu>^Sci=%Fs8W+Ks8Vrq#QO^Os8W,&
+p](9ns8W-!s2Y0>s8W-!s6K^_5OEt#rZD%[s8W-!p:e$9+9/PE+5+^7?XNR-s8W-!
+s1s3bq#CBos8W-!fDkleJ+15P^]3j(r.!c,s8W-!ru_:@rk*a\s8G7_s8W-!s8W-!
+s8W-!@))aAs8W-!s8W-!s8W-!rNH7erkJF3s8W-!r."bHs8W*@lg)Uks8W&ts8O2,
+p]#aCJ,fM_s8W-!li7"bruW?_s8W-!s8W,sJ&h<`s8W"Hs8NOXrrld0s'Pg*5QCc`
+s8W,8J,f<Ds8W-!s8W,u5QC^Is8W-!s8W-!s7/,Ks8W-!s2Y0>s8W%I$GZSTs8W-!
+s8W-!s8VEbrs/T(s8W,hrNF9Aa8c2%+92B@s8W-!s,UOes8W)Ms8W+[^]4?6o`+sk
+s5X.Zs8F)^s8W*@`NOdks8U-[p:pGGrVuots8W-!s8W+Kr."bHs8W,ns8U(<li7"b
+s8W*0s8W,Ns"H\1s8W+[s8N&Ys8W,fs8QI+s8S/[s,ZXKs87BHs8N9&s8W-!s8S/K
+o#Lckr]gG_rr<#us8VJ9s8W,Ws7r(4s7lWSs7h*DgAh-N@K5Bfs8W-!rI4G>s5X.Z
+s5X.Ss8W+Ss8W-!pf6<5j4F>2a?fTNs8W,bs8W-!s8W&tqZ$Tj0E;(Pru_:@gAh3Q
+L%s:"s8W-!s8W-!s8G7_s8V-Zq#CBos8W-!s8W-!s8QI+s8Vlos8W-!?iU0+s7lTF
+s8Vcls8W-!s8W-!s'8Yis8TnIs8Vins8W,bs8W,hs8W,hs8O2@s8W"HhuE\\YQ+Y&
+s8W-!s8W-!nbdn:s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8Qm6$ig8,s4[MQ
+s8W-!nc,fms8W*@s8W-!+92B@s8W"Hs8W-!s8W-!s8W-!s8W,Vs8Ve4s8W-!s8W%I
+s8W-!O8o7[s8W+[s8@H-s8W,dJ,fQKs8S/[s8W,Zs8W-!s8W-!s8W,rs8W-!s8W,o
+s8W'_s8U^Ns8W,dJ,fQGs5TZ0?iU0+r]gG_r]gC*ScfT(s6K^bs8W-!ohYVfs8W-!
+rkJL+7.($Ss8W-!j5^0kiF+\Fs8O2"s8W,sImAhd\,ZL.?iU0+s8@*?s8W'_aN+>\
+s7l6cfDkl3qu?]rs0(J_s8V'Xs8W-!s8W-!p](9np](9ns87BHs8N&us8W-!rb[_r
+Y!^:Fs(hZ7gAh3Dgjl2b2Lkc%s8S*Ds8W&h8.Yb#s8W,u>F3Crs8W-!s8W++s8W-!
+s8W-!s5tFfq#,^B^]4=pr]^,WrNH8$s7lWoFoVJKs8W)as8G7_s8Kif^]33ks8RuV
+s8W-!n6phHs7lWhO8o42s82irq#=_$s8W'_s8W-!s8W-!rrbjls8W,sJ,fQKs8W-!
+s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W)5s8W,ns8W-!a8c2>s8Qm7s8W"H
+s8W-!s8W-!s8W-!s8W-!s8W-!s8W)5s8W*@s8W-!s8Vrqs8W-!s8W-!s8W-!s7--h
+s8W-!s8W-!ru_:@r."bHs8W-!s8W-!s8W-!a8PpcYQ+NMs8W-!s8W-!J,f'=s8W-!
+s8W*@s8W-!s8W-!ru_:@li7"bs8W-!s8W-!s8W-!s49$=aHnY.N/8c'>f`93s8W-!
+s8W-!s8W-!s8W-!s8W-!s5XMpg1uqhJD^:6"u8Hc"")SS5nXB+RV%4?+rJLGSEZ-V
+L,_JP_@.R'0S<2S#V_]^&7Gf4gI-g;DjL#dE9,iT-LDEdU2JRNLM2eG6/[=$#W@8=
+i.95tiD;hIBt-F\<Bu,F+E(;EBf;9ZUtVK6dVW$e-L![C[0te+rNr&r'-=,9Ip8hE
+>HNVZY/,'FJ+pA=[_)5rJ%4`kY8.)\T<GBGpSI?8^[rWJs8U^DYN"gDp[5^Js'JNW
+iVrk\qYshSpd!a:s8$+$0D^1us8)c[IBRh*rr)\#hb*qKldr>f%.=.lrr9aH>4qab
+938=r]DqFDn'ZNiIF>n1FoJe%YPUp6Y3O_BqeL]3[Ja>,YL<I!Ur,gQ@>(+B(e]Sr
+@ALeJ@A'!'6l4fU;\[2*>88(lnZc'IBr7?QBs26O5f!O*$kP*X_$D`GJd`;\C'G#D
+"p9ATQ=3l-:[9ej0E:SP*$\=F,D8f]dI_Qe0S9Wf_I3Y;C&Kk0W-5mD[YqU=TUk!4
+krg<jA.]-r%FcNo^9jJpG3dV,?`ml(O'VeOf4fa#qYr*Zg].<<J,A"#\%_2.,_,Le
+?Ih@.Y1g;^L(`-Sj>:4Q[Q"1(fa'dLdfkIAZI05_YHA[A/Ks&8=MZLZ=AYXl!$DU~>
+EI
+
+Q
+BT
+8.97999 0 0 8.97999 447.68699 669.39599 Tm
+0 g
+/N79 /ExtGState findRes gsDI
+(FIG.)Tj [-279.29998 ]TJ (1)Tj [0 ]TJ (.)Tj [-390.39999 ]TJ (Background)Tj [-279.29998 ]TJ (subtracted)Tj 
+-1.33329 -1.22219 TD
+(1)Tj 
+/N55 1 Tf
+0.59968 0 TD
+(p)Tj 
+/N51 1 Tf
+0.57978 0 TD
+(2)Tj 
+/N55 1 Tf
+0.57978 0 TD
+(n)Tj 
+/N51 1 Tf
+1.58139 0 TD
+(gated)Tj 
+/N62 1 Tf
+8.97999 0 2.49398 8.97999 494.15798 658.41999 Tm
+(g)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 499.86799 658.41999 Tm
+(-)Tj 
+/N62 1 Tf
+8.97999 0 2.49398 8.97999 502.85798 658.41999 Tm
+(g)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 517.56199 658.41999 Tm
+(coincidence)Tj 
+-9.11439 -1.22219 TD
+(spectrum.)Tj [-905.89999 ]TJ (This)Tj [-923.89999 ]TJ (spectrum)Tj [-923.89999 ]TJ (only)Tj 
+T*
+(contains)Tj [-334.19999 ]TJ (events)Tj [-334.29998 ]TJ (for)Tj [-334.29998 ]TJ (which)Tj [-334.19999 ]TJ (the)Tj [-334.19999 ]TJ (two)Tj 
+T*
+(neutrons)Tj [-779 ]TJ (were)Tj [-779 ]TJ (not)Tj [-779 ]TJ (detected)Tj [-779 ]TJ (in)Tj 
+T*
+(neighboring)Tj [-1071.89999 ]TJ (neutron)Tj [-1071.89999 ]TJ (detectors.)Tj 
+T*
+(The)Tj 
+/N62 1 Tf
+8.97999 0 2.49398 8.97999 453.80699 603.54098 Tm
+(g)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 459.51599 603.54098 Tm
+(-ray)Tj [-459.89999 ]TJ (gates)Tj [-459.89999 ]TJ (were)Tj [-459.89999 ]TJ (set)Tj [-459.89999 ]TJ (on)Tj [-459.89999 ]TJ (the)Tj 
+-2.65058 -1.22219 TD
+(370,)Tj [-270.19999 ]TJ (621,)Tj [-270.19999 ]TJ (and)Tj [-270.19999 ]TJ (1219)Tj [-270.19999 ]TJ (keV)Tj [-252.19999 ]TJ (lines.)Tj [-252.19999 ]TJ (The)Tj 
+T*
+(spectrum)Tj [-565.59999 ]TJ (is)Tj [-565.59999 ]TJ (a)Tj [-565.59999 ]TJ (sum)Tj [-565.59999 ]TJ (of)Tj [-565.59999 ]TJ (the)Tj [-565.59999 ]TJ (three)Tj 
+T*
+(gated)Tj [-257.5 ]TJ (spectra.)Tj [-239.59999 ]TJ (The)Tj [-257.5 ]TJ (1079)Tj [-257.5 ]TJ (keV)Tj 
+/N62 1 Tf
+8.97999 0 2.49398 8.97999 540.96199 570.61399 Tm
+(g)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 548.98498 570.61399 Tm
+(ray)Tj 
+-12.61349 -1.22219 TD
+(probably)Tj [-595 ]TJ (also)Tj [-595 ]TJ (belongs)Tj [-595 ]TJ (to)Tj 
+6.23599 0 0 6.23599 539.36199 563.20999 Tm
+(105)Tj 
+8.97999 0 0 8.97999 548.71699 559.63798 Tm
+(Sb,)Tj 
+-12.58369 -1.22219 TD
+(but)Tj [-593.09999 ]TJ (could)Tj [-593.09999 ]TJ (not)Tj [-593.09999 ]TJ (be)Tj [-593.09999 ]TJ (placed)Tj [-593.09999 ]TJ (in)Tj [-593.09999 ]TJ (the)Tj 
+T*
+(level)Tj [-334.29998 ]TJ (scheme)Tj [-334.19999 ]TJ (due)Tj [-334.19999 ]TJ (to)Tj [-334.19999 ]TJ (a)Tj [-334.19999 ]TJ (strong)Tj [-334.19999 ]TJ (con-)Tj 
+T*
+(tamination)Tj [-417.59999 ]TJ (from)Tj [-417.59999 ]TJ (a)Tj [-417.59999 ]TJ (transition)Tj [-417.59999 ]TJ (with)Tj 
+T*
+(the)Tj [-332.69999 ]TJ (same)Tj [-332.69999 ]TJ (ener)Tj [18 ]TJ (gy)Tj [-332.69999 ]TJ (in)Tj 
+6.23599 0 0 6.23599 509.31399 519.30699 Tm
+(105)Tj 
+8.97999 0 0 8.97999 518.66899 515.73498 Tm
+(Sn.)Tj 
+ET
+/N78 /ExtGState findRes gsDI
+q
+228 0 0 332.15989 323.71078 107.63708 cm
+
+_op? setoverprint
+BI
+/Width 950
+/Height 1384
+/DecodeParms [null <</K -1 
+/Columns 950 >>  ]
+/Filter [/ASCII85Decode /CCITTFaxDecode ]
+/BitsPerComponent 1
+/Decode [0 1]
+/ColorSpace DefaultGray 
+ID
+4*)ND+P+4=*'SoY?J&P5D&,=KIp_mH-2tZ_oWf#7J5Q!%X=p:N,ldcAs8#/Qs8D,Q
+lrX'km=0j%O,s>@s8W-!s8W-!s8W-!s8W-!r`P)%s*jushm`X#hj.\9:XD&mn(72,
+J'r98Dqb45n6>J-.hDGf$\JD4r=H74&uYTldf9"=It#,Krl@)!rk(+(iIW!<?i;YV
+0E!Q-+92B@s8W-!s8W-!s8W-!nn\_!r_8Q$gR1lFKG[#SRX_(%U3Q]0\o7Gns53kC
+J(O_m^[`LsqHs:&_3"a_b.%DZ;Le`Hrr<"[hu8uBI_Y+hD5I+N`FX$CrYSjCqcI9<
+Ef\oi(\j'ks8W-!s8W-!s8W-!s8W-!s8W,u'E(/4&+ol`"9_O#rNGknfDbg%s*sn9
+JC!V-?,L%A$l>bTo(KP.":tCYlWla4ruF<%J,TE"J)LslZEO#krn%12[J40Z(gm=C
+s8W,u<tc,*e2)7Ea!Sq:r$T7CC,GG'fr*2DITHdmH7.%RqL/ClDf<O"qgQ`AB#"'>
+a4pXggL&]t?iS*Apt.2n?^"m7f-9S-P@94SLZ,EFLYC'9'I"MAR>(-]k@1*u$m2C#
+n6l:CB4=0tS1gW4k_nd=4G+I62kkF]%gW'H-IEKu+9/7&duWi[cp>G?qU0bQ%"@)`
+iBM1o>4qZ,D>3:A$p+Yi4aAW\s,);[mbt#]?f9:M_M[Zt6Qn?;^W+%6b01].q:M?Q
++8+C\nA4rKUVRL[ZC_C]riQ4OFp&\2J*15B.j+N#r%dtKrOQf&rIg`.ZUr"p^LE[N
+:]GhJph@2/ng\39r%MF?S\-)^&&_hPohYN/hMD^\-Z@&CH3=\MJ\7HS&,6+cU*$kr
+s6]]5k?tLJf,t$2ouXdIAUja3rki7Gs'^]PQ5]_2oS>2[dN@oW>7^5PpdgD>pk)n=
+gK=;Y46^V]Q<@3T0@E.3fU-0^02M2aGmE8ZlrP=H8Rt54$Nk*OL&R@\g/n=S$m?_L
+Z2ajUs8:ArBfCVep'KCmgXGjF&0kbnr%O>O-1;D^q@2N==USC>]HG8P4&q0t*M&)j
+SZ+6TFM_["]H=oPSi$kCfk]4<"<1?qKAXtn""X1o$b=n':UU1k80Emd:k.s5Jo)c>
+HX9D-Xs<tCqe9KRp[f(mlrFsQf2)Cs_rOm6hs9ZJa5?RV/Vht)+NDF9^,TQZoUW1h
+Z'E+b^]230$)dF1%O5\;OlKlVF0SOq_cG;>42j"\,I!H/^\QSK@>\P&rcSWd'0A_g
+g0l:`k@HogAaHh%(em?dSYAE*Y_KhMKHE9*-s<'_GXR/m0[NOMO8L,Ms3fg)pA`4m
+S(9gUmFM74m<VYe/C*"qb)M;X%%q6BJ@KCg+U#[dNZ(3D9IqkgSrX3<:#uDJ5s?+B
+Y.YHh5[X#bhg\ZGofE?q?f#rS),)m%s+V?aIq"'1m_WP@'DLjbecKd)gb?KcgD9K'
+qu+RDhArd?fN[>R`uiIg!6.\a1U1SjSZ6Vkn@EPrJZlBQ[Er>8Do,p9DtL`XQh2*n
+[Y"5PR'.G)nbUu7=Z0)@n:COLEi'NM3s5`Zs2+?Ps8=VLID>T)9%X)Ms8VX!)_(eo
+mb7ZmYg?T\<s&OAlo"9gBA$,efMCHbrC>[kA[HYPm$.N3/<FDp@/TCgYb<lqSWkrM
+Xb?X>HD5ZQfAN\k.4+V_j)$FT5N*mOJK"lo[-uH?f2)F]s8=Rb])Qd9huE`Vf3`=d
+oTIj0fWXs<?smEXUU&N0S[kr-G,qK"62Pc9'G>(%o[f(K8Ykj4isW4##[p%.&q)[M
+<&gf,\7%]CpBZlY@=N7/I<tqg?XJloqd95-jZl;Mn6j#PhEV&?^]4>1rVtSAhs>jO
+L&T^!M#[MTs8W-!s8W-!s8W-!s8W-!s8HO8&U90AaZN#_;],`IMdNIp>UTBH9iXLg
+0<1cFWi@Gsn>f9;$5T*=qYL6k'I%&=:l15:9*gpb7)t`c#qbagJjdYJAd4SK4OPi@
+c,I_+Sm[$U:n;-K4V".j$UWfb8f"?[iZ2]>f,%V+a'W!YoiutS^E,m]FBgsX*O4\1
+NY>:NG3V^;niQkIV!3""2ko]k::0pGs/,FXd]]P?SU/.QI6[B'oTaq'IpI!ms7)rc
+obI=1s8T2(^\qs;QiI*bQiHON?iU0&?iU/Xs8W$Ds8@D5s8W(bs8V%2s8@@Ds8@F?
+?iRlh"o[$Pl#m%"Qe@'8]RJ;rIun!js85pO"C0RRrXj6\I^*8[qHs2L8,rVe[gNUC
+?h26A%57C.s,Ip_(ek9liIiA3BLG<p"<p'dNZpI_s8W-!s8F3,s6"M[.a3kB.2aQC
+MaXK4JV4Iu&<\RT?O;DXdoH%h<7*d]?U`9tfMl,0#WAB+D0<%)?iO-SYb;[Okug/M
+;$9F8WpH=)hI*/"enGsS)E.d-4W@d[_T^XT@n%;#`fi^*aE0"#&(W:V\6NAVZ#Hpu
+RrGn;rkJ7[O5n=KqGM^l9-_Q"=Y=DeGX^AiTB_oE:%[X!f7+75?\S!9rNE&!V>Yk.
+2db$J<gW[us/"t0l$<a1YPg*\J*8OYs8UO>^\#/bs8V>0?i",:p&C\u0E$;Ps8P`f
+^ZbpdFoVH+WXJ]']Hq@)s63ltg.?[E&D-Mhs$R-I&4hEcqah>BqSd?7*In)2r.":X
+?(dtmq1hW@Z-r['huEAVdoG`]S];-ML*8At4ue@SiZ^@<s8W-!s8W)d4sU+'gR2)k
+&7Gh.K`)N(aU\7N#1+K2l`^8:gY;E$s8W-!s8W,?^a9(Ps8HT4G,_%3kA#:rSp%%3
+s8W-!p](9ns8UMh^]/`^s3a+'^])9Y7AZYp(g(SO0SD-S5QCc`r0r]T*N5"n+[gJ]
+do>]s1UL73qcuG0%IT'Ms*R^_qt0pdW(C@n-Q1E$TYU^a_#l&r`NLsc;,&8;-]AJt
+0BiZP@0b`rVm'8hJe(022#i6Z5>Ee"/Nl6NTCbn4-]JeZ$l0F*E]_d.m1\iE%RkPt
+j8,Pj83Jor#3ii5ICN&Y4U1ga4_]CA:XdeAe#W?"8^`*cl2&ioXXin(a2e5[+9'"_
+s8W)us75=4-O]l[r_=NGj7mOT)#sX*?iTkp*.S"UR_M6=s8VQ(J,f"eJUd^SQCO4)
+p&01a:].Jin<YMPJ*Z?Ks4_@\s8W&Ls8A.r^]"29\,ZL.mpC57YI4=Yg]#qPFUZp(
+(eP<H_0dtD_Zg'KJmZ$b/W.5t?GcD#p+,R[+ih"XHX=cps0^\!KY]WV#+RPQC78RK
+qhCQ*R4*"Rs8W-!s8V7i@aK3gh#\&cs8W+.X=A<efe*EC.%oF\AL85ns8W,uf@rsN
+YA;#`a8c2>s8W-!s8W-!s8W-!s8W-!s8W,Eab(]8s.,(_9@EIIqXs^XoSG8oq%ND8
+s8PaiZ`HC.&+ol.s*3l(s8W%ErHn<JGlRgDs8W-!s8W-!s8Vn*3.J[oRf6$E&4-/,
+q)/]hVtpiejmu80)_Xe\+T@kC,#06/r#l%=QiHr4rfqo6Gjtb4/LJ-Hp(a`^%gPWZ
+]fbYd)R?r,KG[s[4:r;:=@ZpgqJ;)rK?!b94R<>/M6R<]8c=;aqCeJ3JH@5!6+t)=
+TDH%&p';c?^>>L^HYB"2p<qcP[XeY^fA#';fWNm,nCGL#X0%)aj*Oo*lheH)i8N=&
+2<$>U_0K9b3,!^+Zk*d&_XKjE_1M:t,5WH]#TND37gL(+K5!QeJ,S^5s8,a!?t8kJ
+:[bNSm=^k)p*_a8Cl8+tIa\H!(a3h:^OQ02nd%@\?o"rOq`>O=%m(L7^XqAj*^/2'
+>3N3.__5POrqgR2HiLh7J,TEH5H`Z5j0jQ]YqbT!9*?:J#*$9u=O;PgWnMo$"7)]-
+li1lFqLAHm=MOm>s!:"8n)R;%IeK'@r**Lg37Z10^rD2OE:LUW1#>t[%!kXBIDUKI
+2F[g2$O=_M(W'te;IO0Nci#0Uo5.NO8mULnp!1_6%%AAr%r<M`m\tj]_dEGYfW?am
+;0bskD1/bt><=@4a5M]jD5%/L,-O'C%((WtfN%\Gn)UEDeqapCHEXohi]YmgG-!I:
+04gIIJc7jHlp$-grS@H@f[PC]cu#%2^C5nN44Y6qD6`$:p"T7j$m&IO!uIcigC-8<
+_WPCD@5]Q%GgkTlI>>Og6&15CW<N6rR!=@k83[Z#'6rVR`**RoioamGLLS&e$X8;$
+Gq9>Y#V^nXGc%&Gb9@B/d@tqM4:r+/FS,L%3$;onPBmKOGTc88s3V\ps0%"bs/YBC
+s1e!U[_BN1g@t9VKV61df6\4NE5Gq`251u#Mg-p@_0<_[&<H0Z=DJq\/<gJ$s5fMV
+1=!`@?b?)H2=gGJ?IGVX1NLQO),7TtD7BN!Hggi"YM"8+^<)f4_u82,*P]>?D[ioH
+jeLM]/)F_7ikP=srI='WAC^[Gs/nZks0)H0s$:12`-DCsJ,fQ(lrZ$g_?O=i.qAV0
+ITctgOk?-[Z3l%`%LaJL5rXH-f5GR55?,#'1$ej8Rqf_1:7Wp(l+bhU+Pq:;HOV;?
+?$JZI'ZGF`mf2O[dpMDL0S9bbZpQj]HiO+QCaJ^s/;`Dl<)7I@Q\\aP@H!+"4&5L\
+/!pgT\$3?e_O:`L5m)B?p57jTfig\je)RifK[O]arIq7ofAis&<Rq+8,iASdfs#Df
+:&k7XJ,]-;s7hZJ^An3/li4#"2O6elX8O[Js8UhSfDkgY&q^>%r@Nn9Z8<H5h@^5>
+_X#jIP>,nB,^*9[AYlW:\<qY$69,ji`kQs=j`6D%J,d[Fs!9t'r%J%<^[qdC5P]J=
+@6ab/U37R`5Ha8Js1Q&l&:X&6V@\79rA=Pps1A;,h*PG]hF0m5DE@f7W.46_.j?)\
+?M#?;6VWf76*,GN?<5[4'3\oVrN(omItIoV"rI<g$JJkOV6B`00jjKs5rJXnC`n:p
+-i`-9rtUg;_uEp?=T;b$s8W-!s8W-!s7-U<5QCc`a8c2>s8W,sRfa3$O8o7[s-@+o
+jd7C`mD%QUs8BUs9(qb*s+1d+\'[9d#Wq67&H*sQs5[Cns$=CAVZ5uTp\Op<lL/*Y
+"@<7k9E,>gs8)cB?.EY=iI-+Xh0NA1a=relQhCA0FoR12@u.>fQi<?NQe/(os8W-!
+s8W-!s8W-!ra`?uKLOoE3/^4TM,3B5&J@Y9Jftpf#QCDNK1mW+WeoIuXeP@/^t7+7
+DA/i13r5s>:$pD<Hmi@o^L%8.o:_mglH.qI^F3f,llngr(1tp4Z(l+XA!g[,*8D*8
+Rt;+cFL/5ZXtI"G*k8p;MrG^-+O=6Oa^Z=rni3HlNhieR-#@[.#+,9pNGV]0Id9eY
+krS/&qRn1MPr_n/;uQRmoGpj&p%5lEIgc/>'jcKhd]G"tMV%n#]mVP@ddW)(s7ZhE
+9>Y!Js7ft$dL4DT6$`q<\6o:#H<ur7s7QEk^\rIcr]gFYK(,,'l$q=a^M/!$dQr72
+p='&Vo4]j^<V=f50YF=jg0:a'^%hj#U'tCj?Jke_+/"GdhqV<!'t/Z059kY^FN2&#
+a%P_PlY`?bQJdEN$A:fd_$GkUJe5c&^VtlW3/ITjs8W-!s8W,ks5G:&5F&$5nl;)-
+jAI`bM,$Zm:Kn)YK4!/O#V^n_eQ#OB=4KX;0:50'KjWG8H@:/jWiPQgi=d7<ORQ)'
+O/kmh5nY:4RDm2SQLd">BIqF]0_r5g_=J)Fjh;LBbDYl'3lkiYY>2bcXYHq=aTQpn
+:WJBIK[pqTf+tW,(CNrGEW7E1FBuP)/rqC)AFZae0u>R!%jfR#oUU<B\u2QXD0l5_
+p]'se?1achqL*7mqU2JqrTgZdqN(YqQ_iT[s8Vcll$?^=J,fEGqHfNgs8Vcli<A0D
+s'Pg+s8$&gs8W,bs7Q'bs8JAbqPEG!])Va-k1BR-Q\;Jj2S]7>h#p7Jqp>U$a>"-Q
+s8TI>?%;5pf1U2t*In)1ocO*]nQhf_s7r0:MJN3"_I)DbYf/L"Na)-"+usT!s8W-!
+s8W,Y,QIfDs8SXL&&AMA6bbm=rnjROs53kVs8Vm3"McGcs"`1f<6j"b[63hP4&c1Z
+s8W-!s0)I2^]4?6[Lt/7_fdN[W;lnts71%e0Qs0Pi.Vcq00u.aW(tgqiBQ&\r`F)\
+8rrl/PCMIU5PrTW=8t)gL(K(^+D)KNL5`XS=`Hu@%-%DX7Kk%DqQq/iSt?Ba-`<kl
+_J5^@(8DY:SsW=M-Z'O:M;ndJ#aMq@l:#lQp-j`\]0u2e&kEs44ZDU-F;s.hkViVc
+#TY&FNk3[<])Vg/rGA@p5LX`QBm&!lpdnuUs8S/[?\7d^p]"ZOs3$dLPD0"Nr1#om
+a7.r11&q:3^]3aj3<0$521C?Ys8UqX_E\)#_>5JXq-uS$"om3IkV)u9_H`Z1s0&:!
+s)#&cs8Vh#s7T4ehS4R+mB>jUs*Lk8BmU:B@>)DqgIq7VK#7`MKnJ?;]o)M#0Dc/2
+m>;=-*lKSH(%$>jKE'T-]mK^)?J#2.G6S]`iIi+geR>IlKtHakC&f@X$3~>
+EI
+
+Q
+BT
+8.97999 0 0 8.97999 326.95399 89.67698 Tm
+/N79 /ExtGState findRes gsDI
+(FIG.)Tj [-358.59999 ]TJ (2)Tj [0 ]TJ (.)Tj [-469.69999 ]TJ (Intensity)Tj [-358.59999 ]TJ (ratios)Tj [-358.59999 ]TJ (for)Tj [-358.59999 ]TJ (dif)Tj [18 ]TJ (ferent)Tj [-358.59999 ]TJ (neutron)Tj 
+/N62 1 Tf
+18.59899 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(a)Tj 
+/N62 1 Tf
+0.44398 0 TD
+(!)Tj 
+/N51 1 Tf
+0.69158 0 TD
+(and)Tj [-358.5 ]TJ (proton)Tj 
+/N62 1 Tf
+4.77189 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(b)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+-27.00569 -1.22219 TD
+(multiplicities.)Tj [-305.5 ]TJ (Dif)Tj [18 ]TJ (ferences)Tj [-305.5 ]TJ (in)Tj [-305.5 ]TJ (ratios)Tj [-305.5 ]TJ (for)Tj [-305.5 ]TJ (the)Tj [-305.5 ]TJ (same)Tj [-305.5 ]TJ (proton)Tj [-305.5 ]TJ (multiplicity)Tj 
+T*
+(in)Tj 
+/N62 1 Tf
+1.25138 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(b)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+0.80648 0 TD
+(are)Tj [-473.39999 ]TJ (attributed)Tj [-473.39999 ]TJ (to)Tj [-473.39999 ]TJ (variance)Tj [-473.5 ]TJ (of)Tj [-473.5 ]TJ (the)Tj [-473.5 ]TJ (detection)Tj [-473.39999 ]TJ (ef\256ciency)Tj [-473.39999 ]TJ (with)Tj 
+-2.89079 -1.22219 TD
+(respect)Tj [-332.69999 ]TJ (to)Tj [-332.69999 ]TJ (total)Tj [-332.69999 ]TJ (particle)Tj [-332.69999 ]TJ (multiplicity)Tj [64.69999 ]TJ (.)Tj 
+/N52 1 Tf
+7.98199 0 0 7.98199 484.02999 774.16398 Tm
+0 0 0 0 k
+/N78 /ExtGState findRes gsDI
+-0.00009 Tc
+(RAPID)Tj [-332.79998 ]TJ (COMMUNICA)Tj [73.79998 ]TJ (TIONS)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 51.56199 751.21499 Tm
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+(M.)Tj [-332.79998 ]TJ (LIPOGLA)Tj [128.69999 ]TJ (V)Tj [0 ]TJ (S)Tj 
+6.45329 0.33329 TD
+0 Tc
+(\317)Tj 
+0.44439 -0.33329 TD
+(EK)Tj 
+/N55 1 Tf
+1.66558 0 TD
+(et)Tj [-333.29998 ]TJ (al.)Tj 
+/N51 1 Tf
+32.05319 0 TD
+(PHYSICAL)Tj [-295.69999 ]TJ (REVIEW)Tj [-314.59999 ]TJ (C)Tj 
+/N52 1 Tf
+10.38648 0 TD
+(65)Tj 
+/N51 1 Tf
+1.33259 0 TD
+(051307)Tj 
+/N62 1 Tf
+2.99978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(R)Tj 
+/N62 1 Tf
+0.66699 0 TD
+(!)Tj 
+/N51 1 Tf
+-29.91828 -80 TD
+(051307-2)Tj 
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 3 3
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+0 0 612 792 true PDF begin PDFVars begin AS end end
+%%EndPageSetup
+0 0 612 792 RC
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+
+470.06098 763.18899 151.24198 48.89199 rf
+BT
+/N51 1 Tf
+9.97799 0 0 9.97799 51.56199 333.96699 Tm
+0 Tc
+(other)Tj [-299.09999 ]TJ (tar)Tj [17.89999 ]TJ (get)Tj [-299.09999 ]TJ (impurities)Tj [-299.09999 ]TJ (were)Tj [-299.09999 ]TJ (observed)Tj [-299.09999 ]TJ (in)Tj [-299.09999 ]TJ (the)Tj [-299.09999 ]TJ (experiment.)Tj [-281.19999 ]TJ (The)Tj 
+0 -1.19999 TD
+(above)Tj [-321.59999 ]TJ (cascade)Tj [-321.59999 ]TJ (is)Tj [-321.59999 ]TJ (not)Tj [-321.59999 ]TJ (known)Tj [-321.59999 ]TJ (in)Tj [-321.59999 ]TJ (nuclei)Tj [-321.59999 ]TJ (that)Tj [-321.59999 ]TJ (could)Tj [-321.59999 ]TJ (possibly)Tj [-321.59999 ]TJ (be)Tj 
+0 -1.14999 TD
+(populated)Tj [-270.69999 ]TJ (by)Tj [-270.69999 ]TJ (the)Tj [-270.69999 ]TJ (evaporation)Tj [-270.69999 ]TJ (of)Tj [-270.69999 ]TJ (one)Tj [-270.69999 ]TJ (proton)Tj [-270.69999 ]TJ (and)Tj [-270.69999 ]TJ (two)Tj [-270.69999 ]TJ (neutrons)Tj 
+T*
+(from)Tj [-406.5 ]TJ (beam)Tj [-406.5 ]TJ (or)Tj [-406.5 ]TJ (tar)Tj [17.89999 ]TJ (get)Tj [-406.5 ]TJ (particles.)Tj [-388.59999 ]TJ (W)Tj [79.89999 ]TJ (e)Tj [0 ]TJ (,)Tj [-406.5 ]TJ (therefore,)Tj [-406.5 ]TJ (conclude)Tj [-406.5 ]TJ (that)Tj 
+T*
+(the)Tj [-445.39999 ]TJ (lines)Tj [-445.39999 ]TJ (with)Tj [-445.39999 ]TJ (ener)Tj [17.89999 ]TJ (gies)Tj [-445.39999 ]TJ (245,)Tj [-445.39999 ]TJ (287,)Tj [-445.39999 ]TJ (370,)Tj [-445.39999 ]TJ (495,)Tj [-445.39999 ]TJ (621,)Tj [-445.39999 ]TJ (735,)Tj [-445.39999 ]TJ (and)Tj 
+0 -1.16648 TD
+(1219)Tj [-387.5 ]TJ (keV)Tj [-369.59999 ]TJ (are)Tj [-387.5 ]TJ (due)Tj [-387.5 ]TJ (to)Tj [-387.5 ]TJ (transitions)Tj [-387.5 ]TJ (in)Tj 
+6.98498 0 0 6.98498 200.01499 279.89898 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 210.49299 275.92999 Tm
+0 Tc
+(Sb.)Tj 
+6.98498 0 0 6.98498 229.48799 279.89898 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 239.96598 275.92999 Tm
+0 Tc
+(Sb)Tj [-387.5 ]TJ (was)Tj [-387.5 ]TJ (popu-)Tj 
+-18.88198 -1.14999 TD
+(lated)Tj [-289.5 ]TJ (in)Tj [-289.5 ]TJ (only)Tj [-289.5 ]TJ (0.009%)Tj [-289.39999 ]TJ (of)Tj [-289.5 ]TJ (the)Tj [-289.5 ]TJ (reactions.)Tj [-234.59999 ]TJ (Assuming)Tj [-289.5 ]TJ (a)Tj [-289.5 ]TJ (calculated)Tj 
+T*
+(total)Tj [-338.89999 ]TJ (reaction)Tj [-338.89999 ]TJ (cross)Tj [-338.89999 ]TJ (section)Tj [-338.89999 ]TJ (of)Tj [-338.89999 ]TJ (330)Tj [-338.89999 ]TJ (mb)Tj [-338.89999 ]TJ (this)Tj [-338.89999 ]TJ (percentage)Tj [-338.89999 ]TJ (trans-)Tj 
+0 -1.16648 TD
+(lates)Tj [-475 ]TJ (into)Tj [-475 ]TJ (a)Tj [-475 ]TJ (3)Tj [0 ]TJ (0)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 119.78999 241.34199 Tm
+0 Tw
+(m)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 127.24398 241.34199 Tm
+(b)Tj [-475 ]TJ (cross)Tj [-475 ]TJ (section)Tj [-475 ]TJ (for)Tj [-475 ]TJ (the)Tj 
+6.98498 0 0 6.98498 229.82499 245.30999 Tm
+0.00009 Tc
+(50)Tj 
+9.97799 0 0 9.97799 236.80999 241.34199 Tm
+0 Tc
+(Cr\()Tj 
+6.98498 0 0 6.98498 250.90899 245.30999 Tm
+0.00009 Tc
+(58)Tj 
+9.97799 0 0 9.97799 257.89498 241.34199 Tm
+0 Tc
+(Ni,1)Tj 
+/N55 1 Tf
+1.76979 0 TD
+(p)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(2)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(n)Tj 
+/N51 1 Tf
+0.58009 0 TD
+(\))Tj 
+-24.18888 -1.14999 TD
+(reaction.)Tj 
+1.19999 -1.14999 TD
+(The)Tj [-253.39999 ]TJ (proposed)Tj [-253.39999 ]TJ (level)Tj [-253.39999 ]TJ (scheme)Tj [-253.39999 ]TJ (is)Tj [-253.39999 ]TJ (presented)Tj [-253.39999 ]TJ (in)Tj [-253.39999 ]TJ (Fig.)Tj [-253.39999 ]TJ (3.)Tj [-235.5 ]TJ (The)Tj [-253.39999 ]TJ (\256rst)Tj 
+-1.19999 -1.16648 TD
+(criterion)Tj [-311.89999 ]TJ (for)Tj [-311.89999 ]TJ (ordering)Tj [-311.89999 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 155.44499 206.75299 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 164.90399 206.75299 Tm
+(rays)Tj [-311.89999 ]TJ (was)Tj [-311.89999 ]TJ (their)Tj [-311.89999 ]TJ (intensity)Tj [64.79998 ]TJ (,)Tj [-311.89999 ]TJ (with)Tj [-311.89999 ]TJ (the)Tj 
+-11.35929 -1.14999 TD
+(most)Tj [-368.69999 ]TJ (intense)Tj [-368.69999 ]TJ (ones)Tj [-368.69999 ]TJ (at)Tj [-368.69999 ]TJ (the)Tj [-368.69999 ]TJ (bottom)Tj [-368.69999 ]TJ (of)Tj [-368.69999 ]TJ (the)Tj [-368.69999 ]TJ (level)Tj [-368.69999 ]TJ (scheme.)Tj [-368.69999 ]TJ (How-)Tj 
+T*
+(ever)Tj [39.79998 ]TJ (,)Tj [-445.19999 ]TJ (w)Tj [0 ]TJ (e)Tj [-445.09999 ]TJ (also)Tj [-445.09999 ]TJ (relied)Tj [-445.09999 ]TJ (on)Tj [-445.09999 ]TJ (the)Tj [-445.09999 ]TJ (systematics)Tj [-445.19999 ]TJ (of)Tj [-445.19999 ]TJ (heavier)Tj [-445.19999 ]TJ (Sb)Tj [-445.09999 ]TJ (iso-)Tj 
+0 -1.16648 TD
+(topes,)Tj [-441.5 ]TJ (since)Tj [-441.5 ]TJ (many)Tj [-441.5 ]TJ (intensities)Tj [-441.5 ]TJ (are)Tj [-441.5 ]TJ (the)Tj [-441.5 ]TJ (same)Tj [-441.5 ]TJ (within)Tj [-441.5 ]TJ (1)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 269.66999 172.16499 Tm
+(s)Tj 
+9.97799 0 0 9.97799 280.96998 172.16499 Tm
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(see)Tj 
+-23.32449 -1.14999 TD
+(T)Tj [69.89999 ]TJ (able)Tj [-326.39999 ]TJ (I)Tj 
+/N62 1 Tf
+2.86639 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj [-308.5 ]TJ (The)Tj [-326.39999 ]TJ (multipolarities)Tj [-326.39999 ]TJ (of)Tj [-326.39999 ]TJ (the)Tj [-326.39999 ]TJ (transitions)Tj [-326.39999 ]TJ (were)Tj [-326.39999 ]TJ (deduced)Tj 
+-3.19938 -1.16648 TD
+(by)Tj [-388.29998 ]TJ (studying)Tj [-388.29998 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 119.72898 149.05099 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 126.07598 149.05099 Tm
+(-ray)Tj [-388.29998 ]TJ (angular)Tj [-388.29998 ]TJ (distributions.)Tj [-388.29998 ]TJ (Intensity)Tj [-388.29998 ]TJ (ratios)Tj 
+-7.46778 -1.14999 TD
+(as)Tj [-332.89999 ]TJ (deduced)Tj [-332.89999 ]TJ (from)Tj [-332.89999 ]TJ (the)Tj [-332.89999 ]TJ (summed)Tj [-332.89999 ]TJ (spectrum)Tj [-332.89999 ]TJ (of)Tj [-332.89999 ]TJ (detectors)Tj [-332.89999 ]TJ (at)Tj [-332.89999 ]TJ (polar)Tj 
+0 -1.16648 TD
+(angles)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 80.62899 125.93798 Tm
+(u)Tj 
+/N68 1 Tf
+9.97799 0 0 9.97799 86.41699 125.93798 Tm
+(5)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(121.7,)Tj [-358.19999 ]TJ (129.9,)Tj [-358.19999 ]TJ (142.6,)Tj [-358.19999 ]TJ (148.3,)Tj [-358.19999 ]TJ (and)Tj [-358.19999 ]TJ (162.7)Tj [-179.79998 ]TJ (\311)Tj [-438.29998 ]TJ (v)Tj [0 ]TJ (s)Tj [-358.19999 ]TJ (detec-)Tj 
+-4.40629 -1.16648 TD
+(tors)Tj [-305.89999 ]TJ (at)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 79.83799 114.29899 Tm
+(u)Tj 
+/N68 1 Tf
+9.97799 0 0 9.97799 85.62599 114.29899 Tm
+(5)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(69.8,)Tj [-306 ]TJ (79.2,)Tj [-306 ]TJ (80.7,)Tj [-306 ]TJ (90.0,)Tj [-306 ]TJ (99.3)Tj [-305.89999 ]TJ (100.8,)Tj [-306 ]TJ (and)Tj [-305.89999 ]TJ (110.2)Tj [-179.79998 ]TJ (\311)Tj [-386.09999 ]TJ (are)Tj 
+-4.32699 -1.14999 TD
+(given)Tj [-251.39999 ]TJ (in)Tj [-233.5 ]TJ (T)Tj [69.89999 ]TJ (able)Tj [-251.39999 ]TJ (I.)Tj [-233.5 ]TJ (The)Tj [-251.39999 ]TJ (intensity)Tj [-251.39999 ]TJ (ratios)Tj [-251.39999 ]TJ (form)Tj [-251.39999 ]TJ (two)Tj [-251.39999 ]TJ (distinct)Tj [-251.39999 ]TJ (groups)Tj 
+T*
+(with)Tj [-380.69999 ]TJ (values)Tj [-380.69999 ]TJ (around)Tj [-380.69999 ]TJ (0.6)Tj [-380.69999 ]TJ (and)Tj [-380.69999 ]TJ (1.3,)Tj [-380.69999 ]TJ (respectively)Tj [64.79998 ]TJ (.)Tj [-362.79998 ]TJ (W)Tj [79.89999 ]TJ (e)Tj [-380.69999 ]TJ (compared)Tj 
+0 -1.16648 TD
+(these)Tj [-309.09999 ]TJ (ratios)Tj [-309.09999 ]TJ (in)Tj 
+6.98498 0 0 6.98498 112.54899 83.67898 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 123.02699 79.70999 Tm
+0 Tc
+(Sb)Tj [-309.09999 ]TJ (to)Tj [-309.09999 ]TJ (similar)Tj [-309.09999 ]TJ (ones)Tj [-309.09999 ]TJ (for)Tj [-309.09999 ]TJ (known)Tj [-309.09999 ]TJ (transitions)Tj [-309.09999 ]TJ (in)Tj 
+-7.16229 -1.14999 TD
+(other)Tj [-350 ]TJ (nuclei)Tj [-350 ]TJ (populated)Tj [-350 ]TJ (in)Tj [-350 ]TJ (the)Tj [-350 ]TJ (experiment.)Tj [-332.09999 ]TJ (The)Tj [-350 ]TJ (\256rst)Tj [-350 ]TJ (group)Tj [-350 ]TJ (of)Tj 
+T*
+(transitions)Tj [-311.89999 ]TJ (corresponds)Tj [-311.89999 ]TJ (to)Tj [-311.89999 ]TJ (stretched)Tj [-311.89999 ]TJ (dipole)Tj [-311.89999 ]TJ (and)Tj [-311.89999 ]TJ (the)Tj [-311.89999 ]TJ (second)Tj [-311.89999 ]TJ (to)Tj 
+26.39999 48.91679 TD
+(stretched)Tj [-457.39999 ]TJ (quadrupole)Tj [-457.39999 ]TJ (transitions.)Tj [-457.39999 ]TJ (Mixed)Tj 
+/N55 1 Tf
+16.96569 0 TD
+(E)Tj 
+/N51 1 Tf
+0.69108 0 TD
+(2/)Tj 
+/N55 1 Tf
+0.79269 0 TD
+(M)Tj 
+/N51 1 Tf
+0.94799 0 TD
+(1)Tj [-537.5 ]TJ (transitions)Tj 
+-19.39759 -1.14999 TD
+(correspond)Tj [-463.59999 ]TJ (to)Tj [-463.59999 ]TJ (ratios)Tj [-463.59999 ]TJ (with)Tj [-463.59999 ]TJ (values)Tj [-463.59999 ]TJ (intermediate)Tj [-463.59999 ]TJ (between)Tj [-463.59999 ]TJ (0.6)Tj 
+0 -1.16648 TD
+(and)Tj [-461.89999 ]TJ (1.3.)Tj [-444 ]TJ (The)Tj [-461.89999 ]TJ (level)Tj [-461.89999 ]TJ (scheme)Tj [-461.89999 ]TJ (of)Tj 
+6.98498 0 0 6.98498 446.27299 525.70498 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 456.75099 521.73599 Tm
+0 Tc
+(Sb)Tj [-461.89999 ]TJ (shown)Tj [-461.89999 ]TJ (in)Tj [-461.89999 ]TJ (Fig.)Tj [-461.89999 ]TJ (3)Tj [-461.89999 ]TJ (was)Tj 
+-14.20838 -1.16648 TD
+(constructed)Tj [-279.5 ]TJ (assuming)Tj [-279.5 ]TJ (that)Tj [-279.5 ]TJ (only)Tj [-279.5 ]TJ (stretched)Tj 
+/N55 1 Tf
+16.68769 0 TD
+(M)Tj 
+/N51 1 Tf
+0.94799 0 TD
+0.08009 Tc
+(1,)Tj 
+/N55 1 Tf
+1.18969 0 TD
+0 Tc
+(E)Tj 
+/N51 1 Tf
+0.69108 0 TD
+(2)Tj [-359.59999 ]TJ (and)Tj [-279.5 ]TJ (mixed)Tj 
+/N55 1 Tf
+-19.51649 -1.16648 TD
+(E)Tj 
+/N51 1 Tf
+0.69108 0 TD
+(2/)Tj 
+/N55 1 Tf
+0.79269 0 TD
+(M)Tj 
+/N51 1 Tf
+0.94799 0 TD
+(1)Tj [-479.19999 ]TJ (transitions)Tj [-399.09999 ]TJ (were)Tj [-399.09999 ]TJ (observed)Tj [-399.09999 ]TJ (and)Tj [-399.09999 ]TJ (that)Tj [-399.09999 ]TJ (the)Tj [-399.09999 ]TJ (spins)Tj [-399.09999 ]TJ (of)Tj [-399.09999 ]TJ (the)Tj 
+-2.43179 -1.14999 TD
+(levels)Tj [-343.19999 ]TJ (increase)Tj [-343.19999 ]TJ (with)Tj [-343.19999 ]TJ (excitation)Tj [-343.19999 ]TJ (ener)Tj [17.89999 ]TJ (gy)Tj [64.79998 ]TJ (.)Tj [-325.29998 ]TJ (The)Tj [-343.19999 ]TJ (observed)Tj [-343.19999 ]TJ (ground)Tj 
+0 -1.16648 TD
+(state)Tj [-325 ]TJ (proton)Tj [-325 ]TJ (decay)Tj [-325 ]TJ (of)Tj 
+6.98498 0 0 6.98498 405.16799 479.31298 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 415.64599 475.34498 Tm
+0 Tc
+(Sb)Tj [-325 ]TJ (was)Tj [-325 ]TJ (best)Tj [-325 ]TJ (explained)Tj [-325 ]TJ (by)Tj [-325 ]TJ (assuming)Tj 
+/N55 1 Tf
+-10.08879 -1.16648 TD
+(J)Tj 
+/N62 1 Tf
+6.98498 0 1.31799 6.98498 320.20899 467.67399 Tm
+(p)Tj 
+/N68 1 Tf
+9.97799 0 0 9.97799 325.42698 463.70599 Tm
+(5)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(5/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 347.28898 467.67399 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 356.88398 463.70599 Tm
+(for)Tj [-322.39999 ]TJ (the)Tj [-322.39999 ]TJ (ground)Tj [-322.39999 ]TJ (state)Tj 
+/N62 1 Tf
+8.34339 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj [-304.5 ]TJ (Therefore,)Tj [-322.39999 ]TJ (there)Tj [-322.39999 ]TJ (quantum)Tj 
+-13.70889 -1.14999 TD
+(numbers)Tj [-374.69999 ]TJ (are)Tj [-374.69999 ]TJ (adopted)Tj [-374.69999 ]TJ (here.)Tj [-374.69999 ]TJ (Nevertheless,)Tj [-374.69999 ]TJ (since)Tj [-374.69999 ]TJ (the)Tj [-374.69999 ]TJ (spin)Tj [-374.69999 ]TJ (and)Tj 
+T*
+(parity)Tj [-380.09999 ]TJ (of)Tj [-380.09999 ]TJ (the)Tj [-380.09999 ]TJ (ground)Tj [-380.09999 ]TJ (state)Tj [-380.09999 ]TJ (have)Tj [-380.09999 ]TJ (not)Tj [-380.09999 ]TJ (been)Tj [-380.09999 ]TJ (measured)Tj [-380.09999 ]TJ (directly)Tj [64.79998 ]TJ (,)Tj 
+T*
+(all)Tj [-310.5 ]TJ (our)Tj [-310.5 ]TJ (spin)Tj [-310.5 ]TJ (and)Tj [-310.5 ]TJ (parity)Tj [-310.5 ]TJ (assignments)Tj [-310.5 ]TJ (are)Tj [-310.5 ]TJ (considered)Tj [-310.5 ]TJ (to)Tj [-310.5 ]TJ (be)Tj [-310.5 ]TJ (ten-)Tj 
+T*
+(tative.)Tj 
+1.19999 -1.16648 TD
+(The)Tj [-450.79998 ]TJ (high)Tj [-450.79998 ]TJ (spin)Tj [-450.79998 ]TJ (level)Tj [-450.79998 ]TJ (scheme)Tj [-450.79998 ]TJ (of)Tj 
+6.98498 0 0 6.98498 462.75999 410.13598 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 473.23799 406.16799 Tm
+0 Tc
+(Sb)Tj [-450.79998 ]TJ (resembles)Tj [-450.79998 ]TJ (that)Tj [-450.79998 ]TJ (of)Tj 
+6.98498 0 0 6.98498 316.27799 398.49699 Tm
+0.00009 Tc
+(107)Tj 
+9.97799 0 0 9.97799 326.75698 394.52899 Tm
+0 Tc
+(Sb)Tj [-293.19999 ]TJ (up)Tj [-293.19999 ]TJ (to)Tj 
+/N55 1 Tf
+3.71339 0 TD
+(J)Tj 
+/N68 1 Tf
+0.52409 0 TD
+(5)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(19/2)Tj 
+/N62 1 Tf
+2.07109 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(6)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj [-293.19999 ]TJ (I)Tj [0 ]TJ (n)Tj [-293.19999 ]TJ (fact,)Tj [-293.19999 ]TJ (the)Tj [-293.19999 ]TJ (comparison)Tj [-293.09999 ]TJ (between)Tj [-293.19999 ]TJ (the)Tj 
+6.98498 0 0 6.98498 316.27799 386.85798 Tm
+0.00009 Tc
+(107)Tj 
+9.97799 0 0 9.97799 326.75698 382.88999 Tm
+0 Tc
+(Sb)Tj [-391.19999 ]TJ (and)Tj 
+6.98498 0 0 6.98498 360.80499 386.85798 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 371.28298 382.88999 Tm
+0 Tc
+(Sb)Tj [-391.19999 ]TJ (level)Tj [-391.19999 ]TJ (schemes)Tj [-391.19999 ]TJ (mirrors)Tj [-391.19999 ]TJ (the)Tj [-391.19999 ]TJ (one)Tj [-391.19999 ]TJ (that)Tj [-391.19999 ]TJ (can)Tj [-391.19999 ]TJ (be)Tj 
+-5.64279 -1.16648 TD
+(made)Tj [-412.19999 ]TJ (for)Tj [-412.19999 ]TJ (the)Tj 
+6.98498 0 0 6.98498 374.05499 375.21899 Tm
+0.00009 Tc
+(106)Tj 
+9.97799 0 0 9.97799 384.53298 371.25099 Tm
+0 Tc
+(Sn)Tj [-412.19999 ]TJ (to)Tj 
+6.98498 0 0 6.98498 412.35598 375.21899 Tm
+0.00009 Tc
+(104)Tj 
+9.97799 0 0 9.97799 422.83399 371.25099 Tm
+0 Tc
+(Sn)Tj [-412.19999 ]TJ (nuclei.)Tj [-394.29998 ]TJ (This)Tj [-412.19999 ]TJ (implies)Tj [-412.19999 ]TJ (that)Tj [-412.19999 ]TJ (cou-)Tj 
+-10.80918 -1.16648 TD
+(pling)Tj [-318.69999 ]TJ (a)Tj 
+/N55 1 Tf
+3.13739 0 TD
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 352.07299 357.52799 Tm
+0.00009 Tc
+(5/2)Tj 
+9.97799 0 0 9.97799 364.18099 359.61199 Tm
+0 Tc
+(proton)Tj [-318.69999 ]TJ (to)Tj [-318.69999 ]TJ (a)Tj 
+6.98498 0 0 6.98498 413.26399 363.57998 Tm
+0.00009 Tc
+(104)Tj 
+9.97799 0 0 9.97799 423.74198 359.61199 Tm
+0 Tc
+(Sn)Tj [-318.69999 ]TJ (core)Tj [-318.69999 ]TJ (is)Tj [-318.69999 ]TJ (appropriate)Tj [-318.69999 ]TJ (to)Tj [-318.69999 ]TJ (describe)Tj 
+-10.90019 -1.14999 TD
+(the)Tj [-302.19999 ]TJ (observed)Tj [-302.19999 ]TJ (states,)Tj [-302.29998 ]TJ (and)Tj [-302.19999 ]TJ (is)Tj [-302.19999 ]TJ (con\256rmed)Tj [-302.19999 ]TJ (by)Tj [-302.19999 ]TJ (the)Tj [-302.19999 ]TJ (shell)Tj [-302.29998 ]TJ (model)Tj [-302.29998 ]TJ (cal-)Tj 
+T*
+(culation)Tj [-334.29998 ]TJ (displayed)Tj [-334.39999 ]TJ (on)Tj [-334.29998 ]TJ (the)Tj [-334.39999 ]TJ (right-hand)Tj [-334.29998 ]TJ (side)Tj [-334.29998 ]TJ (of)Tj [-334.39999 ]TJ (Fig.)Tj [-334.39999 ]TJ (3.)Tj [-316.5 ]TJ (The)Tj [-334.39999 ]TJ (cal-)Tj 
+0 -1.16648 TD
+(culation)Tj [-335.5 ]TJ (uses)Tj 
+6.98498 0 0 6.98498 372.30198 328.99198 Tm
+0.00009 Tc
+(100)Tj 
+9.97799 0 0 9.97799 382.77999 325.02299 Tm
+0 Tc
+(Sn)Tj [-335.5 ]TJ (as)Tj [-335.5 ]TJ (closed)Tj [-335.5 ]TJ (shell)Tj [-335.5 ]TJ (core)Tj [-335.5 ]TJ (with)Tj [-335.5 ]TJ (ef)Tj [17.89999 ]TJ (fective)Tj [-335.5 ]TJ (inter)Tj [19.89999 ]TJ (-)Tj 
+-6.79499 -1.14999 TD
+(actions)Tj [-295.69999 ]TJ (for)Tj [-295.69999 ]TJ (the)Tj [-295.69999 ]TJ (four)Tj [-295.69999 ]TJ (valence)Tj [-295.69999 ]TJ (neutrons)Tj [-295.69999 ]TJ (and)Tj [-295.69999 ]TJ (one)Tj [-295.69999 ]TJ (valence)Tj [-295.69999 ]TJ (proton)Tj 
+T*
+(based)Tj [-642.59999 ]TJ (on)Tj [-642.59999 ]TJ (the)Tj [-642.59999 ]TJ (CD-Bonn)Tj [-642.59999 ]TJ (nucleon-nucleon)Tj [-642.59999 ]TJ (interaction)Tj 
+/N62 1 Tf
+23.18458 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(7)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+-24.35058 -1.14999 TD
+(These)Tj [-396.59999 ]TJ (ef)Tj [17.89999 ]TJ (fective)Tj [-396.59999 ]TJ (two-body)Tj [-396.59999 ]TJ (interactions)Tj [-396.59999 ]TJ (are)Tj [-396.59999 ]TJ (in)Tj [-396.59999 ]TJ (turn)Tj [-396.59999 ]TJ (used)Tj [-396.59999 ]TJ (in)Tj [-396.59999 ]TJ (a)Tj 
+T*
+(shell-model)Tj [-372.09999 ]TJ (calculation)Tj [-372.09999 ]TJ (for)Tj [-372.09999 ]TJ (valence)Tj [-372.09999 ]TJ (neutrons)Tj [-372.09999 ]TJ (and)Tj [-372.09999 ]TJ (protons)Tj [-372.09999 ]TJ (in)Tj 
+0 -1.16648 TD
+(the)Tj [-558.19999 ]TJ (single-particle)Tj [-558.19999 ]TJ (orbits)Tj [-558.19999 ]TJ (2)Tj 
+/N55 1 Tf
+11.47529 0 TD
+(s)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 434.16099 265.40199 Tm
+0.00009 Tc
+(1/2)Tj 
+9.97799 0 0 9.97799 444.58499 267.48599 Tm
+0.63829 Tc
+(,1)Tj 
+/N55 1 Tf
+1.46839 0 TD
+0 Tc
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 465.02499 265.40199 Tm
+0.00009 Tc
+(5/2)Tj 
+9.97799 0 0 9.97799 475.44898 267.48599 Tm
+0.63829 Tc
+(,1)Tj 
+/N55 1 Tf
+1.46839 0 TD
+0 Tc
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 495.88899 265.40199 Tm
+0.00009 Tc
+(3/2)Tj 
+9.97799 0 0 9.97799 506.31298 267.48599 Tm
+0.63829 Tc
+(,0)Tj 
+/N55 1 Tf
+1.46839 0 TD
+0 Tc
+(g)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 526.75299 265.40199 Tm
+0.00009 Tc
+(7/2)Tj 
+9.97799 0 0 9.97799 537.17698 267.48599 Tm
+0 Tc
+(,)Tj [-638.29998 ]TJ (and)Tj 
+-22.26879 -1.16648 TD
+(0)Tj 
+/N55 1 Tf
+0.58009 0 TD
+(h)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 326.55599 253.76298 Tm
+0.00009 Tc
+(11/2)Tj 
+9.97799 0 0 9.97799 340.47299 255.84698 Tm
+0 Tc
+(.)Tj [-503.09999 ]TJ (More)Tj [-423 ]TJ (details)Tj [-423 ]TJ (about)Tj [-423 ]TJ (ef)Tj [17.89999 ]TJ (fective)Tj [-423 ]TJ (interactions)Tj [-423 ]TJ (for)Tj [-423 ]TJ (nuclei)Tj 
+-2.55488 -1.16648 TD
+(near)Tj 
+/N55 1 Tf
+2.08059 0 TD
+(A)Tj 
+/N62 1 Tf
+0.69108 0 TD
+(;)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(100)Tj [-359.59999 ]TJ (can)Tj [-359.59999 ]TJ (be)Tj [-359.59999 ]TJ (found)Tj [-359.59999 ]TJ (in)Tj [-359.59999 ]TJ (Ref.)Tj 
+/N62 1 Tf
+10.79449 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(8)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj [-359.59999 ]TJ (Such)Tj [-359.59999 ]TJ (ef)Tj [17.89999 ]TJ (fective)Tj [-359.59999 ]TJ (inter)Tj [19.89999 ]TJ (-)Tj 
+-15.64509 -1.14999 TD
+(actions)Tj [-423.29998 ]TJ (were)Tj [-423.29998 ]TJ (used)Tj [-423.29998 ]TJ (recently)Tj [-423.29998 ]TJ (to)Tj [-423.29998 ]TJ (describe)Tj [-423.29998 ]TJ (the)Tj [-423.29998 ]TJ (newly)Tj [-423.29998 ]TJ (observed)Tj 
+0 -1.16648 TD
+(spectrum)Tj [-332.89999 ]TJ (of)Tj 
+6.98498 0 0 6.98498 367.81098 225.06199 Tm
+0.00009 Tc
+(106)Tj 
+9.97799 0 0 9.97799 378.28898 221.09399 Tm
+0 Tc
+(Sb)Tj 
+/N62 1 Tf
+1.38888 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(9)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+-7.69979 -1.16648 TD
+(The)Tj [-535.79998 ]TJ (calculation)Tj [-535.79998 ]TJ (favors)Tj [-535.79998 ]TJ (a)Tj 
+/N55 1 Tf
+11.02868 0 TD
+(J)Tj 
+/N62 1 Tf
+6.98498 0 1.31799 6.98498 442.22698 213.42298 Tm
+(p)Tj 
+/N68 1 Tf
+9.97799 0 0 9.97799 447.44499 209.45498 Tm
+(5)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(5/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 469.30599 213.42298 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 481.02999 209.45498 Tm
+(assignment)Tj [-535.79998 ]TJ (for)Tj [-535.79998 ]TJ (the)Tj 
+-16.64169 -1.14999 TD
+(ground)Tj [-292.59999 ]TJ (state,)Tj [-292.59999 ]TJ (in)Tj [-292.59999 ]TJ (agreement)Tj [-292.59999 ]TJ (with)Tj [-292.59999 ]TJ (the)Tj [-292.59999 ]TJ (suggestion)Tj [-292.59999 ]TJ (from)Tj [-292.59999 ]TJ (the)Tj [-292.59999 ]TJ (pro-)Tj 
+T*
+(ton)Tj [-480.89999 ]TJ (decay)Tj [-480.89999 ]TJ (data.)Tj [-480.89999 ]TJ (In)Tj [-480.89999 ]TJ (this)Tj [-480.89999 ]TJ (state,)Tj [-481 ]TJ (the)Tj [-480.89999 ]TJ (valence)Tj [-480.89999 ]TJ (proton)Tj [-480.89999 ]TJ (occupies)Tj 
+0 -1.16648 TD
+(mainly)Tj [-418.39999 ]TJ (the)Tj 
+/N55 1 Tf
+4.83668 0 TD
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 369.02899 172.78298 Tm
+0.00009 Tc
+(5/2)Tj 
+9.97799 0 0 9.97799 382.13198 174.86599 Tm
+0 Tc
+(orbit)Tj [-418.39999 ]TJ (and)Tj [-418.39999 ]TJ (the)Tj [-418.39999 ]TJ (two)Tj [-418.39999 ]TJ (neutron)Tj [-418.39999 ]TJ (pairs)Tj [-418.39999 ]TJ (are)Tj [-418.39999 ]TJ (almost)Tj 
+-6.72999 -1.16648 TD
+(evenly)Tj [-306.19999 ]TJ (distributed)Tj [-306.19999 ]TJ (over)Tj [-306.19999 ]TJ (the)Tj 
+/N55 1 Tf
+11.16749 0 TD
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 432.19699 161.14399 Tm
+0.00009 Tc
+(5/2)Tj 
+9.97799 0 0 9.97799 444.17999 163.22698 Tm
+0 Tc
+(and)Tj 
+/N55 1 Tf
+1.75019 0 TD
+(g)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 467.43099 161.14399 Tm
+0.00009 Tc
+(7/2)Tj 
+9.97799 0 0 9.97799 479.41398 163.22698 Tm
+0 Tc
+(orbits.)Tj [-288.29998 ]TJ (The)Tj [-306.19999 ]TJ (situation)Tj 
+-16.47969 -1.16648 TD
+(is)Tj [-557.39999 ]TJ (very)Tj [-557.39999 ]TJ (similar)Tj [-557.39999 ]TJ (in)Tj [-557.39999 ]TJ (the)Tj [-557.39999 ]TJ (9/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 427.59599 155.55699 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 439.53498 151.58799 Tm
+(and)Tj [-557.39999 ]TJ (13/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 477.24398 155.55699 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 489.18299 151.58799 Tm
+(levels,)Tj [-557.39999 ]TJ (while)Tj [-557.39999 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 314.97999 139.48399 Tm
+(n)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 320.76799 139.48399 Tm
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 326.55599 136.93598 Tm
+0.00009 Tc
+(5/2)Tj 
+0.00019 0.99958 TD
+0 Tc
+(3)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 335.48399 139.48399 Tm
+(g)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 341.27198 136.93598 Tm
+0.00009 Tc
+(7/2)Tj 
+0.00019 0.99958 TD
+0 Tc
+(1)Tj 
+9.97799 0 0 9.97799 354.78898 139.48399 Tm
+(con\256guration)Tj [-459.89999 ]TJ (exhausts)Tj [-459.89999 ]TJ (the)Tj [-459.89999 ]TJ (lar)Tj [17.89999 ]TJ (gest)Tj [-459.89999 ]TJ (components)Tj [-459.89999 ]TJ (of)Tj 
+-3.98968 -1.20309 TD
+(the)Tj [-342.89999 ]TJ (wave)Tj [-342.89999 ]TJ (functions)Tj [-342.89999 ]TJ (of)Tj [-342.89999 ]TJ (the)Tj [-342.89999 ]TJ (15/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 440.71099 131.44799 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 450.50999 127.47999 Tm
+(and)Tj [-342.89999 ]TJ (17/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 486.07899 131.44799 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 495.87799 127.47999 Tm
+(states.)Tj [-325 ]TJ (The)Tj [-342.89999 ]TJ (neu-)Tj 
+-18.12969 -1.16648 TD
+(tron)Tj [-380.69999 ]TJ (part)Tj [-380.69999 ]TJ (of)Tj [-380.69999 ]TJ (the)Tj [-380.69999 ]TJ (wave)Tj [-380.69999 ]TJ (function)Tj [-380.59999 ]TJ (of)Tj [-380.69999 ]TJ (the)Tj [-380.69999 ]TJ (19/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 490.00999 119.80899 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 500.18598 115.84098 Tm
+(level)Tj [-380.69999 ]TJ (is)Tj [-380.69999 ]TJ (almost)Tj 
+-18.56149 -1.16648 TD
+(identical)Tj [-394.89999 ]TJ (to)Tj [-394.89999 ]TJ (that)Tj [-394.89999 ]TJ (of)Tj [-394.89999 ]TJ (the)Tj [-394.89999 ]TJ (17/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 430.01499 108.16999 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 440.33299 104.20199 Tm
+(state.)Tj [-394.89999 ]TJ (However)Tj [39.79998 ]TJ (,)Tj [-394.89999 ]TJ (since)Tj [-394.89999 ]TJ (17/2)Tj [-394.89999 ]TJ (is)Tj 
+-12.56298 -1.21308 TD
+(the)Tj [-343.69999 ]TJ (maximum)Tj [-343.69999 ]TJ (spin)Tj [-343.69999 ]TJ (for)Tj [-343.69999 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 425.24899 92.09799 Tm
+(p)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 432.70298 92.09799 Tm
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 438.49099 89.54899 Tm
+0.00009 Tc
+(5/2)Tj 
+0.00019 0.99958 TD
+0 Tc
+(1)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 447.41899 92.09799 Tm
+(n)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 453.20698 92.09799 Tm
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 458.99499 89.54899 Tm
+0.00009 Tc
+(5/2)Tj 
+0.00019 0.99958 TD
+0 Tc
+(1)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 467.92298 92.09799 Tm
+(g)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 473.71099 89.54899 Tm
+0.00009 Tc
+(7/2)Tj 
+0.00019 0.99958 TD
+0 Tc
+(1)Tj 
+9.97799 0 0 9.97799 486.06898 92.09799 Tm
+(con\256guration)Tj [-343.69999 ]TJ (with)Tj 
+-17.14669 -1.20309 TD
+(the)Tj [-352 ]TJ (remaining)Tj [-352 ]TJ (neutron)Tj [-352 ]TJ (pair)Tj [-352 ]TJ (coupled)Tj [-352 ]TJ (to)Tj 
+/N55 1 Tf
+15.94219 0 TD
+(J)Tj 
+/N68 1 Tf
+0.52409 0 TD
+(5)Tj 
+/N51 1 Tf
+0.91308 0 TD
+(0)Tj [-80.09999 ]TJ (,)Tj [-352 ]TJ (the)Tj [-352 ]TJ (odd)Tj [-352 ]TJ (proton)Tj 
+-17.37928 -1.16648 TD
+(resides)Tj [-274.09999 ]TJ (almost)Tj [-274.09999 ]TJ (exclusively)Tj [-274.09999 ]TJ (in)Tj [-274.09999 ]TJ (the)Tj 
+/N55 1 Tf
+13.36909 0 TD
+(g)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 454.16398 66.36999 Tm
+0.00009 Tc
+(7/2)Tj 
+9.97799 0 0 9.97799 465.82699 68.45399 Tm
+0 Tc
+(orbit)Tj [-274.09999 ]TJ (in)Tj [-274.09999 ]TJ (the)Tj [-274.09999 ]TJ (19/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 530.57598 72.42199 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 539.68798 68.45399 Tm
+(state.)Tj 
+-22.52049 -1.16648 TD
+(This)Tj [-440.89999 ]TJ (19/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 354.85899 60.78298 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 365.63598 56.81498 Tm
+(level)Tj [-440.89999 ]TJ (is,)Tj [-440.89999 ]TJ (therefore,)Tj [-440.89999 ]TJ (the)Tj [-440.89999 ]TJ (lowest)Tj [-440.89999 ]TJ (lying)Tj [-440.89999 ]TJ (of)Tj [-440.89999 ]TJ (the)Tj [-440.89999 ]TJ (ob-)Tj 
+ET
+/N78 /ExtGState findRes gsDI
+q
+144 0 0 331.43989 102.29098 401.81669 cm
+
+_op? setoverprint
+BI
+/Width 600
+/Height 1381
+/DecodeParms [null <</K -1 
+/Columns 600 >>  ]
+/Filter [/ASCII85Decode /CCITTFaxDecode ]
+/BitsPerComponent 1
+/Decode [0 1]
+/ColorSpace DefaultGray 
+ID
+-KPgY<DQnG2CpUKB;0Flh%7C.A406^5?&bM<5AY^#H%-bWgHs;ba3#H:YFZ3Ae7TT
+SnK8=[+Ysh!Y0g#[AnOZ[%=j.RjXB$["7YEIZ#8H-2tCG\hN$?W_!P$nHLJ/\m6p,
+=`J2>f*P:p[#hjkP2UX.D/]'1V+kYqG]^"+Z$N=DO@^_08LK2(,a)8%\k>R>6XYcY
+\l>]>9Be#ReKsje,`]lVRY8)s8s8(;649U&";"a9P">i2V.",=P.4'dkt\M5+fmRG
+)CDEpcai%t%/q`D+DL,(FOG;2rVFD86%Xed&Q',PXhm]/Mp>#K@YI'ueR<Xtl$DDf
+lJG]LFA88\!D41]T*`R9NYSbg)ZgSd1G5[*i<Nll_%=c@f0P)i:En2as'Z"CKFC*D
+3^LOU\g%O]g-LMol2Q+ZrRU5:s0_j=J,TEIp86PFs1S$?qe:1t+T;#9l1WPA/3&F>
+$Oe;u^D+X@EZU:K_IOVl+E+X6@-PDS6&,cY7\L)B!K^PQDB^6VVh9?A_LXe$HbmIO
+rYs_oDt!T#li7"bXR.D.62KtcHJ2J8>#s(+Q&rR*@3W7Y$rg7sX_YgP@t^0Q$O.Eb
+$.q[lKI@'rcmEt!clpgq)Bp@=:4deFf'#(b-`!,$KpVUh.%dhR6DAr:9@ST?d!J_*
+@7"/iP-u"!nmg:_<DH=6a8L/ZInQkhMWAb*=%OQ7P48us91rPX8T_>HTk+2"V5:#e
+6+"=S\jH%NUl\/GV.u90BiWRf+LJ_VFbNYDes<!5+Pc9TK'=aV,cPQR-1m4g,a$f;
+"f2MPPm!6VFfe]O[%SV[=pQZ%P"LOC_+KLq]dSVVf54E8f3otIT"61)BNh:-1a4/J
+?C%W=k+RkDFR;Tus8W(")@&;I(_CjA)$$Q@RL5J6:>lGVC0)luNS+Ncm:mko:edac
+\j2nRKG=__.eK'!8m$cI]c%3JNu^YMN9Vu?\s>A[eNsdCK*X.sdd/6FQtZ\pWJ&`n
+ldFkiPincj3!:]WF@R3!mn"di"<Nku[#cEa":_"ipM,d_X%=S+@4G%\99mX1?E81J
+S=Wp9TndJ_9Ds?.a0(_p@=k;?$Dg)&-!`ap[$OL&9E34"koq$)#rIuA9@Y/9njHo^
+R]uFk^U9![<9Z<-V5<IJ<?eT?&u:shrFDgk_KAJ6<iHF!W*t@Y\nN/7/1[NZ<UnVq
+D.un];YjoPqY3]L-)ICK8:u/c@$Q*V8f/hb?!$!=<S47QP1:lq6i8Wj:pc%,;Fb1J
+;UU1K62%)eBdcX<k.O/\oY4U2_U<:7+L]-j$VD!>paK&A2K]`R't1.9WiFK=oGC7P
+5f"sF!sBG`@%oJ%+u?TWO9CL,d`dr09@mM%+92B@miO;3AQg7/5m%Ib#P:XBb\pGl
+D0idiVuNs&(-dhGOi<a/I*$3(BL2QU='p)CD'ZYVFK97VfKm(SO<HkAVLn6$@cp"m
+^sHaDcm;W_+)2U6n<cMi6+T?F[&^[QC%-siLikA=i5;@HCbHq?LiRmj0'X!b,`k=@
+['*)`9qXe`8NL&/D4mpq.Sj>sTTqKF3gCJD<WDR'PZeGOQ%/*oE0>#/]1E-WV:+Bs
+6G$rLWhWD,HD(;dm]T54[1+Cp&0e.i%4)I+D/7LF<g$IYLc7s)@>$nG812i-OrQko
+#pbB)l!B_8;LZ3\V$R;'"R.&CJlLW#UqKSrHV6p]M$=S`-2f'_<D1Dr<0I-\eKqoZ
+-)K$c:m\2^>4`J]P"@"&,_?CsBgZ/ZCar"[h%1fb;B_P@;$rEor%"Gm8R4;k9ndJW
+dd!C*Lnm0>M!\9!Un;@$>?%3M0@EG\O<DUJ3-MCE6AXlg^1:CU.f0#>a\6<LN<RFc
+@*BUG&I6/WR\9<%"@<YA9i=c%P>@p#f1#R!$_<`n=Md%2Sj%`8Kg?iN9e&TZTS*)`
+e\-*IYPKU=np(A'Bg;+<QMU:+r-E/,bXm<)e5rG3kL034-%m<=p"$a;_q4`g8S<9h
++mPE[V/Z*N^XlG=Z/%!X>qYVS]l^YT_]=+NdU("t[HVBJ]TBk=>,k1Ff1VnU<Nf%p
+Nl.*oP5e0H/Lsbj=A,<u8[P$6f1Vs=9#2o`P@/uNL$48KC-tJK<,om,<MgKgqFZe3
+7\V?aA;J0;6pu@tldGf+Q0^7,98*1IJ,fQKs8W-!s8W-!s8W-!s80k!63BNh>khd;
+E:#u[$8YnRhRusTI4n06W^.*WT]+<bh-649U("$4K8]W?5@*N'rI#kXVD\*Le^mEX
+1p&>aZ1aX5@"SW'Tn<[r5%Ih*J,fQKs8W-!s8W-!s8W-!s8U/2V*qWSUh[WX_t8Q<
+TScMn4hR!s(l<Y*%oPe$)F/r0_$37<&7Gf7-pae-Hm$l@)d64h7'63X<msHHZ6@aq
+5("L+^gZjHE/FHWJ[DB[8^^2;gZd..SM/H@p$#^.lI)Lbl-cZ-^7BAQ\Ehc8kuV%l
+qbdA.p!Wj3]7#*As&?&lde"F2Y=j:Fb-9#]oUB4AdU!S[<qBJTDZ-T24/HA%/$JH[
+$V>FQ@>/-A:LDcb4X@L/2E^?X,W.D"9a*C0UG\\B=/;:HU\+a"Jd6rG+DM0(_ZZ9k
+klsWH_Y$WQ9iLiN,e?8N$<j<g:C3o!s$:N8oi,2P,3[:&#eDitg7m`sqPDV4OhDm:
+3pkWrPA6<Zk,BZ<#h:2A<9Y&<<g$4pY-aA,9e',@/ub\J?M3CrV6+t<TXLP9ql&b/
+s7451L("]jQ,6@/`s,dfB#jV,Xt#_K>$HAPU)F#s+rWF>'ZGO/V<_Ib8S\,0Qs4tk
+Qbl_6-7X>7d39eZSbf?i:68-H<)pk)HgCQ/qR9$sg8'g`X==TN[[,L^$E5;g#qB;1
+0922eNkKD[8aseekp1jk8"pnTgJk3X$C)`q@$4<dd7>,TV2mnfKjS'KlDXom<RaP'
+,`kSDXfV9hOfSJY7=h(*;Fr.^lm;ARTTW'5\mJrH6U':[IMGP+W_GC_pgGh1()SYH
+_'IB@0MM`f)A*Q&]eB#kJ!JeE!DfW2>^ueRs8W-!s8W-!s8Vefk!Y$j#r3HN&Pa?5
+F\mn7EuW`(5haeYlVHXaQdXEu^W7S2df(7=qu*Ug3(nCG#5-].db$FjCi;^"GmZd8
+6i03:1)n!jp#Pu*HV2oICY3$Y$ki)(<t-jX%)WH35`_<KK,"@cs8VX5'1>,&9h=,n
+l5&.=H[R0SjFhb6jQF"7;CW9].E=t+RQu[W/`;6fJftU6P1:qoK2A"_;B`%nft^qd
+:T5O=jiu:,<B:T&"<1;G2@r1HWfg.ReuSg=hcdJ?Y-=L`OQmJLM8$?!oY:?AJ(Bm6
+Qdm6d`?`3Q&uG5elBeOdoU";X__EF'ht<i1UqX(IW?kl6<MU3@GP\Ce9"S%.2t]`o
+dRonR62t+m8L1HjDs@r@/qQWKaq7o\qYs,U=8L9:E0F:/ogpL(&pO@JP3=0S?Z4@c
+FL$12OkQQ+8s_gIl$,m]s/dShQV&)f?0[#01P)Ec%/!`TUq;%holWtL_E7ru60-CM
+KLSBjGLb7A0L::in:T)&#V^n@MF*R6Lo7$[GX82<@"YpflKXt@WS4I'&G^e"JI&fo
+7Es"=[$#);,SCAAV!0#/];2($HE1%`[oKD;eTWC+oY5:,EV.#AK%HrKJHe@gBi(t`
+Mfc[t76b,oqVd/)8KbBl$hb`IlBb'oG,@]ZT@a,9qG`Z3P3YMGri2'QJdF&lF:\%9
+,aYN,ogg>@6o8OB?gFMk8RLbG8RL*J;F*"O?_p<sM*"B1Uln`]?V+-eFLD'D8Hmi4
+IoMTc#t##H,a'=Td"[F_9NV8`_J=mY8MsHa+Co-'BLG77qWlSC7:b3'1'(.@WKAqb
+`_HXF+CtQ;dnc]c*5@[0"Q9J&>rTOUli+YAW2g=P^)1%L(ke/-cqPufI+E)TQ9d3u
+"Pm!MNG54T[A?pX8Ng'sde2.-eU8W.1CPO(0&\HSJVnRaeWb0;ILpq#^BcNG$5Sf#
+P'a$O8Z&PbQr8j33"*0YCIk)FF)&)dlCC"/(aYiW-Ns\%,X5;@d1#e!C$Sd#/S^fM
+D(sC0CNA6(Ff#tYmd)G"VRF3&>gfgo7[:&pl#IUnKm[Q3<W/auC;9Ytd]`STL([.d
+K%5:IqT;':8f.D3Jd?ck?i=&:'KQOGP5`n5<.af;_HYFp"om"DN?l:;<A]kE*LX+#
+8tdkh#m?Eg7fTAd#q&7ilF-RhJm1bk]eB5^oUuHg]nR/q(PEE)7qds9d@e&+N7B!Y
+&C9]@U)Cc*UdI;,c?6.%K>Ii$#WqERV;+:=8NerXG3Bbg\uqK9Ae[eNB7Y/#R[VGE
+=lLn\d"mK`,SOmbK7ukuDVn3iX*RlIQ1ff5Q9S$an!<2f]6[6\f7(<ZY1iM3?.3._
+oTsHW9l^_M.uN:=[ZF)UFI&7&HfSiq!Delu[A9$Ji]"[UBdKU?kL]$rFLSD`=;gXG
+;A>DJs%8XXh,4P\YPLgDlhX-tX8hIJ9"JBo,SshZEiMDVhR``_P"WC7rN.>slmldu
+L']8!,a9uT(a\sW6oJrhBVgSq^=)>OX-jk=<;AhBO,XF$O'c1=?g2UD#!aVVT50Mf
+s8T`W2\bC?!RH<"M+HMiKY\4XeR%2=QSK4b]97ZlU^.np8KJ'K1CKc7BIQ2#Af"#a
+fNscYK^aVtqlT*0daD*c8p<h@Sd!XXk!h1&Ng3Uu8L+s`Kg@V^4XKbo<qK(3:6fo>
+?S$U.[jRklUls^6_UAIdFK`/[3n%Cc>#(='9[tdr(&qJE6eCN_9<UY%[JbiC?`RUh
+lMRP;XY!7`/_0ga?a\M:]5!GpV"0!2?g/lA[Laecqrr$po-#$KFnCqS3*eI<Q*p7I
+;:>>W?g89PoX_);B(_sd2O,o2JlKR<?0[^g9eC0Jj8)BHjo=&P$aleD-OD\_OE!%t
+Cd]u^$Xgds$#CG)"qlOlWfa2g3u(;@c(RQ\9N>0-UqN^$@<cUkW+s`68>e3sl@SA9
+6q3:_4q$M)@E=NA93IW[,!*n=<?Qq]<$9[BBgYLaqF[cS$<+<oFCtW4eJ<n>[$<85
+$+GN;O<rEj*g01'qBS;V9R5?Ba9=.s?^&+\-0VW,Y8pO>nar!`;l-<Xs5?jK%=M=X
+L([gQeJT<UK;?7RMEuO@&Nl2C9^\%1;Ab0T5A;FP6%_[#lEl2\KG["Jr_o9b]%3m]
+\u2Y]4X<7d3,'\=e@uFM@4?;mGgS^)D,T*8B8!i''i735$n>#(%YB3&QLpHZoLsKt
+LSVPVA*ZE=Qi/2<PpZil_r5DaX!i+d^6&@o^L($M[Jgtg?!I7[]'gVbIhd9:rdkGp
+ef(__J$<9YMrt%2-Bdu&qQERmFBhVqWa0rNdU'dr$iQla>P^o;lWQqdM%8CrdS!h&
+s.sK=n=0>0P1J5n0D.k]5C-.uHPJgXfO6r\YPLmX2SD9Cdf!)Pr?S``qG#]e9dZ$L
++e)2PV+TU0HQ!f96q?JfYQ(X%P$dOODQ:HEdd(+O.pe</;I+b.PPWg9l"DS]"KUc=
+d^<M;^JF-Hi5$`W,f9bm7$qKc-dj01C%9/27"7cbK*eE^,-;lFO>=`mZQcX,66\R=
+?GF?aj`/0\'`*27a8c2>s8W-!s8W-!s8W-!s8W-!s8W,f+#4LhA8C<m@6ju':AQ?"
+M=XmV2[D;X>3f%`7D>+Ls5Wr0.f:F;nUH\m9>YO!:7'ci<gWHnV=&qBdd=/\81!5p
+?&2%+MJ[_p^*5cs/.E?os8W-!s8W-!s8V.\+L)iAm&hefHda3SQ$:YuP/HVcL]%?P
+&L0QNI$V)mUc)frm6N"2-?ad,;ljdn<<f-\oh6c-+Qt2,#W:jhHg75;Wd:]C,3IDl
+8\eg)OtMu]F(h,!OseK3/uYBHUd[j%dRqu9.SYMjkTKML%YG+?%ME&c>A[]'^:>u_
+Bf<Z3&k`RuXaH^gKYI]B:6d_597:'Sf2niaa/U%blh^I[Bm-9=oI@8FCApA+fD8/=
+J,0kl=%g-$?g2n5eriTVDcQ?:)NmbeoU""SqP9I\P#f'VH<k^G86^Lc_R?l;QG&"g
+Q`VmW>,78GV:a<MXTbu6@&fJ;WHLUh8M0Fta?f07'$sp'A_NrFUln7c.L_4,WsM\o
+dQps-Yt,a;PU)Dq=7ir*Q]F^H,cg3sl$g%k]TF[0/VK9ZEsX+R9*d+"H<"=Kq:LVk
+9<WH:,h@RJ92q!E+LJa$"@G-hn;(^@.Mtd0=A"b4/^mmM9PTAsh/l"Q.r`?tf<1K@
+9Dr[HVM%?'Jlhu`91"_rLteqUg8dkaP,,OL:YSjJ/(.3ioMPlY&fms+5Uf*?SYi8Q
+JY7Mms8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!
+s8W-!s8W-!s80pJU8CEVYNA7V7abP`6Ne:T1_@`-1f66Cf`?^j_*q>Q+S?"(dorJn
+)PU'a,kMX]/SW(pK4[Df7/?E`l4Gc82AVi/OA2)NqEVfn7#07a:['JJln'iT?%eA=
+A)l-$[]+O8V$6Brl@WH+aWX=WXt-1T0;ZF[nC.5>WX2!"LCaCMf?ASk9=7bkl,\]6
+QGJ8H,_U@?]R;=16"%cp8Q*=hYeH;#TWq+PKj%b8<=(-^9Bq[%!a12k$"kPa8MlX-
+l$?<l>3kgm<4&_Pg/[HIKXsa^X=qF6ZC%I[&0kWf0amst8Lb1HP)*d;Jngem+Mg0.
+;@sMDX"l78oi:6s\D`MVI6Q7)s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!s8W-!
+s8W-!s8W-!s8O:R$UbfRik888H?t^f[\'SJ9+4"t=*jLu!sokPLX,C%@%iH7'0?jJ
+,ubt25h/\U6._q,f;/''9IWC*pOl>t_N[ifM=^R7+PD:jhNR1HK4Y3H$,(b:eb#3)
+ePb4VhNOu-_FaFPPIKl+np8'5`iX`oOiKbk?Ejq_?iD5.^\Do:hcr"$ldc#sJXDd>
+?hneX-/h(SG>"e+&9XYtq[(e#r[joY+4;*"+]\R0-1ntK$#ckZK'Tk1Fmhu,eLgXG
+L"BK7D/6(Cq&rX,0"O+p8Q&_r:K:!Z9iWcnW_%<d?BXW&/M6Ua90kUEL6X(6CCDJO
+9r2]a<'rV`C+5%95`M"cm3J.49e$U+Yeo:j_$1W_KksX$RLr(\eN2GbWkB\D@AK/g
+[7R4(8NL%L9JQU0m78u5:*&ud4&>qX&./~>
+EI
+
+Q
+BT
+8.97999 0 0 8.97999 63.53599 383.85598 Tm
+0 g
+/N79 /ExtGState findRes gsDI
+(FIG.)Tj [-363.89999 ]TJ (3)Tj [0 ]TJ (.)Tj [-475 ]TJ (Proposed)Tj [-363.89999 ]TJ (level)Tj [-363.89999 ]TJ (scheme)Tj [-363.89999 ]TJ (for)Tj 
+6.23599 0 0 6.23599 196.83299 387.42799 Tm
+(105)Tj 
+8.97999 0 0 8.97999 206.18798 383.85598 Tm
+(Sb.)Tj [-363.89999 ]TJ (Shell)Tj [-363.89999 ]TJ (model)Tj [-363.89999 ]TJ (calcula-)Tj 
+-17.21859 -1.22219 TD
+(tions)Tj [-259.09999 ]TJ (are)Tj [-259.09999 ]TJ (shown)Tj [-259.09999 ]TJ (o)Tj [0 ]TJ (n)Tj [-259.09999 ]TJ (the)Tj [-259.09999 ]TJ (right-hand)Tj [-259.09999 ]TJ (side.)Tj [-241.09999 ]TJ (The)Tj [-259.09999 ]TJ (widths)Tj [-259.09999 ]TJ (of)Tj [-259.09999 ]TJ (the)Tj [-259.09999 ]TJ (arrows)Tj [-259.09999 ]TJ (are)Tj 
+T*
+(proportional)Tj [-332.69999 ]TJ (to)Tj [-332.69999 ]TJ (the)Tj [-332.69999 ]TJ (intensity)Tj [-332.69999 ]TJ (of)Tj [-332.69999 ]TJ (the)Tj [-332.69999 ]TJ (transitions.)Tj 
+ET
+0 G
+0 J
+0 j
+0.49899 w
+10 M
+[]0 d
+314.97999 709.05799 m
+562.59799 709.05799 l
+314.97999 706.56399 m
+562.59799 706.56399 l
+314.97999 675.97499 m
+562.59799 675.97499 l
+314.97999 572.70298 m
+562.59799 572.70298 l
+314.97999 570.20899 m
+562.59799 570.20899 l
+S 
+BT
+8.97999 0 0 8.97999 326.95399 727.26799 Tm
+(T)Tj [79.89999 ]TJ (A)Tj [0.09999 ]TJ (BLE)Tj [-394.79998 ]TJ (I.)Tj [-506 ]TJ (Ener)Tj [18 ]TJ (gies,)Tj [-394.89999 ]TJ (intensities,)Tj [-394.89999 ]TJ (and)Tj [-394.89999 ]TJ (intensity)Tj [-394.79998 ]TJ (ratios)Tj [-394.89999 ]TJ (for)Tj 
+/N62 1 Tf
+8.97999 0 2.49398 8.97999 536.26199 727.26799 Tm
+(g)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 545.51799 727.26799 Tm
+(rays)Tj 
+-25.67189 -1.22219 TD
+(belonging)Tj [-332.69999 ]TJ (to)Tj 
+6.23599 0 0 6.23599 364.82598 719.86399 Tm
+(105)Tj 
+8.97999 0 0 8.97999 374.18099 716.29199 Tm
+(Sb.)Tj 
+-6.59239 -2.44439 TD
+(Ener)Tj [18 ]TJ (gy)Tj [-2989.09999 ]TJ (Relative)Tj [-1942.79998 ]TJ (Angular)Tj [-332.69999 ]TJ (distribution)Tj 
+/N55 1 Tf
+20.89268 -0.01739 TD
+(J)Tj 
+6.23599 0 0 6.23599 507.30398 691.91099 Tm
+0.07998 Tc
+(initial)Tj 
+/N62 1 Tf
+6.23599 0 1.17599 6.23599 507.31298 698.14498 Tm
+0 Tc
+(p)Tj 
+/N13 1 Tf
+8.97999 0 0 8.97999 525.70298 694.18499 Tm
+(!)Tj 
+/N55 1 Tf
+1.07978 0 TD
+(J)Tj 
+6.23599 0 0 6.23599 540.47799 691.91099 Tm
+0.07998 Tc
+(f)Tj [-60 ]TJ (inal)Tj 
+/N62 1 Tf
+6.23599 0 1.17599 6.23599 540.10899 698.14498 Tm
+0 Tc
+(p)Tj 
+8.97999 0 0 8.97999 314.97999 682.21099 Tm
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(keV)Tj 
+/N62 1 Tf
+1.66589 0 TD
+(!)Tj 
+/N51 1 Tf
+2.58319 0 TD
+(intensity)Tj 
+/N62 1 Tf
+3.77738 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(a.u.)Tj 
+/N62 1 Tf
+1.44389 0 TD
+(!)Tj 
+/N51 1 Tf
+2.30329 0 TD
+(intensity)Tj [-332.69999 ]TJ (ratio)Tj 
+-12.43969 -2.05558 TD
+(245.4)Tj 
+/N62 1 Tf
+2.24978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(4)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.60949 0 TD
+(5)Tj 
+/N62 1 Tf
+0.5 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N13 1 Tf
+13.61378 0 TD
+(!)Tj 
+/N51 1 Tf
+1.07978 0 TD
+(\()Tj [-79.79998 ]TJ (23/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 538.66999 667.32398 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 544.36399 663.75199 Tm
+(\))Tj 
+-25.54339 -1.33329 TD
+(287.0)Tj 
+/N62 1 Tf
+2.24978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.35949 0 TD
+(18)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(3)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+5.76119 0 TD
+(0.9)Tj 
+/N62 1 Tf
+1.24989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.90139 0 TD
+(\()Tj [-79.79998 ]TJ (17/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 514.43998 655.34999 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 520.13398 651.77899 Tm
+(\))Tj 
+/N13 1 Tf
+0.41279 0 TD
+(!)Tj 
+/N51 1 Tf
+1.07978 0 TD
+(\()Tj [-79.79998 ]TJ (15/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 553.21099 655.34999 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 558.90499 651.77899 Tm
+(\))Tj 
+-27.16268 -1.33329 TD
+(370.4)Tj 
+/N62 1 Tf
+2.24978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.35949 0 TD
+(18)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(3)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+5.76119 0 TD
+(0.6)Tj 
+/N62 1 Tf
+1.24989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.90139 0 TD
+(\()Tj [-79.79998 ]TJ (15/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 514.43998 643.37699 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 520.13398 639.80499 Tm
+(\))Tj 
+/N13 1 Tf
+0.41279 0 TD
+(!)Tj 
+/N51 1 Tf
+1.07978 0 TD
+(\()Tj [-79.79998 ]TJ (13/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 553.21099 643.37699 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 558.90499 639.80499 Tm
+(\))Tj 
+-27.16268 -1.33329 TD
+(495.2)Tj 
+/N62 1 Tf
+2.24978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(3)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.35949 0 TD
+(17)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(4)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+5.76119 0 TD
+(0.6)Tj 
+/N62 1 Tf
+1.24989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.90139 0 TD
+(\()Tj [-79.79998 ]TJ (19/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 514.43998 631.40299 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 520.13398 627.83099 Tm
+(\))Tj 
+/N13 1 Tf
+0.41279 0 TD
+(!)Tj 
+/N51 1 Tf
+1.07978 0 TD
+(\()Tj [-79.79998 ]TJ (17/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 553.21099 631.40299 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 558.90499 627.83099 Tm
+(\))Tj 
+-27.16268 -1.33329 TD
+(621.3)Tj 
+/N62 1 Tf
+2.24978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.35949 0 TD
+(20)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(4)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+5.76119 0 TD
+(1.2)Tj 
+/N62 1 Tf
+1.24989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+4.15139 0 TD
+(\()Tj [-79.79998 ]TJ (13/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 516.68499 619.42999 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 522.37899 615.85798 Tm
+(\))Tj 
+/N13 1 Tf
+0.41279 0 TD
+(!)Tj 
+/N51 1 Tf
+1.07978 0 TD
+(\()Tj [-79.79998 ]TJ (9/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 550.96699 619.42999 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 556.65998 615.85798 Tm
+(\))Tj 
+-26.91268 -1.33329 TD
+(735.1)Tj 
+/N62 1 Tf
+2.24978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.35949 0 TD
+(16)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(4)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+5.76119 0 TD
+(1.3)Tj 
+/N62 1 Tf
+1.24989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+3.90139 0 TD
+(\()Tj [-79.79998 ]TJ (23/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 514.43998 607.45599 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 520.13398 603.88398 Tm
+(\))Tj 
+/N13 1 Tf
+0.41279 0 TD
+(!)Tj 
+/N51 1 Tf
+1.07978 0 TD
+(\()Tj [-79.79998 ]TJ (19/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 553.21099 607.45599 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 558.90499 603.88398 Tm
+(\))Tj 
+-27.16268 -1.33329 TD
+(1079.4)Tj 
+/N62 1 Tf
+2.74978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(5)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+-3.58268 -1.33329 TD
+(1219.4)Tj 
+/N62 1 Tf
+2.74978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+2.85949 0 TD
+(19)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(7)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+5.76119 0 TD
+(1.3)Tj 
+/N62 1 Tf
+1.24989 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1)Tj 
+/N62 1 Tf
+0.5 0 TD
+(!)Tj 
+/N51 1 Tf
+4.40139 0 TD
+(\()Tj [-79.79998 ]TJ (9/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 514.44099 583.50898 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 520.13499 579.93699 Tm
+(\))Tj 
+/N13 1 Tf
+0.41279 0 TD
+(!)Tj 
+/N51 1 Tf
+1.07978 0 TD
+(\()Tj [-79.79998 ]TJ (5/2)Tj 
+/N68 1 Tf
+6.23599 0 0 6.23599 548.72198 583.50898 Tm
+(1)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 554.41598 579.93699 Tm
+(\))Tj 
+/N52 1 Tf
+7.98199 0 0 7.98199 484.02999 774.16398 Tm
+0 0 0 0 k
+/N78 /ExtGState findRes gsDI
+-0.00009 Tc
+(RAPID)Tj [-332.79998 ]TJ (COMMUNICA)Tj [73.79998 ]TJ (TIONS)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 51.56199 752.16499 Tm
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+0 Tc
+(EXCITED)Tj [-332.59999 ]TJ (ST)Tj [79.89999 ]TJ (A)Tj [110.79998 ]TJ (TES)Tj [-332.69999 ]TJ (OF)Tj [-314.69999 ]TJ (THE)Tj [-332.69999 ]TJ (PROT)Tj [18 ]TJ (O)Tj [0.09999 ]TJ (N)Tj [-332.59999 ]TJ (E)Tj [0 ]TJ (MITTER)Tj 
+6.23599 0 0 6.23599 243.51098 755.73599 Tm
+(105)Tj 
+8.97999 0 0 8.97999 252.86599 752.16499 Tm
+(Sb)Tj 
+18.19999 -0.10569 TD
+(PHYSICAL)Tj [-295.69999 ]TJ (REVIEW)Tj [-314.59999 ]TJ (C)Tj 
+/N52 1 Tf
+10.38648 0 TD
+(65)Tj 
+/N51 1 Tf
+1.33259 0 TD
+(051307)Tj 
+/N62 1 Tf
+2.99978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(R)Tj 
+/N62 1 Tf
+0.66699 0 TD
+(!)Tj 
+/N51 1 Tf
+-29.91828 -80 TD
+(051307-3)Tj 
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 4 4
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+0 0 612 792 true PDF begin PDFVars begin AS end end
+%%EndPageSetup
+0 0 612 792 RC
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+
+470.06098 763.18899 151.24198 48.89199 rf
+BT
+/N51 1 Tf
+9.97799 0 0 9.97799 51.56199 726.10598 Tm
+0 Tc
+(served)Tj [-324.39999 ]TJ (states,)Tj [-324.39999 ]TJ (in)Tj [-324.39999 ]TJ (which)Tj [-324.39999 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 162.79299 726.10598 Tm
+0 Tw
+(p)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 170.24699 726.10598 Tm
+(g)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 176.03498 724.02198 Tm
+0.00009 Tc
+(7/2)Tj 
+9.97799 0 0 9.97799 188.19999 726.10598 Tm
+0 Tc
+(orbit)Tj [-324.39999 ]TJ (has)Tj [-324.39999 ]TJ (a)Tj [-324.39999 ]TJ (signi\256cant)Tj [-324.39999 ]TJ (con-)Tj 
+-13.69398 -1.14999 TD
+(tribution)Tj [-325.5 ]TJ (to)Tj [-325.5 ]TJ (the)Tj [-325.5 ]TJ (wave)Tj [-325.5 ]TJ (function.)Tj [-307.69999 ]TJ (This)Tj [-325.5 ]TJ (pattern)Tj [-325.5 ]TJ (repeats)Tj [-325.5 ]TJ (itself)Tj [-325.59999 ]TJ (for)Tj 
+0 -1.16648 TD
+(the)Tj [-357.89999 ]TJ (states)Tj [-357.89999 ]TJ (with)Tj [-357.89999 ]TJ (spins)Tj [-357.89999 ]TJ (21/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 156.20399 706.96099 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 162.58198 702.99198 Tm
+(,)Tj [-438.09999 ]TJ (23/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 187.18699 706.96099 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 193.56399 702.99198 Tm
+(,)Tj [-438.09999 ]TJ (25/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 218.16899 706.96099 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 224.54699 702.99198 Tm
+(,)Tj [-357.89999 ]TJ (and)Tj [-357.89999 ]TJ (27/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 266.33198 706.96099 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 276.28099 702.99198 Tm
+(in)Tj [-357.89999 ]TJ (an)Tj 
+-22.52149 -1.16648 TD
+(alternating)Tj [-369.59999 ]TJ (fashion,)Tj [-369.59999 ]TJ (with)Tj [-369.59999 ]TJ (the)Tj [-369.59999 ]TJ (state)Tj [-369.59999 ]TJ (21/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 210.50399 695.32199 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 220.56898 691.35299 Tm
+(having)Tj [-369.59999 ]TJ (a)Tj [-369.59999 ]TJ (proton)Tj [-369.59999 ]TJ (in)Tj 
+-16.93798 -1.16648 TD
+(the)Tj [-411.59999 ]TJ (single-particle)Tj [-411.59999 ]TJ (orbit)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 152.00498 679.71398 Tm
+(p)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 159.45899 679.71398 Tm
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 165.24699 677.62998 Tm
+0.00009 Tc
+(5/2)Tj 
+9.97799 0 0 9.97799 175.67098 679.71398 Tm
+0 Tc
+(.)Tj [-491.69999 ]TJ (For)Tj [-411.59999 ]TJ (proton)Tj [-411.59999 ]TJ (degrees)Tj [-411.59999 ]TJ (of)Tj [-411.59999 ]TJ (free-)Tj 
+-12.43838 -1.16648 TD
+(dom,)Tj [-377.5 ]TJ (the)Tj 
+/N55 1 Tf
+4.00489 0 TD
+(s)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 96.20399 665.99099 Tm
+0.00009 Tc
+(1/2)Tj 
+9.97799 0 0 9.97799 106.62799 668.07499 Tm
+0 Tc
+(,)Tj 
+/N55 1 Tf
+0.70768 0 TD
+(d)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 119.47698 665.99099 Tm
+0.00009 Tc
+(3/2)Tj 
+9.97799 0 0 9.97799 129.90098 668.07499 Tm
+0 Tc
+(,)Tj [-457.69999 ]TJ (and)Tj 
+/N55 1 Tf
+2.52909 0 TD
+(h)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 160.92498 665.99099 Tm
+0.00009 Tc
+(11/2)Tj 
+9.97799 0 0 9.97799 177.11199 668.07499 Tm
+0 Tc
+(single-particle)Tj [-377.5 ]TJ (orbits)Tj [-377.5 ]TJ (give)Tj [-377.5 ]TJ (es-)Tj 
+-12.58268 -1.14999 TD
+(sentially)Tj [-379.79998 ]TJ (negligible)Tj [-379.79998 ]TJ (contributions)Tj [-379.79998 ]TJ (to)Tj [-379.79998 ]TJ (the)Tj [-379.79998 ]TJ (wave)Tj [-379.79998 ]TJ (functions)Tj [-379.79998 ]TJ (and)Tj 
+T*
+(ener)Tj [17.89999 ]TJ (gies)Tj [-508.5 ]TJ (of)Tj [-508.5 ]TJ (the)Tj [-508.5 ]TJ (excited)Tj [-508.5 ]TJ (states.)Tj [-508.5 ]TJ (For)Tj [-508.5 ]TJ (neutrons,)Tj [-508.5 ]TJ (although)Tj [-508.5 ]TJ (the)Tj 
+T*
+(single-particle)Tj [-259.59999 ]TJ (distribution)Tj [-259.59999 ]TJ (for)Tj [-259.59999 ]TJ (a)Tj [-259.59999 ]TJ (given)Tj [-259.59999 ]TJ (state)Tj [-259.59999 ]TJ (is)Tj [-259.59999 ]TJ (also)Tj [-259.59999 ]TJ (negligible,)Tj 
+T*
+(these)Tj [-377.29998 ]TJ (orbits)Tj [-377.29998 ]TJ (are)Tj [-377.19999 ]TJ (important)Tj [-377.29998 ]TJ (for)Tj [-377.29998 ]TJ (a)Tj [-377.29998 ]TJ (good)Tj [-377.19999 ]TJ (description)Tj [-377.19999 ]TJ (of)Tj [-377.29998 ]TJ (the)Tj [-377.19999 ]TJ (en-)Tj 
+T*
+(er)Tj [17.89999 ]TJ (gy)Tj [-278.39999 ]TJ (spectrum,)Tj [-278.39999 ]TJ (as)Tj [-278.39999 ]TJ (was)Tj [-278.39999 ]TJ (also)Tj [-278.39999 ]TJ (demonstrated)Tj [-278.39999 ]TJ (in)Tj [-278.39999 ]TJ (lar)Tj [17.89999 ]TJ (ge-scale)Tj [-278.39999 ]TJ (shell-)Tj 
+T*
+(model)Tj [-321.29998 ]TJ (calculations)Tj [-321.29998 ]TJ (of)Tj [-321.29998 ]TJ (the)Tj [-321.29998 ]TJ (tin)Tj [-321.29998 ]TJ (isotopes)Tj 
+/N62 1 Tf
+15.59309 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(10)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj [-303.39999 ]TJ (The)Tj [-321.29998 ]TJ (ef)Tj [17.89999 ]TJ (fective)Tj [-321.29998 ]TJ (in-)Tj 
+-17.25898 -1.14999 TD
+(teraction)Tj [-267.29998 ]TJ (employed)Tj [-267.29998 ]TJ (here)Tj [-267.29998 ]TJ (is)Tj [-267.29998 ]TJ (the)Tj [-267.29998 ]TJ (same)Tj [-267.29998 ]TJ (as)Tj [-267.29998 ]TJ (that)Tj [-267.29998 ]TJ (used)Tj [-267.29998 ]TJ (in)Tj [-267.29998 ]TJ (Ref.)Tj 
+/N62 1 Tf
+22.68559 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(10)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(#)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+-24.35148 -1.14999 TD
+(In)Tj [-271.29998 ]TJ (general,)Tj [-271.29998 ]TJ (it)Tj [-271.29998 ]TJ (provides)Tj [-271.29998 ]TJ (a)Tj [-271.29998 ]TJ (satisfactory)Tj [-271.29998 ]TJ (reproduction)Tj [-271.29998 ]TJ (of)Tj [-271.29998 ]TJ (the)Tj [-271.29998 ]TJ (data.)Tj 
+1.19999 -1.14999 TD
+(It)Tj [-310.5 ]TJ (is)Tj [-310.5 ]TJ (worth)Tj [-310.5 ]TJ (noting)Tj [-310.5 ]TJ (that)Tj [-310.5 ]TJ (the)Tj [-310.5 ]TJ (agreement)Tj [-310.5 ]TJ (with)Tj [-310.5 ]TJ (the)Tj [-310.5 ]TJ (experimen-)Tj 
+-1.19999 -1.14999 TD
+(tally)Tj [-331.5 ]TJ (proposed)Tj [-331.5 ]TJ (spin)Tj [-331.5 ]TJ (assignment)Tj [-331.5 ]TJ (is)Tj [-331.5 ]TJ (very)Tj [-331.5 ]TJ (good.)Tj [-313.59999 ]TJ (The)Tj [-331.5 ]TJ (reason)Tj [-331.5 ]TJ (for)Tj 
+T*
+(such)Tj [-338.29998 ]TJ (an)Tj [-338.29998 ]TJ (agreement)Tj [-338.29998 ]TJ (is)Tj [-338.29998 ]TJ (most)Tj [-338.29998 ]TJ (likely)Tj [-338.29998 ]TJ (that)Tj [-338.29998 ]TJ (the)Tj [-338.29998 ]TJ (wave)Tj [-338.29998 ]TJ (functions)Tj [-338.29998 ]TJ (of)Tj 
+T*
+(the)Tj [-294.89999 ]TJ (states)Tj [-294.89999 ]TJ (are)Tj [-294.89999 ]TJ (dominated)Tj [-294.89999 ]TJ (by)Tj [-294.89999 ]TJ (neutron)Tj [-294.89999 ]TJ (degrees)Tj [-294.89999 ]TJ (of)Tj [-294.89999 ]TJ (freedom.)Tj [-277 ]TJ (The)Tj 
+T*
+(unbound)Tj [-472.69999 ]TJ (proton)Tj [-472.69999 ]TJ (is)Tj [-472.69999 ]TJ (only)Tj [-472.69999 ]TJ (a)Tj [-472.69999 ]TJ (spectator)Tj [39.79998 ]TJ (,)Tj [-472.69999 ]TJ (while)Tj [-472.69999 ]TJ (the)Tj [-472.69999 ]TJ (well-bound)Tj 
+T*
+(neutrons)Tj [-530.69999 ]TJ (change)Tj [-530.69999 ]TJ (orbits)Tj [-530.69999 ]TJ (and)Tj [-530.69999 ]TJ (alignment)Tj [-530.69999 ]TJ (in)Tj [-530.69999 ]TJ (transitions)Tj [-530.69999 ]TJ (from)Tj 
+T*
+(high)Tj [-332.89999 ]TJ (spin)Tj [-332.89999 ]TJ (states)Tj [-332.89999 ]TJ (to)Tj [-332.89999 ]TJ (the)Tj [-332.89999 ]TJ (ground)Tj [-332.89999 ]TJ (state.)Tj 
+1.19999 -1.16648 TD
+(The)Tj [-468.69999 ]TJ (recently)Tj [-468.69999 ]TJ (described)Tj [-468.69999 ]TJ (spectrum)Tj [-468.69999 ]TJ (of)Tj 
+6.98498 0 0 6.98498 218.99398 488.28498 Tm
+0.00009 Tc
+(107)Tj 
+9.97799 0 0 9.97799 229.47198 484.31599 Tm
+0 Tc
+(Sb)Tj [-468.69999 ]TJ (also)Tj [-468.69999 ]TJ (exhibits)Tj 
+-17.83029 -1.16648 TD
+(low-lying)Tj [-439.5 ]TJ (7/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 107.50099 476.64599 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 118.26298 472.67698 Tm
+(and)Tj [-439.5 ]TJ (11/2)Tj 
+/N68 1 Tf
+6.98498 0 0 6.98498 154.79598 476.64599 Tm
+(1)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 165.55799 472.67698 Tm
+(states,)Tj [-439.5 ]TJ (located)Tj [-439.5 ]TJ (at)Tj [-439.5 ]TJ (approximately)Tj 
+-11.42478 -1.14999 TD
+(the)Tj [-347.09999 ]TJ (same)Tj [-347.09999 ]TJ (excitation)Tj [-347.09999 ]TJ (ener)Tj [17.89999 ]TJ (gies)Tj [-347.09999 ]TJ (as)Tj [-347.09999 ]TJ (those)Tj [-347.09999 ]TJ (computed)Tj [-347.09999 ]TJ (in)Tj [-347.09999 ]TJ (the)Tj [-347.09999 ]TJ (theo-)Tj 
+0 -1.16648 TD
+(retical)Tj [-272.39999 ]TJ (calculation)Tj [-272.39999 ]TJ (discussed)Tj [-272.39999 ]TJ (here.)Tj [-254.5 ]TJ (The)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 207.11399 449.56298 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 213.46099 449.56298 Tm
+(-ray)Tj [-272.39999 ]TJ (transitions)Tj [-272.39999 ]TJ (feed-)Tj 
+-16.22558 -1.16648 TD
+(ing)Tj [-307.39999 ]TJ (these)Tj [-307.39999 ]TJ (two)Tj [-307.39999 ]TJ (states)Tj [-307.39999 ]TJ (in)Tj 
+6.98498 0 0 6.98498 146.34899 441.89299 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 156.82699 437.92399 Tm
+0 Tc
+(Sb)Tj [-307.39999 ]TJ (are,)Tj [-307.39999 ]TJ (as)Tj [-307.39999 ]TJ (in)Tj 
+6.98498 0 0 6.98498 211.67999 441.89299 Tm
+0.00009 Tc
+(107)Tj 
+9.97799 0 0 9.97799 222.15899 437.92399 Tm
+0 Tc
+(Sb,)Tj [-307.39999 ]TJ (expected)Tj [-307.39999 ]TJ (to)Tj [-307.39999 ]TJ (be)Tj 
+9.30268 28.88179 TD
+(much)Tj [-314.69999 ]TJ (weaker)Tj [-314.79998 ]TJ (than)Tj [-314.69999 ]TJ (the)Tj [-314.69999 ]TJ (main)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 430.98699 726.10598 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 437.33399 726.10598 Tm
+(-ray)Tj [-314.69999 ]TJ (cascade.)Tj [-296.89999 ]TJ (This)Tj [-314.79998 ]TJ (presumably)Tj 
+-12.26239 -1.19999 TD
+(explains)Tj [-349.39999 ]TJ (why)Tj [-349.39999 ]TJ (these)Tj [-349.39999 ]TJ (two)Tj [-349.39999 ]TJ (states)Tj [-349.39999 ]TJ (were)Tj [-349.39999 ]TJ (not)Tj [-349.39999 ]TJ (identi\256ed)Tj [-349.39999 ]TJ (in)Tj [-349.39999 ]TJ (the)Tj [-349.39999 ]TJ (ex-)Tj 
+T*
+(periment.)Tj [-321.59999 ]TJ (They)Tj [-339.5 ]TJ (are)Tj [-339.5 ]TJ (nevertheless)Tj [-339.5 ]TJ (interesting)Tj [-339.5 ]TJ (since)Tj [-339.5 ]TJ (their)Tj [-339.5 ]TJ (wave)Tj 
+0 -1.21649 TD
+(functions)Tj [-371.89999 ]TJ (contain)Tj [-371.79998 ]TJ (mainly)Tj [-371.79998 ]TJ (contributions)Tj [-371.89999 ]TJ (from)Tj [-371.79998 ]TJ (the)Tj 
+/N62 1 Tf
+9.97799 0 1.88198 9.97799 515.71899 690.02099 Tm
+(p)Tj 
+/N55 1 Tf
+9.97799 0 0 9.97799 523.17399 690.02099 Tm
+(g)Tj 
+/N51 1 Tf
+6.98498 0 0 6.98498 528.96199 687.93699 Tm
+0.00009 Tc
+(7/2)Tj 
+9.97799 0 0 9.97799 541.59999 690.02099 Tm
+0 Tc
+(orbit)Tj 
+-22.71199 -1.21649 TD
+(that)Tj [-432.89999 ]TJ (is)Tj [-432.89999 ]TJ (poorly)Tj [-432.89999 ]TJ (known)Tj [-432.89999 ]TJ (near)Tj 
+6.98498 0 0 6.98498 429.87998 681.85099 Tm
+0.00009 Tc
+(100)Tj 
+9.97799 0 0 9.97799 440.35798 677.88299 Tm
+0 Tc
+(Sn.)Tj [-378.09999 ]TJ (A)Tj [-378.09999 ]TJ (more)Tj [-432.89999 ]TJ (sensitive)Tj [-432.89999 ]TJ (experi-)Tj 
+-12.56549 -1.19999 TD
+(ment)Tj [-332.89999 ]TJ (is)Tj [-332.89999 ]TJ (clearly)Tj [-332.89999 ]TJ (needed)Tj [-332.89999 ]TJ (for)Tj [-332.89999 ]TJ (their)Tj [-332.89999 ]TJ (identi\256cation.)Tj 
+1.19999 -1.19999 TD
+(In)Tj [-282.59999 ]TJ (conclusion,)Tj [-282.69999 ]TJ (we)Tj [-282.59999 ]TJ (have)Tj [-282.59999 ]TJ (for)Tj [-282.69999 ]TJ (the)Tj [-282.59999 ]TJ (\256rst)Tj [-282.69999 ]TJ (time)Tj [-282.59999 ]TJ (identi\256ed)Tj [-282.59999 ]TJ (excited)Tj 
+-1.19999 -1.21649 TD
+(states)Tj [-259.09999 ]TJ (in)Tj 
+6.98498 0 0 6.98498 351.38099 645.76599 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 361.85899 641.79798 Tm
+0 Tc
+(Sb,)Tj [-259.09999 ]TJ (a)Tj [-259.09999 ]TJ (nucleus)Tj [-259.09999 ]TJ (located)Tj [-259.09999 ]TJ (beyond)Tj [-259.09999 ]TJ (the)Tj [-259.09999 ]TJ (proton)Tj [-259.09999 ]TJ (drip)Tj [-259.09999 ]TJ (line.)Tj 
+-4.69828 -1.21649 TD
+(Despite)Tj [-277.5 ]TJ (the)Tj [-277.5 ]TJ (unbound)Tj [-277.5 ]TJ (proton,)Tj 
+/N62 1 Tf
+9.97799 0 2.76899 9.97799 432.19799 629.65998 Tm
+(g)Tj 
+/N51 1 Tf
+9.97799 0 0 9.97799 438.54399 629.65998 Tm
+(-ray)Tj [-277.5 ]TJ (decay)Tj [-277.5 ]TJ (along)Tj [-277.5 ]TJ (the)Tj [-277.5 ]TJ (yrast)Tj [-277.5 ]TJ (line)Tj 
+-12.38369 -1.19999 TD
+(remains)Tj [-433.5 ]TJ (the)Tj [-433.5 ]TJ (primary)Tj [-433.5 ]TJ (mode)Tj [-433.5 ]TJ (of)Tj [-433.5 ]TJ (decay)Tj [-433.5 ]TJ (from)Tj [-433.5 ]TJ (high-spin)Tj [-433.5 ]TJ (states.)Tj 
+T*
+(The)Tj [-395.39999 ]TJ (experimental)Tj [-395.39999 ]TJ (level)Tj [-395.39999 ]TJ (scheme)Tj [-395.39999 ]TJ (agrees)Tj [-395.39999 ]TJ (very)Tj [-395.39999 ]TJ (well)Tj [-395.39999 ]TJ (with)Tj [-395.39999 ]TJ (shell)Tj 
+0 -1.21649 TD
+(model)Tj [-452.29998 ]TJ (calculations.)Tj 
+6.98498 0 0 6.98498 400.40399 597.54299 Tm
+0.00009 Tc
+(105)Tj 
+9.97799 0 0 9.97799 410.88198 593.57499 Tm
+0 Tc
+(Sb)Tj [-452.19999 ]TJ (is)Tj [-452.29998 ]TJ (now)Tj [-452.19999 ]TJ (the)Tj [-452.19999 ]TJ (lightest)Tj [-452.29998 ]TJ (ground)Tj [-452.19999 ]TJ (state)Tj 
+-9.61138 -1.19999 TD
+(proton)Tj [-425 ]TJ (emitter)Tj [-425 ]TJ (and)Tj [-425 ]TJ (the)Tj [-425 ]TJ (lightest)Tj [-425 ]TJ (Sb)Tj [-425 ]TJ (isotope)Tj [-425 ]TJ (with)Tj [-425 ]TJ (known)Tj [-425 ]TJ (ex-)Tj 
+T*
+(cited)Tj [-566.69999 ]TJ (states.)Tj [-548.89999 ]TJ (The)Tj [-566.69999 ]TJ (combination)Tj [-566.69999 ]TJ (of)Tj [-566.69999 ]TJ (GAMMASPHERE,)Tj [-566.79998 ]TJ (Mi-)Tj 
+T*
+(croball,)Tj [-304.79998 ]TJ (and)Tj [-304.79998 ]TJ (the)Tj [-304.79998 ]TJ (Neutron)Tj [-304.79998 ]TJ (Shell)Tj [-304.79998 ]TJ (proved)Tj [-304.79998 ]TJ (to)Tj [-304.79998 ]TJ (constitute)Tj [-304.79998 ]TJ (an)Tj [-304.79998 ]TJ (excel-)Tj 
+T*
+(lent)Tj [-308.79998 ]TJ (detector)Tj [-308.79998 ]TJ (setup)Tj [-308.79998 ]TJ (for)Tj [-308.79998 ]TJ (identifying)Tj [-308.79998 ]TJ (weakly)Tj [-308.79998 ]TJ (populated)Tj [-308.79998 ]TJ (reaction)Tj 
+T*
+(channels)Tj [-332.89999 ]TJ (in)Tj [-332.89999 ]TJ (fusion)Tj [-332.89999 ]TJ (evaporation)Tj [-332.89999 ]TJ (reactions.)Tj 
+1.19999 -3 TD
+(Oak)Tj [-682.09999 ]TJ (Ridge)Tj [-682.09999 ]TJ (National)Tj [-682.09999 ]TJ (Laboratory)Tj [-682.09999 ]TJ (is)Tj [-682.09999 ]TJ (operated)Tj [-682.09999 ]TJ (by)Tj [-682.09999 ]TJ (UT)Tj [91.79998 ]TJ (-)Tj 
+-1.19999 -1.19999 TD
+(Battelle,)Tj [-276.09999 ]TJ (LLC)Tj [-276.09999 ]TJ (for)Tj [-276.09999 ]TJ (the)Tj [-276.09999 ]TJ (U.S.)Tj [-276.09999 ]TJ (Department)Tj [-276.09999 ]TJ (of)Tj [-276.09999 ]TJ (Ener)Tj [17.89999 ]TJ (gy)Tj [-276.09999 ]TJ (under)Tj [-276.09999 ]TJ (Con-)Tj 
+T*
+(tract)Tj [-342.29998 ]TJ (No.)Tj [-342.29998 ]TJ (DE-AC05-00OR22725.)Tj [-324.39999 ]TJ (W)Tj [79.89999 ]TJ (ork)Tj [-342.29998 ]TJ (at)Tj [-287.5 ]TJ (Ar)Tj [17.89999 ]TJ (gonne)Tj [-342.29998 ]TJ (National)Tj 
+T*
+(Laboratory)Tj [-279.19999 ]TJ (was)Tj [-279.19999 ]TJ (supported)Tj [-279.19999 ]TJ (by)Tj [-279.19999 ]TJ (the)Tj [-279.19999 ]TJ (U.S.)Tj [-279.19999 ]TJ (Department)Tj [-279.19999 ]TJ (of)Tj [-279.19999 ]TJ (Ener)Tj [17.89999 ]TJ (gy)Tj 
+T*
+(under)Tj [-457.89999 ]TJ (Contract)Tj [-457.89999 ]TJ (No.)Tj [-440 ]TJ (W)Tj [54.89999 ]TJ (-31-109-ENG-38)Tj [-457.89999 ]TJ (and)Tj [-457.89999 ]TJ (at)Tj [-440 ]TJ (W)Tj [79.89999 ]TJ (ashington)Tj 
+T*
+(University)Tj [-332.89999 ]TJ (under)Tj [-332.89999 ]TJ (Contract)Tj [-332.89999 ]TJ (No.)Tj [-332.89999 ]TJ (DE-FG02-88ER40406.)Tj 
+ET
+0 0 0 1 K
+0 J
+0 j
+0.49899 w
+10 M
+[]0 d
+183.27099 413.22898 m
+428.72898 413.22898 l
+S 
+BT
+/N62 1 Tf
+8.97999 0 0 8.97999 56.06399 384.04299 Tm
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(R.J.)Tj [-309 ]TJ (T)Tj [34.79998 ]TJ (ighe,)Tj [-327 ]TJ (D.M.)Tj [-327 ]TJ (Moltz,)Tj [-327 ]TJ (J.C.)Tj [-327 ]TJ (Batchelder)Tj [39.79998 ]TJ (,)Tj [-309 ]TJ (T)Tj [73.89999 ]TJ (.J.)Tj [-327 ]TJ (Ognibene,)Tj [-327 ]TJ (M.W)Tj [91.89999 ]TJ (.)Tj 
+0 -1.27778 TD
+(Rowe,)Tj [-332.69999 ]TJ (and)Tj [-332.69999 ]TJ (J.)Tj [-332.69999 ]TJ (Cerny)Tj [64.69999 ]TJ (,)Tj [-332.69999 ]TJ (Phys.)Tj [-332.69999 ]TJ (Rev)Tj [64.69999 ]TJ (.)Tj [-332.69999 ]TJ (C)Tj 
+/N52 1 Tf
+14.28158 0 TD
+(49)Tj 
+/N51 1 Tf
+0.99989 0 TD
+(,)Tj [-332.69999 ]TJ (R2871)Tj 
+/N62 1 Tf
+3.58219 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1994)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-23.02828 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(I.Y)Tj [128.79998 ]TJ (.)Tj [-332.69999 ]TJ (Lee,)Tj [-332.69999 ]TJ (Nucl.)Tj [-332.69999 ]TJ (Phys.)Tj 
+/N52 1 Tf
+8.89439 0 TD
+(A520)Tj 
+/N51 1 Tf
+2.22178 0 TD
+(,)Tj [-332.69999 ]TJ (361)Tj 
+/N62 1 Tf
+2.41529 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1990)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-17.69609 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(3)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(D.G.)Tj [-438.09999 ]TJ (Sarantites)Tj 
+/N55 1 Tf
+6.76379 0 TD
+(et)Tj [-333.29998 ]TJ (al.)Tj 
+/N51 1 Tf
+2.08319 0 TD
+(,)Tj [-438.09999 ]TJ (N)Tj [0.09999 ]TJ (ucl.)Tj [-438.09999 ]TJ (Instrum.)Tj [-438.09999 ]TJ (M)Tj [0.09999 ]TJ (ethods)Tj [-438.09999 ]TJ (Phys.)Tj [-438.09999 ]TJ (Res.)Tj [-383.19999 ]TJ (A)Tj 
+/N52 1 Tf
+-8.84698 -1.27778 TD
+(381)Tj 
+/N51 1 Tf
+1.49989 0 TD
+(,)Tj [-332.69999 ]TJ (418)Tj 
+/N62 1 Tf
+2.41529 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1996)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-8.07969 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(4)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(J.)Tj [-332.69999 ]TJ (Cederka)Tj 
+3.91508 0.11109 TD
+(\310)Tj 
+0.38848 -0.11109 TD
+(ll)Tj 
+/N55 1 Tf
+0.88868 0 TD
+(et)Tj [-333.29998 ]TJ (al.)Tj 
+/N51 1 Tf
+2.08319 0 TD
+(,)Tj [-332.69999 ]TJ (Phys.)Tj [-332.69999 ]TJ (Rev)Tj [64.69999 ]TJ (.)Tj [-332.69999 ]TJ (C)Tj 
+/N52 1 Tf
+6.23869 0 TD
+(53)Tj 
+/N51 1 Tf
+0.99989 0 TD
+(,)Tj [-332.69999 ]TJ (1955)Tj 
+/N62 1 Tf
+2.91519 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1996)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-21.59399 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(5)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(M.)Tj [-282.79998 ]TJ (Lipoglavs)Tj 
+5.06069 0.11109 TD
+(\317)Tj 
+0.36109 -0.11109 TD
+(ek)Tj 
+/N55 1 Tf
+1.22679 0 TD
+(et)Tj [-333.29998 ]TJ (al.)Tj 
+/N51 1 Tf
+2.08319 0 TD
+(,)Tj 
+/N55 1 Tf
+0.53279 0 TD
+(Pr)Tj [37 ]TJ (oceeding)Tj [-282.79998 ]TJ (of)Tj [-282.79998 ]TJ (the)Tj [-282.79998 ]TJ (International)Tj [-282.79998 ]TJ (Confer)Tj [19.89999 ]TJ (-)Tj 
+-9.26449 -1.27778 TD
+(ence)Tj [-557.39999 ]TJ (on)Tj [-557.39999 ]TJ (Nuclear)Tj [-557.39999 ]TJ (Structur)Tj [37 ]TJ (e)Tj [-557.39999 ]TJ (2000)Tj 
+/N62 1 Tf
+14.52539 0 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(Nucl.)Tj [-557.39999 ]TJ (Phys.)Tj 
+/N52 1 Tf
+5.50358 0 TD
+(A682)Tj 
+/N51 1 Tf
+2.22178 0 TD
+(,)Tj [-557.39999 ]TJ (399c)Tj 
+/N62 1 Tf
+-22.58378 -1.27778 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2001)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!#)Tj 
+/N51 1 Tf
+0.66598 0 TD
+(.)Tj 
+/N62 1 Tf
+24.83578 10.22219 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(6)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(D.R.)Tj [-332.69999 ]TJ (LaFosse)Tj 
+/N55 1 Tf
+5.88699 0 TD
+(et)Tj [-333.29998 ]TJ (al.)Tj 
+/N51 1 Tf
+2.08319 0 TD
+(,)Tj [-332.69999 ]TJ (Phys.)Tj [-332.69999 ]TJ (Rev)Tj [64.69999 ]TJ (.)Tj [-332.69999 ]TJ (C)Tj 
+/N52 1 Tf
+6.23869 0 TD
+(62)Tj 
+/N51 1 Tf
+0.99989 0 TD
+(,)Tj [-332.69999 ]TJ (014305)Tj 
+/N62 1 Tf
+3.91519 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(2000)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-23.28858 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(7)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(R.)Tj [-362 ]TJ (Machleidt,)Tj [-362 ]TJ (F)Tj [79.89999 ]TJ (.)Tj [-362 ]TJ (Sammarruca,)Tj [-362 ]TJ (and)Tj [-325.09999 ]TJ (Y)Tj [128.79998 ]TJ (.)Tj [-362 ]TJ (Song,)Tj [-362 ]TJ (Phys.)Tj [-362 ]TJ (Rev)Tj [64.69999 ]TJ (.)Tj [-362 ]TJ (C)Tj 
+/N52 1 Tf
+24.08578 0 TD
+(53)Tj 
+/N51 1 Tf
+0.99989 0 TD
+(,)Tj 
+-25.08569 -1.27778 TD
+(R1483)Tj 
+/N62 1 Tf
+2.99949 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1996)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-7.16398 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(8)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(M.)Tj [-355.39999 ]TJ (Hjorth-Jensen,)Tj [-337.39999 ]TJ (T)Tj [73.89999 ]TJ (.)Tj [0 ]TJ (T)Tj [73.89999 ]TJ (.S.)Tj [-355.39999 ]TJ (Kuo,)Tj [-355.39999 ]TJ (and)Tj [-355.39999 ]TJ (E.)Tj [-355.39999 ]TJ (Osnes,)Tj [-355.39999 ]TJ (Phys.)Tj [-355.39999 ]TJ (Rep.)Tj 
+/N52 1 Tf
+23.58558 0 TD
+(261)Tj 
+/N51 1 Tf
+1.49989 0 TD
+(,)Tj 
+-25.08549 -1.27778 TD
+(125)Tj 
+/N62 1 Tf
+2.01219 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1995)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(;)Tj [-494.29998 ]TJ (T)Tj [73.89999 ]TJ (.)Tj [-512.29998 ]TJ (Engeland,)Tj [-512.29998 ]TJ (M.)Tj [-512.29998 ]TJ (Hjorth-Jensen,)Tj [-512.29998 ]TJ (and)Tj [-512.29998 ]TJ (E.)Tj [-512.29998 ]TJ (Osnes,)Tj 
+-4.67799 -1.27778 TD
+(Phys.)Tj [-332.69999 ]TJ (Rev)Tj [64.69999 ]TJ (.)Tj [-332.69999 ]TJ (C)Tj 
+/N52 1 Tf
+5.65599 0 TD
+(61)Tj 
+/N51 1 Tf
+0.99989 0 TD
+(,)Tj [-332.69999 ]TJ (021302)Tj 
+/N62 1 Tf
+3.58248 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(R)Tj 
+/N62 1 Tf
+0.66699 0 TD
+0.33268 Tc
+(!~)Tj 
+/N51 1 Tf
+0.99868 0 TD
+0 Tc
+(2000)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-16.06858 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(9)Tj 
+/N62 1 Tf
+0.5 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(D.)Tj [-332.69999 ]TJ (Sohler)Tj [39.79998 ]TJ (,)Tj 
+/N55 1 Tf
+4.45829 0 TD
+(et)Tj [-333.29998 ]TJ (al.)Tj 
+/N51 1 Tf
+2.08319 0 TD
+(,)Tj [-332.69999 ]TJ (Phys.)Tj [-332.69999 ]TJ (Rev)Tj [64.79998 ]TJ (.)Tj [-332.69999 ]TJ (C)Tj 
+/N52 1 Tf
+6.23869 0 TD
+(59)Tj 
+/N51 1 Tf
+0.99989 0 TD
+(,)Tj [-332.69999 ]TJ (1324)Tj 
+/N62 1 Tf
+2.91519 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1999)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N62 1 Tf
+-21.35998 -1.27778 TD
+(@)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(10)Tj 
+/N62 1 Tf
+0.99989 0 TD
+(#)Tj 
+/N51 1 Tf
+0.66578 0 TD
+(A.)Tj [-372.09999 ]TJ (Holt,)Tj [-354.09999 ]TJ (T)Tj [73.89999 ]TJ (.)Tj [-372.09999 ]TJ (Engeland,)Tj [-372.09999 ]TJ (M.)Tj [-372.09999 ]TJ (Hjorth-Jensen,)Tj [-372.09999 ]TJ (and)Tj [-372.09999 ]TJ (E.)Tj [-372.09999 ]TJ (Osnes,)Tj [-372.09999 ]TJ (Nucl.)Tj 
+0 -1.27778 TD
+(Phys.)Tj 
+/N52 1 Tf
+2.52749 0 TD
+(A634)Tj 
+/N51 1 Tf
+2.22178 0 TD
+0.33268 Tc
+(,4)Tj [332.69999 ]TJ (1)Tj 
+/N62 1 Tf
+1.91529 0 TD
+0 Tc
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(1998)Tj 
+/N62 1 Tf
+1.99989 0 TD
+(!)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(.)Tj 
+/N52 1 Tf
+7.98199 0 0 7.98199 484.02999 774.16398 Tm
+0 0 0 0 k
+/N78 /ExtGState findRes gsDI
+-0.00009 Tc
+(RAPID)Tj [-332.79998 ]TJ (COMMUNICA)Tj [73.79998 ]TJ (TIONS)Tj 
+/N51 1 Tf
+8.97999 0 0 8.97999 51.56199 751.21499 Tm
+0 0 0 1 k
+/N79 /ExtGState findRes gsDI
+(M.)Tj [-332.79998 ]TJ (LIPOGLA)Tj [128.69999 ]TJ (V)Tj [0 ]TJ (S)Tj 
+6.45329 0.33329 TD
+0 Tc
+(\317)Tj 
+0.44439 -0.33329 TD
+(EK)Tj 
+/N55 1 Tf
+1.66558 0 TD
+(et)Tj [-333.29998 ]TJ (al.)Tj 
+/N51 1 Tf
+32.05319 0 TD
+(PHYSICAL)Tj [-295.69999 ]TJ (REVIEW)Tj [-314.59999 ]TJ (C)Tj 
+/N52 1 Tf
+10.38648 0 TD
+(65)Tj 
+/N51 1 Tf
+1.33259 0 TD
+(051307)Tj 
+/N62 1 Tf
+2.99978 0 TD
+(~)Tj 
+/N51 1 Tf
+0.33299 0 TD
+(R)Tj 
+/N62 1 Tf
+0.66699 0 TD
+(!)Tj 
+/N51 1 Tf
+-29.91828 -80 TD
+(051307-4)Tj 
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Trailer
+%%DocumentProcessColors: Black
+%%DocumentNeededResources:
+%%+ font Times-Bold
+%%+ font Times-Italic
+%%+ font Times-Roman
+%%EOF

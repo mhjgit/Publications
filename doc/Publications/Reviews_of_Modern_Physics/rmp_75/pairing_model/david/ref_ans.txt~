@@ -1,0 +1,221 @@
+Dear Editors,
+
+please find enclosed a revised version of LD 8547,
+by Belic, Dean and Hjorth-Jensen.
+
+We have also included our answers to both referees, 
+indicating where changes have been made. 
+
+Whether our arguments may or may not convince referee A,
+is clearly something we cannot control. We do however believe
+that referee B has coined the essence of our manuscript, and we 
+are quite convinced that our paper deserves the attention of
+a PRL. 
+
+In case other referees are to be consulted, we would like to take
+the liberty of proposing at least one whom we feel
+may be competent:
+
+Prof Yoram Alhassid, Yale University, e-mail: yoram.alhassid@yale.edu
+
+
+Since there are no changes to the original figures, they are not included
+in the revised ms. The text, as a latex file, is included in
+this message after the reply to the referees.
+
+Yours sincerely,
+Morten Hjorth-Jensen
+
+
+________________________________________________________
+--------------------------------------------------------
+ From: Morten Hjorth-Jensen
+       e-mail: morten.hjorth-jensen@fys.uio.no
+       Department of Physics, University of Oslo
+       P.O.B. 1048 Blindern, N-0316 OSLO, Norway
+       phone: +47-22856458 or +47-22856428 (secretariat)
+       fax:   +47-22856422
+       home:  +47-22658805
+       Office: FV303A
+       http://www.uio.no/~mhjensen
+________________________________________________________
+--------------------------------------------------------
+
+
+
+***********   Answers to the referees
+
+We are much indebted to both referees for comments and suggestions
+about our manuscript. Below we summarize our changes and include
+our responses to both referees as well.
+
+To referee B, we agree that the method of Borrmann et al, as applied
+to our model, does not lead to such a as clear a conclusion as seen in
+the analysis of Fig 1, where the free energy is studied. We have revised
+the last part of our manuscript accordingly, following the 
+pertinent suggestions of referee B.
+
+However, although the distribution of zeros may not yield a clear
+determination of the parameter alpha and thereby the order of the phase, 
+we still feel that the approach
+presented by Borrmann et al, reveals in a beautiful way the separation
+of distinct phases, in our case 
+the strongly paired one weighted by the ground state
+and a phase where broken pairs co-exist with pairing correlations. 
+One also notices that as the number of particles increases, the zeros
+approach the real axis, an indication of behavior towards the infinite
+system. 
+Moreover, when the relation between the pairing strength (G) 
+and the single-particle spacing (d) increases (d/G > 1.5), 
+the system moves from a
+strongly correlated one to a weakly correlated one. The bottom figure 
+in figure 2, clearly demonstrates this feature, the distribution
+of zeros does not create a clear boundary, as seen in the three upper
+ones.
+
+The latter can also be seen for all temperatures in the analysis of Fig 1.
+There, for d/G > 1.5 and for all numbers of particles investigated here,
+the free energy developes only one minimum, and thereby no phase transition
+like behavior. 
+
+These two different ways of studying a finite system, 
+the standard thermodynamical analysis of fig 1 and 
+Borrmann et al's method in fig 2, yield, 
+in our point view, novel information and tools to analyze eventual 
+phase transitions
+in finite systems. 
+
+Since signs of phase transitions in finite systems are elusive, one needs
+to combine several methods. In the light of the latter, we would like
+to comment on remarks made by referee A.
+
+We agree that much of the information about the relation between 
+the pairing strength and the single-particle spacing has already been discussed
+in the literature, especially, prior to the solid state discussions after
+Tinkham et al's experiments, in the nuclear physics community.
+Exact solutions of the Schroedinger equation for the pairing
+hamiltonian using e.g., Richardson's
+method have been well-known to nuclear physicist for at least three decades.
+
+However, we feel that our paper presents additional information on the 
+analysis  of the behavior of phase transition like behaviors in finite 
+systems. We'd like to reiterate some of these arguments in order to see
+whether we can convice  referee A as well. 
+
+a) The methodological part
+--------------------------
+   1a) Our method, which consists in using the seniority quantum number
+       in a block-diagonalization of the hamiltonian, allows us to
+       obtain numerically all eigenvalues and thereby determine 
+       exactly the microcanonical partition function. That itself we
+       believe merits an attention close to PRL. This has never been
+       done before, at least to our knowledge. The approaches used in the 
+       solid state community deal essentially with the ground state and
+       and the first excited state, whereas we are interested, in order to
+       perform a thermodynamical analysis, in all eigenstates.
+       One can still, however, from studies of the ground state and the
+       first excited state reveal important information about the relation
+       between the sigle-particle spacing the interaction strength.
+
+       Moreover, many of studies of such systems have been performed 
+       in the canonical ensemble. This leads to our next point.
+
+   2a) Since this is a finite system, the microcanonical ensemble 
+       is the preferred one, see also the discussions in refs [10-12]. 
+       We have, in addition to performing an exact diagonalization
+       also performed large-scale Monte-carlo shell-model
+       calculations, see e.g., ref [22] in the present manuscript,
+       in the canonical ensemble. Based on these Monte-Carlo calculations
+       we employed the histogram method of refs [16,17] in order to simulate
+       the microcanonical ensemble. However, the fluctuations in energy
+       in the canonical ensemble are so large, that we cannot see the 
+       various minima of Fig 1. 
+       We think this is an important message, since it indicates that
+       structures seen in the microcanonical ensemble get smeared 
+       out in the canonical ensemble for such a finite system,
+       thereby inhibiting a clear interpretation of a phase transition.
+        
+       In a sense, these is disconforting since our capability to obtain
+       -all- eigenvalues is limited to systems with at most 16-18 particles.   
+
+   3a) The microcanonical partition function is then in turn used
+       to compute the exact canonical partition function. 
+       In this ensemble we use Borrmann et al's recent recipe to 
+       study the behavior of the zeros of the partition function in the complex
+       temperature plan. This method offers an alternative to the 
+       microcanonical one. 
+       For d/G > 1.5, we develop only one free energy minimum (not
+       shown in fig 1) and have thereby no sign of a phase transition.
+       We demonstrate this in the bottom panel of fig 2. 
+       See also the discussion above.
+
+b) The physics part
+
+   1b) We would like to emphasize that what we see is not a classical
+       phase transition in the thermodynamic limit. The single-particle
+       occupation probability changes smoothly and there is no sudden
+       change from a state which is totally paired to a normal fermi liquid.
+
+       However, the calculations in the microcanonical ensemble reveal a much
+       richer structure, a structure which cannot be seen in the canonical
+       ensemble calculations. 
+
+       What we actually see, when d/G < 1.5, is that the system can develop
+       several intermediate steps where e.g., two and three broken pairs
+       coexist or three and four coexist and so forth. 
+       That means that as the temperature
+       is increased that more and more pairs are broken, but that at 
+       certain temperatures we can have intermediate phases where
+       e.g., two and three pairs broken are favored. This information
+       that we convey cannot be seen in the canonical ensemble.  
+
+       Such a feature is actually seen experimentally through studies
+       of level densities in finite nuclei, see e.g., Refs [9]
+       and especially Guttormsen et al PRC 62 (2000) 024306. The experimental
+       level density is proportional to the microcanonical partition
+       function.   
+       
+       We believe that such a feature should apply to other physics
+       systems as well, i.e., that one developes phases where 
+       different seniority quantum numbers can co-exist.
+
+
+   2b) The amusing feature is that a phase where e.g, two and three
+       broken pairs co-exist with the same free energy minimum, 
+       exhibits the same temperature, irrespective of number of particles.
+       That shows to us a robust property of the method and supports
+       further the possibility of interpreting this as a phase-transition
+       like behavior.  We would also like to stress the fact that what
+       we see is a reminiscence of the phase in the infinite system, 
+       and that the transition-like behavior seemingly has a  memory of what
+       happens in the infinite system.
+
+
+   3b) An interesting question that we cannot answer within this
+       simple pairing model, is what happens when a repulsive
+       long-range force is introduced. In nuclear physics this can 
+       be approximated by polarization terms represented by particle-hole
+       excitations. Such excitations are important but 
+       would however break the simplicity 
+       of our pairing hamiltonian since seniority would no longer be
+       a good quantum number. The system can then no longer be block-
+       diagonalized in terms of no broken pairs, one broken pair, 
+       two, etc etc. The problem to diagonalize becomes then intractable
+       if one wants to compute all eigenvalues.
+
+
+We hope the above comments clarify somewhat more our intentions behind the 
+paper. The rich phase structure seen in the microcanonical ensemble
+cannot be seen properly in the canonical ensemble due to large energy
+fluctuations. 
+Large-scale Monte-Carlo calculations in the canonical ensemble by us
+support this conclusion. 
+
+We believe these conclusions are new and of interest 
+to both nuclear physicists, solid state physicists and those interested
+in how to classify phase transitions in finite systems. 
+
+
+Yours sincerely, 
+the authors
+

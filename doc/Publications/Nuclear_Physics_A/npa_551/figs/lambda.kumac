@@ -1,0 +1,99 @@
+ macro one        
+ zone 1 1
+ opt zfl1
+ opt tic
+ set gfon -1042
+ set vfon -42
+ set lfon -1042
+ set bwid 3.
+ set fwid 1.
+ set ylab 1.3
+ set asiz 0.40
+ set gsiz 0.45
+ title_global 'Role of cutoffs [L]?[p]! and [L]?[r]!'
+ vector/create vx(9) r  _
+ 10. 100. 200. 300. 400.  500. 600.  900. 1000. 
+ ve/cr vz1(9) r _
+  0.0000   0.0000   0.0000   0.0025   5.6727  _
+  5.3399   3.9964   1.2571   0.8284  
+ ve/cr vz2(9) r _
+  0.0 0.0 0.0 0.002 3.7 2.2 1.8 9.1 12.9 
+ ve/cr vz3(9) r _
+ 0.0 0.0 0.0 0.002 2.1 1.1 2.04 10.5 13.5 
+ ve/cr vz4(9) r _
+ 0.0 0.0 0.0 0.002 3.2 1.8 0.73 0.63 0.59 
+ ve/cr vx1(2) r _
+  100. 200.
+ ve/cr vybo(2) r _
+  17. 17.           
+ ve/cr vy25(2) r _
+  16. 16.
+  ve/cr vy20(2) r _
+  15. 15.
+  ve/cr vy08(2) r _
+  14. 14.
+ null 0.0 1000. 0.0  20.
+ igset chhe 0.35
+ igset txal 10
+ itx 205. 17. '[L]?[p]!=1.2 GeV and [L]?[r]!=1.3 GeV '
+ itx 205. 16. '[L]?[p]!=1.2 GeV and [L]?[r]!=2.5 GeV '
+ itx 205. 15. '[L]?[p]!=0.8 GeV and [L]?[r]!=2.0 GeV  '
+ itx 205. 14. '[L]?[p]!=0.8 GeV and [L]?[r]!=1.3 GeV  '
+ graph 9 vx vz1 c
+ graph 2 vx1 vybo c 
+ set dmod 2
+ graph 9 vx vz2 c
+ graph 2 vx1 vy25 c
+ set dmod 3
+ graph 9 vx vz3 c
+ graph 2 vx1 vy20 c
+ set dmod 4
+ graph 9 vx vz4 c
+ graph 2 vx1 vy08 c
+ atitle 'Energy [w] of the incoming nucleon in  "M#MeV"N#' 'W^N[D]! "M#MeV"N#'
+ ve/de *
+ set dmod 1
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

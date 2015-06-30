@@ -1,0 +1,397 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentstyle[12pt]{article}
+\makeatletter
+\topmargin 0pt
+\ifcase \@ptsize
+    \textheight 53\baselineskip
+\or
+    \textheight 46\baselineskip
+\or
+    \textheight 42\baselineskip
+\fi
+\advance\textheight by \topskip
+\ifcase \@ptsize
+    \textwidth      5.00in
+    \marginparwidth 1.00in
+  \if@twoside
+    \oddsidemargin  0.55in
+    \evensidemargin 0.75in
+  \else
+    \oddsidemargin  0.55in
+    \evensidemargin 0.55in
+  \fi
+\or
+    \textwidth      5.20in
+    \marginparwidth 1.00in
+  \if@twoside
+    \oddsidemargin  0.45in
+    \evensidemargin 0.65in
+  \else
+    \oddsidemargin  0.45in
+    \evensidemargin 0.45in
+  \fi
+\or
+    \textwidth      5.70in
+    \marginparwidth 0.80in
+  \if@twoside
+    \oddsidemargin  0.20in
+    \evensidemargin 0.40in
+  \else
+    \oddsidemargin  0.20in
+    \evensidemargin 0.20in
+  \fi
+\fi
+\def\WideMargins{%
+  \newdimen\ExtraWidth
+  \ifcase \@ptsize
+    \ExtraWidth = 0.5in
+    \@widemargins
+  \or
+    \ExtraWidth = 0.5in
+    \@widemargins
+  \or
+    \ExtraWidth = 0.7in
+    \@widemargins
+  \fi\let\WideMargins\relax\let\@widemargins\relax}
+{\def\do{\noexpand\do\noexpand}
+ \xdef\@preamblecmds{\@preamblecmds \do\WideMargins}
+}
+\def\@widemargins{%
+    \global\advance\textwidth by -\ExtraWidth
+    \global\advance\marginparwidth by \ExtraWidth
+    \if@twoside
+      \tw@sidedwidemargins
+    \else
+      \@nesidedwidemargins
+    \fi}
+\def\tw@sidedwidemargins{%
+    \if@reversemargin
+      \@tempdima=\evensidemargin
+      \advance\@tempdima by -\oddsidemargin
+      \advance\oddsidemargin by \ExtraWidth
+      \advance\oddsidemargin by \@tempdima
+      \advance\evensidemargin by -\@tempdima
+    \else
+      \advance\evensidemargin by \ExtraWidth
+    \fi}
+\def\@nesidedwidemargins{%
+    \if@reversemargin
+      \advance\oddsidemargin by \ExtraWidth
+      \advance\evensidemargin by \ExtraWidth
+    \fi}
+\makeatother
+
+\newlength{\textwidtho}
+\setlength{\textwidtho}{\textwidth}
+\setlength{\topsep}{0pt}
+\setlength{\headheight}{0pc}
+\addtolength{\textwidth}{2pc}
+\pagestyle{empty}
+\setlength{\topmargin}{-3cm}
+\setlength{\textheight}{29cm}
+
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{-1.2cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35\baselineskip}
+\begin{document}
+
+
+
+
+
+\small
+
+\underline{
+\parbox{\textwidtho}{
+\flushleft
+{\sc elsevier science b.v.}
+}}
+\begin{flushleft}
+{\large\bf  AUTHOR(S) OFFPRINT ORDER}\\[2ex]
+\begin{tabular*}{\textwidth}
+{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.4\textwidth}}
+{\bf Complete (even if you do not wish
+to order additional  offprints) and return (FAX) immediately to:} \\
+& \bf Article number: \\
+{\small \bf Nuclear Physics}& \\
+\footnotesize Elsevier Science B.V.& \bf Editorial Office number: \\
+\footnotesize P.O. Box 103,&\bf \hfill NUCPHA
+1099\\
+1000 AC Amsterdam, The Netherlands       \\[1.5ex]
+\footnotesize Telefax: +31 20 4852431      & \\
+\footnotesize Office address for Courier Services:& {\LARGE $\boldmath 
+       \rightarrow$} Please tick box {\LARGE $\boldmath \leftarrow$}  \\   
+\footnotesize Sara Burgerhartstraat 25,    & {\Large $\boldmath\Box$} 
+       I would like to receive proofs\\
+\footnotesize 1055 KV Amsterdam, The Netherlands  &   {\Large 
+       $\boldmath \Box$} I do not need to receive proofs% 
+\end{tabular*}
+\end{flushleft}
+
+\begin{center}
+\small \bf All offprints include covers
+\end{center}
+
+\small \bf Please supply me with: 
+
+
+\framebox[0.5\textwidtho]{%
+\parbox{0.5\textwidtho}{\protect\begin{center}
+         {\protect\small\protect\bf  FREE}\\[5ex]
+   50 offprints
+   \protect\end{center}
+                        }
+}
+\framebox[0.5\textwidtho]{%
+\parbox{0.5\textwidtho}{\protect\begin{center}
+         {\small\bf CHARGED  (minimum 100 extra)}\\[5ex]
+   --- offprints
+   \protect\end{center}
+                        }
+}
+
+\begin{center}
+\bf  For prices see Terms of Delivery
+\end{center}
+
+
+\bf Official Purchase Order No. \hrulefill\  
+
+
+
+\footnotesize\bf Please quote your VAT Registration %\\[1.5ex]
+Number (EU customers only) \hrulefill\  
+
+
+\parbox[t]{0.5\textwidtho}{
+\flushleft
+\footnotesize Charge to:  (Complete Address)\\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[3ex]
+Signature:
+} %\vrule
+\parbox[t]{0.5\textwidtho}{
+\flushleft
+\footnotesize Deliver to:  (Name and Complete Address) \\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[1.5ex]
+\ \hrulefill \ \\[3ex]
+Date:
+}
+
+\begin{tabular*}{\textwidth}
+{@{}@{\extracolsep{\fill}}p{0.3\textwidth}p{0.6\textwidth}}
+\scriptsize $\Box$ {\bf Delivery by S.A.L.} (Surface Mail Air Lifted)&
+\scriptsize at no extra charge to authors in: Argentina, Australia,
+Brazil, Canada, China, Hong Kong,  India, Israel, Japan, Malaysia,
+Mexico, New Zealand, Pakistan, Singapore, South Africa, South Korea, 
+Taiwan, Thailand, U.S.A.\\ 
+\multicolumn{2}{@{}p{0.95\textwidth}}{\scriptsize{\bf Attention:} authors  
+       from other countries, please indicate below  whether you wish to 
+       receive your paid offprints by airmail at 20\% extra or by surface 
+       mail.} \\
+\scriptsize $\Box$ {\bf Delivery by Surface Mail} & \scriptsize \bf no extra 
+       charge.\\
+\scriptsize $\Box$ {\bf Delivery by Airmail}      & \scriptsize \bf at 20\% 
+       extra charge\\
+\hline
+\end{tabular*}
+
+
+\scriptsize For Publisher's use, please leave blank.
+\hfill
+\begin{tabular}{lllllllllll}
+  Vol./Issue    &&&&&& Page&& & To &\mbox{ }
+\end{tabular}
+
+\setlength{\parskip}{1\baselineskip}
+
+
+\newpage
+\underline{
+\parbox{\textwidtho}{
+\flushleft
+{\normalsize \sc elsevier science b.v.}
+}}
+
+{\Large \bf TERMS OF DELIVERY}
+
+\small
+\begin{itemize}
+\item[\bf 1.] These terms apply only to authors of articles appearing 
+in this journal.
+
+\item[\bf  2.] Offprints can be ordered by filling in the Author(s) Offprint 
+Order Form and returning it to the Publisher. Offprints will only be 
+supplied if this form is completed and returned. Receipt of offprint orders is not 
+acknowledged.
+
+\item[\bf 3.] All orders must be accompanied by an Institutional Purchase 
+Order (unless they are prepaid). Delays can cause extra costs (see item 6).
+
+\item[\bf 4.] Only one author receives an order form. It is essential that
+the offprint requirements of all the authors of a paper are included on
+this order form, as the price of offprints ordered after publication is 
+substantially higher than those quoted here.
+
+\item[\bf 5.] As typesetting costs are not included in offprint prices, any
+blank page necessary to complete printer's forms will cost the same as a
+printed page.
+
+\item[\bf 6.] All plates are destroyed immediately after printing the issue 
+unless offprints have been ordered. Offprint orders received late are treated 
+as repeat orders; the price is then substantially higher.
+
+\item[\bf 7.] Prices are subject to change without prior notice.
+
+\item[\bf 8.] Cancellation of an order will not be accepted after the
+printing of the journal has been finalized.
+
+\item[\bf 9.] Claims for missing or damaged offprints must be made within 6
+months from the date of our invoice.
+
+\item[\bf 10.]  Any correspondence in connection with offprints must state
+the name of the journal,  title and code number of the article, and name(s)
+of the author(s).
+
+\item[\bf 11.] Customers who are European Union residents should quote
+their VAT registration number.
+
+\end{itemize}
+
+\vspace{1cm}
+
+\begin{center}
+
+{\bf Prices (excluding VAT) of offprints (in Dutch guilders).}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+Number&\multicolumn{7}{c|}{Page length of article}& Additional\\
+of copies &\multicolumn{7}{c|}{\hrulefill \ } &two\\
+ordered&1-4&5-6&7-8&9-10&11-12&13-14&15-16&pages\\
+\hline
+\hline
+100&306& 397& 488& 580& 671& 762& 854& 91\\
+150&381& 487& 594& 701& 809& 915&1022&107\\
+200&455& 576& 696& 817& 938&1059&1179&121\\
+250&530& 663& 796& 928&1062&1195&1328&133\\
+300&605& 750& 895&1040&1185&1330&1475&145\\
+350&680& 837& 994&1151&1308&1465&1623&157\\
+400&755& 924&1093&1262&1431&1601&1770&169\\
+450&829&1011&1192&1373&1554&1736&1917&182\\
+550&904&1098&1291&1484&1678&1871&2065&194\\
+\hline
+\hline
+\multicolumn{9}{|c|}{\bf Rates for larger quantities are available on 
+       request}\\
+\hline
+\end{tabular}
+
+\end{center}
+
+\newpage
+\underline{
+\parbox{\textwidtho}{
+\flushleft
+{\normalsize \sc elsevier science b.v.\hfill \small 
+NUCPHA 1099}
+}}
+
+\begin{center}
+{ \large\bf COPYRIGHT TRANSFER}
+\end{center}
+\small
+
+Formal written transfer of copyright from the author(s) to the publisher is
+required for each article. Such transfer enables the publisher to provide
+for the widest possible dissemination of the article in printed, electronic
+and other existing and future formats. Without this transfer of copyright,
+such activities on the part of the publisher and the dissemination of
+information may be limited. Transfer of copyright is also required to
+enable the publisher to act against plagiarism and other forms of 
+copyright infringement. We therefore ask that you complete and return this
+form promptly. Your cooperation is essential and appreciated.
+
+
+Copyright (including all rights thereunder and the right to obtain
+copyrights registration in the name of the publisher, whether separately or
+as part of a journal issue or otherwise) in the article (provisionally)
+entitled:
+
+
+{\it Self-energy of $\Lambda$ in finite nuclei}
+
+
+to be published in the Journal {\bf Nuclear Physics A}
+
+
+is hereby transferred, throughout the world and for the full term and all
+extensions and renewals thereof, to:
+
+\begin{center}
+{\large\bf ELSEVIER SCIENCE B.V.}\\
+\end{center}
+{\footnotesize{
+
+The author(s) reserve(s) trademark rights and patent rights, if any.
+
+
+The author(s) may use all or part of the information contained in this
+article in future, non-commercial works of the author's own, or, if the
+article is a `work-for-hire' made within the scope of the author's
+employment, the employer may use all or part of the information contained
+in this article for intra-company use, provided acknowledgements are given
+regarding copyright notice and reference to the original publication.
+
+
+The author(s) warrant(s) that the article is the author(s)'s original work,
+and has not been published before. If excerpts from copyrighted works are
+included, the author(s) has obtained or will obtain written permission
+from the copyright owners and shall credit the sources in the article. The
+author(s) also warrant(s) that the article contains no libellous or
+unlawful statements, and does not infringe on the rights of others.
+
+
+If the article was prepared jointly with other author(s), the author has
+informed the co-author(s) of the terms of this copyright transfer and is
+signing on their behalf as their agent and represents that the author is
+authorized to do so. In the case of an employed author(s) acting within
+the scope of his employment (`work-for-hire') the employer or an
+authorized representative of the employer must sign.
+
+
+Signature of copyright owner:
+
+(author or corporate representative) \dotfill \ 
+
+
+Name (printed): \dotfill \ 
+
+Date: \dotfill\  }} 
+
+\rule[0.01cm]{\textwidth}{.05cm}\\ \hfill 
+{\normalsize\it Please return this form* promptly to:
+
+ ELSEVIER SCIENCE B.V.\\
+\small
+Nuclear Physics \\
+P.O. Box 103, 1000 AC AMSTERDAM\\
+THE NETHERLANDS
+\begin{flushright}
+\footnotesize {*We require the original signed form, not a faxed copy.}
+\end{flushright}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+

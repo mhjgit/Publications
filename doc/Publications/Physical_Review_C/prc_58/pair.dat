@@ -1,0 +1,139 @@
+Hi Hans-Josef
+we have to finish this waste of time in some way.
+We will insist on not putting on equal terms the
+old stuff and the new stuff. People now
+tend to use the new pots see e.g., the recent calcs of
+Pandharipande et al., or the Bochym group of Gloeckle
+ and those of Lars et al in NPA 627.
+That's also what the Nijmegen people have been telling one
+of us (Morten) ad nauseam, that the new pots are much more reliable
+for all partial waves ( up to j=6 ) than the old ones.
+
+The new pots are fitted with a much better chi^2 than the old ones.
+This means that, although you fortuitiously may get something
+reasonable for the 3p2 gap at 
+1) the level of free pot and no renormalized sp energies 
+   -----------------------------------------------------
+(see enclosed table right below)
+
+2) 
+the results when you  include medium renormalized sp energies
+(being the simplest extension possible of the many-body formalism)
+yield a much smaller spread in results for the gap than 
+with the old stuff
+(see the second table).
+
+It does not make any sense to say that the old stuff fits the 
+3p2 data better than the new ones, when the overall agreement
+is much worse (for instance for the 3s1 wave, and in general
+the pp phase shifts are worse with the old pots) . 
+This is clearly reflected when you calc the sp energies at the 
+bhf level and insert them in the pairing gap calcs.
+As you may also read from the figs in NPA 627, the differences
+in energy per particle up to almost 3 times nuclear matter sat density,
+are much smaller for the new pots than the old ones. In this sense, if you
+wish to do many-body physics, previous ambiguities are considerably
+reduced, at the level of the NN pots. That is a good thing,
+so why insist on out-dated stuff? The only pots of the three old
+ones we have been using which is more meaningful, is the Bonn B one.
+The only potential which shows some deviation among the new
+ones is the V18 pot. Especially for P-waves, and for the 3F2.
+It has also a larger chi^2 per datum than the other new ones,
+reid93, nijm I and I and cd-bonn. But the diffs are smaller than compare with
+say the v14 or the paris.
+
+So, to summarize, the numbers below show that the spread is much smaller
+with the new pots. 
+
+This table, with some more points should also be included in the paper,
+then one can compare the numbers properly. Above 2.0 the spread starts
+for all pots, and that is the main message of the ms.
+
+First table
+
+3P2-3F2 with free sp energies
+
+
+k_F        Bonn B      Paris     V_14    CD-Bonn  V_18   Nijm I   Nijm II      
+----------------------------------------------------------------------------
+1.2         0.046      0.04      0.047   0.033    0.04    0.034    0.034
+
+1.4         0.160      0.15      0.188   0.114    0.14    0.117    0.117
+
+1.6         0.345      0.32      0.450   0.273    0.31    0.271    0.267
+
+1.8         0.523      0.49      0.754   0.452    0.49    0.465    0.454
+
+2.0         0.656      0.57      1.015   0.635    0.62    0.693    0.677
+
+2.2         0.666      0.49      1.140   0.770    0.65    0.908    0.900 
+
+2.4         0.580      0.30      1.130   0.858    0.56    1.121    1.150
+
+2.6         0.388      0.10      0.945   0.845    0.37    1.263    1.389
+
+2.8         0.209      ----      0.700   0.783    0.17    1.376    1.660 
+
+3.0         0.060      ----      -----   0.606    0.02    1.370    1.900
+------------------------------------------------------------------------------
+ 
+
+second table
+
+nun achtung, langsam lesen, nicht schnell schnell ..
+
+3P2-3F2 with bhf spectrum
+
+
+k_F   Bonn B  Paris  V_14  CD-Bonn  V_18 V_18(HJS) Nijm-I  Nijm-II 
+--------------------------------------------------------------------------
+1.2   0.053   0.04   0.05   0.041   0.038  0.019      0.039   0.039  
+
+1.4   0.159   0.11   0.18   0.099   0.095  0.097      0.097   0.097 
+         
+1.6   0.339   0.22   0.38   0.178   0.174  0.214      0.179   0.178 
+ 
+1.8   0.519   0.26   0.60   0.249   0.226  0.266      0.264   0.264 
+
+2.0   0.642   0.22   0.74   0.290   0.218  0.287      0.344   0.360
+
+----> now we are outside the region where the pots are fitted
+      but look at the spread for the old ones before 2.0.
+      
+
+2.2   0.652   0.14   0.75   0.291   0.157  0.235      0.404   0.473 
+
+2.4   0.563   0.01   0.66   0.272   0.072  0.113      0.461   0.672
+
+2.6   0.370          0.42   0.212                     0.470   0.987 
+
+2.8   0.194          0.23   0.165                     0.487   1.735
+
+3.0   0.023          0.08   0.105                     0.426   3.144  
+---------------------------------------------------------------------------
+
+
+
+Looking at both table 1 and 2, you clearly see that
+the new results are much more consistent than the older ones.
+This is also why we will insist on putting a table in the ms.
+Why do you say the numerical calcs are not reliable? 
+We have compared 3 different methods and they consistent results.
+In addition John Clark and his group (using a 4th method)
+get similar results as us for the v18 pot.
+
+So, to summarize, we will insist on not keeping the old stuff on the same 
+footing as the new pots, but summarize the results, both
+with unrenormalized sp energies and bhf energies in a table.
+But the main disc following 
+the figs should concentrate on those obatiend with the new pots.
+We also guess, that there is not much more to
+say from our side.
+
+Enjoy the numbers.
+
+
+Oeystein and Morten
+
+
+

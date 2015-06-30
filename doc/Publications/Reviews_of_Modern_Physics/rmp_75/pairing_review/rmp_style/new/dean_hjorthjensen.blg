@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99c (Web2C 7.2)
+The top-level auxiliary file: dean_hjorthjensen.aux
+The style file: apsrmp.bst
+Reallocated wiz_functions (elt_size=4) to 3000 items from 0.
+Reallocated field_info (elt_size=4) to 14269 items from 5000.
+Database file #1: dean_hjorthjensen.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 299 entries,
+            3359 wiz_defined-function locations,
+            2185 strings with 28559 characters,
+and the built_in function-call counts, 231458 in all, are:
+= -- 14290
+> -- 10610
+< -- 735
++ -- 8306
+- -- 2670
+* -- 29218
+:= -- 26052
+add.period$ -- 299
+call.type$ -- 299
+change.case$ -- 2082
+chr.to.int$ -- 283
+cite$ -- 299
+duplicate$ -- 18378
+empty$ -- 17702
+format.name$ -- 5070
+if$ -- 44123
+int.to.chr$ -- 17
+int.to.str$ -- 1
+missing$ -- 3230
+newline$ -- 912
+num.names$ -- 1196
+pop$ -- 6978
+preamble$ -- 1
+purify$ -- 2082
+quote$ -- 0
+skip$ -- 8400
+stack$ -- 0
+substring$ -- 6164
+swap$ -- 14681
+text.length$ -- 592
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2643
+warning$ -- 0
+while$ -- 1145
+width$ -- 0
+write$ -- 3000

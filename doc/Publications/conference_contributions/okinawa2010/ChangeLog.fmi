@@ -1,0 +1,178 @@
+2005-12-01  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* README.txt: removed ARLO support from the distribution (files
+	are still extractable) 
+
+	* aipproc.dtx: use \MakeTextUppercase to avoid uppercasing math
+	formulas in \section headings.
+
+	* aipparms.dtx: use \MakeTextUppercase to avoid uppercasing math
+	formulas in \section headings.
+
+2005-11-11  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipproc.dtx: added support for the mtpro package
+
+	* aipguide.raw:  documented the use of mtpro for math fonts
+
+	* aipcheck.tex: added check for mtpro.sty
+
+	* FAQ.txt: added info about upgrading to latest PcTeX that
+	supports virtual fonts.
+
+	* aipxfm.dtx: ensure that there will be no address marks if all
+	authors share the same single address
+
+2005-07-06  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipproc.dbj:  no comma after volume
+
+	* aipprocl.dbj: no comma after volume
+
+2005-06-30  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipprocl.dbj: changed first name / surname order
+
+2004-11-01  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* FAQ.txt: added entry for "Multiple \caption's in a figure
+	environment" 
+
+	* aipproc.dtx: produce error when using multiple captions in
+	figure or table
+
+2004-10-31  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipguide.raw: some wording changes, e.g., speaking of "final
+	paper" rather than "camera ready copy", etc.
+	Changed bibliography style to conform to new conventions.
+
+	* aipparms.dtx: added classification and keywords to AIP classes
+	introduced XFMclassificationtext layout etc. for AIP classes
+	introduced XFMkeywordstext layout etc. for AIP classes
+	
+	introduced \XFMauthorsaltaddressmarkseparator {,}
+
+	shortened space above title for 8s and 8d by 16pt
+	shortened space above authors for 6s, 8s, and 8d by 6pt
+	shortened space above addresses for 6s, 8s, and 8d by 4pt
+	shortened space above abstract for 8s and 8d by 4pt
+	shortened space below title block for 6s, 8s, and 8d by 6pt
+	shortened space above headings for 6s, 8s, and 8d by 2pt
+
+	* aipproc.dbj: changed first name / surname order
+	added support for eprint keyword
+
+2004-10-10  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipxfm.dtx: correct warning message (no spaces displayed)
+	introduce \XFMauthorsaltaddressmarkseparator to separate mark
+	symbols if necessary (avoiding * ** come out as ***)
+
+	* template.raw: added \classification and \keywords
+	updated bibliography sample to conform to new style
+
+2002-10-28  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipproc.dtx: ltxfigure and ltxtable by mistake 
+	  didn't accept optional argument
+
+2002-10-25  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* FAQ.txt: corrected entry for citation sorting
+
+2002-06-02  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipparms.dtx: ignore keys not used.
+
+	* aipxfm.dtx: added support for altaddress key.
+
+	* FAQ.txt: added info on how to do multiple author addresses.
+
+	* template.raw: added example for the use of altaddress key.
+
+	* aipguide.raw: added documentation for altaddress key.
+
+2002-04-13  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* template.raw: corrected typo.
+
+	* aipparms.dtx: set abstract in 9/10 for 8s and 8d layout
+
+2002-03-11  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipparms.dtx: corrected typo in \copyrightholder (ARLO)
+
+2002-01-25  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* template.raw: numberedheadings option added to template (though
+	commented out)
+
+2002-01-18  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipparms.dtx: numbered heading are now possible in AIP classes
+	if the numberedheadings option is specified
+
+2002-01-11  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipguide.raw: add additional section on obtaining packages from
+	CTAN.
+
+	* aipparms.dtx: support \\ in address and similar fields (preserve
+	centering etc.)
+
+2001-12-21  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* Version 1.3 of aipproc class basically finished
+
+	* aipguide.tex: docu updates for 1.3
+
+	* template-xx.tex: added template files to the distribution
+
+	* aipproc.dtx: added options mathptmx (new default) and nonatbib
+	for v1.3.
+
+	* aipcheck.tex: added several more tests to better find corrupted
+	installations.
+
+	* FAQ.txt: frequently asked question document added for v1.3
+
+	* README.txt:  updated for v1.3
+
+2001-05-22  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipcheck.tex: added checks for all *.clo files and aipxfm.sty
+
+2001-02-13  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipparms.dtx: re-added page position values in aip-6s.clo
+	that got lost somehow
+
+2001-01-31  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipguide.raw: document that natbib is required for ARLO
+
+	* aipparms.dtx (subsection{The citation in the document}):
+	check for natbib when formatting for ARLO
+
+	* aipcheck.tex: make a stronger statement that for ARLO
+	natbib.sty is required.
+
+2001-01-06  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* Provided individual guides for the different journal layouts 
+
+2000-12-08  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipxfm.dtx: fixed forgotten reset of \@elt (gobbled the
+	float free list in some cases)
+
+2000-11-29  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* aipproc.dtx: allow footnote numbering in abstract to be
+	specified individually.
+
+2000-11-07  Frank Mittelbach  <Frank.Mittelbach@latex-project.org>
+
+	* Version 1.2 of aipproc class basically finished
+

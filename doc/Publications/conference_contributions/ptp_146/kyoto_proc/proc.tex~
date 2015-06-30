@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%   template.tex for PTPTeX.sty <ver.1.0>  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentstyle[seceq]{ptptex}
+%\documentstyle[seceq,preprint]{ptptex}
+%\documentstyle[seceq,letter]{ptptex}
+%\documentstyle[seceq,supplement]{ptptex}
+%\documentstyle[seceq,addenda]{ptptex}
+%\documentstyle[seceq,errata]{ptptex}
+
+%%%%% Personal Macros %%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pubinfo{Vol. 101, No. 4, Aril 1999}  %Editorial Office use
+%\setcounter{page}{}                   %Editorial Office use
+%------------------------------------------------------------
+%\nofigureboxrule%to eliminate the rule of \figurebox
+%\notypesetlogo  %comment in if to eliminate PTPTeX logo
+%\subfontMBF     %use if you have not enough fonts when using mbf.sty
+%---- When [preprint] you can put preprint number at top right corner.
+%\preprintnumber[3cm]{%<-- [..]: optional width of preprint # column.
+%KUNS-1325\\ HE(TH)~97/04\\ hep-th/9702083}
+%-------------------------------------------
+
+\markboth{%     %running head for odd-page (authors' name)
+S.-I.~Tomonaga and H.~Yukawa
+}{%             %running head for even-page (`short' title)
+Instruction for Making \LaTeX\ Compuscripts Using \protect\PTPTeX
+}
+
+
+\title{%        %You can use \\ for explicit line-break
+Instruction for Making \LaTeX\ Compuscripts Using \PTPTeX
+}
+%\subtitle{This is a Subtitle}    %use this when you want a subtitle
+
+\author{%       %Use \sc for the family name
+Shin-Ichiro {\sc Tomonaga}\footnote{A friend of Schwinger 
+because of bearing `swing' commonly in their names.} 
+and Hideki {\sc Yukawa}$^{*,}$\footnote{A common friend of Fermi and
+Bose. E-mail address: yukawa@yukawa.kyoto-u.ac.jp}
+}
+
+\inst{%         %Affiliation, neglected when [addenda] or [errata]
+Physics Department, Tokyo Bunrika University, Tokyo 113
+\\
+$^*$Yukawa Institute for Theoretical Physics, 
+Kyoto University, Kyoto 606-8502}
+
+%\publishedin{%      %Write this ONLY in cases of addenda and errata
+%Prog.~Theor.~Phys.\ {\bf XX} (19YY), page}
+
+\recdate{%      %Editorial Office will fill in this.
+%\today
+}
+
+\abst{%       %this abstract is neglected when [addenda] or [errata]
+Write your ABSTRACT here.
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Start your paper from here.
+
+
+\section{Equations}
+
+\subsection{Fractions}
+
+
+\section{References}
+
+
+\section*{Acknowledgements}
+We would like to thank ...........
+
+\appendix
+\section{First Appendix} %Empty argument \section{} yields `Appendix'. 
+
+\section{Second Appendix}
+
+
+\begin{thebibliography}{99}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some macros are available for the bibliography:
+%   o for general use
+%      \JL : general journals          \andvol : Vol (Year) Page
+%   o for individual journal 
+%      \PR  : Phys. Rev.               \PRL : Phys. Rev. Lett.
+%      \NP  : Nucl. Phys.              \PL  : Phys. Lett.
+%      \JMP : J. Math. Phys.           \CMP : Commun. Math. Phys.
+%      \PTP : Prog. Theor. Phys.       \JPSJ: J. Phys. Soc. Jpn.
+%      \JP  : J. of Phys.              \NC  : Nouvo Cim.
+%      \IJMP: Int. J. Mod. Phys.       \ANN : Ann. of Phys.
+% Usage:
+%   \PR{D45,1990,345}            ==> Phys.~Rev.\ {\bf D45} (1990), 345
+%   \JL{Phys.~Lett.,A30,1981,56} ==> Phys.~Lett.\ {\bf A30} (1981), 56
+%   \andvol{B123,1995,1020}      ==> {\bf B123} (1995), 1020
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{rf:NJL}
+Y.~Nambu and G.~Jona-Lasinio, 
+        Phys.~Rev.\ {\bf 122} (1961), 345.   %End with period .(not ;)
+\\
+M.~Kobayashi and T.~Maskawa, \JL{Prog.~Theor.~Phys.,49,1973,652}.
+\bibitem{rf:PW}
+A.~Polyakov and P.B.~Wiegmann, 
+        Phys.~Lett.\ {\bf B131} (1983), 121.
+\\
+P.B.~Wiegmann, \PL{B141,1984,217}; \andvol{B142,1984,173}.
+\bibitem{rf:SW}
+R.~Streater and A.S.~Wightman, {\it PCT, Spin \& Statistics, and All
+That} (W.A.~Benjamin, New York, 1964), p.~117.
+\end{thebibliography}
+
+\end{document}
+
+
+
+
+
+

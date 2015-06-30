@@ -1,0 +1,32 @@
+Hi Teemu, 
+the routine you sent is different from the one i have.
+Thus, in the input files you will send me I will also need the values
+of Ji and Jf
+
+Could you then modify the files you will send so as to read ji and jf
+together with q, iz, and ia, that is
+
+98.0 14 28  ji jf
+0 0  0 2
+0 0  0 1
+1 0  0 1
+1 2  0 1
+0 0  1 2
+0 0 -1 2
+0 0  1 1
+0 0 -1 1
+1 0 -1 1
+1 2  1 1
+* * ** *   
+0 1  0 4 
+1 1  0 4
+1 1  0 3
+
+
+
+I will read them in as well and add the triangular relations.
+
+I guess from your table 8 that Ji=0 and jf =1 in si 28 ???
+
+morten
+

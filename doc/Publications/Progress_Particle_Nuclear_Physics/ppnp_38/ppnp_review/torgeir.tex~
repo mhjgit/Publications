@@ -1,0 +1,140 @@
+\documentclass[twoside,12pt]{article}
+\usepackage{epsfig}
+\usepackage{pst-plot}
+
+
+\def\Journal#1#2#3#4{{#1} {#2} (#4) #3 }
+\def\NCA{{\em Nuovo Cimento} A}
+\def\PHYS{{\em Physica}}
+\def\NPA{{\em Nucl. Phys.} A}
+\def\MATH{{\em J. Math. Phys.}}
+\def\PRO{{\em Prog. Theor. Phys.}}
+\def\NPB{{\em Nucl. Phys.} B}
+\def\PLA{{\em Phys. Lett.} A}
+\def\PLB{{\em Phys. Lett.} B}
+\def\PLD{{\em Phys. Lett.} D}
+\def\PL{{\em Phys. Lett.}}
+\def\PRL{\em Phys. Rev. Lett.}
+\def\PREV{\em Phys. Rev.}
+\def\PREP{\em Phys. Rep.}
+\def\PRA{{\em Phys. Rev.} A}
+\def\PRD{{\em Phys. Rev.} D}
+\def\PRC{{\em Phys. Rev.} C}
+\def\PRB{{\em Phys. Rev.} B}
+\def\ZPC{{\em Z. Phys.} C}
+\def\ZPA{{\em Z. Phys.} A}
+\def\ANNP{\em Ann. Phys. (N.Y.)}
+\def\RMP{{\em Rev. Mod. Phys.}}
+\def\CHEM{{\em J. Chem. Phys.}}
+\def\INT{{\em Int. J. Mod. Phys.} E}
+\def\r{\vec r}
+\def\R{\vec R}
+\def\p{\vec p}
+\def\P{\vec P}
+\def\q{\vec q}
+\def\ss{\mbox{\boldmath $\sigma$}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\topmargin-2.8cm
+\oddsidemargin-1cm
+\evensidemargin-1cm
+\textwidth18.5cm
+\textheight25.0cm
+\begin{document}
+
+\title{Effective interactions and the nuclear shell-model}
+\author{D.~J.~Dean,$^{1,2}$ T.~Engeland,$^{2,3}$ M.~Hjorth-Jensen,$^{2,3}$\\
+M.~P.~Kartamyshev$^{2,3}$, and E.~Osnes$^{2,3}$\\
+\\
+$^{1}$Physics Division, Oak Ridge National Laboratory,
+P.O. Box 2008,\\  Oak Ridge, TN 37831-6373, U.S.A.\\
+$^{2}$Center of Mathematics for Applications, University of Oslo, Norway\\
+$^{3}$Department of Physics, University of Oslo, Norway}
+
+\maketitle
+
+
+
+\subsection{\it Tin isotopes for $100 \le A \le 132$}
+
+\begin{figure}
+\setlength{\unitlength}{1cm}
+\begin{center}
+
+\Cartesian(1cm,0.9cm)
+%
+\pspicture(0,1)(12,12)
+%
+\newgray{whitegray}{.9}
+
+\psframe[linewidth=0.0pt,fillstyle=solid,fillcolor=gray](0,1.5)(6,3)
+%
+\psframe*[linecolor=white](1,2)(5,2.6)
+%
+\uput[0](1.0,2.3){ Q--space: $Z \leq 50$}
+%
+\psframe[linewidth=0.0pt,fillstyle=solid,fillcolor=gray](6,1.5)(12,10)
+%
+\psframe*[linecolor=whitegray](6.5,3)(11.7,9.8)
+%
+\psframe*[linecolor=white](7,2)(11,2.6)
+%
+\uput[0](7.0,2.3){ Q--space: $N \leq 82$}
+%
+%	single-particle spectrum
+%
+\psline[linewidth=1pt](7.7,3.5)(9.45,3.5)
+\uput[0](6.45,3.40){$d_{3/2}^{+}$}
+\uput[0](9.5,3.45){\small 0.00 MeV}
+%
+\psline[linewidth=1pt](7.7,4.09)(9.45,4.09)
+\uput[0](6.45,4.05){$h_{11/2}^{-}$}
+\uput[0](9.5,4.05){\small 0.24 MeV}
+%
+\psline[linewidth=1pt](7.7,4.32)(9.45,4.32)
+\uput[0](6.45,4.70){$s_{1/2}^{+}$}
+\uput[0](9.5,4.42){\small 0.33 MeV}
+%
+\psline[linewidth=1pt](7.7,7.6)(9.45,7.6)
+\uput[0](6.45,7.6){$d_{5/2}^{+}$}
+\uput[0](9.5,7.6){\small 1.66 MeV}
+%
+\psline[linewidth=1pt](7.7,9.5)(9.45,9.5)
+\uput[0](6.45,9.4){$g_{7/2}^{+}$}
+\uput[0](9.5,9.4){\small 2.43 MeV}
+%
+%
+\uput[0](7,6.5){ P--space for holes }
+
+
+%%%%%%%%%%%%%%
+\psframe[linewidth=0.0pt,fillstyle=solid,fillcolor=lightgray](0,3)(6,11.5)
+%
+\psframe*[linecolor=white](1,8)(5,8.6)
+%
+\uput[0](1.0,8.3){ Q--space: $Z > 50$}
+%
+
+\psframe[linewidth=0.0pt,fillstyle=solid,fillcolor=lightgray](6,10)(12,11.5)
+%
+\psframe*[linecolor=white](7,10.4)(11,11)
+%
+\uput[0](7.0,10.7){ Q--space: $N > 82$}
+%
+\endpspicture
+\caption{Shell-model space for tin isotopes for $100 \le A \le  132$. The valence neutrons are hole states.\label{fig:sn132sm}}
+\end{center}
+\end{figure}
+
+\end{document}
+
+
+
+
+
+

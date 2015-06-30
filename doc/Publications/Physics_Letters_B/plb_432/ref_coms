@@ -1,0 +1,192 @@
+From ptimu01@pion12.tphys.physik.uni-tuebingen.de Mon Mar 23 14:36:51 1998
+Return-Path: <ptimu01@pion12.tphys.physik.uni-tuebingen.de>
+Delivery-Date: Mon, 23 Mar 1998 14:36:50 +0100
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no 
+          with SMTP (PP); Mon, 23 Mar 1998 14:36:45 +0100
+Received: from norserv.nordita.dk (norserv.nordita.dk [130.225.213.200]) 
+          by pat.uio.no ; Mon, 23 Mar 1998 14:36:40 +0100 (MET)
+Received: from pion12.tphys.physik.uni-tuebingen.de (ptimu01@pion12.tphys.physik.uni-tuebingen.de [134.2.78.37]) 
+          by norserv.nordita.dk (8.8.5/8.8.5) with ESMTP id OAA03488 
+          for <mjensen@nordita.dk>; Mon, 23 Mar 1998 14:35:35 +0100 (MET)
+Received: from localhost (ptimu01@localhost) 
+          by pion12.tphys.physik.uni-tuebingen.de (8.8.8/8.8.8) with SMTP 
+          id OAA03895; Mon, 23 Mar 1998 14:34:26 +0100
+Date: Mon, 23 Mar 1998 14:34:26 +0100 (MET)
+From: Herbert Muether <ptimu01@pion12.tphys.physik.uni-tuebingen.de>
+To: Ruprecht Machleidt <machleid@phys.uidaho.edu>
+cc: mjensen@nordita.dk
+Subject: Paper on the deuteron
+Message-ID: <Pine.LNX.3.96.980323142702.3890A-100000@pion12.tphys.physik.uni-tuebingen.de>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+Content-Length: 7861
+
+Dear Ruprecht, dear Morten,
+
+below you will find two referee reports from Phys.Lett. concerning our
+paper on the deuteron. I think we can easily "handle" the suggestions
+made by the referee. One of them suggests to add the d/s ratio  calculated
+from the various wave functions. We have got the wavefunction in momentum
+space. Ruprecht do you know a direct way to calculate this ratio in 
+momentum space? 
+
+If you dont have any specific suggestions, I would write a first draft
+of a reply, which we would circulate. If you have any good idea, please
+let us (Artur and me) know.
+
+Best regards     Herbert
+
+>From plb@spht.saclay.cea.fr Mon Mar 23 08:48:20 1998
+Received: from nenuphar.saclay.cea.fr by dirac.ecm.ub.es (AIX 3.2/UCB 5.64/4.03)
+          id AA13266; Mon, 23 Mar 1998 08:48:18 +0100
+Received: from muguet.saclay.cea.fr (muguet.saclay.cea.fr [132.166.192.6]) 
+	by nenuphar.saclay.cea.fr (8.8.8/CEAnet-relay-4.1.0) with ESMTP id JAA16338
+	for <artur@dirac.ecm.ub.es>; Mon, 23 Mar 1998 09:06:17 +0100 (MET)
+Received: from spht.saclay.cea.fr  (spht.saclay.cea.fr [132.166.22.41]) by muguet.saclay.cea.fr
+       (8.8.8/CEAnet-relay-4.1.0) with SMTP id JAA23813
+        for <artur@dirac.ecm.ub.es>; Mon, 23 Mar 1998 09:06:16 +0100 (MET)
+Received: from [132.166.21.99] by spht.saclay.cea.fr (SMI-8.6/CEANET.2.0.1)
+	id JAA04069; Mon, 23 Mar 1998 09:06:14 +0100
+X-Sender: plb@spht.saclay.cea.fr (Unverified)
+Message-Id: <l03102803b13b1b3705bf@[132.166.21.99]>
+In-Reply-To: <l03102802b0d8d254347e@[132.166.21.99]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Mon, 23 Mar 1998 09:06:25 +0100
+To: artur@ecm.ub.es
+From: Jean-Paul Blaizot <plb@spht.saclay.cea.fr>
+Subject: Re: B0255
+Status: R
+
+Dear  Dr. Polls
+
+	In view of the comments by the  referees, I am sorry to inform you
+that your manuscript:
+
+"Phaseshift equivalent NN potentials and the deuteron"
+
+cannot be accepted for publication in Physics Letters B in its present form.
+
+A suitably revised version might be accepted. It should be sent in
+triplicate, with a separate and detailed replies to the referees.
+
+
+							Yours sincerly,
+
+							Jean-Paul Blaizot
+
+
+
+--------------------------------------------------------------------------------
+
+{\bf Referee report} on manuscript Ref:BO255, "Phaseshift equivalent $NN$
+potentials and the deuteron" by A. Polls et al.
+
+This work compares $S$ and $D$ wave matrix elements of kinetic and potential
+energies of the deuteron for several phase-shift equivalent recent
+potentials. The one-pion exchange important contributions are also examined.
+Differences are attributed to off-shell differences.
+
+This is an interesting study which should be published after authors have
+considered the optimal remarks and revisions mentioned below.
+
+0) The title says ``Phaseshift equivalent $NN$ potentials\ldots ``. It is
+true that the quality of the reproduction of the $NN$ data is very good
+($\chi ^2$ ~ 1 ) for all the 4 potentials in comparison. Nevertheless it could
+well be that the $NN$ data (there could be for instance some differences in
+the data sets in use to fit and calculate the $\chi ^2$) are not described in
+exactly the same way. This could result in some, although presumably small,
+differences in the phase shifts. Such comparison of phases is, I believe,
+outside the size of this letter, however some comment about it could be
+added and some of the differences shown in this work could be attributed to
+this small on-shell differences?
+
+1) It might be quite interesting to add in Table 1 a column giving the
+$D/S = \eta $ ratio which has been measured experimentally. Looking at
+results of Table 1 it seems that a small $P_D$ could be associated with a
+small $V_{SD}$. We understand that the strength of the tensor force plays
+here an important role, anything more?
+
+2) It could be instructive to compare also the momentum distribution for the
+$D$-wave of the deuteron, i.e. the equivalent of Eq. 2 and Fig. 1 but for
+the $D$-wave.
+
+3) For $V_{SD}$ in Fig. 2, the local $OPEP$ seems to be missing. Is there
+really a $\delta$-function contribution to the tensor potential? None seems
+to appear in any of the shown $V_{SD}$ matrix elements in Figs. 2, 3 and 4.
+This is not the case for the $V_{SS}$ where matrix elements of different
+potential can differ mainly through a $\delta$-function contribution. Such a
+difference is explicitly illustrated in Fig. 2. In Fig. 3, the total Bonn V
+and the Bonn $\pi, \rho$ $V_{SS}$ seems to differ mainly by a
+$\delta$-function contribution. Any comment? This is also the case in Fig. 4
+for the $V_{SS}$ of Argonne, Nijm1, Nijm2 and the low momentum part of Bonn.
+It would be good if Authors could comment about it.
+
+4) It seems that in Fig. 3 for $V_{SS}$ of Bonn, for $k \ge$ 800 MeV, the
+$OPEP$ matrix element becomes very close to that of the total $V_{SS}$. Is
+there any reason or is it just pure coincidence?
+
+5) For an easier reading, authors could add in the upper left part of Fig.~3
+the legend "Bonn" and in the upper right part the legend "Argonne" as it has
+been done in the lower part.
+
+6) For the same reason, a legend "$V_{SS}$" could be added in the left graph
+of Fig. 4.
+
+7) In most case ``Argonne'' has  been shortened in ``Argon'' in Table 1,
+Figs. 1, 2 and 4. Authors could introduce this shortened notation. Nijm I
+and Nijm II in the texte are denoted Nijm1 and Nijm2 in Figs. 1 and 4, it
+will be better to have the same notation.
+
+8) Ref. 7 has been published in Nucl. Phys. {\bf A627} (1997) 85.
+Please check if Ref. 6 has been published. Ref. 10 should be "...Phys. Rev.
+Lett. {\bf25} ..." and not "...Phys. Lett. {\bf 25}...".
+
+\end{document}
+
+--------------------------------------------------------------------------------
+
+Re: Ms.# B0255
+    "Phaseshift equivalent NN potentials and the deuteron"
+By: A. Polls, H. Muther, R. Machleidt, M. Hjorth-Jensen
+
+The authors examine the deuteron solutions of four modern phase-shift
+equivalent potentials.  They notice the differences in the S- and D-wave
+contributions to both the kinetic and potential energies and point out
+there are some significant differences, even though the models produce
+similar deuteron observables and nearly identical phase shifts.
+
+I agree with most of the comments made here.  The one exception is the
+paragraph following eq.(6).  Here the statement is made that the local
+expression for OPE is not really justified.  However we have only on-shell
+data to base such a decision on, and both the local and nonlocal models
+fit that data, so I don't know what is meant here.  It is not obvious to me
+that a heavy-meson-exchange theory necessarily gives a more accurate
+representation of the complex QCD interactions that presumably underlie
+the short-range NN interaction.  A few lines later the authors find it
+remarkable that the Gaussian form factor used with the local OPE in the
+Argonne model gives Vsd matrix elements like the nonlocal Bonn, which is
+relying on rho-exchange and a much shorter-range form factor.  I think
+maybe it isn't SO remarkable, again because they are fitting the same
+on-shell data.  I realize the point of the paper is that there are
+significant off-shell differences between the models, but I think they
+can't be TOO big and still fit the data.  Finally at the end of this
+paragraph the authors conclude "that even this long-range part of the NN
+interaction is by no means settled."  But I think what is not settled is
+how to handle the short-range behavior of OPE, which is not quite the
+same thing.
+
+My only other comment is that I think I already knew the content of the
+paper, at least qualitatively, and I suspect most people interested in
+the subject also know these things.  But it is probably worthwhile having
+the detailed numbers in print so the amount of off-shell difference is
+quantified.
+
+Fig.2b appears to be missing the "local OPEP" curve.
+
+
+
+
+
+

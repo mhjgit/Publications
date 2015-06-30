@@ -1,0 +1,160 @@
+From isaac@ecm.ub.es Fri Jun 11 12:59:24 1999
+Return-Path: <isaac@ecm.ub.es>
+Delivery-Date: Fri, 11 Jun 1999 12:59:24 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Fri, 11 Jun 1999 12:59:02 +0200
+Received: from server.ecm.ub.es ([161.116.81.109]) by pat.uio.no with esmtp (Exim 2.12 #6) id 10sP1R-0000LI-00 
+          for m.h.jensen@fys.uio.no; Fri, 11 Jun 1999 12:58:54 +0200
+Received: from ns.ecm.ub.es (grunyon.ecm.ub.es [161.116.81.151]) by server.ecm.ub.es (8.9.1/8.9.1) with ESMTP id MAA24071 
+          for <m.h.jensen@fys.uio.no>; Fri, 11 Jun 1999 12:42:42 +0200
+Received: from fermi.ecm.ub.es (fermi.ecm.ub.es [161.116.81.110]) by ns.ecm.ub.es (8.9.3/8.9.1) with SMTP id NAA15450 
+          for <m.h.jensen@fys.uio.no>; Fri, 11 Jun 1999 13:01:34 +0200
+Received: from localhost by fermi.ecm.ub.es (AIX 3.2/UCB 5.64/4.03) id AA15865; Fri, 11 Jun 1999 12:44:11 +0100
+Date: Fri, 11 Jun 1999 12:44:11 +0100 (BST)
+From: Isaac Vidanya <isaac@ecm.ub.es>
+To: Morten Hjorth-Jensen <m.h.jensen@fys.uio.no>
+Subject: Pairing
+Message-Id: <Pine.A32.3.96.990611114735.16794A-100000@fermi.ecm.ub.es>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: R
+Content-Length: 3323
+
+
+Hi Martino, this is Assum.... Como estas? See you in Seattle next
+september, right?... Now back to Isaac...
+
+As you can see Assum is here (dando la barrila). Now here there are 
+the instructions you must follow in order to get the matrix elements
+Lambda->Lambda and Sigma- -> Sigma -.
+
+1-. The subroutine ghypfnstrang-2 gives all the g-matrices for the
+    strangeness -2 sector. If you want to print them you have to 
+    activate all the write(11,any format). The file you get has
+    the following aspect: (IMPORTANT: THE PROGRAM ONLY WRITE 
+    DIAGONAL ELEMENTS, If you need non-diagonal I must made a
+    little change in the write's)
+
+    Number of mesh points: 
+    Mesh points: there are 24 numbers     
+    Number of CM and Starting Energies: 
+    CM and Starting Energies
+    Fixed T
+    Fixed Tz
+    Fixed J
+    Icase 1
+    Bare potential matrix elements
+    G-matrix elements
+    Icase 2
+    Bare potential matrix elements
+    G-matrix elements
+    Next J
+    .......... y asi at infinitum (may be less) ....
+
+    When you run the program you this structure will be more easy
+    to see. In order to explain you better the structure I will send
+    you a fax of some notes I made.
+
+ 2-. In the subroutine ghypfnstrang-2., I call the bare potential
+     in line: call nijpot(nymod,jc,fkmev,nk)
+
+     where
+
+             nymod: is a number from 1 to 6 which chooses the
+                    different parametritzations of the potential
+                    (i.e 1 means NSC97a, 2 means NSC97b and so on)
+
+             jc: is the angular momentum J: from 0 to 4
+
+             fkmev: is the array  of relative momenta
+
+             nk: is the number of mesh points, in our case 24  
+ 
+ 
+   3-. As you will see in my notes:
+
+       wave 1S0 corresponds to J=0, icase = 1, you have
+       to choose the 24 first g-matrix elements of the box labeled
+       icase=1 (because S=0 and L=J) 
+
+       on the other hand
+ 
+       wave 3S1 corresponds to J=1, icase = 2, you have
+       to choose the 24 first g-matrix elements of the box
+       labelled icase=2 (because S=1 and L=J-1)
+
+       For the Lambda_Lambda case there will be the two waves,
+       but for the Sigma-_Sigma- one there will exist only 1S0, there 
+       is no coupling in the 3S1 channel
+    
+       I hope you will not have many problems, anyway if
+       you have problems, say me which matrix elements you
+       really need and I could try to run the program here.
+
+       Have a nice day.
+
+       P.S. I cannot receive mails in gromit today because
+            the system manager is making changes in it. Write
+            me to my account in Oslo: isaac.vidania@fys.uio.no
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*                                                                       *
+* Isaac Vida\~na Haro                                                   *
+* Dept. Estructura y Constituyentes de la Materia                       * 
+* Facultad de Fisica                            e-mail: isaac@ecm.ub.es *
+* Diagonal 647                                  Tel: 34-93-4021192      *
+* E-08028 Barcelona (SPAIN)                     FaX: 34-93-4021198      *
+*                                                                       *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+
+From isaac@ecm.ub.es Fri Jun 11 13:54:48 1999
+Return-Path: <isaac@ecm.ub.es>
+Delivery-Date: Fri, 11 Jun 1999 13:54:47 +0200
+Received: from pat.uio.no (actually pat.uio.no [129.240.130.16]) by pat.uio.no with SMTP (PP); Fri, 11 Jun 1999 13:54:36 +0200
+Received: from server.ecm.ub.es ([161.116.81.109]) by pat.uio.no with esmtp (Exim 2.12 #6) id 10sPtJ-0001iK-00 
+          for m.h.jensen@fys.uio.no; Fri, 11 Jun 1999 13:54:33 +0200
+Received: from ns.ecm.ub.es (grunyon.ecm.ub.es [161.116.81.151]) by server.ecm.ub.es (8.9.1/8.9.1) with ESMTP id NAA19197 
+          for <m.h.jensen@fys.uio.no>; Fri, 11 Jun 1999 13:38:22 +0200
+Received: from fermi.ecm.ub.es (fermi.ecm.ub.es [161.116.81.110]) by ns.ecm.ub.es (8.9.3/8.9.1) with SMTP id NAA15861 
+          for <m.h.jensen@fys.uio.no>; Fri, 11 Jun 1999 13:57:15 +0200
+Received: from localhost by fermi.ecm.ub.es (AIX 3.2/UCB 5.64/4.03) id AA11672; Fri, 11 Jun 1999 13:39:51 +0100
+Date: Fri, 11 Jun 1999 13:39:51 +0100 (BST)
+From: Isaac Vidanya <isaac@ecm.ub.es>
+To: Morten Hjorth-Jensen <m.h.jensen@fys.uio.no>
+Subject: Confirmation Fax
+Message-Id: <Pine.A32.3.96.990611133701.16276A-100000@fermi.ecm.ub.es>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Content-Length: 1004
+
+
+Hi again Entropy-man
+
+I've just sent to you a fax witj some notes I made
+some time ago about the potential and the matrix structure
+of it and of the g-matrix. Say me if you've recived them.
+Artur has said me that you are agree in running again the
+finite nuclei with the new nijmegen potentials.
+
+
+Have a nice weekend
+
+Hyperon man
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*                                                                       *
+* Isaac Vida\~na Haro                                                   *
+* Dept. Estructura y Constituyentes de la Materia                       * 
+* Facultad de Fisica                            e-mail: isaac@ecm.ub.es *
+* Diagonal 647                                  Tel: 34-93-4021192      *
+* E-08028 Barcelona (SPAIN)                     FaX: 34-93-4021198      *
+*                                                                       *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+

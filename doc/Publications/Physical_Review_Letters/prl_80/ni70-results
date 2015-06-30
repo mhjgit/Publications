@@ -1,0 +1,573 @@
+Hi Hubert,
+in this mail you will find the energy file and the e2 transition
+you were interested in for 69 ni and 70 ni.
+
+The E2 results are the reduced matrix B2 matrix elements and they
+come in units of (effective charge)^2 * (oscillator parameter)^4.
+
+The effective charge is set to 1 for the neutrons, and you will have to insert
+the correct oscillator parameter b in units of fm.
+This oscillator parameter was chosen for 56 ni to be
+
+b = 2.031 fm
+
+
+This should allow you to play around a little bit with various 
+effective charges and oscillator parameters.
+
+
+The excitation energies (with occupation probabilities are also
+included), in case you wish to convert everything into lifetimes.
+Recall that the angular momentum assignement is
+always given as J(J+1), e.g., J=9/2 will have the value
+(9/2+1)*9/2 = 24.75 etc.
+
+The transitions are for 69 ni 
+
+17/2- -- > 13/2-, , transition is here       1.263374
+
+
+for 70 Ni I have included the 
+
+8+ --> 6+, transition is here   0.368108 
+
+
+I have still not figured out how to solve the saturation probelm for the
+binding energies (the longstanding problem of nuclear many-body
+theory), moreover, the positive parity states in ni 69 (especially the 
+13/2+) is too low, while the negative parity states are in good shape.
+I have not been able to resolve that problem either, also I wanted
+to keep the sp energies in 57 fixed throughout the chain of isotopes.
+
+
+I will be here till saturday evening, then a short holiday and I will back
+again on the 27th.
+Please let me know if you should have any problems in interpreting the data.
+
+Have a nice x-mas,
+morten
+
+
+*****************  files with data
+
+1) E2 transition for 69 Ni
+
+--------------------------------------------------------
+
+Transition calculation: 69 Ni
+
+Type of calc., e2 = e2-trans., m1 = m1-trans.: e2
+
+The basic shell model data:
+
+The neutron number: 13
+The total parity: -
+The total angular momentum J is (even, odd): odd
+Twice total projection of angular momentum: 13
+The number of j-orbits: 4
+        0  4   9    3.7
+        0  3   5    0.77
+        1  1   3    0.00
+        1  1   1    1.110
+
+The number of eigenstates: 10
+
+The data files:
+The storage file for eigenvectors in SD basis: eigen-69.dat
+Output file for the results: out-69e2_1.dat
+
+E2 transitions:
+Number of transitions: 1
+Init(no 2J) Final(no 2J) (ground state no = 0):
+2  17      0  13
+
+
+Neutron effective charge for E2 (unit e): 1.0
+
+
+            E2 transitions:
+Neutron effective charge for E2 (unit e):  1.000000
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     2 17         0 13                           1.263374
+ run time: 0 hour 0 min 2 sec
+
+
+
+
+2) E2 transition for 70 Ni
+
+--------------------------------------------------------
+
+Transition calculation: 70 Ni
+
+Type of calc., e2 = e2-trans., m1 = m1-trans.: e2
+
+The basic shell model data:
+
+The neutron number: 14
+The total parity: +
+The total angular momentum J is (even, odd): even
+Twice total projection of angular momentum: 12
+The number of j-orbits: 4
+        0  4   9    3.7
+        0  3   5    0.77
+        1  1   3    0.00
+        1  1   1    1.110
+
+The number of eigenstates: 10
+
+The data files:
+The storage file for eigenvectors in SD basis: eigen-70.dat
+Output file for the results: out-70e2_1.dat
+
+E2 transitions:
+Number of transitions: 1
+Init(no 2J) Final(no 2J) (ground state no = 0):
+1  16      0  12
+
+
+Neutron effective charge for E2 (unit e): 1.0
+
+
+            E2 transitions:
+Neutron effective charge for E2 (unit e):  1.000000
+Init(no 2J) Final(no 2J) (gr.st.no=0): B(E2) in  (e**2) * (b**4)
+     1 16         0 12                           0.368108
+ run time: 0 hour 0 min 1 sec
+
+
+
+
+
+3)  Energy spectra for low-lying states of 70 Ni
+
+--------------------------------------------------------
+
+
+Energy calculation for: ni70
+
+The basic shell model data:
+
+The proton number: 0
+
+The neutron number: 14
+
+The total angular momentum J is (even, odd): even
+Twice total projection of angular momentum: 0
+
+The total parity: +
+The number of proton j-orbits: 4
+	n  l  2*j   energy   (a = active, n = not active):
+        0  4   9    3.0              a 
+        0  3   5    0.77             a
+        1  1   3    0.00             a 
+        1  1   1    1.110            a
+The number of neutron j-orbits: 4
+	n  l  2*j   energy   (a = active, n = not active):
+        0  4   9    3.7              a
+        0  3   5    0.770            a
+        1  1   3    0.000            a
+        1  1   1    1.110            a
+The data files:
+Input proton-proton v_effective in JT scheme: vpp.dat
+Input neutron-neutron v_effective in JT scheme: veff.dat
+Input proton-neutron v_effective in JT scheme: vpn.dat
+Storage file for final energy matrix elements: h-f-58.dat
+Storage file for intermediate energy matrix elements: h-i-58.dat
+Storage file for lanczos vectors: lanc-store.dat
+Storage file for eigenvectors: eigen-58.dat
+Output file for the results: out-70_new.dat
+
+The start vector:
+Start vector type (random,mixed_input): random
+Start vector file: input_vector.dat
+Number of start vectors mixture: 1
+Start vector mixture: 1
+
+Energy eigenvalue parameters:
+Maximum dimension of the energy matrix: 100
+Wanted number of converged eigenstates: 10
+Limit for energy convergence: 0.000001
+Temp.mem. for matr.el. in lanczo iteration(in Mb, or 0): 0
+Calculation of states with J = MJ only (yes,no): no
+Angular momentum shift parameter: 4.0
+Type of calculation(new_start_vec,read_start_vec,continue or repair): new_start_vec
+
+                   ---    RESULTS   ----
+
+
+       NEUTRON single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  4  1    9    9   3.70 *    5     1    0  3 -1     5    3   0.77
+  1     0    0  4  1    9    7   3.70 *    6     2    1  1 -1     3    3   0.00
+  2     0    0  4  1    9    5   3.70 *    7     0    0  4  1     9    1   3.70
+  3     1    0  3 -1    5    5   0.77 *    8     1    0  3 -1     5    1   0.77
+  4     0    0  4  1    9    3   3.70 *    9     2    1  1 -1     3    1   0.00
+
+Number of asymmetric neutron slater determinants =     5955
+Number of  symmetric neutron slater determinants =      330
+Total number of slater determinants              =    12240
+
+Dimension of the energy matrix = 89
+Delta_eigen_value[] after delta_num = 3
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+0.0000  0.0000  0.0000  0.0000  
+
+
+
+Final Eigenvalues (No more lanczo vectors)
+The total parity is positive
+
+
+E(0)=   -8.0063  <J**2> =  0.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.313  4.232  3.760  1.695
+
+E(1)=   -6.4657  <J**2> =  6.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.307  4.256  3.787  1.650
+
+E(2)=   -5.3396  <J**2> = 20.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.093  4.309  3.826  1.773
+
+E(3)=   -5.2500  <J**2> = 20.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.248  4.268  3.832  1.652
+
+E(4)=   -5.1616  <J**2> = 42.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.113  4.297  3.836  1.754
+
+E(5)=   -5.0049  <J**2> = 72.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.084  4.310  3.837  1.769
+
+E(6)=   -4.8412  <J**2> =  6.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.276  4.294  3.817  1.613
+
+E(7)=   -4.8111  <J**2> =  0.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.648  5.009  3.788  1.555
+
+E(8)=   -4.6337  <J**2> = 42.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.216  4.241  3.856  1.688
+
+E(9)=   -4.0513  <J**2> =  6.0000
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.737  4.728  3.805  1.731
+ run time: 0 hour 2 min 9 sec
+
+
+
+
+
+
+
+
+4) positive parity energy spectrum for ni 69
+
+--------------------------------------------------------
+
+
+Energy calculation for: ni69
+
+The basic shell model data:
+
+The proton number: 0
+
+The neutron number: 13
+
+The total angular momentum J is (even, odd): even
+Twice total projection of angular momentum: 1
+
+The total parity: +
+The number of proton j-orbits: 4
+	n  l  2*j   energy   (a = active, n = not active):
+        0  4   9    3.0              a 
+        0  3   5    0.77             a
+        1  1   3    0.00             a 
+        1  1   1    1.110            a
+The number of neutron j-orbits: 4
+	n  l  2*j   energy   (a = active, n = not active):
+        0  4   9    3.7              a
+        0  3   5    0.770            a
+        1  1   3    0.000            a
+        1  1   1    1.110            a
+The data files:
+Input proton-proton v_effective in JT scheme: vpp.dat
+Input neutron-neutron v_effective in JT scheme: veff.dat
+Input proton-neutron v_effective in JT scheme: vpn.dat
+Storage file for final energy matrix elements: h-f-58.dat
+Storage file for intermediate energy matrix elements: h-i-58.dat
+Storage file for lanczos vectors: lanc-store.dat
+Storage file for eigenvectors: eigen-58.dat
+Output file for the results: out-69_new+.dat
+
+The start vector:
+Start vector type (random,mixed_input): random
+Start vector file: input_vector.dat
+Number of start vectors mixture: 1
+Start vector mixture: 1
+
+Energy eigenvalue parameters:
+Maximum dimension of the energy matrix: 100
+Wanted number of converged eigenstates: 10
+Limit for energy convergence: 0.000001
+Temp.mem. for matr.el. in lanczo iteration(in Mb, or 0): 0
+Calculation of states with J = MJ only (yes,no): no
+Angular momentum shift parameter: 4.0
+Type of calculation(new_start_vec,read_start_vec,continue or repair): new_start_vec
+
+                   ---    RESULTS   ----
+
+
+       NEUTRON single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  4  1    9    9   3.70 *    5     1    0  3 -1     5    3   0.77
+  1     0    0  4  1    9    7   3.70 *    6     2    1  1 -1     3    3   0.00
+  2     0    0  4  1    9    5   3.70 *    7     0    0  4  1     9    1   3.70
+  3     1    0  3 -1    5    5   0.77 *    8     1    0  3 -1     5    1   0.77
+  4     0    0  4  1    9    3   3.70 *    9     2    1  1 -1     3    1   0.00
+
+Number of non-symmetric neutron slater determinants =    18477
+
+
+Final Eigenvalues (There are more lanczo vectors)
+The total parity is positive
+
+
+E(0)=   -6.5596  <J**2> = 24.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.501  4.049  3.768  1.682
+
+E(1)=   -5.7244  <J**2> = 15.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.515  4.084  3.788  1.613
+
+E(2)=   -4.9762  <J**2> = 48.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.583  4.007  3.795  1.615
+
+E(3)=   -4.9695  <J**2> = 35.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.456  4.145  3.802  1.597
+
+E(4)=   -4.9226  <J**2> =  8.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.656  3.951  3.771  1.622
+
+E(5)=   -4.3803  <J**2> =  3.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.367  4.042  3.842  1.750
+
+E(6)=   -4.3588  <J**2> = 24.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.456  4.134  3.802  1.609
+
+E(7)=   -4.1123  <J**2> = 24.7532
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.061  4.691  3.759  1.489
+
+E(8)=   -3.9428  <J**2> =  9.1766
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.036  3.924  3.642  1.39
+8
+
+E(9)=   -3.8663  <J**2> = 17.6666
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.035  3.939  3.652  1.375
+ run time: 0 hour 6 min 49 sec
+
+
+
+5) low spin negative parity energy spectrum for ni 69
+
+--------------------------------------------------------
+
+
+Energy calculation for: ni69
+
+The basic shell model data:
+
+The proton number: 0
+
+The neutron number: 13
+
+The total angular momentum J is (even, odd): odd
+Twice total projection of angular momentum: 1
+
+The total parity: -
+The number of proton j-orbits: 4
+	n  l  2*j   energy   (a = active, n = not active):
+        0  4   9    3.7              a 
+        0  3   5    0.77             a
+        1  1   3    0.00             a 
+        1  1   1    1.110            a
+The number of neutron j-orbits: 4
+	n  l  2*j   energy   (a = active, n = not active):
+        0  4   9    3.7              a
+        0  3   5    0.77             a
+        1  1   3    0.               a
+        1  1   1    1.110            a
+The data files:
+Input proton-proton v_effective in JT scheme: vpp.dat
+Input neutron-neutron v_effective in JT scheme: veff.dat
+Input proton-neutron v_effective in JT scheme: vpn.dat
+Storage file for final energy matrix elements: h-f-58.dat
+Storage file for intermediate energy matrix elements: h-i-58.dat
+Storage file for lanczos vectors: lanc-store.dat
+Storage file for eigenvectors: eigen-69.dat
+Output file for the results: out-69-.dat
+
+The start vector:
+Start vector type (random,mixed_input): random
+Start vector file: input_vector.dat
+Number of start vectors mixture: 1
+Start vector mixture: 1
+
+Energy eigenvalue parameters:
+Maximum dimension of the energy matrix: 100
+Wanted number of converged eigenstates: 10
+Limit for energy convergence: 0.000001
+Temp.mem. for matr.el. in lanczo iteration(in Mb, or 0): 0
+Calculation of states with J = MJ only (yes,no): no
+Angular momentum shift parameter: 4.0
+Type of calculation(new_start_vec,read_start_vec,continue or repair): new_start_vec
+
+                   ---    RESULTS   ----
+
+
+       NEUTRON single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  4  1    9    9   3.70 *    5     1    0  3 -1     5    3   0.77
+  1     0    0  4  1    9    7   3.70 *    6     2    1  1 -1     3    3   0.00
+  2     0    0  4  1    9    5   3.70 *    7     0    0  4  1     9    1   3.70
+  3     1    0  3 -1    5    5   0.77 *    8     1    0  3 -1     5    1   0.77
+  4     0    0  4  1    9    3   3.70 *    9     2    1  1 -1     3    1   0.00
+
+Number of non-symmetric neutron slater determinants =    18521
+
+
+Final Eigenvalues (There are more lanczo vectors)
+The total parity is negative
+
+
+E(0)=   -5.8246  <J**2> =  0.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.881  4.247  3.781  1.091
+
+E(1)=   -5.6930  <J**2> =  8.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.456  3.992  3.800  1.752
+
+E(2)=   -4.9822  <J**2> =  3.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.993  3.686  3.793  1.528
+
+E(3)=   -4.6789  <J**2> =  3.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.025  4.132  3.211  1.632
+
+E(4)=   -4.5611  <J**2> =  8.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.052  4.158  3.742  1.047
+
+E(5)=   -4.4242  <J**2> = 15.7508
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.867  3.797  3.777  1.559
+
+E(6)=   -4.4117  <J**2> = 24.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.420  3.967  3.830  1.783
+
+E(7)=   -4.2856  <J**2> =  0.8224
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.225  4.405  3.760  1.610
+
+E(8)=   -4.2248  <J**2> =  8.7501
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.573  3.926  3.835  1.665
+
+E(9)=   -3.7656  <J**2> = 23.3561
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.711  3.988  3.788  1.513
+ run time: 0 hour 6 min 53 sec
+
+
+
+
+6) high spin negative parity energy spectrum for ni 69
+
+--------------------------------------------------------
+
+E(0)=   -3.6914  <J**2> = 48.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.289  4.145  3.845  1.722
+
+E(1)=   -3.6102  <J**2> = 63.7500
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.685  3.769  3.829  1.718
+
+E(2)=   -3.4952  <J**2> = 80.6449
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.555  3.860  3.843  1.742
+
+E(3)=   -3.4663  <J**2> = 49.0169
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   4.037  3.503  3.840  1.620
+
+E(4)=   -3.4356  <J**2> = 76.6539
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.731  4.098  3.843  1.327
+
+E(5)=   -3.3709  <J**2> = 97.4174
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.154  4.209  3.856  1.781
+
+E(6)=   -3.2797  <J**2> = 54.7405
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.693  4.233  3.782  1.292
+
+E(7)=   -3.2446  <J**2> = 52.0844
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.214  4.201  3.860  1.725
+
+E(8)=   -3.1362  <J**2> = 79.3573
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.377  4.250  3.840  1.532
+
+E(9)=   -3.0080  <J**2> = 74.6724
+Neutron single-part. distrib. :   9/2    5/2    3/2    1/2 
+                          N(j):   3.617  3.964  3.796  1.622
+ run time: 0 hour 3 min 4 sec
+
+
+
+
+
+
+
+
+
+
+
+
+
+

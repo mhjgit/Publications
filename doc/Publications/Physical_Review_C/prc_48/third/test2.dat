@@ -1,0 +1,147 @@
+Calculation: 106SN
+
+The basic shell model data:
+The proton number: 0
+The neutron number: 2
+Twice total projection of angular momentum: 0
+The total parity: +
+The number of j-orbits: 5
+	0  5  11   -5.08
+	0  4   7   -9.61
+	1  2   5   -10.08
+	1  2   3   -7.64
+	2  0   1   -7.54
+Maximum lanczo iterations: 150
+Total number of model eigenstates: 10
+J(J+1) + JT_MIX*T(T+1) - JT_MIX: 1000
+Limit for J (J*(J+1) < JT_MIX): 30
+Angular accuracy (> J*(J+1)): 0.001
+Type of calculation (new or continue): new
+The files:
+Input v_effective in JT scheme: veff2h.dat
+File to store lanczo vectors: store-102.dat
+File to store energy- and JT-matrix elements: h-store-102.dat
+Output file for results: test2.dat
+Print eigenvectors: no
+END:
+orb  osc  l  2*j  2*m  link    e
+
+ 0    0   5   11    11    -1      -5.080000
+ 0    0   5   11    9    0      -5.080000
+ 0    0   5   11    7    1      -5.080000
+ 1    0   4   7    7    -1      -9.610000
+ 0    0   5   11    5    2      -5.080000
+ 1    0   4   7    5    3      -9.610000
+ 2    1   2   5    5    -1      -10.080000
+ 0    0   5   11    3    4      -5.080000
+ 1    0   4   7    3    5      -9.610000
+ 2    1   2   5    3    6      -10.080000
+ 3    1   2   3    3    -1      -7.640000
+ 0    0   5   11    1    7      -5.080000
+ 1    0   4   7    1    8      -9.610000
+ 2    1   2   5    1    9      -10.080000
+ 3    1   2   3    1    10      -7.640000
+ 4    2   0   1    1    -1      -7.540000
+ 4    2   0   1    -1    15      -7.540000
+ 3    1   2   3    -1    14      -7.640000
+ 2    1   2   5    -1    13      -10.080000
+ 1    0   4   7    -1    12      -9.610000
+ 0    0   5   11    -1    11      -5.080000
+ 3    1   2   3    -3    17      -7.640000
+ 2    1   2   5    -3    18      -10.080000
+ 1    0   4   7    -3    19      -9.610000
+ 0    0   5   11    -3    20      -5.080000
+ 2    1   2   5    -5    22      -10.080000
+ 1    0   4   7    -5    23      -9.610000
+ 0    0   5   11    -5    24      -5.080000
+ 1    0   4   7    -7    26      -9.610000
+ 0    0   5   11    -7    27      -5.080000
+ 0    0   5   11    -9    29      -5.080000
+ 0    0   5   11    -11    30      -5.080000
+total number of SD = 36
+low_lim = 0_dim = 10
+iter_no=10  eg_vec=1  eg_val=-21.725923  jt_val=2000.009505
+low_lim = 0_dim = 11
+iter_no=11  eg_vec=1  eg_val=-21.726743  jt_val=2000.000929
+iter_no=11  eg_vec=2  eg_val=-20.555850  jt_val=2007.688789
+low_lim = 1_dim = 12
+iter_no=12  eg_vec=2  eg_val=-20.566328  jt_val=2007.205789
+low_lim = 1_dim = 13
+iter_no=13  eg_vec=2  eg_val=-20.578197  jt_val=2006.657333
+low_lim = 1_dim = 14
+iter_no=14  eg_vec=2  eg_val=-20.586885  jt_val=2006.298733
+low_lim = 1_dim = 15
+iter_no=15  eg_vec=2  eg_val=-20.590474  jt_val=2006.176668
+low_lim = 1_dim = 16
+iter_no=16  eg_vec=2  eg_val=-20.591982  jt_val=2006.115089
+low_lim = 1_dim = 17
+iter_no=17  eg_vec=2  eg_val=-20.594589  jt_val=2006.010582
+low_lim = 1_dim = 18
+iter_no=18  eg_vec=2  eg_val=-20.595015  jt_val=2006.003164
+iter_no=18  eg_vec=3  eg_val=-20.337438  jt_val=2020.102070
+low_lim = 2_dim = 19
+iter_no=19  eg_vec=3  eg_val=-20.340026  jt_val=2020.043298
+low_lim = 2_dim = 20
+iter_no=20  eg_vec=3  eg_val=-20.341544  jt_val=2020.005504
+iter_no=20  eg_vec=4  eg_val=-20.002017  jt_val=2028.636504
+low_lim = 3_dim = 21
+iter_no=21  eg_vec=4  eg_val=-20.007452  jt_val=2030.870395
+low_lim = 3_dim = 22
+iter_no=22  eg_vec=4  eg_val=-20.012999  jt_val=2033.977769
+low_lim = 3_dim = 23
+iter_no=23  eg_vec=4  eg_val=-20.030496  jt_val=2041.112328
+low_lim = 3_dim = 24
+iter_no=24  eg_vec=4  eg_val=-20.034131  jt_val=2041.699855
+low_lim = 3_dim = 25
+iter_no=25  eg_vec=4  eg_val=-20.035774  jt_val=2041.909614
+low_lim = 3_dim = 26
+iter_no=26  eg_vec=4  eg_val=-20.036874  jt_val=2041.987390
+iter_no=26  eg_vec=5  eg_val=-19.938430  jt_val=2002.027666
+low_lim = 4_dim = 27
+iter_no=27  eg_vec=5  eg_val=-19.939856  jt_val=2002.003769
+low_lim = 4_dim = 28
+iter_no=28  eg_vec=5  eg_val=-19.939937  jt_val=2002.002925
+low_lim = 4_dim = 29
+iter_no=29  eg_vec=5  eg_val=-19.940044  jt_val=2002.000121
+iter_no=29  eg_vec=6  eg_val=-19.743758  jt_val=2006.776854
+low_lim = 5_dim = 30
+iter_no=30  eg_vec=6  eg_val=-19.749959  jt_val=2006.722109
+low_lim = 5_dim = 31
+iter_no=31  eg_vec=6  eg_val=-19.753525  jt_val=2006.366645
+low_lim = 5_dim = 32
+iter_no=32  eg_vec=6  eg_val=-19.760580  jt_val=2006.000041
+iter_no=32  eg_vec=7  eg_val=-19.648042  jt_val=2005.730009
+low_lim = 6_dim = 33
+iter_no=33  eg_vec=7  eg_val=-19.648225  jt_val=2005.721670
+low_lim = 6_dim = 34
+iter_no=34  eg_vec=7  eg_val=-19.648226  jt_val=2005.720957
+low_lim = 6_dim = 35
+iter_no=35  eg_vec=7  eg_val=-19.649700  jt_val=2000.679209
+
+
+ Final Eigenvalues
+ E(0)=-2.1727E+01  <J_J+> =  2000.0000  
+ E(1)=-2.0595E+01  <J_J+> =  2006.0000  
+ E(2)=-2.0342E+01  <J_J+> =  2020.0000  
+ E(3)=-2.0037E+01  <J_J+> =  2042.0000  
+ E(4)=-1.9940E+01  <J_J+> =  2002.0000  
+ E(5)=-1.9761E+01  <J_J+> =  2006.0000  
+ E(6)=-1.9651E+01  <J_J+> =  2000.0002  
+ E(7)=-1.9648E+01  <J_J+> =  2005.9996  
+ E(8)=-1.9636E+01  <J_J+> =  2019.9899  
+ E(9)=-1.9633E+01  <J_J+> =  2012.0000  
+ run time: 0 hour 0 min 12 sec
+
+     skyrme set
+ Final Eigenvalues
+ E(0)=-2.1784E+01  <J_J+> =  2000.0000  
+ E(1)=-2.0601E+01  <J_J+> =  2006.0000  
+ E(2)=-2.0344E+01  <J_J+> =  2020.0000  
+ E(3)=-2.0040E+01  <J_J+> =  2042.0000  
+ E(4)=-1.9940E+01  <J_J+> =  2002.0000  
+ E(5)=-1.9761E+01  <J_J+> =  2006.0000  
+ E(6)=-1.9713E+01  <J_J+> =  2000.0000  
+ E(7)=-1.9659E+01  <J_J+> =  2006.0000  
+ E(8)=-1.9638E+01  <J_J+> =  2020.0000  
+ E(9)=-1.9633E+01  <J_J+> =  2012.0000  
+ run time: 0 hour 0 min 12 sec

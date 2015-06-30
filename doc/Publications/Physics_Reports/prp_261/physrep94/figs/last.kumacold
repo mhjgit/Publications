@@ -1,0 +1,10 @@
+*** Begin of history file: 20/06/94 - 14.56.24
+EXEC mbhf
+fortran/file 66 mbhf.eps
+metafile 66 -111
+pict/plot
+close 66
+edit ring
+EXEC ring
+*** End   of history file: 20/06/94 - 14.56.24
+

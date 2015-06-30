@@ -1,0 +1,22 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2008.6.17)  19 DEC 2008 15:06
+entering extended mode
+ %&-line parsing enabled.
+**proc.tex
+(./proc.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+! Undefined control sequence.
+l.1 \magnification
+                  =\magstep1
+? x
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 95087
+ 127 string characters out of 1183278
+ 45034 words of memory out of 1500000
+ 3277 multiletter control sequences out of 10000+50000
+ 3640 words of font info for 14 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 5i,0n,1p,37b,8s stack positions out of 5000i,500n,6000p,200000b,5000s
+No pages of output.

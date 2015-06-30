@@ -1,0 +1,54 @@
+This is TeX, Version 3.1415 (C version 6.1) (format=lplain 95.5.4)  3 JUL 1998 11:30
+**test
+(test.tex
+LaTeX Version 2.09 <25 March 1992>
+(/usr/local/lib/texmf/tex/latex/base/article.sty
+Standard Document Style `article' <14 Jan 92>, NBI <25 Aug 94>.
+(/usr/local/lib/texmf/tex/latex/base/art10.sty)
+(/usr/local/lib/texmf/tex/latex/base/a4.sty
+Style option `A4' 1.2a <30 Nov 90> (NP and JLB)
+English documentation   <26 Feb 90> (JLB)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+)
+No file test.aux.
+(sec2fig8.tex)
+Overfull \hbox (14.99034pt too wide) in paragraph at lines 1139--4
+[][]
+
+\hbox(216.8042+0.0)x361.34999
+.\hbox(0.0+0.0)x15.0
+.\hbox(216.8042+0.0)x361.34033
+..\hbox(216.8042+0.0)x361.34033, glue set 361.34033fil
+...\glue 0.0
+...\hbox(211.68521+0.0)x0.0 []
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1139--4
+
+
+\hbox(0.0+0.0)x361.34999
+.\glue(\rightskip) 0.0
+
+[1
+
+] (test.aux) ) 
+Here is how much of TeX's memory you used:
+ 175 strings out of 11970
+ 1748 string characters out of 87138
+ 36071 words of memory out of 262141
+ 2132 multiletter control sequences out of 9500
+ 18996 words of font info for 72 fonts, out of 100000 for 255
+ 14 hyphenation exceptions out of 607
+ 12i,10n,15p,130b,97s stack positions out of 300i,40n,60p,3000b,4000s
+
+Output written on test.dvi (1 page, 9588 bytes).

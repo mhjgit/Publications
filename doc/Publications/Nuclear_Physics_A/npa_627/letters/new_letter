@@ -1,0 +1,52 @@
+Dear Artur, Herbert, Lars and Ruprecht,
+
+let me try to comment on Ruprechts remarks and if I don't
+hear anything from you, I will proceed with a new iteration
+of the paper and the calcs, so forget about the present 
+draft I sent you.
+
+1) One thing which I realized when reading Ruprechts 
+   first paragraph, is that actually the main diff 
+   between Nim I and II are in the non-local terms 
+   to the central force. This can also be seen in the
+   work of the Nim group. So, that means that the argumentation
+   I give needs to be changed to both the role of the tensor
+   force and the non-local terms to the central force.
+   The latter affects the 1s0 channel as well and explains
+   the diff between the nim I and nim II in pure neutron matter.
+   So, we have two effects playing around and this actually
+   adds more weigth to the paper, it is no longer only the
+   tensor force which is important. In a way this is new.
+
+   The problem however, is that although we can see the role
+   of this non-local term, we do not know it's proper value
+   and importance in an NN pot. To state it differently, when
+   fitting nim I some strength which was in the local terms 
+   of nimII gets redistributed to the non-local terms of nim I.
+   And we do not know properly what the relation between local
+   and non-local terms should be. To me there is some degree
+   of randomness in these nim pots and this leads to my somewhat
+   conservative conclusions in the draft.
+
+   Anyway, I think things are clearer now, we have the non-local
+   terms to both the central force and the tensor for the 
+   Bonn pot and we have the non-local terms to the central
+   force in Nim I. I think that will make our discussion better.
+
+2) When I just plotted data up to densities 0.6 fm^-3
+   (there is a typo in the conclusion, 0.4 fm^-3 should be 0.6)
+   this was again due to my rather conservative attitude, since
+   that density corresponds to roughly 350 MeV in lab energy
+   for symmetric matter. We have info on tape up to 0.7 fm^-3.
+   So, what I propose is the following: I will calc everything
+   up to densities of 1 fm^-3 and revise the figs and the text
+   accordingly. Moreover, most people in the neutron star business
+   plot data for densities above 1 fm^-3, although I do not like it.
+   So, if you agree, I'l try to have a new draft for next week.
+
+3) I've also spotted several typos, but perhaps we wait till
+   I've made a new version.
+
+
+   Morten
+

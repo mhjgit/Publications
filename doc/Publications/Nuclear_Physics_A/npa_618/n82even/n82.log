@@ -1,0 +1,277 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2006.1.19)  20 APR 2007 14:12
+**n82
+(./n82.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/latex209.def
+File: latex209.def 1998/05/13 v0.52 Standard LaTeX file
+
+
+          Entering LaTeX 2.09 COMPATIBILITY MODE
+ *************************************************************
+    !!WARNING!!    !!WARNING!!    !!WARNING!!    !!WARNING!!   
+ 
+ This mode attempts to provide an emulation of the LaTeX 2.09
+ author environment so that OLD documents can be successfully
+ processed. It should NOT be used for NEW documents!
+ 
+ New documents should use Standard LaTeX conventions and start
+ with the \documentclass command.
+ 
+ Compatibility mode is UNLIKELY TO WORK with LaTeX 2.09 style
+ files that change any internal macros, especially not with
+ those that change the FONT SELECTION or OUTPUT ROUTINES.
+ 
+ Therefore such style files MUST BE UPDATED to use
+          Current Standard LaTeX: LaTeX2e.
+ If you suspect that you may be using such a style file, which
+ is probably very, very old by now, then you should attempt to
+ get it updated by sending a copy of this error message to the
+ author of that file.
+ *************************************************************
+
+\footheight=\dimen102
+\@maxsep=\dimen103
+\@dblmaxsep=\dimen104
+\@cla=\count79
+\@clb=\count80
+\mscount=\count81
+(/usr/share/texmf/tex/latex/base/tracefnt.sty
+Package: tracefnt 1997/05/29 v3.0j Standard LaTeX package (font tracing)
+\tracingfonts=\count82
+LaTeX Info: Redefining \selectfont on input line 96.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 288.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 289.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 290.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 296.
+LaTeX Info: Redefining \em on input line 306.
+
+(/usr/share/texmf/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 42.
+)
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 370.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 372.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 374.
+
+(/usr/share/texmf/tex/latex/config/latex209.cfg
+File: latex209.cfg 2001/06/05 v1.0 teTeX customized LaTeX 2.09 compatibility mo
+de setup
+)
+(/usr/share/texmf/tex/latex/tools/rawfonts.sty
+Package: rawfonts 1994/05/08 Low-level LaTeX 2.09 font compatibility
+
+(/usr/share/texmf/tex/latex/tools/somedefs.sty
+Package: somedefs 1994/06/01 Toolkit for optional definitions
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 44.
+
+(/usr/share/texmf/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)))
+Compatibility mode: loading espart.sty rather than espart.cls.
+ (./espart.sty
+Elsevier Science Publishers preprint document style v1.1  <17 May 1993>
+(./espart12.sty
+\@bls=\dimen105
+\eqntopsep=\skip41
+\labelwidthi=\dimen106
+\labelwidthii=\dimen107
+\labelwidthiii=\dimen108
+\labelwidthiv=\dimen109
+)
+\extraitemindent=\dimen110
+\@maxlistdepth=\count83
+\eqnbaselineskip=\skip42
+\eqnlineskip=\skip43
+\mathindent=\dimen111
+\rulepreskip=\dimen112
+\rulepostskip=\dimen113
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@thm=\count89
+\c@alg=\count90
+\c@algorithm=\count91
+\c@note=\count92
+\c@summ=\count93
+\c@case=\count94
+\@tempcntc=\count95
+\@tempboxb=\box26
+\c@figure=\count96
+\c@table=\count97
+\t@glob@notes=\toks14
+\t@loc@notes=\toks15
+\note@cnt=\count98
+\c@author=\count99
+\n@author=\count100
+\c@collab=\count101
+\n@collab=\count102
+\c@address=\count103
+\sv@mathsurround=\dimen114
+\sv@hyphenpenalty=\count104
+\prev@elem=\count105
+\cur@elem=\count106
+\fm@box=\box27
+\fm@size=\dimen115
+\fm@margin=\dimen116
+\t@abstract=\box28
+\t@keyword=\box29
+\t@xtheight=\dimen117
+\logo@box=\box30
+\logo@width=\skip44
+\slashbox=\box31
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 950.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 950.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 950.
+\Slashbox=\box32
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 951.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 951.
+) (/usr/share/texmf/tex/latex/ntgclass/a4.sty
+Package: a4 1999/03/03 v1.2f A4 based page layout
+)
+(/usr/share/texmf/tex/latex/pstricks/pstricks.sty
+Package: pstricks 1997/03/25 package wrapper for PSTricks pstricks.tex
+
+(/usr/share/texmf/tex/generic/pstricks/pstricks.tex
+`PSTricks' v97 patch 14  <1999/12/23> (tvz)
+\pst@dima=\dimen118
+\pst@dimb=\dimen119
+\pst@dimc=\dimen120
+\pst@dimd=\dimen121
+\pst@dimg=\dimen122
+\pst@dimh=\dimen123
+\pst@hbox=\box33
+\pst@boxg=\box34
+\pst@cnta=\count107
+\pst@cntb=\count108
+\pst@cntc=\count109
+\pst@cntd=\count110
+\pst@cntg=\count111
+\pst@cnth=\count112
+\pst@toks=\toks16
+(/usr/share/texmf/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen124
+\psxunit=\dimen125
+\psyunit=\dimen126
+\pslinewidth=\dimen127
+\pst@customdefs=\toks17
+\pslinearc=\dimen128
+\everypsbox=\toks18
+\psframesep=\dimen129
+\pslabelsep=\dimen130
+\theoverlaybox=\box35
+))
+(/usr/share/texmf/tex/latex/pstricks/pst-plot.sty
+Package: pst-plot 1997/03/25 package wrapper for PSTricks pst-plot.tex
+
+(/usr/share/texmf/tex/generic/pstricks/pst-plot.tex  v97 patch 2, 1999/12/12
+(/usr/share/texmf/tex/generic/multido/multido.tex  v1.4, 93/01/14 <tvz>
+\multido@count=\count113
+\multidocount=\count114
+\multido@stuff=\toks19
+)))
+(./n82.aux)
+\openout1 = `n82.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 13.
+ [1]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 144.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 144.
+
+[3] [4]
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
+ [5]
+[6]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 370.
+ [7] [8] [9] [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Overfull \hbox (19.6258pt too wide) in paragraph at lines 887--936
+[][] 
+ []
+
+
+Overfull \hbox (31.57895pt too wide) in paragraph at lines 950--987
+ [] 
+ []
+
+[12]
+Underfull \vbox (badness 3019) has occurred while \output is active []
+
+ [13]
+[14] [15]
+Underfull \vbox (badness 2884) has occurred while \output is active []
+
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Overfull \hbox (10.8866pt too wide) in paragraph at lines 1217--1222
+[]\OT1/cmr/m/n/12 With our shell model wave func-tions we eval-u-ate the square
+d over-laps $\OMS/cmsy/m/n/12 jh\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 ; \OML/cmm/m/
+it/12 J[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 S[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/
+12 A \OMS/cmsy/m/n/12 ^^@
+ []
+
+[19] [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+[23] [24] (./n82.aux) ) 
+Here is how much of TeX's memory you used:
+ 1932 strings out of 95847
+ 20825 string characters out of 1195948
+ 107851 words of memory out of 1000001
+ 4856 multiletter control sequences out of 10000+50000
+ 31210 words of font info for 114 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 26i,14n,43p,443b,515s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on n82.dvi (24 pages, 93176 bytes).
