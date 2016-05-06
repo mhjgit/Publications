@@ -1,12 +1,4 @@
 \documentclass[amsmath, amssymb, aps, floatfix, nofootinbib, preprintnumbers,showpacs, superscriptaddress, twocolumn]{revtex4-1}
-\usepackage{bm}
-\usepackage[cmyk]{xcolor}
-\usepackage{dcolumn}
-\usepackage{epsfig}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{subfigure}
 
 
 
